@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter(page) {
-        return !page.includes('/thanks/');
+        return !page.includes('/thanks/') && !page.includes('/site-report/');
       },
       serialize(item) {
         if (item.url === 'https://invest-gulf.com/') {
