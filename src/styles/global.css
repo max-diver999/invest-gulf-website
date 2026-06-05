@@ -148,7 +148,16 @@ input:focus, select:focus, textarea:focus {
 .faq-item.open .faq-answer { max-height: 500px; padding-bottom: 1rem; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 
-.site-container { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+.site-container {
+  width: 100%;
+  max-width: 68rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+main {
+  overflow-x: clip;
+}
 
 .surface-card {
   background: var(--color-surface);
