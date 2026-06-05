@@ -1,0 +1,59 @@
+---
+export const prerender = true;
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const guides = (await getCollection('guides'))
+  .filter((g) => !g.data.noindex)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const prioritySlugs = [
+  'dubai-property-investment-guide',
+  'can-foreigners-buy-property-uae',
+  'uae-golden-visa-property-2026',
+];
+const priority = guides.filter((g) => prioritySlugs.includes(g.id));
+---
+<BaseLayout
+  title="UAE & Gulf Property Investment Guides"
+  description="Independent guides on Dubai, Abu Dhabi, and Gulf property — foreign ownership, Golden Visa, yields, and off-plan risks."
+>
+  <section class="site-container py-12 md:py-16">
+    <header class="max-w-2xl mb-10">
+      <h1>Investment guides</h1>
+      <p class="text-lg text-[var(--color-slate-600)] mt-3">
+        Research-first articles for foreign buyers. Not developer brochures — verify all figures before you transact.
+      </p>
+    </header>
+
+    {priority.length > 0 && (
+      <section class="mb-12 rounded-2xl bg-white border border-[#e2ddd3] p-6 md:p-8">
+        <h2 class="text-2xl mb-4">Start here</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          {priority.map((guide) => (
+            <a href={`/guides/${guide.id}/`} class="block p-4 rounded-xl bg-[var(--color-sand-50)] hover:bg-[var(--color-sand-100)] no-underline">
+              <h3 class="text-base mb-1">{guide.data.title}</h3>
+              <p class="text-sm text-[var(--color-slate-600)]">{guide.data.description}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <div class="grid md:grid-cols-2 gap-5">
+      {guides.map((guide) => (
+        <article class="rounded-2xl bg-white border border-[#e2ddd3] p-6">
+          <div class="flex flex-wrap gap-2 mb-3">
+            {guide.data.tags?.slice(0, 3).map((tag) => (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-sand-100)] text-[var(--color-slate-600)]">{tag}</span>
+            ))}
+          </div>
+          <h2 class="text-xl mb-2">
+            <a href={`/guides/${guide.id}/`} class="no-underline hover:text-[var(--color-gold-500)]">{guide.data.title}</a>
+          </h2>
+          <p class="text-sm text-[var(--color-slate-600)]">{guide.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

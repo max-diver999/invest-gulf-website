@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const comparisons = (await getCollection('compare'))
+  .filter((c) => !c.data.noindex)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout
+  title="Gulf Property Market Comparisons"
+  description="Side-by-side comparisons of Dubai, Abu Dhabi, and other Gulf markets for property investors."
+>
+  <section class="site-container py-12 md:py-16">
+    <header class="max-w-2xl mb-10">
+      <h1>Market comparisons</h1>
+      <p class="text-lg text-[var(--color-slate-600)] mt-3">
+        When two markets look similar on a brochure, these breakdowns show fees, yields, and buyer fit.
+      </p>
+    </header>
+    <div class="grid md:grid-cols-2 gap-5">
+      {comparisons.map((item) => (
+        <article class="rounded-2xl bg-white border border-[#e2ddd3] p-6">
+          <h2 class="text-xl mb-2">
+            <a href={`/compare/${item.id}/`} class="no-underline">{item.data.title}</a>
+          </h2>
+          <p class="text-sm text-[var(--color-slate-600)]">{item.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

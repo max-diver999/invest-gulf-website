@@ -1,0 +1,31 @@
+---
+import { SITE } from '../data/site';
+const year = new Date().getFullYear();
+---
+<footer class="mt-16 border-t border-[#e2ddd3] bg-[var(--color-navy-900)] text-[#c8d0dc]">
+  <div class="site-container py-12 grid gap-8 md:grid-cols-3 text-sm">
+    <div>
+      <p class="font-serif text-lg text-white mb-2">{SITE.name}</p>
+      <p class="leading-relaxed">{SITE.tagline}</p>
+    </div>
+    <div>
+      <p class="font-semibold text-white mb-3">Explore</p>
+      <ul class="space-y-2">
+        <li><a href="/guides/" class="text-[#c8d0dc] hover:text-white">Guides</a></li>
+        <li><a href="/compare/" class="text-[#c8d0dc] hover:text-white">Market comparisons</a></li>
+        <li><a href="/methodology/" class="text-[#c8d0dc] hover:text-white">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold text-white mb-3">Legal</p>
+      <ul class="space-y-2">
+        <li><a href="/privacy-policy/" class="text-[#c8d0dc] hover:text-white">Privacy</a></li>
+        <li><a href="/terms/" class="text-[#c8d0dc] hover:text-white">Terms</a></li>
+        <li><a href={`mailto:${SITE.email}`} class="text-[#c8d0dc] hover:text-white">{SITE.email}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-container py-4 border-t border-white/10 text-xs text-[#9aa8b8]">
+    © {year} {SITE.name}. Independent research — not financial or legal advice. Verify all figures with licensed professionals.
+  </div>
+</footer>
