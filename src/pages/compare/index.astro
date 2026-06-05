@@ -13,18 +13,18 @@ const comparisons = (await getCollection('compare'))
 >
   <section class="site-container py-12 md:py-16">
     <header class="max-w-2xl mb-10">
-      <h1>Market comparisons</h1>
-      <p class="text-lg text-[var(--color-slate-600)] mt-3">
+      <h1 class="text-3xl">Market comparisons</h1>
+      <p class="text-lg text-[var(--color-muted)] mt-3">
         When two markets look similar on a brochure, these breakdowns show fees, yields, and buyer fit.
       </p>
     </header>
-    <div class="grid md:grid-cols-2 gap-5">
+    <div class="grid md:grid-cols-2 gap-4">
       {comparisons.map((item) => (
-        <article class="rounded-2xl bg-white border border-[#e2ddd3] p-6">
-          <h2 class="text-xl mb-2">
-            <a href={`/compare/${item.id}/`} class="no-underline">{item.data.title}</a>
+        <article class="surface-card p-6">
+          <h2 class="text-lg mb-2 font-semibold">
+            <a href={`/compare/${item.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{item.data.title}</a>
           </h2>
-          <p class="text-sm text-[var(--color-slate-600)]">{item.data.description}</p>
+          <p class="text-sm text-[var(--color-muted)]">{item.data.description}</p>
         </article>
       ))}
     </div>

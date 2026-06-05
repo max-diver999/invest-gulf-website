@@ -12,7 +12,7 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
   <section class="site-container py-20 max-w-xl text-center">
     <p class="text-4xl mb-4">✓</p>
     <h1 class="mb-4">{isLead ? 'Request received' : 'Thank you'}</h1>
-    <p class="text-[var(--color-slate-600)] mb-8">
+    <p class="text-[var(--color-muted)] mb-8">
       {isLead
         ? 'We received your shortlist request. Expect a reply by email or WhatsApp within one business day.'
         : `Thanks for visiting ${SITE.name}.`}

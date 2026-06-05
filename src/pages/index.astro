@@ -20,39 +20,42 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
   title="Invest Gulf — Independent UAE & Gulf Property Research"
   description={SITE.description}
 >
-  <section class="relative overflow-hidden border-b border-[#e2ddd3] bg-gradient-to-b from-white to-[var(--color-sand-50)]">
-    <div class="site-container py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+  <section class="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+    <div class="site-container py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-[var(--color-gold-500)] mb-4">Independent · Not a developer</p>
-        <h1 class="text-4xl md:text-5xl mb-5 leading-tight">
-          Research-first guides to <span class="text-[var(--color-gold-500)]">Dubai & Gulf</span> property
+        <span class="badge-pill mb-4">Independent research</span>
+        <h1 class="text-3xl md:text-[2.35rem] mb-5 leading-tight">
+          Understand Gulf property before you buy
         </h1>
-        <p class="text-lg text-[var(--color-slate-600)] mb-8 max-w-xl">
-          Fees, yields, Golden Visa thresholds, and off-plan risks — explained without sales pressure.
-          When you're ready, request a shortlist matched to your budget.
+        <p class="text-base md:text-lg text-[var(--color-muted)] mb-8 max-w-xl">
+          Dubai, Abu Dhabi, RAK — fees, yields, visa rules. Request a shortlist when you're ready.
         </p>
         <div class="flex flex-wrap gap-3">
           <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
-          <a href="/get-shortlist/" class="inline-flex items-center px-6 py-3 rounded-lg border border-[#d8d0c4] font-semibold text-[var(--color-navy-900)] bg-white hover:bg-[var(--color-sand-100)]">
-            Free shortlist →
-          </a>
+          <a href="/get-shortlist/" class="btn-secondary px-6 py-3">Free shortlist →</a>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="rounded-2xl bg-white border border-[#e2ddd3] p-5 shadow-sm">
-          <p class="text-3xl font-serif text-[var(--color-navy-900)]">3</p>
-          <p class="text-sm text-[var(--color-slate-600)] mt-1">Markets covered: Dubai, Abu Dhabi, RAK</p>
+      <div class="flex flex-col gap-3">
+        <div class="surface-card p-4 flex gap-4 items-center">
+          <div class="card-icon">3</div>
+          <div>
+            <p class="font-semibold text-[var(--color-ink)] text-sm">Markets covered</p>
+            <p class="text-sm text-[var(--color-muted)]">Dubai · Abu Dhabi · RAK</p>
+          </div>
         </div>
-        <div class="rounded-2xl bg-[var(--color-navy-900)] text-white p-5">
-          <p class="text-3xl font-serif text-[var(--color-gold-400)]">0%</p>
-          <p class="text-sm text-[#c8d0dc] mt-1">Income tax on rental for most individual investors</p>
+        <div class="surface-card p-4 flex gap-4 items-center">
+          <div class="card-icon">0%</div>
+          <div>
+            <p class="font-semibold text-[var(--color-ink)] text-sm">No income tax</p>
+            <p class="text-sm text-[var(--color-muted)]">On rental for most individual investors</p>
+          </div>
         </div>
-        <div class="rounded-2xl bg-white border border-[#e2ddd3] p-5 shadow-sm col-span-2">
-          <p class="font-semibold text-[var(--color-navy-900)] mb-1">How we work</p>
-          <p class="text-sm text-[var(--color-slate-600)]">
-            Editorial research first. Enquiries referred to RERA-licensed partners — never developers pushing inventory.
-          </p>
-          <a href="/methodology/" class="text-sm font-medium mt-2 inline-block">Read methodology →</a>
+        <div class="surface-card p-4 flex gap-4 items-center">
+          <div class="card-icon">✓</div>
+          <div>
+            <p class="font-semibold text-[var(--color-ink)] text-sm">Licensed partners</p>
+            <p class="text-sm text-[var(--color-muted)]">RERA-regulated referrals only · <a href="/methodology/" class="link-arrow">Methodology</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -61,38 +64,38 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
   <section class="site-container py-14">
     <div class="flex items-end justify-between gap-4 mb-8">
       <div>
-        <h2 class="text-3xl mb-2">Start here</h2>
-        <p class="text-[var(--color-slate-600)]">High-intent guides for foreign buyers and yield-focused investors.</p>
+        <h2 class="text-2xl mb-2">Start here</h2>
+        <p class="text-[var(--color-muted)]">High-intent guides for foreign buyers and yield-focused investors.</p>
       </div>
-      <a href="/guides/" class="text-sm font-semibold shrink-0 hidden sm:inline">All guides →</a>
+      <a href="/guides/" class="link-arrow shrink-0 hidden sm:inline">All guides →</a>
     </div>
-    <div class="grid md:grid-cols-2 gap-5">
+    <div class="grid md:grid-cols-2 gap-4">
       {(featured.length ? featured : guides).map((guide) => (
-        <a href={`/guides/${guide.id}/`} class="block rounded-2xl bg-white border border-[#e2ddd3] p-6 hover:border-[var(--color-gold-400)] transition-colors no-underline">
-          <p class="text-xs font-semibold uppercase tracking-wider text-[var(--color-gold-500)] mb-2">Guide</p>
-          <h3 class="text-xl mb-2 text-[var(--color-navy-900)]">{guide.data.title}</h3>
-          <p class="text-sm text-[var(--color-slate-600)]">{guide.data.description}</p>
+        <a href={`/guides/${guide.id}/`} class="surface-card p-6 hover:border-[var(--color-teal)] transition-colors no-underline block">
+          <span class="badge-pill mb-3">Guide</span>
+          <h3 class="text-lg mb-2 text-[var(--color-ink)] font-semibold">{guide.data.title}</h3>
+          <p class="text-sm text-[var(--color-muted)]">{guide.data.description}</p>
         </a>
       ))}
     </div>
   </section>
 
   <section class="site-container pb-16">
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-      <div class="rounded-xl bg-white border border-[#e2ddd3] p-6">
-        <h3 class="text-lg mb-2">Compare markets</h3>
-        <p class="text-sm text-[var(--color-slate-600)] mb-3">Dubai vs Abu Dhabi yields, fees, and buyer profiles side by side.</p>
-        <a href="/compare/abu-dhabi-vs-dubai-investment/" class="text-sm font-semibold">Abu Dhabi vs Dubai →</a>
+    <div class="grid md:grid-cols-3 gap-4 mb-12">
+      <div class="surface-card p-6">
+        <h3 class="text-base font-semibold mb-2">Compare markets</h3>
+        <p class="text-sm text-[var(--color-muted)] mb-3">Dubai vs Abu Dhabi yields, fees, and buyer profiles side by side.</p>
+        <a href="/compare/abu-dhabi-vs-dubai-investment/" class="link-arrow">Abu Dhabi vs Dubai →</a>
       </div>
-      <div class="rounded-xl bg-white border border-[#e2ddd3] p-6">
-        <h3 class="text-lg mb-2">Golden Visa</h3>
-        <p class="text-sm text-[var(--color-slate-600)] mb-3">Property thresholds, timelines, and what actually qualifies in 2026.</p>
-        <a href="/guides/uae-golden-visa-property-2026/" class="text-sm font-semibold">Visa guide →</a>
+      <div class="surface-card p-6">
+        <h3 class="text-base font-semibold mb-2">Golden Visa</h3>
+        <p class="text-sm text-[var(--color-muted)] mb-3">Property thresholds, timelines, and what actually qualifies in 2026.</p>
+        <a href="/guides/uae-golden-visa-property-2026/" class="link-arrow">Visa guide →</a>
       </div>
-      <div class="rounded-xl bg-white border border-[#e2ddd3] p-6">
-        <h3 class="text-lg mb-2">Foreign ownership</h3>
-        <p class="text-sm text-[var(--color-slate-600)] mb-3">Freehold zones, escrow rules, and due diligence checklist.</p>
-        <a href="/guides/can-foreigners-buy-property-uae/" class="text-sm font-semibold">Ownership rules →</a>
+      <div class="surface-card p-6">
+        <h3 class="text-base font-semibold mb-2">Foreign ownership</h3>
+        <p class="text-sm text-[var(--color-muted)] mb-3">Freehold zones, escrow rules, and due diligence checklist.</p>
+        <a href="/guides/can-foreigners-buy-property-uae/" class="link-arrow">Ownership rules →</a>
       </div>
     </div>
     <LeadForm context="Homepage" />
