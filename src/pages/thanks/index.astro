@@ -19,4 +19,13 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
     </p>
     <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
   </section>
+  {isLead && (
+    <script is:inline>
+      if (typeof window.investGulfTrack === 'function') {
+        window.investGulfTrack('generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
+      } else if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
+      }
+    </script>
+  )}
 </BaseLayout>
