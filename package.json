@@ -12,6 +12,7 @@
     "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only"
   },
   "dependencies": {
+    "google-auth-library": "^10.6.2",
     "@astrojs/mdx": "5.0.2",
     "@astrojs/sitemap": "3.7.1",
     "@astrojs/vercel": "10.0.2",

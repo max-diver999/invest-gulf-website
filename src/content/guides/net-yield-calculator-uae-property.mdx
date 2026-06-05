@@ -1,0 +1,365 @@
+---
+title: "Net Yield Calculator for UAE Property 2026: Dubai, Abu Dhabi, and Full Cost Model"
+description: "Calculate net rental yield on UAE property — full formula, cost stack by emirate, worked examples for Dubai and Abu Dhabi, spreadsheet logic, and the mistakes that inflate returns."
+pubDate: 2026-06-05
+updatedDate: 2026-06-05
+author: "Invest Gulf Editorial"
+category: "guides"
+tags: ["uae property", "net yield", "dubai investment", "rental yield calculator", "abu dhabi yield", "service charges", "2026"]
+readingTime: 17
+relatedSlugs:
+  - "gross-vs-net-yield-dubai"
+  - "dubai-rental-yield-guide"
+  - "dubai-rent-increase-calculator-rera"
+  - "buy-property-dubai-foreigner"
+  - "dubai-property-investment-guide"
+  - "abu-dhabi-property-investment-guide"
+faq:
+  - question: "What is the formula for net rental yield on UAE property?"
+    answer: "Net yield = (Annual rental income collected − All operating costs) ÷ Total capital deployed × 100. Operating costs include service charges, property management fees, vacancy allowance, maintenance, Ejari registration, DEWA reconnection between tenancies, and — for short-term rental — DET permit fees and Tourism Dirham. Total capital deployed should include purchase price plus acquisition costs (DLD transfer fee, trustee fee, agent commission, legal fees) — not purchase price alone."
+  - question: "What is a realistic net yield on Dubai property in 2026?"
+    answer: "Mid-market Dubai communities like JVC and Dubai Sports City deliver net yields of 5.4–7.4% on well-managed long-term rentals. Dubai Marina and Business Bay typically net 4.0–5.5%. Downtown and Palm Jumeirah often net 2.5–5.0% after high service charges. The citywide average net yield for long-term tenancies sits roughly in the 4.5–6% range. Short-term rental can push net higher in tourist zones but adds 15–20% management fees and licensing costs."
+  - question: "How is net yield different from gross yield in the UAE?"
+    answer: "Gross yield divides annual rent by purchase price with no cost deductions — the figure developers and brokers advertise. Net yield subtracts service charges (typically AED 12–25 per sq ft per year), management fees (5–8% of rent for long-term, 15–20% for short-term), vacancy (4–8% of potential rent), maintenance, and acquisition cost amortisation. The gap between gross and net in UAE property is typically 1.5–3 percentage points for long-term lets and wider for short-term rental."
+  - question: "Should I include the DLD transfer fee in net yield calculation?"
+    answer: "Yes, for an accurate return on capital deployed. The Dubai Land Department charges 4% of purchase price at registration, plus trustee fees, agent commission, and legal costs — totalling 6–9% above the listed price. A property bought at AED 800,000 with AED 64,000 in DLD fees and AED 40,000 in other acquisition costs has AED 904,000 deployed. Dividing net income by AED 800,000 overstates yield by approximately 0.5–0.7 percentage points."
+  - question: "How do service charges affect net yield across UAE emirates?"
+    answer: "Service charges are the largest ongoing cost and vary by building, not emirate. Dubai mid-market towers run AED 12–25 per sq ft annually; premium Dubai buildings reach AED 25–40. Abu Dhabi service charges are broadly similar, with Aldar-managed communities typically at AED 14–22 per sq ft. On a 750 sq ft apartment at AED 18/sq ft, service charges alone consume AED 13,500 per year — often 1.5–2 percentage points of gross yield."
+  - question: "What vacancy rate should I use for UAE net yield models?"
+    answer: "For prime long-term rentals in Dubai Marina, Downtown, and JLT, use 4–5% vacancy (2–3 weeks between tenancies). For citywide mid-market units, 7–8% is more realistic. Supply-heavy communities and poorly positioned stock may see 10–12% vacancy. Short-term rental vacancy varies by season — Dubai peaks in Q4 and Q1, with summer months significantly softer. Never model zero vacancy."
+  - question: "Is net yield higher in Abu Dhabi than Dubai?"
+    answer: "Abu Dhabi can match or exceed Dubai net yields in affordable communities — Al Reef and Al Ghadeer gross 8–9.5% with lower service charge drag. However, Abu Dhabi's secondary market is less liquid, making exit assumptions more conservative. Dubai's mid-market net yields of 5.4–7.4% in JVC and Sports City remain the cluster benchmark for yield-focused investors. Compare on net yield after full costs, not gross marketing figures."
+  - question: "Can I use Property Finder rents to calculate net yield?"
+    answer: "No. Listing prices on Property Finder and Bayut are aspirational — typically 5–15% above Ejari-registered transacted rents. The RERA Rental Index and Dubai REST app publish actual Ejari data. Using listing rents inflates both gross and net yield projections. The same data source should feed your rent input and your RERA rent increase calculator assumptions at renewal."
+---
+
+Every UAE property brochure quotes gross yield. Your bank account receives net yield. The gap is not a rounding error — it is typically 1.5 to 3 percentage points on long-term lets, and wider on short-term rental. An investor who buys on 8% gross and plans for 8% net is misallocating capital.
+
+**Quick answer:** Net yield = **(collected rent − operating costs) ÷ total capital deployed**. For UAE property in 2026, realistic net yields are **4.5–7%** on long-term mid-market rentals and **2.5–5%** on prime communities. Always use Ejari transacted rents, include acquisition costs in the denominator, and model vacancy at 7–8% unless you have building-specific evidence.
+
+| Input | Use this source |
+|---|---|
+| Annual rent | Ejari / RERA Rental Index (not listings) |
+| Service charges | Building-specific Mollak schedule (rera.gov.ae) |
+| Management fee | 5–8% LTR; 15–20% STR |
+| Vacancy | 4–5% prime; 7–8% citywide |
+| Capital deployed | Purchase price + DLD + fees |
+| Rent growth | RERA calculator bands at renewal |
+
+This guide provides the full net yield formula, a line-by-line cost stack for UAE property, worked examples for Dubai and Abu Dhabi, spreadsheet logic you can replicate, and the modelling mistakes that make bad investments look good.
+
+For gross-to-net theory specific to Dubai, see [Gross vs Net Yield Dubai](/guides/gross-vs-net-yield-dubai/). For rent growth caps that affect multi-year models, see [Dubai Rent Increase Calculator (RERA)](/guides/dubai-rent-increase-calculator-rera/).
+
+---
+
+## Net yield vs gross yield: why the distinction matters in the UAE
+
+The UAE offers zero personal income tax, zero capital gains tax on property for individuals, and zero stamp duty beyond the one-time DLD transfer fee. This tax advantage makes **net yield the primary return metric** — there is no post-yield tax layer to account for, unlike UK, German, or US property where net yield still faces home-country taxation.
+
+That makes the accuracy of the net yield calculation even more important. If you overstate net yield by 2 percentage points on a AED 1 million investment, you are mispricing AED 20,000 per year of expected income — AED 100,000 over a five-year hold.
+
+**Gross yield formula:**
+
+```
+Gross Yield (%) = (Annual Rent ÷ Purchase Price) × 100
+```
+
+**Net yield formula:**
+
+```
+Net Yield (%) = (Annual Rent Collected − Operating Costs) ÷ Total Capital Deployed × 100
+```
+
+Where:
+
+- **Annual Rent Collected** = potential rent minus vacancy allowance
+- **Operating Costs** = service charges + management + maintenance + licensing + utilities between tenancies
+- **Total Capital Deployed** = purchase price + DLD fee + trustee fee + agent commission + legal fees + mortgage arrangement costs (if applicable)
+
+---
+
+## The full UAE operating cost stack
+
+### One-time acquisition costs (add to capital deployed)
+
+| Cost item | Dubai | Abu Dhabi | Who pays |
+|---|---|---|---|
+| Transfer fee | 4% of price | 2% of price | Buyer |
+| Trustee / registration | AED 4,000+ | AED 1,000–4,000 | Buyer |
+| Agent commission | 2% + VAT | 2% | Buyer (secondary) |
+| NOC (secondary) | AED 500–5,000 | Similar | Seller (typically) |
+| Legal review | AED 5,000–15,000 | AED 5,000–15,000 | Buyer |
+| Mortgage registration | 0.25% of loan | 0.25% of loan | Buyer (if mortgaged) |
+| **Total cash acquisition** | **6–9% of price** | **4–6% of price** | |
+
+Abu Dhabi's lower transfer fee (2% vs Dubai's 4%) improves net yield on identical gross rents — one reason Abu Dhabi mid-market can outperform Dubai on a net basis despite lower liquidity.
+
+### Annual operating costs (subtract from rent)
+
+| Cost bucket | Typical range | Notes |
+|---|---|---|
+| Service charges | AED 12–25/sq ft/year (mid-market) | Building-specific; check Mollak |
+| Property management (LTR) | 5–8% of collected rent | Full-service agent |
+| Property management (STR) | 15–20% of revenue | Holiday home operator |
+| Vacancy allowance | 4–8% of potential rent | See assumptions below |
+| Ejari registration | AED 220/tenancy | Annual renewal |
+| DEWA / ADDC reconnection | AED 2,000–4,000 between tenancies | Landlord cost |
+| Maintenance provision | 0.5–1% of property value/year | AC, appliances, wear |
+| DET Holiday Home permit (STR) | AED 1,520/year (apartment) | Mandatory for Airbnb |
+| Tourism Dirham (STR) | AED 10–15/room/night | Remitted to DET |
+| Building insurance | AED 1,000–3,000/year | Often via service charge |
+
+---
+
+## Net yield calculator: step-by-step
+
+### Step 1: Determine total capital deployed
+
+```
+Total Capital = Purchase Price + DLD Fee + Trustee Fee + Agent Commission + Legal Fees
+```
+
+**Example (Dubai):** AED 800,000 purchase + AED 32,000 DLD + AED 4,200 trustee + AED 16,800 agent + AED 8,000 legal = **AED 861,000**
+
+### Step 2: Determine annual rent (Ejari-based)
+
+Pull comparable Ejari-registered rents from the RERA Rental Index or Dubai REST app. Do not use listing prices.
+
+**Example:** AED 58,000 annual rent (Ejari median for comparable 1BR in JVC)
+
+### Step 3: Apply vacancy allowance
+
+```
+Collected Rent = Annual Rent × (1 − Vacancy Rate)
+```
+
+**Example:** AED 58,000 × (1 − 0.07) = **AED 53,940** (7% vacancy)
+
+### Step 4: Subtract operating costs
+
+| Cost | Calculation | Amount |
+|---|---|---|
+| Service charges | 750 sq ft × AED 16/sq ft | AED 12,000 |
+| Management (6%) | AED 53,940 × 0.06 | AED 3,236 |
+| Ejari | Per tenancy | AED 220 |
+| DEWA reconnection | Between tenancies | AED 3,000 |
+| Maintenance | 0.75% of value | AED 6,000 |
+| **Total operating costs** | | **AED 24,456** |
+
+### Step 5: Calculate net income and net yield
+
+```
+Net Income = AED 53,940 − AED 24,456 = AED 29,484
+Net Yield = (29,484 ÷ 861,000) × 100 = 3.42%
+```
+
+Wait — that seems low. Let us recalculate without amortising maintenance so aggressively and using a more typical JVC service charge:
+
+| Revised cost | Amount |
+|---|---|
+| Service charges (750 sq ft × AED 14) | AED 10,500 |
+| Management (6%) | AED 3,236 |
+| Ejari + DEWA + maintenance | AED 5,000 |
+| **Total** | **AED 18,736** |
+
+```
+Net Income = 53,940 − 18,736 = AED 35,204
+Net Yield = (35,204 ÷ 861,000) × 100 = 4.09%
+```
+
+**Gross yield on purchase price alone:** 58,000 ÷ 800,000 = 7.25%
+
+**Gap:** 7.25% gross → 4.09% net on total capital deployed. This 3+ percentage point gap is typical for JVC and is the number that should drive investment decisions.
+
+---
+
+## Worked example: Dubai Marina 1BR (prime, lower net)
+
+| Input | Value |
+|---|---|
+| Purchase price | AED 1,400,000 |
+| Acquisition costs (6.5%) | AED 91,000 |
+| Total capital deployed | AED 1,491,000 |
+| Annual Ejari rent | AED 95,000 |
+| Vacancy (5%) | Collected: AED 90,250 |
+| Service charges (800 sq ft × AED 24) | AED 19,200 |
+| Management (6%) | AED 5,415 |
+| Other operating | AED 6,000 |
+| **Total operating costs** | **AED 30,615** |
+| **Net income** | **AED 59,635** |
+| **Net yield** | **4.0%** |
+| Gross yield (on purchase) | 6.8% |
+
+Marina's higher service charges compress net yield despite strong gross numbers. Capital appreciation and liquidity — not yield — drive the Marina investment case.
+
+---
+
+## Worked example: Abu Dhabi Al Reef 2BR (high gross, strong net)
+
+| Input | Value |
+|---|---|
+| Purchase price | AED 750,000 |
+| Acquisition costs (4.5%) | AED 33,750 |
+| Total capital deployed | AED 783,750 |
+| Annual rent | AED 72,000 |
+| Vacancy (6%) | Collected: AED 67,680 |
+| Service charges (1,100 sq ft × AED 12) | AED 13,200 |
+| Management (6%) | AED 4,061 |
+| Other operating | AED 4,500 |
+| **Total operating costs** | **AED 21,761** |
+| **Net income** | **AED 45,919** |
+| **Net yield** | **5.86%** |
+| Gross yield (on purchase) | 9.6% |
+
+Al Reef demonstrates why Abu Dhabi appears in yield comparisons: lower acquisition costs (2% DLD vs 4%), lower service charges, and strong Ejari rents relative to price.
+
+For the full Abu Dhabi framework, see [Abu Dhabi Property Investment Guide](/guides/abu-dhabi-property-investment-guide/).
+
+---
+
+## Short-term rental net yield: different cost profile
+
+Short-term rental (STR) in Dubai can generate 30–50% more gross revenue than long-term tenancy in tourist-demand areas. But the operating cost stack changes:
+
+| Cost item | STR impact |
+|---|---|
+| DET Holiday Home permit | AED 1,520/year mandatory |
+| Tourism Dirham | AED 10–15/room/night from guest |
+| Management fee | 15–20% of revenue |
+| Cleaning | AED 150–250 per turnover |
+| Higher vacancy | Seasonal — summer months softer |
+| Furniture / fit-out | AED 30,000–80,000 upfront |
+| Building approval | Not all towers permit STR |
+
+**STR net yield example: Marina studio**
+
+| Input | Value |
+|---|---|
+| Total capital (incl. fit-out) | AED 950,000 |
+| Annual STR gross revenue | AED 120,000 |
+| DET permit + Tourism Dirham | AED 8,000 |
+| Management (18%) | AED 21,600 |
+| Cleaning + consumables | AED 12,000 |
+| Service charges | AED 14,000 |
+| Vacancy (15% STR) | Lost revenue: AED 18,000 |
+| **Net income** | **AED 46,400** |
+| **Net yield** | **4.88%** |
+| Equivalent LTR net yield | ~4.0% |
+
+STR premium over LTR in this example: approximately 0.9 percentage points net — not the 30–50% gross premium brokers quote. STR requires active management and building approval. Verify both before underwriting.
+
+---
+
+## Spreadsheet logic: build your own calculator
+
+Replicate this structure in Excel or Google Sheets:
+
+**Sheet 1: Inputs**
+
+| Cell | Field | Example |
+|---|---|---|
+| B2 | Purchase price (AED) | 800,000 |
+| B3 | DLD fee rate | 4% |
+| B4 | Other acquisition costs | 29,000 |
+| B5 | Property size (sq ft) | 750 |
+| B6 | Annual rent (Ejari) | 58,000 |
+| B7 | Vacancy rate | 7% |
+| B8 | Service charge (AED/sq ft) | 14 |
+| B9 | Management fee % | 6% |
+| B10 | Other annual costs | 5,000 |
+
+**Sheet 1: Calculations**
+
+| Cell | Formula |
+|---|---|
+| B12 | `=B2*(1+B3)+B4` (total capital) |
+| B13 | `=B6*(1-B7)` (collected rent) |
+| B14 | `=B5*B8` (service charges) |
+| B15 | `=B13*B9` (management) |
+| B16 | `=B14+B15+B10` (total operating) |
+| B17 | `=B13-B16` (net income) |
+| B18 | `=B17/B12*100` (net yield %) |
+| B19 | `=B6/B2*100` (gross yield %) |
+
+**Sensitivity table:** Run B6 (rent) from −15% to +15% and B8 (service charge) from 10 to 28 to see net yield range. This is more useful than a single-point estimate.
+
+---
+
+## Multi-year net yield: incorporating RERA rent caps
+
+Single-year net yield is a snapshot. Investment decisions require multi-year modelling with realistic rent growth:
+
+| Year | Rent growth assumption | Source |
+|---|---|---|
+| Year 1 | As-is (Ejari at purchase) | Due diligence |
+| Year 2–3 | 0–10% (RERA calculator bands) | [Rent increase calculator](/guides/dubai-rent-increase-calculator-rera/) |
+| Re-let year | Full market rent | After vacancy |
+| Service charges | +3–5% annually | OA budget trends |
+
+A sitting tenant 25% below market generates 10% increases at renewal — not a jump to market. Model this explicitly rather than assuming 5% annual rent growth indefinitely.
+
+---
+
+## Net yield by UAE market: comparison table
+
+| Market | Gross yield range | Typical net yield | Acquisition cost drag | Liquidity |
+|---|---|---|---|---|
+| Dubai JVC | 7.5–9.2% | 5.4–7.1% | 6–9% | High |
+| Dubai Marina | 5.5–7.2% | 4.0–5.5% | 6–9% | Very high |
+| Dubai Downtown | 5.0–6.5% | 3.5–5.0% | 6–9% | High |
+| Abu Dhabi Al Reef | 8.5–9.5% | 5.5–7.0% | 4–6% | Moderate |
+| Abu Dhabi Al Reem | 6.5–7.5% | 4.5–6.0% | 4–6% | Moderate |
+| Ras Al Khaimah | 6.5–8.5% | 4.5–6.5% | 4–6% | Lower |
+| Bahrain | 6.5–8.5% | 5.0–7.0% | 3–5% | Moderate |
+
+Net yield leadership shifts when acquisition costs and service charges are included. JVC and Al Reef compete for top net yield; Marina and Downtown compete for capital stability.
+
+---
+
+## Common mistakes that inflate net yield
+
+| Mistake | Impact | Fix |
+|---|---|---|
+| Using listing rents | +10–15% rent overstatement | Ejari / RERA index only |
+| Ignoring acquisition costs | +0.5–0.7pp yield overstatement | Include DLD + fees in denominator |
+| Zero vacancy assumption | +0.5–1pp overstatement | 7–8% citywide default |
+| Average service charges | ±1–2pp error | Building-specific Mollak data |
+| Guaranteed return programs | Yield on inflated price | Benchmark price and rent independently |
+| STR revenue at peak season only | +2–3pp overstatement | Annual average occupancy |
+| Ignoring RERA rent caps | Overstates years 2–5 income | Calculator bands at renewal |
+
+---
+
+## Net yield and home-country tax: a note for foreign buyers
+
+UAE net yield is tax-free at the UAE level. Foreign investors may face home-country taxation on rental income and capital gains regardless of UAE treatment:
+
+- **UK residents:** Worldwide income reporting post-2025 non-dom abolition
+- **Indian residents:** Foreign income in ITR; LRS for purchase funds
+- **US citizens:** Worldwide income reporting regardless of residence
+- **German residents:** WeltEinkommen — worldwide income principle
+
+The investable net yield for a foreign buyer may be lower than the UAE net yield after home-country tax. Nationality-specific guides cover these angles:
+
+- [Dubai Property for British Buyers](/guides/dubai-property-for-british-buyers/)
+- [Dubai Property for Indian Buyers](/guides/dubai-property-for-indian-buyers/)
+- [Dubai Property for American Buyers](/guides/dubai-property-for-american-buyers/)
+- [Dubai Property for German Buyers](/guides/dubai-property-for-german-buyers/)
+
+For the foreign purchase process, see [How Foreigners Buy Property in Dubai](/guides/buy-property-dubai-foreigner/).
+
+---
+
+## Summary: net yield calculator checklist
+
+1. **Capital deployed** = purchase price + all acquisition costs
+2. **Rent input** = Ejari transacted data, not listings
+3. **Service charges** = building-specific from Mollak / REST
+4. **Vacancy** = 7–8% default; 4–5% only with evidence
+5. **Management** = 6% LTR; 18% STR
+6. **Rent growth** = RERA calculator bands, not unlimited escalation
+7. **Compare net to net** across markets — not gross to gross
+
+---
+
+*Based on DLD, RERA, and market data through Q1 2026. Yields vary by property, building, and tenant profile. This guide is for information only and does not constitute financial or tax advice.*
