@@ -3,13 +3,14 @@
 @theme {
   --color-page: #f7f8f6;
   --color-surface: #ffffff;
-  --color-surface-muted: #f5f5f4;
-  --color-ink: #1c1917;
-  --color-muted: #57534e;
-  --color-teal: #0f766e;
-  --color-teal-dark: #0d635d;
-  --color-teal-light: #ccfbf1;
-  --color-border: #e7e5e4;
+  --color-surface-muted: #f4f5f3;
+  --color-ink: #1f2421;
+  --color-muted: #5d645f;
+  --color-teal: #2c6b62;
+  --color-teal-dark: #235851;
+  --color-teal-light: #e6f0ed;
+  --color-border: #e6e6e3;
+  --color-border-soft: #eeeeec;
   --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 
@@ -44,11 +45,13 @@ a:hover { color: var(--color-teal-dark); }
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 1px 2px rgba(31, 36, 33, 0.08);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 .btn-primary:hover {
   background: var(--color-teal-dark);
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(44, 107, 98, 0.18);
   color: #fff !important;
 }
 
@@ -150,7 +153,27 @@ input:focus, select:focus, textarea:focus {
 .surface-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(31, 36, 33, 0.03);
+}
+.surface-card.is-link {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.surface-card.is-link:hover {
+  border-color: var(--color-teal);
+  box-shadow: 0 8px 24px rgba(31, 36, 33, 0.07);
+  transform: translateY(-2px);
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .section { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+}
+.section + .section {
+  border-top: 1px solid var(--color-border-soft);
 }
 
 .link-arrow {

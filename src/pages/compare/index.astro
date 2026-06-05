@@ -11,16 +11,16 @@ const comparisons = (await getCollection('compare'))
   title="Gulf Property Market Comparisons"
   description="Side-by-side comparisons of Dubai, Abu Dhabi, and other Gulf markets for property investors."
 >
-  <section class="site-container py-12 md:py-16">
-    <header class="max-w-2xl mb-10">
+  <section class="site-container py-14 md:py-20">
+    <header class="max-w-2xl mb-12">
       <h1 class="text-3xl">Market comparisons</h1>
       <p class="text-lg text-[var(--color-muted)] mt-3">
         When two markets look similar on a brochure, these breakdowns show fees, yields, and buyer fit.
       </p>
     </header>
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 gap-6">
       {comparisons.map((item) => (
-        <article class="surface-card p-6">
+        <article class="surface-card p-7">
           <h2 class="text-lg mb-2 font-semibold">
             <a href={`/compare/${item.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{item.data.title}</a>
           </h2>
