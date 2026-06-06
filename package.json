@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only"
+    "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only",
+    "validate:content": "node scripts/qa-audit.mjs",
+    "validate:content:changed": "node scripts/qa-audit.mjs --changed"
   },
   "dependencies": {
     "google-auth-library": "^10.6.2",
