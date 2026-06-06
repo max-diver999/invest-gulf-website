@@ -1,40 +1,55 @@
 #!/usr/bin/env node
 /**
- * Pre-push gate: validate changed MDX + optional build when content changed.
+ * Pre-push gate: validate MDX in commits being pushed + build.
  * Usage: npm run prepush:gate
- * Install hook: npm run setup:hooks  (once per clone)
+ * Install: npm run setup:hooks
  */
 import { execSync, spawnSync } from 'node:child_process';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
 
-const repoRoot = dirname(fileURLToPath(new URL('..', import.meta.url)));
+const repoRoot = process.cwd();
 
 function run(cmd, args = []) {
   const r = spawnSync(cmd, args, { cwd: repoRoot, stdio: 'inherit', shell: false });
   if (r.status !== 0) process.exit(r.status ?? 1);
 }
 
-function hasChangedMdx() {
+function gitOut(args) {
   try {
-    const staged = execSync('git diff --cached --name-only', { cwd: repoRoot, encoding: 'utf8' });
-    const unstaged = execSync('git diff --name-only', { cwd: repoRoot, encoding: 'utf8' });
-    const all = `${staged}\n${unstaged}`;
-    return /src\/content\/.*\.mdx/.test(all);
+    return execSync(['git', ...args].join(' '), { cwd: repoRoot, encoding: 'utf8' }).trim();
   } catch {
-    return true;
+    return '';
   }
+}
+
+function mdxBeingPushed() {
+  const upstream = gitOut(['rev-parse', '--abbrev-ref', '--symbolic-full-name', '@{u}']);
+  const range = upstream ? `${upstream}..HEAD` : 'HEAD';
+  const files = gitOut(['diff', '--name-only', range]);
+  return files.split('\n').filter((f) => /^src\/content\/.*\.mdx$/.test(f));
 }
 
 console.log('=== invest-gulf pre-push gate ===');
 
-if (hasChangedMdx()) {
-  console.log('MDX changes detected → validate:content --changed');
-  run('node', [join(repoRoot, 'scripts/qa-audit.mjs'), '--changed']);
+const mdxFiles = mdxBeingPushed();
+if (mdxFiles.length) {
+  console.log(`MDX in push (${mdxFiles.length} files) → validate:content --changed`);
+  // Staged/unstaged diff for --changed; if clean tree, validate listed files directly
+  const changed = gitOut(['diff', '--name-only', 'HEAD']);
+  const unstaged = gitOut(['diff', '--name-only']);
+  const hasLocalDiff = [...changed.split('\n'), ...unstaged.split('\n')].some((f) =>
+    /^src\/content\/.*\.mdx$/.test(f),
+  );
+  if (hasLocalDiff) {
+    run('node', ['scripts/qa-audit.mjs', '--changed']);
+  } else {
+    for (const f of mdxFiles) {
+      run('node', ['scripts/qa-audit.mjs', '--file', f]);
+    }
+  }
   console.log('→ npm run build');
   run('npm', ['run', 'build']);
 } else {
-  console.log('No MDX changes — skipping content validate/build');
+  console.log('No MDX in outgoing commits — skipping content validate/build');
 }
 
 console.log('✅ prepush gate passed');
