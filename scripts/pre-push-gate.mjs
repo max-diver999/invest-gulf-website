@@ -5,6 +5,8 @@
  * Install: npm run setup:hooks
  */
 import { execSync, spawnSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 const repoRoot = process.cwd();
 
@@ -25,7 +27,7 @@ function mdxBeingPushed() {
   const upstream = gitOut(['rev-parse', '--abbrev-ref', '--symbolic-full-name', '@{u}']);
   const range = upstream ? `${upstream}..HEAD` : 'HEAD';
   const files = gitOut(['diff', '--name-only', range]);
-  return files.split('\n').filter((f) => /^src\/content\/.*\.mdx$/.test(f));
+  return files.split('\n').filter((f) => /^src\/content\/.*\.mdx$/.test(f) && existsSync(join(repoRoot, f)));
 }
 
 console.log('=== invest-gulf pre-push gate ===');

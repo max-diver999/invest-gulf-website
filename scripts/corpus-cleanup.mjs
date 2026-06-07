@@ -29,7 +29,7 @@ const LINK_MAP = {
   'rak-schools-guide': 'gulf-schools-comparison',
   'rak-property-investment-guide': 'ras-al-khaimah-property-investment-guide',
   'rak-cost-of-living': 'rak-cost-of-living-detailed',
-  'uae-golden-visa-property': 'uae-golden-visa-property-2026',
+  'uae-golden-visa-property-2026': 'uae-golden-visa-property',
   'uae-banking-guide-expats': 'gulf-banking-comparison-expats',
   'uae-banking-for-russian-expats': 'gulf-banking-comparison-expats',
   'open-bank-account-non-resident-uae': 'gulf-banking-comparison-expats',
