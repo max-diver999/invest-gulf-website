@@ -12,7 +12,7 @@ const guides = (await getCollection('guides'))
 const featuredSlugs = [
   'dubai-property-investment-guide',
   'can-foreigners-buy-property-uae',
-  'uae-golden-visa-property-2026',
+  'uae-golden-visa-property',
 ];
 const featured = guides.filter((g) => featuredSlugs.includes(g.id));
 ---
@@ -94,7 +94,7 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
         <div class="surface-card p-7">
           <h3 class="text-base font-semibold mb-2">Golden Visa</h3>
           <p class="text-sm text-[var(--color-muted)] mb-4">Property thresholds, timelines, and what actually qualifies in 2026.</p>
-          <a href="/guides/uae-golden-visa-property-2026/" class="link-arrow">Visa guide →</a>
+          <a href="/guides/uae-golden-visa-property/" class="link-arrow">Visa guide →</a>
         </div>
         <div class="surface-card p-7">
           <h3 class="text-base font-semibold mb-2">Foreign ownership</h3>

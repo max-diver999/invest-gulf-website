@@ -2,6 +2,16 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/guides/uae-golden-visa-property-2026/",
+      "destination": "/guides/uae-golden-visa-property/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/uae-golden-visa-property-2026",
+      "destination": "/guides/uae-golden-visa-property/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.invest-gulf.com" }],
       "destination": "https://invest-gulf.com/:path*",
