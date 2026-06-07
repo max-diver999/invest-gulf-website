@@ -1,0 +1,40 @@
+---
+export const prerender = true;
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const projects = (await getCollection('projects'))
+  .filter((p) => !p.data.noindex)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout
+  title="Gulf Off-Plan & New Project Reviews"
+  description="Independent reviews of Dubai, Abu Dhabi, and Gulf off-plan projects — pricing, payment plans, developer track record, and investment case."
+>
+  <section class="site-container py-14 md:py-20">
+    <header class="max-w-2xl mb-12">
+      <h1 class="text-3xl">Project reviews</h1>
+      <p class="text-lg text-[var(--color-muted)] mt-3">
+        Due-diligence style reviews for major Gulf launches. Not sales brochures — verify pricing and handover dates before you commit.
+      </p>
+    </header>
+    <div class="grid md:grid-cols-2 gap-6">
+      {projects.map((project) => (
+        <article class="surface-card p-7">
+          <div class="flex flex-wrap gap-2 mb-3">
+            {project.data.developer && (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-teal-light)] text-[var(--color-teal)] font-medium">{project.data.developer}</span>
+            )}
+            {project.data.market && (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-page)] text-[var(--color-muted)] font-medium">{project.data.market}</span>
+            )}
+          </div>
+          <h2 class="text-lg mb-2 font-semibold">
+            <a href={`/projects/${project.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{project.data.title}</a>
+          </h2>
+          <p class="text-sm text-[var(--color-muted)]">{project.data.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

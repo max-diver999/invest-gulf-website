@@ -9,7 +9,7 @@ import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const ROOT = decodeURIComponent(new URL('../src/content/', import.meta.url).pathname);
-const COLLECTIONS = ['guides', 'compare', 'areas'];
+const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'news'];
 
 const BANNED_PHRASES = [
   'Regional diversification',
@@ -140,13 +140,17 @@ function auditFile(c, slug) {
   if (!fm.__hasFaq) prob.push('no-faq-block');
   else if (fm.__faqCount < 5) prob.push(`faq:${fm.__faqCount}<5`);
 
-  const minW = c === 'guides' ? 2000 : 1800;
+  const minW =
+    c === 'guides' ? 2000
+    : c === 'projects' ? 1200
+    : c === 'news' ? 600
+    : 1800;
   if (words < minW) prob.push(`words:${words}<${minW}`);
 
   if (!/quick answer|tl;dr|\*\*quick answer|\*\*tl;dr/i.test(body)) prob.push('no-quick-answer');
 
   const links = body.match(/\]\((\/[a-z0-9\-\/]*)\)/gi) || [];
-  const internal = links.filter((l) => /\]\(\/(guides|compare|areas)\//i.test(l));
+  const internal = links.filter((l) => /\]\(\/(guides|compare|areas|projects|news)\//i.test(l));
   if (internal.length < 5) prob.push(`intLinks:${internal.length}<5`);
   const noTrail = internal.filter((l) => !/\/\)$/.test(l));
   if (noTrail.length) prob.push(`noTrailingSlash:${noTrail.length}`);
@@ -190,7 +194,7 @@ function auditFile(c, slug) {
     if (bad.length) prob.push(`relatedSlugsBad:${bad.join('|')}`);
   }
 
-  const bodySlugs = [...body.matchAll(/\]\(\/(?:guides|compare|areas)\/([a-z0-9\-]+)\/?\)/gi)].map((m) => m[1]);
+  const bodySlugs = [...body.matchAll(/\]\(\/(?:guides|compare|areas|projects|news)\/([a-z0-9\-]+)\/?\)/gi)].map((m) => m[1]);
   const badLinks = [...new Set(bodySlugs.filter((s) => !allSlugs.has(s)))];
   if (badLinks.length) prob.push(`brokenInternalLinks:${badLinks.join('|')}`);
 

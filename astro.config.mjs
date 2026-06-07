@@ -27,6 +27,12 @@ export default defineConfig({
         if (item.url.includes('/compare/')) {
           return { ...item, priority: 0.8, changefreq: 'weekly' };
         }
+        if (item.url.includes('/projects/')) {
+          return { ...item, priority: 0.82, changefreq: 'weekly' };
+        }
+        if (item.url.includes('/news/')) {
+          return { ...item, priority: 0.75, changefreq: 'weekly' };
+        }
         return { ...item, priority: 0.7, changefreq: 'monthly' };
       },
     }),
