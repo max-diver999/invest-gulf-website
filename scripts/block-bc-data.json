@@ -1,0 +1,527 @@
+{
+  "creek-waters-emaar": {
+    "sourceId": "emaar-creek-waters-at-dubai-creek-harbour-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/creek-waters-emaar/inline-1.webp",
+      "https://invest-gulf.com/images/projects/creek-waters-emaar/inline-2.webp",
+      "https://invest-gulf.com/images/projects/creek-waters-emaar/inline-3.webp"
+    ],
+    "project": {
+      "id": "emaar-creek-waters-at-dubai-creek-harbour-dubai",
+      "developer": "EMAAR Creek",
+      "priceFromAED": 1600000,
+      "priceFromUSD": 435611,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/emaar-creek-waters",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "the-oasis-emaar": {
+    "sourceId": "emaar-palmiera-2-the-oasis",
+    "heroImage": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/the-oasis-emaar/inline-1.webp",
+      "https://invest-gulf.com/images/projects/the-oasis-emaar/inline-2.webp",
+      "https://invest-gulf.com/images/projects/the-oasis-emaar/inline-3.webp"
+    ],
+    "project": {
+      "id": "emaar-palmiera-2-the-oasis",
+      "developer": "Emaar Palmiera",
+      "priceFromAED": 9180000,
+      "priceFromUSD": 2499319,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/emaar-palmiera-2-the-oasis",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "address-residences-dubai-hills": {
+    "sourceId": "emaar-address-residences-in-dubai-hills-estate",
+    "heroImage": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/address-residences-dubai-hills/inline-1.webp",
+      "https://invest-gulf.com/images/projects/address-residences-dubai-hills/inline-2.webp",
+      "https://invest-gulf.com/images/projects/address-residences-dubai-hills/inline-3.webp"
+    ],
+    "project": {
+      "id": "emaar-address-residences-in-dubai-hills-estate",
+      "developer": "Emaar Address",
+      "priceFromAED": 1930000,
+      "priceFromUSD": 525456,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/emaar-address-residences-in-dubai-hills-estate",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "sobha-hartland-2": {
+    "sourceId": "sobha-estates-at-sobha-hartland-2-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/sobha-hartland-2/inline-1.webp",
+      "https://invest-gulf.com/images/projects/sobha-hartland-2/inline-2.webp",
+      "https://invest-gulf.com/images/projects/sobha-hartland-2/inline-3.webp"
+    ],
+    "project": {
+      "id": "sobha-estates-at-sobha-hartland-2-dubai",
+      "developer": "Sobha Estates",
+      "priceFromAED": 27430000,
+      "priceFromUSD": 7468010,
+      "location": null,
+      "propertyTypes": null,
+      "status": null,
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/sobha-estates-at-sobha-hartland-2-dubai",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "sobha-siniya-island": {
+    "sourceId": "florine-beach-residences-at-sobha-siniya-island",
+    "heroImage": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/sobha-siniya-island/inline-1.webp",
+      "https://invest-gulf.com/images/projects/sobha-siniya-island/inline-2.webp",
+      "https://invest-gulf.com/images/projects/sobha-siniya-island/inline-3.webp"
+    ],
+    "project": {
+      "id": "florine-beach-residences-at-sobha-siniya-island",
+      "developer": "Florine Beach",
+      "priceFromAED": 1210000,
+      "priceFromUSD": 329431,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/florine-beach-residences-at-sobha-siniya-island",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "damac-islands": {
+    "sourceId": "antigua-at-damac-islands-2",
+    "heroImage": "https://invest-gulf.com/images/projects/damac-islands/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/damac-islands/inline-1.webp",
+      "https://invest-gulf.com/images/projects/damac-islands/inline-2.webp",
+      "https://invest-gulf.com/images/projects/damac-islands/inline-3.webp"
+    ],
+    "project": {
+      "id": "antigua-at-damac-islands-2",
+      "developer": "Antigua",
+      "priceFromAED": 2900000,
+      "priceFromUSD": 789545,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/damac-antigua",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "damac-lagoons-overview": {
+    "sourceId": "damac-lagoons",
+    "heroImage": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/damac-lagoons-overview/inline-1.jpg",
+      "https://invest-gulf.com/images/projects/damac-lagoons-overview/inline-2.jpg",
+      "https://invest-gulf.com/images/projects/damac-lagoons-overview/inline-3.jpg"
+    ],
+    "project": {
+      "id": "damac-lagoons",
+      "developer": "DAMAC",
+      "priceFromAED": null,
+      "priceFromUSD": null,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.damacproperties.com/",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "binghatti-phantom": {
+    "sourceId": "binghatti-panthom-apartments-at-jvc-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/binghatti-phantom/inline-1.webp",
+      "https://invest-gulf.com/images/projects/binghatti-phantom/inline-2.webp",
+      "https://invest-gulf.com/images/projects/binghatti-phantom/inline-3.webp"
+    ],
+    "project": {
+      "id": "binghatti-panthom-apartments-at-jvc-dubai",
+      "developer": "Binghatti Panthom",
+      "priceFromAED": 1100000,
+      "priceFromUSD": 299483,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/binghatti-phantom-jumeirah-village-circle",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "binghatti-hills": {
+    "sourceId": "binghatti-hillside-at-dubai-science-park",
+    "heroImage": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/binghatti-hills/inline-1.webp",
+      "https://invest-gulf.com/images/projects/binghatti-hills/inline-2.webp",
+      "https://invest-gulf.com/images/projects/binghatti-hills/inline-3.webp"
+    ],
+    "project": {
+      "id": "binghatti-hillside-at-dubai-science-park",
+      "developer": "Binghatti Hillside",
+      "priceFromAED": 700000,
+      "priceFromUSD": 190580,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/binghatti-hillside-at-dubai-science-park",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "azizi-venice": {
+    "sourceId": "azizi-venice-apartments-villas-at-dubai-south",
+    "heroImage": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/azizi-venice/inline-1.webp",
+      "https://invest-gulf.com/images/projects/azizi-venice/inline-2.webp",
+      "https://invest-gulf.com/images/projects/azizi-venice/inline-3.webp"
+    ],
+    "project": {
+      "id": "azizi-venice-apartments-villas-at-dubai-south",
+      "developer": "Azizi Venice",
+      "priceFromAED": 760000,
+      "priceFromUSD": 206915,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/azizi-venice",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "azizi-riviera-reber": {
+    "sourceId": "azizi-riviera-studios-apartment-at-mbr-city-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/azizi-riviera-reber/inline-1.webp",
+      "https://invest-gulf.com/images/projects/azizi-riviera-reber/inline-2.webp",
+      "https://invest-gulf.com/images/projects/azizi-riviera-reber/inline-3.webp"
+    ],
+    "project": {
+      "id": "azizi-riviera-studios-apartment-at-mbr-city-dubai",
+      "developer": "Azizi Riviera",
+      "priceFromAED": 650000,
+      "priceFromUSD": 176967,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/azizi-riviera",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "aldar-saadiyat-grove": {
+    "sourceId": "saadiyat-lagoons-phase-2-by-aldar",
+    "heroImage": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/inline-1.webp",
+      "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/inline-2.webp",
+      "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/inline-3.webp"
+    ],
+    "project": {
+      "id": "saadiyat-lagoons-phase-2-by-aldar",
+      "developer": "Property Finder UAE",
+      "priceFromAED": null,
+      "priceFromUSD": null,
+      "location": null,
+      "propertyTypes": null,
+      "status": null,
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/saadiyat-lagoons-phase-2",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "aldar-yas-acres": {
+    "sourceId": "aldar-gardenia-bay-yas",
+    "heroImage": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/aldar-yas-acres/inline-1.webp",
+      "https://invest-gulf.com/images/projects/aldar-yas-acres/inline-2.webp",
+      "https://invest-gulf.com/images/projects/aldar-yas-acres/inline-3.webp"
+    ],
+    "project": {
+      "id": "aldar-gardenia-bay-yas",
+      "developer": "Aldar",
+      "priceFromAED": 805000,
+      "priceFromUSD": 219000,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/aldar-properties-pjsc/gardenia-bay",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "meraas-nad-al-sheba-villas": {
+    "sourceId": "meraas-the-acres-at-dubailand-luxury-villas",
+    "heroImage": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/inline-1.webp",
+      "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/inline-2.webp",
+      "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/inline-3.webp"
+    ],
+    "project": {
+      "id": "meraas-the-acres-at-dubailand-luxury-villas",
+      "developer": "Meraas The",
+      "priceFromAED": 5050000,
+      "priceFromUSD": 1374898,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/meraas-the-acres-dubai",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "nakheel-como-residences": {
+    "sourceId": "nakheel-como-residences-at-palm-jumeirah-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/nakheel-como-residences/inline-1.webp",
+      "https://invest-gulf.com/images/projects/nakheel-como-residences/inline-2.webp",
+      "https://invest-gulf.com/images/projects/nakheel-como-residences/inline-3.webp"
+    ],
+    "project": {
+      "id": "nakheel-como-residences-at-palm-jumeirah-dubai",
+      "developer": "Nakheel Como",
+      "priceFromAED": 33000000,
+      "priceFromUSD": 8984481,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/nakheel-como-residences",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "nakheel-rixos-dubai-islands": {
+    "sourceId": "nakheel-rixos-apartments-duplexes-villas-at-dubai-islands",
+    "heroImage": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/inline-1.webp",
+      "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/inline-2.webp",
+      "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/inline-3.webp"
+    ],
+    "project": {
+      "id": "nakheel-rixos-apartments-duplexes-villas-at-dubai-islands",
+      "developer": "Nakheel Rixos",
+      "priceFromAED": 3000000,
+      "priceFromUSD": 816771,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/nakheel-rixos",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "emaar-south-expo-living": {
+    "sourceId": "expo-golf-villas-phase-5-at-emaar-south",
+    "heroImage": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/emaar-south-expo-living/inline-1.webp",
+      "https://invest-gulf.com/images/projects/emaar-south-expo-living/inline-2.webp",
+      "https://invest-gulf.com/images/projects/emaar-south-expo-living/inline-3.webp"
+    ],
+    "project": {
+      "id": "expo-golf-villas-phase-5-at-emaar-south",
+      "developer": "Expo Golf",
+      "priceFromAED": 2300000,
+      "priceFromUSD": 626191,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/expo-golf-villas-phase-5",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "nshama-town-square-phase": {
+    "sourceId": "savannah-by-nshama-in-town-square-dubai",
+    "heroImage": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/nshama-town-square-phase/inline-1.webp",
+      "https://invest-gulf.com/images/projects/nshama-town-square-phase/inline-2.webp",
+      "https://invest-gulf.com/images/projects/nshama-town-square-phase/inline-3.webp"
+    ],
+    "project": {
+      "id": "savannah-by-nshama-in-town-square-dubai",
+      "developer": "Savannah",
+      "priceFromAED": 800000,
+      "priceFromUSD": 217806,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/savannah-nshama-town-square-dubai",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "rak-marjan-beach-residences": {
+    "sourceId": "aldar-nikki-beach-residences-at-al-marjan-island",
+    "heroImage": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/inline-1.webp",
+      "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/inline-2.webp",
+      "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/inline-3.webp"
+    ],
+    "project": {
+      "id": "aldar-nikki-beach-residences-at-al-marjan-island",
+      "developer": "ALDAR Nikki",
+      "priceFromAED": 1190000,
+      "priceFromUSD": 323986,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/aldar-nikki-beach-residences",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "rak-gateway-2": {
+    "sourceId": "gateway-porto-al-zorah",
+    "heroImage": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/rak-gateway-2/inline-1.webp",
+      "https://invest-gulf.com/images/projects/rak-gateway-2/inline-2.webp",
+      "https://invest-gulf.com/images/projects/rak-gateway-2/inline-3.webp"
+    ],
+    "project": {
+      "id": "gateway-porto-al-zorah",
+      "developer": "Property Finder UAE",
+      "priceFromAED": null,
+      "priceFromUSD": null,
+      "location": null,
+      "propertyTypes": null,
+      "status": null,
+      "sourceUrl": "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/gateway-porto-al-zorah",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "omniyat-orla-dorchester": {
+    "sourceId": "the-lana-dorchester-collection-by-omniyat-in-marasi-bay",
+    "heroImage": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/inline-1.webp",
+      "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/inline-2.webp",
+      "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/inline-3.webp"
+    ],
+    "project": {
+      "id": "the-lana-dorchester-collection-by-omniyat-in-marasi-bay",
+      "developer": "The Lana",
+      "priceFromAED": null,
+      "priceFromUSD": null,
+      "location": null,
+      "propertyTypes": null,
+      "status": null,
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/the-lana-dorchester-collection-omniyat-marasi-bay",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "select-group-six-senses": {
+    "sourceId": "select-group-six-senses-residence-at-dubai-marina",
+    "heroImage": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/select-group-six-senses/inline-1.webp",
+      "https://invest-gulf.com/images/projects/select-group-six-senses/inline-2.webp",
+      "https://invest-gulf.com/images/projects/select-group-six-senses/inline-3.webp"
+    ],
+    "project": {
+      "id": "select-group-six-senses-residence-at-dubai-marina",
+      "developer": "Select Group",
+      "priceFromAED": 8500000,
+      "priceFromUSD": 2314185,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/six-senses-residences-dubai-marina",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "danube-bayz-101": {
+    "sourceId": "danube-bayz-101-at-business-bay-dubai-studios-amp-apartments",
+    "heroImage": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/danube-bayz-101/inline-1.webp",
+      "https://invest-gulf.com/images/projects/danube-bayz-101/inline-2.webp",
+      "https://invest-gulf.com/images/projects/danube-bayz-101/inline-3.webp"
+    ],
+    "project": {
+      "id": "danube-bayz-101-at-business-bay-dubai-studios-amp-apartments",
+      "developer": "DANUBE Bayz",
+      "priceFromAED": 1170000,
+      "priceFromUSD": 318541,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/danube-bayz-101-business-bay",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "ellington-ocean-house": {
+    "sourceId": "ellington-ocean-house-in-palm-jumeirah",
+    "heroImage": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/ellington-ocean-house/inline-1.webp",
+      "https://invest-gulf.com/images/projects/ellington-ocean-house/inline-2.webp",
+      "https://invest-gulf.com/images/projects/ellington-ocean-house/inline-3.webp"
+    ],
+    "project": {
+      "id": "ellington-ocean-house-in-palm-jumeirah",
+      "developer": "Ellington Ocean",
+      "priceFromAED": 8370000,
+      "priceFromUSD": 2278791,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/ellington-ocean-house-palm-jumeirah",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  },
+  "samana-barari-heights": {
+    "sourceId": "samana-barari-heights-at-majan-dubailand-luxury-property",
+    "heroImage": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp",
+    "inline": [
+      "https://invest-gulf.com/images/projects/samana-barari-heights/inline-1.webp",
+      "https://invest-gulf.com/images/projects/samana-barari-heights/inline-2.webp",
+      "https://invest-gulf.com/images/projects/samana-barari-heights/inline-3.webp"
+    ],
+    "project": {
+      "id": "samana-barari-heights-at-majan-dubailand-luxury-property",
+      "developer": "Samana Barari",
+      "priceFromAED": 800000,
+      "priceFromUSD": 217806,
+      "location": null,
+      "propertyTypes": null,
+      "status": "off-plan",
+      "sourceUrl": "https://www.dubaihousing-ae.com/project/samana-barari-heights-at-majan",
+      "descriptionEn": null,
+      "nameEn": null
+    }
+  }
+}
