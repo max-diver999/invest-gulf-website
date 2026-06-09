@@ -26,13 +26,15 @@ const {
   updatedDate,
   author = SITE.editorial,
   readingTime = 8,
-  heroImage,
+  heroImage: heroImageProp,
   faq = [],
   canonical,
   noindex = false,
   hasInlineFaqBlock = false,
   contextLabel = title,
 } = Astro.props;
+
+const heroImage = heroImageProp || `${SITE.url}/apple-touch-icon.png`;
 
 const dateStr = (updatedDate || pubDate).toLocaleDateString('en-US', {
   year: 'numeric',

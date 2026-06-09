@@ -12,6 +12,41 @@
       "permanent": true
     },
     {
+      "source": "/guides/can-foreigners-buy-property-dubai/",
+      "destination": "/guides/can-foreigners-buy-property-uae/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/international-schools-gulf-comparison/",
+      "destination": "/guides/gulf-schools-comparison/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/rak-cost-of-living-detailed/",
+      "destination": "/guides/rak-cost-of-living/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wynn-al-marjan-living-impact/",
+      "destination": "/guides/wynn-al-marjan-island-property-impact/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wynn-al-marjan-island-timeline-impact/",
+      "destination": "/guides/wynn-al-marjan-island-property-impact/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/golden-visa-2-million-aed-explained/",
+      "destination": "/guides/uae-golden-visa-property/",
+      "permanent": true
+    },
+    {
+      "source": "/compare/off-plan-vs-ready-property-uae/",
+      "destination": "/guides/off-plan-vs-ready-property-dubai/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.invest-gulf.com" }],
       "destination": "https://invest-gulf.com/:path*",
