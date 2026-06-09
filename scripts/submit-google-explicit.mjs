@@ -3,7 +3,7 @@
 import { GoogleAuth } from 'google-auth-library';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { recordSubmitted } from '../../../scripts/lib/record-submitted.mjs';
+import { recordSubmitted } from '../../scripts/lib/record-submitted.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const KEY_PATH = join(__dirname, 'google-indexing-key.json');
