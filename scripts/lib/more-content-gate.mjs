@@ -100,7 +100,11 @@ export function runStructuralChecks(opts) {
   if (/[<>][0-9]/.test(text)) errors.push(`${prefix} contains MDX-breaking angle-bracket number pattern`);
 
   const leadForms = (body.match(/<LeadForm\b/g) || []).length;
-  if (leadForms > 1) errors.push(`${prefix} duplicate LeadForm (${leadForms}); use one`);
+  if (leadForms >= 1) {
+    errors.push(
+      `${prefix} inline LeadForm forbidden (${leadForms}) — ArticleLayout injects one bottom form; use InlineCta or sidebar CTA only`,
+    );
+  }
 
   if (!legacyExempt && !isNews && !isResale && isCommercial) {
     if (!/(Короткий ответ|Quick answer|TL;DR|<TldrBlock)/i.test(body)) {
