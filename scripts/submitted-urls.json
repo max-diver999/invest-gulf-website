@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-10T01:22:20.023Z",
+  "updatedAt": "2026-06-14T23:46:11.180Z",
   "urls": [
     "https://invest-gulf.com",
     "https://invest-gulf.com/about",
@@ -603,6 +603,7 @@
     "https://invest-gulf.com/projects/sobha-hartland-2",
     "https://invest-gulf.com/projects/sobha-siniya-island",
     "https://invest-gulf.com/projects/the-oasis-emaar",
+    "https://invest-gulf.com/site-report",
     "https://invest-gulf.com/terms"
   ],
   "bootstrappedAt": "2026-06-08T11:06:28.902Z",
@@ -2002,6 +2003,86 @@
       "url": "https://invest-gulf.com/guides/dubai-ejari-tenancy-contract",
       "channel": "google",
       "at": "2026-06-10T01:22:20.023Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/doha-vs-dubai-schools",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/uae-crs-fatca-banking",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-al-marjan-island",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-co-working-spaces",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/german-expats-dubai-guide",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/uae-remote-work-visa",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-driving-license",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-police-clearance-certificate",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/rak-banking-guide",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/tax-uk-nationals-dubai",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-muscat-property-investment",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/downtown-dubai-living-guide",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-ai-digital-economy-expats",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-beach-clubs-cost",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-dental-care-costs",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
+    },
+    {
+      "url": "https://invest-gulf.com/site-report",
+      "channel": "google",
+      "at": "2026-06-14T23:46:11.180Z"
     }
   ]
 }

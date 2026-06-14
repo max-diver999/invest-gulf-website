@@ -16,8 +16,6 @@ const LINK_FIXES = [
   ['/guides/uae-vs-oman-property-investment/', '/compare/uae-vs-oman-property-investment/'],
   ['/guides/uae-vs-qatar-property-investment/', '/compare/uae-vs-qatar-property-investment/'],
   ['/guides/saudi-vs-uae-property-investment/', '/compare/saudi-vs-uae-property-investment/'],
-  ['/areas/al-hamra-village-property-investment/', '/guides/al-hamra-village-property-investment/'],
-  ['/areas/mina-al-arab-property-investment/', '/guides/mina-al-arab-property-investment/'],
   // noindex → KEEP targets
   ['/guides/can-foreigners-buy-property-dubai/', '/guides/can-foreigners-buy-property-uae/'],
   ['/guides/international-schools-gulf-comparison/', '/guides/gulf-schools-comparison/'],
@@ -26,6 +24,20 @@ const LINK_FIXES = [
   ['/guides/wynn-al-marjan-island-timeline-impact/', '/guides/wynn-al-marjan-island-property-impact/'],
   ['/guides/golden-visa-2-million-aed-explained/', '/guides/uae-golden-visa-property/'],
   ['/compare/off-plan-vs-ready-property-uae/', '/guides/off-plan-vs-ready-property-dubai/'],
+  // P2 cannibalization → KEEP
+  ['/guides/best-off-plan-abu-dhabi/', '/guides/abu-dhabi-off-plan-guide/'],
+  ['/guides/best-off-plan-downtown-dubai/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/best-off-plan-dubai-marina/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/best-off-plan-dubai-south/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/best-off-plan-jvc-dubai/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/best-off-plan-business-bay-dubai/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/best-off-plan-creek-harbour/', '/guides/best-off-plan-areas-dubai-2026/'],
+  ['/guides/dubai-vs-abu-dhabi-cost-living/', '/guides/abu-dhabi-cost-of-living/'],
+  ['/guides/abu-dhabi-driving-guide/', '/guides/abu-dhabi-driving-license/'],
+  ['/guides/open-bank-account-non-resident-uae/', '/guides/open-bank-account-dubai/'],
+  ['/guides/qatar-residency-by-property/', '/guides/qatar-property-buyer-relocation/'],
+  ['/guides/bahrain-golden-residence-property/', '/guides/bahrain-property-foreigner-living/'],
+  ['/guides/uae-tax-residency-183-day-rule/', '/guides/uae-tax-guide-expats/'],
 ];
 
 /** coll/slug → KEEP note */
@@ -38,6 +50,20 @@ const NOINDEX = {
   'guides/off-plan-vs-ready-property-uae': 'KEEP: off-plan-vs-ready-property-dubai',
   'guides/golden-visa-2-million-aed-explained': 'KEEP: uae-golden-visa-property',
   'compare/off-plan-vs-ready-property-uae': 'KEEP: off-plan-vs-ready-property-dubai',
+  // P2 cannibalization clusters
+  'guides/best-off-plan-abu-dhabi': 'KEEP: abu-dhabi-off-plan-guide',
+  'guides/best-off-plan-downtown-dubai': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/best-off-plan-dubai-marina': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/best-off-plan-dubai-south': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/best-off-plan-jvc-dubai': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/best-off-plan-business-bay-dubai': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/best-off-plan-creek-harbour': 'KEEP: best-off-plan-areas-dubai-2026',
+  'guides/dubai-vs-abu-dhabi-cost-living': 'KEEP: abu-dhabi-cost-of-living',
+  'guides/abu-dhabi-driving-guide': 'KEEP: abu-dhabi-driving-license',
+  'guides/open-bank-account-non-resident-uae': 'KEEP: open-bank-account-dubai',
+  'guides/qatar-residency-by-property': 'KEEP: qatar-property-buyer-relocation',
+  'guides/bahrain-golden-residence-property': 'KEEP: bahrain-property-foreigner-living',
+  'guides/uae-tax-residency-183-day-rule': 'KEEP: uae-tax-guide-expats',
 };
 
 const BAHRAIN_HUB = 'relocate-bahrain';

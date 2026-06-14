@@ -43,6 +43,12 @@ export const collections = {
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/compare' }),
     schema: articleSchema,
   }),
+  areas: defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/areas' }),
+    schema: articleSchema.extend({
+      category: z.string().default('areas'),
+    }),
+  }),
   projects: defineCollection({
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
     schema: projectSchema,

@@ -121,8 +121,8 @@ export const prerender = true;
   </div>
   <div class="header-meta">
     <div class="label">Last updated</div>
-    <div class="value">11 June 2026 · v1.1 (P0+P1 quality)</div>
-    <div class="live-badge"><span class="live-dot"></span> ~592 URLs live · qa:full 4/4 PASS</div>
+    <div class="value">11 June 2026 · v1.2 (P2 cannibal + areas)</div>
+    <div class="live-badge"><span class="live-dot"></span> ~592 URLs · 23 areas live · 20 noindex dupes</div>
   </div>
 </div>
 
@@ -282,13 +282,13 @@ export const prerender = true;
         <tr><th>Collection</th><th>Pages</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr><td>Guides</td><td class="count">522</td><td>Lifestyle GCC + RE/investment · P0 em-dash + QA gates · fix-batch tier B</td></tr>
+        <tr><td>Guides</td><td class="count">499</td><td>After P2: 23 district guides moved to /areas/</td></tr>
+        <tr><td>Areas</td><td class="count">23</td><td>Map-100: JVC, Marina, Yas, Al Marjan, Pearl Lusail, Riyadh…</td></tr>
         <tr><td>Comparisons</td><td class="count">25</td><td>Dubai vs Muscat, Abu Dhabi vs Dubai, freehold vs leasehold…</td></tr>
         <tr><td>Projects</td><td class="count">25</td><td>Developer / project reviews batch</td></tr>
         <tr><td>News</td><td class="count">12</td><td>Market updates · Jun 2026</td></tr>
-        <tr><td>Areas</td><td class="count">0</td><td>Planned in GULF_RE_CONTENT_MAP_100 — batch 3</td></tr>
-        <tr><td>Static</td><td class="count">~8</td><td>Home, guides hub, compare, about, contact, shortlist, legal, site-report</td></tr>
-        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~592</td><td><strong>~1.78M words</strong> · 103 git commits · validate 584/584 · qa:full 4/4</td></tr>
+        <tr><td>Static</td><td class="count">~9</td><td>Home, guides, areas hub, compare, about, contact, site-report</td></tr>
+        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~593</td><td><strong>~1.78M words</strong> · cannibal clusters 23→19 · 20 noindex dupes</td></tr>
       </tbody>
     </table>
   </div>
@@ -317,6 +317,14 @@ export const prerender = true;
 
   <div class="section-title">Launch timeline</div>
   <div>
+    <div class="changelog-item">
+      <div class="changelog-date">11 Jun 2026</div>
+      <div>
+        <div class="changelog-title">P2 — cannibalization cleanup + /areas/ collection (23 pages)</div>
+        <div class="changelog-desc">NOINDEX + 301 on 10 duplicate guides (best-off-plan satellites, AD driving, bank account dupes). Migrated map-100 districts from /guides/ to /areas/ with 217 link rewrites + 82 Vercel redirects. Cannibal clusters 23→19. Areas hub live.</div>
+        <div class="changelog-tags"><span class="tag green">P2</span><span class="tag blue">SEO</span><span class="tag amber">Areas</span></div>
+      </div>
+    </div>
     <div class="changelog-item">
       <div class="changelog-date">11 Jun 2026</div>
       <div>
@@ -393,10 +401,17 @@ export const prerender = true;
       </div>
     </div>
     <div class="next-item">
-      <div class="priority high">HIGH</div>
+      <div class="priority medium">MED</div>
       <div>
-        <div class="text">P2 — cannibalization cleanup (23 clusters) + areas collection</div>
-        <div class="subtext">noindex duplicates per KEEP table · GULF_RE_CONTENT_MAP areas batch</div>
+        <div class="text">Batch2 areas — migrate 31 more slugs to /areas/ (GULF_RE_CONTENT_MAP_BATCH2)</div>
+        <div class="subtext">Discovery Gardens, JBR, Bluewaters, Khalifa City… still in guides/</div>
+      </div>
+    </div>
+    <div class="next-item">
+      <div class="priority medium">MED</div>
+      <div>
+        <div class="text">Remaining 19 cannibal clusters — differentiate or noindex</div>
+        <div class="subtext">Off-plan spoke cluster, green/golden visa compares — keep distinct intents per map</div>
       </div>
     </div>
     <div class="next-item">
@@ -435,7 +450,7 @@ export const prerender = true;
 </div>
 
 <div class="footer">
-  <strong>Invest Gulf Site Report v1.1</strong> · Updated 11 June 2026 ·
+  <strong>Invest Gulf Site Report v1.2</strong> · Updated 11 June 2026 ·
   <a href="https://invest-gulf.com/site-report/">invest-gulf.com/site-report/</a><br />
   Update weekly via GSC + GA4 + Bing MCP · Content map: GULF_RE_CONTENT_MAP_100.md
 </div>
