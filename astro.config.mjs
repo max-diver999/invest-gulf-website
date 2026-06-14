@@ -1,11 +1,29 @@
 import { defineConfig } from 'astro/config';
+import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import vercel from '@astrojs/vercel';
+import {
+  collectSitemapExclusions,
+  pageIsExcluded,
+} from './scripts/lib/sitemap-exclusions.mjs';
+
+const ROOT = fileURLToPath(new URL('.', import.meta.url));
+const SITE = 'https://invest-gulf.com';
+
+const CONTENT_COLLECTIONS = {
+  guides: 'guides',
+  compare: 'compare',
+  areas: 'areas',
+  news: 'news',
+  projects: 'projects',
+};
+
+const SITEMAP_EXCLUDED = collectSitemapExclusions(ROOT, CONTENT_COLLECTIONS);
 
 export default defineConfig({
-  site: 'https://invest-gulf.com',
+  site: SITE,
   output: 'static',
   trailingSlash: 'always',
   adapter: vercel(),
@@ -15,7 +33,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter(page) {
-        return !page.includes('/thanks/') && !page.includes('/site-report/');
+        return !pageIsExcluded(page, SITE, SITEMAP_EXCLUDED);
       },
       serialize(item) {
         if (item.url === 'https://invest-gulf.com/') {

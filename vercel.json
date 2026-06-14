@@ -2,6 +2,12 @@
   "trailingSlash": true,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.invest-gulf.com" }],
+      "destination": "https://invest-gulf.com/$1",
+      "statusCode": 308
+    },
+    {
       "source": "/guides/uae-golden-visa-property-2026/",
       "destination": "/guides/uae-golden-visa-property/",
       "permanent": true
@@ -44,12 +50,6 @@
     {
       "source": "/compare/off-plan-vs-ready-property-uae/",
       "destination": "/guides/off-plan-vs-ready-property-dubai/",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.invest-gulf.com" }],
-      "destination": "https://invest-gulf.com/:path*",
       "permanent": true
     }
   ],
