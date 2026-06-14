@@ -96,6 +96,11 @@ export const prerender = true;
     .footer { text-align: center; padding: 32px 24px; color: #a8a29e; font-size: 12px; }
     .footer a { color: #b45309; text-decoration: none; }
 
+    .chart-bars { display: flex; align-items: flex-end; gap: 6px; height: 80px; margin: 16px 0 8px; }
+    .chart-bar { flex: 1; background: linear-gradient(180deg, #d4a853, #b45309); border-radius: 4px 4px 0 0; min-height: 2px; }
+    .chart-labels { display: flex; gap: 6px; font-size: 10px; color: #a8a29e; text-align: center; }
+    .chart-labels span { flex: 1; }
+
     @media (max-width: 640px) {
       .header { padding: 22px 16px; }
       .header-meta { text-align: left; margin-top: 12px; }
@@ -116,8 +121,8 @@ export const prerender = true;
   </div>
   <div class="header-meta">
     <div class="label">Last updated</div>
-    <div class="value">5 June 2026 · v1.0 (Launch Day)</div>
-    <div class="live-badge"><span class="live-dot"></span> 201 URLs live · indexing submitted</div>
+    <div class="value">11 June 2026 · v1.1 (P0+P1 quality)</div>
+    <div class="live-badge"><span class="live-dot"></span> ~592 URLs live · qa:full 4/4 PASS</div>
   </div>
 </div>
 
@@ -126,87 +131,115 @@ export const prerender = true;
   <div class="section-title">At a glance</div>
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="num gold">201</div>
+      <div class="num gold">592</div>
       <div class="label">URLs in sitemap</div>
-      <div class="sublabel">182 guides · 9 comparisons · static pages · GSC + Bing sitemap submitted</div>
+      <div class="sublabel">522 guides · 25 compare · 25 projects · 12 news · static pages</div>
     </div>
     <div class="stat-card">
-      <div class="num">528K</div>
+      <div class="num">1.78M</div>
       <div class="label">Words of content</div>
-      <div class="sublabel">191 MDX articles · ~2 770 avg words/guide · lifestyle + RE clusters</div>
+      <div class="sublabel">584 MDX articles · validate:content 584/584 PASS · qa:corpus PASS</div>
     </div>
     <div class="stat-card">
-      <div class="num green">200</div>
-      <div class="label">Google Indexing API</div>
-      <div class="sublabel">Submitted 5 Jun · 1 URL queued tomorrow (daily quota) · smoke-test OK</div>
+      <div class="num green">584</div>
+      <div class="label">Content validate</div>
+      <div class="sublabel">P0 em-dash cleanup · QA pipeline · fix-batch tier B 15/15 ready</div>
     </div>
     <div class="stat-card">
-      <div class="num green">201</div>
-      <div class="label">Bing IndexNow</div>
-      <div class="sublabel">Submitted 5 Jun · HTTP 200 · bing.com/indexnow direct</div>
-    </div>
-    <div class="stat-card">
-      <div class="num">14</div>
+      <div class="num green">103</div>
       <div class="label">Git commits</div>
-      <div class="sublabel">4–5 Jun launch sprint · MVP → 200 URL prod in under 24h</div>
+      <div class="sublabel">Launch sprint + corpus scale + quality gates · build green</div>
     </div>
     <div class="stat-card">
-      <div class="num gold">0</div>
-      <div class="label">GSC clicks (baseline)</div>
-      <div class="sublabel">Expected — site indexed today · first data ~7–14 days</div>
+      <div class="num">1</div>
+      <div class="label">GSC clicks (28d)</div>
+      <div class="sublabel">403 impressions · first click 7 Jun · crawl accelerating</div>
+    </div>
+    <div class="stat-card">
+      <div class="num gold">64</div>
+      <div class="label">GA4 sessions</div>
+      <div class="sublabel">Jun 5–10 · peak 21 sessions on 6 Jun · tracking live</div>
     </div>
   </div>
 
   <div class="section-title">SEO Pulse — Google Search Console</div>
   <div class="pulse-wrap">
     <div class="baseline-box">
-      <strong>Day 0 baseline (5 Jun 2026).</strong> GSC MCP: 0 clicks, 0 impressions for 8 May–4 Jun — property verified but bulk content went live and indexing API ping sent today. Next report update: expect first impressions within 7–14 days after Google crawl. Period: <code>sc-domain:invest-gulf.com</code> · Updated via GSC API.
+      <strong>First traction (14 May–11 Jun 2026).</strong> GSC MCP: <strong>1 click</strong>, <strong>403 impressions</strong>. Impressions ramp from 8 Jun (76/day) as Google crawls the expanded corpus. Top page: <code>/guides/qatar-rental-yield-guide/</code> (pos 7.2, 4% CTR). DMCC setup queries cluster at pos 53–96 — content exists, needs internal links + FAQ depth. Period: <code>sc-domain:invest-gulf.com</code> · Updated 11 Jun 2026 via GSC API.
     </div>
     <div class="pulse-kpi-row">
       <div class="pulse-kpi">
         <div class="kpi-label">Total Clicks</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">Baseline · target: first clicks by ~15 Jun</div>
+        <div class="kpi-val">1</div>
+        <div class="kpi-sub">First click 7 Jun · qatar-rental-yield-guide</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Impressions</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">Indexing submitted 5 Jun · sitemap 0 errors</div>
+        <div class="kpi-val">403</div>
+        <div class="kpi-sub">+120 on 11 Jun alone · crawl ramp post-P0 deploy</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Avg. Position</div>
-        <div class="kpi-val">—</div>
-        <div class="kpi-sub">No query data yet</div>
+        <div class="kpi-val">18.7</div>
+        <div class="kpi-sub">Weighted 28d · improving on money pages</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Avg. CTR</div>
-        <div class="kpi-val">—</div>
-        <div class="kpi-sub">CTR sprint when 50+ impressions/query</div>
+        <div class="kpi-val">0.25%</div>
+        <div class="kpi-sub">Early stage · CTR sprint when 50+ imp/query</div>
       </div>
     </div>
-    <p style="font-size:11px;color:#a8a29e;text-align:center;">Top queries &amp; pages will populate after first GSC data · refresh this report weekly</p>
+    <p style="font-size:12px;font-weight:700;color:#78716c;margin-bottom:8px;">Daily impressions (8–11 Jun)</p>
+    <div class="chart-bars">
+      <div class="chart-bar" style="height:63%;" title="76 imp"></div>
+      <div class="chart-bar" style="height:84%;" title="101 imp"></div>
+      <div class="chart-bar" style="height:80%;" title="96 imp"></div>
+      <div class="chart-bar" style="height:100%;" title="120 imp"></div>
+    </div>
+    <div class="chart-labels"><span>8 Jun</span><span>9 Jun</span><span>10 Jun</span><span>11 Jun</span></div>
+    <div class="info-grid" style="margin-top:20px;">
+      <div class="info-card">
+        <h3>Top queries (28d)</h3>
+        <div class="info-row"><span class="key">dmcc company setup</span><span class="val">5 imp · pos 83.8</span></div>
+        <div class="info-row"><span class="key">dmcc company set up</span><span class="val">5 imp · pos 77.8</span></div>
+        <div class="info-row"><span class="key">dmcc company setup fees</span><span class="val">3 imp · pos 53.7</span></div>
+        <div class="info-row"><span class="key">abu dhabi schools fees</span><span class="val">3 imp · pos 65.3</span></div>
+        <div class="info-row"><span class="key">company formation in dmcc</span><span class="val">3 imp · pos 79.3</span></div>
+      </div>
+      <div class="info-card">
+        <h3>Top pages (28d)</h3>
+        <div class="info-row"><span class="key">qatar-rental-yield-guide</span><span class="val">1 clk · 25 imp · pos 7.2</span></div>
+        <div class="info-row"><span class="key">buying-property-uae-bank-transfer</span><span class="val">0 clk · 23 imp</span></div>
+        <div class="info-row"><span class="key">abu-dhabi-vs-dubai-investment</span><span class="val">0 clk · 6 imp · pos 20.8</span></div>
+        <div class="info-row"><span class="key">freehold-vs-leasehold-uae</span><span class="val">0 clk · 5 imp · pos 11.8</span></div>
+        <div class="info-row"><span class="key">ajman-property-investment-guide</span><span class="val">0 clk · 5 imp · pos 31.4</span></div>
+      </div>
+    </div>
+    <div class="baseline-box" style="margin-top:16px;background:#ecfdf5;border-color:#86efac;color:#166534;">
+      <strong>Insights:</strong> Qatar yield guide already in top-10 — scale this format. Freehold vs leasehold at pos 11.8 is a quick-win candidate once impressions grow. DMCC cluster at pos 40–70 with 10+ combined impressions — expand FAQ block on DMCC guides.
+    </div>
   </div>
 
   <div class="section-title">Analytics — GA4 (G-H725E249H7)</div>
   <div class="pulse-wrap">
     <div class="baseline-box">
-      <strong>GA4 live since 5 Jun.</strong> MCP: 0 sessions in Jun 1–4 window (tracking added with launch). Monitor: organic sessions, <code>generate_lead</code> on /thanks/, landing pages from Gulf guides.
+      <strong>GA4 Jun 5–10 (launch week).</strong> MCP: <strong>64 sessions</strong>, <strong>71 pageviews</strong>. Peak <strong>21 sessions</strong> on 6 Jun (post-scale deploy). Monitor: organic landing pages, <code>generate_lead</code> on /thanks/, Gulf guide engagement.
     </div>
     <div class="pulse-kpi-row">
       <div class="pulse-kpi">
         <div class="kpi-label">Sessions</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">Property ID 540367626</div>
+        <div class="kpi-val">64</div>
+        <div class="kpi-sub">Property ID 540367626 · Jun 5–10</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Users</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">Baseline day 0</div>
+        <div class="kpi-val">62</div>
+        <div class="kpi-sub">Mostly new traffic · launch + crawl bots</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Pageviews</div>
-        <div class="kpi-val">0</div>
-        <div class="kpi-sub">Expect bot + first organic within 1–2 weeks</div>
+        <div class="kpi-val">71</div>
+        <div class="kpi-sub">Peak 21 PV on 6 Jun</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Leads</div>
@@ -249,11 +282,13 @@ export const prerender = true;
         <tr><th>Collection</th><th>Pages</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr><td>Guides</td><td class="count">182</td><td>Lifestyle GCC (114) + RE/investment (68+) · Golden Visa HUB 3 300+ words</td></tr>
-        <tr><td>Comparisons</td><td class="count">9</td><td>Dubai vs London, RAK vs Dubai, Emaar vs Damac, UAE vs Qatar…</td></tr>
+        <tr><td>Guides</td><td class="count">522</td><td>Lifestyle GCC + RE/investment · P0 em-dash + QA gates · fix-batch tier B</td></tr>
+        <tr><td>Comparisons</td><td class="count">25</td><td>Dubai vs Muscat, Abu Dhabi vs Dubai, freehold vs leasehold…</td></tr>
+        <tr><td>Projects</td><td class="count">25</td><td>Developer / project reviews batch</td></tr>
+        <tr><td>News</td><td class="count">12</td><td>Market updates · Jun 2026</td></tr>
         <tr><td>Areas</td><td class="count">0</td><td>Planned in GULF_RE_CONTENT_MAP_100 — batch 3</td></tr>
-        <tr><td>Static</td><td class="count">10</td><td>Home, guides hub, compare, about, methodology, contact, shortlist, legal</td></tr>
-        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">201</td><td><strong>~528 000 words</strong> · 14 git commits · build green</td></tr>
+        <tr><td>Static</td><td class="count">~8</td><td>Home, guides hub, compare, about, contact, shortlist, legal, site-report</td></tr>
+        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~592</td><td><strong>~1.78M words</strong> · 103 git commits · validate 584/584 · qa:full 4/4</td></tr>
       </tbody>
     </table>
   </div>
@@ -270,18 +305,34 @@ export const prerender = true;
       <div class="info-row"><span class="key">Lead API</span><span class="val">POST /api/lead/ → 200</span></div>
     </div>
     <div class="info-card">
-      <h3>Indexing status (5 Jun)</h3>
-      <div class="info-row"><span class="key">GSC sitemap</span><span class="val">✓ 0 errors</span></div>
+      <h3>Indexing status (11 Jun)</h3>
+      <div class="info-row"><span class="key">GSC sitemap</span><span class="val">✓ submitted</span></div>
       <div class="info-row"><span class="key">Bing sitemap</span><span class="val">✓ Success</span></div>
-      <div class="info-row"><span class="key">Google API</span><span class="val">200 / 201 URL</span></div>
-      <div class="info-row"><span class="key">IndexNow</span><span class="val">201 / 201 URL</span></div>
+      <div class="info-row"><span class="key">Google API</span><span class="val">invest-gulf-indexing · explicit URL only</span></div>
+      <div class="info-row"><span class="key">IndexNow</span><span class="val">bing.com/indexnow direct</span></div>
       <div class="info-row"><span class="key">indexing-bot SA</span><span class="val">Owner in GSC</span></div>
-      <div class="info-row"><span class="key">MCP</span><span class="val">GSC + GA4 + Bing</span></div>
+      <div class="info-row"><span class="key">QA gates</span><span class="val">validate + qa:corpus + qa:full PASS</span></div>
     </div>
   </div>
 
   <div class="section-title">Launch timeline</div>
   <div>
+    <div class="changelog-item">
+      <div class="changelog-date">11 Jun 2026</div>
+      <div>
+        <div class="changelog-title">P1 — fix-batch tier B (15 URLs) + site-report v1.1</div>
+        <div class="changelog-desc">Second pass on worst tier B guides/compare: titles 50–60 chars, risks/scenarios blocks, fact density, noindex link cleanup. fix-tier-b-p1.mjs · 15/15 fix-batch ready. Site-report refreshed via GSC (403 imp, 1 click) + GA4 (64 sessions).</div>
+        <div class="changelog-tags"><span class="tag green">P1</span><span class="tag blue">GSC</span><span class="tag amber">Report v1.1</span></div>
+      </div>
+    </div>
+    <div class="changelog-item">
+      <div class="changelog-date">11 Jun 2026</div>
+      <div>
+        <div class="changelog-title">P0 — corpus quality gates (584/584 validate PASS)</div>
+        <div class="changelog-desc">Em-dash cleanup 561 files, QA pipeline (qa:corpus, qa:full), bold fixes, corpus-cleanup, fix-batch-queue tweaks. npm run qa:full:quick 4/4 PASS. Commit 21baace deployed.</div>
+        <div class="changelog-tags"><span class="tag green">P0</span><span class="tag blue">QA</span></div>
+      </div>
+    </div>
     <div class="changelog-item">
       <div class="changelog-date">5 Jun 2026</div>
       <div>
@@ -337,36 +388,36 @@ export const prerender = true;
     <div class="next-item">
       <div class="priority high">HIGH</div>
       <div>
-        <div class="text">Batch 2 content — next ~200 URLs from GULF_RE_CONTENT_MAP_100</div>
-        <div class="subtext">Areas collection, remaining spokes, developer reviews · 5–7 articles per batch · build between batches</div>
+        <div class="text">Scale Qatar yield / comparison format — first GSC click at pos 7.2</div>
+        <div class="subtext">Internal links from DMCC + school guides to money pages · FAQ depth on pos 40–70 queries</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority high">HIGH</div>
       <div>
-        <div class="text">Submit remaining 1 Google URL tomorrow (quota reset)</div>
-        <div class="subtext">node scripts/google-indexing-api.mjs --offset 200 --batch 1</div>
+        <div class="text">P2 — cannibalization cleanup (23 clusters) + areas collection</div>
+        <div class="subtext">noindex duplicates per KEEP table · GULF_RE_CONTENT_MAP areas batch</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority medium">MED</div>
       <div>
-        <div class="text">Update site-report ~12 Jun with first GSC impressions</div>
-        <div class="subtext">GSC MCP: queries, pages, daily chart · add quick-win insights when pos 8–15</div>
+        <div class="text">Explicit indexing for P1 tier B URLs (15 URLs)</div>
+        <div class="subtext">invest-gulf-indexing only · submit-google-explicit.mjs + Bing IndexNow</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority medium">MED</div>
       <div>
-        <div class="text">Internal linking pass on HUB → spoke clusters</div>
-        <div class="subtext">Golden Visa, Dubai investment, off-plan, rental yield — cross-link top 20 guides</div>
+        <div class="text">Weekly site-report refresh</div>
+        <div class="subtext">GSC MCP: queries, pages, daily chart · CTR sprint when 50+ imp/query</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority low">LOW</div>
       <div>
         <div class="text">Commercial landing /get-shortlist/ CRO test</div>
-        <div class="subtext">After first 50 GSC impressions — title/description CTR sprint on top 5 URLs</div>
+        <div class="subtext">After 100+ GSC impressions/week — title/description A/B on top 5 URLs</div>
       </div>
     </div>
   </div>
@@ -384,7 +435,7 @@ export const prerender = true;
 </div>
 
 <div class="footer">
-  <strong>Invest Gulf Site Report v1.0</strong> · Launch day 5 June 2026 ·
+  <strong>Invest Gulf Site Report v1.1</strong> · Updated 11 June 2026 ·
   <a href="https://invest-gulf.com/site-report/">invest-gulf.com/site-report/</a><br />
   Update weekly via GSC + GA4 + Bing MCP · Content map: GULF_RE_CONTENT_MAP_100.md
 </div>
