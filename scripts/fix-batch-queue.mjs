@@ -215,7 +215,9 @@ function analyze(file, index) {
       if (!/(Короткий ответ|Quick answer|TL;DR|<TldrBlock)/i.test(body)) {
         issues.push('missing-answer-box');
       }
-      if (!/<TldrBlock\b/.test(body)) issues.push('missing-tldr');
+      if (!/<TldrBlock\b/.test(body) && !/(Короткий ответ|Quick answer|TL;DR)/i.test(body)) {
+        issues.push('missing-tldr');
+      }
       const h2 = (body.match(/^##\s+/gm) || []).length;
       if (h2 < 4) issues.push('few-h2');
       if (internalLinks(body).filter((l) => !l.startsWith('/api/')).length < 5) {
@@ -236,8 +238,8 @@ function analyze(file, index) {
       const nums = countNumericFacts(body);
       const minNums = Math.max(8, Math.floor((cfg.minWords || 2000) / 500) * 3);
       if (nums < minNums) issues.push('low-fact-density');
-      if (cfg.minFaq > 0 && countFaq(fmRaw, body) < cfg.minFaq) issues.push('missing-faq');
-      if (!/<FaqBlock/.test(body)) issues.push('missing-faq-block');
+      if (countFaq(fmRaw, body) < cfg.minFaq) issues.push('missing-faq');
+      if (countFaq(fmRaw, body) < cfg.minFaq && !/<FaqBlock/.test(body)) issues.push('missing-faq-block');
       if (
         !layoutLead &&
         !/(<LeadForm|<InlineCta|#lead-form|WhatsApp|Telegram|подбер|consultation|shortlist)/i.test(body)

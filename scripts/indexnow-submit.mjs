@@ -19,6 +19,8 @@ function buildAllUrls() {
     `${BASE}/guides/`,
     `${BASE}/areas/`,
     `${BASE}/compare/`,
+    `${BASE}/news/`,
+    `${BASE}/projects/`,
     `${BASE}/about/`,
     `${BASE}/methodology/`,
     `${BASE}/contact/`,
@@ -31,6 +33,8 @@ function buildAllUrls() {
     ['guides', './src/content/guides'],
     ['areas', './src/content/areas'],
     ['compare', './src/content/compare'],
+    ['news', './src/content/news'],
+    ['projects', './src/content/projects'],
   ]) {
     try {
       for (const file of readdirSync(subPath)) {
