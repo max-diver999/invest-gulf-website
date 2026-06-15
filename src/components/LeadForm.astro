@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title = 'Get your Gulf property shortlist',
-  subtitle = 'Share your budget and target market — we respond within one business day.',
+  subtitle = 'Share your budget and target market. We respond within one business day.',
   context = '',
 } = Astro.props;
 ---
@@ -37,7 +37,7 @@ const {
       <div>
         <label class="block text-xs font-medium mb-1" for="lf-market">Target market</label>
         <select id="lf-market" name="market">
-          <option value="">— Select —</option>
+          <option value="">Select</option>
           <option value="dubai">Dubai</option>
           <option value="abu-dhabi">Abu Dhabi</option>
           <option value="rak">Ras Al Khaimah</option>
@@ -47,7 +47,7 @@ const {
       <div>
         <label class="block text-xs font-medium mb-1" for="lf-budget">Budget (USD)</label>
         <select id="lf-budget" name="budget">
-          <option value="">— Select —</option>
+          <option value="">Select</option>
           <option value="under-300k">Under $300k</option>
           <option value="300-500k">$300k – $500k</option>
           <option value="500k-1m">$500k – $1M</option>
@@ -59,7 +59,7 @@ const {
     <div>
       <label class="block text-xs font-medium mb-1" for="lf-goal">Your goal</label>
       <select id="lf-goal" name="goal">
-        <option value="">— Select —</option>
+        <option value="">Select</option>
         <option value="investment">Rental yield / investment</option>
         <option value="golden-visa">Golden Visa / residency</option>
         <option value="relocation">Relocation / end-use</option>
@@ -76,7 +76,7 @@ const {
       <span>I agree to be contacted about my enquiry. See our <a href="/privacy-policy/">Privacy Policy</a>.</span>
     </label>
     <button type="submit" class="btn-primary w-full py-3">Request shortlist →</button>
-    <p id="lf-success" class="hidden text-green-700 text-sm font-medium text-center">Thank you — redirecting…</p>
+    <p id="lf-success" class="hidden text-green-700 text-sm font-medium text-center">Thank you. Redirecting…</p>
     <p id="lf-error" class="hidden text-red-600 text-sm text-center">Something went wrong. Email {SITE.email} directly.</p>
   </form>
 </section>

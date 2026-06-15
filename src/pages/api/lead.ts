@@ -36,12 +36,12 @@ async function sendAutoReply(to: string, name: string, context: string) {
       from: LEAD_FROM_EMAIL,
       reply_to: SITE.email,
       to: [to],
-      subject: 'We received your request — Invest Gulf',
+      subject: 'We received your request, Invest Gulf',
       html: `<p>${greeting}</p>
 <p>Thank you for contacting Invest Gulf. We received your request regarding <strong>${topic}</strong>.</p>
 <p>A licensed partner will review your enquiry and reply by email or WhatsApp, usually within one business day.</p>
-<p>— <strong>Invest Gulf Editorial</strong><br><a href="${SITE.url}">${SITE.url.replace('https://', '')}</a></p>
-<p style="font-size:12px;color:#666;">Independent research — not financial or legal advice.</p>`,
+<p><strong>Invest Gulf Editorial</strong><br><a href="${SITE.url}">${SITE.url.replace('https://', '')}</a></p>
+<p style="font-size:12px;color:#666;">Independent research, not financial or legal advice.</p>`,
     }),
   });
 }
@@ -64,7 +64,7 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     const lines = [
-      isHealthcheck ? '🧪 <b>TEST invest-gulf.com</b>' : '🏙 <b>New lead — Invest Gulf</b>',
+      isHealthcheck ? '🧪 <b>TEST invest-gulf.com</b>' : '🏙 <b>New lead, Invest Gulf</b>',
       '',
       name ? `👤 <b>Name:</b> ${name}` : null,
       phoneText ? `📱 <b>Phone:</b> ${phoneText}` : null,
