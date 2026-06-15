@@ -1,0 +1,1399 @@
+{
+  "rollout": "gulf-area-images-p1",
+  "verified": "2026-06-15",
+  "rule": "58 areas x 3 images — unique source URLs, self-hosted on invest-gulf.com",
+  "articles": [
+    {
+      "slug": "al-barari",
+      "file": "al-barari-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-barari/hero.jpg",
+          "alt": "Al Barari Dubai — investment area overview",
+          "source": "recovered:/images/areas/al-barari/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-barari/inline-1.jpg",
+          "alt": "Al Barari Dubai — inline-1",
+          "source": "recovered:/images/areas/al-barari/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-barari/inline-2.jpg",
+          "alt": "Al Barari Dubai — inline-2",
+          "source": "recovered:/images/areas/al-barari/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-furjan",
+      "file": "al-furjan-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-furjan/hero.jpg",
+          "alt": "Al Furjan Dubai — investment area overview",
+          "source": "recovered:/images/areas/al-furjan/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-furjan/inline-1.jpg",
+          "alt": "Al Furjan Dubai — inline-1",
+          "source": "recovered:/images/areas/al-furjan/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-furjan/inline-2.jpg",
+          "alt": "Al Furjan Dubai — inline-2",
+          "source": "recovered:/images/areas/al-furjan/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-ghadeer",
+      "file": "al-ghadeer-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-ghadeer/hero.jpg",
+          "alt": "Al Ghadeer Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/al-ghadeer/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-ghadeer/inline-1.jpg",
+          "alt": "Al Ghadeer Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/al-ghadeer/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-ghadeer/inline-2.jpg",
+          "alt": "Al Ghadeer Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/al-ghadeer/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-hamra-village",
+      "file": "al-hamra-village-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-hamra-village/hero.jpg",
+          "alt": "Al Hamra Village Ras Al Khaimah — investment area overview",
+          "source": "recovered:/images/areas/al-hamra-village/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-hamra-village/inline-1.jpg",
+          "alt": "Al Hamra Village Ras Al Khaimah — inline-1",
+          "source": "recovered:/images/areas/al-hamra-village/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-hamra-village/inline-2.jpg",
+          "alt": "Al Hamra Village Ras Al Khaimah — inline-2",
+          "source": "recovered:/images/areas/al-hamra-village/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-marjan-island",
+      "file": "al-marjan-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg",
+          "alt": "Al Marjan Island — investment area overview",
+          "source": "recovered:/images/areas/al-marjan-island/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-marjan-island/inline-1.jpg",
+          "alt": "Al Marjan Island — inline-1",
+          "source": "recovered:/images/areas/al-marjan-island/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-marjan-island/inline-2.jpg",
+          "alt": "Al Marjan Island — inline-2",
+          "source": "recovered:/images/areas/al-marjan-island/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-maryah-island",
+      "file": "al-maryah-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-maryah-island/hero.jpg",
+          "alt": "Al Maryah Island Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/al-maryah-island/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-maryah-island/inline-1.jpg",
+          "alt": "Al Maryah Island Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/al-maryah-island/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-maryah-island/inline-2.jpg",
+          "alt": "Al Maryah Island Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/al-maryah-island/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-nakheel-rak",
+      "file": "al-nakheel-rak-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-nakheel-rak/hero.jpg",
+          "alt": "Al Nakheel Ras Al Khaimah — investment area overview",
+          "source": "recovered:/images/areas/al-nakheel-rak/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-nakheel-rak/inline-1.jpg",
+          "alt": "Al Nakheel Ras Al Khaimah — inline-1",
+          "source": "recovered:/images/areas/al-nakheel-rak/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-nakheel-rak/inline-2.jpg",
+          "alt": "Al Nakheel Ras Al Khaimah — inline-2",
+          "source": "recovered:/images/areas/al-nakheel-rak/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-raha-beach",
+      "file": "al-raha-beach-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-raha-beach/hero.jpg",
+          "alt": "Al Raha Beach Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/al-raha-beach/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-raha-beach/inline-1.jpg",
+          "alt": "Al Raha Beach Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/al-raha-beach/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-raha-beach/inline-2.jpg",
+          "alt": "Al Raha Beach Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/al-raha-beach/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-reef-abu-dhabi",
+      "file": "al-reef-abu-dhabi-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg",
+          "alt": "Al Reef Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/al-reef-abu-dhabi/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/inline-1.jpg",
+          "alt": "Al Reef Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/al-reef-abu-dhabi/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/inline-2.jpg",
+          "alt": "Al Reef Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/al-reef-abu-dhabi/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-reem-island",
+      "file": "al-reem-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-reem-island/hero.jpg",
+          "alt": "Al Reem Island Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/al-reem-island/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-reem-island/inline-1.jpg",
+          "alt": "Al Reem Island Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/al-reem-island/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-reem-island/inline-2.jpg",
+          "alt": "Al Reem Island Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/al-reem-island/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-zahia-sharjah",
+      "file": "al-zahia-sharjah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg",
+          "alt": "Al Zahia Sharjah — investment area overview",
+          "source": "recovered:/images/areas/al-zahia-sharjah/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-zahia-sharjah/inline-1.jpg",
+          "alt": "Al Zahia Sharjah — inline-1",
+          "source": "recovered:/images/areas/al-zahia-sharjah/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-zahia-sharjah/inline-2.jpg",
+          "alt": "Al Zahia Sharjah — inline-2",
+          "source": "recovered:/images/areas/al-zahia-sharjah/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "aljada-sharjah",
+      "file": "aljada-sharjah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg",
+          "alt": "Aljada Sharjah — investment area overview",
+          "source": "recovered:/images/areas/aljada-sharjah/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/aljada-sharjah/inline-1.jpg",
+          "alt": "Aljada Sharjah — inline-1",
+          "source": "recovered:/images/areas/aljada-sharjah/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/aljada-sharjah/inline-2.jpg",
+          "alt": "Aljada Sharjah — inline-2",
+          "source": "recovered:/images/areas/aljada-sharjah/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "amwaj-islands",
+      "file": "amwaj-islands-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg",
+          "alt": "Amwaj Islands Bahrain — investment area overview",
+          "source": "recovered:/images/areas/amwaj-islands/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/amwaj-islands/inline-1.jpg",
+          "alt": "Amwaj Islands Bahrain — inline-1",
+          "source": "recovered:/images/areas/amwaj-islands/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/amwaj-islands/inline-2.jpg",
+          "alt": "Amwaj Islands Bahrain — inline-2",
+          "source": "recovered:/images/areas/amwaj-islands/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arabian-ranches",
+      "file": "arabian-ranches-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/arabian-ranches/hero.jpg",
+          "alt": "Arabian Ranches Dubai — investment area overview",
+          "source": "recovered:/images/areas/arabian-ranches/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/arabian-ranches/inline-1.jpg",
+          "alt": "Arabian Ranches Dubai — inline-1",
+          "source": "recovered:/images/areas/arabian-ranches/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/arabian-ranches/inline-2.jpg",
+          "alt": "Arabian Ranches Dubai — inline-2",
+          "source": "recovered:/images/areas/arabian-ranches/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "bluewaters-island",
+      "file": "bluewaters-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/bluewaters-island/hero.jpg",
+          "alt": "Bluewaters Island Dubai — investment area overview",
+          "source": "recovered:/images/areas/bluewaters-island/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/bluewaters-island/inline-1.jpg",
+          "alt": "Bluewaters Island Dubai — inline-1",
+          "source": "recovered:/images/areas/bluewaters-island/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/bluewaters-island/inline-2.jpg",
+          "alt": "Bluewaters Island Dubai — inline-2",
+          "source": "recovered:/images/areas/bluewaters-island/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "business-bay",
+      "file": "business-bay-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/business-bay/hero.jpg",
+          "alt": "Business Bay Dubai — investment area overview",
+          "source": "recovered:/images/areas/business-bay/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/business-bay/inline-1.jpg",
+          "alt": "Business Bay Dubai — inline-1",
+          "source": "recovered:/images/areas/business-bay/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/business-bay/inline-2.jpg",
+          "alt": "Business Bay Dubai — inline-2",
+          "source": "recovered:/images/areas/business-bay/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "city-walk",
+      "file": "city-walk-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/city-walk/hero.jpg",
+          "alt": "City Walk Dubai — investment area overview",
+          "source": "recovered:/images/areas/city-walk/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/city-walk/inline-1.jpg",
+          "alt": "City Walk Dubai — inline-1",
+          "source": "recovered:/images/areas/city-walk/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/city-walk/inline-2.jpg",
+          "alt": "City Walk Dubai — inline-2",
+          "source": "recovered:/images/areas/city-walk/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "damac-hills",
+      "file": "damac-hills-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/damac-hills/hero.jpg",
+          "alt": "DAMAC Hills Dubai — investment area overview",
+          "source": "recovered:/images/areas/damac-hills/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/damac-hills/inline-1.jpg",
+          "alt": "DAMAC Hills Dubai — inline-1",
+          "source": "recovered:/images/areas/damac-hills/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/damac-hills/inline-2.jpg",
+          "alt": "DAMAC Hills Dubai — inline-2",
+          "source": "recovered:/images/areas/damac-hills/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dammam-khobar",
+      "file": "dammam-khobar-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg",
+          "alt": "Al Khobar Dammam — investment area overview",
+          "source": "recovered:/images/areas/dammam-khobar/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dammam-khobar/inline-1.jpg",
+          "alt": "Al Khobar Dammam — inline-1",
+          "source": "recovered:/images/areas/dammam-khobar/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dammam-khobar/inline-2.jpg",
+          "alt": "Al Khobar Dammam — inline-2",
+          "source": "recovered:/images/areas/dammam-khobar/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "discovery-gardens",
+      "file": "discovery-gardens-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/discovery-gardens/hero.jpg",
+          "alt": "Discovery Gardens Dubai — investment area overview",
+          "source": "recovered:/images/areas/discovery-gardens/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/discovery-gardens/inline-1.jpg",
+          "alt": "Discovery Gardens Dubai — inline-1",
+          "source": "recovered:/images/areas/discovery-gardens/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/discovery-gardens/inline-2.jpg",
+          "alt": "Discovery Gardens Dubai — inline-2",
+          "source": "recovered:/images/areas/discovery-gardens/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "downtown-dubai",
+      "file": "downtown-dubai-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/downtown-dubai/hero.jpg",
+          "alt": "Downtown Dubai Burj Khalifa — investment area overview",
+          "source": "recovered:/images/areas/downtown-dubai/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/downtown-dubai/inline-1.jpg",
+          "alt": "Downtown Dubai Burj Khalifa — inline-1",
+          "source": "recovered:/images/areas/downtown-dubai/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/downtown-dubai/inline-2.jpg",
+          "alt": "Downtown Dubai Burj Khalifa — inline-2",
+          "source": "recovered:/images/areas/downtown-dubai/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-creek-harbour",
+      "file": "dubai-creek-harbour-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-creek-harbour/hero.jpg",
+          "alt": "Dubai Creek Harbour — investment area overview",
+          "source": "recovered:/images/areas/dubai-creek-harbour/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-creek-harbour/inline-1.jpg",
+          "alt": "Dubai Creek Harbour — inline-1",
+          "source": "recovered:/images/areas/dubai-creek-harbour/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-creek-harbour/inline-2.jpg",
+          "alt": "Dubai Creek Harbour — inline-2",
+          "source": "recovered:/images/areas/dubai-creek-harbour/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-harbour",
+      "file": "dubai-harbour-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-harbour/hero.jpg",
+          "alt": "Dubai Harbour JBR — investment area overview",
+          "source": "recovered:/images/areas/dubai-harbour/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-harbour/inline-1.jpg",
+          "alt": "Dubai Harbour JBR — inline-1",
+          "source": "recovered:/images/areas/dubai-harbour/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-harbour/inline-2.jpg",
+          "alt": "Dubai Harbour JBR — inline-2",
+          "source": "recovered:/images/areas/dubai-harbour/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-hills-estate",
+      "file": "dubai-hills-estate-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-hills-estate/hero.jpg",
+          "alt": "Dubai Hills Estate — investment area overview",
+          "source": "recovered:/images/areas/dubai-hills-estate/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-hills-estate/inline-1.jpg",
+          "alt": "Dubai Hills Estate — inline-1",
+          "source": "recovered:/images/areas/dubai-hills-estate/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-hills-estate/inline-2.jpg",
+          "alt": "Dubai Hills Estate — inline-2",
+          "source": "recovered:/images/areas/dubai-hills-estate/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-islands",
+      "file": "dubai-islands-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-islands/hero.jpg",
+          "alt": "Dubai Islands Deira — investment area overview",
+          "source": "recovered:/images/areas/dubai-islands/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-islands/inline-1.jpg",
+          "alt": "Dubai Islands Deira — inline-1",
+          "source": "recovered:/images/areas/dubai-islands/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-islands/inline-2.jpg",
+          "alt": "Dubai Islands Deira — inline-2",
+          "source": "recovered:/images/areas/dubai-islands/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-marina",
+      "file": "dubai-marina-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg",
+          "alt": "Dubai Marina — investment area overview",
+          "source": "recovered:/images/areas/dubai-marina/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-marina/inline-1.jpg",
+          "alt": "Dubai Marina — inline-1",
+          "source": "recovered:/images/areas/dubai-marina/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-marina/inline-2.jpg",
+          "alt": "Dubai Marina — inline-2",
+          "source": "recovered:/images/areas/dubai-marina/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-production-city",
+      "file": "dubai-production-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-production-city/hero.jpg",
+          "alt": "Dubai Production City IMPZ — investment area overview",
+          "source": "recovered:/images/areas/dubai-production-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-production-city/inline-1.jpg",
+          "alt": "Dubai Production City IMPZ — inline-1",
+          "source": "recovered:/images/areas/dubai-production-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-production-city/inline-2.jpg",
+          "alt": "Dubai Production City IMPZ — inline-2",
+          "source": "recovered:/images/areas/dubai-production-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-silicon-oasis",
+      "file": "dubai-silicon-oasis-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-silicon-oasis/hero.jpg",
+          "alt": "Dubai Silicon Oasis — investment area overview",
+          "source": "recovered:/images/areas/dubai-silicon-oasis/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-silicon-oasis/inline-1.jpg",
+          "alt": "Dubai Silicon Oasis — inline-1",
+          "source": "recovered:/images/areas/dubai-silicon-oasis/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-silicon-oasis/inline-2.jpg",
+          "alt": "Dubai Silicon Oasis — inline-2",
+          "source": "recovered:/images/areas/dubai-silicon-oasis/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-south",
+      "file": "dubai-south-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-south/hero.jpg",
+          "alt": "Dubai South Al Maktoum — investment area overview",
+          "source": "recovered:/images/areas/dubai-south/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-south/inline-1.jpg",
+          "alt": "Dubai South Al Maktoum — inline-1",
+          "source": "recovered:/images/areas/dubai-south/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-south/inline-2.jpg",
+          "alt": "Dubai South Al Maktoum — inline-2",
+          "source": "recovered:/images/areas/dubai-south/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-sports-city",
+      "file": "dubai-sports-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-sports-city/hero.jpg",
+          "alt": "Dubai Sports City — investment area overview",
+          "source": "recovered:/images/areas/dubai-sports-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-sports-city/inline-1.jpg",
+          "alt": "Dubai Sports City — inline-1",
+          "source": "recovered:/images/areas/dubai-sports-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-sports-city/inline-2.jpg",
+          "alt": "Dubai Sports City — inline-2",
+          "source": "recovered:/images/areas/dubai-sports-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "hudayriyat-island",
+      "file": "hudayriyat-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/hudayriyat-island/hero.jpg",
+          "alt": "Hudayriyat Island Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/hudayriyat-island/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/hudayriyat-island/inline-1.jpg",
+          "alt": "Hudayriyat Island Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/hudayriyat-island/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/hudayriyat-island/inline-2.jpg",
+          "alt": "Hudayriyat Island Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/hudayriyat-island/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "impz",
+      "file": "impz-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/impz/hero.jpg",
+          "alt": "IMPZ Dubai — investment area overview",
+          "source": "recovered:/images/areas/impz/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/impz/inline-1.jpg",
+          "alt": "IMPZ Dubai — inline-1",
+          "source": "recovered:/images/areas/impz/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/impz/inline-2.jpg",
+          "alt": "IMPZ Dubai — inline-2",
+          "source": "recovered:/images/areas/impz/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "jbr",
+      "file": "jbr-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/jbr/hero.jpg",
+          "alt": "Jumeirah Beach Residence Dubai — investment area overview",
+          "source": "recovered:/images/areas/jbr/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/jbr/inline-1.jpg",
+          "alt": "Jumeirah Beach Residence Dubai — inline-1",
+          "source": "recovered:/images/areas/jbr/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/jbr/inline-2.jpg",
+          "alt": "Jumeirah Beach Residence Dubai — inline-2",
+          "source": "recovered:/images/areas/jbr/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "jebel-ali-village",
+      "file": "jebel-ali-village-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/jebel-ali-village/hero.jpg",
+          "alt": "Jebel Ali Dubai — investment area overview",
+          "source": "recovered:/images/areas/jebel-ali-village/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/jebel-ali-village/inline-1.jpg",
+          "alt": "Jebel Ali Dubai — inline-1",
+          "source": "recovered:/images/areas/jebel-ali-village/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/jebel-ali-village/inline-2.jpg",
+          "alt": "Jebel Ali Dubai — inline-2",
+          "source": "recovered:/images/areas/jebel-ali-village/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "jeddah",
+      "file": "jeddah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/jeddah/hero.jpg",
+          "alt": "Jeddah Corniche — investment area overview",
+          "source": "recovered:/images/areas/jeddah/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/jeddah/inline-1.jpg",
+          "alt": "Jeddah Corniche — inline-1",
+          "source": "recovered:/images/areas/jeddah/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/jeddah/inline-2.jpg",
+          "alt": "Jeddah Corniche — inline-2",
+          "source": "recovered:/images/areas/jeddah/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "jlt",
+      "file": "jlt-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/jlt/hero.jpg",
+          "alt": "Jumeirah Lake Towers Dubai — investment area overview",
+          "source": "recovered:/images/areas/jlt/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/jlt/inline-1.jpg",
+          "alt": "Jumeirah Lake Towers Dubai — inline-1",
+          "source": "recovered:/images/areas/jlt/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/jlt/inline-2.jpg",
+          "alt": "Jumeirah Lake Towers Dubai — inline-2",
+          "source": "recovered:/images/areas/jlt/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "jvc",
+      "file": "jvc-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/jvc/hero.jpg",
+          "alt": "Jumeirah Village Circle Dubai — investment area overview",
+          "source": "recovered:/images/areas/jvc/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/jvc/inline-1.jpg",
+          "alt": "Jumeirah Village Circle Dubai — inline-1",
+          "source": "recovered:/images/areas/jvc/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/jvc/inline-2.jpg",
+          "alt": "Jumeirah Village Circle Dubai — inline-2",
+          "source": "recovered:/images/areas/jvc/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "khalifa-city",
+      "file": "khalifa-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/khalifa-city/hero.jpg",
+          "alt": "Khalifa City Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/khalifa-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/khalifa-city/inline-1.jpg",
+          "alt": "Khalifa City Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/khalifa-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/khalifa-city/inline-2.jpg",
+          "alt": "Khalifa City Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/khalifa-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "lusail-city",
+      "file": "lusail-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg",
+          "alt": "Lusail City Qatar — investment area overview",
+          "source": "recovered:/images/areas/lusail-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/lusail-city/inline-1.jpg",
+          "alt": "Lusail City Qatar — inline-1",
+          "source": "recovered:/images/areas/lusail-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/lusail-city/inline-2.jpg",
+          "alt": "Lusail City Qatar — inline-2",
+          "source": "recovered:/images/areas/lusail-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "manama",
+      "file": "manama-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/manama/hero.jpg",
+          "alt": "Manama Bahrain skyline — investment area overview",
+          "source": "recovered:/images/areas/manama/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/manama/inline-1.jpg",
+          "alt": "Manama Bahrain skyline — inline-1",
+          "source": "recovered:/images/areas/manama/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/manama/inline-2.jpg",
+          "alt": "Manama Bahrain skyline — inline-2",
+          "source": "recovered:/images/areas/manama/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "masdar-city",
+      "file": "masdar-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/masdar-city/hero.jpg",
+          "alt": "Masdar City Abu Dhabi — investment area overview",
+          "source": "recovered:/images/areas/masdar-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/masdar-city/inline-1.jpg",
+          "alt": "Masdar City Abu Dhabi — inline-1",
+          "source": "recovered:/images/areas/masdar-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/masdar-city/inline-2.jpg",
+          "alt": "Masdar City Abu Dhabi — inline-2",
+          "source": "recovered:/images/areas/masdar-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "mbr-city",
+      "file": "mbr-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/mbr-city/hero.jpg",
+          "alt": "Mohammed Bin Rashid City Dubai — investment area overview",
+          "source": "recovered:/images/areas/mbr-city/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/mbr-city/inline-1.jpg",
+          "alt": "Mohammed Bin Rashid City Dubai — inline-1",
+          "source": "recovered:/images/areas/mbr-city/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/mbr-city/inline-2.jpg",
+          "alt": "Mohammed Bin Rashid City Dubai — inline-2",
+          "source": "recovered:/images/areas/mbr-city/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "meydan-horizon",
+      "file": "meydan-horizon-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/meydan-horizon/hero.jpg",
+          "alt": "Meydan Dubai — investment area overview",
+          "source": "recovered:/images/areas/meydan-horizon/hero.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/meydan-horizon/inline-1.jpg",
+          "alt": "Meydan Dubai — inline-1",
+          "source": "recovered:/images/areas/meydan-horizon/inline-1.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/meydan-horizon/inline-2.jpg",
+          "alt": "Meydan Dubai — inline-2",
+          "source": "recovered:/images/areas/meydan-horizon/inline-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "mina-al-arab",
+      "file": "mina-al-arab-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg",
+          "alt": "Mina Al Arab Ras Al Khaimah — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ras_Al_Khaimah_sunset.jpg/1280px-Ras_Al_Khaimah_sunset.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/mina-al-arab/inline-1.jpg",
+          "alt": "Mina Al Arab Ras Al Khaimah — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ras_al-Khaimah_Evening_December_2015_by_Vincent_Eisfeld.JPG/1280px-Ras_al-Khaimah_Evening_December_2015_by_Vincent_Eisfeld.JPG"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/mina-al-arab/inline-2.jpg",
+          "alt": "Mina Al Arab Ras Al Khaimah — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/RAK_1968_MiNr0220A_pm_B002a.jpg/1280px-RAK_1968_MiNr0220A_pm_B002a.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "motor-city",
+      "file": "motor-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/motor-city/hero.jpg",
+          "alt": "Motor City Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/94/Al_Tayer_Motors_Dubai_-_Desert_Ride_and_Drive_event_%289180376377%29.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/motor-city/inline-1.jpg",
+          "alt": "Motor City Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/6/69/Al_Tayer_Motors_Dubai_-_Desert_Ride_and_Drive_event_%289180379001%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/motor-city/inline-2.jpg",
+          "alt": "Motor City Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Al_Tayer_Motors_Dubai_-_Desert_Ride_and_Drive_event_%289180380157%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "mudon",
+      "file": "mudon-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/mudon/hero.jpg",
+          "alt": "Mudon Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/db/Mudon_Dubai.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/mudon/inline-1.jpg",
+          "alt": "Mudon Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Burj_Khalifa_Dubai_UAE_%2814159904937%29.jpg/1280px-Burj_Khalifa_Dubai_UAE_%2814159904937%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/mudon/inline-2.jpg",
+          "alt": "Mudon Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/DUBAI_CREEK_HARBOUR_1.jpg/1280px-DUBAI_CREEK_HARBOUR_1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "muscat-al-mouj",
+      "file": "muscat-al-mouj-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg",
+          "alt": "Al Mouj Marina Muscat — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Al-mouj-marina-1.jpg/1280px-Al-mouj-marina-1.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/muscat-al-mouj/inline-1.jpg",
+          "alt": "Al Mouj Marina Muscat — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Al-mouj-marina-2.jpg/1280px-Al-mouj-marina-2.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/muscat-al-mouj/inline-2.jpg",
+          "alt": "Al Mouj Marina Muscat — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Al-mouj-marina-3.jpg/1280px-Al-mouj-marina-3.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "muscat-qurum",
+      "file": "muscat-qurum-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg",
+          "alt": "Qurum Muscat beach — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Al_Qurum_Beach%2C_Muscat.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/muscat-qurum/inline-1.jpg",
+          "alt": "Qurum Muscat beach — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Al_Qurum_Beach_%2847954039322%29.jpg/1280px-Al_Qurum_Beach_%2847954039322%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/muscat-qurum/inline-2.jpg",
+          "alt": "Qurum Muscat beach — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Feral_cat_on_Qurum_Beach_in_Muscat.jpg/1280px-Feral_cat_on_Qurum_Beach_in_Muscat.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "palm-jumeirah",
+      "file": "palm-jumeirah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/palm-jumeirah/hero.jpg",
+          "alt": "Palm Jumeirah Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/2006-10-13_Palm_Jumeirah%2C_Dubai.jpg/1280px-2006-10-13_Palm_Jumeirah%2C_Dubai.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/palm-jumeirah/inline-1.jpg",
+          "alt": "Palm Jumeirah Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg.jpg/1280px-Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/palm-jumeirah/inline-2.jpg",
+          "alt": "Palm Jumeirah Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Atlantis_Hotel_%40_On_the_Palm_Jumeirah_Monorail_%40_Dubai_-_15689952998.jpg/1280px-Atlantis_Hotel_%40_On_the_Palm_Jumeirah_Monorail_%40_Dubai_-_15689952998.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "riyadh",
+      "file": "riyadh-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/riyadh/hero.jpg",
+          "alt": "Riyadh skyline KAFD — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Riyadh_North_Skyline_.jpg/1280px-Riyadh_North_Skyline_.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/riyadh/inline-1.jpg",
+          "alt": "Riyadh skyline KAFD — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Riyadh_Skyline_showing_the_King_Abdullah_Financial_District_%28KAFD%29_and_the_famous_Kingdom_Tower_.jpg/1280px-Riyadh_Skyline_showing_the_King_Abdullah_Financial_District_%28KAFD%29_and_the_famous_Kingdom_Tower_.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/riyadh/inline-2.jpg",
+          "alt": "Riyadh skyline KAFD — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/%22City_of_Saudi_Arabia_skyline_from_Mecca_City_Hall_-_Oct_2021.jpg%22.jpg/1280px-%22City_of_Saudi_Arabia_skyline_from_Mecca_City_Hall_-_Oct_2021.jpg%22.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "saadiyat-island",
+      "file": "saadiyat-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg",
+          "alt": "Saadiyat Island Abu Dhabi — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Abu_Dhabi_Roads.jpg/1280px-Abu_Dhabi_Roads.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/saadiyat-island/inline-1.jpg",
+          "alt": "Saadiyat Island Abu Dhabi — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Abu_Dhabi_Skyline.jpg/1280px-Abu_Dhabi_Skyline.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/saadiyat-island/inline-2.jpg",
+          "alt": "Saadiyat Island Abu Dhabi — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Al_Jubail_Saadiyat_Island_aerial_view.jpg/1280px-Al_Jubail_Saadiyat_Island_aerial_view.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "the-pearl-lusail",
+      "file": "the-pearl-lusail-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg",
+          "alt": "The Pearl Qatar Doha — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2022IslandsDohaBay.jpg/1280px-2022IslandsDohaBay.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/the-pearl-lusail/inline-1.jpg",
+          "alt": "The Pearl Qatar Doha — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Building_under_construction_at_Qanat_Quartier_in_The_Pearl-Qatar.jpg/1280px-Building_under_construction_at_Qanat_Quartier_in_The_Pearl-Qatar.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/the-pearl-lusail/inline-2.jpg",
+          "alt": "The Pearl Qatar Doha — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Construction_of_The_Pearl_Qatar_in_2010.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "the-valley-dubai",
+      "file": "the-valley-dubai-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/the-valley-dubai/hero.jpg",
+          "alt": "The Valley Dubai Emaar — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Dubai_Skyline%2C_Dubai.jpg/1280px-Dubai_Skyline%2C_Dubai.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/the-valley-dubai/inline-1.jpg",
+          "alt": "The Valley Dubai Emaar — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Dubai_Skyline_%2825500263365%29.jpg/1280px-Dubai_Skyline_%2825500263365%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/the-valley-dubai/inline-2.jpg",
+          "alt": "The Valley Dubai Emaar — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dubai_Skyline_%289343061840%29.jpg/1280px-Dubai_Skyline_%289343061840%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "tilal-al-ghaf",
+      "file": "tilal-al-ghaf-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/tilal-al-ghaf/hero.jpg",
+          "alt": "Tilal Al Ghaf Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Dubai_Skyline_2016.jpg/1280px-Dubai_Skyline_2016.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/tilal-al-ghaf/inline-1.jpg",
+          "alt": "Tilal Al Ghaf Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Dubai_Skyline_from_Business_Bay_-_Dubai%2C_UAE.jpg/1280px-Dubai_Skyline_from_Business_Bay_-_Dubai%2C_UAE.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/tilal-al-ghaf/inline-2.jpg",
+          "alt": "Tilal Al Ghaf Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Dubai_Skyline_from_Dubai_Creek_Harbour%2C_Dubai%2C_UAE.jpg/1280px-Dubai_Skyline_from_Dubai_Creek_Harbour%2C_Dubai%2C_UAE.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "town-square",
+      "file": "town-square-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/town-square/hero.jpg",
+          "alt": "Town Square Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/A_tourist_is_awestruck_by_the_scale_of_the_building_%2816315080065%29.jpg/1280px-A_tourist_is_awestruck_by_the_scale_of_the_building_%2816315080065%29.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/town-square/inline-1.jpg",
+          "alt": "Town Square Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Another_statue_of_Ranjit_Singh%2C_held_by_the_locals_in_high_reverence_%2838223374934%29.jpg/1280px-Another_statue_of_Ranjit_Singh%2C_held_by_the_locals_in_high_reverence_%2838223374934%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/town-square/inline-2.jpg",
+          "alt": "Town Square Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Banque_de_Montr%C3%A9al_%288392185480%29.jpg/1280px-Banque_de_Montr%C3%A9al_%288392185480%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "villanova",
+      "file": "villanova-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/villanova/hero.jpg",
+          "alt": "Villanova Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skyline_mit_Burj_Khalifa_%2818241030269%29.jpg/1280px-Dubai_Skyline_mit_Burj_Khalifa_%2818241030269%29.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/villanova/inline-1.jpg",
+          "alt": "Villanova Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Dubai_Skyline_on_10_January_2008.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/villanova/inline-2.jpg",
+          "alt": "Villanova Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Dubai_UAE_Landscape.jpg/1280px-Dubai_UAE_Landscape.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "west-bay-doha",
+      "file": "west-bay-doha-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg",
+          "alt": "West Bay Doha skyline — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/6/60/Dark_clouds_over_West_Bay_Skyline_in_Doha.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/west-bay-doha/inline-1.jpg",
+          "alt": "West Bay Doha skyline — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dhow_with_West_Bay_skyline_in_the_background.jpg/1280px-Dhow_with_West_Bay_skyline_in_the_background.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/west-bay-doha/inline-2.jpg",
+          "alt": "West Bay Doha skyline — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doha_-_West_Bay_Skyline_01.jpg/1280px-Doha_-_West_Bay_Skyline_01.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "yas-island",
+      "file": "yas-island-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/yas-island/hero.jpg",
+          "alt": "Yas Island Abu Dhabi — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Abu_Dhabi_Yas_Island_-_hotel_entrance_-_panoramio.jpg/1280px-Abu_Dhabi_Yas_Island_-_hotel_entrance_-_panoramio.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/yas-island/inline-1.jpg",
+          "alt": "Yas Island Abu Dhabi — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bilghaylam_Mangrove_Islands%2C_Camp_Island%2C_Ramhan_Island%2C_Al_Bahya_South_wetlands%2C_Yas_Island%2C_Abu_Dhabi%2C_Persian_Gulf_%28cropped%29.jpg/1280px-Bilghaylam_Mangrove_Islands%2C_Camp_Island%2C_Ramhan_Island%2C_Al_Bahya_South_wetlands%2C_Yas_Island%2C_Abu_Dhabi%2C_Persian_Gulf_%28cropped%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/yas-island/inline-2.jpg",
+          "alt": "Yas Island Abu Dhabi — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Etihad_Airways_Flyover_-_Yas_Island%2C_Abu_Dhabi_Grand_Prix_%282%29.jpg/1280px-Etihad_Airways_Flyover_-_Yas_Island%2C_Abu_Dhabi_Grand_Prix_%282%29.jpg"
+        }
+      ]
+    }
+  ]
+}
