@@ -48,16 +48,22 @@
     "batchId": "2026-06-16-batch-1",
     "backlogRemaining": 298
   },
-  "pendingDeploy": {
-    "note": "Yield cluster 7 URLs \u2014 re-submit after Vercel deploy",
-    "urls": [
-      "https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield/",
-      "https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield/",
+  "pendingDeploy": null,
+  "yieldClusterResubmit": {
+    "deployLiveAt": "2026-06-15",
+    "allUrls200": true,
+    "bing": "7/7 OK (2026-06-15)",
+    "google": "2/7 OK — quota exceeded, retry 5 URLs after UTC reset",
+    "googlePending": [
       "https://invest-gulf.com/compare/dubai-vs-oman-rental-yield/",
       "https://invest-gulf.com/compare/rak-vs-dubai-rental-yield/",
       "https://invest-gulf.com/guides/bahrain-rental-yield-guide/",
       "https://invest-gulf.com/guides/sharjah-rental-yield-guide/",
       "https://invest-gulf.com/guides/jeddah-rental-yield-guide/"
+    ],
+    "googleDone": [
+      "https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield/",
+      "https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield/"
     ]
   }
 }
