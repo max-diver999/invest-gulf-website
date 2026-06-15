@@ -1,0 +1,146 @@
+[
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-healthcare-guide-expats",
+    "url": "/guides/dubai-healthcare-guide-expats/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2583,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-insurance-home",
+    "url": "/guides/dubai-property-insurance-home/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2294,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-public-vs-private-healthcare",
+    "url": "/guides/dubai-public-vs-private-healthcare/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2200,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "emaar-community-living-guide",
+    "url": "/guides/emaar-community-living-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2328,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "oman-family-visa",
+    "url": "/guides/oman-family-visa/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2409,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-vs-dubai-living",
+    "url": "/guides/qatar-vs-dubai-living/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2552,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-work-visa-process",
+    "url": "/guides/qatar-work-visa-process/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2633,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "uae-visa-medical-test",
+    "url": "/guides/uae-visa-medical-test/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 95,
+    "ready": false,
+    "blockers": 1,
+    "words": 2294,
+    "issues": [
+      "low-fact-density"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "compare",
+    "slug": "dubai-vs-riyadh-property-investment",
+    "url": "/compare/dubai-vs-riyadh-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": false,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 1838,
+    "issues": [
+      "over-bold"
+    ]
+  }
+]
