@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-14T23:58:10.459Z",
+  "updatedAt": "2026-06-15T00:01:47.113Z",
   "urls": [
     "https://invest-gulf.com",
     "https://invest-gulf.com/about",
@@ -2428,6 +2428,26 @@
       "url": "https://invest-gulf.com/areas/west-bay-doha-property-investment",
       "channel": "google",
       "at": "2026-06-14T23:58:10.459Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/best-gulf-country-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T00:01:47.113Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-vs-investor-visa-uae",
+      "channel": "google",
+      "at": "2026-06-15T00:01:47.113Z"
+    },
+    {
+      "url": "https://invest-gulf.com/areas/villanova-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T00:01:47.113Z"
+    },
+    {
+      "url": "https://invest-gulf.com/site-report",
+      "channel": "google",
+      "at": "2026-06-15T00:01:47.113Z"
     }
   ]
 }

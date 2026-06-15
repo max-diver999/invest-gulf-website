@@ -62,6 +62,17 @@ export const AREA_SLUGS_BATCH2_ALL = [
   'west-bay-doha-property-investment',
 ];
 
+/** Batch3 — 4 district guides missed in batch2 map */
+export const AREA_SLUGS_BATCH3 = [
+  'al-barari-property-investment',
+  'meydan-horizon-property-investment',
+  'tilal-al-ghaf-property-investment',
+  'jebel-ali-village-property-investment',
+];
+
+/** Full areas catalog (map-100 + batch2 + batch3) */
+export const AREA_SLUGS_ALL = [...AREA_SLUGS_BATCH2_ALL, ...AREA_SLUGS_BATCH3];
+
 /** Batch2 remainder after map-100 migration (31 slugs) */
 export const AREA_SLUGS_BATCH2 = AREA_SLUGS_BATCH2_ALL.filter(
   (s) => !AREA_SLUGS_MAP100.includes(s),

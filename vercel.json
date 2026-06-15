@@ -741,6 +741,26 @@
       "source": "/guides/villanova-dubai-property-investment/",
       "destination": "/areas/villanova-property-investment/",
       "permanent": true
+    },
+    {
+      "source": "/guides/al-barari-property-investment/",
+      "destination": "/areas/al-barari-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meydan-horizon-property-investment/",
+      "destination": "/areas/meydan-horizon-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/tilal-al-ghaf-property-investment/",
+      "destination": "/areas/tilal-al-ghaf-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/jebel-ali-village-property-investment/",
+      "destination": "/areas/jebel-ali-village-property-investment/",
+      "permanent": true
     }
   ],
   "headers": [

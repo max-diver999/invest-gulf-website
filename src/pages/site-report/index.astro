@@ -121,8 +121,8 @@ export const prerender = true;
   </div>
   <div class="header-meta">
     <div class="label">Last updated</div>
-    <div class="value">11 June 2026 · v1.4 (P3 cannibal)</div>
-    <div class="live-badge"><span class="live-dot"></span> ~593 URLs · 54 areas · 17 cannibal clusters (documented)</div>
+    <div class="value">11 June 2026 · v1.5 (batch3 areas)</div>
+    <div class="live-badge"><span class="live-dot"></span> ~593 URLs · 58 areas · district map complete</div>
   </div>
 </div>
 
@@ -133,7 +133,7 @@ export const prerender = true;
     <div class="stat-card">
       <div class="num gold">592</div>
       <div class="label">URLs in sitemap</div>
-      <div class="sublabel">522 guides · 25 compare · 25 projects · 12 news · static pages</div>
+      <div class="sublabel">464 guides · 58 areas · 151 Vercel redirects</div>
     </div>
     <div class="stat-card">
       <div class="num">1.78M</div>
@@ -143,7 +143,7 @@ export const prerender = true;
     <div class="stat-card">
       <div class="num green">584</div>
       <div class="label">Content validate</div>
-      <div class="sublabel">P3 cannibal: 3 noindex · 24 link fixes · 147 Vercel redirects</div>
+      <div class="sublabel">Batch3: al-barari, meydan, tilal-al-ghaf, jebel-ali-village → /areas/</div>
     </div>
     <div class="stat-card">
       <div class="num green">106</div>
@@ -282,13 +282,13 @@ export const prerender = true;
         <tr><th>Collection</th><th>Pages</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr><td>Guides</td><td class="count">468</td><td>Batch2: 31 more district guides moved to /areas/</td></tr>
-        <tr><td>Areas</td><td class="count">54</td><td>Full batch2 map: JBR, Discovery Gardens, Khalifa City, West Bay…</td></tr>
+        <tr><td>Guides</td><td class="count">464</td><td>Batch3: 4 district guides moved to /areas/ (map complete)</td></tr>
+        <tr><td>Areas</td><td class="count">58</td><td>Full catalog: map-100 + batch2 + batch3 (al-barari, meydan, tilal, jebel-ali)</td></tr>
         <tr><td>Comparisons</td><td class="count">25</td><td>Dubai vs Muscat, Abu Dhabi vs Dubai, freehold vs leasehold…</td></tr>
         <tr><td>Projects</td><td class="count">25</td><td>Developer / project reviews batch</td></tr>
         <tr><td>News</td><td class="count">12</td><td>Market updates · Jun 2026</td></tr>
         <tr><td>Static</td><td class="count">~9</td><td>Home, guides, areas hub, compare, about, contact, site-report</td></tr>
-        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~593</td><td><strong>~1.78M words</strong> · 54 areas · 23 noindex dupes</td></tr>
+        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~593</td><td><strong>~1.78M words</strong> · 58 areas · 23 noindex dupes</td></tr>
       </tbody>
     </table>
   </div>
@@ -317,6 +317,14 @@ export const prerender = true;
 
   <div class="section-title">Launch timeline</div>
   <div>
+    <div class="changelog-item">
+      <div class="changelog-date">11 Jun 2026</div>
+      <div>
+        <div class="changelog-title">Batch3 areas — 4 districts → /areas/ (58 total)</div>
+        <div class="changelog-desc">Final district migration: al-barari, meydan-horizon, tilal-al-ghaf, jebel-ali-village. migrate-areas-batch3.mjs · 4 Vercel 301s (151 total). Areas map complete.</div>
+        <div class="changelog-tags"><span class="tag green">Areas</span><span class="tag blue">Batch3</span><span class="tag amber">Report v1.5</span></div>
+      </div>
+    </div>
     <div class="changelog-item">
       <div class="changelog-date">11 Jun 2026</div>
       <div>
@@ -426,8 +434,8 @@ export const prerender = true;
     <div class="next-item">
       <div class="priority medium">MED</div>
       <div>
-        <div class="text">Batch3 areas — al-barari, meydan, tilal-al-ghaf, jebel-ali-village (4 guides still in /guides/)</div>
-        <div class="subtext">Migrate to /areas/ per BATCH2 map remainder · link rewrites + Vercel 301</div>
+        <div class="text">DMCC cluster internal linking — pos 53–96 with 10+ combined impressions</div>
+        <div class="subtext">Cross-link from school + visa guides to dmcc-company-setup · expand FAQ on top queries</div>
       </div>
     </div>
     <div class="next-item">
@@ -459,7 +467,7 @@ export const prerender = true;
 </div>
 
 <div class="footer">
-  <strong>Invest Gulf Site Report v1.4</strong> · Updated 11 June 2026 ·
+  <strong>Invest Gulf Site Report v1.5</strong> · Updated 11 June 2026 ·
   <a href="https://invest-gulf.com/site-report/">invest-gulf.com/site-report/</a><br />
   Update weekly via GSC + GA4 + Bing MCP · Content map: GULF_RE_CONTENT_MAP_100.md
 </div>
