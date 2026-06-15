@@ -50,10 +50,11 @@
   },
   "pendingDeploy": null,
   "corpusCleanupDeploy": {
-    "commit": "30874b6",
+    "commit": "e1ad0b4",
     "deployAt": "2026-06-15",
-    "indexnow": "121/121 OK (corpus fix) + 5 yield re-ping",
-    "googlePending": "quota exceeded — queue with yield 5 + area 58 on next UTC day"
+    "indexnow": "121 corpus + 8 P0/P1 URLs + component fix pending deploy",
+    "googlePending": "quota exceeded — queue yield 5 + area 58 + backlog on UTC reset",
+    "fixes": ["verify 7 guides", "llms.txt", "landing em-dash", "Footer/LeadForm em-dash", "audit gate case-insensitive"]
   },
   "googlePriorityQueue": {
     "when": "next UTC day after quota reset",
