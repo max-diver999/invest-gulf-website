@@ -223,6 +223,37 @@ for (const [kw, ids] of clusters) {
   if (ids.size >= 2) issues.cannibalClusters.push({ keywords: kw, ids: [...ids].slice(0, 8) });
 }
 
+const INTENTIONAL_CANNIBAL_KEYS = new Set([
+  'off|off|plan',
+  'green|visa|visa',
+  'golden|visa|visa',
+  'remote|visa|work',
+  'remote|visa|visa|work',
+  'family|sponsorship|visa',
+  'best|country|gulf',
+  'area|prices|rent',
+  'island|near|schools',
+  'abu|dhabi|living',
+  'abu|dhabi|golden|visa',
+  'abu|dhabi|school',
+  'best|off|plan',
+  'premium|residency|saudi',
+  'rental|short|term',
+  'abu|dhabi|rental|yield',
+  'oman|rental|yield',
+  'qatar|rental|yield',
+  'rental|saudi|yield',
+  'rak|rental|yield',
+  'qatar|visa|work',
+]);
+
+issues.cannibalClustersIntentional = issues.cannibalClusters.filter((c) =>
+  INTENTIONAL_CANNIBAL_KEYS.has(c.keywords),
+);
+issues.cannibalClustersActionable = issues.cannibalClusters.filter(
+  (c) => !INTENTIONAL_CANNIBAL_KEYS.has(c.keywords),
+);
+
 // sort repeated paragraphs by count desc, dedupe by id sets
 issues.repeatedParagraphs = issues.repeatedParagraphs
   .sort((a, b) => b.count - a.count)
@@ -237,6 +268,8 @@ const summary = {
   dupTitle: issues.dupTitle.length,
   dupDesc: issues.dupDesc.length,
   cannibalClusters: issues.cannibalClusters.length,
+  cannibalClustersIntentional: issues.cannibalClustersIntentional.length,
+  cannibalClustersActionable: issues.cannibalClustersActionable.length,
   repeatedParagraphs: issues.repeatedParagraphs.length,
   thinContent: issues.thinContent.length,
   missingHero: issues.missingHero.length,
@@ -263,6 +296,7 @@ if (JSON_OUT) {
     ['DUPLICATE TITLES (indexable)', issues.dupTitle],
     ['DUPLICATE DESCRIPTIONS (indexable)', issues.dupDesc],
     ['CANNIBALIZATION CLUSTERS (slug overlap)', issues.cannibalClusters],
+    ['CANNIBALIZATION ACTIONABLE (non-hub)', issues.cannibalClustersActionable],
     ['REPEATED PARAGRAPHS (3+ files)', issues.repeatedParagraphs],
     ['THIN CONTENT', issues.thinContent.slice(0, 20)],
     ['MISSING heroImage', issues.missingHero.slice(0, 15)],
