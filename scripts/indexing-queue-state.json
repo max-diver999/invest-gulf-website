@@ -3,7 +3,7 @@
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-15T10:48:09Z",
+  "updatedAt": "2026-06-15T12:15:00Z",
   "methodology": "Backlog = live sitemap + submitted-urls.json entries[] + git touch. Bing ONLY bing.com/indexnow.",
   "channels": {
     "google": "submit-google-explicit.mjs",
@@ -49,11 +49,26 @@
     "backlogRemaining": 298
   },
   "pendingDeploy": null,
+  "corpusCleanupDeploy": {
+    "commit": "30874b6",
+    "deployAt": "2026-06-15",
+    "indexnow": "121/121 OK (corpus fix) + 5 yield re-ping",
+    "googlePending": "quota exceeded — queue with yield 5 + area 58 on next UTC day"
+  },
+  "googlePriorityQueue": {
+    "when": "next UTC day after quota reset",
+    "order": [
+      "yieldClusterResubmit.googlePending (5)",
+      "area-photos-p1 (58)",
+      "indexing-batch-pending.json (200)"
+    ],
+    "note": "58 area URLs sent Bing on bced79f; Google still pending"
+  },
   "yieldClusterResubmit": {
     "deployLiveAt": "2026-06-15",
     "allUrls200": true,
-    "bing": "7/7 OK (2026-06-15)",
-    "google": "2/7 OK — quota exceeded, retry 5 URLs after UTC reset",
+    "bing": "7/7 OK + 5 re-ping 2026-06-15 (corpus fix)",
+    "google": "2/7 OK — 5 pending, quota exceeded today",
     "googlePending": [
       "https://invest-gulf.com/compare/dubai-vs-oman-rental-yield/",
       "https://invest-gulf.com/compare/rak-vs-dubai-rental-yield/",
