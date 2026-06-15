@@ -97,7 +97,7 @@ const CHECKS = [
     id: 'draft-marker',
     severity: 'P0',
     test: (html) => {
-      if (/(\[VERIFY(?:\]|:)|\*\*VERIFY:\*\*|KB §)/.test(html)) {
+      if (/(\[verify(?:\]|:)|\[VERIFY(?:\]|:)|\*\*VERIFY:\*\*|KB §)/i.test(html)) {
         return 'draft/verify marker in HTML';
       }
       if (/\bsource needed\b/i.test(html)) return 'draft/verify marker in HTML';

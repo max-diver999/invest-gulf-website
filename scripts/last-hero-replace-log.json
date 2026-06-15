@@ -1,0 +1,3326 @@
+[
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-adgm-setup",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-banking-expats",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-cost-of-living",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-driving-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-driving-license",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-expat-community",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-freehold-areas",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-golden-visa-living",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-golden-visa-property",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-health-insurance-doh",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-healthcare-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-international-schools-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-off-plan-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-property-investment-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-relocation-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-rent-prices-by-area",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-rental-yield-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-residency-options",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-utilities-addc",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "abu-dhabi-vs-dubai-families",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "adek-school-ratings-abu-dhabi",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "ajman-freehold-property-guide",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "ajman-living-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "ajman-property-investment-guide",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "aldar-properties-review",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "american-schools-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "arada-developer-review",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "azizi-developments-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-banking-expats",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-driving-license",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-family-visa",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-golden-residence-property",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-golden-residence",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-healthcare-guide",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-international-schools",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-property-foreigner-living",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-property-investment-guide",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-relocation-guide",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-rental-yield-guide",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-saudi-bridge-commute",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "bahrain-vs-dubai-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-areas-buy-property-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-banks-expats-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-dubai-developers-rental-yield",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-gulf-country-for-families",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-gulf-country-for-retirees",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-gulf-country-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-health-insurance-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-abu-dhabi",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-areas-dubai-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-business-bay-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-creek-harbour",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-downtown-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-dubai-marina",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-dubai-south",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-jvc-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "best-off-plan-ras-al-khaimah",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "binghatti-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "boarding-schools-uae",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "british-schools-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "buy-property-dubai-foreigner",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "buy-property-through-uae-company",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "buy-to-let-mortgage-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "buying-property-uae-bank-transfer",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "can-foreigners-buy-property-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "can-foreigners-buy-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "capital-gains-uae-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "cash-vs-mortgage-dubai-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "convert-foreign-license-dubai",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "cost-of-buying-property-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "currency-exchange-aed-usd-eur",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "currency-transfer-buy-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "damac-lagoons-community-living",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "damac-properties-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "danube-properties-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "difc-company-setup",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dld-mortgage-registration-fees",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dmcc-company-setup",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "doha-cost-of-living",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "doha-international-schools-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "doha-rent-prices-by-area",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "doha-vs-dubai-schools",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "double-tax-treaty-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "downtown-dubai-living-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-ai-digital-economy-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-air-quality",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-alcohol-rules-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-beach-clubs-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-business-setup-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-capital-appreciation-vs-yield",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-car-ownership-cost",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-chores-time-parking",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-co-working-spaces",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-cooling-off-period-off-plan",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-cost-of-living-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-creek-harbour-living",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-culture-etiquette-expats",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-dental-care-costs",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-developers-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-district-cooling-charges",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-domestic-worker-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-driving-license-guide",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-earthquake-risk",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-ejari-tenancy-contract",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-expat-community-groups",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-expo-city-living",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-flooding-rain-risk",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-freelance-visa-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-grocery-costs",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-gym-fitness-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-health-insurance-mandatory",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-healthcare-guide-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-holiday-home-roi-calculator-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-inheritance-non-muslim-wills",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-international-schools-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-internet-mobile-plans",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-life-insurance-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-maid-nanny-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-mainland-llc-setup",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-marina-living-pros-cons",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-maternity-costs",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-metaverse-property-nft-reality",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-monthly-budget-expat-family",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-mortgage-broker-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-mortgage-rates-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-neighbourhoods-for-families",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-neighbourhoods-for-singles",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-nursery-early-years",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-part-time-living",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-payment-plan-types-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-police-clearance-certificate",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-prayer-times-work-culture",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-dispute-resolution",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-flipping-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-american-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-australian-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-british-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-canadian-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-chinese-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-french-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-german-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-indian-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-pakistani-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-relocating-families",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-russian-buyers",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-saudi-buyers",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-for-south-african-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-handover-checklist",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-inheritance-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-insurance-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-insurance-home",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-investment-for-beginners",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-investment-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-market-cooling-or-growing",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-market-cycle-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-market-forecast-2026-2027",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-portfolio-strategy",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-russian-buyers-relocation",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-scams-red-flags",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-snagging-living",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-taxes-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-valuation-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-visa-relocation-bundle",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-property-vs-stock-market",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-public-vs-private-healthcare",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-relocation-checklist",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-relocation-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rent-increase-calculator-rera",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rent-prices-by-area",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rental-guarantee-schemes-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rental-law-landlord-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rental-yield-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-residence-visa-stamping",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rest-app-property-due-diligence",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-rta-fines-parking",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-safety-crime-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-school-bus-transport-fees",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-school-fees-by-curriculum",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-school-waiting-lists",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-service-charge-index-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-special-needs-schools",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-summer-survival-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-tenant-eviction-rules-rera",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-transport-costs-metro-taxi",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-university-options-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-utility-bills-deewa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vacancy-rates-rental-demand",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-villa-vs-apartment-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-abu-dhabi-cost-living",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-abu-dhabi-living",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-abu-dhabi-school-fees",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-doha-vs-riyadh-living",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-london-living-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-vs-singapore-expat",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-weekend-culture",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "dubai-winter-weather",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "due-diligence-dubai-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "ejari-registration-landlord-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "ellington-properties-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "emaar-community-living-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "emaar-properties-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "emergency-numbers-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "emirates-id-after-property-purchase",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "emirates-id-application-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "escrow-oqood-dubai-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "first-30-days-dubai-expat",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "foreign-owner-rights-uae-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "freehold-areas-dubai-list",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "freehold-vs-leasehold-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "fujairah-beach-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "fujairah-living-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "fujairah-property-investment-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "german-expats-dubai-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-2-million-aed-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-application-step-by-step",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-family-sponsorship",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-mortgage-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-multiple-properties-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-off-plan-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-renewal-requirements-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-school-fees-package",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-vs-dubai-residence-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-vs-green-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "golden-visa-vs-investor-visa-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gross-vs-net-yield-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-banking-comparison-expats",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-expat-living-comparison",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-healthcare-comparison",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-property-investment-comparison-2026",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-residency-by-investment-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-residency-pathways-comparison",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "gulf-schools-comparison",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "health-insurance-property-visa-uae",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "hidden-costs-living-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "highest-rental-yield-areas-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "homeschooling-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-much-to-invest-dubai-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-buy-dubai-property-remotely",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-buy-property-dubai-step-by-step",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-calculate-rental-yield-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-choose-school-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-evaluate-dubai-developer",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "how-to-flip-off-plan-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "ib-schools-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "indian-schools-dubai-cbse",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "international-money-transfer-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "international-schools-gulf-comparison",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "is-dubai-property-bubble-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "is-dubai-property-worth-it-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "islamic-mortgage-dubai-property",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "islamic-vs-conventional-mortgage-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "jeddah-cost-of-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "jeddah-international-schools",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "jeddah-rental-yield-guide",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "jumeirah-living-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "khda-school-ratings-explained",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "leaving-dubai-exit-checklist",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "leaving-dubai-selling-property-checklist",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "lgbtq-living-dubai",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-al-ain",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-al-hamra-village",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-al-marjan-island",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-al-reem-island",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-amwaj-islands",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-jeddah-corniche",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-khalifa-city",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-lusail-qatar",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-mina-al-arab",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-muscat-al-mouj",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-muscat-qurum",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-neom-the-line",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-riyadh-diplomatic-quarter",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-saadiyat-island",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-seef-bahrain",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-sharjah-al-khan",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-the-pearl-qatar",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-west-bay-doha",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "living-yas-island-abu-dhabi",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "manama-cost-of-living",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "meraas-properties-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "mistakes-foreign-buyers-dubai-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "moving-to-dubai-with-family",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "muscat-cost-of-living",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "muscat-international-schools",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "nakheel-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "neom-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "net-yield-calculator-uae-property",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "non-resident-mortgage-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "nshama-developer-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-assignment-sale-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-payment-plans-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-property-dubai-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-risks-delays-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-vs-ready-property-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "off-plan-vs-secondary-market-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "offshore-bank-account-uae-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-banking-expats",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-driving-license",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-family-visa",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-healthcare-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-itc-visa-living",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-itc-zones-property",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-property-foreigner-living",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-property-investment-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-relocation-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-rental-yield-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-residency-by-investment",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-retirement-living",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-tax-expats",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-vs-dubai-cost",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "oman-vs-uae-living",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "omniyat-developer-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "open-bank-account-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "open-bank-account-non-resident-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "opening-bank-account-dubai-property-buyers",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "palm-jebel-ali-investment-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "palm-jumeirah-living-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "pet-relocation-dubai",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "post-handover-payment-plan-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "power-of-attorney-property-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "proof-of-funds-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "property-management-dubai-cost",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "property-snagging-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-banking-expats",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-culture-etiquette",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-driving-license",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-family-visa-sponsorship",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-healthcare-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-off-plan-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-permanent-residency",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-property-buyer-relocation",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-property-investment-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-relocation-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-rental-yield-guide",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-residency-by-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-residency-by-property",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-school-fees",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-tax-expats",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-vs-dubai-cost-living",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-vs-dubai-living",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-vs-uae-remote-work-visa",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "qatar-work-visa-process",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-banking-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-branded-residences-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-commute-to-dubai",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-cost-of-living-detailed",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-cost-of-living",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-healthcare-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-properties-developer-review",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-rental-yield-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-schools-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-vs-dubai-family-life",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "rak-vs-sharjah-living",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "ras-al-khaimah-property-investment-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "ras-al-khaimah-relocation-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "refinance-property-dubai-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "relocate-bahrain",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "relocate-oman",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "relocate-qatar",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "relocate-ras-al-khaimah",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "relocate-saudi-arabia",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "remote-work-dubai-tax-implications",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "remote-work-visa-vs-green-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rent-vs-buy-dubai-expat",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rental-income-tax-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "rera-broker-verification-dubai",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "riyadh-cost-of-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "riyadh-international-schools",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "russian-expats-dubai-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "salalah-living-guide",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-arabia-property-foreigners-guide",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-arabia-relocation-guide",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-banking-expats",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-driving-women-expats",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-entertainment-social-life",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-family-visa",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-healthcare-expats",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-iqama-process",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-off-plan-guide",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-premium-residency-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-premium-residency-property",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-property-designated-zones-explained",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-property-foreigner-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-remote-work-visa",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-rental-yield-guide",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-tax-zakat-expats",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-vs-dubai-cost",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "saudi-vs-uae-living",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "school-fees-vs-property-budget-dubai",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-al-reem-island",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-arabian-ranches",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-dubai-hills",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-dubai-marina",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-dubai-south",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-jvc",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-saadiyat-island",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "schools-near-yas-island",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "select-group-developer-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "selling-property-dubai-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "service-charges-dubai-by-area",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-cost-of-living",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-dubai-commuter-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-freehold-areas-guide",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-property-investment-guide",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-relocation-guide",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-rental-yield-guide",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-schools-commute-dubai",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-schools-for-dubai-commuters",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-vs-dubai-commute-property",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sharjah-vs-dubai-rent",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "shipping-household-goods-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "short-term-rental-dubai-license",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "short-term-vs-long-term-rental-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "single-woman-living-dubai",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "sobha-realty-review",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-australian-nationals-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-french-residents-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-german-residents-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-indian-nri-dubai-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-russian-nationals-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-uae-property-uae-resident",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-uk-nationals-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "tax-us-citizens-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-attestation-documents",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-banking-for-indian-nris",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-banking-for-russian-expats",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-banking-guide-expats",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-blue-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-central-bank-mortgage-rules",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-corporate-tax-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-credit-score-al-etihad",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-crs-fatca-banking",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-employment-visa-process",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-family-visa-sponsorship",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-free-zone-vs-mainland",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-freelance-permit-dubai",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-golden-visa-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-green-visa-freelancer",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-green-visa-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-green-visa-skilled-worker",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-inheritance-property-expats",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-mortgage-banks-list",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-northern-emirates-comparison",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-remote-work-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-residency-visa-types-guide",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-residency-vs-citizenship",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-residency-without-employer",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-retirement-visa",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-salary-account-requirements",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-savings-fixed-deposits",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-tax-guide-expats",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-tax-residency-183-day-rule",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-tax-residency-183-days",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-tax-residency-property",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-visa-fees-2026",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-visa-medical-test",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-visa-overstay-fines",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-visa-property-investor-750k",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-vs-qatar-for-russian-expats",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-vs-saudi-for-investors",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "uae-will-difc-adgm",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "umm-al-quwain-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "vat-uae-property-rent",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "villanova-dubai-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "guides",
+    "slug": "wynn-al-marjan-island-property-impact",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "wynn-al-marjan-island-timeline-impact",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "guides",
+    "slug": "wynn-al-marjan-living-impact",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-barari-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-furjan-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-ghadeer-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-hamra-village-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-marjan-island-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-maryah-island-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-nakheel-rak-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-raha-beach-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-reef-abu-dhabi-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-reem-island-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "al-zahia-sharjah-property-investment",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "aljada-sharjah-property-investment",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "amwaj-islands-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "arabian-ranches-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "bluewaters-island-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "business-bay-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "city-walk-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "damac-hills-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "dammam-khobar-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "discovery-gardens-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "downtown-dubai-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-creek-harbour-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-harbour-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-hills-estate-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/emaar-south-expo-living/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-islands-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-marina-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-production-city-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-silicon-oasis-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-south-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "dubai-sports-city-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "hudayriyat-island-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "impz-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "jbr-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "jebel-ali-village-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "jeddah-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "jlt-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "jvc-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "khalifa-city-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "lusail-city-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "manama-property-investment",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "masdar-city-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "mbr-city-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "meydan-horizon-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "mina-al-arab-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "motor-city-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "mudon-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "muscat-al-mouj-property-investment",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "muscat-qurum-property-investment",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "palm-jumeirah-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/meraas-nad-al-sheba-villas/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "riyadh-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "saadiyat-island-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "the-pearl-lusail-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "the-valley-dubai-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "tilal-al-ghaf-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "town-square-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "villanova-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "coll": "areas",
+    "slug": "west-bay-doha-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "areas",
+    "slug": "yas-island-property-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "abu-dhabi-vs-dubai-investment",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "aldar-vs-damac",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "aldar-vs-emaar",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "bahrain-vs-dubai-investment",
+    "region": "bahrain",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-abu-dhabi-rental-yield",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-doha-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-london-property-investment",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-muscat-property-investment",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-oman-rental-yield",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-qatar-rental-yield",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-riyadh-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-saudi-rental-yield",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "dubai-vs-sharjah-property-investment",
+    "region": "sharjah",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "emaar-vs-damac",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "emaar-vs-nakheel",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "emaar-vs-sobha",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "freehold-vs-leasehold-uae",
+    "region": "abu-dhabi",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "meraas-vs-emaar",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "off-plan-vs-ready-property-uae",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "qatar-vs-uae-residency",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/glass-towers.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "rak-vs-dubai-rental-yield",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "rak-vs-fujairah-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "rak-vs-sharjah-property-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "ras-al-khaimah-vs-dubai-investment",
+    "region": "rak",
+    "hero": "https://invest-gulf.com/images/heroes/modern-tower.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "saudi-arabia-vs-uae-golden-visa",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/gulf-business.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "saudi-vs-uae-property-investment",
+    "region": "saudi",
+    "hero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "sobha-vs-damac",
+    "region": "dubai",
+    "hero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "coll": "compare",
+    "slug": "uae-vs-oman-property-investment",
+    "region": "oman",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  },
+  {
+    "coll": "compare",
+    "slug": "uae-vs-qatar-property-investment",
+    "region": "qatar",
+    "hero": "https://invest-gulf.com/images/heroes/waterfront.jpg"
+  }
+]

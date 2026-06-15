@@ -1,0 +1,37 @@
+# Invest Gulf
+
+> Independent research on UAE and Gulf property investment for foreign buyers: fees, yields, Golden Visa, off-plan risks, and cross-market comparisons.
+
+- Site: https://invest-gulf.com
+- Contact: info@invest-gulf.com
+- Focus: Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, Oman, Bahrain property investment
+- Not a developer, not a listing portal
+
+## Key hubs
+- /guides/
+- /areas/
+- /compare/
+- /projects/
+- /news/
+
+## Conversion
+- /get-shortlist/
+- /contact/
+- /gulf-property-investment-consultation/
+- /methodology/
+
+## Money pages
+- /invest-dubai-property/
+- /invest-dubai-off-plan/
+- /abu-dhabi-property-investment/
+- /invest-abu-dhabi-off-plan/
+- /invest-ras-al-khaimah-property/
+- /golden-visa-dubai-property/
+
+## Trust
+- /about/
+- /privacy-policy/
+- /terms/
+
+## Full corpus
+https://invest-gulf.com/llms-full.txt

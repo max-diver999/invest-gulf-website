@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T10:47:09.828Z",
+  "updatedAt": "2026-06-15T11:07:33.468Z",
   "urls": [
     "https://invest-gulf.com",
     "https://invest-gulf.com/about",
@@ -3574,6 +3574,16 @@
       "url": "https://invest-gulf.com/guides/oman-vs-uae-living",
       "channel": "google",
       "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T11:07:33.468Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T11:07:33.468Z"
     }
   ]
 }
