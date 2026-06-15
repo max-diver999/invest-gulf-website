@@ -726,6 +726,21 @@
       "source": "/guides/west-bay-doha-property-investment/",
       "destination": "/areas/west-bay-doha-property-investment/",
       "permanent": true
+    },
+    {
+      "source": "/guides/gulf-property-investment-comparison-2026/",
+      "destination": "/guides/best-gulf-country-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/uae-visa-property-investor-750k/",
+      "destination": "/guides/golden-visa-vs-investor-visa-uae/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/villanova-dubai-property-investment/",
+      "destination": "/areas/villanova-property-investment/",
+      "permanent": true
     }
   ],
   "headers": [

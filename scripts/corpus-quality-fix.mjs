@@ -38,6 +38,18 @@ const LINK_FIXES = [
   ['/guides/qatar-residency-by-property/', '/guides/qatar-property-buyer-relocation/'],
   ['/guides/bahrain-golden-residence-property/', '/guides/bahrain-property-foreigner-living/'],
   ['/guides/uae-tax-residency-183-day-rule/', '/guides/uae-tax-guide-expats/'],
+  // P3 cannibalization → KEEP
+  ['/guides/gulf-property-investment-comparison-2026/', '/guides/best-gulf-country-property-investment/'],
+  ['/guides/uae-visa-property-investor-750k/', '/guides/golden-visa-vs-investor-visa-uae/'],
+  ['/guides/villanova-dubai-property-investment/', '/areas/villanova-property-investment/'],
+];
+
+/** relatedSlugs slug replacements (noindex / merged targets) */
+const RELATED_SLUG_FIXES = [
+  ['golden-visa-2-million-aed-explained', 'uae-golden-visa-property'],
+  ['gulf-property-investment-comparison-2026', 'best-gulf-country-property-investment'],
+  ['uae-visa-property-investor-750k', 'golden-visa-vs-investor-visa-uae'],
+  ['villanova-dubai-property-investment', 'villanova-property-investment'],
 ];
 
 /** coll/slug → KEEP note */
@@ -64,6 +76,10 @@ const NOINDEX = {
   'guides/qatar-residency-by-property': 'KEEP: qatar-property-buyer-relocation',
   'guides/bahrain-golden-residence-property': 'KEEP: bahrain-property-foreigner-living',
   'guides/uae-tax-residency-183-day-rule': 'KEEP: uae-tax-guide-expats',
+  // P3 cannibalization
+  'guides/gulf-property-investment-comparison-2026': 'KEEP: best-gulf-country-property-investment',
+  'guides/uae-visa-property-investor-750k': 'KEEP: golden-visa-vs-investor-visa-uae',
+  'guides/villanova-dubai-property-investment': 'KEEP: areas/villanova-property-investment',
 };
 
 const BAHRAIN_HUB = 'relocate-bahrain';
@@ -153,7 +169,21 @@ function setNoindex(raw) {
   return raw.replace(/^---\n[\s\S]*?\n---/, `---\n${fm.trimEnd()}\n---`);
 }
 
-const log = { links: 0, noindex: 0, tails: 0, files: [] };
+function fixRelatedSlugs(raw) {
+  let out = raw;
+  let n = 0;
+  for (const [from, to] of RELATED_SLUG_FIXES) {
+    const re = new RegExp(`(^\\s*-\\s*")${from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(")`, 'gm');
+    const hits = (out.match(re) || []).length;
+    if (hits) {
+      out = out.replace(re, `$1${to}$2`);
+      n += hits;
+    }
+  }
+  return { raw: out, n };
+}
+
+const log = { links: 0, noindex: 0, tails: 0, related: 0, files: [] };
 
 for (const coll of COLLECTIONS) {
   const dir = join(ROOT, coll);
@@ -172,6 +202,14 @@ for (const coll of COLLECTIONS) {
         log.links += n;
         changed = true;
       }
+    }
+
+    const relFix = fixRelatedSlugs(raw);
+    if (relFix.n) {
+      raw = relFix.raw;
+      log.related += relFix.n;
+      log.files.push(`RELATED ${id} (${relFix.n})`);
+      changed = true;
     }
 
     if (NOINDEX[id]) {
@@ -231,6 +269,7 @@ for (const coll of COLLECTIONS) {
 console.log('=== CORPUS QUALITY FIX ===');
 console.log('dry run:', DRY);
 console.log('link replacements:', log.links);
+console.log('relatedSlugs fixed:', log.related);
 console.log('noindex applied:', log.noindex);
 console.log('duplicate tails trimmed:', log.tails);
 for (const line of log.files) console.log(' ', line);

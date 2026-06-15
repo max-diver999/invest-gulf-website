@@ -121,8 +121,8 @@ export const prerender = true;
   </div>
   <div class="header-meta">
     <div class="label">Last updated</div>
-    <div class="value">11 June 2026 · v1.3 (batch2 areas)</div>
-    <div class="live-badge"><span class="live-dot"></span> ~593 URLs · 54 areas · batch2 complete</div>
+    <div class="value">11 June 2026 · v1.4 (P3 cannibal)</div>
+    <div class="live-badge"><span class="live-dot"></span> ~593 URLs · 54 areas · 17 cannibal clusters (documented)</div>
   </div>
 </div>
 
@@ -143,10 +143,10 @@ export const prerender = true;
     <div class="stat-card">
       <div class="num green">584</div>
       <div class="label">Content validate</div>
-      <div class="sublabel">P0 em-dash cleanup · QA pipeline · fix-batch tier B 15/15 ready</div>
+      <div class="sublabel">P3 cannibal: 3 noindex · 24 link fixes · 147 Vercel redirects</div>
     </div>
     <div class="stat-card">
-      <div class="num green">103</div>
+      <div class="num green">106</div>
       <div class="label">Git commits</div>
       <div class="sublabel">Launch sprint + corpus scale + quality gates · build green</div>
     </div>
@@ -156,9 +156,9 @@ export const prerender = true;
       <div class="sublabel">403 impressions · first click 7 Jun · crawl accelerating</div>
     </div>
     <div class="stat-card">
-      <div class="num gold">64</div>
+      <div class="num gold">69</div>
       <div class="label">GA4 sessions</div>
-      <div class="sublabel">Jun 5–10 · peak 21 sessions on 6 Jun · tracking live</div>
+      <div class="sublabel">Jun 5–11 · peak 21 sessions on 6 Jun · tracking live</div>
     </div>
   </div>
 
@@ -223,22 +223,22 @@ export const prerender = true;
   <div class="section-title">Analytics — GA4 (G-H725E249H7)</div>
   <div class="pulse-wrap">
     <div class="baseline-box">
-      <strong>GA4 Jun 5–10 (launch week).</strong> MCP: <strong>64 sessions</strong>, <strong>71 pageviews</strong>. Peak <strong>21 sessions</strong> on 6 Jun (post-scale deploy). Monitor: organic landing pages, <code>generate_lead</code> on /thanks/, Gulf guide engagement.
+      <strong>GA4 Jun 5–11 (launch week).</strong> MCP: <strong>69 sessions</strong>, <strong>76 pageviews</strong>. Peak <strong>21 sessions</strong> on 6 Jun (post-scale deploy). Monitor: organic landing pages, <code>generate_lead</code> on /thanks/, Gulf guide engagement.
     </div>
     <div class="pulse-kpi-row">
       <div class="pulse-kpi">
         <div class="kpi-label">Sessions</div>
-        <div class="kpi-val">64</div>
-        <div class="kpi-sub">Property ID 540367626 · Jun 5–10</div>
+        <div class="kpi-val">69</div>
+        <div class="kpi-sub">Property ID 540367626 · Jun 5–11</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Users</div>
-        <div class="kpi-val">62</div>
+        <div class="kpi-val">67</div>
         <div class="kpi-sub">Mostly new traffic · launch + crawl bots</div>
       </div>
       <div class="pulse-kpi">
         <div class="kpi-label">Pageviews</div>
-        <div class="kpi-val">71</div>
+        <div class="kpi-val">76</div>
         <div class="kpi-sub">Peak 21 PV on 6 Jun</div>
       </div>
       <div class="pulse-kpi">
@@ -288,7 +288,7 @@ export const prerender = true;
         <tr><td>Projects</td><td class="count">25</td><td>Developer / project reviews batch</td></tr>
         <tr><td>News</td><td class="count">12</td><td>Market updates · Jun 2026</td></tr>
         <tr><td>Static</td><td class="count">~9</td><td>Home, guides, areas hub, compare, about, contact, site-report</td></tr>
-        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~593</td><td><strong>~1.78M words</strong> · 54 areas · 20 noindex dupes</td></tr>
+        <tr><td><strong>TOTAL sitemap</strong></td><td class="count">~593</td><td><strong>~1.78M words</strong> · 54 areas · 23 noindex dupes</td></tr>
       </tbody>
     </table>
   </div>
@@ -317,6 +317,14 @@ export const prerender = true;
 
   <div class="section-title">Launch timeline</div>
   <div>
+    <div class="changelog-item">
+      <div class="changelog-date">11 Jun 2026</div>
+      <div>
+        <div class="changelog-title">P3 — cannibal cleanup (3 dupes) · clusters 18→17</div>
+        <div class="changelog-desc">NOINDEX + 301: gulf-property-investment-comparison-2026 → best-gulf-country-property-investment; uae-visa-property-investor-750k → golden-visa-vs-investor-visa-uae; villanova-dubai → /areas/villanova-property-investment/. 24 link rewrites · 39 relatedSlugs fixes · 147 Vercel redirects.</div>
+        <div class="changelog-tags"><span class="tag green">P3</span><span class="tag blue">SEO</span><span class="tag amber">Report v1.4</span></div>
+      </div>
+    </div>
     <div class="changelog-item">
       <div class="changelog-date">11 Jun 2026</div>
       <div>
@@ -411,15 +419,15 @@ export const prerender = true;
     <div class="next-item">
       <div class="priority medium">MED</div>
       <div>
-        <div class="text">Remaining 19 cannibal clusters — differentiate or noindex</div>
-        <div class="subtext">Off-plan spoke cluster, green/golden visa compares — keep distinct intents per map</div>
+        <div class="text">17 cannibal clusters — documented KEEP intents (off-plan spokes, visa compares, multi-city rent)</div>
+        <div class="subtext">No further mass noindex · hub cross-links + FAQ depth on DMCC cluster (pos 53–96)</div>
       </div>
     </div>
     <div class="next-item">
       <div class="priority medium">MED</div>
       <div>
-        <div class="text">Explicit indexing for P1 tier B URLs (15 URLs)</div>
-        <div class="subtext">invest-gulf-indexing only · submit-google-explicit.mjs + Bing IndexNow</div>
+        <div class="text">Batch3 areas — al-barari, meydan, tilal-al-ghaf, jebel-ali-village (4 guides still in /guides/)</div>
+        <div class="subtext">Migrate to /areas/ per BATCH2 map remainder · link rewrites + Vercel 301</div>
       </div>
     </div>
     <div class="next-item">
@@ -451,7 +459,7 @@ export const prerender = true;
 </div>
 
 <div class="footer">
-  <strong>Invest Gulf Site Report v1.3</strong> · Updated 11 June 2026 ·
+  <strong>Invest Gulf Site Report v1.4</strong> · Updated 11 June 2026 ·
   <a href="https://invest-gulf.com/site-report/">invest-gulf.com/site-report/</a><br />
   Update weekly via GSC + GA4 + Bing MCP · Content map: GULF_RE_CONTENT_MAP_100.md
 </div>
