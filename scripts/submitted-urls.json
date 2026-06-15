@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-15T00:03:59.680Z",
+  "updatedAt": "2026-06-15T10:47:09.828Z",
   "urls": [
     "https://invest-gulf.com",
     "https://invest-gulf.com/about",
@@ -73,7 +73,10 @@
     "https://invest-gulf.com/compare/dubai-vs-doha-property-investment",
     "https://invest-gulf.com/compare/dubai-vs-london-property-investment",
     "https://invest-gulf.com/compare/dubai-vs-muscat-property-investment",
+    "https://invest-gulf.com/compare/dubai-vs-oman-rental-yield",
+    "https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield",
     "https://invest-gulf.com/compare/dubai-vs-riyadh-property-investment",
+    "https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield",
     "https://invest-gulf.com/compare/dubai-vs-sharjah-property-investment",
     "https://invest-gulf.com/compare/emaar-vs-damac",
     "https://invest-gulf.com/compare/emaar-vs-nakheel",
@@ -82,6 +85,7 @@
     "https://invest-gulf.com/compare/meraas-vs-emaar",
     "https://invest-gulf.com/compare/off-plan-vs-ready-property-uae",
     "https://invest-gulf.com/compare/qatar-vs-uae-residency",
+    "https://invest-gulf.com/compare/rak-vs-dubai-rental-yield",
     "https://invest-gulf.com/compare/rak-vs-fujairah-property-investment",
     "https://invest-gulf.com/compare/rak-vs-sharjah-property-investment",
     "https://invest-gulf.com/compare/ras-al-khaimah-vs-dubai-investment",
@@ -146,6 +150,7 @@
     "https://invest-gulf.com/guides/bahrain-property-foreigner-living",
     "https://invest-gulf.com/guides/bahrain-property-investment-guide",
     "https://invest-gulf.com/guides/bahrain-relocation-guide",
+    "https://invest-gulf.com/guides/bahrain-rental-yield-guide",
     "https://invest-gulf.com/guides/bahrain-saudi-bridge-commute",
     "https://invest-gulf.com/guides/bahrain-vs-dubai-living",
     "https://invest-gulf.com/guides/best-areas-buy-property-dubai",
@@ -381,6 +386,7 @@
     "https://invest-gulf.com/guides/jeddah-cost-of-living",
     "https://invest-gulf.com/guides/jeddah-international-schools",
     "https://invest-gulf.com/guides/jeddah-property-investment",
+    "https://invest-gulf.com/guides/jeddah-rental-yield-guide",
     "https://invest-gulf.com/guides/jlt-property-investment",
     "https://invest-gulf.com/guides/jumeirah-living-guide",
     "https://invest-gulf.com/guides/jvc-property-investment",
@@ -548,6 +554,7 @@
     "https://invest-gulf.com/guides/sharjah-freehold-areas-guide",
     "https://invest-gulf.com/guides/sharjah-property-investment-guide",
     "https://invest-gulf.com/guides/sharjah-relocation-guide",
+    "https://invest-gulf.com/guides/sharjah-rental-yield-guide",
     "https://invest-gulf.com/guides/sharjah-schools-commute-dubai",
     "https://invest-gulf.com/guides/sharjah-schools-for-dubai-commuters",
     "https://invest-gulf.com/guides/sharjah-vs-dubai-commute-property",
@@ -2482,6 +2489,1091 @@
       "url": "https://invest-gulf.com/site-report",
       "channel": "google",
       "at": "2026-06-15T00:03:59.680Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dmcc-company-setup",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-business-setup-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-co-working-spaces",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/uae-freelance-permit-dubai",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/open-bank-account-dubai",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/areas/jlt-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/site-report",
+      "channel": "google",
+      "at": "2026-06-15T00:07:00.636Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-oman-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/rak-vs-dubai-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-rental-yield-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/sharjah-rental-yield-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/jeddah-rental-yield-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/qatar-rental-yield-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rental-yield-guide",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/site-report",
+      "channel": "google",
+      "at": "2026-06-15T00:15:41.182Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/abu-dhabi-rent-index-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/damac-islands-handover-update-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/dubai-golden-visa-applications-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/dubai-off-plan-registrations-q2-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/dubai-transaction-volume-may-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/emaar-creek-waters-launch-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/oman-investment-residency-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/qatar-property-law-amendment-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/rak-al-marjan-infrastructure-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/saudi-foreign-ownership-update-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/uae-corporate-tax-filing-deadline-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/news/uae-mortgage-rates-june-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/abu-dhabi-vs-dubai-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/aldar-vs-damac",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/aldar-vs-emaar",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/bahrain-vs-dubai-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-abu-dhabi-rental-yield",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-london-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-riyadh-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/dubai-vs-sharjah-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/emaar-vs-damac",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/emaar-vs-nakheel",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/emaar-vs-sobha",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/freehold-vs-leasehold-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/meraas-vs-emaar",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/qatar-vs-uae-residency",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/rak-vs-sharjah-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/ras-al-khaimah-vs-dubai-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/saudi-vs-uae-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/sobha-vs-damac",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/uae-vs-oman-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/compare/uae-vs-qatar-property-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/ajman-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/american-schools-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/azizi-developments-review",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-banking-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-international-schools",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-property-foreigner-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/bahrain-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/best-banks-expats-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/best-health-insurance-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/best-off-plan-ras-al-khaimah",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/binghatti-review",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/boarding-schools-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/british-schools-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/buy-to-let-mortgage-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/buying-property-uae-bank-transfer",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/can-foreigners-buy-property-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/cash-vs-mortgage-dubai-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/convert-foreign-license-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/cost-of-buying-property-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/currency-exchange-aed-usd-eur",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/currency-transfer-buy-property-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/difc-company-setup",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dld-mortgage-registration-fees",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/doha-cost-of-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/doha-international-schools-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/doha-rent-prices-by-area",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/double-tax-treaty-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-air-quality",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-alcohol-rules-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-capital-appreciation-vs-yield",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-chores-time-parking",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-culture-etiquette-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-developers-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-domestic-worker-visa",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-driving-license-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-earthquake-risk",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-expat-community-groups",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-flooding-rain-risk",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-freelance-visa-cost",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-gym-fitness-cost",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-health-insurance-mandatory",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-healthcare-guide-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-holiday-home-roi-calculator-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-inheritance-non-muslim-wills",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-internet-mobile-plans",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-life-insurance-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-maid-nanny-cost",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-mainland-llc-setup",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-maternity-costs",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-metaverse-property-nft-reality",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-neighbourhoods-for-families",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-neighbourhoods-for-singles",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-nursery-early-years",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-payment-plan-types-explained",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-prayer-times-work-culture",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-dispute-resolution",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-flipping-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-australian-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-british-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-canadian-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-chinese-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-pakistani-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-russian-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-saudi-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-for-south-african-buyers",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-handover-checklist",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-inheritance-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-insurance-home",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-portfolio-strategy",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-scams-red-flags",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-snagging-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-valuation-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-visa-relocation-bundle",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-property-vs-stock-market",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-public-vs-private-healthcare",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rent-increase-calculator-rera",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rental-guarantee-schemes-explained",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rental-law-landlord-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-residence-visa-stamping",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rest-app-property-due-diligence",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-rta-fines-parking",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-safety-crime-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-school-bus-transport-fees",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-school-waiting-lists",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-service-charge-index-explained",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-special-needs-schools",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-summer-survival-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-tenant-eviction-rules-rera",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-transport-costs-metro-taxi",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-university-options-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-vacancy-rates-rental-demand",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-vs-doha-vs-riyadh-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-vs-singapore-expat",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-weekend-culture",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/dubai-winter-weather",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/due-diligence-dubai-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/emergency-numbers-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/emirates-id-after-property-purchase",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/emirates-id-application-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/escrow-oqood-dubai-explained",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/first-30-days-dubai-expat",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/foreign-owner-rights-uae-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/freehold-vs-leasehold-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/fujairah-property-investment-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-application-step-by-step",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-family-sponsorship",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-off-plan-property-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-school-fees-package",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/golden-visa-vs-green-visa",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/gulf-banking-comparison-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/gulf-expat-living-comparison",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/gulf-healthcare-comparison",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/gulf-residency-pathways-comparison",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/gulf-schools-comparison",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/highest-rental-yield-areas-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/homeschooling-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/how-much-to-invest-dubai-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/how-to-buy-property-dubai-step-by-step",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/how-to-calculate-rental-yield-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/how-to-flip-off-plan-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/ib-schools-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/indian-schools-dubai-cbse",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/international-money-transfer-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/is-dubai-property-bubble-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/is-dubai-property-worth-it-2026",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/islamic-mortgage-dubai-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/islamic-vs-conventional-mortgage-uae",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/jeddah-cost-of-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/jeddah-international-schools",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/khda-school-ratings-explained",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/leaving-dubai-exit-checklist",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/leaving-dubai-selling-property-checklist",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-al-ain",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-jeddah-corniche",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-lusail-qatar",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-muscat-al-mouj",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-muscat-qurum",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-neom-the-line",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-riyadh-diplomatic-quarter",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-sharjah-al-khan",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-the-pearl-qatar",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/living-west-bay-doha",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/moving-to-dubai-with-family",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/muscat-cost-of-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/muscat-international-schools",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/net-yield-calculator-uae-property",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/non-resident-mortgage-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/off-plan-assignment-sale-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/off-plan-payment-plans-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/off-plan-property-dubai-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/off-plan-risks-delays-dubai",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/offshore-bank-account-uae-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-banking-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-driving-license",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-family-visa",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-healthcare-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-itc-visa-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-property-foreigner-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-relocation-guide",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-residency-by-investment",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-retirement-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-tax-expats",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-vs-dubai-cost",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
+    },
+    {
+      "url": "https://invest-gulf.com/guides/oman-vs-uae-living",
+      "channel": "google",
+      "at": "2026-06-15T10:47:09.828Z"
     }
   ]
 }
