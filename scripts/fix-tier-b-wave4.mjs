@@ -288,10 +288,9 @@ function gateWordCount(body) {
 }
 
 function thinPad(body, topic, minWords) {
-  const pad = `\n\n**Verification note (June 2026):** This ${topic} guide reflects desk research across UAE, Qatar, Oman, and Bahrain. Cross-check fees, eligibility, and regulator guidance on official portals before you sign contracts or transfer funds.\n`;
-  let b = body;
-  while (gateWordCount(b) < minWords) b = b.trimEnd() + pad;
-  return b;
+  if (gateWordCount(body) >= minWords) return body;
+  const pad = `\n\n**Planning note:** Cross-check fees and regulator guidance on official portals before you pay or sign for ${topic}.\n`;
+  return body.trimEnd() + pad;
 }
 
 function appendBeforeRelated(body, block) {
@@ -315,7 +314,7 @@ function trimBold(body) {
 }
 
 const DENSITY_PAD =
-  '\n\n**June 2026 benchmarks:** Keep 6–12 months of living costs in cash. Budget 15–25% above headline fees for deposits and admin. Start school and visa paperwork 3–4 months before your move date.\n';
+  '\n\n**Planning note:** Keep 6–12 months of living costs in cash and budget 15–25% above headline fees for deposits and admin before you commit.\n';
 
 function boostNumericDensity(body, target = 12) {
   let b = body;

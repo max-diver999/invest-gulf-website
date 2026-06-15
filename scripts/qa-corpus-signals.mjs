@@ -85,6 +85,24 @@ for (const { coll, path, slug } of listAllMdx()) {
     }
   }
 
+  const verifNotes = (body.match(/\*\*Verification note \(June 2026\):\*\*/g) || []).length;
+  if (verifNotes > 0) {
+    failures.push({
+      kind: 'generic-verification-note',
+      file: rel,
+      detail: `generic verification note appears ${verifNotes} time(s) — run dedup-padding.mjs`,
+    });
+  }
+
+  const benchPads = (body.match(/\*\*June 2026 benchmarks:\*\*/g) || []).length;
+  if (benchPads > 0) {
+    failures.push({
+      kind: 'benchmark-padding',
+      file: rel,
+      detail: `June 2026 benchmarks pad appears ${benchPads} time(s)`,
+    });
+  }
+
   for (const check of MDX_GREP_CHECKS) {
     if (check.pattern.test(raw)) {
       failures.push({ kind: check.id, file: rel, detail: check.label });

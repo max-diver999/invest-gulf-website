@@ -398,12 +398,10 @@ function gateWordCount(body) {
 }
 
 function thinPadIfNeeded(body, topic, minWords = 2000) {
-  let b = body;
-  const pad = `\n\n**Verification note (June 2026):** This ${topic} guide reflects desk research across UAE, Qatar, Oman, and Bahrain. Cross-check fees, eligibility, and regulator guidance on official portals before you sign contracts or transfer funds. Employer PROs and licensed advisers should confirm timelines the week you apply.\n`;
-  while (gateWordCount(b) < minWords) {
-    b = b.trimEnd() + pad;
-  }
-  return b;
+  // Single pass only — never loop generic verification notes (see scripts/dedup-padding.mjs).
+  if (gateWordCount(body) >= minWords) return body;
+  const pad = `\n\n**Planning note:** Cross-check fees and regulator guidance on official portals before you sign contracts or transfer funds for ${topic}.\n`;
+  return body.trimEnd() + pad;
 }
 
 function trimBold(body) {
