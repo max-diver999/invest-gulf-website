@@ -3,7 +3,7 @@
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-15T12:15:00Z",
+  "updatedAt": "2026-06-16T10:39:34Z",
   "methodology": "Backlog = live sitemap + submitted-urls.json entries[] + git touch. Bing ONLY bing.com/indexnow.",
   "channels": {
     "google": "submit-google-explicit.mjs",
@@ -14,25 +14,34 @@
     "submit": "submit-google-explicit.mjs + indexnow-submit.mjs --explicit on indexing-batch-pending.json urls"
   },
   "summary": {
-    "backlogRemaining": 298,
+    "backlogRemaining": 383,
     "quotaUsedToday": 200,
     "quotaRemainingToday": 0,
     "estimatedDaysLeft": 2,
     "byReason": {
-      "ledger_only_never_api": 138,
-      "content_changed_after_api": 160
+      "content_changed_after_api": 383
     },
     "nextBatch": {
-      "id": "2026-06-16-batch-1",
-      "when": "2026-06-16 UTC after quota reset",
+      "id": "2026-06-17-batch-1",
+      "when": "2026-06-17 UTC after quota reset",
       "count": 200,
-      "remainingAfter": 98,
+      "remainingAfter": 183,
       "file": "scripts/indexing-batch-pending.json",
-      "firstUrl": "https://invest-gulf.com/guides/opening-bank-account-dubai-property-buyers/",
-      "lastUrl": "https://invest-gulf.com/guides/dubai-property-for-indian-buyers/"
+      "firstUrl": "https://invest-gulf.com/news/abu-dhabi-rent-index-2026/",
+      "lastUrl": "https://invest-gulf.com/guides/dubai-rest-app-property-due-diligence/"
     }
   },
   "batches": [
+    {
+      "id": "2026-06-16-batch-1",
+      "at": "2026-06-16T10:39:34Z",
+      "count": 200,
+      "google": "200/200 OK",
+      "indexnow": "200/200 OK",
+      "firstUrl": "https://invest-gulf.com/guides/opening-bank-account-dubai-property-buyers/",
+      "lastUrl": "https://invest-gulf.com/guides/dubai-property-for-indian-buyers/",
+      "archive": "scripts/indexing-batch-2026-06-16-done.json"
+    },
     {
       "id": "2026-06-15-batch-1",
       "at": "2026-06-15T10:48:09Z",
@@ -45,16 +54,22 @@
     }
   ],
   "tomorrow": {
-    "batchId": "2026-06-16-batch-1",
-    "backlogRemaining": 298
+    "batchId": "2026-06-17-batch-1",
+    "backlogRemaining": 383
   },
   "pendingDeploy": null,
   "corpusCleanupDeploy": {
     "commit": "e1ad0b4",
     "deployAt": "2026-06-15",
     "indexnow": "121 corpus + 8 P0/P1 URLs + component fix pending deploy",
-    "googlePending": "quota exceeded — queue yield 5 + area 58 + backlog on UTC reset",
-    "fixes": ["verify 7 guides", "llms.txt", "landing em-dash", "Footer/LeadForm em-dash", "audit gate case-insensitive"]
+    "googlePending": "quota exceeded \u2014 queue yield 5 + area 58 + backlog on UTC reset",
+    "fixes": [
+      "verify 7 guides",
+      "llms.txt",
+      "landing em-dash",
+      "Footer/LeadForm em-dash",
+      "audit gate case-insensitive"
+    ]
   },
   "googlePriorityQueue": {
     "when": "next UTC day after quota reset",
@@ -69,7 +84,7 @@
     "deployLiveAt": "2026-06-15",
     "allUrls200": true,
     "bing": "7/7 OK + 5 re-ping 2026-06-15 (corpus fix)",
-    "google": "2/7 OK — 5 pending, quota exceeded today",
+    "google": "2/7 OK \u2014 5 pending, quota exceeded today",
     "googlePending": [
       "https://invest-gulf.com/compare/dubai-vs-oman-rental-yield/",
       "https://invest-gulf.com/compare/rak-vs-dubai-rental-yield/",
