@@ -3,7 +3,7 @@
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-16T10:39:34Z",
+  "updatedAt": "2026-06-17T10:55:41Z",
   "methodology": "Backlog = live sitemap + submitted-urls.json entries[] + git touch. Bing ONLY bing.com/indexnow.",
   "channels": {
     "google": "submit-google-explicit.mjs",
@@ -14,24 +14,34 @@
     "submit": "submit-google-explicit.mjs + indexnow-submit.mjs --explicit on indexing-batch-pending.json urls"
   },
   "summary": {
-    "backlogRemaining": 383,
+    "backlogRemaining": 183,
     "quotaUsedToday": 200,
     "quotaRemainingToday": 0,
-    "estimatedDaysLeft": 2,
+    "estimatedDaysLeft": 1,
     "byReason": {
-      "content_changed_after_api": 383
+      "content_changed_after_api": 183
     },
     "nextBatch": {
-      "id": "2026-06-17-batch-1",
-      "when": "2026-06-17 UTC after quota reset",
-      "count": 200,
-      "remainingAfter": 183,
+      "id": "2026-06-18-batch-1",
+      "when": "next UTC quota reset",
+      "count": 183,
+      "remainingAfter": 0,
       "file": "scripts/indexing-batch-pending.json",
-      "firstUrl": "https://invest-gulf.com/news/abu-dhabi-rent-index-2026/",
-      "lastUrl": "https://invest-gulf.com/guides/dubai-rest-app-property-due-diligence/"
+      "firstUrl": "https://invest-gulf.com/guides/dubai-rta-fines-parking/",
+      "lastUrl": "https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/"
     }
   },
   "batches": [
+    {
+      "id": "2026-06-17-batch-1",
+      "at": "2026-06-17T10:55:41Z",
+      "count": 200,
+      "google": "200/200 OK",
+      "indexnow": "200/200 OK",
+      "firstUrl": "https://invest-gulf.com/news/abu-dhabi-rent-index-2026/",
+      "lastUrl": "https://invest-gulf.com/guides/dubai-rest-app-property-due-diligence/",
+      "archive": "scripts/indexing-batch-2026-06-17-done.json"
+    },
     {
       "id": "2026-06-16-batch-1",
       "at": "2026-06-16T10:39:34Z",
@@ -54,8 +64,8 @@
     }
   ],
   "tomorrow": {
-    "batchId": "2026-06-17-batch-1",
-    "backlogRemaining": 383
+    "batchId": "2026-06-18-batch-1",
+    "backlogRemaining": 183
   },
   "pendingDeploy": null,
   "corpusCleanupDeploy": {
