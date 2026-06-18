@@ -3,7 +3,7 @@
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-17T10:55:41Z",
+  "updatedAt": "2026-06-18T10:47:18Z",
   "methodology": "Backlog = live sitemap + submitted-urls.json entries[] + git touch. Bing ONLY bing.com/indexnow.",
   "channels": {
     "google": "submit-google-explicit.mjs",
@@ -14,12 +14,12 @@
     "submit": "submit-google-explicit.mjs + indexnow-submit.mjs --explicit on indexing-batch-pending.json urls"
   },
   "summary": {
-    "backlogRemaining": 183,
-    "quotaUsedToday": 200,
-    "quotaRemainingToday": 0,
-    "estimatedDaysLeft": 1,
+    "backlogRemaining": 404,
+    "quotaUsedToday": 183,
+    "quotaRemainingToday": 17,
+    "estimatedDaysLeft": 3,
     "byReason": {
-      "content_changed_after_api": 183
+      "ledger_only_never_api": 404
     },
     "nextBatch": {
       "id": "2026-06-18-batch-1",
@@ -32,6 +32,16 @@
     }
   },
   "batches": [
+    {
+      "id": "2026-06-18-batch-1",
+      "at": "2026-06-18T10:47:18Z",
+      "count": 183,
+      "google": "183/183 OK",
+      "indexnow": "183/183 OK",
+      "firstUrl": "https://invest-gulf.com/guides/dubai-rta-fines-parking/",
+      "lastUrl": "https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/",
+      "archive": "scripts/indexing-batch-2026-06-18-done.json"
+    },
     {
       "id": "2026-06-17-batch-1",
       "at": "2026-06-17T10:55:41Z",
@@ -64,8 +74,9 @@
     }
   ],
   "tomorrow": {
-    "batchId": "2026-06-18-batch-1",
-    "backlogRemaining": 183
+    "batchId": "2026-06-19-batch-1",
+    "backlogRemaining": 404,
+    "pendingCount": 200
   },
   "pendingDeploy": null,
   "corpusCleanupDeploy": {
