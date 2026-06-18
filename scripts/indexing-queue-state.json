@@ -3,7 +3,7 @@
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "dailyQuota": 200,
-  "updatedAt": "2026-06-18T10:47:18Z",
+  "updatedAt": "2026-06-18T10:52:27Z",
   "methodology": "Backlog = live sitemap + submitted-urls.json entries[] + git touch. Bing ONLY bing.com/indexnow.",
   "channels": {
     "google": "submit-google-explicit.mjs",
@@ -14,12 +14,12 @@
     "submit": "submit-google-explicit.mjs + indexnow-submit.mjs --explicit on indexing-batch-pending.json urls"
   },
   "summary": {
-    "backlogRemaining": 404,
+    "backlogRemaining": 9,
     "quotaUsedToday": 183,
     "quotaRemainingToday": 17,
-    "estimatedDaysLeft": 3,
+    "estimatedDaysLeft": 1,
     "byReason": {
-      "ledger_only_never_api": 404
+      "content_changed_after_api": 9
     },
     "nextBatch": {
       "id": "2026-06-18-batch-1",
@@ -29,7 +29,8 @@
       "file": "scripts/indexing-batch-pending.json",
       "firstUrl": "https://invest-gulf.com/guides/dubai-rta-fines-parking/",
       "lastUrl": "https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/"
-    }
+    },
+    "ledgerRepairNote": "entries[] restored 2026-06-18 via repair-submitted-urls-entries.mjs"
   },
   "batches": [
     {
@@ -74,9 +75,9 @@
     }
   ],
   "tomorrow": {
-    "batchId": "2026-06-19-batch-1",
-    "backlogRemaining": 404,
-    "pendingCount": 200
+    "batchId": "2026-06-18-batch-repair",
+    "backlogRemaining": 9,
+    "pendingCount": 9
   },
   "pendingDeploy": null,
   "corpusCleanupDeploy": {
