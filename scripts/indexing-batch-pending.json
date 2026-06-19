@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-18T10:52:27.305929+00:00",
+  "generatedAt": "2026-06-19T11:04:24.972082+00:00",
   "site": "https://invest-gulf.com",
-  "batchId": "2026-06-18-batch-repair",
+  "batchId": "2026-06-19-batch-final",
   "limit": 9,
   "backlogTotal": 9,
   "remainingAfterBatch": 0,
@@ -18,6 +18,5 @@
     "https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/",
     "https://invest-gulf.com/guides/rak-properties-developer-review/",
     "https://invest-gulf.com/guides/uae-free-zone-vs-mainland/"
-  ],
-  "note": "Rebuilt after submitted-urls entries[] repair"
+  ]
 }

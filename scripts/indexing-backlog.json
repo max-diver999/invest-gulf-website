@@ -1,109 +1,13 @@
 {
-  "generatedAt": "2026-06-18T10:51:44.285Z",
+  "generatedAt": "2026-06-19T11:09:08.520Z",
   "site": "https://invest-gulf.com",
   "projectId": "invest-gulf-indexing",
   "sitemapTotal": 587,
   "ledgerTotal": 669,
   "apiLoggedUnique": 650,
-  "backlogTotal": 9,
-  "byReason": {
-    "content_changed_after_api": 9
-  },
-  "byCollection": {
-    "guides": 9
-  },
-  "urls": [
-    "https://invest-gulf.com/guides/aldar-properties-review/",
-    "https://invest-gulf.com/guides/azizi-developments-review/",
-    "https://invest-gulf.com/guides/binghatti-review/",
-    "https://invest-gulf.com/guides/currency-transfer-buy-property-uae/",
-    "https://invest-gulf.com/guides/damac-properties-review/",
-    "https://invest-gulf.com/guides/dubai-property-investment-for-beginners/",
-    "https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/",
-    "https://invest-gulf.com/guides/rak-properties-developer-review/",
-    "https://invest-gulf.com/guides/uae-free-zone-vs-mainland/"
-  ],
-  "items": [
-    {
-      "url": "https://invest-gulf.com/guides/aldar-properties-review/",
-      "norm": "https://invest-gulf.com/guides/aldar-properties-review",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:53:22-03:00",
-      "apiAt": "2026-06-16T10:39:12.630Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/azizi-developments-review/",
-      "norm": "https://invest-gulf.com/guides/azizi-developments-review",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:47:39-03:00",
-      "apiAt": "2026-06-17T10:55:27.927Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/binghatti-review/",
-      "norm": "https://invest-gulf.com/guides/binghatti-review",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:47:39-03:00",
-      "apiAt": "2026-06-17T10:55:27.927Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/currency-transfer-buy-property-uae/",
-      "norm": "https://invest-gulf.com/guides/currency-transfer-buy-property-uae",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:31:43-03:00",
-      "apiAt": "2026-06-17T10:55:27.927Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/damac-properties-review/",
-      "norm": "https://invest-gulf.com/guides/damac-properties-review",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:47:39-03:00",
-      "apiAt": "2026-06-16T10:39:12.630Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/dubai-property-investment-for-beginners/",
-      "norm": "https://invest-gulf.com/guides/dubai-property-investment-for-beginners",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:31:43-03:00",
-      "apiAt": "2026-06-17T10:55:27.927Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/",
-      "norm": "https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:31:43-03:00",
-      "apiAt": "2026-06-17T10:55:27.927Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/rak-properties-developer-review/",
-      "norm": "https://invest-gulf.com/guides/rak-properties-developer-review",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:47:39-03:00",
-      "apiAt": "2026-06-16T10:39:12.630Z",
-      "collection": "guides"
-    },
-    {
-      "url": "https://invest-gulf.com/guides/uae-free-zone-vs-mainland/",
-      "norm": "https://invest-gulf.com/guides/uae-free-zone-vs-mainland",
-      "reason": "content_changed_after_api",
-      "priority": 70800,
-      "gitAt": "2026-06-17T17:31:43-03:00",
-      "apiAt": "2026-06-16T10:39:12.630Z",
-      "collection": "guides"
-    }
-  ]
+  "backlogTotal": 0,
+  "byReason": {},
+  "byCollection": {},
+  "urls": [],
+  "items": []
 }
