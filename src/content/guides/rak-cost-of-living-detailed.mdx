@@ -46,6 +46,10 @@ faq:
 noindex: true
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Ras Al Khaimah Cost of Living 2026: Rent, FEWA, Schools & Dubai Comparison
@@ -57,6 +61,8 @@ import FaqBlock from '../../components/FaqBlock.astro';
 > Disclaimer: Figures are June 2026 planning ranges, not quotes. Visa thresholds, FEWA tariffs and school fees change, verify with FEWA, ICP/GDRFA, KHDA (if Dubai schooling) and licensed advisor. Not tax or legal advice.
 
 ---
+
+<TldrBlock text={"Detailed RAK cost of living 2026, monthly budgets vs Dubai, FEWA utilities, school fees, Salik commute costs, Golden Visa rules and who saves money living"} />
 
 ## How to use this hub (R13)
 
@@ -363,6 +369,14 @@ German readers often compare Wegzugsbesteuerung exit with **UAE 0%**, RAK does n
 Russian readers often pair capital preservation with banking access, RAKBank and UAE majors remain standard KYC; lower rent supports larger villa for family on same remittance budget. Compare lifestyle emirates in [Gulf expat living comparison](/guides/gulf-expat-living-comparison/) before fixating on yield-only property posts.
 
 *Humanized v5 full, 2026-06-04*
+
+<InlineCta
+  headline={"Planning to relocate to the Gulf?"}
+  subtext={"Find the right area and property for your lifestyle and budget."}
+  buttonText={"Get Relocation Guide"}
+  buttonHref="/get-shortlist/"
+  ctaId={"relocation_cta_rak-cost-of-living-d"}
+/>
 
 <FaqBlock items={[
   { question: "Is Ras Al Khaimah cheaper than Dubai to live in?", answer: "Yes for housing, indicative 2026 rents run roughly 35–50% below comparable Dubai fringe stock for villas and beach apartments. Total household savings depend on commute: Dubai payroll + RAK home saves rent but adds fuel, Salik and 90–120+ minutes daily on E611. Families schooling in Dubai lose most of the rent gap." },

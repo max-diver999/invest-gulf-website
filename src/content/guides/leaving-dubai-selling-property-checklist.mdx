@@ -35,6 +35,10 @@ faq:
     answer: "UAE no capital gains tax on individuals, home country may tax disposal. UK, US, India, Germany each differ. Consult advisor before sale."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Leaving Dubai: Selling Property Checklist & Exit Timeline
@@ -44,6 +48,8 @@ TL;DR: Plan visa + property + mortgage + tenant in parallel, not sequentially. S
 > Disclaimer: June 2026 exit guide. Not tax or legal advice. Home-country reporting obligations vary.
 
 ---
+
+<TldrBlock text={"Plan visa + property + mortgage + tenant in parallel, not sequentially. Selling takes 4–8 weeks cash, +2–3 mortgaged. Budget 2% agent + NOC + trustee. Golden Visa: replace asset or exit visa before sale completes. Hubs: buying step-by-step reverse · mortgage · landlord law"} />
 
 ## Why exit planning starts at arrival
 
@@ -509,6 +515,14 @@ Retaining UAE property as a non-resident investment requires careful planning:
 - Quarterly market rent reviews to ensure competitive positioning
 
 *June 2026, Invest Gulf Editorial.*
+
+<InlineCta
+  headline={"Looking for the right Gulf property?"}
+  subtext={"Get a free analysis matched to your budget and target market."}
+  buttonText={"Request Free Analysis"}
+  buttonHref="/get-shortlist/"
+  ctaId={"inline_cta_leaving-dubai-sellin"}
+/>
 
 <FaqBlock items={[
   { question: "What happens to my Dubai property if I leave the UAE?", answer: "You can keep, sell, or rent remotely. Visa cancellation does not automatically transfer property. Golden Visa holders may retain residency if investment thresholds maintained. Mortgaged owners must keep paying or settle on sale." },

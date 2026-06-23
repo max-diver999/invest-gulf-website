@@ -36,6 +36,10 @@ faq:
     answer: "Parents sponsorship exists under specific salary and housing criteria, verify current ICP rules. Not automatic on standard family visa."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Moving to Dubai With Family: Schools, Housing, Visas & Budget (2026)
@@ -45,6 +49,8 @@ TL;DR: Family moves fail when schools come after lease. Reverse the order: schoo
 > Disclaimer: June 2026 planning guide. Salary thresholds and school fees change, verify with employer PRO and KHDA school directly.
 
 ---
+
+<TldrBlock text={"Family moves fail when schools come after lease. Reverse the order: school shortlist → map → lease → Ejari → family visa → DEWA. Budget AED 35K–55K/month all-in for family of four at British mid-tier. Hubs: relocation guide · school vs property budget · checklist · Abu Dhabi compare"} />
 
 ## Why family relocation is a different project
 
@@ -460,6 +466,14 @@ Term fees often non-refundable, check withdrawal notice period.
 | School fees (mid-tier) | 25,000–95,000 AED | Per academic year near Dubai |
 | Daily commute sample | 30–45 minutes | Peak-hour Dubai corridor |
 | Golden Visa property | 2,000,000 AED | Fully paid threshold for Dubai |
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_moving-to-dubai-with"}
+/>
 
 <FaqBlock items={[
   { question: "What salary do you need to move to Dubai with a family?", answer: "Comfortable family of four typically needs AED 35,000–55,000/month household income at British mid-tier schools, rent AED 12–20K, schools AED 8–15K/month amortised, plus insurance, transport, and utilities. Premium schools push above AED 70,000/month." },

@@ -29,11 +29,17 @@ faq:
     answer: "Yes. Short-term holiday home rentals (furnished residential units let for periods under one month in tourist contexts) are treated as serviced accommodation and subject to the standard 5% VAT rate, unlike long-term residential rental which is exempt. Holiday home operators with annual turnover above AED 375,000 must register for VAT."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 TL;DR: Residential property rental in the UAE is VAT-exempt, landlords do not charge VAT on long-term residential leases. Commercial property rental and holiday home rentals are subject to 5% VAT. New residential property sales (first supply within 3 years) are zero-rated. Understanding the exempt vs. zero-rated vs. standard-rated distinction is essential for developers, commercial landlords, and holiday home operators. Individual residential landlords with no commercial activity typically have no VAT obligations.
 
 ---
+
+<TldrBlock text={"Residential property rental in the UAE is VAT-exempt, landlords do not charge VAT on long-term residential leases. Commercial property rental and holiday home rentals are subject to 5% VAT. New residential property sales (first supply within 3 years) are zero-rated. Understanding the exempt vs. zero-rated vs. standard-rated distinction is essential for developers, commercial landlords, and holiday home operators. Individual residential landlords with no commercial activity typically have no VAT "} />
 
 ## UAE VAT Basics: How the System Works for Property
 
@@ -284,6 +290,14 @@ Commercial property owners and holiday home operators can recover input VAT on b
 For mixed-use properties, input VAT must be apportioned. The standard FTA-accepted method is based on the proportion of taxable vs. exempt rental income. Document your apportionment methodology carefully, FTA auditors will examine this during any inspection.
 
 For UAE tax residency implications, see [UAE tax residency through property](/guides/uae-tax-residency-property/).
+
+<InlineCta
+  headline={"Buying Gulf property with tax obligations at home?"}
+  subtext={"Get guidance on UAE tax treatment and home-country implications."}
+  buttonText={"Get Tax Guidance"}
+  buttonHref="/get-shortlist/"
+  ctaId={"tax_cta_vat-uae-property-ren"}
+/>
 
 <FaqBlock items={[
   { question: "Is residential rent in Dubai subject to VAT?", answer: "No. Residential property rental in the UAE is exempt from VAT under Federal Decree-Law No. 8 of 2017 (UAE VAT Law) and associated Executive Regulations. Landlords renting residential properties do not charge VAT on rent. This applies to apartments, villas, townhouses, and all residential units leased for habitation purposes." },

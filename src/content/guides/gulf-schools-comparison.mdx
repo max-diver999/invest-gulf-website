@@ -49,6 +49,10 @@ faq:
     answer: "Country choice: best-gulf-country-for-families (R106) and gulf-expat-living-comparison (R105). City drills: doha-international-schools-guide (R38), riyadh-international-schools (R75), bahrain-international-schools, muscat-international-schools. UAE emirate: abu-dhabi-vs-dubai-families (R11)."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Gulf Schools Comparison 2026: KHDA, ADEK, Doha, Riyadh & Manama Fees
@@ -60,6 +64,8 @@ Parent hub: [Gulf expat living comparison](/guides/gulf-expat-living-comparison/
 > Disclaimer: Fees change every academic year. June 2026 planning bands, confirm with school registrars. Not education or immigration advice.
 
 ---
+
+<TldrBlock text={"Dubai KHDA = largest pool, highest fees, longest waitlists. Abu Dhabi ADEK = 10–20% mid-tier discount vs Dubai. Doha = strong British/IB, no KHDA dashboard, 6–12 month apply window. Riyadh = fast-growing, SAR 55K–120K+ premium (confirm current official rules), car-dependent. Manama = compact solid, BHD 3.5–6.5K British mid. Hidden costs +15–35% everywhere. Pick school offer before country flag."} />
 
 ## Why regulators matter as much as curricula
 
@@ -378,6 +384,14 @@ Regulator ratings rarely tell SEN story. Email **SENCO** directly:
 | FAQ-friendly structure for Gulf Schools Comparison quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 *Humanized v5 full, 2026-06-04.*
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_gulf-schools-compari"}
+/>
 
 <FaqBlock items={[
   { question: "Which Gulf country has the best international schools?", answer: "Dubai has the largest regulated pool, 200+ KHDA private schools and widest curriculum choice. Abu Dhabi ADEK schools are strong with mid-tier fees often 10–20% below equivalent Dubai KHDA band. Doha has fewer campuses but solid British/IB tiers. Riyadh and Manama pools are smaller but adequate for most expat families, premium years face tighter waiting lists." },

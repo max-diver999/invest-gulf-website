@@ -37,11 +37,17 @@ faq:
     answer: "The Foreign Tax Credit (FTC) under IRC Section 901 allows US citizens to credit foreign taxes paid on foreign-source income against their US tax liability on the same income. Since the UAE does not levy personal income tax, there is generally no UAE tax to credit against US tax on UAE-sourced income. The FTC is most useful for US citizens who pay tax in another country (for example, if you also have UK income subject to UK tax). For UAE-only income, the FEIE is typically more practical than the FTC for reducing US tax."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 **TL;DR:** US citizenship creates a permanent worldwide tax filing obligation regardless of where you live. A US citizen buying Dubai property, collecting UAE rental income, or receiving a Dubai salary still files US tax returns, reports foreign accounts via FBAR and potentially FATCA Form 8938, and may owe US tax on income that carries no UAE tax. The Foreign Earned Income Exclusion and Foreign Tax Credit provide relief but do not eliminate obligations. This guide explains the framework; work with a qualified US CPA or tax attorney with expat experience for your specific situation.
 
 ---
+
+<TldrBlock text={"US citizens in Dubai must file US returns and report UAE accounts. Covers FATCA, FBAR, the foreign earned income exclusion, and key filing obligations."} />
 
 ## Citizenship-Based Taxation: The US Approach
 
@@ -222,6 +228,14 @@ The [UAE Golden Visa AED 2 million property guide](/guides/uae-golden-visa-prope
 - UAE banks report account information to the IRS via FATCA regardless of UAE tax residency status.
 
 For a comprehensive overview of Dubai property costs, see [Dubai property taxes explained](/guides/dubai-property-taxes-explained/). For the UAE residency picture alongside the US tax position, the guide on [UAE tax residency and the 183-day rule](/guides/uae-tax-residency-property/) covers the UAE-side tests. This article is for general information only. The US expat tax system is complex and subject to legislative change; always work with a qualified US CPA or enrolled agent with specific expatriate tax expertise.
+
+<InlineCta
+  headline={"Buying Gulf property with tax obligations at home?"}
+  subtext={"Get guidance on UAE tax treatment and home-country implications."}
+  buttonText={"Get Tax Guidance"}
+  buttonHref="/get-shortlist/"
+  ctaId={"tax_cta_tax-us-citizens-duba"}
+/>
 
 <FaqBlock items={[
   { question: "Do US citizens in Dubai still have to file US tax returns?", answer: "Yes. The United States taxes its citizens and permanent residents on worldwide income regardless of where they live. A US citizen living in Dubai must continue to file a US federal tax return annually if income exceeds the relevant filing threshold. The UAE does not levy personal income tax, but this has no bearing on US filing obligations. Filing deadlines are 15 April with an automatic extension to 15 June for overseas filers, and a further extension to 15 October available on request. Consult a US CPA or enrolled agent with expat experience." },

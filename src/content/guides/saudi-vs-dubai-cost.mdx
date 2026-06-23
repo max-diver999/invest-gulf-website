@@ -42,6 +42,10 @@ faq:
     answer: "Yes, gulf-expat-living-comparison (R105) adds Qatar, Oman, Abu Dhabi and Bahrain before you fix on Saudi vs Dubai only."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Saudi vs Dubai Cost of Living 2026: SAR/AED Budget Tables & Family Scenarios
@@ -53,6 +57,8 @@ TL;DR: At mid-tier family lifestyle, Riyadh rent alone often runs 10–25% below
 Market context: Saudi COL mid SAR 15–25K family band cited at hub level; schools premium expensive; not automatically "cheap Saudi" at top tier.
 
 ---
+
+<TldrBlock text={"At mid-tier family lifestyle, Riyadh rent alone often runs 10–25% below Dubai, then schools eat the savings. SAR 30,000/month in Riyadh maps to roughly AED 29,000–32,000 in Dubai, not a naive 1:1 swap. Premium compound plus British schools in both cities usually land within 10–15% of each other. Convert first: SAR 1 ≈ AED 0.98. Hubs: Riyadh COL (R71) · Saudi relocation (R70). Culture: Saudi vs UAE living · Gulf comparison (R105)."} />
 
 ## Currency math: do this first or break the spreadsheet
 
@@ -423,6 +429,14 @@ Indicative figures cross-check:
 Never cite **year-old** forum post as 2026 rent, **three live quotes** minimum.
 
 *Draft v1, 2026-06-04. Verify school fees, dependent levies, Ejar terms and live rent at publish.*
+
+<InlineCta
+  headline={"Not sure which market fits your goals?"}
+  subtext={"Get a personalised comparison matched to your budget and target return."}
+  buttonText={"Compare Markets Free"}
+  buttonHref="/get-shortlist/"
+  ctaId={"compare_cta_saudi-vs-dubai-cost"}
+/>
 
 <FaqBlock items={[
   { question: "Is Riyadh cheaper than Dubai to live?", answer: "Rent alone can be 15–30% lower at mid-tier compound/apartment equivalents, but Saudi premium school fees often match UAE, total family budgets frequently land within 10–20% of Dubai mid-tier, not half price." },

@@ -38,6 +38,10 @@ faq:
     answer: "Investor tracks have separate compliance, ** (confirm current official rules)**, do not assume employment policy transfers."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Bahrain Healthcare for Expats 2026: Public, Private Manama, NHRA & Insurance
@@ -47,6 +51,8 @@ TL;DR: Employed Manama expats run healthcare through employer insurance, read th
 > Disclaimer: Benefits vary by employer. Clinical costs change. Not medical advice, call 999 in emergency and follow insurer pre-authorisation.
 
 ---
+
+<TldrBlock text={"Employed Manama expats run healthcare through employer insurance, read the Schedule of Benefits, not the HR slide. NHRA regulates quality; Salmaniya anchors public care; private hospitals handle most English outpatient. Emergency: 999. Basic cover often needs BHD 30–80/month family top-up. Hubs: Bahrain relocation guide (R91) · Manama cost of living (R92)"} />
 
 ## How healthcare fits your Bahrain relocation stack
 
@@ -348,6 +354,14 @@ Bahrain's bahrain healthcare guide numbers rarely match generic Gulf-wide estima
 ### Insurance plan tiers and out-of-pocket costs
 
 Bahrain health insurance tiers vary significantly. Basic employer-mandated plans cover outpatient visits up to 50,000–150,000 AED annually with 20 % co-pay. Mid-range plans (8,000–15,000 AED per person per year) reduce co-pay to 10 % and add dental, optical, and maternity. Premium plans (15,000–30,000 AED) offer zero co-pay. Common out-of-pocket expenses: dental crowns 2,500–6,000 AED, MRI scans 1,500–4,000 AED, physiotherapy 300–700 AED each, and chronic prescriptions 50–300 AED per month.
+
+<InlineCta
+  headline={"Looking for the right Gulf property?"}
+  subtext={"Get a free analysis matched to your budget and target market."}
+  buttonText={"Request Free Analysis"}
+  buttonHref="/get-shortlist/"
+  ctaId={"inline_cta_bahrain-healthcare-g"}
+/>
 
 <FaqBlock items={[
   { question: "Is healthcare free for expats in Bahrain?", answer: "No universal free care for non-Bahrainis. Employed expats typically use employer medical insurance for private outpatient; public emergency access exists but billing and eligibility vary. Budget top-ups in manama-cost-of-living." },

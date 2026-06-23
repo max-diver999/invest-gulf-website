@@ -28,6 +28,10 @@ faq:
     answer: "School proximity should be one of the three main filters when choosing an Abu Dhabi neighbourhood, alongside commute and property budget. The school run at 7:00–7:45 AM is the most congested period in Abu Dhabi. An Outstanding school 10 minutes away generally wins over one 30 minutes away, even if the latter has marginally stronger results. Map your curriculum shortlist and preferred rating tier, then match to residential areas."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # ADEK School Ratings Explained: What Every Abu Dhabi Family Needs to Know
@@ -39,6 +43,8 @@ import FaqBlock from '../../components/FaqBlock.astro';
 > **Disclaimer:** ADEK ratings, fee increase circulars, and inspection frameworks are updated annually. Always verify current ratings, reports, and fee schedules at [adek.gov.ae](https://adek.gov.ae) before applying to any school or committing to a residential lease or property purchase in Abu Dhabi.
 
 ---
+
+<TldrBlock text={"ADEK school ratings in Abu Dhabi, what Outstanding to Weak mean, how the inspection cycle works, fee caps per tier, and how families use ratings."} />
 
 ## What is ADEK and why does it matter for Abu Dhabi families
 
@@ -211,6 +217,14 @@ Go to adek.gov.ae and navigate to the school inspection section. You can search 
 
 **Does the ADEK rating affect my property investment in Abu Dhabi?**
 Indirectly, yes, and the effect has strengthened as Abu Dhabi's family-oriented residential market has matured. Properties within easy reach of Outstanding and Very Good ADEK-rated schools consistently attract higher family demand, which supports rental yield stability and resale liquidity in Abu Dhabi residential areas. Saadiyat Island's premium residential pricing is partly sustained by the concentration of strong ADEK-rated schools on the island and in adjacent zones. For a full analysis of how education infrastructure intersects with Abu Dhabi property investment, see the [Abu Dhabi property investment guide](/guides/abu-dhabi-property-investment-guide/).
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_adek-school-ratings-"}
+/>
 
 <FaqBlock items={[
   { question: "What do ADEK school ratings mean?", answer: "ADEK rates every Abu Dhabi private school on five tiers: Outstanding, Very Good, Good, Acceptable, and Weak. The rating reflects inspectors' judgement across key domains including the overall quality of education, student attainment, progress, teaching and learning, wellbeing, and leadership. Outstanding is the highest tier; Weak indicates serious failings requiring urgent intervention. Ratings and inspection reports are published on adek.gov.ae." },

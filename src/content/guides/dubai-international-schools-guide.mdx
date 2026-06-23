@@ -34,6 +34,10 @@ faq:
     answer: "Choose British IGCSE/A-Level for UK universities, American AP for US/Canada, IB for global mobility, or Indian CBSE for value and Indian university pathways."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Dubai International Schools Guide 2026: KHDA Ratings, Curricula & Admissions
@@ -45,6 +49,8 @@ Fees detail: [Dubai school fees by curriculum](/guides/dubai-school-fees-by-curr
 > Disclaimer: KHDA fee frameworks and ratings update annually, verify on khda.gov.ae and each school site.
 
 ---
+
+<TldrBlock text={"Dubai has 200+ KHDA-regulated international schools, the densest school market in the Gulf. British and IB premium tiers run AED 85,000–120,000/year; Indian CBSE offers value at AED 25,000–40,000. Top Outstanding schools want applications 6–12 months before September start. Pick your school shortlist first, then hunt rent, a 25-minute school run at 7:15 AM is fine; the same route at 7:45 is gridlock."} />
 
 ## Why school choice drives your Dubai address
 
@@ -361,6 +367,14 @@ Arabic as compulsory varies, MOE requirements differ for Arab vs non-Arab passpo
 - Check latest KHDA or ADEK inspection report for schools referenced in Dubai International Schools, not blog summaries.
 - Confirm curriculum continuity before mid-secondary transfers; exam board switches are costly at Year 10.
 - Secure a written seat offer before terminating your current school's place when following Dubai International Schools.
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_dubai-international-"}
+/>
 
 <FaqBlock items={[
   { question: "How many international schools are there in Dubai?", answer: "Dubai has over 200 KHDA-regulated international schools, making it the densest school market in the Gulf region." },

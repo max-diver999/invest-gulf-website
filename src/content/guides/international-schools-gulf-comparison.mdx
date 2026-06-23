@@ -36,6 +36,10 @@ faq:
 noindex: true
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # International Schools Comparison: Dubai vs Abu Dhabi vs Doha vs Riyadh 2026
@@ -47,6 +51,8 @@ import FaqBlock from '../../components/FaqBlock.astro';
 **Navigation:** [Dubai relocation guide](/guides/dubai-relocation-guide/) · [Abu Dhabi relocation guide](/guides/abu-dhabi-expat-community/) · [Best areas Dubai](/guides/best-areas-buy-property-dubai/)
 
 ---
+
+<TldrBlock text={"International schools Gulf comparison, Dubai, Abu Dhabi, Doha fees, curricula, and family relocation planning across GCC cities."} />
 
 ## The Gulf School Market: Size and Structure
 
@@ -311,6 +317,14 @@ Not every expat profile benefits equally from this route in the Gulf. Consider t
 - **Scenario C — investor or retiree planning long-term residency:** capital deployed in property or business, lower urgency but higher stakes. Focus on the 10-year horizon — cost differences compound over a decade, so optimise for total lifecycle expense rather than upfront convenience.
 
 Each path converges at the same destination; the difference is timeline, cost, and hassle level. Pick the scenario closest to yours and skip sections that don't apply.
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_international-school"}
+/>
 
 <FaqBlock items={[
   { question: "Which Gulf city has the best international schools?", answer: "Dubai has the largest number and greatest diversity of international schools in the Gulf, 200+ schools across KHDA jurisdiction with British, American, IB, Indian, and other curricula. Abu Dhabi has strong options especially for British and American curricula but a smaller pool. Doha has improved significantly since Qatar National Vision 2030 investments. For most families, Dubai's range and depth make it the default best choice, but the right school for your child depends on curriculum, location, and budget." },

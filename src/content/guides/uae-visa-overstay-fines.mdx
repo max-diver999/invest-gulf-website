@@ -31,11 +31,17 @@ faq:
     answer: "UAE residency visa holders whose visa is cancelled or expires have a 30-day grace period to leave, transfer to a new employer sponsorship, or change to a different visa status. This applies to employment visa cancellations, company liquidations, and expired residency permits. During the grace period, you are technically out of status but protected from fines. After day 30, the standard AED 50 per day fine applies. Residency holders who become unemployed but want to remain in the UAE should initiate a status change or apply for a new permit well before the 30-day window closes."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 TL;DR: UAE visa overstay fines run at AED 50 per day after a 10-day grace period for visit/tourist visas, or a 30-day grace period for cancelled or expired residency visas. Total fines must be paid at departure or in advance through GDRFA portals. Short overstays cleared with prompt payment usually result in no entry ban; longer or repeated overstays risk multi-year re-entry restrictions. The cleanest path is always departure before the grace period ends.
 
 ---
+
+<TldrBlock text={"UAE visa overstay fines run at AED 50 per day after a 10-day grace period for visit/tourist visas, or a 30-day grace period for cancelled or expired residency visas. Total fines must be paid at departure or in advance through GDRFA portals. Short overstays cleared with prompt payment usually result in no entry ban; longer or repeated overstays risk multi-year re-entry restrictions. The cleanest path is always departure before the grace period ends."} />
 
 ## What the UAE overstay system actually is
 
@@ -253,6 +259,14 @@ If you are planning to manage your UAE immigration status more proactively, appl
 **Scenario B — overstay fines family joining:** Sequence sponsor salary proof, housing fit-out, and school admissions for overstay fines. Dependent visas bottleneck on Ejari or municipality tenancy evidence tied to Uae Visa Overstay Fines.
 
 **Scenario C — overstay fines renewal:** File at least 30 days before expiry on overstay fines status. Overstay fines and re-entry bans compound when you delay overstay fines paperwork.
+
+<InlineCta
+  headline={"Planning to obtain UAE residency via property?"}
+  subtext={"Our team guides you through qualifying properties and the application process."}
+  buttonText={"Get Residency Guide"}
+  buttonHref="/get-shortlist/"
+  ctaId={"visa_cta_uae-visa-overstay-fi"}
+/>
 
 <FaqBlock items={[
   { question: "How much is the UAE visa overstay fine per day?", answer: "The standard UAE visa overstay fine is AED 50 per day, applied after a 10-day grace period from the visa expiry date. For tourist visas and short-term visit permits, fines begin accumulating on day 11 after expiry. There is no upper daily cap, fines accumulate every calendar day until the overstay is resolved by departing, paying at the airport, or regularising status. The total fine must be paid in full at the immigration counter or through the GDRFA smart services portal before departure." },

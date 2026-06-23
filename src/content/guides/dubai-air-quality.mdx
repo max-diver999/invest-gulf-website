@@ -29,11 +29,17 @@ faq:
     answer: "Yes. Dubai Municipality operates an air quality monitoring network across the emirate. Real-time data is accessible via IQAir's Dubai pages and the UAE Environment Agency. During major dust events, health advisories are issued. Wearable and home sensors (PurpleAir, IQAir AirVisual) give hyperlocal data."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 **TL;DR:** Dubai's air quality is moderate, better than most Middle Eastern cities and significantly better than major South Asian hubs, but worse than European baselines. The dominant issue is desert dust (PM2.5/PM10) peaking in spring. Healthy adults will not typically notice problems day-to-day; people with respiratory conditions or families with young children should understand the seasonal pattern, invest in HEPA filtration, and monitor AQI during Shamal wind events.
 
 ---
+
+<TldrBlock text={"Dubai air quality guide for expats, seasonal AQI data, dust season, health impact, indoor tips, purifier recommendations, and global city comparison."} />
 
 ## How Dubai's Air Quality Works: The Basics
 
@@ -271,6 +277,14 @@ Dubai's air quality is a managed factor in a generally good quality-of-life envi
 ### Monthly cost benchmarks — 2025–2026
 
 Dubai's dubai air quality numbers rarely match generic Gulf-wide estimates — here are the local figures. Studio rent: 3,000–5,500 AED. 1-bed: 4,500–8,000 AED. 2-bed: 7,000–14,000 AED. Villa: 12,000–35,000 AED. Groceries (single): 1,200–2,000 AED. Utilities (apartment): 400–900 AED. Telecom: 300–600 AED. Gym: 200–600 AED per month. Coffee: 18–30 AED. Metro single trip: 3–8.50 AED. Taxi (10 km): 25–45 AED. Dining out: 30–120 AED per meal. Cinema: 40–80 AED. Brunch: 200–600 AED per person.
+
+<InlineCta
+  headline={"Looking for the right Gulf property?"}
+  subtext={"Get a free analysis matched to your budget and target market."}
+  buttonText={"Request Free Analysis"}
+  buttonHref="/get-shortlist/"
+  ctaId={"inline_cta_dubai-air-quality"}
+/>
 
 <FaqBlock items={[
   { question: "Is Dubai's air quality good or bad?", answer: "Dubai's air quality is moderate by global standards. The main issue is particulate matter (PM2.5 and PM10) from desert dust, construction activity, and traffic. Most days fall in the AQI 50–100 range. This is significantly better than major South Asian and Chinese cities, but worse than most Northern European cities." },

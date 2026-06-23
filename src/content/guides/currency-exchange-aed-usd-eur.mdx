@@ -31,6 +31,10 @@ faq:
     answer: "For amounts under AED 100,000: compare Wise (mid-market rate plus 0.4–0.7% fee) vs a walk-in exchange house on the day, Al Ansari and UAE Exchange are usually within 0.1–0.3% of each other. For amounts above AED 500,000: request a treasury quote from your UAE bank; large-amount desk rates often narrow the spread to 0.3–0.5%, closer to exchange house rates. Always get at least three live quotes before executing."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Currency Exchange AED vs USD and EUR in Dubai: Peg, Exchange Houses & Timing
@@ -40,6 +44,8 @@ TL;DR: AED = USD-pegged at 3.6725, USD buyers have essentially zero FX risk; EUR
 > **Disclaimer:** June 2026. Exchange rates, fee structures, and regulatory thresholds change. Verify current rates with providers before transacting. Not financial advice.
 
 ---
+
+<TldrBlock text={"AED = USD-pegged at 3.6725, USD buyers have essentially zero FX risk; EUR/GBP/INR buyers watch their home currency against USD. Exchange houses (Al Ansari, Lulu, UAE Exchange) beat banks by 0.5–1.5% on non-USD corridors. Banks are required for property-scale SWIFT transfers. Forward contracts are available from UAE banks for property buyers facing future payment milestones. Never exchange at an airport desk. Hubs: money transfer from Dubai · FX for property purchase · Gulf banking compared"} />
 
 ## How the AED peg works: and why it matters
 
@@ -247,6 +253,14 @@ USD holders: no target needed. EUR/GBP holders: set a target based on historical
 Under AED 40K: Emirates ID. AED 40–55K: ID plus brief income explanation. Over AED 55K: ID plus bank statements or salary proof. Property transfer: add SPA, passport, and savings trail.
 
 Currency exchange in Dubai is genuinely cheaper and more competitive than in most Western financial centres, the exchange house ecosystem exists specifically because 90%+ of Dubai's workforce is expatriate and remits globally. Use it.
+
+<InlineCta
+  headline={"Looking for the right Gulf property?"}
+  subtext={"Get a free analysis matched to your budget and target market."}
+  buttonText={"Request Free Analysis"}
+  buttonHref="/get-shortlist/"
+  ctaId={"inline_cta_currency-exchange-ae"}
+/>
 
 <FaqBlock items={[
   { question: "Is the AED pegged to the USD?", answer: "Yes, the UAE dirham has been pegged to the US dollar at a fixed rate of approximately 3.6725 AED per USD since November 1997. The peg is maintained by the UAE Central Bank through a currency board arrangement, holding USD reserves against every dirham in circulation. The rate fluctuates within a very narrow band (3.6710–3.6730) for interbank settlement but is effectively fixed for practical purposes." },

@@ -28,6 +28,10 @@ faq:
     answer: "School proximity should be one of the three main filters when choosing a Dubai neighbourhood, alongside commute and property type. The school-run at 7:15–7:45 AM is the most congested window of the Dubai day. An Outstanding school 8 minutes away almost always wins over an Outstanding school 25 minutes away in practice, even if the latter's exam results are marginally higher."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # KHDA School Ratings Explained: What Every Dubai Family Needs to Know
@@ -39,6 +43,8 @@ import FaqBlock from '../../components/FaqBlock.astro';
 > **Disclaimer:** KHDA ratings and fee frameworks change each academic year. Always verify current ratings and fee schedules at [khda.gov.ae](https://khda.gov.ae) before applying to any school or signing a rental/purchase agreement in Dubai.
 
 ---
+
+<TldrBlock text={"KHDA school ratings in Dubai, what Outstanding, Very Good, Good, Acceptable and Weak mean, the inspection cycle, fee caps per tier, and how to use ratings."} />
 
 ## What is KHDA and why does it matter for Dubai families
 
@@ -203,6 +209,14 @@ Yes. KHDA publishes inspection reports in both English and Arabic. The ratings t
 
 **Does a school's KHDA rating affect my property investment?**
 Indirectly, yes. Properties in zones with a concentration of Outstanding and Very Good schools consistently attract stronger family demand, and family demand is a significant driver of rental yields and resale stability in Dubai residential. Developers marketing to families emphasise school proximity for this reason. The school-to-property relationship runs both ways: premium schools partly explain premium property prices in Dubai Hills, Arabian Ranches, and Jumeirah, and those property prices partly sustain the school fee base. See [school fees vs property budget in Dubai](/guides/school-fees-vs-property-budget-dubai/) for the financial model.
+
+<InlineCta
+  headline={"Planning a family move to the Gulf?"}
+  subtext={"Get a shortlist of properties near the best schools in your target area."}
+  buttonText={"Find Family Properties"}
+  buttonHref="/get-shortlist/"
+  ctaId={"family_cta_khda-school-ratings-"}
+/>
 
 <FaqBlock items={[
   { question: "What do KHDA school ratings mean?", answer: "KHDA rates every Dubai private school on five tiers: Outstanding, Very Good, Good, Acceptable, and Weak. The rating reflects inspectors' judgement across six domains, overall quality of education, attainment, progress, teaching, wellbeing, and leadership. Outstanding is the highest tier; Weak means the school is failing and requires urgent improvement. Ratings are published on khda.gov.ae after each inspection cycle." },

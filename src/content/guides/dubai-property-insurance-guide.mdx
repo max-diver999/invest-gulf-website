@@ -34,6 +34,10 @@ faq:
     answer: "Fire and storm clauses vary, flood and earthquake often excluded or sub-limited. Read policy schedule for UAE-specific exclusions."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Dubai Property Insurance Guide: Building, Contents & Landlord Cover
@@ -43,6 +47,8 @@ TL;DR: Mortgage = building insurance mandatory. Strata master policy does not co
 > Disclaimer: June 2026 insurance overview. Policy wordings differ by insurer, read schedule before purchase.
 
 ---
+
+<TldrBlock text={"Mortgage = building insurance mandatory. Strata master policy does not cover your interior. Budget AED 1.5–4K/year apartments, AED 3–8K villas. Landlords add liability + loss of rent. Activate before tenant or move-in. Hubs: handover checklist · mortgage guide · landlord law"} />
 
 ## Why insurance gets skipped: and why that hurts
 
@@ -419,6 +425,14 @@ Takaful property coverage generally matches conventional insurance for:
 | School fees (mid-tier) | 25,000–95,000 AED | Per academic year near Dubai |
 | Daily commute sample | 30–45 minutes | Peak-hour Dubai corridor |
 | Golden Visa property | 2,000,000 AED | Fully paid threshold for Dubai |
+
+<InlineCta
+  headline={"Looking for the right Gulf property?"}
+  subtext={"Get a free analysis matched to your budget and target market."}
+  buttonText={"Request Free Analysis"}
+  buttonHref="/get-shortlist/"
+  ctaId={"inline_cta_dubai-property-insur"}
+/>
 
 <FaqBlock items={[
   { question: "Is property insurance mandatory in Dubai?", answer: "Not legally mandatory for all owners, but mortgage lenders require building insurance. Landlords should carry liability cover. Strata master policies rarely cover your unit interior or contents." },

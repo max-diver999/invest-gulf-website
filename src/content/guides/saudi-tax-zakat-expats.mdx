@@ -40,6 +40,10 @@ faq:
     answer: "No, operational overview only. Use licensed Saudi ZATCA advisor and home-country CPA for filings."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Saudi Tax & Zakat for Expats 2026: 0% Income Tax, Business Rules & CRS
@@ -57,6 +61,8 @@ Compare: [Gulf expat living comparison](/guides/gulf-expat-living-comparison/) (
 Market context: 0% personal income tax; Zakat and corporate rules differ, business owners need specialist advice; YMYL tone on cross-border reporting.
 
 ---
+
+<TldrBlock text={"Typical expat employees on Saudi iqama pay 0% Saudi personal income tax on salary, the recruiter headline is mostly true for employment income. Zakat hits Saudi/GCC owners and certain business structures, not something most employees calculate on a payslip. Corporate tax, withholding, VAT, and home-country CRS/FATCA still matter. Premium Residency and side businesses change the picture, (confirm current official rules)."} />
 
 ## The recruiter headline: what is actually true
 
@@ -480,6 +486,14 @@ Tax-free salary headline inflates **spendable** perception:
 Build **net-to-household** model: **gross minus GOSI minus home withholding (if any) minus VAT-inclusive spend**.
 
 *Draft v1, 2026-06-04. Verify ZATCA residency rules, GOSI categories, CRS fields, equity guidance and Law M/14 property taxes at publish.*
+
+<InlineCta
+  headline={"Buying Gulf property with tax obligations at home?"}
+  subtext={"Get guidance on UAE tax treatment and home-country implications."}
+  buttonText={"Get Tax Guidance"}
+  buttonHref="/get-shortlist/"
+  ctaId={"tax_cta_saudi-tax-zakat-expa"}
+/>
 
 <FaqBlock items={[
   { question: "Do expats pay income tax in Saudi Arabia?", answer: "Employment income for typical expat employees is not subject to Saudi personal income tax at 0% for salaries. Other taxes and home-country obligations may still apply, UK/US/EU/India tax residency and CRS reporting are separate questions." },

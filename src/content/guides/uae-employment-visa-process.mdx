@@ -26,6 +26,10 @@ faq:
     answer: "Yes, provided your monthly salary meets the minimum threshold, typically AED 4,000 or AED 3,000 if accommodation is included, though many landlords and schools informally expect AED 6,000–8,000 for practical purposes. You can sponsor a spouse, unmarried children (daughters of any age, sons up to 18 or up to 21 if enrolled in university), and in some cases parents. Each dependent requires separate residency stamping and a medical fitness test."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
+
 import FaqBlock from '../../components/FaqBlock.astro';
 
 The UAE employment visa is the residency backbone for the overwhelming majority of expatriates living in Dubai, Abu Dhabi, Sharjah, and the other emirates. It is not a single document but a sequential process: work permit approval from the Ministry of Human Resources and Emiratisation (MOHRE), an entry permit, medical clearance, Emirates ID biometrics, and finally a residence visa stamp. Missing or confusing any of these steps is the single most common cause of delays, overstay fines, and last-minute travel disruptions.
@@ -33,6 +37,8 @@ The UAE employment visa is the residency backbone for the overwhelming majority 
 > TL;DR: Your employer initiates the process, not you. The sequence is: MOHRE work permit → entry permit issued → travel to UAE (or status change inside UAE) → medical fitness test → Emirates ID biometrics → visa stamp in passport. Total timeline: 3–6 weeks. All government fees are legally the employer's responsibility. Once stamped, a standard employment visa is valid for 2–3 years and is renewable.
 
 ---
+
+<TldrBlock text={"Complete step-by-step guide to the UAE employment visa process, entry permit, medical test, Emirates ID, visa stamping. Timelines, costs, and documents."} />
 
 ## What the UAE Employment Visa Actually Is
 
@@ -237,6 +243,14 @@ The sequence is linear: each step depends on the output of the previous one. The
 ### Visa processing — costs and timelines
 
 For anyone comparing uae employment visa process options across the Gulf, here are the benchmarks that matter. Employment visa: 3,000–7,000 AED, 10–20 working days. Golden Visa: 5,000–15,000 AED, 15–30 working days. Green Visa: 2,800–5,500 AED, 10–15 working days. Medical test: 300–500 AED per person. Emirates ID: 370 AED, biometrics same day. Typing-centre forms: 150–350 AED each. Expedited track: 500–1,500 AED surcharge, cuts timeline 30–50 %. Visa overstay fine: 100 AED per day after a 30-day grace period (2026 rules). Dependant sponsorship per person: 2,500–4,000 AED processing.
+
+<InlineCta
+  headline={"Planning to obtain UAE residency via property?"}
+  subtext={"Our team guides you through qualifying properties and the application process."}
+  buttonText={"Get Residency Guide"}
+  buttonHref="/get-shortlist/"
+  ctaId={"visa_cta_uae-employment-visa-"}
+/>
 
 <FaqBlock items={[
   { question: "How long does the UAE employment visa process take?", answer: "End-to-end, expect 3–6 weeks from signed contract to visa stamp in your passport. The entry permit typically takes 5–10 working days once the employer submits to MOHRE. After arrival, the medical test, Emirates ID biometrics, and visa stamping each add 5–10 working days. Processing times vary by emirate and season, Ramadan and summer months can add 1–2 weeks." },
