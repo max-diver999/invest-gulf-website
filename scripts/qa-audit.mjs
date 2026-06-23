@@ -147,7 +147,9 @@ function auditFile(c, slug) {
     : 1800;
   if (words < minW) prob.push(`words:${words}<${minW}`);
 
-  if (!/quick answer|tl;dr|\*\*quick answer|\*\*tl;dr/i.test(body)) prob.push('no-quick-answer');
+  const hasQuickIntro = /(?:^|\n)(?:Quick answer|TL;DR|\*\*Quick [Aa]nswer|\*\*TL;DR)/m.test(body);
+  const hasTldrBlock = /<TldrBlock\b/.test(body);
+  if (!hasQuickIntro && !hasTldrBlock) prob.push('no-quick-answer');
 
   const links = body.match(/\]\((\/[a-z0-9\-\/]*)\)/gi) || [];
   const internal = links.filter((l) => /\]\(\/(guides|compare|areas|projects|news)\//i.test(l));
