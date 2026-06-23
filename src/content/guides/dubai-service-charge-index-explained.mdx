@@ -36,6 +36,9 @@ faq:
     answer: "The property owner pays service charges in Dubai. Tenants pay their own DEWA electricity and water bills and may pay district cooling separately. Service charges are never legally passable to tenants. When calculating investment yield, service charges are always an owner cost deducted from gross rent."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Every Dubai property agent can quote you a gross rental yield. Almost none of them open the DLD Service Charge Index on Mollak before doing so. Yet service charges are the largest predictable cost in your annual ownership budget, often consuming 15–25% of gross rental income on mid-market stock and 25–35% on premium waterfront towers.
@@ -47,6 +50,8 @@ Quick answer: Service charge = registered sqft × Mollak-filed AED/sqft rate. Ve
 **Area-by-area charge ranges: [Service Charges in Dubai by Area](/guides/service-charges-dubai-by-area/). Net yield methodology: [Gross vs Net Yield Dubai](/guides/gross-vs-net-yield-dubai/).**
 
 ---
+
+<TldrBlock text="Service charge = registered sqft × Mollak-filed AED/sqft rate. Verify via Mollak portal or Dubai REST app, not SPA estimates. Mid-market buildings run AED 12–22/sqft; premium waterfront AED 28–50/sqft. Charges typically consume 15–25% of gross rent and are the owner's legal obligation." />
 
 ## The three systems you need to understand
 
@@ -421,6 +426,14 @@ The DLD Service Charge Index is not bureaucratic paperwork. It is the difference
 Gross yield is what agents sell. Net yield is what investors earn. The Service Charge Index is how you get from one to the other.
 
 *Index data reflects RERA Mollak filings through Q1 2026. Individual building rates change annually following Owners Association budget approval. Always verify current rates via Mollak or Dubai REST before purchase. This guide is for information purposes only and does not constitute financial or investment advice.*
+
+<InlineCta
+  headline="Looking for the right Gulf property?"
+  subtext="Get a free analysis matched to your budget and target market."
+  buttonText="Request Free Analysis"
+  buttonHref="/get-shortlist/"
+  ctaId="inline_cta_dubai-service-charge"
+/>
 
 <FaqBlock items={[
   { question: "What is the Dubai Service Charge Index?", answer: "The Dubai Service Charge Index is a DLD-maintained database of filed service charge rates for every registered strata-title building in Dubai. It is administered through the RERA Mollak platform and accessible via the Dubai REST app. The index records the AED-per-square-foot annual rate approved by each building's Owners Association and filed with RERA, the definitive figure for calculating your annual maintenance liability." },

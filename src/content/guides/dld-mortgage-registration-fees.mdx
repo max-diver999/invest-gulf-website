@@ -28,6 +28,9 @@ faq:
     answer: "No, DLD fees (transfer fee and mortgage registration fee) cannot be included in the mortgage loan. They are out-of-pocket costs at closing. UAE banks lend against the property value (up to LTV cap), not against acquisition costs. Buyers must have sufficient cash to cover 4% DLD transfer + 0.25% mortgage registration + other transaction costs on top of the down payment. Total cash needed at closing on a AED 2,000,000 property with 80% LTV mortgage: AED 400,000 (down) + AED 80,000 (DLD 4%) + AED 4,000 (mortgage 0.25%) + AED 4,520 (admin + trustee) = AED 488,520."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Dubai's mortgage fee structure is layered, and many buyers are surprised by the total cash required at DLD registration beyond just their down payment. The 0.25% DLD mortgage registration fee is the headline number, but the complete picture includes bank valuation, processing charges, insurance requirements, and the simultaneous 4% property transfer fee. Budgeting correctly prevents last-minute shortfalls at the Registration Trustee Center.
@@ -46,6 +49,8 @@ Quick answer: DLD mortgage registration fee is 0.25% of the loan amount. Paid on
 | Life insurance (annual) | 0.3–0.5% of loan | Buyer | Ongoing annually |
 
 ---
+
+<TldrBlock text="DLD mortgage registration fee is 0.25% of the loan amount. Paid on the same day as the 4% property transfer fee at the Registration Trustee Center. Cannot be financed, must be cash. On AED 1,500,000 loan: AED 3,750. Total DLD cash required at closing on an AED 2,000,000 property with 80% LTV mortgage: approximately AED 488,000." />
 
 ## Complete fee example: AED 2,000,000 property
 
@@ -401,6 +406,14 @@ Before signing any mortgage agreement, verify these fee components:
 *DLD fee rates are confirmed as of Q1 2026. Fees are subject to DLD regulatory changes, verify the current fee schedule on the DLD portal at transaction date. Bank fees vary by institution and may be promotional. This guide is for information purposes only and does not constitute financial advice.*
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<InlineCta
+  headline="Ready to finance a Gulf property purchase?"
+  subtext="Our team explains mortgage options and fund transfer processes for international buyers."
+  buttonText="Get Finance Guide"
+  buttonHref="/get-shortlist/"
+  ctaId="finance_cta_dld-mortgage-registr"
+/>
 
 <FaqBlock items={[
   { question: "What is the DLD mortgage registration fee in Dubai?", answer: "DLD (Dubai Land Department) charges 0.25% of the loan amount as a mortgage registration fee, payable at the time of registration at the Registration Trustee Center. This is in addition to (not part of) the 4% DLD property transfer fee. On a AED 1,500,000 mortgage: fee = AED 3,750. On a AED 2,500,000 mortgage: fee = AED 6,250. A small admin fee of approximately AED 290 is charged alongside the 0.25%." },

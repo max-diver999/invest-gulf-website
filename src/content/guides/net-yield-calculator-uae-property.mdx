@@ -34,6 +34,9 @@ faq:
     answer: "No. Listing prices on Property Finder and Bayut are aspirational, typically 5–15% above Ejari-registered transacted rents. The RERA Rental Index and Dubai REST app publish actual Ejari data. Using listing rents inflates both gross and net yield projections. The same data source should feed your rent input and your RERA rent increase calculator assumptions at renewal."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Every UAE property brochure quotes gross yield. Your bank account receives net yield. The gap is not a rounding error, it is typically 1.5 to 3 percentage points on long-term lets, and wider on short-term rental. An investor who buys on 8% gross and plans for 8% net is misallocating capital.
@@ -54,6 +57,8 @@ This guide provides the full net yield formula, a line-by-line cost stack for UA
 For gross-to-net theory specific to Dubai, see [Gross vs Net Yield Dubai](/guides/gross-vs-net-yield-dubai/). For rent growth caps that affect multi-year models, see [Dubai Rent Increase Calculator (RERA)](/guides/dubai-rent-increase-calculator-rera/).
 
 ---
+
+<TldrBlock text="Net yield = (collected rent − operating costs) ÷ total capital deployed. For UAE property in 2026, realistic net yields are 4.5–7% on long-term mid-market rentals and 2.5–5% on prime communities. Always use Ejari transacted rents, include acquisition costs in the denominator, and model vacancy at 7–8% unless you have building-specific evidence." />
 
 ## Net yield vs gross yield: why the distinction matters in the UAE
 
@@ -350,6 +355,14 @@ For the foreign purchase process, see [How Foreigners Buy Property in Dubai](/gu
 **Scenario C — cross-border investor:** Separate lifestyle goals from ROI. Keep 6–12 months liquidity in local currency while you validate Net Yield Calculator Uae Property assumptions on the ground.
 
 *Based on DLD, RERA, and market data through Q1 2026. Yields vary by property, building, and tenant profile. This guide is for information only and does not constitute financial or tax advice.*
+
+<InlineCta
+  headline="Looking for the best-yield properties in the Gulf?"
+  subtext="Get a shortlist matched to your yield target and budget."
+  buttonText="Get Yield Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="yield_cta_net-yield-calculator"
+/>
 
 <FaqBlock items={[
   { question: "What is the formula for net rental yield on UAE property?", answer: "Net yield = (Annual rental income collected − All operating costs) ÷ Total capital deployed × 100. Operating costs include service charges, property management fees, vacancy allowance, maintenance, Ejari registration, DEWA reconnection between tenancies, and, for short-term rental, DET permit fees and Tourism Dirham. Total capital deployed should include purchase price plus acquisition costs (DLD transfer fee, trustee fee, agent commission, legal fees), not purchase price alone." },

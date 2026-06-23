@@ -32,6 +32,9 @@ faq:
     answer: "REST covers regulatory and transactional data, essential but not complete. Also require: physical inspection, SPA legal review (off-plan), OA community rules (especially for STR), DEWA clearance, and developer NOC for resale. REST answers 'what does DLD know?', not 'what condition is the unit?'"
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Every serious Dubai property purchase should start in one place: the Dubai REST app. Not the broker's PDF. Not the portal listing. Not the developer render. REST is Dubai Land Department's official channel for title verification, transaction history, Ejari rents, and service charge schedules, the data layer beneath every yield calculation and price negotiation.
@@ -53,6 +56,8 @@ Understanding REST's capabilities, and limitations, provides foreign investors w
 | Verify broker | RERA Broker License | 1 minute |
 
 ---
+
+<TldrBlock text="Before paying a reservation fee, pull the title or Oqood on REST, confirm owner identity, check DLD transaction comparables in the building, verify service charges on Mollak, and cross-reference Ejari rent bands. Fifteen minutes on REST prevents the most common foreign-buyer mistakes: overpaying versus transacted prices and mis-modelling net yield." />
 
 ## Getting started: REST app setup
 
@@ -441,6 +446,14 @@ The Dubai REST app is the regulatory source of truth for Dubai property due dili
 No foreign buyer should transfer a reservation fee without completing the 30-minute REST workflow above. For the next layer, net yield maths and STR licensing, continue to the [Dubai Rental Yield Guide](/guides/dubai-rental-yield-guide/) and [Short-Term Rental Dubai License](/guides/short-term-rental-dubai-license/).
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<InlineCta
+  headline="Looking for the right Gulf property?"
+  subtext="Get a free analysis matched to your budget and target market."
+  buttonText="Request Free Analysis"
+  buttonHref="/get-shortlist/"
+  ctaId="inline_cta_dubai-rest-app-prope"
+/>
 
 <FaqBlock items={[
   { question: "What is the Dubai REST app?", answer: "Dubai REST (Real Estate Self Transaction) is the official Dubai Land Department mobile app and portal. It provides access to title deed verification, Oqood off-plan records, Ejari-registered rental contracts, historical transaction prices, service charge schedules, and broker licensing. It is the primary due diligence tool for property buyers in Dubai, free and authoritative." },

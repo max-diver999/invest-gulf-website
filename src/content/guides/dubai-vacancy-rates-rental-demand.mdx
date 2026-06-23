@@ -27,6 +27,9 @@ faq:
     answer: "Deduct one month rent (8.3%) for 7% annual vacancy, or pro-rate your band. Then subtract service charges, management (5–10% LTR), and maintenance reserves. Marketing gross yields of 8–9% often become net 5–7% after vacancy and charges, sometimes lower in premium buildings with high service fees."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Quick answer: Dubai vacancy rates average 7–8% citywide, with prime areas (Marina, Downtown, Palm) running 4–5% and supply-heavy zones reaching 8–12%. Growing population of 4M+ residents and 5% annual growth supports rental demand, but vacancy can reduce gross yields from 8–9% to net 5–7% after factoring service charges and void periods.
@@ -36,6 +39,8 @@ Vacancy is the silent line item that turns an 8.5% gross yield brochure into a 5
 This guide gives you vacancy bands by area tier, demand drivers backed by 2026 data, and a practical method to model void periods in net yield, without relying on portal listing prices.
 
 ---
+
+<TldrBlock text="Dubai vacancy rates average 7–8% citywide, with prime areas (Marina, Downtown, Palm) running 4–5% and supply-heavy zones reaching 8–12%. Growing population of 4M+ residents and 5% annual growth supports rental demand, but vacancy can reduce gross yields from 8–9% to net 5–7% after factoring service charges and void periods." />
 
 ## Macro Demand: Why Dubai Tenants Keep Coming
 
@@ -447,6 +452,14 @@ Rather than single-point vacancy assumptions, experienced landlords model vacanc
 *Vacancy bands are indicative based on market reporting and RERA data through Q1 2026. Building-level performance varies. Not investment advice.*
 
 **Related reading:** [Gross vs Net Rental Yield in Dubai](/guides/gross-vs-net-yield-dubai/).
+
+<InlineCta
+  headline="Looking for the best-yield properties in the Gulf?"
+  subtext="Get a shortlist matched to your yield target and budget."
+  buttonText="Get Yield Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="yield_cta_dubai-vacancy-rates-"
+/>
 
 <FaqBlock items={[
   { question: "What is the average vacancy rate in Dubai?", answer: "Citywide long-term vacancy baseline for underwriting is approximately 7–8%. Prime communities (Marina, Downtown, Palm, JLT) often run 4–5% due to established tenant pools. Supply-heavy areas with clustered new handovers can see 8–12% until inventory absorbs. Always stress-test above baseline in models." },

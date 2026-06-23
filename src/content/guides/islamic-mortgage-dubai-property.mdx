@@ -30,6 +30,9 @@ faq:
     answer: "Yes, Islamic financial products in UAE are available to customers of all faiths. Many non-Muslim buyers choose Islamic mortgage products for competitive rates, the absence of compounding interest (simplifying financial planning), or personal preference for asset-backed financing structures. UAE Islamic banks do not restrict their products by religion. The Sharia board oversight ensures structural compliance, not buyer religion."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Islamic finance accounts for approximately 40–45% of UAE banking assets, a reflection of both the Muslim-majority market and the international acceptance of Sharia-compliant financial products. For Dubai property buyers, the choice between Islamic and conventional mortgage is genuinely competitive on price in 2026. Understanding the structural differences helps buyers select the right product rather than defaulting to the familiar.
@@ -44,6 +47,8 @@ Quick answer: Islamic mortgages in Dubai use profit-rate structures (Murabaha, M
 | Tawarruq | Commodity-based synthetic facility | More complex; commercial use |
 
 ---
+
+<TldrBlock text="Islamic mortgages in Dubai use profit-rate structures (Murabaha, Musharakah, Ijarah) instead of interest. Costs are comparable to conventional mortgages, often within 0.25%. ADIB and DIB lead the market. LTV rules are identical to conventional (UAE Central Bank caps apply). Non-Muslims can and do use Islamic mortgages." />
 
 ## Why Islamic finance avoids interest and what it uses instead
 
@@ -361,6 +366,14 @@ Understanding Islamic finance workout procedures and asset recovery processes di
 *Product details, profit rates, and bank terms are indicative as of Q1 2026. Islamic mortgage structures and Sharia compliance certifications vary by bank and product. Always obtain the Sharia board fatwa documentation and review specific product terms with the bank and a qualified Islamic finance advisor. This guide is for information purposes only and does not constitute financial or investment advice.*
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<InlineCta
+  headline="Ready to finance a Gulf property purchase?"
+  subtext="Our team explains mortgage options and fund transfer processes for international buyers."
+  buttonText="Get Finance Guide"
+  buttonHref="/get-shortlist/"
+  ctaId="finance_cta_islamic-mortgage-dub"
+/>
 
 <FaqBlock items={[
   { question: "What is the difference between an Islamic mortgage and a conventional mortgage in Dubai?", answer: "A conventional mortgage is a loan, the bank lends money, you pay interest. An Islamic mortgage avoids interest (riba, which is prohibited in Sharia) through a profit-sharing or asset ownership structure. In a Murabaha, the bank buys the property and sells it to you at a higher price (deferred). In a diminishing Musharakah, you and the bank co-own the property and you buy out the bank's share progressively. In Ijarah, the bank buys and leases the property to you with an option to purchase at end of term. The economic outcome is similar, you make monthly payments, but the legal and Sharia structure differs." },

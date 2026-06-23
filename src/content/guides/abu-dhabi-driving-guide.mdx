@@ -33,6 +33,9 @@ faq:
 noindex: true
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 # Abu Dhabi Driving Guide 2026: Roads, Routes, Speed Limits & Practical Tips
@@ -44,6 +47,8 @@ import FaqBlock from '../../components/FaqBlock.astro';
 > **Disclaimer:** Road configurations change with infrastructure projects. Always cross-check live mapping apps before travel. Speed limit and fine data sourced from Abu Dhabi Police public guidance, verify current enforcement on official channels.
 
 ---
+
+<TldrBlock text="** Abu Dhabi's road network is modern and well-signposted, but demands defensive driving, highways run at 120–140 km/h, speed cameras are unmarked, and no metro exists so traffic concentrates on a handful of key corridors. Learn the E-route numbering, identify your daily interchanges, and budget for parking by community rather than expecting everything to be free." />
 
 ## Why Abu Dhabi Roads Feel Different from Other Cities
 
@@ -316,6 +321,14 @@ What should I do differently during Ramadan?
 Avoid driving in the 30-minute window around Iftar (sunset). Roads become significantly more dangerous as fasting drivers rush home. Roads are quieter in the mornings, use this window for longer commutes.
 
 *Guide covers Abu Dhabi emirate road environment as of June 2026. Speed limits and enforcement procedures subject to change, verify with Abu Dhabi Police official channels.*
+
+<InlineCta
+  headline="Ready to start your Gulf property search?"
+  subtext="Get a personalised shortlist matched to your investment goals."
+  buttonText="Get Your Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="buy_cta_abu-dhabi-driving-gu"
+/>
 
 <FaqBlock items={[
   { question: "What are the main road routes in Abu Dhabi?", answer: "Key routes include E10 (Sheikh Zayed corridor linking AD island to Dubai), E11 (Abu Dhabi-Dubai motorway), E20 (connecting Abu Dhabi island to Khalifa City, Yas Island), and E22 toward Al Ain. Most expats rely on E10/E20 for daily Yas–Reem–Khalifa commutes." },

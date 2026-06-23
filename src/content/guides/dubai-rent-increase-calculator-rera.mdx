@@ -34,6 +34,9 @@ faq:
     answer: "RERA Decree No. 43 of 2013 established the current rent increase framework for Dubai. It links permitted increases to the gap between the tenant's current rent and the average market rent published in the RERA Rental Index for the same area, property type, and bedroom count. The decree replaced an earlier system of flat caps and introduced the banded calculator that remains in force through 2026."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 A landlord in Dubai Marina who raises rent by 15% because "that is what the market is getting" is not exercising a right, they are breaching RERA Decree No. 43/2013. The tenant files at the Rental Disputes Center. The rent rolls back. The landlord pays the filing costs.
@@ -54,6 +57,8 @@ This guide explains the calculator bands, worked examples for common Dubai commu
 For eviction rules when tenants refuse renewal at the lawful rate, see [Dubai Tenant Eviction Rules (RERA)](/guides/dubai-tenant-eviction-rules-rera/). For net yield impact, see [Net Yield Calculator for UAE Property](/guides/net-yield-calculator-uae-property/).
 
 ---
+
+<TldrBlock text="Dubai rent increases at renewal only. The maximum increase is determined by the RERA Rental Index calculator, a banded formula comparing your tenant's current rent to the average Ejari-registered market rent. Caps range from 0% (rent within 10% of market) to 25% (rent more than 50% below market)." />
 
 ## Why RERA controls rent increases
 
@@ -332,6 +337,14 @@ For the foreign buyer process, see [How Foreigners Buy Property in Dubai](/guide
 *Based on RERA Decree No. 43/2013, Ejari data, and RDC practice through Q1 2026. Calculator outputs vary by area, unit type, and bedroom count. This guide is for information only and does not constitute legal advice.*
 
 **Related reading:** [Dubai Rental Yield](/guides/dubai-rental-yield-guide/).
+
+<InlineCta
+  headline="Looking for the right Gulf property?"
+  subtext="Get a free analysis matched to your budget and target market."
+  buttonText="Request Free Analysis"
+  buttonHref="/get-shortlist/"
+  ctaId="inline_cta_dubai-rent-increase-"
+/>
 
 <FaqBlock items={[
   { question: "How much can a landlord increase rent in Dubai in 2026?", answer: "The maximum annual rent increase is set by RERA's Rental Index calculator under Decree No. 43/2013. If the current rent is within 10% of the average market rent for the area and unit type, no increase is allowed. If the rent is 11–20% below market, the maximum increase is 5%. The cap rises in bands to a maximum of 25% when the current rent is more than 50% below the RERA average market rent for comparable units." },

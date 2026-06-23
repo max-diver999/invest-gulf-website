@@ -28,6 +28,9 @@ faq:
     answer: "Off-plan valuation uses four inputs: price per sqft vs. comparable ready stock in the same community, developer delivery premium or discount (Emaar commands 5–15% premium, Tier 2 developers require a discount), anticipated rent yield at completion vs. current community averages, and any capital appreciation expected over the construction period. Compare the off-plan price per sqft against recent DLD-registered secondary sales in the same master community, if the premium exceeds 20%, quantify the risk of paying top dollar before construction begins."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Dubai's property market is uniquely transparent by Gulf standards: every transaction registers with DLD, every rental contract files in Ejari, and every building's service charge sits on Mollak. Most overpriced purchases happen not because data is unavailable, but because buyers rely on broker PDFs instead of the public record. This guide maps exactly how to use free DLD tools to determine what any Dubai property is actually worth before you transfer dirhams.
@@ -43,6 +46,8 @@ Quick answer: Dubai property value has three floors, DLD transaction comparables
 | Formal appraisal | RERA-licensed valuer | Mortgage, inheritance, dispute |
 
 ---
+
+<TldrBlock text="Dubai property value has three floors, DLD transaction comparables (past prices), Ejari yield floor (income-justified price), and replacement cost (construction per sqft). Overpriced properties fail at least one of these tests. Check all three before signing MOU." />
 
 ## Why Dubai property valuation is more transparent than most markets
 
@@ -338,6 +343,14 @@ Dubai property valuation follows distinct seasonal and cyclical patterns that af
 Understanding these patterns helps calibrate fair value against current market positioning and improves negotiation outcomes.
 
 *Data reflects DLD transaction records, RERA Mollak filings, and Ejari data through Q1 2026. Price per sqft ranges are indicative, verify against current DLD transactions for specific buildings at time of purchase. This guide is for information purposes only and does not constitute legal or investment advice.*
+
+<InlineCta
+  headline="Ready to start your Gulf property search?"
+  subtext="Get a personalised shortlist matched to your investment goals."
+  buttonText="Get Your Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="buy_cta_dubai-property-valua"
+/>
 
 <FaqBlock items={[
   { question: "How do I find out what a Dubai property is actually worth?", answer: "Cross-reference three data sources: DLD transacted prices on Dubai REST or TruEstimate for the same building and unit type, Ejari-recorded rents to calculate yield-based value, and Mollak service charges to model net income. Asking prices on portals typically run 8–15% above recent transaction prices. A property is fairly priced when asking price aligns with DLD comparable transactions within 6–12 months." },

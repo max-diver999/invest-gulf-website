@@ -31,6 +31,9 @@ faq:
     answer: "Ejari transacted rents are the income truth layer for Dubai yield calculations, superior to portal listing prices. Investors use Ejari bands via Dubai REST to model gross and net yield before purchase. Landlords who register accurately contribute to market transparency and protect their own renewal rights under RERA index rules."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Ejari is not administrative paperwork, it is the legal and data backbone of Dubai's long-term rental market. For landlords, registration determines whether rent increases follow RERA rules, whether DEWA transfers cleanly to tenants, and whether the Rental Dispute Centre enforces your contract. For investors, Ejari transacted rents are the income input behind every serious yield model in the [Dubai Rental Yield Guide](/guides/dubai-rental-yield-guide/).
@@ -46,6 +49,8 @@ Ejari is not administrative paperwork, it is the legal and data backbone of Duba
 | Verify building rents (buyer) | Dubai REST Ejari data | Free |
 
 ---
+
+<TldrBlock text="** Register every long-term lease on Ejari within the required window, keep registered rent accurate, use RERA's increase calculator at renewal, and never confuse Ejari (12-month+ contracts) with DET holiday home permits for short stays under Short-Term Rental Dubai License." />
 
 ## What Ejari is and how it fits Dubai's rental framework
 
@@ -345,6 +350,14 @@ Ejari registration itself costs roughly 220 AED through the official RERA portal
 ### Common landlord mistakes and cost implications
 
 Readers researching ejari registration landlord guide in the Gulf often overlook these specifics. The top three costly errors for the Gulf landlords: (1) failing to register tenancy contracts within 14–30 days of signing (fines of 500–5,000 AED), (2) not obtaining a building-management NOC before subletting or short-term rental conversion (licence fees: 2,000–15,000 AED), (3) neglecting maintenance reserve — industry benchmark is 3–5 % of annual rental income. Buildings under 5 years old typically need 1,000–3,000 AED per unit annually for upkeep; buildings over 15 years can require 5,000–12,000 AED as major systems approach end-of-life.
+
+<InlineCta
+  headline="Ready to start your Gulf property search?"
+  subtext="Get a personalised shortlist matched to your investment goals."
+  buttonText="Get Your Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="buy_cta_ejari-registration-l"
+/>
 
 <FaqBlock items={[
   { question: "What is Ejari and why do landlords need it?", answer: "Ejari is Dubai's mandatory tenancy contract registration system operated by RERA under DLD. Every residential lease over 6 months must be registered. For landlords, Ejari creates legal enforceability, enables DEWA transfer to tenant name, supports rent increase calculations under RERA Decree 43/2013, and produces the transacted rent data used in yield analysis. Unregistered leases weaken eviction and rent collection remedies." },

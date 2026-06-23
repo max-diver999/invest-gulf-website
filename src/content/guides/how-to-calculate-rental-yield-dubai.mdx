@@ -35,6 +35,9 @@ faq:
     answer: "Yes, the formula is identical. Change the inputs: Abu Dhabi service charges, DMT registration costs instead of DLD-only modelling, and local tenancy data sources. Dubai has the deepest published rental data; other emirates may require more agent-sourced comparables."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Every Dubai listing shows a yield percentage. Almost none shows how it was calculated, or what is left after service charges, vacancy, and management. This guide gives you the formulas, a full worked example on a realistic AED 850,000 JVC studio, and the data sources that separate marketing math from planning math.
@@ -51,6 +54,8 @@ Quick answer: Gross yield = rent ÷ price. Net yield = (rent minus all operating
 | 6 | Stress-test charges +20% |
 
 ---
+
+<TldrBlock text="Gross yield = rent ÷ price. Net yield = (rent minus all operating costs) ÷ total capital deployed. For long-term lets in mid-market Dubai, expect 1.5–3 percentage points between gross and net. Use Ejari transacted rents, not portal listings. For the conceptual deep-dive on why marketing misleads, see Gross vs Net Rental Yield in Dubai." />
 
 ## Gross yield: the starting formula
 
@@ -388,6 +393,14 @@ Pin this before any sales gallery visit.
 | Void weeks | Underwriter assumption | 4–6 conservative |
 | Maintenance | Owner actuals | AED 3–8/sqft/year |
 | Exit DLD | Resale stack | 4% + 2% agency typical |
+
+<InlineCta
+  headline="Looking for the best-yield properties in the Gulf?"
+  subtext="Get a shortlist matched to your yield target and budget."
+  buttonText="Get Yield Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="yield_cta_how-to-calculate-ren"
+/>
 
 <FaqBlock items={[
   { question: "What is the formula for gross rental yield in Dubai?", answer: "Gross rental yield = (Annual rental income ÷ Purchase price) × 100. Example: AED 60,000 annual rent on a AED 800,000 apartment = 7.5% gross yield. Use Ejari-registered or RERA transacted rents, not Property Finder listing prices, which typically run 5–10% higher than achieved rents." },

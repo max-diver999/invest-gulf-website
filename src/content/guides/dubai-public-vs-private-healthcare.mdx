@@ -33,6 +33,9 @@ faq:
     answer: "In the private sector, many clinics allow direct specialist booking without a GP referral, though insurance pre-authorisation may still be required. Public DHA facilities typically require a GP referral for specialist access. Some insurance plans also mandate GP referral before covering specialist consultations, check your policy to avoid unexpected out-of-network charges."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Quick answer: Public DHA hospitals are accessible to expats at moderate cost, but waiting times are longer and amenities more basic. Private hospitals offer faster access, international-standard facilities, and more convenient appointment booking, but at 3–10x the cost without insurance. Most expats use private care for routine and elective treatment, and public emergency departments as a fallback.
@@ -40,6 +43,8 @@ Quick answer: Public DHA hospitals are accessible to expats at moderate cost, bu
 TL;DR: Dubai runs a dual-track healthcare system: government (DHA) facilities and an extensive private sector. Public facilities are affordable for UAE nationals and reasonably priced for expats, but waiting times and amenity levels differ significantly from private care. Private hospitals dominate expat usage for non-emergency care because most employer insurance covers private network access at minimal out-of-pocket cost. The critical decision is not public vs private per se, it is **which private hospital network your insurance actually covers**. For the full insurance picture, see the [Dubai Healthcare Guide for Expats](/guides/gulf-healthcare-comparison/).
 
 ---
+
+<TldrBlock text="Public DHA hospitals are accessible to expats at moderate cost, but waiting times are longer and amenities more basic. Private hospitals offer faster access, international-standard facilities, and more convenient appointment booking, but at 3–10x the cost without insurance. Most expats use private care for routine and elective treatment, and public emergency departments as a fallback." />
 
 ## Dubai's Dual Healthcare Structure
 
@@ -287,6 +292,14 @@ For the specialties in which Dubai has invested, cardiac surgery, oncology, fert
 | Normal delivery | AED 8,000–15,000 | AED 20,000–45,000 |
 | ER triage | Lower copay | Full tariff |
 | Wait time | Longer queue | Same-day typical |
+
+<InlineCta
+  headline="Buying Gulf property from a country with tax obligations?"
+  subtext="Get guidance on UAE tax treatment and home-country implications."
+  buttonText="Get Tax Guidance"
+  buttonHref="/get-shortlist/"
+  ctaId="tax_cta_dubai-public-vs-priv"
+/>
 
 <FaqBlock items={[
   { question: "Can expats use public hospitals in Dubai?", answer: "Yes. DHA public hospitals are open to all UAE residents. Expats pay a higher tariff than UAE nationals, a standard GP consultation costs AED 100–200 at public facilities, compared to AED 200–500 at private clinics. Emergency treatment at DHA public hospitals is accessible to anyone regardless of nationality or insurance status." },

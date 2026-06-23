@@ -30,6 +30,9 @@ faq:
     answer: "File a complaint on the DLD portal (dubailand.gov.ae) or call the RERA hotline. Submit evidence: broker name, WhatsApp screenshots, payment receipts, and any fake contract. For financial fraud involving personal account transfers, also file with Dubai Police cybercrime unit. DLD pursues fines and bans; criminal cases go through public prosecution."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Dubai's property market recorded 205,000+ transactions in 2024 with foreign nationals completing roughly 68% of deals. Every one of those transactions involving an intermediary required a RERA-licensed broker, yet unlicensed agents remain the leading source of fraud complaints to Dubai Land Department. The gap between knowing you should verify a broker and knowing exactly how to do it in under five minutes is what this guide closes.
@@ -45,6 +48,8 @@ Quick answer: Every Dubai property engagement starts with one mandatory check, T
 | Commission agreed | Form B clause | 2% + 5% VAT max on secondary |
 
 ---
+
+<TldrBlock text="Every Dubai property engagement starts with one mandatory check, Trakheesi BRN verification. Takes two minutes. Costs nothing. Prevents everything from commission disputes to deposit fraud." />
 
 ## Why RERA broker licensing exists
 
@@ -237,6 +242,14 @@ Marketing showed 9.5%, net reality is 6.0%. The gap is normal; the broker who hi
 **Scenario C — cross-border investor:** Separate lifestyle goals from ROI. Keep 6–12 months liquidity in local currency while you validate Rera Broker Verification Dubai assumptions on the ground.
 
 *Data reflects RERA, DLD, and Dubai Land Department records through Q1 2026. Commission rates are market conventions, not fixed by law, always negotiate in writing. Verify BRN status on Trakheesi at transaction date as licences renew annually. This guide is for information purposes only and does not constitute legal or investment advice.*
+
+<InlineCta
+  headline="Looking for the right Gulf property?"
+  subtext="Get a free analysis matched to your budget and target market."
+  buttonText="Request Free Analysis"
+  buttonHref="/get-shortlist/"
+  ctaId="inline_cta_rera-broker-verifica"
+/>
 
 <FaqBlock items={[
   { question: "How do I verify a Dubai broker's RERA registration number on Trakheesi?", answer: "Go to trakheesi.ae or the Dubai REST app, select 'Brokers', enter the broker's name or BRN number. The result must show status 'Active', the brokerage name, and a valid expiry date. BRN on a business card that returns 'Not Found' or 'Expired' means you are dealing with an unlicensed intermediary, stop all engagement and do not pay any deposit." },

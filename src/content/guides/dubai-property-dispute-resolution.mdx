@@ -30,6 +30,9 @@ faq:
     answer: "File RERA complaint immediately with evidence: unsigned or unaccepted Form B, payment proof, communications. If the commission was deducted by the developer from your purchase price without disclosure, that is a different dispute, against the developer. RERA handles broker conduct complaints at no cost and can order refund plus fine the broker. For amounts below AED 50,000, small claims track at RDC is efficient. Above that threshold, civil courts or RERA formal proceedings."
 ---
 
+import TldrBlock from '../../components/TldrBlock.astro';
+
+import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
 Dubai's real estate dispute landscape is genuinely complex, three primary forums (RERA, RDC, Dubai Courts), multiple overlapping jurisdictions, and dramatically different timelines and costs depending on which path you choose. Most disputes are solvable within 30–90 days through the right channel. Choosing the wrong forum costs you months and often makes the dispute harder to resolve through the right one.
@@ -47,6 +50,8 @@ Quick answer: Match your dispute to its natural forum. Tenancy disputes: RDC. Br
 | Strata / OA disputes | RDC | 30–90 days | 3.5% |
 
 ---
+
+<TldrBlock text="Match your dispute to its natural forum. Tenancy disputes: RDC. Broker conduct: RERA. Off-plan developer breach: RERA then DLD then courts. Major fraud: Dubai Police then courts. Mediation through CLDP before any filing saves time when both parties want resolution." />
 
 ## Forum 1: RERA: regulatory complaints
 
@@ -387,6 +392,14 @@ Before filing any dispute, conduct basic asset due diligence on potential defend
 *Data reflects Law No. 26 of 2013, RERA regulations, and UAE judicial procedures through Q1 2026. Dispute timelines and outcomes depend on specific circumstances and are indicative only. Always engage a UAE-licensed property lawyer before filing formal claims. This guide is for information purposes only and does not constitute legal advice.*
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<InlineCta
+  headline="Looking for the right Gulf property?"
+  subtext="Get a free analysis matched to your budget and target market."
+  buttonText="Request Free Analysis"
+  buttonHref="/get-shortlist/"
+  ctaId="inline_cta_dubai-property-dispu"
+/>
 
 <FaqBlock items={[
   { question: "What is the Rental Disputes Centre (RDC) in Dubai and how do I file a complaint?", answer: "The RDC (Rental Disputes Centre) is Dubai's specialised court for landlord-tenant and property disputes, established under Law No. 26 of 2013. To file, visit the RDC at Dubai Courts or use the online portal. You need the tenancy contract (Ejari-registered), title deed or Oqood, correspondence evidence, and payment receipts. Filing fee is 3.5% of the disputed amount (minimum AED 250, maximum AED 20,000). Cases typically take 30–90 days at first instance." },
