@@ -29,6 +29,9 @@ faq:
   - question: "What are the biggest mistakes remote Dubai property buyers make?"
     answer: "Top mistakes: paying deposits outside RERA escrow, skipping independent SPA legal review, using a general POA instead of property-specific, buying without checking Dubai REST for escrow and service charges, accepting developer handover without professional snagging, and assuming Golden Visa is automatic on purchase. Each mistake is avoidable with proper process."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 **Quick answer:** Remote Dubai property purchase is possible via notarized Power of Attorney, with 68% of transactions involving foreign nationals. Process includes POA preparation (2-4 weeks), RERA-licensed broker, independent SPA review (AED 3,000-10,000), and payments to RERA-registered escrow accounts. Golden Visa application requires physical UAE presence for biometrics after title registration.
 
 Most foreign buyers in Dubai never set foot in the city until handover day. The remote buying infrastructure, Power of Attorney, RERA escrow, DLD online verification, video tours, and international wire transfers, is mature enough that buying from London, Moscow, Mumbai, or Singapore follows a predictable process.
@@ -448,3 +451,12 @@ Remote property ownership requires systematic risk management to address scenari
 Full foreign buyer guide: [Buy Property Dubai as a Foreigner](/guides/buy-property-dubai-foreigner/).
 
 *Remote buying process reflects DLD/RERA standards as of Q2 2026. Verify current requirements with your solicitor and broker. Not legal advice.*
+
+<FaqBlock items={[
+  { question: "Can I buy Dubai property without visiting Dubai?", answer: "Yes. The full purchase process, from unit selection through SPA signing, escrow payments, Oqood registration, and DLD title transfer, can be completed remotely using a notarised Power of Attorney. Over 68% of Dubai transactions involve foreign nationals, many of whom never visit until handover. You will need a POA, a RERA-licensed broker, and independent legal review of the SPA." },
+  { question: "What do I need to buy Dubai property remotely?", answer: "Essential items: valid passport, notarised Power of Attorney (attested by UAE Embassy and MOFA), UAE-based POA holder (lawyer or licensed broker), RERA-licensed broker for unit selection, independent solicitor for SPA review (AED 3,000 to 10,000), and funds wired to the RERA-registered escrow account. For secondary market: NOC from developer and trustee centre appointment via POA." },
+  { question: "How do I verify a Dubai property remotely before buying?", answer: "Request a live video tour from your broker (not pre-recorded). Check the unit on Dubai REST app for escrow status, service charge history, and ownership records. Review DLD transaction data for comparable sales in the building. For off-plan: verify RERA project registration, developer delivery track record, and escrow account on Dubai REST. Never buy based on brochure renders alone." },
+  { question: "How do I pay for Dubai property from abroad?", answer: "Off-plan: wire transfers directly to the RERA-registered escrow account (never to developer corporate accounts). Secondary market: payment through the DLD registration trustee centre at transfer. Budget 6% to 9% above purchase price for DLD fees, agent commission, trustee fees, and legal costs. Use a UAE bank or international wire, confirm source-of-funds requirements with your bank." },
+  { question: "Can I get a UAE Golden Visa without visiting Dubai?", answer: "No. While the property purchase itself can be completed remotely via POA, the Golden Visa application requires physical presence in the UAE for biometrics, medical tests, and Emirates ID issuance. Plan a visit of 5 to 10 working days for the visa process after title registration is complete." },
+  { question: "What are the biggest mistakes remote Dubai property buyers make?", answer: "Top mistakes: paying deposits outside RERA escrow, skipping independent SPA legal review, using a general POA instead of property-specific, buying without checking Dubai REST for escrow and service charges, accepting developer handover without professional snagging, and assuming Golden Visa is automatic on purchase. Each mistake is avoidable with proper process." }
+]} />

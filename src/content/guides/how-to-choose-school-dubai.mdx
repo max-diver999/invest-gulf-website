@@ -32,6 +32,9 @@ faq:
   - question: "What's the cheapest good school option?"
     answer: "Indian CBSE mid-tier schools at AED 28,000-38,000 annually offer best value, particularly in JVC cluster areas."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # How to Choose a School in Dubai 2026: Framework, KHDA & Red Flags
 
 TL;DR: Choosing a Dubai school is a location decision disguised as an education decision. Score curriculum fit (30%), commute (25%), all-in fees (25%), and KHDA quality trajectory (20%), then visit top two on a Sunday 07:30 drive. Apply to 4–6 schools minimum; premium Outstanding tiers need 6–12 months lead. Never sign a 12-month lease until you hold at least one conditional offer or wait-list with realistic timeline.
@@ -360,3 +363,12 @@ KHDA ratings and fee tables update each academic year, confirm on khda.gov.ae be
 - Check latest KHDA or ADEK inspection report for schools referenced in How To Choose School Dubai, not blog summaries.
 - Confirm curriculum continuity before mid-secondary transfers; exam board switches are costly at Year 10.
 - Secure a written seat offer before terminating your current school's place when following How To Choose School Dubai.
+
+<FaqBlock items={[
+  { question: "How many schools should I apply to in Dubai?", answer: "Apply to 4-6 schools minimum, with at least two in acceptable commute band. Premium Outstanding schools need 6-12 months lead time." },
+  { question: "Should I choose Outstanding vs Very Good schools?", answer: "Very Good schools are often best value. Outstanding schools justify premium only if commute is under 15 minutes - KHDA rating is not the sole fit factor." },
+  { question: "Should I choose school or home area first?", answer: "School-first strategy works best for families with 2+ children or targeting premium tier schools. Single child families can be more flexible with area-first approach." },
+  { question: "Can I ignore KHDA ratings?", answer: "Never ignore KHDA ratings - they're the only official quality signal and affect fee increase trajectories. Read full inspection PDFs, not just headline ratings." },
+  { question: "Can I change schools after one year?", answer: "Yes, but it's disruptive and costly. Curriculum changes after Year 9 are particularly difficult - plan for 7-year commitment per child." },
+  { question: "What's the cheapest good school option?", answer: "Indian CBSE mid-tier schools at AED 28,000-38,000 annually offer best value, particularly in JVC cluster areas." }
+]} />

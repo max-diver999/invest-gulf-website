@@ -37,6 +37,9 @@ faq:
     answer: "Dubai offers more diverse housing stock, a Metro, and a wider range of schools; Abu Dhabi gives families more space for the same budget, lower school fees in the mid tier, and a quieter pace. Families with school-age children often find Abu Dhabi 10–20% cheaper in total spend."
 noindex: true
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai vs Abu Dhabi Cost of Living: Full 2026 Comparison
 
 **TL;DR:** Dubai runs roughly 15–25% more expensive than Abu Dhabi for a typical family once you account for rent, schools, and utilities. A family of four on a mid-tier Dubai lifestyle spends **AED 35,000–50,000/month**; the Abu Dhabi equivalent lands at **AED 28,000–42,000/month**. Singles see a smaller gap, about AED 1,000–2,000/month. The real differentiator is not groceries or petrol but rather how you combine rent tier with school choice. Model both cities before you accept a relocation package.
@@ -233,3 +236,13 @@ Yes, particularly for British and IB schools rated Outstanding by KHDA or ADEK. 
 ### Do utility bills include all household services?
 
 No. DEWA and ADD cover electricity and water. District cooling is a separate bill from the chiller operator. Internet and mobile are separate Etisalat (e&) or du contracts. Waste collection is typically included in the annual municipality fee paid via DEWA (Dubai) or ADD (Abu Dhabi) billing. Budget all line items separately for an accurate monthly total.
+
+<FaqBlock items={[
+  { question: "Is Dubai more expensive than Abu Dhabi?", answer: "Yes, Dubai runs 15–25% more expensive overall for a typical expat family. Rent is the biggest gap, Marina 2BR costs around AED 140K–180K annually vs comparable Reem Island stock at AED 100K–130K. Grocery and transport costs are broadly similar between the two cities." },
+  { question: "How much cheaper is Abu Dhabi rent compared to Dubai?", answer: "Abu Dhabi rent averages 15–25% below Dubai for comparable unit types. A 3-bedroom villa on Yas Island costs AED 180K–250K versus AED 200K–300K in Dubai Hills or The Springs. In city-centre apartments the gap narrows, older Khalifa City stock can be very competitive." },
+  { question: "Which city has cheaper international schools, Dubai or Abu Dhabi?", answer: "Abu Dhabi school fees are generally 10–20% lower than Dubai at comparable curriculum tiers. ADEK mid-tier British schools run AED 40K–65K per year vs KHDA equivalents at AED 50K–80K. Premium IB and British schools in both cities converge at AED 80K–100K annually." },
+  { question: "Is transport cheaper in Dubai or Abu Dhabi?", answer: "Daily transport is cheaper in Dubai if you use the Metro, a monthly NOL card costs AED 350 vs Abu Dhabi's bus-only network where almost every expat needs a car. For car-owning families, costs are nearly identical: AED 2,500–4,500/month for one vehicle in each city." },
+  { question: "What are utility costs in Dubai vs Abu Dhabi?", answer: "Electricity in Dubai (DEWA) and Abu Dhabi (ADD) is similarly priced at around AED 0.23–0.38 per kWh on a tiered schedule. District cooling adds AED 300–900/month in many Dubai towers. ADD villas without district cooling can spike to AED 1,800–2,500/month in summer." },
+  { question: "How much does a single expat need to live in Dubai vs Abu Dhabi?", answer: "Singles need AED 10,000–15,000/month in Dubai (Marina or JVC 1BR, one car, dining out) and AED 9,000–13,000/month in Abu Dhabi (Reem or Khalifa City 1BR, one car). The gap is mainly rent, groceries, dining, and petrol are nearly identical between the cities." },
+  { question: "Which city is better for expat families, Dubai or Abu Dhabi?", answer: "Dubai offers more diverse housing stock, a Metro, and a wider range of schools; Abu Dhabi gives families more space for the same budget, lower school fees in the mid tier, and a quieter pace. Families with school-age children often find Abu Dhabi 10–20% cheaper in total spend." }
+]} />

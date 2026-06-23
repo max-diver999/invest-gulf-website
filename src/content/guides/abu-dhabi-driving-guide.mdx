@@ -32,6 +32,9 @@ faq:
     answer: "Google Maps and Waze both work well in Abu Dhabi with offline maps downloaded. However, road numbering does not always match signage, learn landmark-based navigation: ADNOC HQ, Corniche junction, Yas Marina Circuit, Sheikh Zayed Grand Mosque. A local Etisalat/du SIM with data is strongly recommended from day one."
 noindex: true
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Abu Dhabi Driving Guide 2026: Roads, Routes, Speed Limits & Practical Tips
 
 **Quick answer:** Abu Dhabi's road network is modern and well-signposted, but demands defensive driving, highways run at 120–140 km/h, speed cameras are unmarked, and no metro exists so traffic concentrates on a handful of key corridors. Learn the E-route numbering, identify your daily interchanges, and budget for parking by community rather than expecting everything to be free.
@@ -313,3 +316,11 @@ What should I do differently during Ramadan?
 Avoid driving in the 30-minute window around Iftar (sunset). Roads become significantly more dangerous as fasting drivers rush home. Roads are quieter in the mornings, use this window for longer commutes.
 
 *Guide covers Abu Dhabi emirate road environment as of June 2026. Speed limits and enforcement procedures subject to change, verify with Abu Dhabi Police official channels.*
+
+<FaqBlock items={[
+  { question: "What are the main road routes in Abu Dhabi?", answer: "Key routes include E10 (Sheikh Zayed corridor linking AD island to Dubai), E11 (Abu Dhabi-Dubai motorway), E20 (connecting Abu Dhabi island to Khalifa City, Yas Island), and E22 toward Al Ain. Most expats rely on E10/E20 for daily Yas–Reem–Khalifa commutes." },
+  { question: "What is the speed limit in Abu Dhabi?", answer: "Main highways 120–140 km/h; urban arterials 80–100 km/h; residential and school zones 40–60 km/h. Radars are fixed and unmarked, Abu Dhabi enforces a stricter tolerance than some other emirates. Budget 10 km/h below posted limit near school zones." },
+  { question: "Are there toll roads in Abu Dhabi?", answer: "No Salik-style tolls within Abu Dhabi emirate. Toll costs only arise when driving into Dubai on E11 where Salik gates operate. Abu Dhabi focuses on parking fees rather than road tolls, saving regular commuters AED 100–300 per month versus Dubai-based workers." },
+  { question: "Is driving in Abu Dhabi safe for new expats?", answer: "The road infrastructure is modern and well-maintained. Main hazards are high-speed lane changes on E10/E11, sand drifts after desert wind storms, and aggressive tailgating on 120 km/h corridors. Night driving during Ramadan peak hours requires extra vigilance. Defensive driving and leaving 3-second gaps are essential." },
+  { question: "How do I navigate Abu Dhabi without a local SIM?", answer: "Google Maps and Waze both work well in Abu Dhabi with offline maps downloaded. However, road numbering does not always match signage, learn landmark-based navigation: ADNOC HQ, Corniche junction, Yas Marina Circuit, Sheikh Zayed Grand Mosque. A local Etisalat/du SIM with data is strongly recommended from day one." }
+]} />

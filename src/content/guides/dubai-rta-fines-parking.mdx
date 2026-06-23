@@ -31,6 +31,9 @@ faq:
   - question: "What is the fine for running a red light in Dubai?"
     answer: "AED 1,000 fine plus 12 black points and a mandatory 30-day vehicle confiscation. Red light cameras operate 24 hours and flash clearly. Penalty is among the highest in the UAE traffic fine system."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai RTA Fines, Salik Tolls & Parking 2026 Guide
 
 Quick answer: Dubai fines range from AED 150 (minor parking) to AED 3,000+ (serious speeding). Salik tolls cost AED 4 per gate. Parking zones charge AED 2–8 per hour in paid areas. Pay via Dubai Police app or police.gov.ae within 60 days.
@@ -347,3 +350,13 @@ Same as while moving, AED 800 plus 4 black points. Holding or operating the phon
 
 **Does my home country insurance cover Dubai fines?**
 No, UAE traffic fines are not covered by any insurance policy. Pay personally via Dubai Police app.
+
+<FaqBlock items={[
+  { question: "How do I pay Dubai traffic fines?", answer: "Dubai Police app, police.gov.ae website, or at RTA Customer Happiness Centres. You need your traffic file number or Emirates ID to look up outstanding fines. Pay within 60 days to avoid escalation. Early payment sometimes carries a discount on select fines." },
+  { question: "How much is a speeding fine in Dubai?", answer: "Speeding 1–20 km/h over limit: AED 300–400 plus 4 black points. Speeding 21–30 km/h over: AED 600 plus 6 points. Speeding 31–40 km/h over: AED 700 plus 6 points. Over 60 km/h above limit: AED 2,000–3,000 plus 12–24 points and possible vehicle confiscation." },
+  { question: "What is Salik and how much does it cost?", answer: "Salik is Dubai's electronic road toll system. Each gate crossing costs AED 4. Monthly cost for regular Sheikh Zayed Road commuters: AED 100–400. Register your vehicle plate at salik.ae and pre-fund your account. Driving with negative balance incurs AED 50 administrative fine." },
+  { question: "How do black points work in Dubai?", answer: "Black points accumulate on your federal UAE traffic file. 24 points within 12 months triggers a 3-month licence suspension review. 12–23 points may require a mandatory awareness course. Points from individual violations expire after 12 months if no suspension issued." },
+  { question: "Where can I park for free in Dubai?", answer: "Paid parking zones are typically free on Fridays from midnight to 12:00, on public holidays, and from 22:00 to 08:00 in most zones. Residential community parking bays are free for permit holders. Malls provide free parking for 2–4 hours with validation from retail." },
+  { question: "How do I dispute a Dubai traffic fine?", answer: "File a dispute via the Dubai Police app or website within 30 days of the fine. Upload dashcam footage or evidence. Disputes are reviewed by traffic department. Successful disputes are credited to your account. For Salik technical errors, contact Salik customer service at salik.ae." },
+  { question: "What is the fine for running a red light in Dubai?", answer: "AED 1,000 fine plus 12 black points and a mandatory 30-day vehicle confiscation. Red light cameras operate 24 hours and flash clearly. Penalty is among the highest in the UAE traffic fine system." }
+]} />

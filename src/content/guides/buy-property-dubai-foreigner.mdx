@@ -39,6 +39,11 @@ faq:
   - question: "How long does a Dubai property purchase take from offer to title deed?"
     answer: "For secondary (ready) market purchases, the typical timeline is 4–8 weeks from agreed sale price to DLD title deed, assuming no mortgage complications. Cash purchases with clean documentation can complete in as little as 2–3 weeks. Off-plan purchases complete at handover, often 2–5 years from signing, though Oqood registration happens within weeks of the SPA signature."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 **Quick answer:** Foreigners can buy freehold property in 60+ designated Dubai zones without UAE residency, paying 4% DLD transfer fees plus 6-7% total acquisition costs. Purchases of AED 2M+ qualify for Golden Visa, and non-resident mortgages are available with 25% down payment.
 
 Dubai processed over 205,000 property transactions in 2024, a market record, and foreign nationals completed approximately 68% of all deals recorded in Q1 2026. The city is not just accessible to foreign buyers; it is structurally built around them. English-language contracts, a functioning DLD title registry, RERA escrow law, and a legal framework derived largely from common law principles mean that the process, while unfamiliar, is navigable.
@@ -46,6 +51,8 @@ Dubai processed over 205,000 property transactions in 2024, a market record, and
 This guide covers what a non-UAE national needs to know before buying: the legal framework, the full cost stack, financing options, the step-by-step process, specific risks that are higher for foreign buyers, and what the Golden Visa connection actually means in practice.
 
 ---
+
+<TldrBlock text="Foreigners buy freehold property in Dubai in designated zones only (200+ areas including Downtown, Marina, JVC, Business Bay). DLD fee: 4% of price. No income tax, no capital gains tax. Mortgage available to non-residents: up to 50% LTV from UAE banks. No minimum purchase for foreigners." />
 
 ## Who Can Buy Property in Dubai as a Foreigner
 
@@ -244,3 +251,24 @@ Foreign owners can sell Dubai freehold property at any time without restriction.
 For the step-by-step process with document checklists, see [How to Buy Property in Dubai Step by Step](/guides/how-to-buy-property-dubai-step-by-step/). For area selection by yield, see [Best Areas to Buy Property in Dubai](/guides/best-areas-buy-property-dubai/).
 
 *Data reflects DLD transaction records, RERA publications, and market data through Q1 2026. Figures are indicative and vary by property, location, and market conditions. This guide is for information only and does not constitute legal or investment advice.*
+
+<InlineCta
+  headline="Ready to start your Dubai property search?"
+  subtext="Get a personalised shortlist matched to your budget and investment goals."
+  buttonText="Get Your Dubai Shortlist"
+  buttonHref="/get-shortlist/"
+  ctaId="buy_foreigner_cta"
+/>
+
+<FaqBlock items={[
+  { question: "Can a foreigner buy property in Dubai without a UAE residency visa?", answer: "Yes. UAE residency is not a prerequisite for purchasing property in designated freehold zones. Non-resident foreigners complete purchases using a valid passport and go through the same DLD registration process as residents. Many buyers hold no UAE visa at the point of purchase and apply for a Golden Visa afterward using the property itself." },
+  { question: "What is the minimum property budget for a foreigner buying in Dubai?", answer: "There is no legally mandated minimum for foreign buyers purchasing freehold property. In practice, studios in high-yield communities like JVC start from around AED 400,000–600,000. To qualify for a UAE Golden Visa through property, the purchase value must reach AED 2 million registered with DLD. Mortgages for non-residents require at least 20–25% down payment." },
+  { question: "Which nationalities are prohibited from buying property in Dubai?", answer: "Dubai applies no nationality-based prohibition on property ownership in designated freehold zones. Citizens of all countries can purchase freehold property. The restriction is geographic, only in DLD-designated zones, not nationality-based. Some buildings or communities may have individual restrictions, but these are rare and typically pre-date current law." },
+  { question: "Can foreigners get a mortgage in Dubai?", answer: "Yes. UAE banks including Emirates NBD, Mashreq, HSBC UAE, and others offer mortgages to non-resident foreign buyers. Non-residents typically face a minimum down payment of 25% (versus 20% for residents) and may encounter stricter income verification. Interest rates on UAE mortgages are linked to EIBOR and typically run 3.5–5.5% per annum. Mortgage processing takes 3–6 weeks." },
+  { question: "What taxes does a foreign buyer pay when purchasing in Dubai?", answer: "The primary acquisition cost is the DLD transfer fee of 4% of the purchase price, paid once at registration. There is no property purchase tax, no stamp duty, and no capital gains tax in the UAE. Foreign buyers also pay a trustee registration fee of AED 4,000 for properties over AED 500,000, plus broker commission of 2% on secondary market purchases." },
+  { question: "How does a foreign buyer verify that a Dubai property is legally clean?", answer: "Request the Unit Profile from the Dubai Land Department via the Dubai REST app or a DLD-approved trustee. The Unit Profile shows the registered owner, ownership type (freehold or leasehold), any encumbrances or mortgages, and the property's registration history. For off-plan, verify the Oqood registration via the Dubai REST app and confirm the project's RERA escrow account status." },
+  { question: "Can I buy property in Dubai remotely without visiting?", answer: "Yes, through a registered Power of Attorney (POA) granted to a local solicitor or trusted agent. The POA must be notarised, either in the UAE or at a UAE embassy abroad, then authenticated. Remote buying adds risk: engage an independent solicitor (not the selling agent's recommended lawyer), obtain the DLD Unit Profile independently, and never transfer funds without verified escrow or DLD trustee confirmation." },
+  { question: "What is the process for a foreign buyer purchasing off-plan in Dubai?", answer: "Select a RERA-registered developer and project. Sign the SPA and pay the reservation deposit (typically 5–10%). The developer registers an Oqood title in your name with DLD, this triggers the 4% DLD fee. Subsequent payments follow the SPA schedule into a RERA-regulated escrow account. At handover, the Oqood converts to a full Title Deed after final payment and snagging sign-off." },
+  { question: "Does buying property in Dubai automatically give residency?", answer: "Not automatically. A property purchase at AED 2 million or above qualifies the buyer to apply for a 10-year UAE Golden Visa, but the visa application is a separate process requiring additional documentation. A purchase below AED 2 million does not trigger any automatic residency entitlement. The Golden Visa must be applied for through GDRFA or ICP after DLD registration is complete." },
+  { question: "How long does a Dubai property purchase take from offer to title deed?", answer: "For secondary (ready) market purchases, the typical timeline is 4–8 weeks from agreed sale price to DLD title deed, assuming no mortgage complications. Cash purchases with clean documentation can complete in as little as 2–3 weeks. Off-plan purchases complete at handover, often 2–5 years from signing, though Oqood registration happens within weeks of the SPA signature." }
+]} />

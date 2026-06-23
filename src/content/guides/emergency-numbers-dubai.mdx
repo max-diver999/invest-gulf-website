@@ -31,6 +31,9 @@ faq:
   - question: "Who do I call for a gas leak in Dubai?"
     answer: "For a suspected gas leak in Dubai, leave the building immediately, do not operate any electrical switches, and call 997 (fire brigade) from outside the building. DEWA gas emergency is also accessible via 991. Do not re-enter the building until the fire brigade or DEWA gas team has confirmed it is safe. Dubai uses LPG cylinders and piped natural gas in different areas, both are handled by 997 or 991."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Emergency Numbers Dubai 2026: Complete Guide for Residents and Expats
 
 TL;DR: Save these numbers before you need them. 999 = police. 998 = ambulance. 997 = fire brigade. These three cover 95% of emergencies in Dubai. Beyond the core three, Dubai has specialised hotlines for utility faults, child protection, domestic violence, mental health, traffic accidents, and consumer complaints. English operators are available on all major emergency lines. This guide covers every number worth saving, and what to expect when you call.
@@ -328,3 +331,11 @@ Share this list with family members, especially anyone at home during the day. P
 | Dubai Land Department | 800 4488 |
 
 Store these numbers before your first night in Dubai. Emergencies do not give advance warning.
+
+<FaqBlock items={[
+  { question: "What is the emergency number in Dubai?", answer: "The primary emergency number in Dubai is 999 for police. For medical emergencies call 998 (ambulance). For fire, call 997. All three numbers operate 24/7, have English-speaking operators, and dispatch rapidly across Dubai. If in doubt, call 999, operators can transfer you or dispatch police, ambulance, and fire simultaneously for major incidents." },
+  { question: "What is the ambulance number in Dubai?", answer: "The Dubai ambulance number is 998. This connects to Dubai Corporation for Ambulance Services (DCAS), which operates advanced life support ambulances across Dubai emirate. Response times in central Dubai are typically 8–12 minutes. For Abu Dhabi, the ambulance number is also 998. DCAS ambulances are staffed by paramedics and equipped to international standards." },
+  { question: "How do I report a crime in Dubai?", answer: "For emergencies and crimes in progress, call 999 immediately. For non-urgent crimes (theft, fraud, neighbourhood disputes), use the Dubai Police non-emergency line 901 or report via the Dubai Police app or website at dubaipolice.gov.ae. Online reporting is available for minor incidents and generates a case number that can be used for insurance claims and administrative purposes." },
+  { question: "What is the hospital number in Dubai?", answer: "There is no single hospital emergency number in Dubai, hospitals do not operate a central emergency dispatch line. In a medical emergency, call 998 for ambulance dispatch. Major emergency departments in Dubai include Rashid Hospital (government, trauma), Dubai Hospital, American Hospital Dubai, and Mediclinic City Hospital. If you are driving to ER yourself, call the hospital switchboard to notify them." },
+  { question: "Who do I call for a gas leak in Dubai?", answer: "For a suspected gas leak in Dubai, leave the building immediately, do not operate any electrical switches, and call 997 (fire brigade) from outside the building. DEWA gas emergency is also accessible via 991. Do not re-enter the building until the fire brigade or DEWA gas team has confirmed it is safe. Dubai uses LPG cylinders and piped natural gas in different areas, both are handled by 997 or 991." }
+]} />

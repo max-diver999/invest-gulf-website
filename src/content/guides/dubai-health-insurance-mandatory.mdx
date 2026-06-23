@@ -32,6 +32,9 @@ faq:
   - question: "Can I use health insurance from another emirate in Dubai?"
     answer: "DHA recognises UAE-wide insurer networks. Insurance issued by other emirate regulators (DOH Abu Dhabi, HAAD) with network coverage in Dubai hospitals is generally accepted for visa processing. However, confirm with your insurer that DHA-compliant coverage extends to Dubai before relying on cross-emirate policies."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Dubai Law No. 11 of 2013 mandates DHA-approved health insurance for every resident. Employers cover employees and dependants; self-employed and investor visa holders arrange their own. The Essential Benefits Plan (EBP) is the minimum for low-income workers. Non-compliance means fines and visa blocks.
 
 TL;DR: Every Dubai resident, employee, dependent, domestic worker, investor, must hold DHA-approved health insurance. Employers provide coverage, but the legal obligation in practice falls on the individual if employer coverage lapses or is absent. The Essential Benefits Plan (EBP) sets minimum coverage floors for workers earning under AED 4,000/month. Premium employees receive far more comprehensive plans. Self-employed, freelancers, and property investors holding residency must arrange personal policies. Uninsured residents face visa renewal blocks and fines. For the full healthcare system overview, see the [Dubai Healthcare Guide for Expats](/guides/gulf-healthcare-comparison/).
@@ -263,3 +266,11 @@ Immediately contact a DHA-approved insurer to obtain individual coverage. Most i
 | Pharmacy cap | AED 1,500–7,500 | Essential tier lower |
 | Maternity waiting | 6–12 months | Declare early |
 | Dependants | Employer must cover | Same sponsor visa |
+
+<FaqBlock items={[
+  { question: "Is health insurance mandatory in Dubai?", answer: "Yes. Dubai Law No. 11 of 2013 requires all Dubai residents to hold valid DHA-approved health insurance. Employers must provide coverage for employees and their dependants. Self-employed individuals, investors, and Golden Visa holders without employer sponsorship must arrange their own DHA-compliant policy." },
+  { question: "What is the Essential Benefits Plan (EBP) in Dubai?", answer: "The EBP is the minimum mandatory health insurance package for low-income workers earning under AED 4,000/month. It covers emergency care, primary care, specialist referrals, diagnostics, and basic maternity. The annual premium is approximately AED 500–650, paid by the employer. Dental and optical are excluded." },
+  { question: "What happens if an employer does not provide health insurance in Dubai?", answer: "Employers who fail to provide DHA-mandated health insurance face fines of AED 500 per uninsured employee per month, visa processing blocks, and potential business licence penalties. DHA enforcement has tightened substantially since 2018. Employees can report non-compliant employers to the DHA." },
+  { question: "Do dependants need their own health insurance in Dubai?", answer: "Yes. All Dubai residents, including sponsored dependants (spouse, children, domestic workers), must hold valid health insurance. When sponsoring family residency, proof of insurance for each dependant is required. Many employers extend coverage to direct dependants; otherwise, the sponsor must arrange separate policies." },
+  { question: "Can I use health insurance from another emirate in Dubai?", answer: "DHA recognises UAE-wide insurer networks. Insurance issued by other emirate regulators (DOH Abu Dhabi, HAAD) with network coverage in Dubai hospitals is generally accepted for visa processing. However, confirm with your insurer that DHA-compliant coverage extends to Dubai before relying on cross-emirate policies." }
+]} />

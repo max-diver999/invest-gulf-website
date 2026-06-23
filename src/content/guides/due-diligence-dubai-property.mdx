@@ -29,6 +29,11 @@ faq:
   - question: "What are the most common due diligence failures in Dubai property transactions?"
     answer: "The most frequent failures are: skipping independent SPA legal review and discovering developer-friendly clauses after signing; not verifying the RERA escrow account for off-plan purchases; accepting developer service charge estimates without Mollak cross-check; not pricing the full cost stack and discovering transaction costs are 6–9% after expecting 4%; and not checking the rental history and vacancy data of the specific building rather than the community average."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 **Quick answer:** Essential Dubai property due diligence includes DLD title verification via Dubai REST app, RERA escrow account checks for off-plan purchases, and independent SPA legal review (budget AED 5,000–15,000). Service charges in Dubai typically run AED 13–50+ per sqft, verify actual rates through RERA's Mollak portal not developer estimates which often understate by 30–50%.
 
 Dubai's property market has one of the most transparent title registration systems in the Gulf. The Dubai Land Department's digital infrastructure, from the Dubai REST app to the Oqood off-plan registry, gives buyers tools that simply did not exist a decade ago. That transparency is an advantage. It does not, however, mean the process is risk-free.
@@ -36,6 +41,8 @@ Dubai's property market has one of the most transparent title registration syste
 The cases where buyers get hurt in Dubai are almost always traceable to skipped due diligence: the SPA clause that wasn't read, the escrow account that wasn't verified, the service charge that was taken at developer estimate. This guide gives you the full checklist, what to verify, how to verify it, and what each check actually protects you against.
 
 ---
+
+<TldrBlock text="Dubai property due diligence: 1) Verify title type (freehold vs leasehold) via DLD Mollak. 2) Check RERA escrow account for off-plan. 3) Developer escrow balance via RERA website. 4) Service charge arrears from Mollak. 5) NOC outstanding from developer. 6) Mortgage/encumbrance clearance. 7) Snagging inspection for ready property." />
 
 ## The Due Diligence Framework: Two Types of Purchase
 
@@ -248,3 +255,20 @@ Use this before committing funds on any Dubai property transaction:
 *This guide is for information purposes only and does not constitute legal, financial, or investment advice. Always obtain independent legal advice before signing a Sale and Purchase Agreement in Dubai.*
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<InlineCta
+  headline="Need help with Dubai property due diligence?"
+  subtext="Our team verifies title, escrow status, and service charges before you commit."
+  buttonText="Request Due Diligence Review"
+  buttonHref="/get-shortlist/"
+  ctaId="dd_cta"
+/>
+
+<FaqBlock items={[
+  { question: "How do I verify a Dubai property is legitimate before buying?", answer: "Start with the DLD Dubai REST app or the DLD online portal to verify the unit's ownership record, encumbrances, and title status. For off-plan, check the project's Oqood registration and the developer's RERA-registered escrow account. The RERA Trakheesi portal lists all registered developers and their project statuses. These checks are free and can be done before you sign anything." },
+  { question: "What is the most important document to review before buying property in Dubai?", answer: "The Sale and Purchase Agreement (SPA) is the single most critical document. For off-plan purchases, it governs payment plan terms, penalty clauses, handover obligations, defect liability, and force majeure provisions, all typically written in the developer's favour. Always have an independent solicitor review the SPA before signing. Budget AED 5,000–15,000 for a thorough SPA review; it is the most cost-effective risk mitigation in any Dubai property transaction." },
+  { question: "How do I check a Dubai developer's track record?", answer: "The DLD/Trakheesi portal shows registered projects per developer and completion status. Cross-reference with published research from Sikandar and Oliva (analyst firms) which track developer delivery rates. Tier 1 developers like Emaar (~95% on-time), Aldar (~92%), and Nakheel (~90%) have verifiable track records. For Tier 2 developers with shorter histories, request a list of completed projects and physically verify handover dates against SPA completion targets." },
+  { question: "What should I check about service charges before buying in Dubai?", answer: "Request the RERA service charge index entry for the specific building from the DLD/Mollak portal. This is the actual filed service charge rate, not the developer's estimate, which frequently understates the real figure by 30–50%. For off-plan purchases, ask the developer for a written service charge estimate and then cross-check against the nearest comparable completed building in Mollak. Service charges of AED 13–25/sqft are typical for mid-rise towers; premium and branded buildings run AED 25–50+." },
+  { question: "Can I do due diligence on Dubai property remotely?", answer: "Most of the documentary due diligence can be done remotely: DLD title verification is online, developer checks are via public portals, and SPA review is document-based. Physical property condition assessment and snagging requires in-person inspection or a trusted local representative. For remote buyers, a Power of Attorney combined with an independent solicitor who can physically inspect the unit and attend the DLD registration is the standard framework. Never rely solely on broker representations." },
+  { question: "What are the most common due diligence failures in Dubai property transactions?", answer: "The most frequent failures are: skipping independent SPA legal review and discovering developer-friendly clauses after signing; not verifying the RERA escrow account for off-plan purchases; accepting developer service charge estimates without Mollak cross-check; not pricing the full cost stack and discovering transaction costs are 6–9% after expecting 4%; and not checking the rental history and vacancy data of the specific building rather than the community average." }
+]} />

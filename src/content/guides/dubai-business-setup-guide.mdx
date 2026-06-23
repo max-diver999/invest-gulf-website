@@ -33,6 +33,9 @@ faq:
   - question: "Do I need a physical office to set up a company in Dubai?"
     answer: "Not always. Many freezones offer flexi-desk or co-working agreements that satisfy the licence requirement without a dedicated lease. Mainland DED licences generally require a tenancy contract (Ejari) for the registered office address. Business activity type influences whether physical presence is required for inspections or client visits."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Business Setup Guide 2026: Costs, Mainland vs Freezone & Step-by-Step Process
 
 Quick answer: Setting up a business in Dubai in 2026 is genuinely accessible for foreigners, 100% ownership is permitted on mainland for most activities, freezone packages start under AED 10,000 per year, and the process runs 1–4 weeks for standard structures. The core decision is mainland (full UAE market access) versus freezone (simpler, cheaper, but with local sales restrictions).
@@ -323,3 +326,11 @@ Typically 4–8 weeks for a clean application at UAE banks. Complex ownership, h
 Freezone companies can have employees on freezone visas who work within the freezone zone. Working regularly at a Dubai mainland client office raises immigration compliance questions, technically, freezone visa holders need to work within the freezone or remotely. For substantial mainland operations, a mainland entity or dual structure is the cleaner approach. Get legal advice for your specific situation.
 
 *Business setup data reflects Dubai DED and major freezone authority processes as of June 2026. Costs are indicative, obtain formal quotes from licensed setup agents for accurate figures for your specific activity and structure.*
+
+<FaqBlock items={[
+  { question: "How much does it cost to set up a business in Dubai?", answer: "Dubai mainland company setup costs AED 15,000–45,000 all-in for the first year depending on activity type, number of visas, and office requirement. Freezone packages start from AED 6,500–12,000 per year for a flexi-desk licence with 1–2 visas. Premium freezones (DIFC, ADGM) run AED 25,000–80,000+ annually." },
+  { question: "Can a foreigner own 100% of a Dubai mainland company?", answer: "Yes, since the 2021 Companies Law amendment, foreigners can own 100% of mainland LLCs across most commercial and professional activities without a UAE national partner. Certain strategic sectors (oil, gas, defence, utilities, telecom) retain restrictions. Verify your specific activity code with DED before incorporation." },
+  { question: "What is the difference between mainland and freezone in Dubai?", answer: "Mainland companies (licensed by DED) can trade directly across the UAE market and take government contracts. Freezone companies trade freely internationally but need a mainland agent or distributor for direct local retail sales. Freezones offer faster setup, fixed annual costs, and some retain 0% corporate tax on qualifying income, verify current rules with a licensed business setup consultant." },
+  { question: "How many visas can a Dubai freezone company sponsor?", answer: "Freezone visa allocation depends on office space. A flexi-desk or shared workspace typically permits 2–3 visas. A dedicated office (300–500 sq ft) unlocks 5–10 visas. Larger offices scale further. Some freezones offer virtual office packages with 1 visa only. Mainland companies calculate visa allowance based on office square footage at approximately 1 visa per 10 sq m." },
+  { question: "Do I need a physical office to set up a company in Dubai?", answer: "Not always. Many freezones offer flexi-desk or co-working agreements that satisfy the licence requirement without a dedicated lease. Mainland DED licences generally require a tenancy contract (Ejari) for the registered office address. Business activity type influences whether physical presence is required for inspections or client visits." }
+]} />

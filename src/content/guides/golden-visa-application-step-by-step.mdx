@@ -33,9 +33,16 @@ faq:
   - question: "Can I sponsor my family on the same Golden Visa application?"
     answer: "Yes. Spouse and children can be linked as dependents with attested marriage and birth certificates. Some parent sponsorship cases are accepted under expanded Golden Visa family rules, verify current GDRFA policy. Each dependent undergoes medical and Emirates ID with separate fees."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 TL;DR: UAE Golden Visa through property requires AED 2,000,000 DLD-registered value (Oqood or title deed), personal presence in UAE for medical and biometrics, and a document pack proving ownership and insurance. Processing typically takes 2–4 weeks and costs ~AED 4,000–5,500 for the main applicant plus dependent fees. Prepare property evidence using [Due Diligence for Dubai Property](/guides/due-diligence-dubai-property/) before you file, immigration rejection after a bad purchase is avoidable.
 
 ---
+
+<TldrBlock text="Golden Visa steps: 1) DLD property valuation certificate (AED 4,000). 2) ICA application via GDRFA Dubai or ICP Abu Dhabi. 3) Medical test (AED 700). 4) Emirates ID. 5) Visa stamping. Timeline: 3–6 weeks. Cost AED 5,000–8,000 total. Renew every 10 years with same property (no minimum stay requirement)." />
 
 ## Before You Apply: Eligibility Gate
 
@@ -555,3 +562,22 @@ Scenario A — step-by-step GDRFA Golden Visa filing first filing: Start medical
 Scenario B — step-by-step GDRFA Golden Visa filing family joining: Sequence sponsor salary proof, housing fit-out, and school admissions for step-by-step GDRFA Golden Visa filing. Dependent visas bottleneck on Ejari or municipality tenancy evidence tied to Golden Visa Application Step By Step.
 
 Scenario C — step-by-step GDRFA Golden Visa filing renewal: File at least 30 days before expiry on step-by-step GDRFA Golden Visa filing status. Overstay fines and re-entry bans compound when you delay step-by-step GDRFA Golden Visa filing paperwork.
+
+<InlineCta
+  headline="Looking for qualifying Golden Visa properties?"
+  subtext="Get a shortlist of AED 2M+ freehold properties across Dubai and Abu Dhabi."
+  buttonText="See Qualifying Properties"
+  buttonHref="/get-shortlist/"
+  ctaId="gv_step_cta"
+/>
+
+<FaqBlock items={[
+  { question: "What are the steps to apply for UAE Golden Visa through property?", answer: "Typical sequence: (1) confirm qualifying property at AED 2M+ registered value on title deed or Oqood; (2) gather passport, photos, medical insurance, property documents, and mortgage NOC if applicable; (3) apply via GDRFA/ICP approved channel or Amer centre; (4) complete medical fitness test; (5) biometrics and Emirates ID; (6) receive 10-year visa stamp. Timeline is commonly 2–4 weeks once documents are complete." },
+  { question: "What documents are required for Golden Visa property route?", answer: "Core pack: valid passport (6+ months validity), digital passport photos, UAE entry permit if required, title deed or Oqood showing AED 2M+ registered value, property payment receipts, bank NOC for mortgaged units, health insurance valid in UAE, and completed GDRFA application forms. Family dependents need marriage/birth certificates attested per UAE requirements." },
+  { question: "How long does Golden Visa processing take in 2026?", answer: "Official estimates range from 5–15 working days for straightforward property applications to 2–4 weeks including medical and Emirates ID. Complex cases, mortgage NOC delays, document attestation gaps, or peak-season Amer queues, can extend to 6 weeks. You must remain in UAE during processing and cannot exit once certain stages begin without risking restart." },
+  { question: "How much does Golden Visa cost per person?", answer: "Budget approximately AED 4,000–5,500 government fees for the main applicant, plus AED 1,000–3,000 per dependent, medical test (~AED 300–500), Emirates ID (~AED 370), and optional PRO/immigration consultant fees (AED 2,000–8,000). Property route does not include the 4% DLD fee, that was paid at purchase registration separately." },
+  { question: "Can I apply for Golden Visa while outside the UAE?", answer: "Initial application stages may begin with document preparation abroad, but medical fitness, biometrics, and visa stamping require physical presence in UAE. Plan a stay of at least 2–3 weeks for first-time issuance. Re-entry permit rules apply during processing, consult your Amer agent before any travel mid-application." },
+  { question: "Does off-plan Oqood qualify for Golden Visa application?", answer: "Yes, if Oqood-registered SPA value is AED 2 million or above, project is from RERA-registered developer in freehold zone, and registration is active in DLD. You do not need handover or title deed. Verify developer project status on Dubai REST app before applying." },
+  { question: "What causes Golden Visa application rejection?", answer: "Common failures: registered value below AED 2M including improper aggregation; expired or incomplete Oqood; missing bank NOC on mortgaged property; invalid health insurance; passport validity under six months; criminal background flags; attempting to include DLD 4% transfer fee in valuation; property in non-qualifying zone or incomplete project." },
+  { question: "Can I sponsor my family on the same Golden Visa application?", answer: "Yes. Spouse and children can be linked as dependents with attested marriage and birth certificates. Some parent sponsorship cases are accepted under expanded Golden Visa family rules, verify current GDRFA policy. Each dependent undergoes medical and Emirates ID with separate fees." }
+]} />

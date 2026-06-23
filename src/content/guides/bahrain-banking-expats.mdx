@@ -38,6 +38,11 @@ faq:
   - question: "Source of funds for property purchases?"
     answer: "Document salary savings, asset sale or inheritance trail, banks flag cumulative transfers above BHD 10,000–20,000 (confirm current official rules). See bahrain-property-foreigner-living."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Bahrain Banking for Expats 2026: HSBC, NBB, BBK, Salary Accounts & Remittances
 
 TL;DR: Your Bahrain account runs rent, EWA, schools, and remittances, not a side task. You need LMRA residence, CPR, employer salary certificate, and usually 3–6 months payroll before premium cards unlock. Open where HR mandates (HSBC, NBB, BBK in finance), then add a second bank if remittance FX wins. CBB-regulated hub, AML on property wires is real. Compare Islamic vs conventional on total fees. Hubs: [Bahrain relocation guide](/guides/bahrain-relocation-guide/) · [Manama cost of living](/guides/manama-cost-of-living/) · [Gulf expat living comparison](/guides/gulf-expat-living-comparison/)
@@ -49,6 +54,8 @@ Market context: smallest GCC state with Manama finance hub, HSBC, NBB, BBK ancho
 Also read: [Bahrain property foreigner living](/guides/bahrain-property-foreigner-living/) · [Bahrain international schools](/guides/bahrain-international-schools/) · [Bahrain healthcare guide](/guides/bahrain-healthcare-guide/) · [Living Seef Bahrain](/guides/living-seef-bahrain/) · [Bahrain vs Dubai living](/guides/bahrain-vs-dubai-living/)
 
 ---
+
+<TldrBlock text="Bahrain banks accept expats with 3 months' payslips, valid residence, passport. No minimum balance at NBC, BBK. IBAN transfers to Saudi/UAE same-day via AFAQ system. Corporate tax 0%. No VAT on most services. Islamic banking widely available. Account opening typically 3–5 business days." />
 
 ## Why banking order matters in your first 90 days
 
@@ -399,3 +406,22 @@ After visa, parallel schools, [Bahrain relocation guide](/guides/bahrain-relocat
 | Minimum salary (account) | 5,000+ AED | Varies by bank |
 | Cheque book | 100–250 AED | If required |
 | CRS reporting threshold | Varies | Home-country rules for Bahrain Banking Expats |
+
+<InlineCta
+  headline="Planning to buy property in Bahrain?"
+  subtext="We'll guide you through banking setup, property registration, and residency."
+  buttonText="Get Bahrain Guidance"
+  buttonHref="/get-shortlist/"
+  ctaId="bahrain_bank_cta"
+/>
+
+<FaqBlock items={[
+  { question: "Which bank is best for expats in Bahrain?", answer: "No single best bank, HSBC for international footprint, NBB for local retail depth, BBK for competitive remittance and corporate ties. Most expats open where HR mandates salary transfer, then add a second bank for FX." },
+  { question: "Can I open a Bahrain bank account before residence visa?", answer: "Limited products on visit visa, full salary account typically requires LMRA residence and CPR. Plan 2–4 weeks after visa stamping (confirm current official rules)." },
+  { question: "How do remittances work from Bahrain?", answer: "Bank app, exchange house or SWIFT. Compare FX spread not flat fee, India and Philippines corridors are volume-heavy. Test BHD 50 before large transfers." },
+  { question: "What is CBB in Bahrain banking?", answer: "Central Bank of Bahrain regulates licensed banks, Islamic windows, AML and consumer protection. All major expat banks operate under CBB supervision." },
+  { question: "Do I need a local account for salary?", answer: "Yes, employers route payroll to registered IBAN. Salary transfer letter required when switching banks, allow 2–4 weeks HR processing." },
+  { question: "HSBC vs NBB vs BBK for expats?", answer: "HSBC: global transfers and premium; NBB: widest local branch/ATM; BBK: strong retail and remittance marketing. Compare your home corridor FX." },
+  { question: "What documents prove address for KYC?", answer: "Municipality-registered lease, EWA bill, or employer housing letter. Address must match LMRA and school KYC chain." },
+  { question: "Source of funds for property purchases?", answer: "Document salary savings, asset sale or inheritance trail, banks flag cumulative transfers above BHD 10,000–20,000 (confirm current official rules). See bahrain-property-foreigner-living." }
+]} />

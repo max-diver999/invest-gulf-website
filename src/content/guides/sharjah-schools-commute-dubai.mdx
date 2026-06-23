@@ -40,6 +40,9 @@ faq:
   - question: "Where is full Sharjah COL?"
     answer: "sharjah-cost-of-living includes school line items and Dubai comparison tables."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Sharjah Schools & Dubai KHDA Commute 2026: Fees, School Run & Family Maths
 
 TL;DR: Sharjah schools versus Dubai KHDA is the defining family trade-off. SPEA schools in Sharjah often run 15–30% below equivalent KHDA fees, but enrolling in Dubai while living in Sharjah adds 35–70 minutes to the morning run plus your own office commute. That is double peak on bad traffic days. School bus at AED 8,000–15,000 per child per year often beats a second car, but not always. Model net COL in [Sharjah cost of living](/guides/sharjah-cost-of-living/) before you lease Al Khan and enroll Outstanding British in JVC.
@@ -468,3 +471,16 @@ Budget **AED 3,000–8,000** holiday camp per child if both parents work Dubai.
 School choice from Sharjah is the **largest COL variable** after rent, treat **SPEA vs KHDA** as a **spreadsheet row**, not a status decision. Bus seats and **07:00 pickup times** matter as much as fee tables.
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Can my child go to a Dubai school while living in Sharjah?", answer: "Yes, common pattern. KHDA Dubai schools accept Sharjah-resident families; school bus routes cover many Sharjah pickups. You must model double-peak commute: school run plus parent Dubai office." },
+  { question: "Are Sharjah schools cheaper than Dubai?", answer: "SPEA-regulated Sharjah schools often run 15–30% below equivalent KHDA British/American tiers. Savings erode if you still bus to Dubai for curriculum preference." },
+  { question: "How long is school run from Sharjah to Dubai?", answer: "Morning Sharjah home to JVC/KHDA school often 35–55 min; to Dubai Marina schools 45–70 min peak. Add drop-off queue 10–15 min. See sharjah-dubai-commuter-guide for route detail." },
+  { question: "How much is Dubai school bus from Sharjah?", answer: "Typically AED 8,000–15,000 per child per year depending on distance and school, still cheaper than moving to Dubai premium rent zone." },
+  { question: "What is SPEA vs KHDA?", answer: "SPEA regulates Sharjah private schools; KHDA regulates Dubai schools. Curricula overlap (British/American/Indian) but inspection frameworks and fee caps differ." },
+  { question: "Is the school run sustainable from Al Khan?", answer: "Al Khan to Deira-side schools easier than Marina Outstanding schools. Families with two children and two Dubai working parents often need two cars or nanny-school logistics by year two." },
+  { question: "Can one parent do Sharjah school and one Dubai job?", answer: "Yes, split model works when one parent has flexible or Sharjah-based work. Both parents Dubai rigid 09:00 with Dubai school is highest burnout combo." },
+  { question: "Do Dubai schools require Ejari?", answer: "Many KHDA schools want proof of address, Sharjah tenancy documents accepted; Ejari not required if you live Sharjah. Confirm admissions office." },
+  { question: "Best budget strategy for school-age families?", answer: "SPEA British mid-tier in Sharjah plus one Dubai commuter parent, saves fees and one commute leg. Premium KHDA from Sharjah home only if rent savings exceed AED 5,000/month net." },
+  { question: "Where is full Sharjah COL?", answer: "sharjah-cost-of-living includes school line items and Dubai comparison tables." }
+]} />

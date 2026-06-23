@@ -32,6 +32,9 @@ faq:
   - question: "How much does a GP consultation cost in Abu Dhabi?"
     answer: "A GP consultation at an Abu Dhabi private clinic costs AED 150–400 depending on clinic tier. With insurance, co-payments range from AED 20–100. At public hospitals (Sheikh Khalifa, Mafraq), expat tariffs are AED 100–300 per consultation. Cleveland Clinic Abu Dhabi initial specialist consultations cost AED 600–1,000 without insurance at the relevant plan tier."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Abu Dhabi has high-standard healthcare anchored by Cleveland Clinic Abu Dhabi, Sheikh Khalifa Medical City, and a strong network of private hospitals. Insurance is mandatory under DOH for all residents. Expats receive employer insurance; investor and Golden Visa holders arrange personal coverage. Costs are broadly comparable to Dubai with some premium tier variation.
 
 TL;DR: Abu Dhabi's healthcare system is among the best in the Gulf, Cleveland Clinic Abu Dhabi raises the ceiling for specialist care in the emirate, and Sheikh Khalifa Medical City provides excellent general coverage. The insurance mandate is similar to Dubai but regulated by DOH (Department of Health Abu Dhabi) rather than DHA. **Thiqa is for UAE nationals only.** Most expats sit on **employer-sponsored Basic, Enhanced, or Premium plans**, the key question is always which hospitals are in-network. For insurance specifics, see the [Abu Dhabi health insurance DOH guide](/guides/abu-dhabi-health-insurance-doh/). For the Dubai equivalent system, see the [Dubai Healthcare Guide for Expats](/guides/gulf-healthcare-comparison/).
@@ -265,3 +268,11 @@ All expat employees and residents must complete a medical fitness test (MFT) for
 | Maternity (private) | AED 18,000–50,000 | Hospital tier |
 | Employer plan premium | AED 3,000–12,000 | DOH compliant |
 | Pharmacy copay | AED 20–80 | Plan-dependent |
+
+<FaqBlock items={[
+  { question: "Is healthcare free in Abu Dhabi for expats?", answer: "No. Abu Dhabi operates a mandatory insurance system under DOH (Department of Health). Employers must provide insurance for all employees and dependants; self-employed and investor visa holders arrange their own. UAE nationals receive Thiqa insurance through DAMAN. Expats receive employer-arranged plans with costs varying by employer size and plan tier." },
+  { question: "What is the best hospital in Abu Dhabi for expats?", answer: "Cleveland Clinic Abu Dhabi is widely regarded as Abu Dhabi's premium hospital, with globally recognised specialists in cardiology, oncology, and neurology. Sheikh Khalifa Medical City (SKMC) is the largest general hospital and excellent for general medicine and emergencies. Mediclinic and LLH Hospital are popular private options with strong expat patient bases. NMC Royal Hospital offers comprehensive services at mid-market pricing." },
+  { question: "How does health insurance work in Abu Dhabi compared to Dubai?", answer: "Both emirates mandate health insurance, but regulations differ. Abu Dhabi is regulated by DOH (formerly HAAD), Dubai by DHA. Plans must meet emirate-specific benefit floors. Cross-emirate coverage exists, many UAE-wide insurers cover both emirates. If you live in Abu Dhabi and work in Dubai (or vice versa), confirm your insurer's network covers both. The insurance landscape is covered in detail in the Abu Dhabi health insurance DOH guide." },
+  { question: "What is Thiqa health insurance in Abu Dhabi?", answer: "Thiqa is the UAE national insurance scheme administered through Daman for UAE nationals in Abu Dhabi. It provides comprehensive coverage including overseas treatment for UAE citizens. Expatriate residents are NOT eligible for Thiqa, expats receive employer-sponsored or individually purchased private insurance under the DOH mandate. Do not confuse Thiqa with the ADNIC/Daman employer plans that expats receive." },
+  { question: "How much does a GP consultation cost in Abu Dhabi?", answer: "A GP consultation at an Abu Dhabi private clinic costs AED 150–400 depending on clinic tier. With insurance, co-payments range from AED 20–100. At public hospitals (Sheikh Khalifa, Mafraq), expat tariffs are AED 100–300 per consultation. Cleveland Clinic Abu Dhabi initial specialist consultations cost AED 600–1,000 without insurance at the relevant plan tier." }
+]} />

@@ -33,6 +33,9 @@ faq:
   - question: "How do I verify an ITC property is legitimate?"
     answer: "Check Ministry of Tourism official ITC list, pull title register through lawyer, confirm developer license, inspect physical development status, and verify all approvals are current before any deposit."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Oman Property for Foreigners 2026: ITC Freehold, Legal Checks & Living Rules
 
 Quick answer: Foreigners can only buy freehold in designated ITC zones (Al Mouj, Muscat Bay, Wave Muscat). Requires Omani lawyer, title verification, 3% registration fees. Property purchase doesn't grant residence but may support investor visa applications around OMR 250,000+.
@@ -452,3 +455,12 @@ Rent unless ITC lifestyle certainty and capital surplus.
 **Scenario C — cross-border investor:** Separate lifestyle goals from ROI. Keep 6–12 months liquidity in local currency while you validate Oman Property Foreigner Living assumptions on the ground.
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Can foreigners buy property anywhere in Oman?", answer: "No, foreigners can only buy freehold property in designated Integrated Tourism Complexes (ITCs) like Al Mouj, Muscat Bay, Wave Muscat, and newer zones like Usfan and Khazaen. General Muscat areas require Omani nationality for ownership." },
+  { question: "Do I need a lawyer to buy property in Oman ITCs?", answer: "Yes, essential. Use an Omani-qualified lawyer to verify title register, check ITC eligibility list, confirm no disputes, and handle Ministry of Tourism registration requirements for foreign buyers." },
+  { question: "Does buying property in Oman give me residence rights?", answer: "Property purchase alone doesn't grant visa. However, investment around OMR 250,000+ in approved ITCs may support investor residency applications - verify current thresholds and processes with Royal Oman Police before purchase." },
+  { question: "What are the costs beyond purchase price in Oman?", answer: "Registration fees 3% of property value, lawyer fees OMR 2,000-5,000+, property valuation OMR 500-1,500, ongoing service charges OMR 10-50/month in ITCs, and annual municipality fees." },
+  { question: "Should expats rent or buy when moving to Oman?", answer: "Employment expats should rent first to understand Muscat neighborhoods, school commutes, and lifestyle before buying. ITC purchase is a separate financial decision from housing during employment tenure." },
+  { question: "How do I verify an ITC property is legitimate?", answer: "Check Ministry of Tourism official ITC list, pull title register through lawyer, confirm developer license, inspect physical development status, and verify all approvals are current before any deposit." }
+]} />

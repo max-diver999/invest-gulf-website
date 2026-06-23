@@ -31,6 +31,9 @@ faq:
   - question: "What happens if my salary drops below QAR 10,000 after sponsoring my family?"
     answer: "This creates risk for family visa renewal. You should inform MOI if your salary changes significantly. Contract modifications that reduce salary below thresholds may affect dependent visa status during renewal periods."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Qatar Family Visa Sponsorship 2026: QAR 10,000 Salary Rule & Documents
 
 TL;DR: To sponsor spouse and children, you need QAR 10,000/month basic salary (private sector, no family housing on contract) or QAR 6,000/month plus employer-provided family housing written into your e-contract. Add attested marriage and birth certificates, plus housing MOI will accept, not a bachelor studio with kids. Budget QAR 2,000–4,000 per dependant and 2–4 months from submission. Read your electronic labour contract before you fly: housing, transport, and schooling allowances usually don't count toward the MOI salary line.
@@ -543,3 +546,12 @@ Company villa, still need landlord letter? HR letter from company housing often 
 **Path B — newborn registration:** Birth in Qatar triggers a narrow window for baby QID and passport coordination. Hospital discharge paperwork must match sponsor QID profession list.
 
 **Path C — school-dependent timing:** Apply to two schools before finalising Pearl or Lusail tower lease; bus routes assume fixed campus choice. Family visa stamping waits on attested marriage certs from home embassy.
+
+<FaqBlock items={[
+  { question: "What salary do I need to sponsor my family in Qatar?", answer: "You need QAR 10,000 per month basic salary (private sector) without family housing, OR QAR 6,000 per month basic salary plus employer-provided family housing written into your e-contract. The salary must be clearly stated in your electronic labour contract that MOI can verify." },
+  { question: "Can I sponsor my family if my total package is over QAR 10,000 but basic salary is under?", answer: "No, MOI only counts the basic salary line on your electronic work contract. Housing allowance, transport allowance, and schooling allowances typically don't count toward the MOI salary threshold - they check what's written as 'basic salary' specifically." },
+  { question: "How long does family visa processing take in Qatar?", answer: "Typically 2-4 months from document submission. This includes document attestation in home country (4-8 weeks), MOI application processing, and final visa issuance. Plan accordingly and don't expect your family to arrive immediately after your own work visa." },
+  { question: "What documents need attestation for Qatar family visa?", answer: "Marriage certificate and children's birth certificates must be attested by your home country foreign ministry, then Qatar embassy/consulate. Educational certificates for working spouses also need attestation. The process takes 4-8 weeks and costs vary by country." },
+  { question: "Can I bring parents or siblings on family visa?", answer: "No, Qatar family sponsorship is limited to spouse and unmarried children under 18 (or under 25 if studying and financially dependent). Parents and siblings cannot be sponsored under the family residence permit - they need separate visit visas." },
+  { question: "What happens if my salary drops below QAR 10,000 after sponsoring my family?", answer: "This creates risk for family visa renewal. You should inform MOI if your salary changes significantly. Contract modifications that reduce salary below thresholds may affect dependent visa status during renewal periods." }
+]} />

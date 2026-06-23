@@ -31,6 +31,8 @@ faq:
   - question: "Do I need separate bank transfers for DLD fees and the purchase price?"
     answer: "Yes. UAE property closings require multiple payments, each via separate manager's cheques or transfers: the purchase price to the seller (or trustee escrow), the 4% DLD registration fee payable to the DLD trustee, agency commission (2% standard), and trustee service fee (approximately AED 4,000–6,300 + VAT depending on property value). Each payment must be individually documented. You cannot consolidate into a single wire and expect the trustee to allocate."
 ---
+import FaqBlock from '../../components/FaqBlock.astro';
+
 import TldrBlock from '../../components/TldrBlock.astro';
 import InlineCta from '../../components/InlineCta.astro';
 
@@ -253,6 +255,16 @@ For next steps, the [full step-by-step Dubai property purchase guide](/guides/ho
   buttonHref="/get-shortlist/"
   ctaId="bank_transfer_cta"
 />
+<FaqBlock items={[
+  { question: "Can I pay cash for property in UAE?", answer: "No. UAE anti-money laundering laws prohibit cash settlement for property transactions. All payments must move through licensed banking channels, international wire to a UAE account, manager's cheques, or local bank transfer to a DLD-approved trustee. Physical cash, cryptocurrency, and third-party payments without a traceable bank record are rejected by trustees and flagged to the UAE Financial Intelligence Unit." },
+  { question: "How do I get a manager's cheque for UAE property?", answer: "Request a manager's cheque at your UAE bank branch with: account holder ID (passport or Emirates ID), the exact AED amount, and the payee name (DLD-approved trustee or seller). Most UAE banks charge AED 10–30 per cheque and issue same-day if funds are available. Non-residents must have an active UAE bank account with cleared funds before requesting manager's cheques, you cannot use foreign-issued bank drafts for DLD transactions." },
+  { question: "How long does a bank transfer take for UAE property completion?", answer: "International SWIFT wires take 1–5 business days depending on correspondent banks, intermediary hops, and AML holds. Allow at least 7 business days buffer before your trustee appointment. UAE domestic transfers (same-bank or UAEFTS) clear within hours. Always send a test transfer of AED 1,000 before the full amount if using a new account or new route. Never schedule trustee on the same day as an incoming international transfer." },
+  { question: "What account does UAE trustee escrow money go into?", answer: "Funds go into a DLD-registered escrow account held at a UAE Central Bank-licensed trustee office. For off-plan purchases, RERA Law No. 8 of 2007 requires all buyer payments to enter a developer-specific escrow account, funds are released only upon DLD-verified construction milestones. For ready property, the trustee holds funds in a dedicated client account and releases to the seller only upon NOC receipt and title deed registration confirmation." },
+  { question: "Can a non-resident make a bank transfer for UAE property without a UAE account?", answer: "For ready property, non-residents typically need a UAE bank account to issue manager's cheques for the trustee appointment. Some trustees accept international wires directly for the purchase balance, but you still need a UAE account for DLD fee payment manager's cheques. Opening a non-resident UAE account takes 2–6 weeks. See the non-resident bank account guide and plan opening before your first property viewing." },
+  { question: "What happens if my bank transfer is delayed before the trustee appointment?", answer: "If funds are not cleared in the UAE account before the appointment, the trustee reschedules. Sellers may charge a penalty under the MOU (typically 0.5–1% of purchase price per delayed week). For mortgage buyers, the bank's validity period may expire requiring a new approval. Contact the trustee at least 48 hours before if you anticipate a delay, rescheduling with notice is cheaper than missing the appointment without warning." },
+  { question: "Do I need separate bank transfers for DLD fees and the purchase price?", answer: "Yes. UAE property closings require multiple payments, each via separate manager's cheques or transfers: the purchase price to the seller (or trustee escrow), the 4% DLD registration fee payable to the DLD trustee, agency commission (2% standard), and trustee service fee (approximately AED 4,000–6,300 + VAT depending on property value). Each payment must be individually documented. You cannot consolidate into a single wire and expect the trustee to allocate." }
+]} />
+
 ## About Invest Gulf
 
 Invest Gulf publishes independent research on UAE and Gulf property investment for foreign buyers. Not a developer, not a broker, not a listing portal — all content is editorial. We cover Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman: yields, fees, off-plan risks, Golden Visa pathways, and cross-market comparisons. Site: invest-gulf.com.

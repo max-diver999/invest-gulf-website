@@ -28,6 +28,9 @@ faq:
   - question: "Do UAE exchange houses report transfers?"
     answer: "Yes, exchange houses are regulated by UAE Central Bank under AML/CTF rules and report suspicious transactions to CBUAE. Large transfers above AED 55,000 require source-of-funds documentation. CRS/FATCA reporting applies to account information held by licensed UAE financial institutions."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # International Money Transfer Dubai 2026: Wise, Banks & Remittance
 
 TL;DR: Wise, best for EUR/GBP/USD under AED 500K, mid-market rate. Exchange houses (Al Ansari, Lulu), cheapest for INR/PHP/PKR remittance. Bank SWIFT, required for property purchase (DLD documentation). AED is USD-pegged, USD senders pay zero FX spread. Prepare source-of-funds letter for transfers above AED 40K. Hubs: [banking comparison](/guides/gulf-banking-comparison-expats/) · [property FX guide](/guides/currency-transfer-buy-property-uae/) · [buy property step-by-step](/guides/how-to-buy-property-dubai-step-by-step/)
@@ -270,3 +273,12 @@ Exchange rate volatility affects buyers from GBP, EUR, and INR backgrounds most.
 - **Source-of-funds** documentation needed above AED 40–55K across all providers
 - **Property transfers** need UAE bank account + SWIFT + MT103 + 5–7 day buffer before trustee day
 - **CRS/FATCA** applies to account information, not a reason to avoid transfers, reason to document cleanly
+
+<FaqBlock items={[
+  { question: "Is Wise available in the UAE?", answer: "Yes, Wise (formerly TransferWise) is licensed and available in the UAE. Residents can send and receive internationally. Wise uses mid-market FX rates plus a small transparent fee, typically 0.4–1.2% depending on currency pair. For large property-scale transfers above AED 500K, banks with SWIFT documentation may be required by developers and DLD trustees." },
+  { question: "What is the cheapest way to send money from Dubai?", answer: "Exchange houses (Al Ansari, Lulu Exchange, UAE Exchange) compete aggressively on South Asian corridors, INR, PKR, NPR, PHP, often beating Wise on total cost. For GBP, EUR, USD: specialist FX providers or Wise typically beat bank SWIFT spreads by 0.5–1.5%. Compare total cost: FX spread plus transfer fee plus receiving bank charge." },
+  { question: "How do I transfer money from Dubai for a property purchase?", answer: "Funds must arrive in a UAE-held account before DLD trustee day. Use SWIFT for documented property transfers, retain MT103 as source-of-funds proof. Align transfer 5–7 business days before trustee. Banks and developers perform AML checks on large property transfers; prepare sale purchase agreement, passport, and savings proof." },
+  { question: "What is the maximum I can transfer from Dubai?", answer: "UAE imposes no outbound limit for residents on legitimate transfers. Home-country rules apply: India LRS caps at USD 250,000 per person per year; UK and US have reporting thresholds. Banks apply source-of-funds checks on amounts above AED 40,000–50,000 depending on account profile." },
+  { question: "How long does a SWIFT transfer from Dubai take?", answer: "Typically 1–5 business days via UAE bank SWIFT. Same-day or next-day possible on GCC/SWIFT-connected corridors. Exchange houses and Wise often clear faster, 1–2 business days, but route through their own banking partners." },
+  { question: "Do UAE exchange houses report transfers?", answer: "Yes, exchange houses are regulated by UAE Central Bank under AML/CTF rules and report suspicious transactions to CBUAE. Large transfers above AED 55,000 require source-of-funds documentation. CRS/FATCA reporting applies to account information held by licensed UAE financial institutions." }
+]} />

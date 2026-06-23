@@ -34,6 +34,8 @@ faq:
   - question: "Do Qatar properties qualify foreign buyers for residency?"
     answer: "Qatar offers property-based residency for qualifying investments: QAR 730,000+ property purchases (approximately USD 200,000) can qualify for renewable residence permits. However, the program has stricter requirements and less clarity than UAE Golden Visa programs. Verify current eligibility with Qatar authorities."
 ---
+import FaqBlock from '../../components/FaqBlock.astro';
+
 import TldrBlock from '../../components/TldrBlock.astro';
 import InlineCta from '../../components/InlineCta.astro';
 
@@ -497,6 +499,17 @@ For broader Gulf market analysis, see [UAE vs Qatar Property Investment](/compar
   buttonHref="/get-shortlist/"
   ctaId="qatar_yield_mid"
 />
+<FaqBlock items={[
+  { question: "What are typical rental yields in Qatar's freehold areas?", answer: "Qatar freehold properties deliver gross yields of 4.5–6.5% in premium areas. The Pearl apartments: 4.8–5.8%, Lusail City: 5.2–6.2%, West Bay: 4.5–5.5%. Net yields after management fees, service charges, and vacancy typically run 3.8–5.2%. Higher yields available in emerging areas but with liquidity trade-offs." },
+  { question: "How do Qatar rental yields compare to Dubai?", answer: "Qatar yields are generally lower than Dubai: Qatar premium areas 4.8–5.8% vs Dubai Marina 5.5–6.5%, but Qatar offers greater stability and less volatility. Dubai mid-market areas (JVC, Business Bay) deliver 6–8% yields that Qatar cannot match. Qatar suits stability-focused investors; Dubai suits yield-focused investors." },
+  { question: "Which Doha areas offer the best rental yields for foreign investors?", answer: "Best yield areas: Lusail City (5.2–6.2% gross), Fox Hills (5.5–6.8%), Mushayrib (5.0–6.0%), and select Pearl precincts (5.5–6.0%). West Bay and Diplomatic Quarter offer lower yields (4.5–5.5%) but better tenant quality and stability. New developments in Lusail provide highest yield potential." },
+  { question: "What factors reduce gross rental yield to net yield in Qatar?", answer: "Key deductions: property management (5–8% of rent), building maintenance/service charges (QAR 15–25 per sqm/month), municipality fees (5% of annual rent), insurance (0.1–0.3% of property value), and vacancy allowance (1–2 months annually). Total deductions typically reduce gross yield by 1–2 percentage points." },
+  { question: "Are Qatar rental markets stable for long-term investment?", answer: "Qatar offers greater rental stability than most Gulf markets due to: established expat workforce, government sector employment, long-term infrastructure projects, and World Cup legacy infrastructure. Occupancy rates run 85–95% in premium areas. However, economic diversification dependence and regional dynamics create medium-term uncertainty." },
+  { question: "Can foreign investors easily exit Qatar property investments?", answer: "Liquidity varies significantly by location: The Pearl and West Bay have active secondary markets with 2–6 month typical sale periods. Lusail and emerging areas may take 6–12 months for sale. Transaction volumes are lower than Dubai, verify exit strategy before purchase. Property agent networks less developed than UAE." },
+  { question: "What rental payment terms are standard in Qatar?", answer: "Qatar rental terms: annual payments in 1–4 installments, 1–2 month security deposits, landlord typically pays major maintenance, tenant pays utilities and minor maintenance. Rent increases capped at 10% annually. Ejari-equivalent tenancy registration required. Corporate tenants common and preferred." },
+  { question: "Do Qatar properties qualify foreign buyers for residency?", answer: "Qatar offers property-based residency for qualifying investments: QAR 730,000+ property purchases (approximately USD 200,000) can qualify for renewable residence permits. However, the program has stricter requirements and less clarity than UAE Golden Visa programs. Verify current eligibility with Qatar authorities." }
+]} />
+
 ## About Invest Gulf
 
 Invest Gulf publishes independent research on UAE and Gulf property investment for foreign buyers. Not a developer, not a broker, not a listing portal — all content is editorial. We cover Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman: yields, fees, off-plan risks, Golden Visa pathways, and cross-market comparisons. Site: invest-gulf.com.

@@ -34,6 +34,9 @@ faq:
   - question: "What documents prove source of funds?"
     answer: "Sale contract, inheritance probate, employment savings statements, business dividend records, and complete wire trail from origin account to UAE account."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Currency Transfer to Buy Property in UAE: FX, Timing & Compliance
 
 TL;DR: AED = USD peg, dollar buyers simple; others watch spread. **Open UAE account → compare FX quote → wire with SPA reference → retain MT103. India: LRS USD 250K/person/year. Never courier cash. Align transfer 7 days before trustee. Hubs:** [bank account](/guides/opening-bank-account-dubai-property-buyers/) · [buying costs](/guides/cost-of-buying-property-dubai/) · [step-by-step](/guides/how-to-buy-property-dubai-step-by-step/)
@@ -373,3 +376,14 @@ Banks with ICP relationships streamline source-of-funds documentation for visa a
 - Prepare source-of-funds documentation for property-related wires; exchange houses are not a bank substitute.
 - Confirm CRS or home-country reporting obligations before assuming UAE zero income tax ends all Currency Transfer Buy Property Uae filings.
 - Read schedule of benefits on health cover tied to Currency Transfer Buy Property Uae account packages, not marketing brochure summaries.
+
+<FaqBlock items={[
+  { question: "What is the best way to transfer money to Dubai for property?", answer: "Open UAE bank account first, compare FX specialist vs bank SWIFT for your currency pair, transfer in tranches matching trustee milestones, and retain SWIFT MT103 proof for DLD and bank SOF checks. Avoid cash couriers, illegal and untraceable." },
+  { question: "Is the UAE dirham pegged to the dollar?", answer: "Yes, AED is pegged to USD at approximately 3.6725. USD buyers face minimal FX risk. GBP, EUR, INR, and RUB transfers require timing and spread analysis." },
+  { question: "How much can I transfer to UAE without issues?", answer: "No general cap for legitimate property purchase, banks apply source-of-funds checks. Home countries may have outbound limits (e.g. India LRS USD 250K/year per person). Document purpose with SPA and title deed." },
+  { question: "How long does an international wire to Dubai take?", answer: "SWIFT typically 1–5 business days depending on correspondent banks. FX specialists often same route. Plan 7 days buffer before trustee appointment." },
+  { question: "Do I pay tax when sending money to buy UAE property?", answer: "UAE has no property purchase tax for buyers, but home country rules apply on remittance and later capital gains. UK, India, US each differ, consult cross-border tax advisor." },
+  { question: "Can I pay DLD directly from overseas account?", answer: "Trustee and DLD process runs through UAE banking, manager's cheque or local transfer. Funds must land UAE account first in nearly all cases." },
+  { question: "Specialist FX or bank wire?", answer: "Specialists often beat bank spread by 0.5–1.5% on large amounts, AED 1M transfer saves AED 5–15K. Banks simpler for first-time if amount under AED 500K." },
+  { question: "What documents prove source of funds?", answer: "Sale contract, inheritance probate, employment savings statements, business dividend records, and complete wire trail from origin account to UAE account." }
+]} />

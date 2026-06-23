@@ -34,6 +34,9 @@ faq:
   - question: "Tax when selling UAE property as expat?"
     answer: "UAE no capital gains tax on individuals, home country may tax disposal. UK, US, India, Germany each differ. Consult advisor before sale."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Leaving Dubai: Selling Property Checklist & Exit Timeline
 
 TL;DR: Plan visa + property + mortgage + tenant in parallel, not sequentially. Selling takes 4–8 weeks cash, +2–3 mortgaged. Budget 2% agent + NOC + trustee. Golden Visa: replace asset or exit visa before sale completes. Hubs: [buying step-by-step reverse](/guides/how-to-buy-property-dubai-step-by-step/) · [mortgage](/guides/dubai-mortgage-broker-guide/) · [landlord law](/guides/dubai-rental-law-landlord-guide/)
@@ -506,3 +509,14 @@ Retaining UAE property as a non-resident investment requires careful planning:
 - Quarterly market rent reviews to ensure competitive positioning
 
 *June 2026, Invest Gulf Editorial.*
+
+<FaqBlock items={[
+  { question: "What happens to my Dubai property if I leave the UAE?", answer: "You can keep, sell, or rent remotely. Visa cancellation does not automatically transfer property. Golden Visa holders may retain residency if investment thresholds maintained. Mortgaged owners must keep paying or settle on sale." },
+  { question: "How long does it take to sell property in Dubai?", answer: "Cash ready buyer: 4–8 weeks from offer to DLD transfer. Mortgaged seller: add 2–3 weeks for bank NOC. Market liquidity varies by community, mid-market apartments often faster than niche villas." },
+  { question: "What fees apply when selling property in Dubai?", answer: "Typically 2% agent commission plus VAT, developer NOC AED 500–5,000, trustee transfer ~AED 4,000+, and mortgage settlement fees if applicable. No seller DLD 4%, buyer pays transfer fee." },
+  { question: "Can I sell if I have a mortgage?", answer: "Yes, buyer's funds pay off lender at trustee. Obtain mortgage liability letter and NOC early. Shortfall if sale below loan requires cash top-up." },
+  { question: "Do I lose Golden Visa if I sell property and leave?", answer: "Golden Visa renewal requires maintaining qualifying investment, selling below threshold without replacement asset risks non-renewal. Plan visa status before listing." },
+  { question: "Should I sell or rent when leaving Dubai?", answer: "Rent if net yield covers mortgage, service charges, management, and void risk with buffer, and you have reliable agent. Sell if need capital repatriation, face negative equity, or want clean exit." },
+  { question: "What documents needed to sell Dubai apartment?", answer: "Title deed, passport, visa/EID, NOC from developer (if required), mortgage NOC if applicable, and Form F (MOU) with buyer. Trustee appointment for transfer." },
+  { question: "Tax when selling UAE property as expat?", answer: "UAE no capital gains tax on individuals, home country may tax disposal. UK, US, India, Germany each differ. Consult advisor before sale." }
+]} />

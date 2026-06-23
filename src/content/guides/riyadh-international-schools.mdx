@@ -32,6 +32,9 @@ faq:
   - question: "What documents do I need for school admission in Riyadh?"
     answer: "Typically need previous school records, birth certificates, passport copies, medical records including immunizations, parent iqama copies, and sometimes assessment results. Requirements vary by school, start document preparation early."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Riyadh International Schools 2026: British, American, IB Fees & Admissions
 
 TL;DR: Riyadh's international school market is growing under Vision 2030 but still narrower than Dubai. Plan British, American, or IB tracks with 6–12 months lead time for competitive years. Tuition runs SAR 45,000–120,000+/year at premium tiers  (confirm current official rules), two kids can match a Dubai household's school line. Compounds usually win for bus routes and security; city apartments work only if one campus is locked and you've tested the morning run. Pick your school shortlist before Ejar lease. Drive home → school → office on a Sunday at 07:15, not on Google Maps at noon.
@@ -455,3 +458,12 @@ Scenario B — international campus KHDA ratings mid-secondary transfer: Curricu
 **Scenario C — international campus KHDA ratings fee-sensitive plan:** Model bus, uniform, exam, and extracurricular levies beyond headline tuition in Riyadh International Schools. CBSE and mid-tier British options reduce cost but narrow university destinations.
 
 *Humanized v5 full, 2026-06-05. Verify MOE international school seat availability at publish.*
+
+<FaqBlock items={[
+  { question: "How much do international schools cost in Riyadh?", answer: "International school tuition in Riyadh ranges from SAR 45,000-120,000+ per year. Indian CBSE schools cost SAR 18,000-35,000, British mid-tier schools SAR 55,000-85,000, and premium IB programs SAR 85,000-120,000+ annually, plus transport and uniforms." },
+  { question: "How early should I apply to international schools in Riyadh?", answer: "Apply 6-12 months before your planned arrival in Riyadh. Competitive years and popular schools fill quickly, and school placement should be confirmed before signing housing leases to ensure manageable school run logistics." },
+  { question: "Which curriculum is best for international schools in Riyadh?", answer: "British curriculum dominates with most campuses and grades available. American and IB programs are growing but have fewer schools. Choose based on your child's previous system and university plans, UK universities for British, US colleges for American/IB." },
+  { question: "Do I need to live in a compound for school access in Riyadh?", answer: "Compounds offer school bus routes and security but aren't required. City apartments work if you're near one school and willing to drive daily. Test the home-school-office triangle during morning rush hour before committing to housing." },
+  { question: "Are Riyadh international schools as good as Dubai schools?", answer: "Riyadh's international school market is smaller and newer than Dubai's. Top-tier schools offer quality education but with fewer options overall. The best schools match international standards but may lack Dubai's breadth of specialized programs." },
+  { question: "What documents do I need for school admission in Riyadh?", answer: "Typically need previous school records, birth certificates, passport copies, medical records including immunizations, parent iqama copies, and sometimes assessment results. Requirements vary by school, start document preparation early." }
+]} />

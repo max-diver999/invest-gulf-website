@@ -34,6 +34,9 @@ faq:
   - question: "Where does property purchase fit in the checklist?"
     answer: "Parallel track, due diligence pre-arrival, SPA on visit, DLD registration triggers Golden Visa and Emirates ID chain. See emirates-id-after-property-purchase."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Relocation Checklist 2026: Documents, Visa, Housing & Setup
 
 TL;DR: Use three phases, Pre-arrival (8–12 weeks), Arrival (weeks 1–4), Settlement (weeks 4–12). Never skip Ejari before DEWA. Families: schools before lease. Hub: [Dubai relocation guide](/guides/dubai-relocation-guide/) · [First 30 days](/guides/first-30-days-dubai-expat/)
@@ -657,3 +660,14 @@ Skip employment sections; add property due diligence and ICP application blocks.
 *June 2026, Invest Gulf Editorial
 
 *June 2026, Invest Gulf Editorial. Print and annotate for your move.*
+
+<FaqBlock items={[
+  { question: "What documents do I need to relocate to Dubai?", answer: "Passport (6+ months validity), attested degree for skilled visa, employment contract, passport photos, medical fitness (on arrival), and for families, attested marriage and birth certificates. Property buyers add SPA, DLD Oqood, and bank proof of funds." },
+  { question: "What is the correct order for Dubai relocation tasks?", answer: "Visa entry → medical → Emirates ID biometrics → tenancy + Ejari → DEWA → visa stamping → bank account → family visa → schools. Skipping Ejari before DEWA or banking causes delays." },
+  { question: "How long before moving should I start the checklist?", answer: "8–12 weeks for document attestation and school research; 4 weeks for housing shortlist; 2 weeks for shipping and insurance. Golden Visa property route needs 4–8 weeks post-DLD registration." },
+  { question: "Is Ejari mandatory for expats?", answer: "Yes for all Dubai tenancies. Required for DEWA, most bank accounts, school enrolment, and family visa. Cost roughly AED 220 plus typing fees." },
+  { question: "What should I pack vs buy in Dubai?", answer: "Bring prescription medications (with documentation), personal electronics, sentimental items. Buy furniture, appliances, and bulky items locally, IKEA, ACE, Facebook Marketplace active." },
+  { question: "Do I need an international driving licence?", answer: "Home country licence plus IDP helps short-term. Plan RTA conversion within 6 months of residency, rules vary by nationality." },
+  { question: "What cash buffer should I hold on arrival?", answer: "Singles AED 15–25K; families AED 40–70K before first salary, covers deposits, cheques, school fees, and setup without credit." },
+  { question: "Where does property purchase fit in the checklist?", answer: "Parallel track, due diligence pre-arrival, SPA on visit, DLD registration triggers Golden Visa and Emirates ID chain. See emirates-id-after-property-purchase." }
+]} />

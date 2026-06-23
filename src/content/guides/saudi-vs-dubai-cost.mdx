@@ -41,6 +41,9 @@ faq:
   - question: "Should I compare wider Gulf markets too?"
     answer: "Yes, gulf-expat-living-comparison (R105) adds Qatar, Oman, Abu Dhabi and Bahrain before you fix on Saudi vs Dubai only."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Saudi vs Dubai Cost of Living 2026: SAR/AED Budget Tables & Family Scenarios
 
 TL;DR: At mid-tier family lifestyle, Riyadh rent alone often runs 10–25% below Dubai, then schools eat the savings. SAR 30,000/month in Riyadh maps to roughly AED 29,000–32,000 in Dubai, not a naive 1:1 swap. Premium compound plus British schools in both cities usually land within 10–15% of each other. Convert first: SAR 1 ≈ AED 0.98. Hubs: [Riyadh COL](/guides/riyadh-cost-of-living/) (R71) · [Saudi relocation](/guides/saudi-arabia-relocation-guide/) (R70). Culture: [Saudi vs UAE living](/guides/saudi-vs-uae-living/) · [Gulf comparison](/guides/gulf-expat-living-comparison/) (R105).
@@ -420,3 +423,16 @@ Indicative figures cross-check:
 Never cite **year-old** forum post as 2026 rent, **three live quotes** minimum.
 
 *Draft v1, 2026-06-04. Verify school fees, dependent levies, Ejar terms and live rent at publish.*
+
+<FaqBlock items={[
+  { question: "Is Riyadh cheaper than Dubai to live?", answer: "Rent alone can be 15–30% lower at mid-tier compound/apartment equivalents, but Saudi premium school fees often match UAE, total family budgets frequently land within 10–20% of Dubai mid-tier, not half price." },
+  { question: "What is the SAR to AED exchange rate?", answer: "Both peg to USD, roughly SAR 1 ≈ AED 0.98 and AED 1 ≈ SAR 1.02. SAR 10,000/month ≈ AED 9,800/month. Always convert before comparing headline numbers." },
+  { question: "How much rent do you save in Riyadh vs Dubai?", answer: "Mid 3BR compound villa often SAR 12,000 (Riyadh) vs AED 14,000–18,000 (Dubai Mirdif/Sports City band), verify live listings. Premium compounds in both cities narrow savings." },
+  { question: "Are Riyadh schools cheaper than Dubai?", answer: "Indian mid-tier often lower in SAR terms. British/American premium tiers approach UAE fees, two children British mid can cost SAR 10,000–12,000/month amortised in both markets." },
+  { question: "Does Dubai Salik affect the comparison?", answer: "Yes, budget AED 200–600/month Salik for cross-city Dubai commutes. Saudi has no Salik equivalent but fuel and distance in sprawling Riyadh still add SAR 800–1,500/month per car." },
+  { question: "Is Jeddah cheaper than Riyadh?", answer: "Often similar mid-tier totals, Corniche premiums and humidity AC can offset coastal 'discount' narratives. See jeddah-cost-of-living (R72) for Red Sea line items." },
+  { question: "Which city needs more cars?", answer: "Both car-centric for families. Dubai Metro helps singles in Marina/JLT; Riyadh and Jeddah have no metro, budget two cars for school runs unless compound bus covers routes." },
+  { question: "When does Dubai beat Saudi on value?", answer: "When you need Sharjah/RAK commuter savings, widest school choice at any price, or spouse job market depth, Saudi rarely offers UAE-style budget emirate commute." },
+  { question: "Where are the full Saudi relocation hubs?", answer: "Saudi Arabia relocation guide (R70) for visa timeline; riyadh-cost-of-living (R71) and jeddah-cost-of-living (R72) for city spreadsheets; saudi-vs-uae-living for culture." },
+  { question: "Should I compare wider Gulf markets too?", answer: "Yes, gulf-expat-living-comparison (R105) adds Qatar, Oman, Abu Dhabi and Bahrain before you fix on Saudi vs Dubai only." }
+]} />

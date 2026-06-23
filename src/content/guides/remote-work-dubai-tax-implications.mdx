@@ -40,6 +40,9 @@ faq:
   - question: "Does rental income from property in my home country get taxed in the UAE?"
     answer: "No UAE tax applies to foreign-sourced rental income. However, your home country likely taxes this at source (UK: NRLA rules; Germany: worldwide income basis). Having UAE tax residency does not eliminate home-country tax on income sourced there. A dual tax treaty check is essential."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Remote Work Dubai: Full Tax Guide for Expats 2026
 
 TL;DR: Dubai charges zero personal income tax, no salary tax, no dividend tax, no capital gains tax for individuals. To benefit fully you need to establish UAE tax residency (183+ days), formally sever ties with your home country, and understand the new 9% UAE corporate tax which affects business structures but not employed individuals. Get a cross-border adviser before you book the one-way flight.
@@ -352,3 +355,13 @@ See [Dubai co-working spaces guide](/guides/dubai-co-working-spaces/) for distri
 | [Green Visa vs Remote Work Visa](/guides/remote-work-visa-vs-green-visa/) | Choose the right visa category |
 | [Dubai freelance visa cost](/guides/dubai-freelance-visa-cost/) | Freelance permit fees and process |
 | [Dubai property taxes explained](/guides/dubai-property-taxes-explained/) | DLD fees, service charges, annual charges |
+
+<FaqBlock items={[
+  { question: "Does Dubai have income tax for remote workers?", answer: "No. The UAE levies zero personal income tax. A remote worker based in Dubai pays no UAE tax on salary, freelance income, or dividends, regardless of the source country of the employer, provided they are not doing business in the UAE in a taxable way under corporate tax rules." },
+  { question: "How many days do I need to spend in Dubai to become a UAE tax resident?", answer: "The primary threshold is 183 days in a UAE financial year (1 January–31 December). A secondary 90-day rule applies if you have no tax domicile elsewhere and meet specific ties. Verify current MOHRE and MoF guidance, as administrative criteria can evolve." },
+  { question: "Do I still owe tax in my home country if I work remotely from Dubai?", answer: "Possibly. Many countries, UK, Germany, Australia, Canada, apply residency tests based on ties like property, family, and days present. Simply moving to Dubai does not automatically sever home-country tax obligations. A cross-border tax adviser is essential before relocating." },
+  { question: "Is there corporate tax for remote workers in Dubai?", answer: "UAE introduced 9% corporate tax on taxable business profits above AED 375,000 from June 2023. Individual employees earning salary do not pay corporate tax. Freelancers operating under a UAE licence that qualifies as a 'small business' (revenue under AED 3M) can elect for small business relief. Verify current MoF rules." },
+  { question: "What visa do I need to work remotely from Dubai legally?", answer: "Options include the UAE Remote Work Visa (1-year, renewable), the Green Visa (5-year self-sponsored for skilled professionals and freelancers), and a UAE Freelance Permit with UAE residency. Each has different income proofs and fees. See remote-work-visa-vs-green-visa for a direct comparison." },
+  { question: "Can I open a UAE bank account as a remote worker?", answer: "Yes. Most major UAE banks (Emirates NBD, ADCB, Mashreq) accept remote workers and freelancers with a valid residency visa and valid income proof. A UAE Freelance Permit or Green Visa typically satisfies KYC requirements. Some premium private banking arms offer accounts with global remittance tools." },
+  { question: "Does rental income from property in my home country get taxed in the UAE?", answer: "No UAE tax applies to foreign-sourced rental income. However, your home country likely taxes this at source (UK: NRLA rules; Germany: worldwide income basis). Having UAE tax residency does not eliminate home-country tax on income sourced there. A dual tax treaty check is essential." }
+]} />

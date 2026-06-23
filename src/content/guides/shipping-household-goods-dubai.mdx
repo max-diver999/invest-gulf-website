@@ -34,6 +34,9 @@ faq:
   - question: "What documents are needed for Dubai customs?"
     answer: "Required: residence visa copy, Emirates ID, passport copy, detailed inventory list with values, original purchase receipts for high-value items, shipping documents (bill of lading), customs declaration form. Optional: marriage certificate for household goods status."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Shipping Household Goods to Dubai: Complete 2026 Guide
 
 TL;DR: Sea freight costs AED 15K–45K for 20ft–40ft containers, takes 4–8 weeks from Europe/US. Air freight is 3–5x more but limited volume. UAE residents get duty exemption on household goods, ship after visa stamping. Compare shipping cost vs buying new: ship sentimental/high-value items, buy mass furniture locally. Essential: [Dubai relocation guide](/guides/dubai-relocation-guide/) · [moving checklist](/guides/dubai-relocation-checklist/) · [families guide](/guides/moving-to-dubai-with-family/)
@@ -583,3 +586,14 @@ Port storage allows 5 free days then charges daily fees. Customs cleared goods c
 **Scenario C — cross-border investor:** Separate lifestyle goals from ROI. Keep 6–12 months liquidity in local currency while you validate Shipping Household Goods Dubai assumptions on the ground.
 
 *June 2026, Invest Gulf Editorial. Shipping costs and customs rates indicative; verify with freight forwarders and UAE customs before booking.*
+
+<FaqBlock items={[
+  { question: "How much does it cost to ship household goods to Dubai?", answer: "Sea freight typically costs AED 15,000–30,000 for a 20ft container, AED 25,000–45,000 for 40ft from Europe/US. Air freight costs AED 25–40 per kg but limits volume. Add UAE customs duty (5% on most items), clearance fees AED 2,000–4,000, and local delivery AED 1,500–3,000." },
+  { question: "How long does sea freight take to Dubai?", answer: "4–8 weeks door-to-door from Europe, 6–10 weeks from US East Coast, 8–12 weeks from Australia. Add 1–2 weeks for customs clearance in Dubai. Air freight takes 5–10 days but costs 3–5x more and limits cubic volume." },
+  { question: "What cannot be shipped to Dubai by sea freight?", answer: "Prohibited items include alcohol, pork products, narcotics, weapons, certain medications without permits, hazardous chemicals, and items containing lithium batteries in large quantities. Used mattresses and certain wooden items may require fumigation certificates." },
+  { question: "Do I need Dubai residence visa before shipping?", answer: "Yes, UAE customs requires valid residence visa and Emirates ID for household goods import exemption. Tourist visas face full duty rates. Timing: ship 2–3 weeks after visa stamping to ensure clearance documents ready on arrival." },
+  { question: "Should I ship furniture or buy new in Dubai?", answer: "Ship if items have sentimental value, custom-made, or high-quality pieces worth over AED 15,000. Buy new if furniture is under AED 10,000 replacement cost, Dubai has IKEA, Home Centre, competitive furniture market with quick delivery." },
+  { question: "Can I ship electronics and appliances to Dubai?", answer: "Yes, most electronics under personal use limits are duty-free with residence visa. Voltage converters may be needed (UAE uses 230V). Large appliances like washing machines often cheaper to buy locally due to shipping weight costs." },
+  { question: "How do I track my shipment to Dubai?", answer: "Your shipping agent provides tracking number and port updates. Once in Jebel Ali Port, UAE customs sends SMS notifications. Use Dubai Customs app or website with your declaration number to track clearance status and pay duties online." },
+  { question: "What documents are needed for Dubai customs?", answer: "Required: residence visa copy, Emirates ID, passport copy, detailed inventory list with values, original purchase receipts for high-value items, shipping documents (bill of lading), customs declaration form. Optional: marriage certificate for household goods status." }
+]} />

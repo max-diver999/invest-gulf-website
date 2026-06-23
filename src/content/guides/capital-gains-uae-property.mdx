@@ -31,6 +31,11 @@ faq:
   - question: "Does UAE corporate tax apply to property investment companies?"
     answer: "From June 2023, UAE corporate tax at 9% applies to taxable income above AED 375,000 for entities registered in the UAE, including property holding companies. Qualifying free zone entities may maintain 0% on qualifying income, property rental and capital gains from UAE real estate may or may not qualify depending on free zone and activity. Get a UAE tax adviser opinion before structuring."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Capital Gains Tax on UAE Property: What Investors Need to Know 2026
 
 TL;DR: The UAE imposes zero capital gains tax on property sales. No holding-period requirements, no property transfer tax on sellers, no stamp duty. Your profit from selling a Dubai or Abu Dhabi apartment is entirely UAE-tax-free. The critical nuance: your home country will likely tax that gain, UK, Canada, Australia, Germany, France, and most OECD nations tax worldwide income of residents. Structuring your exit and your residency status before you sell can materially change your net return.
@@ -40,6 +45,8 @@ TL;DR: The UAE imposes zero capital gains tax on property sales. No holding-peri
 Navigation: [Dubai property investment guide](/guides/dubai-property-investment-guide/) · [Off-plan Dubai](/guides/off-plan-property-dubai-guide/) · [Golden Visa via property](/guides/uae-golden-visa-property/) · [Buying guide](/guides/how-to-buy-property-dubai-step-by-step/)
 
 ---
+
+<TldrBlock text="Capital gains on UAE property: 0% for individuals (no CGT in UAE). 9% corporate tax applies if property sold through a UAE company making >AED 375,000 annual profit. Foreign tax residency may impose CGT in home country — UK residents face 24–28% CGT on UAE gains; US citizens face capital gains tax regardless of residency." />
 
 ## UAE Tax Landscape for Property Investors
 
@@ -318,3 +325,19 @@ Property investment decisions in Dubai are rarely just about tax. Understanding 
 | What is the total round-trip transaction cost? | Approximately 8.5–10% of purchase price including purchase and sale costs |
 
 The UAE's zero-CGT status is one of the strongest structural advantages in global real estate investing. The tax-efficient case is real, but home-country planning and realistic transaction cost modelling determine whether a Dubai investment delivers the net returns investors expect.
+
+<InlineCta
+  headline="Buying UAE property from a country with CGT?"
+  subtext="Our team explains UAE tax treatment and home-country CGT implications."
+  buttonText="Get Tax Implications Guide"
+  buttonHref="/get-shortlist/"
+  ctaId="cgt_cta"
+/>
+
+<FaqBlock items={[
+  { question: "Is there capital gains tax on property in the UAE?", answer: "No. The UAE does not levy a capital gains tax on property sales at the federal or emirate level. Profit from selling a Dubai or Abu Dhabi property is not taxed in the UAE regardless of holding period. However, your home country may tax the gain, UK, Canada, Australia, and most EU states will assess capital gains on worldwide income." },
+  { question: "Do I pay tax when I sell Dubai property as a UK resident?", answer: "Yes, UK residents and UK-domiciled individuals pay UK Capital Gains Tax on worldwide gains, including Dubai property. The gain is the sale price minus your acquisition cost and allowable expenses. Annual CGT allowance (GBP 3,000 in 2026) and rate (18% or 24% depending on total income) apply. HMRC requires disclosure via Self Assessment." },
+  { question: "What taxes apply on property sale in Dubai?", answer: "The seller pays no property gains tax in Dubai. The buyer pays 4% DLD transfer fee. There is no stamp duty, no inheritance tax, and no property income tax in the UAE. Corporate entities registered in UAE free zones generating property rental income may now need to assess UAE corporate tax (9%) on taxable income above AED 375,000." },
+  { question: "How long should I hold Dubai property to maximise returns?", answer: "There is no UAE minimum holding period for tax purposes. Most off-plan investors target 3–5 years to capture full handover price appreciation plus post-handover rental uplift. Transaction costs (DLD 4%, agent 2%, mortgage fees if any) mean short flips under 18 months rarely outperform unless you caught a very early launch price." },
+  { question: "Does UAE corporate tax apply to property investment companies?", answer: "From June 2023, UAE corporate tax at 9% applies to taxable income above AED 375,000 for entities registered in the UAE, including property holding companies. Qualifying free zone entities may maintain 0% on qualifying income, property rental and capital gains from UAE real estate may or may not qualify depending on free zone and activity. Get a UAE tax adviser opinion before structuring." }
+]} />

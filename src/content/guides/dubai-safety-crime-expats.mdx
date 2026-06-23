@@ -31,6 +31,9 @@ faq:
   - question: "Is cyber fraud a problem in Dubai?"
     answer: "Yes, scams targeting expats include fake property listings, investment fraud, phone impersonation of government officials, and WhatsApp lottery messages. Dubai Cybercrime department handles reports via ecrime.ae. Never transfer money to an unverified contact regardless of urgency claims."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Safety for Expats 2026: Crime, Women's Safety & Emergency Guide
 
 Quick answer: Dubai is one of the world's safest cities by measured crime indices. Violent crime is rare; petty theft, scams, and road accidents are the realistic risks. Emergency: call 999 (police), 998 (ambulance/fire).
@@ -327,3 +330,13 @@ File immediately at ecrime.ae and at the nearest Dubai Police station. If financ
 Yes, Dubai's hospital system handles trauma and emergency medicine to international standards. Government and private hospitals both have 24-hour emergency departments. Carry your insurance card at all times. See [Dubai healthcare guide](/guides/gulf-healthcare-comparison/) for detail.
 
 **Related guides:** [First 30 days guide](/guides/first-30-days-dubai-expat/)
+
+<FaqBlock items={[
+  { question: "Is Dubai safe for expats?", answer: "Yes, Dubai consistently ranks among the world's safest cities. The Economist Safe Cities Index and Numbeo Crime Index both place Dubai in the top 10 globally. Violent crime is rare; the primary concerns for expats are petty theft in tourist areas, road safety, and cybercrime/scams targeting newcomers." },
+  { question: "What are the emergency numbers in Dubai?", answer: "Police: 999. Ambulance and fire: 998. Civil Defence: 997. Dubai Police non-emergency: 901. Coastguard: 996. Tourist Police helpline: 800 4438. Save all numbers before your first day, the Dubai Police app also has a one-touch emergency button." },
+  { question: "Is Dubai safe for women travelling or living alone?", answer: "Dubai is considered one of the safer cities globally for women. Street harassment is uncommon and treated seriously by police. Women can use taxis, metro (women-only carriages available), and public spaces freely at any hour. Exercise the same general awareness you would in any large city." },
+  { question: "What crimes do expats most commonly experience in Dubai?", answer: "Petty theft (phone snatching in busy areas), rental and property scams, online fraud, car break-ins at tourist stops, and social media financial scams targeting new arrivals. Violent crime against expats is rare. Report any incident to Dubai Police immediately." },
+  { question: "Are some Dubai neighbourhoods safer than others?", answer: "All established Dubai neighbourhoods are generally safe. Tourism-heavy areas like Deira and Naif have higher petty theft rates. Family residential communities (Arabian Ranches, Springs, JBR) have very low crime reports. Business Bay and Downtown are well-policed with CCTV coverage." },
+  { question: "What should I do if I'm involved in a crime in Dubai?", answer: "Call 999 for emergencies. For non-emergencies, visit the nearest Dubai Police station or use the Dubai Police app to file a report online. Keep a copy of the police report, required for insurance claims and some visa matters. Do not leave Dubai before resolving any criminal matter you are involved in." },
+  { question: "Is cyber fraud a problem in Dubai?", answer: "Yes, scams targeting expats include fake property listings, investment fraud, phone impersonation of government officials, and WhatsApp lottery messages. Dubai Cybercrime department handles reports via ecrime.ae. Never transfer money to an unverified contact regardless of urgency claims." }
+]} />

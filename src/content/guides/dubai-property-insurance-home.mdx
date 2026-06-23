@@ -31,6 +31,9 @@ faq:
   - question: "What happens if there is a water leak from an upstairs apartment in Dubai?"
     answer: "Damage to your belongings from water ingress from a neighbouring unit is typically covered under your own contents policy (subject to your excess). Structural repairs are usually a building insurance matter between the landlord, Owners Association, and the building insurance policy. Third-party liability cover in your policy can also pay if your unit is the source of a leak affecting a neighbour."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Home Insurance for Residents: Renters and Homeowners Guide 2026
 
 TL;DR: Dubai has no legal requirement for most residents to hold home insurance, but the cost of a water leak, theft, or accidental fire without cover can wipe out months of savings. Renters contents insurance costs AED 500–1,500 per year and covers your furniture, electronics, and clothing. Building insurance is required by mortgage lenders and handled at the building or mortgage level, most owner-occupiers need to check what is already in place rather than buy separately. This guide explains who needs what, what policies actually cover, and how to buy in Dubai.
@@ -313,3 +316,11 @@ What most guides miss about dubai property insurance home in Dubai: the real cos
 
 
 Premiums average 0.1–0.3% of property value annually, meaning a 00,000 apartment costs 00–1,500 per year to insure.
+
+<FaqBlock items={[
+  { question: "Is home insurance mandatory in Dubai?", answer: "Building insurance is mandatory for mortgaged properties, the mortgage bank requires it as a loan condition. Contents insurance for renters is not legally mandated but is strongly recommended. Landlords are not required to insure a tenant's belongings. Most DEWA-connected units lack any personal contents protection unless the tenant arranges it separately." },
+  { question: "How much does home contents insurance cost in Dubai?", answer: "Renters contents insurance in Dubai typically costs AED 500–1,500 per year for AED 50,000–150,000 of contents cover. The cost depends on the sum insured, area (villa vs apartment), and whether you include personal liability and portable items. Online quotes from RSA, Noor Takaful, or AXA Gulf take 10 minutes. Annual premiums are low relative to the replacement cost of electronics, jewellery, and furniture." },
+  { question: "What does home insurance in Dubai cover?", answer: "A standard Dubai home insurance policy covers fire, theft, water damage from burst pipes, accidental damage to fixtures, and sometimes third-party liability. Contents insurance covers your personal belongings inside the home. High-value items (jewellery, cameras, laptops) usually require a separate schedule or 'all risks' rider. Flood from natural causes may be excluded, check policy wording carefully in Dubai Marina or JBR ground-floor units." },
+  { question: "Does Dubai home insurance cover jewelry and electronics?", answer: "Standard contents policies apply a single-item limit (commonly AED 5,000–15,000 per item). Jewellery, watches, cameras, laptops, and musical instruments above the single-item limit need to be listed separately on a 'specified items' or 'all risks' schedule with supporting valuation or purchase receipts. Without this, a claim for a AED 30,000 watch may only pay AED 10,000." },
+  { question: "What happens if there is a water leak from an upstairs apartment in Dubai?", answer: "Damage to your belongings from water ingress from a neighbouring unit is typically covered under your own contents policy (subject to your excess). Structural repairs are usually a building insurance matter between the landlord, Owners Association, and the building insurance policy. Third-party liability cover in your policy can also pay if your unit is the source of a leak affecting a neighbour." }
+]} />

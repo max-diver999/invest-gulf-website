@@ -48,6 +48,9 @@ faq:
   - question: "Where should parents read after this comparison?"
     answer: "Country choice: best-gulf-country-for-families (R106) and gulf-expat-living-comparison (R105). City drills: doha-international-schools-guide (R38), riyadh-international-schools (R75), bahrain-international-schools, muscat-international-schools. UAE emirate: abu-dhabi-vs-dubai-families (R11)."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Gulf Schools Comparison 2026: KHDA, ADEK, Doha, Riyadh & Manama Fees
 
 TL;DR: Dubai KHDA = largest pool, highest fees, longest waitlists. Abu Dhabi ADEK = 10–20% mid-tier discount vs Dubai. Doha = strong British/IB, no KHDA dashboard, 6–12 month apply window. Riyadh = fast-growing, SAR 55K–120K+ premium (confirm current official rules), car-dependent. Manama = compact solid, BHD 3.5–6.5K British mid. Hidden costs +15–35% everywhere. Pick school offer before country flag.
@@ -375,3 +378,17 @@ Regulator ratings rarely tell SEN story. Email **SENCO** directly:
 | FAQ-friendly structure for Gulf Schools Comparison quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Which Gulf country has the best international schools?", answer: "Dubai has the largest regulated pool, 200+ KHDA private schools and widest curriculum choice. Abu Dhabi ADEK schools are strong with mid-tier fees often 10–20% below equivalent Dubai KHDA band. Doha has fewer campuses but solid British/IB tiers. Riyadh and Manama pools are smaller but adequate for most expat families, premium years face tighter waiting lists." },
+  { question: "What is the difference between KHDA and ADEK?", answer: "KHDA regulates private schools in Dubai; ADEK regulates Abu Dhabi emirate. Separate inspection frameworks, fee approval systems and school lists. KHDA publishes granular public ratings; ADEK oversight is equally serious with smaller pool. Curriculum quality depends on campus leadership, not regulator acronym." },
+  { question: "How much do international schools cost in Dubai vs Doha vs Riyadh?", answer: "British mid-tier annual tuition per child: Dubai AED 45,000–65,000; Abu Dhabi AED 40,000–55,000; Doha QAR 45,000–65,000; Riyadh SAR 55,000–120,000+ (confirm current official rules); Manama BHD 3,500–6,500. Premium IB can exceed AED/QAR 95,000 or SAR 120,000 in top tiers." },
+  { question: "Are Dubai schools more expensive than Abu Dhabi?", answer: "Typically yes at equivalent curriculum band, ADEK mid British runs 10–20% below KHDA mid British. Premium tiers converge. Savings strongest for families with two children at mid-tier British or American schools." },
+  { question: "How far ahead should families apply to Gulf schools?", answer: "Premium Dubai KHDA Outstanding schools: 12 months. Doha British/IB competitive years: 6–12 months. Riyadh senior British: 6–12 months (confirm current official rules). Manama finance-sector August peak: 6–12 months. Indian CBSE tiers: 3–6 months typically." },
+  { question: "Is there a KHDA equivalent in Qatar or Saudi?", answer: "No single public dashboard like KHDA. Qatar uses Ministry of Education framework with school-published fees. Saudi private schools register with Ministry, quality verified via accreditation (BSO, CIS, etc.) and campus tours. Parents piece together data from PDFs and parent networks." },
+  { question: "What hidden school costs should Gulf families budget?", answer: "Add 15–35% to headline tuition: registration AED/QAR/SAR 2,000–15,000; bus AED/QAR 8,000–14,000/year per child; uniforms; exam fees IGCSE/IB/AP; extracurricular trips. Two-child households often underestimate bus when rent savings push address far from campus." },
+  { question: "Can Sharjah families use Dubai KHDA schools?", answer: "Yes, many commute or use school buses 45–90 minutes peak. Tuition is Dubai-priced; savings are on Sharjah rent not school fees. See sharjah-schools-commute-dubai before signing lease." },
+  { question: "Which curriculum is most common in the Gulf?", answer: "British IGCSE/A-Level is largest Western expat track in UAE, Qatar, Bahrain and Saudi. Indian CBSE/ICSE is highest volume by seat count in UAE and Bahrain. IB premium is scarcer outside Dubai and Doha. American AP strong in Saudi compounds and select UAE campuses." },
+  { question: "Do employer school allowances cover Gulf fees?", answer: "Rarely full coverage. Typical caps: one child only, AED/QAR 40,000–60,000/year, or primary years only. Gap of AED 3,000–8,000/month per two-child British mid household is common, model before accepting offer." },
+  { question: "Where should parents read after this comparison?", answer: "Country choice: best-gulf-country-for-families (R106) and gulf-expat-living-comparison (R105). City drills: doha-international-schools-guide (R38), riyadh-international-schools (R75), bahrain-international-schools, muscat-international-schools. UAE emirate: abu-dhabi-vs-dubai-families (R11)." }
+]} />

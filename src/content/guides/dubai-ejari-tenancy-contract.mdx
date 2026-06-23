@@ -32,6 +32,9 @@ faq:
   - question: "Can I update Ejari if lease terms change during tenancy?"
     answer: "Yes, Ejari allows contract amendments for rent changes (rare mid-term), tenant additions/removals, or lease extensions. Amendments cost approximately AED 220 and require both parties' agreement. However, mid-term rent increases outside renewal are restricted by RERA regulations regardless of Ejari amendments."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Ejari Tenancy Contract: Complete Tenant Guide 2026
 
 TL;DR: Ejari registration is mandatory for Dubai tenants and blocks essential services if missing, DEWA utilities, family visas, school enrollment, and banking. Registration costs ~AED 220 (usually landlord-paid), takes same day through Dubai REST app, and provides legal protection under RERA tenancy law. Never rent without Ejari, it's not optional paperwork, it's your residency lifeline.
@@ -753,3 +756,14 @@ Scenario A — Ejari-linked landlord compliance first filing: Start medical test
 Scenario B — Ejari-linked landlord compliance family joining: Sequence sponsor salary proof, housing fit-out, and school admissions for Ejari-linked landlord compliance. Dependent visas bottleneck on Ejari or municipality tenancy evidence tied to Dubai Ejari Tenancy Contract.
 
 Scenario C — Ejari-linked landlord compliance renewal: File at least 30 days before expiry on Ejari-linked landlord compliance status. Overstay fines and re-entry bans compound when you delay Ejari-linked landlord compliance paperwork.
+
+<FaqBlock items={[
+  { question: "What is Ejari and why do tenants need it in Dubai?", answer: "Ejari is Dubai's mandatory tenancy contract registration system managed by RERA. As a tenant, you need Ejari registration to transfer DEWA utilities to your name, apply for family visa sponsorship, enroll children in schools, open bank accounts, and access the Rental Dispute Centre for legal protection. Without Ejari, these essential services are blocked or complicated." },
+  { question: "How much does Ejari cost for tenants in Dubai?", answer: "Ejari registration costs approximately AED 220 per contract. If processed through typing centres, service fees add AED 50–150. Most lease agreements specify that landlords pay Ejari fees, but this is negotiable at signing. Renewal registration carries similar costs annually." },
+  { question: "How long does Ejari registration take for tenants?", answer: "Through the Dubai REST app: same day if documents are complete. Via typing centres: typically same day or next working day. Processing delays usually occur due to incomplete documents, incorrect property details, or title deed mismatches rather than system issues." },
+  { question: "Can tenants register Ejari themselves without landlord approval?", answer: "Yes, either party can initiate Ejari registration. However, you need the landlord's Emirates ID copy, title deed details, and signed lease contract. In practice, landlords often prefer to handle registration to ensure rent amount and contract terms are recorded correctly for RERA rent increase calculations." },
+  { question: "What happens if my landlord refuses to register Ejari?", answer: "Ejari registration is legally mandatory for all residential leases over 6 months. If a landlord refuses, you can register yourself with proper documentation, file a complaint with RERA, or use non-registration as grounds for lease termination. Unregistered leases also weaken landlord rights in disputes." },
+  { question: "Do I need Ejari for DEWA account setup in Dubai?", answer: "Yes, DEWA requires a registered Ejari contract to transfer utilities to tenant name. Without Ejari, utilities remain in landlord name, creating billing complications and potential service interruptions. The Ejari certificate number is mandatory on DEWA transfer applications." },
+  { question: "How does Ejari affect family visa applications?", answer: "UAE family visa sponsorship requires proof of suitable accommodation through registered Ejari contract. Immigration authorities verify housing meets minimum standards for family size. Unregistered leases or hotel bookings typically do not qualify for family visa processing." },
+  { question: "Can I update Ejari if lease terms change during tenancy?", answer: "Yes, Ejari allows contract amendments for rent changes (rare mid-term), tenant additions/removals, or lease extensions. Amendments cost approximately AED 220 and require both parties' agreement. However, mid-term rent increases outside renewal are restricted by RERA regulations regardless of Ejari amendments." }
+]} />

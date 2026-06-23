@@ -31,6 +31,9 @@ faq:
   - question: "Is a Dubai RTA converted licence different from one earned through driving school?"
     answer: "No difference on the physical card. Both are UAE federal driving licences valid across all emirates. The conversion route simply skips the practical test for eligible nationalities."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Convert Foreign Driving Licence in Dubai: RTA 2026 Guide
 
 Quick answer: Eligible nationalities (UK, US, EU, GCC, Australia, and others) convert at an RTA Customer Happiness Centre for AED 220–550 plus eye test in 1–3 working days. Non-eligible nationalities complete a driving school route costing AED 3,500–8,000 over 6–14 weeks.
@@ -313,3 +316,13 @@ Yes for most stays over 3 years. Even though the card is renewed at visa renewal
 
 **Can I do the RTA process completely online?**
 Partial online submission possible for eligible nationalities. Eye test and document verification require an in-person visit at some stage. Check rta.ae for the current online eligibility.
+
+<FaqBlock items={[
+  { question: "Which countries can convert their licence in Dubai without a test?", answer: "RTA's approved list includes UK, Ireland, most EU countries, USA, Canada, Australia, New Zealand, Japan, Singapore, South Korea, and GCC states. The list changes, always verify on rta.ae before booking. Indian, Pakistani, Philippine, and Egyptian licences generally require full driving school." },
+  { question: "How much does it cost to convert a foreign licence in Dubai?", answer: "RTA conversion fee: AED 220–550 depending on validity period chosen (2 years or 10 years). Plus eye test AED 100–200. Total AED 320–750 for most eligible nationalities." },
+  { question: "What documents do I need to convert my licence in Dubai?", answer: "Emirates ID, original foreign driving licence, passport, eye test certificate (max 30 days old), passport photos (white background), and payment. Some nationalities need an official Arabic translation of their licence." },
+  { question: "Can I convert an expired foreign licence in Dubai?", answer: "No, RTA requires your foreign licence to be valid at the time of conversion. If it expired within the past year, check whether RTA accepts renewal letters. If expired over 12 months, you will likely need the full driving school route." },
+  { question: "How long does licence conversion take at Dubai RTA?", answer: "Most golden-country conversions complete in 1–3 working days once documents are accepted. Same-day processing possible at some centres. You can track application status via the RTA Smart app." },
+  { question: "What if my home country is not on the RTA approved list?", answer: "You must enrol at an RTA-approved driving school, complete theory and practical lessons, and pass the RTA test. Total cost AED 3,500–8,000 over 6–14 weeks. See the driving school section below for the full process." },
+  { question: "Is a Dubai RTA converted licence different from one earned through driving school?", answer: "No difference on the physical card. Both are UAE federal driving licences valid across all emirates. The conversion route simply skips the practical test for eligible nationalities." }
+]} />

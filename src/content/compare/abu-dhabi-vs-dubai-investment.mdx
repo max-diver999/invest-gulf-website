@@ -24,9 +24,16 @@ faq:
   - question: "How do transaction costs compare between Abu Dhabi and Dubai?"
     answer: "Both emirates charge 4% DLD fees plus 2% agent commission typically. Processing times and documentation requirements may vary between Dubai Land Department (DLD) and Abu Dhabi's ADREC, but total costs are similar for comparable properties."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Choosing between Abu Dhabi and Dubai is not about which emirate is "better", it is about liquidity vs stability, yield vs ticket size, and who your tenant is.
 
 Quick answer: Dubai wins for liquidity, resale depth, and short-term rental opportunities, while Abu Dhabi offers lower entry points, planned communities, and less volatility. Choose Dubai for maximum exit flexibility, Abu Dhabi for stability and potentially lower acquisition costs.
+
+<TldrBlock text="Dubai: higher yields (7–9%), more liquidity, global buyer base. Abu Dhabi: lower entry prices, stronger capital stability, growing Golden Visa demand. Dubai dominates off-plan volume; Abu Dhabi offers emerging-market upside via Yas, Saadiyat, Al Reem. Currency risk: zero — AED pegged to USD since 1997." />
 
 ## Snapshot comparison
 
@@ -381,3 +388,20 @@ Both emirates sit under UAE federal visa policy. Property qualification threshol
 - [Abu Dhabi investment guide](/guides/abu-dhabi-property-investment-guide/)
 - [Foreign ownership rules](/guides/can-foreigners-buy-property-uae/)
 - [Request a shortlist](/get-shortlist/) for both markets
+
+<InlineCta
+  headline="Dubai or Abu Dhabi — which fits your portfolio?"
+  subtext="Get a side-by-side analysis matched to your yield target and budget."
+  buttonText="Compare Markets Free"
+  buttonHref="/get-shortlist/"
+  ctaId="auh_vs_dxb_cta"
+/>
+
+<FaqBlock items={[
+  { question: "Is Abu Dhabi cheaper than Dubai for property?", answer: "Entry tickets in Abu Dhabi are often lower in emerging districts, while Dubai has more ultra-premium stock. Compare like-for-like (bed count, district tier, handover status), not emirate averages alone." },
+  { question: "Which emirate has better rental yields?", answer: "Dubai's larger short-let and expat tenant pool often supports higher gross yields in mid-market apartments. Abu Dhabi can offer stability and government-sector tenancy in select districts, yields vary by micro-location." },
+  { question: "Can I use the same Golden Visa rules for both?", answer: "Federal Golden Visa frameworks apply UAE-wide, but property documentation and processing may differ by emirate land department. Confirm current ICA guidance." },
+  { question: "Which market is better for first-time Gulf buyers?", answer: "Dubai usually wins on liquidity, broker ecosystem, and resale depth. Abu Dhabi suits buyers who prefer lower volatility and are comfortable with a smaller secondary market." },
+  { question: "What are typical property prices in Abu Dhabi vs Dubai in 2026?", answer: "Entry-level apartments start around AED 600k+ in Dubai's outer districts, while Abu Dhabi often offers lower entry points in emerging areas. Premium districts in both emirates can reach similar price ranges, but Dubai has more ultra-luxury inventory." },
+  { question: "How do transaction costs compare between Abu Dhabi and Dubai?", answer: "Both emirates charge 4% DLD fees plus 2% agent commission typically. Processing times and documentation requirements may vary between Dubai Land Department (DLD) and Abu Dhabi's ADREC, but total costs are similar for comparable properties." }
+]} />

@@ -31,6 +31,9 @@ faq:
   - question: "Do I need to speak Arabic to live in Oman?"
     answer: "No, English works for business and expat services in Muscat. However, learning basic Arabic helps with government processes, local markets, and cultural integration - Omanis appreciate the effort more than in UAE."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Oman Relocation Guide 2026: Visas, Muscat Life, Schools & First 90 Days
 
 Quick answer: Oman offers slower pace and 20-30% lower costs than Dubai but smaller expat infrastructure. Work visa takes 2-4 weeks, requires employer sponsor, budget OMR 3,000-5,000 for first 60 days. Foreign property limited to ITC zones.
@@ -490,3 +493,12 @@ Top tiers are solid; breadth and IB depth are smaller, visit campuses.
 **Scenario C — trial before buying in Oman:** Rent 12 months locally before property purchase. Oman tenancy evidence, visa rules, and cross-border tax reporting differ from other GCC hubs.
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "How long does Oman work visa processing take?", answer: "Employment visa processing typically takes 2-4 weeks from employer submission to ROP approval. Add 1-2 weeks for family dependant visas. Budget OMR 3,000-5,000 for first 60 days before salary starts." },
+  { question: "Can I buy property as a foreigner in Oman?", answer: "Yes, but only in designated Integrated Tourism Complexes (ITCs) like Al Mouj, Muscat Bay, Wave Muscat. General Muscat areas require Omani nationality. Property purchase doesn't automatically grant residence." },
+  { question: "Is Oman cheaper than UAE for expat families?", answer: "Yes, generally 20-30% lower cost of living than Dubai. Housing OMR 600-2,000/month vs AED 60,000-150,000+ in Dubai. International school fees also lower. However, luxury goods and dining options more limited." },
+  { question: "What's the minimum salary for Oman work visa?", answer: "Varies by nationality and profession - typically OMR 600-1,200+ for skilled professionals. Family visa sponsorship usually requires OMR 1,000+ monthly salary. Verify current ROP requirements with employer." },
+  { question: "How many international schools are in Muscat?", answer: "Around 15-20 quality international schools offering British, American, Indian, and IB curricula. Smaller selection than Dubai but fees 30-50% lower. Popular areas include Qurum, Al Khuwair, and Madinat Sultan Qaboos." },
+  { question: "Do I need to speak Arabic to live in Oman?", answer: "No, English works for business and expat services in Muscat. However, learning basic Arabic helps with government processes, local markets, and cultural integration - Omanis appreciate the effort more than in UAE." }
+]} />

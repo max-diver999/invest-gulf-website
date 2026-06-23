@@ -36,6 +36,9 @@ faq:
   - question: "What's the best Pearl district for quiet family life?"
     answer: "Viva Bahriya and some Qanat Quartier towers offer more family-oriented atmosphere. Avoid lower floors facing Porto Arabia promenade if noise-sensitive."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Living in The Pearl Qatar: Lifestyle, Freehold, Dining & Schools (2026)
 
 Quick answer: The Pearl offers Qatar's premier marina lifestyle with walkable dining, freehold opportunities, and resort-style living. Best for couples and small families with QAR 35,000+ household income who prioritize lifestyle convenience over space per riyal, accepting school bus commutes to West Bay/Education City.
@@ -354,3 +357,12 @@ If walkable dining and marina matter more than square metres per riyal, Pearl de
 | FAQ-friendly structure for Living The Pearl Qatar quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 *Humanized v5 full, 2026-06-04. Verify freehold and school routes at publish.*
+
+<FaqBlock items={[
+  { question: "Is The Pearl Qatar good for families with children?", answer: "Yes for small families (1-2 children) who accept school bus commutes and premium rent. Large families needing 4+ bedrooms at mid-budget usually fit better in Lusail or Al Wakrah areas." },
+  { question: "Can foreigners buy freehold property in The Pearl?", answer: "Many nationalities can purchase freehold in designated Pearl zones - verify current MOJ list. Purchase can support residency rules, but renting doesn't require freehold eligibility." },
+  { question: "How walkable is daily life in The Pearl?", answer: "Very walkable for dining and cafes along the marina. However, schools, major malls, and most offices require car or bus transport. It's pedestrian-friendly for leisure, not all daily needs." },
+  { question: "What do school fees plus Pearl rent cost together?", answer: "This creates the biggest budget stress - a 2BR Pearl apartment (QAR 14,000) plus two children in British mid-tier schools (QAR 12,000) totals QAR 26,000+ monthly before other expenses." },
+  { question: "How does Pearl compare to Dubai Marina lifestyle?", answer: "Similar visual density and marina dining culture but at smaller scale. The Pearl has fewer towers, less 24/7 activity, and different school geography than Dubai Marina." },
+  { question: "What's the best Pearl district for quiet family life?", answer: "Viva Bahriya and some Qanat Quartier towers offer more family-oriented atmosphere. Avoid lower floors facing Porto Arabia promenade if noise-sensitive." }
+]} />

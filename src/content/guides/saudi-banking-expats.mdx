@@ -37,6 +37,9 @@ faq:
   - question: "When can I get a credit card in Saudi Arabia?"
     answer: "Often after 3–6 months salary history through payroll bank. Salary threshold commonly SAR 5,000–8,000+, varies by bank and product."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Saudi Banking for Expats 2026: Al Rajhi, SNB, SABB, Iqama & Remittances
 
 TL;DR: Saudi household money runs on iqama-linked KYC and employer payroll assignment, not your home debit card. Open the salary account your HR mandates (Al Rajhi, SNB, Riyad Bank, SABB common), then add a second bank if remittance FX beats payroll bank. SAR pegged ~3.75 USD, stable for dollar earners. SAMA rules evolve; US/EU nationals face enhanced due diligence. Budget 1–4 weeks after iqama for full products. Hub: [Saudi Arabia relocation guide](/guides/saudi-arabia-relocation-guide/) (R70)
@@ -459,3 +462,14 @@ Week-by-week banking sits in [Saudi Arabia relocation guide](/guides/saudi-arabi
 ---
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Can expats open a bank account in Saudi Arabia?", answer: "Yes with valid iqama, employer salary letter and SAMA KYC. Visit visa holders generally cannot open full salary accounts until residence is issued. Timeline 1–4 weeks after iqama activation." },
+  { question: "Which banks do expats use in Saudi Arabia?", answer: "Al Rajhi, SNB (Saudi National Bank), Riyad Bank, SABB (HSBC), and Alinma are common. Employer may mandate payroll bank. Compare Islamic vs conventional on total fees." },
+  { question: "Do I need iqama to open a Saudi bank account?", answer: "Yes for standard retail salary products. Premium Residency holders have separate KYC paths, verify with bank and Premium Residency Center." },
+  { question: "Is Saudi banking Sharia-compliant?", answer: "Al Rajhi and Alinma are Islamic; SNB, Riyad and SABB offer conventional and Islamic windows. Compare profit rates vs interest framing on total cost." },
+  { question: "How do remittances work from Saudi Arabia?", answer: "SAR pegged ~3.75 USD. Banks and exchange houses (Al Rajhi, SNB, STC Pay partners) compete on FX spread, spread matters more than flat fee." },
+  { question: "Can women expats open bank accounts in Saudi Arabia?", answer: "Yes with iqama and independent KYC since reforms, employer letter may still be requested. Confirm branch policy; apps increasingly support women account holders." },
+  { question: "What is SAMA's role for expat banking?", answer: "Saudi Central Bank regulates KYC, consumer protection and wage protection style payroll discipline. Rules evolve, US/EU nationals may face enhanced due diligence." },
+  { question: "When can I get a credit card in Saudi Arabia?", answer: "Often after 3–6 months salary history through payroll bank. Salary threshold commonly SAR 5,000–8,000+, varies by bank and product." }
+]} />

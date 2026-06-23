@@ -32,6 +32,9 @@ faq:
   - question: "Should I choose CBSE or British schools near JVC?"
     answer: "Choose based on your child's background and future plans. CBSE schools near JVC cost AED 28,000-40,000 with strong academics for India-focused families. British schools cost AED 50,000-70,000 but offer broader international curricula and UK university pathways."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Schools Near JVC 2026: Value Rent, British & CBSE Options for Families
 
 TL;DR: JVC delivers Dubai's best value family COL equation, 3BR rent AED 11,000–16,000 with British mid schools 15–20 minutes away at AED 50,000–70,000/year or CBSE at AED 28,000–40,000. Sunmarke, Arcadia, and JSS clusters serve the district. School run crosses Al Khail and Hessa Street, test 07:30 Sunday, not Saturday night.
@@ -345,3 +348,12 @@ JVC school bus routes vary by cluster, confirm door-to-door coverage with the sc
 - Check latest KHDA or ADEK inspection report for schools referenced in Schools Near Jvc, not blog summaries.
 - Confirm curriculum continuity before mid-secondary transfers; exam board switches are costly at Year 10.
 - Secure a written seat offer before terminating your current school's place when following Schools Near Jvc.
+
+<FaqBlock items={[
+  { question: "What schools do JVC families typically choose?", answer: "JVC families often choose Sunmarke School (British, AED 45,000-65,000), Arcadia School (British, AED 50,000-70,000), JSS International (CBSE, AED 28,000-40,000), or commute to Dubai Hills schools 20-25 minutes away." },
+  { question: "How much do schools cost near JVC Dubai?", answer: "School fees range from AED 28,000-40,000 for quality CBSE schools to AED 50,000-70,000 for British mid-tier schools. Premium options may reach AED 75,000+, but JVC families typically choose value-focused schools matching the area's affordable rent." },
+  { question: "Is JVC good for families with children?", answer: "Yes, JVC offers Dubai's best value family equation with 3BR apartments at AED 11,000-16,000 rent plus quality schools within 15-20 minutes. It's ideal for budget-conscious families seeking good education without premium area rent." },
+  { question: "What are school commute times from JVC?", answer: "Most nearby schools are 15-20 minutes drive via Al Khail Road or Hessa Street. Morning rush hour can extend this to 25-30 minutes, so many families prefer school bus services or test drive routes during peak hours before committing." },
+  { question: "Are there school buses from JVC to nearby schools?", answer: "Yes, most schools serving JVC families offer bus routes, typically costing AED 6,000-8,000 annually per child. This eliminates daily school run logistics and helps avoid morning traffic congestion on Al Khail Road." },
+  { question: "Should I choose CBSE or British schools near JVC?", answer: "Choose based on your child's background and future plans. CBSE schools near JVC cost AED 28,000-40,000 with strong academics for India-focused families. British schools cost AED 50,000-70,000 but offer broader international curricula and UK university pathways." }
+]} />

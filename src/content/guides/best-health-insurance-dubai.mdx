@@ -32,6 +32,9 @@ faq:
   - question: "Can I buy health insurance in Dubai without an employer?"
     answer: "Yes. Several DHA-approved insurers sell individual and family plans directly, Cigna, Bupa, AXA, Daman, MetLife, and others. Plans purchased directly typically cost 20–40% more than group plans due to loss of pool pricing. Insurance brokers can help compare options. You will need a valid Emirates ID or visa to purchase."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: For comprehensive cover with top-tier hospital access, Cigna Global, Bupa International, and AXA Gulf lead the Dubai market. For mid-tier cover with strong local networks, Daman and MetLife offer solid value. The best plan is the one whose hospital network includes your preferred facilities, always verify before enrolling.
 
 TL;DR: Dubai's health insurance market is deep, over 40 DHA-approved insurers compete for expat business. The gap between a good and a bad plan rarely shows on the PDF; it shows when you need a specialist and discover your insurer's network excludes the hospitals you want. Bupa, Cigna, AXA, and Daman dominate the employer group market. For individuals buying directly, expect to pay 20–40% more than group rates. **Network quality, not brand, is the single most important selection criterion.** This guide covers the major insurers, plan tiers, costs, and what to check before signing. For the overall Dubai healthcare system overview, start with the [Dubai Healthcare Guide for Expats](/guides/gulf-healthcare-comparison/).
@@ -301,3 +304,11 @@ DHA does not currently operate a plan comparison portal. The best comparison res
 | International | USD 3,000–8,000 | Multi-country cover |
 | Maternity add-on | AED 3,000–8,000 | Waiting periods apply |
 | Optical/dental rider | AED 500–2,000 | Often capped |
+
+<FaqBlock items={[
+  { question: "Which health insurance is best for expats in Dubai?", answer: "The best plan depends on your needs and budget. For comprehensive cover with wide networks, Cigna Global, Bupa International, and AXA Gulf are consistently rated highest. For cost-effective mid-tier cover, Daman (NAS) and MetLife are solid options. Always verify the specific hospital network before enrolling, as plan names vary more than coverage quality." },
+  { question: "How much does health insurance cost in Dubai for expats?", answer: "Individual premiums range from AED 3,000–7,000/year for basic plans and AED 8,000–20,000/year for comprehensive cover. Family plans (2 adults, 2 children) typically cost AED 18,000–50,000/year. Employer-provided plans are included in your package; personal or investor visa holders pay out of pocket. The Essential Benefits Plan for low-income workers costs AED 500–650/year paid by the employer." },
+  { question: "What is a network hospital in Dubai health insurance?", answer: "A network hospital is a healthcare facility that has a direct billing agreement with your insurer. Treatment at in-network facilities is billed directly, you pay only the co-payment. Treatment at out-of-network facilities requires upfront payment and claim submission for reimbursement, often with a lower reimbursement percentage. Always check the insurer's current hospital network app before choosing a facility." },
+  { question: "Does health insurance in Dubai cover dental?", answer: "Basic and EBP plans exclude dental except emergency extractions. Enhanced plans often include a dental allowance of AED 500–2,000/year. Premium plans may include comprehensive dental with annual limits of AED 5,000–10,000. Specialist dental work (implants, orthodontics) requires specific dental riders. See the Dubai dental care costs guide for full breakdown." },
+  { question: "Can I buy health insurance in Dubai without an employer?", answer: "Yes. Several DHA-approved insurers sell individual and family plans directly, Cigna, Bupa, AXA, Daman, MetLife, and others. Plans purchased directly typically cost 20–40% more than group plans due to loss of pool pricing. Insurance brokers can help compare options. You will need a valid Emirates ID or visa to purchase." }
+]} />

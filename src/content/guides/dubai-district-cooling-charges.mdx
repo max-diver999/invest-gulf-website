@@ -32,6 +32,9 @@ faq:
   - question: "What happens if I don't pay district cooling bills?"
     answer: "Non-payment results in cooling disconnection within 7-14 days, separate from DEWA disconnection timelines. In Dubai summers, losing AC is not viable. Empower and Tabreed can also report non-payment to credit agencies and block future connections."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai District Cooling Charges 2026: Empower, Tabreed & Chiller Bills Explained
 
 TL;DR: District cooling (chiller) is separate from DEWA in most Dubai towers, billed by Empower, Tabreed, or community-specific providers. Expect AED 150–900/month depending on unit size and season; summer can double winter. A Marina 2BR at DEWA AED 450 + chiller AED 750 in August is normal, not a billing error. Always request 12 months of chiller bills before signing a lease.
@@ -343,3 +346,12 @@ Landlords comparing tower stock: request **last 12 months chiller invoices** fro
 - Sequence visa, housing, schooling, and banking steps so one bottleneck does not delay Dubai District Cooling Charges.
 - Treat guaranteed approval, yield, or visa timelines as red flags until a licensed adviser confirms in writing.
 - Keep 6–12 months of living costs in local currency while you validate Dubai District Cooling Charges assumptions on the ground.
+
+<FaqBlock items={[
+  { question: "How much does district cooling cost in Dubai per month?", answer: "District cooling bills range from AED 150-300/month in winter to AED 400-900/month in summer peak season, depending on unit size and usage. Studios typically pay AED 150-400/month while 3BR apartments can reach AED 600-900/month in July-August with heavy AC use." },
+  { question: "Is district cooling separate from DEWA bills?", answer: "Yes, district cooling is completely separate from DEWA electricity bills. You receive two utility bills - DEWA for general electricity and a separate chiller bill from providers like Empower, Tabreed, or community-specific operators. Both must be paid to avoid disconnection." },
+  { question: "Which Dubai areas use district cooling?", answer: "Most high-rise areas use district cooling including Dubai Marina, JLT, Downtown Dubai, Business Bay, DIFC, The Greens, Barsha Heights, and most Emaar/Nakheel tower developments. Older villas and some townhouses in Mirdif, Jumeirah use traditional AC with DEWA-only billing." },
+  { question: "Can I control district cooling costs?", answer: "Yes, set thermostats to 23-24°C instead of 18-20°C, use curtains during peak sun hours, ensure vents aren't blocked, and request building maintenance if your FCU seems inefficient. However, consumption-based billing means heavy use will always cost more than traditional AC." },
+  { question: "Should I budget for chiller bills before renting?", answer: "Absolutely essential. Always request 12 months of previous chiller bills before signing a lease. A Marina 2BR that seems well-priced at AED 8,000/month rent could cost an additional AED 400-800/month in chiller fees, significantly impacting your total housing budget." },
+  { question: "What happens if I don't pay district cooling bills?", answer: "Non-payment results in cooling disconnection within 7-14 days, separate from DEWA disconnection timelines. In Dubai summers, losing AC is not viable. Empower and Tabreed can also report non-payment to credit agencies and block future connections." }
+]} />

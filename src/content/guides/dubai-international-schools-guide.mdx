@@ -33,6 +33,9 @@ faq:
   - question: "What curriculum should I choose in Dubai?"
     answer: "Choose British IGCSE/A-Level for UK universities, American AP for US/Canada, IB for global mobility, or Indian CBSE for value and Indian university pathways."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai International Schools Guide 2026: KHDA Ratings, Curricula & Admissions
 
 TL;DR: Dubai has 200+ KHDA-regulated international schools, the densest school market in the Gulf. British and IB premium tiers run AED 85,000–120,000/year; Indian CBSE offers value at AED 25,000–40,000. Top Outstanding schools want applications 6–12 months before September start. Pick your school shortlist first, then hunt rent, a 25-minute school run at 7:15 AM is fine; the same route at 7:45 is gridlock.
@@ -358,3 +361,12 @@ Arabic as compulsory varies, MOE requirements differ for Arab vs non-Arab passpo
 - Check latest KHDA or ADEK inspection report for schools referenced in Dubai International Schools, not blog summaries.
 - Confirm curriculum continuity before mid-secondary transfers; exam board switches are costly at Year 10.
 - Secure a written seat offer before terminating your current school's place when following Dubai International Schools.
+
+<FaqBlock items={[
+  { question: "How many international schools are there in Dubai?", answer: "Dubai has over 200 KHDA-regulated international schools, making it the densest school market in the Gulf region." },
+  { question: "What do Dubai international school fees cost?", answer: "School fees range from AED 25,000-40,000 annually for Indian CBSE schools to AED 85,000-120,000 for premium British and IB schools." },
+  { question: "When should I apply for Dubai schools?", answer: "Apply 6-12 months before September start for premium schools. Outstanding British and IB schools fill early and have waiting lists." },
+  { question: "What is KHDA rating and why does it matter?", answer: "KHDA rates schools from Acceptable to Outstanding. The rating affects fee increase limits and indicates quality, but Outstanding schools across town may not be better than Very Good schools nearby." },
+  { question: "Do I need to choose my Dubai area based on schools?", answer: "Yes, school choice should drive your address decision. A 25-minute school run at 7:15 AM is acceptable, but the same route at 7:45 becomes gridlock." },
+  { question: "What curriculum should I choose in Dubai?", answer: "Choose British IGCSE/A-Level for UK universities, American AP for US/Canada, IB for global mobility, or Indian CBSE for value and Indian university pathways." }
+]} />

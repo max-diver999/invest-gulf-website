@@ -33,6 +33,9 @@ faq:
   - question: "Can I sell Dubai property remotely without visiting?"
     answer: "Yes, through a notarised Power of Attorney granted to a UAE-based representative. The POA must be attested for use at DLD trustee offices. Remote sellers still need NOC, DEWA clearance, and bank discharge coordinated locally. Independent legal review of the Form F protects against undervaluation or deposit disputes."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 TL;DR: Selling property in Dubai follows a regulated secondary-market process: agree price on Form F, obtain NOC from the developer, clear DEWA and any mortgage, then complete transfer at a DLD Registration Trustee with the 4% transfer fee paid by the buyer. The UAE charges no capital gains tax, but home-country tax may apply. Timeline is typically 4–8 weeks for cash sales. If your property underpins a Golden Visa, plan the exit against the AED 2M threshold before you list. For the buy-side mirror, see [How Foreigners Buy Property in Dubai](/guides/buy-property-dubai-foreigner/).
 
 ---
@@ -273,3 +276,14 @@ Selling in Dubai involves: agency commission 2 % of sale price, NOC from develop
 ### Transaction timeline and hidden fees
 
 Seller-side cost stack: agency commission (2 % standard), NOC fee from developer (500–5,000 AED), early mortgage settlement penalty (1–3 % of outstanding balance if applicable), and any outstanding service charges that must be cleared before the NOC is issued. Timeline for sellers: listing to MOU (1–3 weeks), MOU to NOC (5–10 working days), NOC to transfer at DLD trustee (1–3 working days). Total elapsed time: 4–7 weeks in a liquid market; off-plan assignments may take 6–10 weeks due to additional developer approvals.
+
+<FaqBlock items={[
+  { question: "How long does it take to sell property in Dubai?", answer: "A straightforward cash resale with clean documentation typically completes in 4–8 weeks from agreed price to DLD title transfer. NOC from the developer adds 5–15 working days. Mortgaged sales require bank discharge and can extend to 8–12 weeks. Peak market periods or incomplete service charge records can push timelines longer." },
+  { question: "What is an NOC and who pays for it when selling in Dubai?", answer: "A No Objection Certificate is issued by the developer or building management confirming the seller has no outstanding service charges or community dues. On the secondary market, the NOC fee (typically AED 500–5,000 depending on developer) is usually the seller's responsibility unless negotiated otherwise in the Form F contract." },
+  { question: "Do I pay tax on profit when selling Dubai property?", answer: "The UAE does not levy capital gains tax on property sales for individuals. Foreign sellers may still have tax obligations in their home country on worldwide gains. UK, US, EU, and Australian nationals should consult a cross-border tax adviser before assuming the sale is tax-free globally." },
+  { question: "Can I sell Dubai property if I still have a mortgage?", answer: "Yes. The buyer's funds (or their mortgage bank) pay off your outstanding UAE bank loan at DLD transfer. Your bank issues a liability letter, attends the trustee appointment, and receives settlement before the title passes to the buyer. Budget 2–4 weeks for bank coordination." },
+  { question: "What documents do I need to sell property in Dubai?", answer: "Original passport, Emirates ID (if resident), original Title Deed or Oqood certificate, NOC from developer, Form F (MOU) with buyer, DEWA clearance or final bill, and bank liability letter if mortgaged. Non-resident sellers use the same DLD process with passport identification." },
+  { question: "Does selling my Dubai property affect my Golden Visa?", answer: "The UAE Golden Visa tied to property investment generally requires maintaining qualifying registered real estate worth AED 2 million or more. If you sell below that threshold without replacing qualifying assets, renewal or status may be affected. Plan exit timing with immigration counsel, see our Golden Visa hub for current rules." },
+  { question: "What commission do sellers pay when listing in Dubai?", answer: "On the secondary market, the buyer typically pays the broker commission of 2% plus 5% VAT. Sellers can engage listing agents on separate terms. Off-plan resale before handover follows SPA assignment rules and developer admin fees, a different process from ready-property resale." },
+  { question: "Can I sell Dubai property remotely without visiting?", answer: "Yes, through a notarised Power of Attorney granted to a UAE-based representative. The POA must be attested for use at DLD trustee offices. Remote sellers still need NOC, DEWA clearance, and bank discharge coordinated locally. Independent legal review of the Form F protects against undervaluation or deposit disputes." }
+]} />

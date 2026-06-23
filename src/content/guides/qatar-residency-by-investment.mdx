@@ -34,6 +34,9 @@ faq:
   - question: "What is the difference between property residency and Qatar Permanent Residency?"
     answer: "Property investor permit (~QAR 730K) is renewable residency tied to ownership. Permanent Residency under Law 10/2018 requires 20+ years residence, Arabic proficiency, and other criteria with ~100 annual approvals, not a purchase-only path."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Qatar property residency requires ~QAR 730,000 purchase in MOJ-approved freehold zones (Pearl, Lusail, West Bay Lagoon) for a renewable residence permit. This is separate from Permanent Residency (Law 10/2018). Application through MOI after title registration takes weeks to months. Not automatic - requires separate application with background checks.
 
 Qatar residency by investment is not one programme, it is a stack of pathways where property ownership in MOJ-approved freehold zones can unlock a renewable residence permit from roughly QAR 730,000, while Permanent Residency under Law 10/2018 sits on a separate elite tier at QAR 3.65 million with caps and extra criteria. Developers blur these constantly. Immigration authorities do not.
@@ -408,3 +411,14 @@ Scenario A — qatar residency investment first filing: Start medical tests and 
 Scenario B — qatar residency investment family joining: Sequence sponsor salary proof, housing fit-out, and school admissions for qatar residency investment. Dependent visas bottleneck on Ejari or municipality tenancy evidence tied to Qatar Residency By Investment.
 
 Scenario C — qatar residency investment renewal: File at least 30 days before expiry on qatar residency investment status. Overstay fines and re-entry bans compound when you delay qatar residency investment paperwork.
+
+<FaqBlock items={[
+  { question: "How much property do I need to buy for Qatar residency?", answer: "Public sources cite approximately QAR 730,000 registered value in designated freehold zones for a renewable property investor permit (confirm current official rules). A higher tier around QAR 3.65 million is cited for longer-stay options. Permanent Residency under Law 10/2018 is a separate elite track, not automatic on any purchase." },
+  { question: "Which zones qualify for Qatar property residency?", answer: "The Pearl-Qatar, Lusail, West Bay Lagoon, and other MOJ-approved foreign freehold areas. Eligibility is building-specific, verify on Ministry of Justice register before deposit, not from marketing maps." },
+  { question: "Does buying property automatically give Qatar residency?", answer: "No. Purchase is prerequisite; MOI application is separate. Zone, title type, registered value, and background checks all apply. Denial after purchase creates serious financial risk, verify before signing SPA." },
+  { question: "How does Qatar compare to UAE Golden Visa for investors?", answer: "Qatar property permit from ~QAR 730K (~USD 200K) vs UAE Golden Visa at AED 2M (~USD 545K). Qatar offers lower capital bar but smaller property market and thinner resale. UAE offers deeper liquidity and 10-year Golden Visa documentation." },
+  { question: "Can I work in Qatar on property residency?", answer: "Property-linked residency does not automatically grant work rights. Local employment requires a separate employer work permit. Remote work for foreign employers needs correct visa category (confirm current official rules)." },
+  { question: "Can family members get residency through my property?", answer: "Dependant sponsorship may be available under MOI rules after primary holder approval (confirm current official rules). Not automatic at SPA signing, confirm with immigration consultant." },
+  { question: "Is mortgage allowed for Qatar residency property?", answer: "Mortgage treatment for residency qualification varies, some programmes require minimum equity or fully paid registered value (confirm current official rules). Confirm in writing before financing." },
+  { question: "What is the difference between property residency and Qatar Permanent Residency?", answer: "Property investor permit (~QAR 730K) is renewable residency tied to ownership. Permanent Residency under Law 10/2018 requires 20+ years residence, Arabic proficiency, and other criteria with ~100 annual approvals, not a purchase-only path." }
+]} />

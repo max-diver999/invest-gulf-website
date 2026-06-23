@@ -32,6 +32,8 @@ faq:
   - question: "Does Dubai Police Clearance show traffic fines?"
     answer: "No. The Police Clearance Certificate (Good Conduct Certificate) relates to criminal records and police cases, not traffic violations. Unpaid traffic fines do not appear on a Good Conduct Certificate. Traffic fines are a separate matter handled by the Roads and Transport Authority (RTA) and the Traffic Police department. However, outstanding criminal cases, court orders, or travel bans would affect the certificate."
 ---
+import FaqBlock from '../../components/FaqBlock.astro';
+
 import TldrBlock from '../../components/TldrBlock.astro';
 import InlineCta from '../../components/InlineCta.astro';
 
@@ -345,6 +347,14 @@ The Dubai Police Clearance Certificate is a straightforward process with a genui
   buttonHref="/get-shortlist/"
   ctaId="police_cert_cta"
 />
+<FaqBlock items={[
+  { question: "How do I get a Police Clearance Certificate in Dubai?", answer: "Dubai Police Clearance Certificates (Good Conduct Certificate) are obtained through the Dubai Police website (dubaipolice.gov.ae) or the Dubai Police app. You need a valid Emirates ID or passport number, a digital passport photo, and payment of the fee (AED 200 for standard processing). The certificate is typically issued within 3–5 business days online. Walk-in processing is available at main Dubai Police stations for urgent cases." },
+  { question: "How long does it take to get a Police Clearance from Dubai Police?", answer: "Standard online processing takes 3–5 business days. Walk-in urgent processing at Dubai Police General HQ in Al Twar takes 1–3 business days. Some applicants report receiving the certificate within 24 hours for straightforward cases. International apostille and attestation of the certificate adds 5–10 additional business days through the UAE Ministry of Foreign Affairs." },
+  { question: "What is the cost of a Dubai Police Clearance Certificate?", answer: "The standard fee is AED 200 for a Dubai Police Good Conduct Certificate. Urgent processing fees may apply if you request expedited service. Additional charges apply if you require attestation from the UAE Ministry of Foreign Affairs (MOFA attestation adds approximately AED 150–200 per document). Translation fees apply if the country requesting the certificate requires Arabic or another language version." },
+  { question: "Can I get a Dubai Police Clearance if I no longer live in the UAE?", answer: "Yes. Former UAE residents can apply for a Dubai Police Clearance Certificate remotely via the Dubai Police website using their former UAE residency number or passport number. You will need to provide your dates of UAE residency and personal details. Processing time may be slightly longer for former residents. Some applicants use authorised typing centres or PRO services in the UAE to assist with remote applications." },
+  { question: "Does Dubai Police Clearance show traffic fines?", answer: "No. The Police Clearance Certificate (Good Conduct Certificate) relates to criminal records and police cases, not traffic violations. Unpaid traffic fines do not appear on a Good Conduct Certificate. Traffic fines are a separate matter handled by the Roads and Transport Authority (RTA) and the Traffic Police department. However, outstanding criminal cases, court orders, or travel bans would affect the certificate." }
+]} />
+
 ## About Invest Gulf
 
 Invest Gulf publishes independent research on UAE and Gulf property investment for foreign buyers. Not a developer, not a broker, not a listing portal — all content is editorial. We cover Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman: yields, fees, off-plan risks, Golden Visa pathways, and cross-market comparisons. Site: invest-gulf.com.

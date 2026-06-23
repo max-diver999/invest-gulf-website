@@ -32,6 +32,9 @@ faq:
   - question: "What's the emergency number in Oman?"
     answer: "Call 9999 for ambulance and emergency services. Royal Oman Police also respond via 9999. Most private hospitals have 24/7 emergency departments with direct admission."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Oman Healthcare for Expats 2026: Public vs Private Muscat, Insurance & Costs
 
 Quick answer: Employed expats get employer medical insurance for private providers like Starcare, Apollo, Muscat Private, and NMC Royal hospitals. Basic coverage needs OMR 50-150/month family top-up, excludes dental/optical. Emergency dial 9999.
@@ -456,3 +459,12 @@ Add explicit lines when modelling [Muscat cost of living](/guides/muscat-cost-of
 Two-child family on basic tier: OMR 80–150/month all-in realistic, not zero because employer "has insurance."
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Is healthcare free for expats in Oman?", answer: "No, employed expats get employer medical insurance for private providers. MOH public hospitals exist but working expats typically use private networks (Starcare, Apollo, Muscat Private) for speed and English-speaking staff." },
+  { question: "What does basic employer medical cover in Muscat?", answer: "Usually OMR 15,000-50,000 annual limit with network providers, but family top-up costs OMR 50-150/month. Dental and optical often excluded or capped at OMR 200-500 annually." },
+  { question: "Which are the best private hospitals in Muscat?", answer: "Starcare Hospital, Apollo Hospital, Muscat Private Hospital, and NMC Royal Hospital are main expat choices. Network coverage depends on your employer's insurance contract." },
+  { question: "How much does private healthcare cost without insurance?", answer: "GP consultation OMR 15-25, specialist OMR 25-40, basic surgery OMR 500-2,000+. Emergency rooms charge OMR 10-20 registration plus procedures. Most expats rely on employer insurance." },
+  { question: "Can I use Dubai hospitals on Oman insurance?", answer: "Some premium plans cover emergency treatment in UAE/GCC, but routine care must be pre-authorized. Check your Schedule of Benefits for cross-border coverage before traveling for treatment." },
+  { question: "What's the emergency number in Oman?", answer: "Call 9999 for ambulance and emergency services. Royal Oman Police also respond via 9999. Most private hospitals have 24/7 emergency departments with direct admission." }
+]} />

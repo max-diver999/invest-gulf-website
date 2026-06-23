@@ -33,6 +33,9 @@ faq:
   - question: "Do Russians pay tax on Dubai rental income?"
     answer: "UAE: 0% personal income tax locally. Russian tax residency rules may still apply to worldwide income depending on days in Russia and tax status, consult qualified cross-border advisers (confirm current official rules)."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Russian and CIS buyers account for approximately 7–9% of Dubai's foreign property transactions with an average purchase value of AED 2.8–2.9 million. They have been part of Dubai's foreign investor base for two decades, through Marina lifestyle purchases, JVC yield portfolios, and Golden Visa clustering at AED 2 million. Dubai's appeal is structural: freehold title, English contracts, 0% UAE income tax, and a resale market deep enough to exit in weeks in active communities. None of that removes banking compliance, it sits alongside the purchase, not instead of it.
 
 Quick answer: Russian nationals buy freely in Dubai freehold zones. Banking is institution-specific KYC, not a blanket ban. UAE rental tax is 0%; Russian tax residents may owe RF reporting. Average purchase: AED 2.8–2.9M. Top areas: Palm, JBR, Marina, JVC. Golden Visa at AED 2M.
@@ -418,3 +421,14 @@ Russian-speaking buyers sometimes compare **Dubai vs Mediterranean residency mar
 Dubai's **regulatory clarity** and **English contracts** remain the Gulf default when **capital preservation and exit** matter alongside lifestyle.
 
 *Verify banking corridors, sanctions compliance, and immigration rules before transfer. Not legal or investment advice.*
+
+<FaqBlock items={[
+  { question: "Can Russian citizens buy property in Dubai?", answer: "Yes. Russian nationals can purchase freehold property in DLD-designated zones on the same legal basis as other foreign buyers. Dubai does not prohibit Russian passport holders from property ownership. Banking and transfer compliance are subject to institution-specific KYC, not a blanket ban." },
+  { question: "How do Russians transfer money to Dubai for property?", answer: "Via SWIFT from Russian or foreign banks where legally available, UAE exchange houses, or pre-existing UAE accounts. Corridor availability, currency controls, and documentation requirements change, verify with your bank and exchange provider before each milestone (confirm current official rules)." },
+  { question: "Does UAE Golden Visa work for Russian property buyers?", answer: "Golden Visa via property generally requires AED 2 million registered freehold value and eligible title (confirm with GDRFA/ICP). Russian nationals are not excluded as a category. Mortgage and off-plan rules apply equally, confirm net equity and Oqood eligibility before SPA." },
+  { question: "Which Dubai areas do Russian buyers prefer?", answer: "Dubai Marina, Palm Jumeirah, Downtown, JVC, and Business Bay, mix of lifestyle and yield. Russian-speaking community density is highest in Marina, JLT, and parts of Palm. Yield investors also target JVC and Sports City." },
+  { question: "Are Russian buyers blocked from UAE banks?", answer: "Not categorically. Banks apply risk-based KYC, source-of-funds checks, and sanctions screening per internal policy. Some institutions are stricter than others. Non-resident account opening may require higher minimum balances (confirm current official rules)." },
+  { question: "What are the main fees for Russian buyers?", answer: "Same as all foreign buyers: ~4% DLD, trustee fees, 2% broker on secondary, legal review. Total ready-purchase stack ~6–7%. Budget compliance documentation costs and potential FX spread on RUB conversion." },
+  { question: "Is Qatar an alternative for Russian property buyers?", answer: "Qatar offers property-linked residency from roughly QAR 730K in designated zones (confirm with MOI). Market is smaller and less liquid than Dubai. See UAE vs Qatar for Russian expats guide for relocation comparison." },
+  { question: "Do Russians pay tax on Dubai rental income?", answer: "UAE: 0% personal income tax locally. Russian tax residency rules may still apply to worldwide income depending on days in Russia and tax status, consult qualified cross-border advisers (confirm current official rules)." }
+]} />

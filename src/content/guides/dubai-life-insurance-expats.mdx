@@ -31,6 +31,9 @@ faq:
   - question: "Does employer life insurance in Dubai cover me if I resign?"
     answer: "Group life insurance provided by your employer covers you only while employed. If you resign, are made redundant, or transfer to a new employer, the group scheme cover ends. This is a critical planning gap, especially as Dubai has seen waves of redundancies. Holding a personal policy alongside your employer's group scheme ensures continuous coverage."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Life Insurance in Dubai for Expats: Term, Whole Life and Financial Planning Guide
 
 TL;DR: Dubai expats face a life insurance market that is both abundant and confusing, UAE-based term policies, offshore investment-linked plans, employer group schemes, and Sharia-compliant takaful all compete for your premium. For most expats, term life insurance offers the best value: pay a predictable premium for 20–25 years, receive a guaranteed lump sum payout if you die. Costs are genuinely low for healthy individuals under 45. The critical mistakes to avoid are: (1) relying solely on employer group cover which ends when you leave the job, and (2) buying complex investment-linked products with high surrender charges before understanding the real returns.
@@ -311,3 +314,11 @@ Always nominate specific beneficiaries on your policy documents. In the UAE, thi
 | How to avoid ILP pitfalls? | Get full charging schedule; model surrender value; use independent adviser |
 
 Life insurance is not the most exciting financial decision in Dubai, but it is one of the most consequential ones for expats with families. The absence of state safety nets makes personal cover genuinely essential rather than optional. The good news: term life insurance is inexpensive for healthy working-age expats, and the market in Dubai is competitive.
+
+<FaqBlock items={[
+  { question: "Is life insurance mandatory in Dubai for expats?", answer: "Life insurance is not legally mandatory for individuals in Dubai. However, if you take a UAE mortgage, the lender will require life/decreasing term insurance covering the loan amount as a condition of lending. Outside mortgages, life insurance is entirely voluntary but strongly advisable for expats with dependents in their home country who rely on their income." },
+  { question: "What type of life insurance is best for Dubai expats?", answer: "For most expats, a term life insurance policy provides the most cost-efficient protection. Term policies pay a lump sum if you die within the policy period, typically 10–30 years. Premiums are low for younger, healthy applicants. Whole-of-life and investment-linked policies (ILPs) are more expensive and complex, and are generally better suited to high-net-worth individuals with specific estate planning goals." },
+  { question: "Can I keep my Dubai life insurance policy if I leave the UAE?", answer: "It depends on the policy type and insurer. UAE-based term policies typically allow continued coverage if you pay premiums from abroad, but coverage may need to be reviewed for the new country of residence. Offshore life policies (Isle of Man, Cayman, Luxembourg-based) are specifically designed for globally mobile individuals and are more portable. Review portability clauses before purchasing." },
+  { question: "How much life insurance should an expat in Dubai have?", answer: "A common rule of thumb is 10x annual income, adjusted for actual liabilities. For a Dubai expat with a mortgage, school fees, and a spouse not working, coverage of AED 1.5–3M is common. Add the outstanding mortgage balance, plus 5–10 years of income replacement, plus any debts. Expats sending remittances home should factor the dependents' loss of support." },
+  { question: "Does employer life insurance in Dubai cover me if I resign?", answer: "Group life insurance provided by your employer covers you only while employed. If you resign, are made redundant, or transfer to a new employer, the group scheme cover ends. This is a critical planning gap, especially as Dubai has seen waves of redundancies. Holding a personal policy alongside your employer's group scheme ensures continuous coverage." }
+]} />

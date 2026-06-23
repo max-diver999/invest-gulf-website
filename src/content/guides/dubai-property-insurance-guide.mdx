@@ -33,6 +33,9 @@ faq:
   - question: "Are natural disasters covered?"
     answer: "Fire and storm clauses vary, flood and earthquake often excluded or sub-limited. Read policy schedule for UAE-specific exclusions."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Property Insurance Guide: Building, Contents & Landlord Cover
 
 TL;DR: Mortgage = building insurance mandatory. Strata master policy does not cover your interior. Budget AED 1.5–4K/year apartments, AED 3–8K villas. Landlords add liability + loss of rent. Activate before tenant or move-in. Hubs: [handover checklist](/guides/dubai-property-handover-checklist/) · [mortgage guide](/guides/dubai-mortgage-broker-guide/) · [landlord law](/guides/dubai-rental-law-landlord-guide/)
@@ -416,3 +419,14 @@ Takaful property coverage generally matches conventional insurance for:
 | School fees (mid-tier) | 25,000–95,000 AED | Per academic year near Dubai |
 | Daily commute sample | 30–45 minutes | Peak-hour Dubai corridor |
 | Golden Visa property | 2,000,000 AED | Fully paid threshold for Dubai |
+
+<FaqBlock items={[
+  { question: "Is property insurance mandatory in Dubai?", answer: "Not legally mandatory for all owners, but mortgage lenders require building insurance. Landlords should carry liability cover. Strata master policies rarely cover your unit interior or contents." },
+  { question: "How much does home insurance cost in Dubai?", answer: "Apartment building + contents packages often AED 1,500–4,000 per year for mid-value units. Villas AED 3,000–8,000+. Premium depends on rebuild value, contents sum insured, and optional landlord rent-loss cover." },
+  { question: "What does building insurance cover in Dubai?", answer: "Structure, fixtures, fire, flood (where included), explosion, and sometimes alternative accommodation. Does not cover tenant contents or wear and tear." },
+  { question: "Do I need insurance for off-plan property before handover?", answer: "Developer insurance covers construction phase. From snagging completion and handover, owner responsibility begins, arrange cover before tenant move-in or mortgage drawdown finalisation." },
+  { question: "Does service charge include insurance?", answer: "Master building policy for common areas only, not your apartment interior, contents, or liability to tenants. Read OC/strata schedule." },
+  { question: "What insurance do landlords need in Dubai?", answer: "Building cover minimum; add landlord liability, loss of rent (12 months typical option), and contents if furnished. Tenant should insure own contents separately." },
+  { question: "Will banks reject mortgage without insurance?", answer: "Yes, lender lists approved insurers; proof required at drawdown and renewal annually." },
+  { question: "Are natural disasters covered?", answer: "Fire and storm clauses vary, flood and earthquake often excluded or sub-limited. Read policy schedule for UAE-specific exclusions." }
+]} />

@@ -33,6 +33,9 @@ faq:
   - question: "Is Dubai better than UK or US property for Chinese investors?"
     answer: "Dubai offers 0% local income tax, Golden Visa at AED 2M, and USD-pegged currency. UK/US have higher transaction taxes and different residency rules. Dubai liquidity exceeds most Gulf peers but carries market-cycle risk like any property market."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Chinese buyers account for approximately 5–7% of Dubai's foreign property transactions with an average purchase value of AED 2.1 million. Investment spans Downtown trophy units, JVC yield portfolios, and family homes near international schools in Dubai Hills and Arabian Ranches. Dubai offers what many Chinese buyers seek: hard asset in USD-linked currency, freehold title, no local income tax on rent, and a Golden Visa at AED 2 million, a lower bar than many Western investment visa programmes.
 
 Quick answer: Chinese nationals buy freely in Dubai freehold zones. Fund via offshore/HK/SG banking or SAFE-compliant mainland channels. UAE rental tax is 0%; PRC tax residents may have CRS reporting obligations. Average purchase: AED 2.1M. Top areas: Downtown, Creek Harbour, Marina, JVC. Golden Visa at AED 2M.
@@ -372,3 +375,14 @@ Fraud risk is low in Tier 1 developer sales; **highest in assignment/resale** wi
 - [Request a shortlist](/get-shortlist/)
 
 *Verify SAFE, CRS, GDRFA, and DLD rules before transfer. Not legal or tax advice.*
+
+<FaqBlock items={[
+  { question: "Can Chinese citizens buy property in Dubai?", answer: "Yes. Chinese nationals, whether mainland residents or overseas Chinese, can own freehold property in DLD-designated zones. Dubai recorded 68% foreign buyer share in 2024; Chinese investors are a long-standing part of that pool with identical ownership rights to other foreign nationals." },
+  { question: "How do Chinese buyers send money to Dubai for property?", answer: "Via SWIFT from Hong Kong, Singapore, or other offshore accounts; UAE bank wires from existing accounts; or staged payments aligned with SPA milestones. Mainland China outbound property investment is subject to SAFE regulations, overseas Chinese and HK-based buyers often use international banking paths. Document every transfer for DLD and bank compliance." },
+  { question: "What is the Golden Visa threshold for Chinese buyers?", answer: "AED 2 million registered property value in qualifying freehold (confirm with GDRFA/ICP). Off-plan may qualify via Oqood. Full equity often required at threshold. 10-year renewable residency with family sponsorship typically available after title registration." },
+  { question: "Which Dubai areas do Chinese buyers prefer?", answer: "Downtown, Dubai Marina, Business Bay, and Palm for premium; JVC and Dubai Hills for yield and Golden Visa clustering. International City has historical Chinese tenant density. Choice depends on budget, school needs, and yield vs lifestyle." },
+  { question: "Do Chinese buyers pay tax on Dubai rental income?", answer: "UAE: 0% personal income tax locally. Mainland China tax residents may have CRS reporting and foreign income obligations, consult qualified PRC and cross-border tax advisers before purchase." },
+  { question: "Can Chinese nationals get UAE mortgages?", answer: "Yes, UAE banks lend to Chinese passport holders with income proof, bank statements, and property on approved lists. LTV and rates vary for residents vs non-residents. Compare conventional and Islamic products." },
+  { question: "What fees should Chinese buyers expect?", answer: "Ready purchase: ~4% DLD, trustee ~AED 4,000, broker 2% secondary, legal review AED 5,000–15,000. Total ~6–7% above price. Off-plan follows milestone registration per SPA." },
+  { question: "Is Dubai better than UK or US property for Chinese investors?", answer: "Dubai offers 0% local income tax, Golden Visa at AED 2M, and USD-pegged currency. UK/US have higher transaction taxes and different residency rules. Dubai liquidity exceeds most Gulf peers but carries market-cycle risk like any property market." }
+]} />

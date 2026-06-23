@@ -45,6 +45,9 @@ faq:
   - question: "What breaks expat banking in the first month?"
     answer: "Opening wrong payroll bank before checking employer mandate; sending large SWIFT without SOF letter; ignoring Islamic product profit-rate resets; using home debit card for rent (blocked or 3% FX fee); not activating SMS/OTP on local mobile number."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Gulf Banking Compared for Expats 2026: UAE, Qatar, Oman, Saudi & Bahrain
 
 TL;DR: Gulf household money runs on residency-linked KYC first, employer payroll rails second, remittance FX spread third, not which flag is on the debit card. UAE offers the widest pre-residency and digital-banking menu. Qatar and Saudi enforce salary-account discipline hardest. Bahrain punches above its size as a finance hub. Oman is smaller but adequate for Muscat family life. Compare Islamic vs conventional on total cost, not logo. Parent hub: [Gulf expat living comparison](/guides/gulf-expat-living-comparison/) (R105)
@@ -389,3 +392,18 @@ HSBC segments in UAE, Qatar, Bahrain, but compare total fees; local banks often 
 | FAQ-friendly structure for Gulf Banking Comparison Expats quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Which Gulf country is easiest for expats to open a bank account?", answer: "UAE (Dubai/Abu Dhabi) offers the widest non-resident and visit-visa pathways before full residency, though premium products still need Emirates ID. Qatar, Oman, Saudi and Bahrain generally require active residence (QID, iqama, CPR) before salary accounts unlock. Bahrain and UAE lead for pre-arrival planning flexibility." },
+  { question: "Are Gulf banks Islamic or conventional?", answer: "All five markets have both. UAE: Emirates Islamic alongside ENBD/FAB. Qatar: QIIB, QIB vs QNB/CBQ. Saudi: Al Rajhi, Alinma vs SNB/SABB. Oman: Bank Nizwa vs Bank Muscat. Bahrain: major Islamic windows at NBB/BBK. Compare total cost (profit rate, fees, FX spread) not branding alone." },
+  { question: "Which Gulf currency is most stable for remittances?", answer: "All GCC currencies except Kuwait are USD-pegged: AED ~3.6725, QAR ~3.64, OMR ~2.597, SAR ~3.75, BHD ~0.377. Peg stability is similar; remittance cost differences come from bank FX spread and corridor competition (India, Philippines, UK, Egypt)." },
+  { question: "Can I send money home from any Gulf country without tax?", answer: "Gulf states levy 0% personal income tax on typical employment, but home-country tax (UK, US, India, Germany) may still apply under CRS/FATCA. Banks report account data. Remittance itself is not taxed in Gulf, but source-of-funds checks apply on large transfers." },
+  { question: "Do I need employer salary transfer in every Gulf country?", answer: "Saudi and Qatar strongly enforce payroll-to-registered-account culture. UAE and Bahrain are flexible once resident, though employer may mandate payroll bank. Oman follows employer letter + salary certificate pattern. Credit products usually need 3–6 months salary history." },
+  { question: "Which Gulf country has best remittance rates to India?", answer: "Corridor competition shifts monthly. UAE exchange houses (Al Ansari, UAE Exchange) and app competitors (Wise where licensed) often beat bank spreads on INR. Saudi Al Rajhi and STC Pay corridors are strong. Compare live spread on AED/QAR/SAR/OMR/BHD to INR, not advertised flat fees." },
+  { question: "Can expats get mortgages in Gulf countries?", answer: "Yes in UAE, Qatar, Bahrain with residency + salary proof; LTV typically 50–80% for non-nationals depending on bank and property type. Oman limited to ITC/resident buyers. Saudi expanding in designated zones, verify REGA and bank policy. Non-resident mortgages exist in UAE at tighter LTV." },
+  { question: "What is AECB and does it matter outside UAE?", answer: "Al Etihad Credit Bureau is UAE-specific credit scoring affecting mortgages and cards. Qatar, Oman, Saudi and Bahrain have their own bureau or bank-internal scoring, UAE AECB does not transfer across borders when you relocate." },
+  { question: "How long to open a Gulf bank account after visa?", answer: "UAE: 1–7 days with Emirates ID. Qatar: 1–3 weeks after QID. Oman: 2–4 weeks. Saudi: 1–4 weeks after iqama. Bahrain: 1–2 weeks after CPR. Visit-visa UAE non-resident products: 1–3 weeks with reference letter." },
+  { question: "Should I use Wise or bank SWIFT for property deposits?", answer: "Large property transfers usually require bank SWIFT with source-of-funds documentation for AML. Wise and similar may work for smaller amounts but developers and escrow agents often insist on traceable bank transfer. Budget AED/QAR 50–150 SWIFT fee plus FX spread." },
+  { question: "Which Gulf country is best for banking hub careers?", answer: "Bahrain and UAE (DIFC/Dubai) host the deepest international banking talent pools. Qatar and Saudi growing under nationalisation policies. Oman smaller market. Choose by employer licence, not headline tax rate, all are 0% personal income tax on employment." },
+  { question: "What breaks expat banking in the first month?", answer: "Opening wrong payroll bank before checking employer mandate; sending large SWIFT without SOF letter; ignoring Islamic product profit-rate resets; using home debit card for rent (blocked or 3% FX fee); not activating SMS/OTP on local mobile number." }
+]} />

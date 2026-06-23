@@ -34,6 +34,9 @@ faq:
   - question: "What is the cheapest way to commute daily in Dubai?"
     answer: "The RTA Metro on Silver Nol class is the most cost-efficient option at AED 3.00–7.50 per trip depending on zones. Combining Metro with RTA buses (all covered by the same Nol tap) keeps monthly costs under AED 350. Shared taxis and carpooling apps like Hala are cheaper than solo rideshare for regular routes."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Transport Costs 2026: Metro, Taxi, Uber, Salik & Monthly Budgets
 
 TL;DR: A metro commuter crossing two zones 22 days a month pays AED 220–330. A car-dependent professional in a high-Salik corridor pays AED 800–1,600 monthly once you stack petrol, parking, and tolls. Dubai has no single transport cost, it depends entirely on where you live, where you work, and how many Salik gates sit between the two.
@@ -230,3 +233,12 @@ Salik PJSC has indicated potential new gate additions on Al Khail Road and Hessa
 | Car-dependent, 2-gate Salik daily commute | AED 900–1,400 |
 | Sharjah commuter, SZR route, own car | AED 700–1,200 |
 | Two-car household, mixed zones | AED 1,600–2,800 |
+
+<FaqBlock items={[
+  { question: "How much is a monthly transport budget in Dubai?", answer: "A metro-only commuter spending 22 working days spends AED 250–400/month depending on zones crossed. A car-dependent resident in a Salik-heavy corridor adds AED 80–300/month in tolls alone, plus petrol and parking. Combined monthly transport for a typical professional lands AED 600–1,800." },
+  { question: "What is a Nol card and which tier should I get?", answer: "A Nol card is the RTA contactless travel card for Dubai Metro, tram, bus, and water bus. Silver Nol (AED 25 to buy, AED 14 usable credit) works for standard class and is the default for most residents. Gold Nol gives access to first-class metro carriages at a 50% fare premium. Blue Nol is an ID-linked concession card for students and seniors." },
+  { question: "How much does a taxi cost in Dubai versus Uber or Careem?", answer: "Dubai Taxi Corporation metered fares start at a AED 5.00 flagfall (day) with AED 1.97/km. A typical 10 km airport-style trip runs AED 25–35. Uber and Careem quote upfront prices with no surge surprises at most hours, and are comparable within AED 5–8 for standard trips. Careem Cap (registered taxis inside Careem) are metered and slightly cheaper than Uber Pool alternatives." },
+  { question: "What is Salik and how much does it cost per month?", answer: "Salik is Dubai's RFID open-road toll system. Each passage through any of the six active gates costs AED 4. Residents living in Jumeirah or Al Barsha who commute to DIFC or Downtown cross two to four gates daily. At 40 crossings per month, Salik adds AED 160/month. Heavy cross-city commuters hitting five gates round-trip pay AED 400+ monthly." },
+  { question: "Can I live in Dubai without a car?", answer: "Yes, if you live and work along the Metro Red or Green Line. Areas like Dubai Marina, JLT, Business Bay, and Downtown are well served. However, JVC, Dubai Hills, Arabian Ranches, Mirdif, and most villa communities have minimal public transport, a car is effectively mandatory there." },
+  { question: "What is the cheapest way to commute daily in Dubai?", answer: "The RTA Metro on Silver Nol class is the most cost-efficient option at AED 3.00–7.50 per trip depending on zones. Combining Metro with RTA buses (all covered by the same Nol tap) keeps monthly costs under AED 350. Shared taxis and carpooling apps like Hala are cheaper than solo rideshare for regular routes." }
+]} />

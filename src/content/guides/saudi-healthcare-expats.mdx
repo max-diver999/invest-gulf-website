@@ -38,6 +38,9 @@ faq:
   - question: "How does Saudi healthcare compare to UAE?"
     answer: "Riyadh and Jeddah private tiers are strong for most needs; Dubai has broader medical tourism depth. Insurance class and network matter more than country branding."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Saudi Healthcare for Expats 2026: CCHI Insurance, Hospitals & Riyadh vs Jeddah
 
 TL;DR: Employed expats in Saudi Arabia rely on employer medical insurance regulated by Council of Health Insurance (CCHI), minimum Class C baseline, often upgraded. Read the Schedule of Benefits, not the HR welcome PDF. Private hospitals handle most outpatient; MOH enters for emergency routing. Emergency: 997. Maternity needs 10–12 month waiting planning. Conservative public norms do not remove clinical access, they shape how you dress and behave en route to hospital. Hub: [Saudi Arabia relocation guide](/guides/saudi-arabia-relocation-guide/) (R70)
@@ -529,3 +532,14 @@ Upgrade negotiation with HR before **open enrollment** if exists.
 | Employer insurance | SAR 2,500–8,000 | Mandatory for iqama |
 | Dental cleaning | SAR 250–500 | Often excluded |
 | ER visit | SAR 800–2,000 | Before claim |
+
+<FaqBlock items={[
+  { question: "Do expats get free healthcare in Saudi Arabia?", answer: "No universal free healthcare for expats comparable to nationals. Employed expats receive employer-mandated insurance meeting Council of Health Insurance minimum classes, read Schedule of Benefits, not HR headline." },
+  { question: "What is CCHI insurance in Saudi Arabia?", answer: "Council of Health Insurance regulates mandatory health insurance for private sector workers and dependants. Policies must meet class minimums, Class C baseline with employer upgrades common." },
+  { question: "Which hospitals do expats use in Riyadh?", answer: "Private networks include Dr Sulaiman Al Habib, Saudi German, King Faisal Specialist (referral-tier), and MOH facilities for emergency. Employer network list is authoritative." },
+  { question: "Is maternity covered for expat wives in Saudi Arabia?", answer: "Often yes on enhanced employer tiers after waiting periods, verify hospital network, neonatal ICU limits and 10–12 month maternity wait before pregnancy." },
+  { question: "What is the emergency number in Saudi Arabia?", answer: "997 for ambulance/medical emergency; 911 unified in many regions. Carry iqama and insurance card." },
+  { question: "Can women see male doctors in Saudi Arabia?", answer: "Yes in most private hospitals, gender preference accommodated where possible. Conservative public norms differ from clinical practice inside licensed facilities." },
+  { question: "Is mental healthcare available for expats in Saudi Arabia?", answer: "Growing availability in private sector, check policy psychiatric outpatient limits and in-network psychologists." },
+  { question: "How does Saudi healthcare compare to UAE?", answer: "Riyadh and Jeddah private tiers are strong for most needs; Dubai has broader medical tourism depth. Insurance class and network matter more than country branding." }
+]} />

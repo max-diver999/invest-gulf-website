@@ -34,6 +34,9 @@ faq:
   - question: "Can I bundle home internet and mobile on one account in Dubai?"
     answer: "Yes. Both du and e& offer converged home-and-mobile bundles. You connect your home fibre or 5G broadband plan with one or more mobile lines on the same account, gaining a discount of AED 50–150/month versus buying separately. These bundles also often include extra mobile data or free international call minutes."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Internet & Mobile Plans 2026: du vs e& Fibre, 5G & Family Bundles
 
 TL;DR: Home fibre broadband in Dubai costs AED 299–499/month for 100 Mbps to 2 Gbps. Both du and e& (formerly Etisalat) have near-identical pricing, with strong 5G home broadband as a cable-free alternative from AED 249–349/month. Postpaid mobile plans run AED 130–350/month for individuals with 30–unlimited GB. A family of four typically spends AED 400–700/month on mobile alone, or can bundle everything, home internet plus four SIMs, for AED 650–900/month with household discounts. Sorted within your first week after Emirates ID.
@@ -276,3 +279,12 @@ Yes, both du and e& offer converged accounts that save AED 150–300/month versu
 | FAQ-friendly structure for Dubai Internet Mobile Plans quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 > **Next step:** Once your connectivity is sorted, map your full monthly budget, rent, DEWA, school transport, car, and telecom together, in [Dubai monthly budget for expat families](/guides/dubai-monthly-budget-expat-family/).
+
+<FaqBlock items={[
+  { question: "How much does home internet cost in Dubai per month?", answer: "Home fibre broadband in Dubai costs AED 299–499/month depending on speed tier (100 Mbps to 2 Gbps). Both du and e& (formerly Etisalat) offer comparable pricing. Installation and router are typically free with a 12-month contract. Expect a one-time security deposit of AED 300–500." },
+  { question: "Which is better in Dubai: du or e& (Etisalat)?", answer: "Both cover Dubai well with fibre and 5G. e& has historically had stronger fibre infrastructure in older villa communities. du tends to offer more competitive bundle pricing and better 5G home broadband speeds in newer areas like Dubai Hills and JVC. Check postcode availability before committing." },
+  { question: "Can I use a prepaid SIM in Dubai as an expat?", answer: "Yes. Prepaid SIMs are available from du and e& at any store or kiosk for AED 55–75 including starter credit. You can recharge with daily, weekly, or monthly data packs. For longer stays, postpaid contracts give better data-per-dirham value and are recommended for residents with a valid Emirates ID." },
+  { question: "How much does a family mobile bundle cost in Dubai?", answer: "Family plans bundling 2–4 SIMs typically cost AED 300–650/month total. Both du and e& offer household discounts of 20–30% when you add two or more lines on the same account. The most common family setup (2 adults with 50–100GB plans each) runs AED 350–450/month combined." },
+  { question: "Is 5G home broadband as good as fibre in Dubai?", answer: "5G home routers deliver 200–600 Mbps consistently in most Dubai areas and are a strong alternative to fibre, especially in villas not yet fibred, or for residents who want a quick setup without technician visits. Latency is slightly higher than fibre (15–30ms vs 5–10ms), which matters for gaming or video calls but is negligible for streaming and browsing." },
+  { question: "Can I bundle home internet and mobile on one account in Dubai?", answer: "Yes. Both du and e& offer converged home-and-mobile bundles. You connect your home fibre or 5G broadband plan with one or more mobile lines on the same account, gaining a discount of AED 50–150/month versus buying separately. These bundles also often include extra mobile data or free international call minutes." }
+]} />

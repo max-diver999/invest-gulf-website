@@ -37,6 +37,9 @@ faq:
   - question: "Do I need medical insurance for Golden Residence?"
     answer: "Investor tracks have separate compliance, ** (confirm current official rules)**, do not assume employment policy transfers."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Bahrain Healthcare for Expats 2026: Public, Private Manama, NHRA & Insurance
 
 TL;DR: Employed Manama expats run healthcare through employer insurance, read the Schedule of Benefits, not the HR slide. NHRA regulates quality; Salmaniya anchors public care; private hospitals handle most English outpatient. Emergency: 999. Basic cover often needs BHD 30–80/month family top-up. Hubs: [Bahrain relocation guide](/guides/bahrain-relocation-guide/) (R91) · [Manama cost of living](/guides/manama-cost-of-living/) (R92)
@@ -345,3 +348,14 @@ Bahrain's bahrain healthcare guide numbers rarely match generic Gulf-wide estima
 ### Insurance plan tiers and out-of-pocket costs
 
 Bahrain health insurance tiers vary significantly. Basic employer-mandated plans cover outpatient visits up to 50,000–150,000 AED annually with 20 % co-pay. Mid-range plans (8,000–15,000 AED per person per year) reduce co-pay to 10 % and add dental, optical, and maternity. Premium plans (15,000–30,000 AED) offer zero co-pay. Common out-of-pocket expenses: dental crowns 2,500–6,000 AED, MRI scans 1,500–4,000 AED, physiotherapy 300–700 AED each, and chronic prescriptions 50–300 AED per month.
+
+<FaqBlock items={[
+  { question: "Is healthcare free for expats in Bahrain?", answer: "No universal free care for non-Bahrainis. Employed expats typically use employer medical insurance for private outpatient; public emergency access exists but billing and eligibility vary. Budget top-ups in manama-cost-of-living." },
+  { question: "What is NHRA in Bahrain healthcare?", answer: "National Health Regulatory Authority licenses facilities and practitioners, sets insurance standards and patient safety rules. Verify hospital NHRA licence before elective surgery." },
+  { question: "Which private hospitals do Manama expats use?", answer: "Common names include BDF Hospital (selected services), American Mission Hospital, Ibn Al-Nafees, Royal Bahrain Hospital, Al Hilal and specialty centres, always check your insurer in-network list first." },
+  { question: "Does employer insurance cover family in Bahrain?", answer: "Depends on contract tier. Basic may be employee-only; enhanced often adds spouse and children. Confirm Schedule of Benefits before dependants fly, see bahrain-family-visa timeline." },
+  { question: "What is the emergency number in Bahrain?", answer: "999 for ambulance and police medical emergency. Stabilisation first; insurance direct billing depends on hospital and policy." },
+  { question: "Is maternity covered for expats?", answer: "Often on enhanced tiers after 10–12 month waiting periods. Basic plans may exclude or cap maternity, plan pregnancy after insurance active date." },
+  { question: "How does Bahrain healthcare compare to Dubai?", answer: "Smaller specialist pool than Dubai but adequate for most family needs. Complex tertiary cases may refer regionally. : compact market, lower COL than Dubai." },
+  { question: "Do I need medical insurance for Golden Residence?", answer: "Investor tracks have separate compliance, ** (confirm current official rules)**, do not assume employment policy transfers." }
+]} />

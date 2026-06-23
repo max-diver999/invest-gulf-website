@@ -32,6 +32,9 @@ faq:
   - question: "How do I change salary bank mid-contract?"
     answer: "Submit new salary transfer letter to HR allowing one payroll cycle transition time. Employer may need to update banking arrangements with their payroll provider."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Oman Banking for Expats 2026: Bank Muscat, NBO, HSBC, Salary Accounts & Remittances
 
 Quick answer: Open employer-mandated salary account first (Bank Muscat/NBO/HSBC Oman most common), then compare remittance rates for second account if needed. Requires residence card and salary certificate - plan 2-4 weeks after visa approval. OMR pegged at ~0.385 USD provides stability.
@@ -470,3 +473,12 @@ Quarterly habit: same OMR 200 test transfer through two channels; screenshot rat
 | Minimum salary (account) | 5,000+ AED | Varies by bank |
 | Cheque book | 100–250 AED | If required |
 | CRS reporting threshold | Varies | Home-country rules for Oman Banking Expats |
+
+<FaqBlock items={[
+  { question: "Which bank is best for expats in Oman?", answer: "No universal winner - Bank Muscat if HR mandates; NBO for competitive retail products; HSBC Oman for international connections. Compare remittance rates to your home country on the same day before deciding." },
+  { question: "Can I open a bank account on visit visa in Oman?", answer: "Generally no for salary products - wait for employment residence card via employer PRO process. Most banks require valid residence card for account opening." },
+  { question: "How long does bank account opening take in Muscat?", answer: "Same day to 3 business days with complete documents and PRO escort. Timeline depends on having residence card and proper salary certificate from employer." },
+  { question: "Which bank offers best remittances to India/Philippines?", answer: "Changes monthly - compare Bank Muscat app, NBO app, and one exchange house on the same day. Focus on FX spread, not just transfer fees." },
+  { question: "Do I need minimum salary for Oman credit cards?", answer: "Most banks require OMR 600-900+ monthly salary credited to your account. New residents often get OMR 500-2,000 initial credit limits." },
+  { question: "How do I change salary bank mid-contract?", answer: "Submit new salary transfer letter to HR allowing one payroll cycle transition time. Employer may need to update banking arrangements with their payroll provider." }
+]} />

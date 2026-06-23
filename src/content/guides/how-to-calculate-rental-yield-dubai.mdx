@@ -34,6 +34,9 @@ faq:
   - question: "Can I use this same method for Abu Dhabi or other emirates?"
     answer: "Yes, the formula is identical. Change the inputs: Abu Dhabi service charges, DMT registration costs instead of DLD-only modelling, and local tenancy data sources. Dubai has the deepest published rental data; other emirates may require more agent-sourced comparables."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Every Dubai listing shows a yield percentage. Almost none shows how it was calculated, or what is left after service charges, vacancy, and management. This guide gives you the formulas, a full worked example on a realistic AED 850,000 JVC studio, and the data sources that separate marketing math from planning math.
 
 Quick answer: Gross yield = rent ÷ price. Net yield = (rent minus all operating costs) ÷ total capital deployed. For long-term lets in mid-market Dubai, expect 1.5–3 percentage points between gross and net. Use Ejari transacted rents, not portal listings. For the conceptual deep-dive on why marketing misleads, see [Gross vs Net Rental Yield in Dubai](/guides/gross-vs-net-yield-dubai/).
@@ -385,3 +388,14 @@ Pin this before any sales gallery visit.
 | Void weeks | Underwriter assumption | 4–6 conservative |
 | Maintenance | Owner actuals | AED 3–8/sqft/year |
 | Exit DLD | Resale stack | 4% + 2% agency typical |
+
+<FaqBlock items={[
+  { question: "What is the formula for gross rental yield in Dubai?", answer: "Gross rental yield = (Annual rental income ÷ Purchase price) × 100. Example: AED 60,000 annual rent on a AED 800,000 apartment = 7.5% gross yield. Use Ejari-registered or RERA transacted rents, not Property Finder listing prices, which typically run 5–10% higher than achieved rents." },
+  { question: "What is the formula for net rental yield in Dubai?", answer: "Net rental yield = (Annual rent − Service charges − Management fees − Vacancy allowance − Maintenance − Licensing costs if STR) ÷ Total acquisition cost × 100. Total acquisition cost should include purchase price plus DLD 4% and closing fees if you want yield on capital actually deployed." },
+  { question: "What costs reduce gross yield to net yield in Dubai?", answer: "The main deductions are: service charges (often AED 12–25/sqft/year in mid-market towers), property management (5–8% of rent for long-term lets), vacancy (realistically 4–8% of potential rent), maintenance provisions (AED 3,000–8,000/year on apartments), Ejari registration, and for short-term lets, DET permit fees, Tourism Dirham, and higher management percentages." },
+  { question: "Should I use purchase price or total acquisition cost for yield?", answer: "Both are valid, but label them clearly. Brokers quote yield on purchase price only. Conservative investors use total acquisition cost (price + 4% DLD + trustee + broker on secondary purchases) because that reflects cash actually invested. The difference is often 0.3–0.5 percentage points on net yield." },
+  { question: "Where do I find actual rental data for Dubai yield calculations?", answer: "Use RERA Ejari transacted data via the Dubai REST app, RERA Rental Index publications, and sold-rent comparables from licensed agents with Ejari history. Avoid calculating yield from Bayut or Property Finder advertised rents without discounting to transacted levels." },
+  { question: "What vacancy rate should I use in Dubai yield calculations?", answer: "For well-located long-term rentals in established communities, use 4–5% vacancy (roughly 2–3 weeks between tenancies). For citywide mid-market averages, 7–8% is more honest. Supply-heavy micro-locations or poor pricing can push effective vacancy to 10–12%." },
+  { question: "How much difference is there between gross and net yield in Dubai?", answer: "Typically 1.5–3 percentage points for long-term lets in mid-market towers with moderate service charges. Premium buildings with AED 25–35/sqft service charges can see 3–4 point gaps. A marketed 8% gross often becomes 5.5–6.5% net, sometimes lower on total acquisition cost." },
+  { question: "Can I use this same method for Abu Dhabi or other emirates?", answer: "Yes, the formula is identical. Change the inputs: Abu Dhabi service charges, DMT registration costs instead of DLD-only modelling, and local tenancy data sources. Dubai has the deepest published rental data; other emirates may require more agent-sourced comparables." }
+]} />

@@ -32,6 +32,9 @@ faq:
   - question: "Can my spouse drive on her foreign licence in Qatar?"
     answer: "Only short-term on visit visa. Once she has residence QID, she needs her own Qatar licence conversion - it's not automatic from the sponsor's licence. Each family member must convert independently if they want to drive."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Qatar Driving Licence 2026: Conversion, MOI Process, Insurance & Fines
 
 TL;DR: With a valid QID, many nationalities swap a foreign licence without a full test if their country sits on MOI golden / approved lists, everyone else takes lessons and a practical exam. Budget QAR 500–1,500 for conversion, eye test, and photos. Renting needs licence plus credit card; buying needs insurance, Istimara, and a parking plan at your compound. Pay fines on Metrash2. No Salik in Qatar, unlike Dubai there are no gate toll tags; fuel and parking drive running costs.
@@ -494,3 +497,12 @@ Three paths depending on your current licence status. Existing licence from an a
 **Path B — school route:** Non-eligible licences require Qatari driving institute enrollment. Allow 6–10 weeks in peak season; Lusail tram access reduces urgency but family compounds in Al Wakrah still need two cars.
 
 **Path C — employer-sponsored fleet:** Some employers arrange bulk conversions for new hires. Confirm whether fleet insurance covers personal weekend use before declining individual policy quotes.
+
+<FaqBlock items={[
+  { question: "Can I convert my foreign driving licence directly in Qatar?", answer: "Yes, if your country is on MOI's 'golden countries' list, you can convert without a practical test. Countries like UK, EU states, USA (some states), Canada, Australia often qualify for direct swap. You still need an eye test, valid QID, and licence must not be expired." },
+  { question: "Does Qatar have Salik toll system like Dubai?", answer: "No, Qatar does not operate Salik or any equivalent electronic toll gate system on Doha expressways. Unlike Dubai where you need Salik tags, Qatar's driving costs focus on fuel, insurance, parking (Mawgif zones), and fines - not toll top-ups." },
+  { question: "How much does it cost to get a Qatar driving licence?", answer: "For direct conversion: QAR 500-1,500 including eye test, fees, and photos. For full driving school route: QAR 2,500-5,000 total including school registration, lessons, test fees, and licence issuance. Budget varies by attempts needed and school chosen." },
+  { question: "What happens if I drive without a Qatar licence as a resident?", answer: "Heavy fines and insurance becomes void if you're caught. Visit visa holders can drive short-term with home licence plus IDP, but residents must obtain Qatar licence within the MOI grace period. Unlicensed driving stacks fines and creates personal liability." },
+  { question: "How do I pay traffic fines in Qatar?", answer: "Use the Metrash2 app - fund payments via debit card. Some fines offer 25% discount if paid early within the discount window. You can also check black points balance on Metrash2 to monitor accumulation toward licence suspension." },
+  { question: "Can my spouse drive on her foreign licence in Qatar?", answer: "Only short-term on visit visa. Once she has residence QID, she needs her own Qatar licence conversion - it's not automatic from the sponsor's licence. Each family member must convert independently if they want to drive." }
+]} />

@@ -33,6 +33,9 @@ faq:
   - question: "Can I drive between Abu Dhabi and Dubai with either licence?"
     answer: "Yes, UAE driving licences are federal, Abu Dhabi licence valid in Dubai and vice versa. Insurance, Salik account, and parking registrations may differ between emirates."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Abu Dhabi Driving Licence 2026: Conversion, Muroor, Parking & vs Dubai RTA
 
 Quick answer: Most Western/golden countries can convert foreign licences through Muroor for AED 800–2,500 plus eye test. Others need full driving school (AED 3,000–7,000). No Salik tolls in Abu Dhabi saves AED 100–300/month vs Dubai, but car ownership is essential due to limited public transport.
@@ -604,3 +607,12 @@ Cannot complete lawful registration chain.
 **Path B — foreign licence conversion:** Abu Dhabi Police accepts direct conversion from many countries after eye test and file opening. Fees differ slightly from Dubai RTA; book through Abu Dhabi Police service centres or approved apps.
 
 **Path C — new learner in Abu Dhabi:** Non-convertible licences follow Abu Dhabi driving institute curriculum. Factor school fees plus rental car needs in Khalifa City or MBZ if your employer is on Reem Island or Saadiyat.
+
+<FaqBlock items={[
+  { question: "Can I convert my foreign driving licence in Abu Dhabi?", answer: "Yes, if your country is on Muroor's approved golden countries list (includes UK, US, Canada, Australia, European nations, Japan, Singapore). Direct conversion costs AED 800–2,500 plus eye test. Other nationalities must take full driving course." },
+  { question: "How much does it cost to get Abu Dhabi driving licence?", answer: "Foreign licence conversion: AED 800–2,500 plus eye test and admin fees. Full driving school course for non-golden countries: AED 3,000–7,000 including theory, practical lessons, and testing." },
+  { question: "Is there Salik toll in Abu Dhabi?", answer: "No Salik tolls in Abu Dhabi emirate, significant cost saving vs Dubai where Salik adds AED 100–300/month for regular commuters. Abu Dhabi focuses on parking fees instead." },
+  { question: "Do I need a car in Abu Dhabi?", answer: "Yes for most lifestyles, no metro system like Dubai. Families typically need two cars for school runs and spouse mobility. Budget AED 2,500–4,500/month total including financing, insurance, parking, and petrol." },
+  { question: "Where do I apply for Abu Dhabi driving licence?", answer: "Muroor (Abu Dhabi Police Traffic Department) through their digital services platform or service centers. Book online first, bring Emirates ID, passport, foreign licence with translation, eye test certificate, and required photos." },
+  { question: "Can I drive between Abu Dhabi and Dubai with either licence?", answer: "Yes, UAE driving licences are federal, Abu Dhabi licence valid in Dubai and vice versa. Insurance, Salik account, and parking registrations may differ between emirates." }
+]} />

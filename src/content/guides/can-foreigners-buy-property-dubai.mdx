@@ -36,6 +36,9 @@ faq:
 
 noindex: true
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Foreign nationals do not need Emirati nationality, a UAE residence visa, or a local partner to own property in Dubai. They need a designated freehold zone, a DLD-registered transaction, and the discipline to verify **escrow** on off-plan deals. Roughly 68% of recent Dubai transactions were completed by foreign buyers, the process is built for international capital.
 
 Quick answer: **Yes**, foreigners buy **freehold** in 60+ Dubai zones registered with **DLD**. No visa required. Off-plan requires **RERA escrow**. This guide is **Dubai-only**; for Abu Dhabi, RAK, and emirate comparison, see [Can Foreigners Buy Property in the UAE](/guides/can-foreigners-buy-property-uae/).
@@ -386,3 +389,14 @@ Abu Dhabi and RAK offer alternatives, but Dubai is where foreign buyer infrastru
 - Underwrite buy-to-let in Dubai with real service charge filings and realistic void assumptions.
 - Book independent legal review on SPA default clauses before paying substantial deposits on Can Foreigners Buy Property Dubai.
 - Confirm Golden Visa or investor residency rules against fully paid versus mortgaged Dubai units.
+
+<FaqBlock items={[
+  { question: "Can non-UAE citizens buy property in Dubai?", answer: "Yes. Law No. 7 of 2006 allows non-GCC foreigners to own freehold property in Dubai's designated zones, registered with the Dubai Land Department (DLD). Foreign buyers accounted for roughly 68% of Dubai transactions in recent quarters. Ownership is evidenced by a DLD title deed or Oqood certificate for off-plan units." },
+  { question: "Do foreigners need a UAE visa to buy property in Dubai?", answer: "No. You can purchase on a tourist visa or entirely remotely using a notarised Power of Attorney. Residency is optional and separate, though qualifying purchases may support Golden Visa applications afterward." },
+  { question: "Which areas in Dubai are freehold for foreigners?", answer: "Over 60 designated zones include Dubai Marina, Downtown Dubai, Palm Jumeirah, Business Bay, JVC, Dubai Hills Estate, Arabian Ranches, Creek Harbour, and Dubai South. Outside designated zones, foreigners may only hold leasehold (usufruct) rights, not full freehold title." },
+  { question: "How is buying in Dubai different from buying in Abu Dhabi?", answer: "Dubai uses DLD and RERA with 60+ freehold zones and deep transaction volume. Abu Dhabi uses DMT with fewer designated investment zones under Law 13/2019. Fee schedules, registration portals, and Golden Visa processing differ. See our UAE-wide guide for Abu Dhabi and RAK, this article is Dubai-specific." },
+  { question: "What is RERA escrow and why does it matter?", answer: "RERA requires off-plan buyer payments into DLD-regulated escrow accounts, released to developers only against certified construction milestones. Never pay off-plan deposits to a developer's general corporate account. Verify escrow via Trakheesi and the Dubai REST app." },
+  { question: "Can foreigners get a mortgage in Dubai?", answer: "Yes. UAE banks lend to non-residents, typically up to 50% LTV on properties under AED 5 million. Residents may access higher LTV on first purchases. Down payment, salary documentation, and bank-specific criteria apply." },
+  { question: "Does buying Dubai property give UAE citizenship?", answer: "No. Property ownership may support residency applications such as the Golden Visa at AED 2 million registered value, but citizenship remains a separate discretionary process. See UAE Residency vs Citizenship for the full distinction." },
+  { question: "Can I buy Dubai property through a company?", answer: "Yes, via UAE mainland or free-zone entities, but corporate ownership introduces UAE corporate tax considerations and home-country substance rules. Most individual investors buy in personal name for simplicity. Get cross-border tax advice before using an SPV." }
+]} />

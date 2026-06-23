@@ -35,6 +35,9 @@ faq:
   - question: "What vaccines do pets need for Dubai entry?"
     answer: "Mandatory: current rabies vaccination minimum 21 days old. Recommended: DHPP for dogs, FVRCP for cats, plus country-specific requirements. All vaccines must be recorded in EU pet passport or equivalent official document with vet signatures and dates."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Moving Pets to Dubai 2026: Import Rules, Costs & Quarantine Guide
 
 TL;DR: Dubai pet import requires MOHRE permit (AED 200), microchip, rabies vaccination 21+ days old, and health certificate within 10 days of travel. No mandatory quarantine if requirements met. Budget AED 5,000-12,000 per pet total costs. Start process 4-6 months early for smooth relocation. Quick links: [Dubai relocation](/guides/dubai-relocation-guide/) · [Moving with family](/guides/moving-to-dubai-with-family/) · [First 30 days](/guides/first-30-days-dubai-expat/) · [Family budgets](/guides/dubai-monthly-budget-expat-family/)
@@ -537,3 +540,14 @@ Pet damage beyond normal wear may result in security deposit forfeit. Document p
 Yes, same companies handling entry often manage exit. Some destination countries require longer preparation than Dubai entry. Plan 3-4 months ahead for complex destinations.
 
 *June 2026, Invest Gulf Editorial. Pet import regulations subject to change; verify current requirements with UAE authorities and airlines before travel.*
+
+<FaqBlock items={[
+  { question: "How much does it cost to bring pets to Dubai?", answer: "Total costs range AED 5,000-12,000 per pet including import permit (AED 200), health certificates, rabies titer tests, flight costs, and agent fees. Add AED 2,000-4,000 if quarantine required. Cats typically cost less than dogs due to size restrictions on flights." },
+  { question: "Do pets need quarantine when entering Dubai?", answer: "No mandatory quarantine if pets meet all requirements, valid rabies vaccination, microchip, health certificate within 10 days, and approved airline carrier. Pets can go straight home after Dubai Municipality inspection at airport." },
+  { question: "Can I bring my cat or dog on Emirates flights?", answer: "Emirates allows pets in cabin (under 7kg total with carrier) or cargo hold. Book pet space early, limited slots available. Alternative carriers include Qatar Airways, Lufthansa, and KLM with different pet policies and routes." },
+  { question: "Which breeds are banned in Dubai?", answer: "Pitbull terriers, Staffordshire terriers, American bulldogs, and wolf-dog hybrids banned. Japanese Tosa restricted. Mixed breeds with banned characteristics also prohibited. Check Dubai Municipality current list before travel." },
+  { question: "How long before travel should I start pet import process?", answer: "Start 4-6 months ahead for complex cases. Rabies vaccination must be at least 21 days old, rabies titer test takes 2-4 weeks for results. Health certificate valid only 10 days, so timing is critical for smooth entry." },
+  { question: "Do I need a pet relocation agent?", answer: "Not mandatory but recommended for first-time relocators. Agents handle MOHRE permits, coordinate with Dubai Municipality, manage flight bookings, and provide airport clearance. Costs AED 2,000-4,000 but reduces stress significantly." },
+  { question: "Where can pets live in Dubai, apartments or villas?", answer: "Most villa communities welcome pets with registration. Dubai Marina, JBR towers typically restrict pets. Check tenancy contract pet clauses before signing lease. Villa communities offer more pet-friendly environments and walking areas." },
+  { question: "What vaccines do pets need for Dubai entry?", answer: "Mandatory: current rabies vaccination minimum 21 days old. Recommended: DHPP for dogs, FVRCP for cats, plus country-specific requirements. All vaccines must be recorded in EU pet passport or equivalent official document with vet signatures and dates." }
+]} />

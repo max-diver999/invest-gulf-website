@@ -28,6 +28,9 @@ faq:
   - question: "Can I get employer reimbursement for nursery fees in Dubai?"
     answer: "Some corporate packages include a childcare allowance of AED 1,500–3,000/month, particularly for senior roles or expat packages at multinationals and government-adjacent employers. Negotiate this during the offer stage, it is rarely listed in standard job offers but frequently granted when asked."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Nursery Fees 2026: Complete KHDA Guide to Early Years Costs
 
 TL;DR: Dubai nursery fees run AED 18,000–55,000 per year (AED 1,500–4,500/month). KHDA regulates all private nurseries and publishes ratings. Budget nurseries offer solid care at the lower end; Outstanding-rated EYFS and Montessori settings in premium areas command top rates. Plan 3–6 months ahead for popular spots, infant rooms fill especially fast.
@@ -271,3 +274,12 @@ For long-term household budget modelling, nursery fees alongside rent, insurance
 | **Documentation** | Passport, visa, birth certificate (attested), vaccination record, medical form. |
 
 Dubai nurseries vary significantly in quality and price, but the KHDA framework means every licensed setting is accountable to published standards. Use the inspection reports, visit during live activity time, and lock the choice before signing a lease, not after.
+
+<FaqBlock items={[
+  { question: "How much do nurseries cost in Dubai?", answer: "Dubai nursery fees range from AED 18,000 to AED 55,000 per year for full-time enrolment. Budget nurseries start around AED 1,500/month; premium EYFS or Montessori nurseries in Jumeirah or Dubai Hills charge AED 3,500–4,500/month. Registration fees of AED 1,000–2,500 and uniform/resource packs add AED 500–1,500 upfront." },
+  { question: "Does KHDA regulate Dubai nurseries?", answer: "Yes. KHDA inspects all private nurseries in Dubai and rates them Outstanding, Good, Acceptable, or Unsatisfactory, the same framework applied to schools. Ratings are published on the KHDA website and updated after each inspection cycle, typically every two years." },
+  { question: "What age can a child start nursery in Dubai?", answer: "Most KHDA-regulated nurseries accept children from 45 days old in their infant room. Toddler rooms typically start at 18 months, and the FS1 (Kindergarten 1) class, the main pre-school year, begins at age 3–3.5 depending on the nursery's intake policy." },
+  { question: "Is EYFS or Montessori better for Dubai nurseries?", answer: "Both are strong choices available across Dubai. EYFS (Early Years Foundation Stage) prepares children directly for British curriculum schools and is the most widely used framework. Montessori suits independent learners and works well if you are flexible about primary school curriculum. Choose based on the primary school your child will feed into." },
+  { question: "How far in advance should I apply for a Dubai nursery?", answer: "Apply 3–6 months before your desired start date for popular nurseries. Outstanding-rated nurseries in high-demand areas like Jumeirah, Downtown, and Dubai Hills fill quickly, especially for the September FS1 intake. Infant room places (under 2 years) often have 2–4 month waits year-round." },
+  { question: "Can I get employer reimbursement for nursery fees in Dubai?", answer: "Some corporate packages include a childcare allowance of AED 1,500–3,000/month, particularly for senior roles or expat packages at multinationals and government-adjacent employers. Negotiate this during the offer stage, it is rarely listed in standard job offers but frequently granted when asked." }
+]} />

@@ -30,6 +30,11 @@ faq:
   - question: "What is Ejari and when do I need it?"
     answer: "Ejari is the mandatory tenancy contract registration system administered by the Real Estate Regulatory Agency (RERA). If your property is tenanted, the seller must provide the active Ejari registration number so you can verify lease terms before transfer. As a new landlord, you register new tenancy contracts in Ejari to issue legal notices and enforce your rights."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Dubai property purchase involves Form F signing, NOC from developer (AED 500-5,000), and DLD transfer at trustee office with 4% transfer fee. Ready property completes in 2-5 days for cash buyers. Off-plan requires Oqood registration and RERA escrow payments. Total acquisition costs are 5-6% above purchase price, with title deed issued same day at transfer.
 
 Buying property in Dubai is one of the more transparent processes in the Gulf, but it has its own terminology, regulatory bodies, and sequencing that trips up first-time buyers every year. This guide covers the full process for both ready (secondary market) and off-plan purchases, with a separate section for buyers who cannot travel to Dubai.
@@ -37,6 +42,8 @@ Buying property in Dubai is one of the more transparent processes in the Gulf, b
 No fluff. Just the steps, the paperwork, and the mistakes that cost people money.
 
 ---
+
+<TldrBlock text="Dubai property purchase: 1) Agree price, pay 10% deposit + Form F. 2) DLD NOC from developer (AED 500–5,000). 3) Title transfer at DLD Trustee Office. 4) DLD fee 4% + AED 580 admin. 5) Collect title deed same day. Cash: 2–3 weeks. Mortgage: 4–8 weeks. Manager's cheques required at closing." />
 
 ## Before You Start: Three Foundations
 
@@ -318,3 +325,21 @@ Run through this before committing funds:
 Dubai's property market rewards buyers who do the process correctly. The DLD system is one of the most digitised in the Gulf, and RERA's escrow requirements offer real protection, but only if you verify them rather than take a developer's or broker's word for it.
 
 **Related reading:** [Cost of Buying Property in Dubai](/guides/cost-of-buying-property-dubai/) · [Can Foreigners Buy Property in the UAE? Fu…](/guides/can-foreigners-buy-property-uae/) · [Off-Plan Property Dubai](/guides/off-plan-property-dubai-guide/) · [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/) · [UAE Golden Visa Through Property (2026)](/guides/uae-golden-visa-property/).
+
+<InlineCta
+  headline="Ready to move forward with a Dubai purchase?"
+  subtext="Our team handles the full process — from offer to title deed — for international buyers."
+  buttonText="Start Your Purchase"
+  buttonHref="/get-shortlist/"
+  ctaId="buy_steps_cta"
+/>
+
+<FaqBlock items={[
+  { question: "How long does it take to buy a ready property in Dubai?", answer: "For a cash purchase, title deed transfer typically completes in 2–5 business days once the NOC is issued and the DLD trustee appointment is confirmed. Mortgage transactions add 2–4 weeks for bank valuation and liability letter processing." },
+  { question: "Can I buy Dubai property without being there in person?", answer: "Yes. A duly notarised and attested Power of Attorney (POA) allows an authorised representative to sign Form F, the SPA, NOC application, and conduct the DLD transfer on your behalf. The POA must be UAE-notarised or apostilled if issued abroad." },
+  { question: "What is Oqood and when does it replace a title deed?", answer: "Oqood is the off-plan property registration system run by the Dubai Land Department. When you buy an off-plan unit, the SPA is registered in Oqood and you receive an Oqood certificate. This converts to a full title deed once the developer completes the building and registers completion with the DLD." },
+  { question: "What is a NOC in Dubai property transactions?", answer: "A No Objection Certificate (NOC) is a letter from the developer confirming all service charges and dues are cleared and they have no objection to the ownership transfer. Without it, the DLD trustee will not process the transfer. NOC fees typically range from AED 500 to AED 5,000 depending on the developer." },
+  { question: "What is Form F in a Dubai property deal?", answer: "Form F is the official Memorandum of Understanding (MOU) issued by RERA. It sets out the agreed price, payment terms, completion date, and conditions. Both buyer and seller sign it, usually through the licensed broker. It is the binding pre-contract before the DLD transfer." },
+  { question: "How does the RERA escrow account protect off-plan buyers?", answer: "RERA regulations require developers to hold buyer payments in a dedicated escrow account linked to construction milestones, not the developer's operating account. The escrow trustee releases funds only when verified construction stages are reached. Buyers can check escrow registration status via the Dubai REST app." },
+  { question: "What is Ejari and when do I need it?", answer: "Ejari is the mandatory tenancy contract registration system administered by the Real Estate Regulatory Agency (RERA). If your property is tenanted, the seller must provide the active Ejari registration number so you can verify lease terms before transfer. As a new landlord, you register new tenancy contracts in Ejari to issue legal notices and enforce your rights." }
+]} />

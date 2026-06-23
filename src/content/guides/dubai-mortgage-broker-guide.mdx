@@ -34,6 +34,9 @@ faq:
   - question: "What fees come with UAE mortgages?"
     answer: "Arrangement 0.5–1% of loan, valuation AED 2,500–3,500, property insurance, life insurance optional, DLD mortgage registration fee 0.25% of loan amount plus admin."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Dubai Mortgage Broker Guide 2026: Rates, LTV, Banks & Expat Tips
 
 TL;DR: Expat salaried buyers get up to 80% LTV under AED 5M at ~4.5–5.5% fixed. Use broker for multi-bank compare or go direct if employer bank already aligned. Golden Visa + mortgage conflict at AED 2M, plan equity. Budget 1–1.5% arrangement + 0.25% DLD mortgage reg. Hubs: [non-resident mortgage](/guides/non-resident-mortgage-dubai/) · [Golden Visa mortgage](/guides/golden-visa-mortgage-property-uae/) · [buying costs](/guides/cost-of-buying-property-dubai/)
@@ -383,3 +386,14 @@ Financial planning should model these scenarios before SPA signature, exit costs
 - Underwrite buy-to-let in Dubai with real service charge filings and realistic void assumptions.
 - Book independent legal review on SPA default clauses before paying substantial deposits on Dubai Mortgage Broker.
 - Confirm Golden Visa or investor residency rules against fully paid versus mortgaged Dubai units.
+
+<FaqBlock items={[
+  { question: "Do I need a mortgage broker in Dubai?", answer: "Not mandatory, you can apply direct to banks. Brokers access multiple lenders, compare LTV and rates, and handle paperwork. Worth it for expats unfamiliar with UAE credit policies or non-resident buyers." },
+  { question: "What mortgage rates are available in Dubai in 2026?", answer: "Fixed rates roughly 4.5–5.5% for 1–5 year terms on expat salaried deals. Variable EIBOR-linked from ~4%. Non-resident and self-employed pay premium 0.5–1.5%." },
+  { question: "How much deposit do expats need for Dubai property?", answer: "UAE residents: typically 20–25% on first property under AED 5M (80% LTV max). Non-residents: 40–50% down common. Off-plan may differ by developer payment plan." },
+  { question: "Can I get a mortgage and Golden Visa?", answer: "Standard AED 2M Golden Visa route requires fully paid property, mortgaged units generally do not qualify until equity reaches threshold. See golden-visa-mortgage-property-uae." },
+  { question: "What salary is required for Dubai mortgage?", answer: "Most banks want minimum AED 15,000/month salary for expats; higher for joint applications. Self-employed need 2 years audited accounts." },
+  { question: "How long does Dubai mortgage approval take?", answer: "Pre-approval 3–7 days with complete docs. Final offer after valuation 2–4 weeks. Drawdown aligns with DLD trustee appointment." },
+  { question: "Is salary transfer mandatory?", answer: "Many banks require salary transfer to their account for best rates, factor switching cost if employer uses different bank." },
+  { question: "What fees come with UAE mortgages?", answer: "Arrangement 0.5–1% of loan, valuation AED 2,500–3,500, property insurance, life insurance optional, DLD mortgage registration fee 0.25% of loan amount plus admin." }
+]} />

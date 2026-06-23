@@ -30,11 +30,18 @@ faq:
   - question: "Are there annual property taxes in Dubai?"
     answer: "There is no annual property tax (rates or council tax equivalent) in Dubai. Service charges, paid to the building management company, are the closest ongoing cost, they fund maintenance, security, and common-area utilities. RERA publishes the Service Charge Index, allowing owners to benchmark what their tower charges against community norms."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Dubai property purchase costs total 6-9% above purchase price for cash buyers: 4% DLD transfer fee, 2% broker commission, AED 4,000 trustee registration, plus legal and mortgage fees. On AED 2M property, expect AED 120K-180K additional costs beyond the purchase price.
 
 The true cost of buying property in Dubai is 6–9% above the headline purchase price for cash buyers and up to 9–11% for mortgaged buyers once bank fees are included. Knowing every line item before you sign the SPA prevents surprises at the trustee office, and negotiation leverage you cannot recover after the fact.
 
 This guide breaks down every fee, gives AED-denominated worked examples, and explains the differences between buying off-plan and buying on the secondary market.
+
+<TldrBlock text="Total buying costs Dubai: DLD fee 4% + AED 580, agent commission 2%, mortgage registration 0.25% (if financed), NOC AED 500–5,000, trustee fee AED 4,000 (under AED 500K) or AED 8,000 (above). Budget 6–7% on top of purchase price for all-in closing costs." />
 
 ## The complete fee table at a glance
 
@@ -258,3 +265,21 @@ Model your total outlay before you sign the MOU. The numbers are clear and publi
 *Data references: Dubai Land Department fee schedule (2026), UAE Central Bank Mortgage Regulation, RERA Service Charge Index 2025/2026. This guide is for informational purposes. Fee schedules are subject to DLD revision. Verify current rates at dubailand.gov.ae before transacting.*
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/) · [How to Buy Property in Dubai](/guides/how-to-buy-property-dubai-step-by-step/) · [Off-Plan Property Dubai](/guides/off-plan-property-dubai-guide/) · [Can Foreigners Buy Property in the UAE? Fu…](/guides/can-foreigners-buy-property-uae/) · [Is Dubai Property Worth It in? Honest Numb…](/guides/is-dubai-property-worth-it-2026/).
+
+<InlineCta
+  headline="Want a precise cost estimate for your target property?"
+  subtext="We'll calculate total acquisition cost including DLD, agent, and mortgage fees."
+  buttonText="Get Full Cost Breakdown"
+  buttonHref="/get-shortlist/"
+  ctaId="cost_cta"
+/>
+
+<FaqBlock items={[
+  { question: "What is the total cost of buying property in Dubai?", answer: "Budget 6–9% of the purchase price on top of the headline figure. The biggest single item is the Dubai Land Department (DLD) transfer fee at 4%. Add 2% agency commission plus 5% VAT on commission, a trustee office fee of around AED 4,000–5,000, and mortgage registration if applicable. Cash buyers typically land at 6–7%, mortgaged buyers at 7–9% once the bank arrangement fee is included." },
+  { question: "How is the DLD transfer fee calculated in Dubai?", answer: "The Dubai Land Department charges 4% of the higher of the purchase price or the DLD's own valuation. It is split equally between buyer and seller by convention unless the SPA states otherwise. For off-plan purchases, a separate Oqood registration fee of 4% is paid when the unit is registered in the Interim Real Estate Register, you do not pay DLD transfer fee again at handover." },
+  { question: "Do you pay DLD fee twice on an off-plan property?", answer: "No. On off-plan purchases, the 4% Oqood fee registers your unit in the Interim Register. When the building completes and title deed is issued, no second 4% transfer fee is charged. This is different from the secondary market, where the full 4% DLD fee applies at every transfer." },
+  { question: "What mortgage fees apply when buying in Dubai?", answer: "A mortgage registration fee of 0.25% of the loan amount is payable to the Dubai Land Department. Banks also charge an arrangement fee, typically 1% of the loan or AED 10,000 minimum, plus a property valuation fee of AED 2,500–3,500. Total mortgage-related costs usually add 1.5–2% on top of the standard transaction fees." },
+  { question: "What is the down payment for foreigners buying in Dubai?", answer: "Expatriates and non-resident foreign nationals require a minimum 20% down payment on properties up to AED 5 million and 30% on properties above AED 5 million, per UAE Central Bank mortgage regulations. UAE nationals pay a minimum 15% down payment. Off-plan properties typically require 10–20% on booking, with the balance on a developer payment plan, no bank mortgage is needed until handover for most off-plan deals." },
+  { question: "What are the hidden costs of buying property in Dubai?", answer: "Beyond the headline fees: annual service charges (AED 10–30 per sq ft in older mid-market towers, AED 30–55 in branded residences), a NOC fee from the developer on resale (typically AED 500–5,000 depending on developer), conveyancing or legal review costs (AED 5,000–15,000 if you use a solicitor), and a move-in deposit or building registration charge levied by some community management companies. These do not affect closing costs but affect year-one total outlay." },
+  { question: "Are there annual property taxes in Dubai?", answer: "There is no annual property tax (rates or council tax equivalent) in Dubai. Service charges, paid to the building management company, are the closest ongoing cost, they fund maintenance, security, and common-area utilities. RERA publishes the Service Charge Index, allowing owners to benchmark what their tower charges against community norms." }
+]} />

@@ -33,6 +33,9 @@ faq:
   - question: "Do school buses serve Dubai Marina developments?"
     answer: "Yes, most major international schools offer dedicated bus routes to Dubai Marina developments. This service typically costs AED 6,000-9,000 annually per child but eliminates daily school run logistics for working parents."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Schools Near Dubai Marina 2026: British, IB & Commute Map for Families
 
 TL;DR: Dubai Marina has few schools inside the district, most families bus or drive 15–25 minutes to JLT, Emirates Hills, Al Sufouh or Knowledge Village clusters. British premium AED 85,000–110,000/year; mid-tier AED 55,000–75,000. Marina works for couples and primary-age with bus routes; families with multiple school-age children often outgrow Marina rent-per-bedroom and move to JVC or Dubai Hills within 2–3 years.
@@ -318,3 +321,12 @@ Marina school runs add 20–40 minutes at peak, test the commute before signing 
 - Check latest KHDA or ADEK inspection report for schools referenced in Schools Near Dubai Marina, not blog summaries.
 - Confirm curriculum continuity before mid-secondary transfers; exam board switches are costly at Year 10.
 - Secure a written seat offer before terminating your current school's place when following Schools Near Dubai Marina.
+
+<FaqBlock items={[
+  { question: "Are there good schools directly in Dubai Marina?", answer: "Dubai Marina has very few schools within the district itself. Most families use school buses or drive 15-25 minutes to excellent schools in JLT, Emirates Hills, Al Sufouh, or Knowledge Village clusters for better education options." },
+  { question: "What schools do Dubai Marina families typically choose?", answer: "Popular choices include JESS (Jumeirah campus 20 minutes), Kings College Dubai Hills (25 minutes), GEMS schools in various locations, and IB programs at schools like Dubai International Academy. School bus routes serve most developments." },
+  { question: "How much do schools cost for Dubai Marina families?", answer: "School fees range AED 55,000-110,000 annually. Premium British and IB schools cost AED 85,000-110,000/year, while quality mid-tier options run AED 55,000-75,000. Add AED 6,000-9,000 for bus transport if needed." },
+  { question: "Is Dubai Marina good for families with school-age children?", answer: "Marina works well for couples and families with primary-age children using school buses. However, families with multiple school-age children often find better value in JVC or Dubai Hills due to rent-per-bedroom costs and shorter school commutes." },
+  { question: "What are school commute times from Dubai Marina?", answer: "Most quality schools are 15-25 minutes drive from Marina developments. Morning traffic adds time, making school bus services attractive. JLT schools are closest at 10-15 minutes, while top schools in other areas take 20-25 minutes." },
+  { question: "Do school buses serve Dubai Marina developments?", answer: "Yes, most major international schools offer dedicated bus routes to Dubai Marina developments. This service typically costs AED 6,000-9,000 annually per child but eliminates daily school run logistics for working parents." }
+]} />

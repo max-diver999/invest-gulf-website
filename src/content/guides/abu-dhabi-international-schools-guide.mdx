@@ -32,6 +32,9 @@ faq:
   - question: "Is Abu Dhabi better than Dubai for expat families with children?"
     answer: "Abu Dhabi has smaller class sizes, less traffic density than Dubai, and a strong concentration of Outstanding-rated schools in compact areas like Saadiyat and Khalifa City. School fees are broadly similar. The trade-off is fewer total schools (roughly 170 vs 200+ in Dubai) and a quieter social scene, which suits some families and not others."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Abu Dhabi International Schools Guide 2026: ADEK, Fees & How to Choose
 
 **TL;DR:** Abu Dhabi has roughly **170 ADEK-regulated private schools**, with a tight cluster of Outstanding-rated British and IB options in **Saadiyat Island, Khalifa City** and the city centre. Indian CBSE is the value tier at **AED 14,000–28,000/year**; premium IB diploma years reach **AED 95,000**. Top schools want applications **6–12 months** before September start. Fix your school shortlist before you search for a flat, a 25-minute school run at 7:00 AM is manageable; the same route at 7:45 is a different calculation.
@@ -196,3 +199,12 @@ If you are also considering whether to buy rather than rent property while your 
 ## Related guides
 
 For families making a full UAE relocation decision, the school picture is one input into a wider set of choices. [Dubai relocation guide](/guides/dubai-relocation-guide/) covers the equivalent process for Dubai, which is useful if your employer location has not yet been finalised between the two cities.
+
+<FaqBlock items={[
+  { question: "How much do international schools cost in Abu Dhabi?", answer: "Abu Dhabi international school fees range from AED 14,000–28,000/year for Indian CBSE schools to AED 85,000–95,000/year for premium IB diploma programmes. British schools typically cost AED 35,000–90,000/year. Additional costs include registration (AED 2,000–8,000), school bus (AED 7,000–14,000), and exam fees at secondary level." },
+  { question: "What is ADEK and how does it rate Abu Dhabi schools?", answer: "ADEK (Abu Dhabi Department of Education and Knowledge) is the government body that regulates, inspects and rates all private schools in Abu Dhabi. Schools are rated Outstanding, Very Good, Good, Acceptable, Weak or Very Weak, the rating determines the maximum fee increase schools can apply annually." },
+  { question: "Which curriculum should expat families choose in Abu Dhabi?", answer: "Choose based on your child's likely university destination at 18. British IGCSE/A-Level suits UK university paths; American AP or SAT prep suits US/Canada; IB offers global mobility and is accepted worldwide; Indian CBSE delivers strong academics at AED 14,000–28,000/year. IB and British are the two most common choices among internationally mobile expat families." },
+  { question: "When should I apply to Abu Dhabi international schools?", answer: "Apply 6–12 months before your intended September start for Outstanding and Very Good rated schools. British and IB schools in Saadiyat, Khalifa City and Al Bateen fill quickly. Apply simultaneously to a shortlist of 3–5 schools across different tiers so you have confirmed options before signing a lease." },
+  { question: "Does it matter which area of Abu Dhabi I live in for schools?", answer: "Yes. School traffic on the Abu Dhabi island routes between 7:00 and 8:00 AM can double commute times. Families in Khalifa City A who school there avoid island bridge congestion entirely. Map the home → school → office triangle on a weekday morning before you commit to any lease." },
+  { question: "Is Abu Dhabi better than Dubai for expat families with children?", answer: "Abu Dhabi has smaller class sizes, less traffic density than Dubai, and a strong concentration of Outstanding-rated schools in compact areas like Saadiyat and Khalifa City. School fees are broadly similar. The trade-off is fewer total schools (roughly 170 vs 200+ in Dubai) and a quieter social scene, which suits some families and not others." }
+]} />

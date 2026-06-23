@@ -34,6 +34,9 @@ faq:
   - question: "What is source of funds for property purchases?"
     answer: "Documented trail showing origin of purchase money, salary accumulation, home-country asset sale, inheritance with legal proof. Banks scrutinize transfers above AED 50,000-100,000 for compliance."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Abu Dhabi Banking for Expats 2026: FAB, ADCB, ADIB, WPS & Remittances
 
 Quick answer: Open your salary account where HR mandates (usually FAB, ADCB, or ADIB) for WPS compliance, then add a second bank if remittance rates are better. Need Emirates ID, salary certificate, and Tawtheeq address proof. Budget AED 0-500 for opening; the real cost is FX spread on remittances, not transfer fees.
@@ -424,3 +427,12 @@ Often yes, salary at the employer bank, remittances through a competitor if FX i
 Parent hub: [Abu Dhabi cost of living](/guides/abu-dhabi-cost-of-living/), banking fees are minor vs rent and ADEK schools.
 
 *Humanized v5 full, 2026-06-04*
+
+<FaqBlock items={[
+  { question: "Which bank is best for expats in Abu Dhabi?", answer: "No single best bank, FAB if HR mandates it, ADCB for mixed conventional products, ADIB for Islamic banking. Compare remittance FX to your home corridor. Most employers mandate one bank for WPS payroll compliance." },
+  { question: "Can I open an account before Emirates ID?", answer: "Most banks require active residence Emirates ID. Some offer limited products with entry permit, ask branch directly. Plan 2–4 weeks after visa stamping for full account opening." },
+  { question: "What is WPS and do I need it?", answer: "Wage Protection System, employers must pay salary through registered UAE accounts. Your salary account IBAN must match HR's WPS file registration for monthly payroll." },
+  { question: "How do I send money home from Abu Dhabi?", answer: "Bank mobile app, exchange house, or SWIFT transfer. Compare FX spread against mid-market rates, not just transfer fees. Test small amount first before large remittances." },
+  { question: "What documents prove address for bank KYC?", answer: "Tawtheeq tenancy contract, ADD utility bill, or employer housing letter. Dubai Ejari is not valid for Abu Dhabi address updates, banks follow emirate-specific requirements." },
+  { question: "What is source of funds for property purchases?", answer: "Documented trail showing origin of purchase money, salary accumulation, home-country asset sale, inheritance with legal proof. Banks scrutinize transfers above AED 50,000-100,000 for compliance." }
+]} />

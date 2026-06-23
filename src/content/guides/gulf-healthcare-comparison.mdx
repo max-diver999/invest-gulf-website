@@ -44,6 +44,9 @@ faq:
   - question: "What is DHA Essential Benefits Plan?"
     answer: "Dubai mandatory minimum insurance framework, AED 560–650/year reference low tier (confirm current official rules). Covers basic outpatient/inpatient with caps. Employers must provide for employees earning under AED 4,000; dependant rules vary."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Gulf Healthcare Compared for Expats 2026: Public, Private, Insurance & Mandatory Rules
 
 TL;DR: UAE and Qatar lead private hospital depth and specialist access. Saudi is improving fast under Vision 2030. Bahrain covers Manama finance expats adequately. Oman handles Muscat family outpatient well, complex cases may evacuate to Dubai. Employer insurance is the default everywhere, read the Schedule of Benefits, not the HR welcome PDF. Mandatory statutory insurance is strictest in UAE (DHA/DOH). Emergency: 999 (most GCC), 9999 Oman. Parent hub: [Gulf expat living comparison](/guides/gulf-expat-living-comparison/) (R105)
@@ -389,3 +392,18 @@ Expats on long-term medication should verify **availability and insurance formul
 **Checklist before you commit:** insurer direct-billing list for your preferred hospital; maternity waiting periods; dental and optical sub-limits; evacuation cover if you travel regionally; CCHI (Saudi) or DHA/DOH network registration for dependants.
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Is health insurance mandatory for expats in the Gulf?", answer: "UAE (Dubai DHA, Abu Dhabi DOH) mandates employer-sponsored insurance for most visa holders. Qatar, Saudi, Bahrain and Oman rely heavily on employer medical cover, statutory mandatory models vary. Treat employer insurance as required for employed expats everywhere; verify emirate-specific DHA/DOH rules in UAE." },
+  { question: "Which Gulf country has the best healthcare for expats?", answer: "UAE (Dubai/Abu Dhabi) and Qatar offer the deepest private hospital networks and international specialists. Saudi improving fast in Riyadh/Jeddah. Bahrain adequate for Manama. Oman sufficient for Muscat family needs but smaller specialist pool, complex cases may transfer to Dubai." },
+  { question: "Can expats use public hospitals in the Gulf?", answer: "Yes in emergencies everywhere. Routine public access varies: Qatar Hamad with Health Card, Saudi MOH with insurance/card, UAE public available but most employed expats use private in-network. Oman MOH public exists; employed expats typically use private." },
+  { question: "How much does family health insurance cost in the Gulf?", answer: "Employer basic cover often included; family top-up indicative: UAE AED 1,500–6,000/month, Qatar QAR 500–2,000/month, Saudi SAR 500–2,000/month, Oman OMR 50–150/month, Bahrain BHD 50–200/month. Premium international plans higher." },
+  { question: "Is dental covered by Gulf employer insurance?", answer: "Usually excluded or capped AED/QAR 500–2,000/year on basic plans. Budget separate dental insurance or self-pay. Orthodontics rarely covered." },
+  { question: "Which emergency number do I call in each Gulf country?", answer: "UAE 998/999, Qatar 999, Oman 9999, Saudi 997, Bahrain 999. Major trauma routes to public flagship (Rashid Dubai, Hamad Doha, etc.)." },
+  { question: "Is maternity covered for expats in the Gulf?", answer: "Employer plans often cover maternity with 6–12 month waiting period on new policies. Book obstetrics early in Doha (Sidra) and Dubai private tiers. Verify network includes preferred hospital before conceiving." },
+  { question: "Do I need health insurance before UAE visa?", answer: "Dubai and Abu Dhabi require insurance activation linked to visa, employer arranges for employees. Dependants need coverage per DHA/DOH rules. Basic Essential Benefits Plan from ~AED 560/year low tier (confirm current official rules)." },
+  { question: "Can I keep UAE insurance when moving to Qatar?", answer: "No, policies are country and employer specific. Re-enroll on Qatari insurer through new employer; gap coverage with travel insurance during transition." },
+  { question: "Which Gulf country is best for retirees with health needs?", answer: "UAE retirement visa holders access private market depth. Oman quieter with adequate Muscat care. Bahrain compact. Saudi improving but conservative retiree infra. Compare insurance age limits, premiums rise after 60." },
+  { question: "Are mental health services available for Gulf expats?", answer: "Growing in UAE and Qatar private hospitals; stigma still affects uptake. Employer EAP programmes vary. Saudi expanding services, verify network." },
+  { question: "What is DHA Essential Benefits Plan?", answer: "Dubai mandatory minimum insurance framework, AED 560–650/year reference low tier (confirm current official rules). Covers basic outpatient/inpatient with caps. Employers must provide for employees earning under AED 4,000; dependant rules vary." }
+]} />

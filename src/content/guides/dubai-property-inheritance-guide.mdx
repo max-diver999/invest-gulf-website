@@ -33,6 +33,9 @@ faq:
   - question: "How does inheritance interact with UAE Golden Visa?"
     answer: "A deceased holder's Golden Visa does not automatically transfer to heirs. Beneficiaries who inherit qualifying property may apply independently if they meet current Golden Visa thresholds and registration rules. Spouse and children may need separate visa applications, see our Golden Visa hub for property route details."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 TL;DR: Dubai property does not automatically pass to your spouse or children under UK/US/EU default rules. Without a registered UAE will (DIFC or Abu Dhabi registry), Sharia succession principles may apply to UAE assets. Foreign non-Muslim owners should register a will before death, keep Title Deeds aligned with estate plans, and budget 2–6 months for probate. A AED 2M+ villa with no will is a legal problem, not just a family one. For ownership basics, see [How Foreigners Buy Property in Dubai](/guides/buy-property-dubai-foreigner/). For residency linked to property, see [UAE Golden Visa Property 2026](/guides/uae-golden-visa-property/).
 
 ---
@@ -302,3 +305,14 @@ Not all Dubai "property" follows identical inheritance paths:
 | [Can Foreigners Buy Property UAE](/guides/can-foreigners-buy-property-uae/) | Ownership scope |
 
 *Inheritance law in the UAE evolves. Federal personal status reforms affect non-Muslim succession. This guide is informational only, not legal or tax advice. Instruct a UAE-licensed succession lawyer and DIFC/Abu Dhabi registered draftsmen for your specific family structure.*
+
+<FaqBlock items={[
+  { question: "What happens to Dubai property when a foreign owner dies?", answer: "Without a registered UAE will, UAE courts may apply Sharia inheritance principles to Dubai assets, which can differ sharply from home-country expectations. Non-Muslim foreign owners can register a will with DIFC Courts or the Abu Dhabi wills registry to specify beneficiaries. The Title Deed cannot transfer to heirs until probate or court succession orders are completed." },
+  { question: "Can non-Muslims avoid Sharia law for Dubai property?", answer: "Yes, by registering a valid will under DIFC Wills and Probate Registry or the Abu Dhabi non-Muslim wills system before death. The will must meet formal requirements: capacity, witnesses, registration, and scope covering UAE assets. A will prepared only in your home country may not be recognised efficiently in Dubai without additional probate steps." },
+  { question: "How much does a DIFC will cost in Dubai?", answer: "DIFC will registration packages commonly run AED 5,000–15,000+ depending on complexity, number of assets, and whether mirror wills for spouses are included. Abu Dhabi registry fees follow a separate schedule. This is modest relative to a Dubai property worth AED 2M+ but often skipped until too late." },
+  { question: "How long does Dubai property probate take?", answer: "Simple registered-will probates through DIFC can take 2–6 months. Contested estates, absent wills, or multi-jurisdiction assets extend to 12 months or longer. Title Deed transfer to heirs happens only after the court issues succession orders and DLD accepts the transfer documentation." },
+  { question: "Can I leave Dubai property to my children in equal shares?", answer: "With a valid DIFC or Abu Dhabi registered will, yes, you can specify equal or unequal shares among children, spouse, or other beneficiaries. Without a will, Sharia fixed-share rules may apply, which typically differ from equal division norms in UK, US, or European law." },
+  { question: "Does joint ownership affect inheritance in Dubai?", answer: "Yes. Property held jointly with rights of survivorship (where valid under registered structure) may pass outside the estate to the surviving joint owner. Tenancy-in-common or single-name Title Deeds pass through estate rules. Check how your Title Deed is registered, the DLD register is definitive." },
+  { question: "What documents do heirs need to claim Dubai property?", answer: "Death certificate, court probate order or DIFC grant of probate, valid passports and visas of heirs, original Title Deed, NOC if required, and DLD transfer forms. Non-resident heirs often use Power of Attorney for UAE representatives. Each heir may need to meet DLD identification requirements." },
+  { question: "How does inheritance interact with UAE Golden Visa?", answer: "A deceased holder's Golden Visa does not automatically transfer to heirs. Beneficiaries who inherit qualifying property may apply independently if they meet current Golden Visa thresholds and registration rules. Spouse and children may need separate visa applications, see our Golden Visa hub for property route details." }
+]} />

@@ -27,11 +27,18 @@ faq:
   - question: "Which emirates have the most freehold options for foreigners?"
     answer: "Dubai has the deepest foreign freehold map. Abu Dhabi has expanding designated zones. RAK and Ajman offer limited freehold pockets. Sharjah has stricter foreign ownership, many products are leasehold or require local partner structures."
 ---
+
+import TldrBlock from '../../components/TldrBlock.astro';
+import InlineCta from '../../components/InlineCta.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Freehold vs leasehold in the UAE determines whether you own an asset permanently or rent time on it. In a market where 68% of Dubai buyers are foreign nationals, title-type mistakes are expensive and avoidable. The good news: **virtually all investor-grade stock in Dubai's major communities is freehold. The risk lives in edge cases**, older sub-divisions, northern emirate listings, and broker language that says "ownership" when the register says 99-year lease.
 
 Quick answer: Freehold grants perpetual ownership in designated UAE zones, qualifying for Golden Visa and full mortgage access. Leasehold gives fixed-term rights (typically 99 years) but limits financing, resale liquidity, and visa eligibility. Foreign investors should target freehold in Dubai/Abu Dhabi designated zones for maximum flexibility.
 
 This comparison covers all seven emirates at a practical investor level: what each title means, where leasehold still appears, how it affects mortgage, resale, Golden Visa, and inheritance.
+
+<TldrBlock text="Freehold = full ownership title, inheritable, mortgageable. Leasehold = 99-year right to use, no land ownership. In Dubai: foreigners can only buy freehold in designated zones (DLD list). Abu Dhabi: investment zones allow freehold for foreigners. Always verify DLD/ADREC title type before paying deposit." />
 
 ## Ownership types at a glance
 
@@ -302,3 +309,20 @@ In communities where both exist, freehold units historically trade **8–15% pre
 *Title rules vary by emirate and plot. Verify with land department and qualified solicitor. Not legal advice.*
 
 **Related reading:** [How Foreigners Buy Property in Dubai](/guides/buy-property-dubai-foreigner/).
+
+<InlineCta
+  headline="Not sure which title type fits your goals?"
+  subtext="Our research team explains freehold zones and title verification for your target area."
+  buttonText="Ask a Question"
+  buttonHref="/get-shortlist/"
+  ctaId="freehold_cta"
+/>
+
+<FaqBlock items={[
+  { question: "What is the difference between freehold and leasehold in the UAE?", answer: "Freehold grants perpetual ownership registered with the land department until you sell or transfer. Leasehold grants use rights for a fixed term, commonly 99 years, after which ownership reverts to the land freeholder. Foreign investors should target designated freehold zones; leasehold appears in older pockets and some northern emirate stock." },
+  { question: "Can foreigners buy freehold in the UAE?", answer: "Yes, in designated freehold zones across Dubai, Abu Dhabi, and select other emirates. Over 60 Dubai communities are foreign-freehold designated. Outside those zones, ownership rules restrict non-GCC nationals. Verification via official land department records is mandatory." },
+  { question: "Is leasehold a bad investment in the UAE?", answer: "Not automatically. A 99-year lease registered in 2026 expires in 2125, beyond most investment horizons. Risks emerge as the term shortens: mortgage availability tightens, resale liquidity falls, and marketability declines. For 5–10 year holds, long leasehold can function like freehold if terms are clear." },
+  { question: "How do I verify ownership type before buying?", answer: "Dubai: request DLD Unit Profile via Dubai REST or Registration Trustee. Abu Dhabi: ADREC records. Never rely on broker verbal assurances, the official register states Freehold, Leasehold, or Common Hold/Jointly Owned Property." },
+  { question: "Does leasehold affect UAE Golden Visa?", answer: "Golden Visa property qualification requires eligible freehold ownership at AED 2 million registered value (confirm registered value with ICP/GDRFA). Leasehold may not qualify, confirm ownership classification before purchasing for residency purposes." },
+  { question: "Which emirates have the most freehold options for foreigners?", answer: "Dubai has the deepest foreign freehold map. Abu Dhabi has expanding designated zones. RAK and Ajman offer limited freehold pockets. Sharjah has stricter foreign ownership, many products are leasehold or require local partner structures." }
+]} />

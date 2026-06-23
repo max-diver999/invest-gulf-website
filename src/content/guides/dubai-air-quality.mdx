@@ -28,6 +28,9 @@ faq:
   - question: "Does Dubai have air quality monitoring?"
     answer: "Yes. Dubai Municipality operates an air quality monitoring network across the emirate. Real-time data is accessible via IQAir's Dubai pages and the UAE Environment Agency. During major dust events, health advisories are issued. Wearable and home sensors (PurpleAir, IQAir AirVisual) give hyperlocal data."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 **TL;DR:** Dubai's air quality is moderate, better than most Middle Eastern cities and significantly better than major South Asian hubs, but worse than European baselines. The dominant issue is desert dust (PM2.5/PM10) peaking in spring. Healthy adults will not typically notice problems day-to-day; people with respiratory conditions or families with young children should understand the seasonal pattern, invest in HEPA filtration, and monitor AQI during Shamal wind events.
 
 ---
@@ -268,3 +271,12 @@ Dubai's air quality is a managed factor in a generally good quality-of-life envi
 ### Monthly cost benchmarks — 2025–2026
 
 Dubai's dubai air quality numbers rarely match generic Gulf-wide estimates — here are the local figures. Studio rent: 3,000–5,500 AED. 1-bed: 4,500–8,000 AED. 2-bed: 7,000–14,000 AED. Villa: 12,000–35,000 AED. Groceries (single): 1,200–2,000 AED. Utilities (apartment): 400–900 AED. Telecom: 300–600 AED. Gym: 200–600 AED per month. Coffee: 18–30 AED. Metro single trip: 3–8.50 AED. Taxi (10 km): 25–45 AED. Dining out: 30–120 AED per meal. Cinema: 40–80 AED. Brunch: 200–600 AED per person.
+
+<FaqBlock items={[
+  { question: "Is Dubai's air quality good or bad?", answer: "Dubai's air quality is moderate by global standards. The main issue is particulate matter (PM2.5 and PM10) from desert dust, construction activity, and traffic. Most days fall in the AQI 50–100 range. This is significantly better than major South Asian and Chinese cities, but worse than most Northern European cities." },
+  { question: "When is dust season in Dubai?", answer: "The primary dust season runs from March through June, with peak activity in April and May when Shamal winds bring dust from the Arabian Peninsula and beyond. Secondary dust events occur in late summer. January–February and October–November are typically the cleanest months." },
+  { question: "Do I need an air purifier in Dubai?", answer: "An air purifier with a HEPA filter is recommended for apartments in Dubai, particularly those near major roads, construction sites, or with older HVAC systems. During dust storms, indoor PM2.5 can spike significantly even with windows closed. Families with children, the elderly, or anyone with respiratory conditions particularly benefit." },
+  { question: "How does Dubai air quality compare to London or Singapore?", answer: "London typically averages AQI 30–50 (Good range). Singapore averages AQI 40–80 depending on haze season. Dubai averages roughly 60–90 in clean months, spiking to 150–200+ during active dust events. For most healthy adults, Dubai's air is manageable but noticeably more dusty than Northern European baselines." },
+  { question: "Can bad air quality in Dubai cause health problems?", answer: "Long-term exposure to elevated PM2.5 carries documented health risks including respiratory and cardiovascular effects. For most healthy adults in Dubai for a few years, the risk is low. For people with asthma, COPD, heart conditions, or for children under 5 with long-term residency, the cumulative exposure is worth discussing with a doctor." },
+  { question: "Does Dubai have air quality monitoring?", answer: "Yes. Dubai Municipality operates an air quality monitoring network across the emirate. Real-time data is accessible via IQAir's Dubai pages and the UAE Environment Agency. During major dust events, health advisories are issued. Wearable and home sensors (PurpleAir, IQAir AirVisual) give hyperlocal data." }
+]} />

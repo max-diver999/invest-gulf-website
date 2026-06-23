@@ -34,6 +34,9 @@ faq:
   - question: "What is the biggest first-month mistake?"
     answer: "Signing 12-month lease in wrong community before commute and school validation, costs AED 20–40K to unwind via early termination or sublet hassle."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # First 30 Days in Dubai as an Expat: Week-by-Week Survival Guide
 
 TL;DR: Week 1 = medical + EID + housing search. Week 2 = lease + Ejari + DEWA. Week 3 = visa stamp + bank. Week 4 = schools, car, normal life. Do not sign lease until Tuesday 7:30 AM commute test passes. Hubs: [relocation guide](/guides/dubai-relocation-guide/) · [full checklist](/guides/dubai-relocation-checklist/)
@@ -445,3 +448,14 @@ Property buyers face parallel timelines requiring coordination:
 Days 31–45 typically shift from survival to optimisation: spouse work permit submission, second car purchase, gym membership, and first home leave booking. Property buyers begin snagging lists or tenant interviews. Families schedule first parent-teacher evening, the moment Dubai starts feeling like home rather than a hotel with paperwork.
 
 If week 4 ended without stamped visa or Ejari, treat days 31–60 as **recovery mode**, escalate PRO weekly until resolved before investing in 12-month subscriptions or school extracurricular bundles you cannot use without dependant visas.
+
+<FaqBlock items={[
+  { question: "What should I do first when I arrive in Dubai?", answer: "Day 1–3: complete medical fitness test and Emirates ID biometrics as directed by your PRO. Do not delay, visa stamping waits on these. Simultaneously confirm housing timeline and avoid signing lease until you have viewed at peak commute time." },
+  { question: "Can I work before my visa is stamped?", answer: "No, working without valid stamped visa risks fines and ban. Remote work for overseas employer in grey zone, clarify with PRO. Start date should align with visa completion." },
+  { question: "How fast can I get a bank account in Dubai?", answer: "3–10 business days after Emirates ID and stamped visa with salary certificate and Ejari. Some banks offer faster track with employer payroll letter. Without EID, options are limited." },
+  { question: "When should I sign a rental contract?", answer: "Week 2–3 after viewing at least 5 properties and testing morning commute. Signing day 1 in wrong area is the top 30-day regret. Families: confirm school seat or backup first." },
+  { question: "How much cash do I need in the first month?", answer: "Singles AED 15–25K; couples AED 25–40K; families AED 40–70K covering hotel, deposit, agency fee, DEWA, furniture, and school deposits before salary." },
+  { question: "Is summer a bad time for first 30 days?", answer: "Heat is extreme (40°C+) but relocation volume is lower, negotiating rent easier. AC and district cooling must work before move-in, test every room." },
+  { question: "What apps do I need immediately?", answer: "Careem, RTA Dubai, UAE PASS, Google Maps (save offline), Du or Etisalat, your bank app once open, and DLD REST if buying property." },
+  { question: "What is the biggest first-month mistake?", answer: "Signing 12-month lease in wrong community before commute and school validation, costs AED 20–40K to unwind via early termination or sublet hassle." }
+]} />

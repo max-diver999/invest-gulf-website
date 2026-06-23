@@ -41,6 +41,9 @@ faq:
   - question: "Where is full Sharjah COL?"
     answer: "sharjah-cost-of-living includes commuter budget tables and Dubai savings comparison."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Sharjah to Dubai Commute 2026: Peak Times, Routes, Salik & Survival Guide
 
 TL;DR: The Sharjah–Dubai commute is possible and rarely pleasant. Peak runs from Al Khan, Muwailih or central Sharjah to major job hubs routinely hit 45–90 minutes each way, not the 25-minute whisper from your agent. Budget Salik AED 250–500 plus fuel AED 800–1,400 per car monthly. Rent savings need AED 3,500–6,000 net after those lines or the maths fails by month six.
@@ -465,3 +468,16 @@ Sharjah–Dubai commuting is a **math and stamina** problem, not a navigation my
 **Scenario C — trial before buying in Sharjah:** Rent 12 months locally before property purchase. Sharjah tenancy evidence, visa rules, and cross-border tax reporting differ from other GCC hubs.
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "How long is the commute from Sharjah to Dubai?", answer: "Peak Sunday–Thursday commonly 45–90 minutes each way depending on Sharjah origin (Al Khan, Muwailih, Al Nahda) and Dubai destination. Off-peak Saturday midday can drop to 25–40 minutes.  flags severe Sharjah–Dubai peak traffic." },
+  { question: "Which road do Sharjah commuters use?", answer: "Main corridors: Sheikh Mohammed bin Zayed Road (E311), Al Ittihad Road (E11), and Al Khan Bridge / coastal connectors toward Deira. Google Maps live routing essential, static maps mislead." },
+  { question: "Is Sharjah to Dubai commute sustainable daily?", answer: "Thousands do it, sustainability depends on flexible hours, hybrid work, or rent savings exceeding AED 3,500/month net after Salik and fuel. Rigid 09:00 DIFC with Dubai school run often breaks families within 12–18 months." },
+  { question: "How much does Salik cost from Sharjah?", answer: "Typically AED 250–500/month per daily commuter depending on gates hit, often 2–4 gates round trip on E311/E11 routes." },
+  { question: "What time should I leave Sharjah for Business Bay by 09:00?", answer: "Plan 07:00–07:15 departure from Muwailih/Al Khan; 06:45 safer in academic term or after accidents. Al Nahda border origins sometimes 06:30." },
+  { question: "Is Sharjah commute better than RAK to Dubai?", answer: "Sharjah has fewer kilometres but heavier urban congestion. RAK has longer E611 distance but different flow, compare rak-commute-to-dubai and rak-vs-sharjah-living. Neither is easy at peak." },
+  { question: "Can I use Dubai Metro from Sharjah?", answer: "Metro does not serve Sharjah. Some park at Etisalat or Stadium station, still requires Sharjah→Dubai driving first. Not mass-adopted for Al Khan origins." },
+  { question: "Which Sharjah areas have shortest Dubai commute?", answer: "Al Nahda (border), Al Khan (Deira/Creek bias), Muwailih (E311 access). Test your office pin, Marina-bound commutes longer than Deira." },
+  { question: "What is breakeven rent saving for Sharjah commute?", answer: "Need AED 3,500–6,000/month net after fuel, Salik, mileage and time cost to justify daily pain. School in Dubai often shrinks breakeven below AED 2,000, marginal." },
+  { question: "Where is full Sharjah COL?", answer: "sharjah-cost-of-living includes commuter budget tables and Dubai savings comparison." }
+]} />

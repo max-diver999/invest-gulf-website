@@ -27,6 +27,9 @@ faq:
   - question: "Should I choose my Dubai area based on the nearest KHDA Outstanding school?"
     answer: "School proximity should be one of the three main filters when choosing a Dubai neighbourhood, alongside commute and property type. The school-run at 7:15–7:45 AM is the most congested window of the Dubai day. An Outstanding school 8 minutes away almost always wins over an Outstanding school 25 minutes away in practice, even if the latter's exam results are marginally higher."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # KHDA School Ratings Explained: What Every Dubai Family Needs to Know
 
 **TL;DR:** KHDA rates every Dubai private school Outstanding, Very Good, Good, Acceptable, or Weak after a two-year inspection cycle. The rating directly controls how much a school can raise its fees each year, Outstanding schools earn the highest increase cap, Acceptable schools are frozen, and Weak schools may be directed to cut fees. For families relocating to Dubai, the rating is a useful starting filter, but the full inspection report PDF is far more informative than the headline band alone.
@@ -200,3 +203,12 @@ Yes. KHDA publishes inspection reports in both English and Arabic. The ratings t
 
 **Does a school's KHDA rating affect my property investment?**
 Indirectly, yes. Properties in zones with a concentration of Outstanding and Very Good schools consistently attract stronger family demand, and family demand is a significant driver of rental yields and resale stability in Dubai residential. Developers marketing to families emphasise school proximity for this reason. The school-to-property relationship runs both ways: premium schools partly explain premium property prices in Dubai Hills, Arabian Ranches, and Jumeirah, and those property prices partly sustain the school fee base. See [school fees vs property budget in Dubai](/guides/school-fees-vs-property-budget-dubai/) for the financial model.
+
+<FaqBlock items={[
+  { question: "What do KHDA school ratings mean?", answer: "KHDA rates every Dubai private school on five tiers: Outstanding, Very Good, Good, Acceptable, and Weak. The rating reflects inspectors' judgement across six domains, overall quality of education, attainment, progress, teaching, wellbeing, and leadership. Outstanding is the highest tier; Weak means the school is failing and requires urgent improvement. Ratings are published on khda.gov.ae after each inspection cycle." },
+  { question: "How often does KHDA inspect schools?", answer: "Most schools are inspected every two years under a rolling cycle. Schools rated Acceptable or Weak receive more frequent unannounced or short-notice inspections, sometimes annually, until they improve. Outstanding and Very Good schools may qualify for a three-year cycle if they maintain strong self-evaluation processes." },
+  { question: "How do KHDA ratings affect school fees in Dubai?", answer: "KHDA links annual fee increase permissions directly to a school's rating. For 2025–26, Outstanding schools could raise fees by up to 5.13%, Very Good by 3.98%, Good by 2.13%, and Acceptable schools faced a complete fee freeze at 0%. Weak schools can be directed to reduce fees. A higher-rated school costs more but also escalates fees faster year-on-year." },
+  { question: "Is KHDA the same as DSIB?", answer: "DSIB (Dubai Schools Inspection Bureau) is the inspection arm within KHDA. KHDA is the regulatory authority; DSIB's inspectors carry out the school visits and produce the reports. When families say 'KHDA rating' they usually mean the rating published after a DSIB inspection." },
+  { question: "Can a school drop from Outstanding to Good between inspections?", answer: "Yes. Ratings are reassessed at each inspection, not guaranteed to carry over. Leadership changes, staff turnover, rapid enrolment growth, or a run of weak exam results can all lower a rating. Always read the most recent inspection report date on khda.gov.ae, a school rated Outstanding four years ago should be treated as unverified until the current cycle rating appears." },
+  { question: "Should I choose my Dubai area based on the nearest KHDA Outstanding school?", answer: "School proximity should be one of the three main filters when choosing a Dubai neighbourhood, alongside commute and property type. The school-run at 7:15–7:45 AM is the most congested window of the Dubai day. An Outstanding school 8 minutes away almost always wins over an Outstanding school 25 minutes away in practice, even if the latter's exam results are marginally higher." }
+]} />

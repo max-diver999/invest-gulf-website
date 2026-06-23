@@ -36,6 +36,9 @@ faq:
   - question: "Should I file a tax return in Oman?"
     answer: "Most employees do not file an Omani personal income tax return because none exists for employment income. Business owners, corporate entities and home-country obligations are separate."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Oman Tax for Expats 2026: 0% Income Tax, CRS, FATCA & Home-Country Rules
 
 TL;DR: Oman charges **0% personal income tax on employment and most individual investment income for expats, no payroll deduction, no annual Oman personal return for typical employees. That is not zero tax globally. Your home country may still tax worldwide income based on tax residency, citizenship (US), or departure rules (Germany). CRS and **FATCA mean Omani banks report account data to many home revenue authorities. : Oman COL is lower than Dubai, tax planning mistakes still cost more than rent saved.
@@ -410,3 +413,14 @@ No treaty does not mean no home-country tax, means full domestic rules apply.
 | FAQ-friendly structure for Oman Tax Expats quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "Do expats pay income tax in Oman?", answer: "Oman does not levy personal income tax on typical employment salary for expats, gross employment income is not subject to Omani payroll withholding. Home-country tax residency, CRS reporting and citizenship-based rules (US) may still apply." },
+  { question: "Is Oman a tax-free country for expats?", answer: "Locally, employment income is tax-free at individual level. Corporate tax, withholding on certain payments, and home-country worldwide taxation are separate, not zero globally." },
+  { question: "Does Oman participate in CRS bank reporting?", answer: "Yes, Omani banks identify reportable persons and exchange financial account data with partner jurisdictions under CRS. Assume home tax authority may receive account data if you remain tax resident there." },
+  { question: "Do US citizens pay tax if they work in Oman?", answer: "Yes, US citizens and green card holders owe US tax on worldwide income. Foreign Earned Income Exclusion may reduce liability if qualifying, verify Form 2555 tests with US CPA." },
+  { question: "Can I become Oman tax resident and stop UK tax?", answer: "Not automatically. UK tax residency uses statutory residence tests and ties, Oman immigration residence does not equal UK tax non-residence without planning. Engage UK adviser." },
+  { question: "Is rental income from Oman property taxed locally?", answer: "Individual rental income typically not taxed at personal level in Oman for expats, corporate structures differ. Home country may tax foreign rental income if you remain tax resident there." },
+  { question: "Does buying ITC property trigger Oman capital gains tax?", answer: "Typical personal property disposals do not face Omani CGT for expats, commercial scale activity may differ. Home-country CGT may still apply." },
+  { question: "Should I file a tax return in Oman?", answer: "Most employees do not file an Omani personal income tax return because none exists for employment income. Business owners, corporate entities and home-country obligations are separate." }
+]} />

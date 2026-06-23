@@ -31,10 +31,28 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: SITE.name,
+  alternateName: 'Invest Gulf — Gulf Property Research',
   url: SITE.url,
   description: SITE.description,
   email: SITE.email,
   logo: `${SITE.url}/favicon.svg`,
+  foundingDate: '2025',
+  areaServed: ['AE', 'QA', 'SA', 'BH', 'OM', 'KW'],
+  knowsAbout: [
+    'UAE property investment',
+    'Dubai real estate',
+    'Golden Visa property UAE',
+    'Gulf property yields',
+    'Off-plan property Dubai',
+    'Abu Dhabi real estate',
+    'Qatar property investment',
+    'Saudi Arabia real estate',
+  ],
+  sameAs: [
+    'https://invest-gulf.com',
+    // Wikidata entity: add Q-id URL here once created at https://www.wikidata.org/wiki/Special:NewItem
+    // e.g. 'https://www.wikidata.org/wiki/Q130534621'
+  ],
 };
 
 const allSchemas = [orgSchema, ...(schema ? [schema] : [])];

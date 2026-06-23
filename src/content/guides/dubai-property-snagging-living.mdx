@@ -31,6 +31,9 @@ faq:
   - question: "Can I renovate immediately after handover in Dubai?"
     answer: "Minor decorative changes (painting, window treatments, furniture) require no approval. Structural changes, AC modifications, or works affecting building services require Owners Association approval and, for structural works, a permit from Dubai Municipality. Most OAs have a 'fit-out guide' specifying permitted works and quiet hours. Notify your OA before starting any trade works and check for building-specific restrictions."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Moving Into a Snagged Dubai Property: From Handover to Your First Year
 
 TL;DR: Collecting your keys is just the beginning. The period from snagging completion to fully settled living, with utilities connected, furniture in, defects resolved, and neighbours met, typically takes **4–8 weeks** in Dubai. This guide covers everything that happens after the snag list: DEWA connection, cooling account setup, OA registration, furniture delivery logistics, contractor access, defect follow-up, and building relationships with building management that will serve you for years.
@@ -331,3 +334,11 @@ Get OA approval in writing before starting non-cosmetic works.
 - Submit outstanding snag items in writing to developer
 
 Moving into a new Dubai property is a genuinely exciting milestone. The administrative steps can feel overwhelming alongside the aesthetic decisions, but handled systematically, most residents are fully settled within 6–8 weeks of key collection.
+
+<FaqBlock items={[
+  { question: "How long after snagging can I move into my Dubai property?", answer: "After snagging inspection, you typically wait 2–6 weeks for critical defect remediation before moving in. Minor defects (paint touch-ups, door adjustments) do not delay occupancy. Critical defects (plumbing leaks, non-functional AC, electrical faults) should be fixed before furniture delivery. The developer has a one-year defect liability period under UAE law to address snagging items post-handover." },
+  { question: "Who is responsible for fixing snagging defects in Dubai?", answer: "The developer is legally responsible for all construction defects during the defect liability period, which is minimum 1 year from handover for general defects and 10 years for structural defects under UAE Civil Code Article 880 and Law No. 6 of 2019. Document all defects in writing to the developer's customer service, with photographs and reference numbers. Keep all correspondence." },
+  { question: "How do I connect DEWA to a new property in Dubai?", answer: "DEWA connection for a new Dubai property is done online at dewa.gov.ae or via the DEWA app. You need the DEWA premise number (on your title deed or provided by developer), your Emirates ID, and payment of a security deposit (AED 2,000 for apartments, AED 4,000 for villas, refundable). Processing is typically 1–2 business days. Do not book furniture delivery until DEWA is connected, you need power and AC." },
+  { question: "What is the Owners Association in Dubai and when do I register?", answer: "The Owners Association (OA) manages the common areas, facilities, and building services for jointly-owned buildings. As a new owner, you register with the OA upon handover or shortly after. The OA collects annual service charges (AED 12–40 per sq ft depending on building) for building maintenance, security, and common facilities. You need the OA's approval for some renovation works and for registering a tenant." },
+  { question: "Can I renovate immediately after handover in Dubai?", answer: "Minor decorative changes (painting, window treatments, furniture) require no approval. Structural changes, AC modifications, or works affecting building services require Owners Association approval and, for structural works, a permit from Dubai Municipality. Most OAs have a 'fit-out guide' specifying permitted works and quiet hours. Notify your OA before starting any trade works and check for building-specific restrictions." }
+]} />

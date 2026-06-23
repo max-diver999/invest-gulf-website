@@ -26,6 +26,9 @@ faq:
   - question: "How should vacancy affect my yield calculation?"
     answer: "Deduct one month rent (8.3%) for 7% annual vacancy, or pro-rate your band. Then subtract service charges, management (5–10% LTR), and maintenance reserves. Marketing gross yields of 8–9% often become net 5–7% after vacancy and charges, sometimes lower in premium buildings with high service fees."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Quick answer: Dubai vacancy rates average 7–8% citywide, with prime areas (Marina, Downtown, Palm) running 4–5% and supply-heavy zones reaching 8–12%. Growing population of 4M+ residents and 5% annual growth supports rental demand, but vacancy can reduce gross yields from 8–9% to net 5–7% after factoring service charges and void periods.
 
 Vacancy is the silent line item that turns an 8.5% gross yield brochure into a 5.2% net reality. Dubai's rental market is genuinely strong at the macro level, population growth, corporate inflows, Golden Visa residency. It is also locally uneven, especially where 50,000-plus units approach handover in 2025–2026.
@@ -444,3 +447,11 @@ Rather than single-point vacancy assumptions, experienced landlords model vacanc
 *Vacancy bands are indicative based on market reporting and RERA data through Q1 2026. Building-level performance varies. Not investment advice.*
 
 **Related reading:** [Gross vs Net Rental Yield in Dubai](/guides/gross-vs-net-yield-dubai/).
+
+<FaqBlock items={[
+  { question: "What is the average vacancy rate in Dubai?", answer: "Citywide long-term vacancy baseline for underwriting is approximately 7–8%. Prime communities (Marina, Downtown, Palm, JLT) often run 4–5% due to established tenant pools. Supply-heavy areas with clustered new handovers can see 8–12% until inventory absorbs. Always stress-test above baseline in models." },
+  { question: "How do I find accurate rental data in Dubai?", answer: "Base models on Ejari-registered transacted rents and RERA rental index data, not portal listing prices, which typically sit 5–10% above achieved deals. Dubai REST and broker CMA reports using closed leases are more reliable than advertised asks." },
+  { question: "Is rental demand growing in Dubai in 2026?", answer: "Yes at the macro level: population exceeds 4 million with roughly 5% annual growth, corporate relocations continue, and Golden Visa inflows support long-term tenancy. Micro-level demand varies, new handover clusters can soften rents in specific towers even while citywide demand grows." },
+  { question: "Which Dubai areas have the lowest vacancy?", answer: "Downtown, Dubai Marina, Palm Jumeirah, and established Business Bay towers with proven Ejari history typically show the lowest void periods. Mid-market yield districts (JVC, Sports City) have higher turnover but strong demand if priced to transacted market, not peak listing fantasy." },
+  { question: "How should vacancy affect my yield calculation?", answer: "Deduct one month rent (8.3%) for 7% annual vacancy, or pro-rate your band. Then subtract service charges, management (5–10% LTR), and maintenance reserves. Marketing gross yields of 8–9% often become net 5–7% after vacancy and charges, sometimes lower in premium buildings with high service fees." }
+]} />

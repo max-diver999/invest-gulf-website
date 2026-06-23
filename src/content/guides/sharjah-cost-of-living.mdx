@@ -41,6 +41,9 @@ faq:
   - question: "Where is the relocation checklist?"
     answer: "sharjah-relocation-guide hub R22, tenancy, visa, first 90 days."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Sharjah Cost of Living 2026: Rent Savings vs Dubai, Budgets & Hidden Costs
 
 TL;DR: Sharjah cost of living lives or dies on rent arbitrage, roughly 40–50% below equivalent Dubai apartments on older stock. Singles often run AED 8,000–12,000/month; families AED 22,000–32,000 without premium Dubai schools. Headline rent savings mean nothing until you add Salik, fuel (AED 1,400–2,800 per car), Dubai KHDA school runs, and summer SEWA spikes. Model net savings in a spreadsheet, not from the agent's first quote.
@@ -481,3 +484,16 @@ Use mid column for **June 2026 planning**, adjust rent with live listings before
 | Strong value for remote workers with flexible hours | Property appreciation historically trails Dubai core |
 
 *Humanized v5 full, 2026-06-04.*
+
+<FaqBlock items={[
+  { question: "How much cheaper is Sharjah than Dubai?", answer: "Rent typically runs ~40–50% below equivalent Dubai apartment stock . A 2BR at AED 6,000 in Sharjah might cost AED 12,000–14,000 in JVC or Marina fringe. Total COL savings shrink after Dubai school fees, Salik and double commute." },
+  { question: "What is a comfortable monthly budget in Sharjah?", answer: "Single professional AED 8,000–12,000 mid lifestyle; couple AED 14,000–20,000; family of four AED 22,000–32,000 without premium Dubai schools. Add AED 3,000–6,000 if schooling in Dubai KHDA." },
+  { question: "Does Sharjah have income tax?", answer: "No, UAE 0% personal income tax on employment. Home-country obligations may still apply under CRS." },
+  { question: "How much are utilities in Sharjah?", answer: "Apartments AED 350–900/month baseline; summer AC can push AED 1,200+ on older split units. District-cooled towers vary, request last summer bill." },
+  { question: "Is grocery shopping cheaper in Sharjah?", answer: "Marginally, 5–10% on some lines vs Dubai premium malls. Major savings are rent and school choice, not carrots." },
+  { question: "How much does commuting to Dubai cost monthly?", answer: "Fuel AED 800–1,400, Salik AED 250–500, parking optional AED 200–600, total AED 1,400–2,800 per car. Second car for school runs duplicates stack." },
+  { question: "Are Sharjah schools cheaper than Dubai?", answer: "SPEA-regulated schools often 15–30% below equivalent KHDA tier, but many families still pay Dubai KHDA fees plus commute. See sharjah-schools-commute-dubai." },
+  { question: "Can a family save money living in Sharjah?", answer: "Yes, classic pattern saves AED 4,000–8,000/month on rent vs Dubai 2BR. Net save after commute often AED 2,500–5,000 if schools local or employer covers education." },
+  { question: "Sharjah vs RAK cost of living?", answer: "Sharjah wins on apartment rent; RAK wins on beach villa product at different price points. Compare rak-vs-sharjah-living and rak-cost-of-living-detailed." },
+  { question: "Where is the relocation checklist?", answer: "sharjah-relocation-guide hub R22, tenancy, visa, first 90 days." }
+]} />

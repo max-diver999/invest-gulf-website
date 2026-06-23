@@ -28,6 +28,9 @@ faq:
   - question: "Is Airbnb / holiday home rental subject to VAT in Dubai?"
     answer: "Yes. Short-term holiday home rentals (furnished residential units let for periods under one month in tourist contexts) are treated as serviced accommodation and subject to the standard 5% VAT rate, unlike long-term residential rental which is exempt. Holiday home operators with annual turnover above AED 375,000 must register for VAT."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 TL;DR: Residential property rental in the UAE is VAT-exempt, landlords do not charge VAT on long-term residential leases. Commercial property rental and holiday home rentals are subject to 5% VAT. New residential property sales (first supply within 3 years) are zero-rated. Understanding the exempt vs. zero-rated vs. standard-rated distinction is essential for developers, commercial landlords, and holiday home operators. Individual residential landlords with no commercial activity typically have no VAT obligations.
 
 ---
@@ -281,3 +284,12 @@ Commercial property owners and holiday home operators can recover input VAT on b
 For mixed-use properties, input VAT must be apportioned. The standard FTA-accepted method is based on the proportion of taxable vs. exempt rental income. Document your apportionment methodology carefully, FTA auditors will examine this during any inspection.
 
 For UAE tax residency implications, see [UAE tax residency through property](/guides/uae-tax-residency-property/).
+
+<FaqBlock items={[
+  { question: "Is residential rent in Dubai subject to VAT?", answer: "No. Residential property rental in the UAE is exempt from VAT under Federal Decree-Law No. 8 of 2017 (UAE VAT Law) and associated Executive Regulations. Landlords renting residential properties do not charge VAT on rent. This applies to apartments, villas, townhouses, and all residential units leased for habitation purposes." },
+  { question: "Is commercial property rent in Dubai subject to VAT?", answer: "Yes. Rental of commercial property, offices, retail units, warehouses, industrial space, hotels, and short-term furnished holiday homes, is subject to UAE VAT at the standard rate of 5%. Commercial landlords with annual taxable turnover above AED 375,000 must register for VAT, charge 5% VAT on rents, and file VAT returns." },
+  { question: "Is the purchase of a new residential property in Dubai subject to VAT?", answer: "The first supply of a new residential building within 3 years of completion is zero-rated (0% VAT). Zero-rated means VAT is technically charged but at 0%, and the supplier can recover input VAT. Subsequent sales of residential properties are exempt from VAT. Off-plan sales by developers (first supply) are typically zero-rated." },
+  { question: "What is the difference between VAT-exempt and zero-rated in UAE property?", answer: "Both result in no VAT charged to the buyer/tenant. The difference matters to the supplier: on zero-rated supplies, the developer/seller can recover input VAT paid on construction costs. On exempt supplies, input VAT recovery is blocked. For buyers and tenants, the practical effect is the same, no 5% VAT is charged on the transaction." },
+  { question: "Do I need to register for VAT if I own rental properties in Dubai?", answer: "Possibly, if your taxable supplies exceed AED 375,000 annually. Residential rental income is VAT exempt, it does not count toward the VAT registration threshold. Commercial rental income is taxable at 5% and does count toward the threshold. If you rent only residential properties, VAT registration is generally not required. If you have commercial property generating over AED 375,000 annually, VAT registration is mandatory." },
+  { question: "Is Airbnb / holiday home rental subject to VAT in Dubai?", answer: "Yes. Short-term holiday home rentals (furnished residential units let for periods under one month in tourist contexts) are treated as serviced accommodation and subject to the standard 5% VAT rate, unlike long-term residential rental which is exempt. Holiday home operators with annual turnover above AED 375,000 must register for VAT." }
+]} />

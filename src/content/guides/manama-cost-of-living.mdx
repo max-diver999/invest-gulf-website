@@ -39,6 +39,9 @@ faq:
   - question: "How does healthcare fit the budget?"
     answer: "Employer insurance standard; family top-ups often BHD 30–80/month. See bahrain-healthcare-guide for NHRA networks."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Manama Cost of Living 2026: Rent, Schools, Groceries & Monthly Budgets
 
 TL;DR: A normal family of four spends BHD 1,400–2,100/month, before Amwaj waterfront or IB diploma years. Singles in Juffair or Riffa can run BHD 650–950 without a second car. Schools break budgets: two kids on mid-tier British curricula hit BHD 800–1,200/month once you divide annual fees by twelve and add buses. : smallest GCC, Manama hub, lower COL than Dubai, model your numbers before you sign a lease.
@@ -462,3 +465,15 @@ Add **10% contingency** for Ramadan hours, causeway tolls, and insurance co-pays
 | FAQ-friendly structure for Manama Cost Of Living quick answers | Not legal, tax, or immigration advice; use licensed professionals for filings |
 
 **Related reading:** [Living in Seef](/guides/living-seef-bahrain/) · [Living on Amwaj](/guides/living-amwaj-islands/) · [Bahrain vs Dubai living](/guides/bahrain-vs-dubai-living/).
+
+<FaqBlock items={[
+  { question: "How much does it cost to live in Manama in 2026?", answer: "Single professionals in Juffair or Riffa often spend BHD 650–950/month excluding luxury rent. Family of four on mid-tier British schools runs BHD 1,400–2,100/month. Premium Amwaj + top schools can exceed BHD 2,800." },
+  { question: "Is Manama cheaper than Dubai?", answer: "Yes at mid-tier, rent and amortised school fees typically 25–40% below comparable Dubai districts. : smallest GCC, lower COL than Dubai." },
+  { question: "What currency is used in Bahrain?", answer: "Bahraini Dinar (BHD), pegged to USD (~0.376 BHD per USD). One of the strongest Gulf currencies, BHD 1 ≈ USD 2.65." },
+  { question: "How much is rent in Amwaj Islands?", answer: "Indicative June 2026: 2BR BHD 450–750/month; 3BR/villa BHD 700–1,200. Seasonal and furnishing swing ±15%." },
+  { question: "What do international schools cost in Bahrain?", answer: "British mid-tier roughly BHD 4,000–7,000/year per child; American/IB premium BHD 8,000–12,000+. Amortise ÷12 and add transport." },
+  { question: "How much is EWA electricity in summer?", answer: "Apartment BHD 35–70/month average with heavy AC; villa BHD 70–150+. First summer bill often shocks European arrivals." },
+  { question: "Do I need a car in Manama?", answer: "Most families yes, island is compact but car-oriented. Single professionals in Seef towers sometimes Uber-heavy but summer heat argues for own car." },
+  { question: "What salary do I need to sponsor family in Bahrain?", answer: "LMRA rules tie to profession and basic salary, ** (confirm current official rules)**. Model net pay after schools before accepting offer." },
+  { question: "How does healthcare fit the budget?", answer: "Employer insurance standard; family top-ups often BHD 30–80/month. See bahrain-healthcare-guide for NHRA networks." }
+]} />

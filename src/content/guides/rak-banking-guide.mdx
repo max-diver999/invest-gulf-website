@@ -39,6 +39,9 @@ faq:
   - question: "Where is the RAK cost hub for banking line items?"
     answer: "rak-cost-of-living-detailed includes remittance and account fee bands in monthly budget tables."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # RAK Banking Guide 2026: UAE Banks, Branches, Dubai Salary & WPS
 
 TL;DR: RAK banking is standard UAE retail, RAK Bank is the local champion, and every major national bank has branches here too. Dubai job + RAK villa usually means WPS salary lands in your Dubai employer's bank; open a second local account for FEWA, rent cheques to RAK landlords, and school fees. The real cost is remittance FX, not account opening. COL hub: [RAK cost of living detailed](/guides/rak-cost-of-living/)
@@ -488,3 +491,16 @@ Document **relocation bonus** SWIFT when above AED 100,000 single credit.
 - Prepare source-of-funds documentation for property-related wires; exchange houses are not a bank substitute.
 - Confirm CRS or home-country reporting obligations before assuming UAE zero income tax ends all Rak Banking filings.
 - Read schedule of benefits on health cover tied to Ras Al Khaimah account packages, not marketing brochure summaries.
+
+<FaqBlock items={[
+  { question: "Can I open a bank account in Ras Al Khaimah?", answer: "Yes with valid UAE residence visa, Emirates ID, salary certificate or proof of funds, and RAK tenancy (Tawtheeq-style registration) or employer letter. Visit RAK Bank, ENBD, FAB, ADCB, Mashreq or RAK branches of national banks. Processing 3–10 business days typical." },
+  { question: "Which banks have branches in RAK?", answer: "RAK Bank (headquartered in emirate), Emirates NBD, FAB, ADCB, Mashreq, ADIB, CBD and others maintain RAK City and mall branches. Digital onboarding varies, most still want Emirates ID scan in branch for first account." },
+  { question: "If I work in Dubai but live in RAK, where should my salary account be?", answer: "Usually where HR mandates WPS, often Dubai employer's preferred bank (ENBD, FAB, etc.). You can add a second RAK account for local cheques and FEWA. Do not assume RAK address forces RAK Bank unless employer agrees." },
+  { question: "Is RAK Bank only for RAK residents?", answer: "RAK Bank serves UAE-wide customers but is strong for RAK municipality payments, local mortgages and community familiarity. Dubai commuters still use it for second accounts and some property loans in RAK freehold." },
+  { question: "How do I pay FEWA bills from banking apps?", answer: "Register FEWA customer number in bank bill-pay (RAK Bank, ENBD, etc.). Auto-debit after first manual payment. Keep AED 2,000+ buffer in summer for villa spikes, see rak-cost-of-living-detailed utilities section." },
+  { question: "Can I get a mortgage in RAK while employed in Dubai?", answer: "Some banks lend on RAK freehold with Dubai salary assignment, LTV 50–80% depending on employer list, visa stability and property handover status. Expect stricter SOF documentation than RAK-employed hospitality staff." },
+  { question: "How much cash do I need to open an account?", answer: "Initial deposit often AED 0–3,000 for salary accounts; premium tiers higher. Real cost is FX on remittances, not opening fee." },
+  { question: "Are Islamic banking options available in RAK?", answer: "Yes, ADIB, Dubai Islamic Bank agents, RAK Bank Islamic windows. Compare total cost including 'profit rate' vs conventional APR equivalent." },
+  { question: "What is proof of funds for RAK property purchase?", answer: "6–12 months salary statements, sale deed from home country, or savings trail. Transfers above AED 50,000–100,000 trigger AML questions UAE-wide. Coordinate with developer escrow, not personal agent accounts." },
+  { question: "Where is the RAK cost hub for banking line items?", answer: "rak-cost-of-living-detailed includes remittance and account fee bands in monthly budget tables." }
+]} />

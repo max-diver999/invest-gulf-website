@@ -31,6 +31,9 @@ faq:
   - question: "What are typical rental fees and deposits in Doha?"
     answer: "Expect one month security deposit (refundable), agency commission of half month rent plus VAT (usually tenant pays), and first cheque on signing. Total upfront cost is typically 1.5-2 months rent. Some landlords offer 5% discount for single annual payment instead of cheques."
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 # Doha Rent Prices by Area 2026: Pearl, West Bay, Lusail & Cheque Guide
 
 TL;DR: Plan on QAR 3,800–30,000+ per month depending on area and unit, a studio in Al Wakrah at the low end, a Pearl villa at the top. Most landlords still want 4–6 post-dated cheques plus one month's deposit. Pearl and West Bay charge for waterfront and CBD access; Lusail gives you newer stock and family amenities at slightly softer pricing; Al Wakrah is where school-bus families trade commute time for square metres.
@@ -483,3 +486,12 @@ If company offers corporate apartment, compare cash allowance vs personal lease,
 **When is rent due?** Per cheque date, often quarterly on a 4-cheque structure.
 
 *Humanized v5 full, 2026-06-04. Verify rent ranges with live listings at publish.*
+
+<FaqBlock items={[
+  { question: "How much is rent per month in Doha 2026?", answer: "Doha rent ranges from QAR 3,200-4,200 for studios in Al Wakrah to QAR 25,000-45,000+ for Pearl villas. Typical 2BR apartments cost QAR 6,000-9,000 in Al Wakrah, QAR 12,000-18,000 on The Pearl, and QAR 9,000-14,000 in Lusail. Most landlords require 4-6 post-dated cheques plus one month security deposit." },
+  { question: "Do I need post-dated cheques to rent in Doha?", answer: "Yes, Qatar rent payments typically use 4-6 post-dated cheques from your Qatari bank account. You cannot get a cheque book without a QID (Qatar ID). Never post-date cheques without confirmed funds - bounced cheques are a serious legal issue in Qatar." },
+  { question: "What is the cheapest area to rent in Doha?", answer: "Al Wakrah and Al Sadd offer the lowest rents, with studios from QAR 3,200-4,200 and 3BR apartments/villas from QAR 9,000-14,000. However, Al Wakrah requires a 20-30 minute commute to central Doha, while Al Sadd has older building stock and limited parking." },
+  { question: "How much more expensive is The Pearl vs other areas?", answer: "The Pearl commands a 30-50% premium over comparable areas. A 2BR on The Pearl costs QAR 12,000-18,000 vs QAR 9,000-14,000 in Lusail or QAR 6,000-9,000 in Al Wakrah. The premium pays for waterfront location, marina lifestyle, and freehold property access." },
+  { question: "Can foreigners rent anywhere in Doha?", answer: "Yes, foreigners can rent in all areas of Doha regardless of whether the area allows property ownership. Rental access is not restricted by nationality, unlike property purchase which is limited to specific zones like The Pearl and Lusail for freehold ownership." },
+  { question: "What are typical rental fees and deposits in Doha?", answer: "Expect one month security deposit (refundable), agency commission of half month rent plus VAT (usually tenant pays), and first cheque on signing. Total upfront cost is typically 1.5-2 months rent. Some landlords offer 5% discount for single annual payment instead of cheques." }
+]} />

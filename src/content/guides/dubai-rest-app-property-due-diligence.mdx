@@ -31,6 +31,9 @@ faq:
   - question: "Is REST enough for full due diligence in Dubai?"
     answer: "REST covers regulatory and transactional data, essential but not complete. Also require: physical inspection, SPA legal review (off-plan), OA community rules (especially for STR), DEWA clearance, and developer NOC for resale. REST answers 'what does DLD know?', not 'what condition is the unit?'"
 ---
+
+import FaqBlock from '../../components/FaqBlock.astro';
+
 Every serious Dubai property purchase should start in one place: the Dubai REST app. Not the broker's PDF. Not the portal listing. Not the developer render. REST is Dubai Land Department's official channel for title verification, transaction history, Ejari rents, and service charge schedules, the data layer beneath every yield calculation and price negotiation.
 
 Quick answer: Before paying a reservation fee, pull the title or Oqood on REST, confirm owner identity, check DLD transaction comparables in the building, verify service charges on Mollak, and cross-reference Ejari rent bands. Fifteen minutes on REST prevents the most common foreign-buyer mistakes: overpaying versus transacted prices and mis-modelling net yield.
@@ -438,3 +441,13 @@ The Dubai REST app is the regulatory source of truth for Dubai property due dili
 No foreign buyer should transfer a reservation fee without completing the 30-minute REST workflow above. For the next layer, net yield maths and STR licensing, continue to the [Dubai Rental Yield Guide](/guides/dubai-rental-yield-guide/) and [Short-Term Rental Dubai License](/guides/short-term-rental-dubai-license/).
 
 **Related reading:** [Dubai Property Investment Guide](/guides/dubai-property-investment-guide/).
+
+<FaqBlock items={[
+  { question: "What is the Dubai REST app?", answer: "Dubai REST (Real Estate Self Transaction) is the official Dubai Land Department mobile app and portal. It provides access to title deed verification, Oqood off-plan records, Ejari-registered rental contracts, historical transaction prices, service charge schedules, and broker licensing. It is the primary due diligence tool for property buyers in Dubai, free and authoritative." },
+  { question: "How do I verify a title deed on Dubai REST?", answer: "In the REST app, use Title Deed Inquiry and enter the property details or scan the QR code on the seller's title deed document. Confirm owner name matches seller, property type and size match listing, mortgage status (if any), and that no blocking annotations exist. For off-plan, use Oqood Inquiry instead, the interim registration should match the SPA unit number and developer project." },
+  { question: "Can I see previous sale prices on Dubai REST?", answer: "Yes. REST provides transaction history for registered sales in many communities, actual DLD-registered prices, not portal estimates. Use this to benchmark whether the asking price is above or below recent comparables in the same building. Gaps of 10–15% between ask and last transacted price are common negotiation leverage." },
+  { question: "How do I check rental income potential on REST?", answer: "REST links to Ejari-registered tenancy data and RERA Rental Index bands by community and unit type. Search your target area and bedroom count to see transacted rent ranges, not Property Finder listing prices. Cross-reference with the Dubai Rental Yield Guide for net yield after service charges." },
+  { question: "What service charge data is available on REST?", answer: "REST and the linked Mollak system show RERA-approved service charge rates per building where registered. Rates are quoted per square foot per year. This is critical for yield modelling, a building at AED 22/sq ft versus AED 14/sq ft on identical rent removes 1+ percentage points of net yield on a 750 sq ft apartment." },
+  { question: "What red flags appear in REST due diligence?", answer: "Watch for: title owner mismatch with seller, active mortgage not disclosed, Oqood with different unit specification than marketed, transaction history showing distressed sales only, service charges above community average without amenity justification, and buildings with no Ejari rent history (new or non-performing stock)." },
+  { question: "Is REST enough for full due diligence in Dubai?", answer: "REST covers regulatory and transactional data, essential but not complete. Also require: physical inspection, SPA legal review (off-plan), OA community rules (especially for STR), DEWA clearance, and developer NOC for resale. REST answers 'what does DLD know?', not 'what condition is the unit?" }
+]} />

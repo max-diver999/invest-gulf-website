@@ -33,6 +33,8 @@ faq:
   - question: "What is the typical lease structure for Saudi rental properties?"
     answer: "Corporate housing: 1-2 year terms, furnished, SAR payments, deposit 1-2 months. Individual expats: 6-12 months, semi-furnished, mix of SAR/USD. Premium Residency and diplomatic tenants may prefer 2-3 year terms. Lease registration requirements vary by zone - confirm with REGA."
 ---
+import FaqBlock from '../../components/FaqBlock.astro';
+
 import TldrBlock from '../../components/TldrBlock.astro';
 import InlineCta from '../../components/InlineCta.astro';
 
@@ -358,6 +360,17 @@ Get your personalized Saudi property investment shortlist, [Request Free Analysi
   buttonHref="/get-shortlist/"
   ctaId="saudi_yield_mid"
 />
+<FaqBlock items={[
+  { question: "What rental yields can foreign investors expect in Saudi Arabia?", answer: "Gross rental yields in Saudi designated zones typically range from 4% to 6%. Riyadh residential achieves 5-6%, Jeddah coastal 4.5-5.5%, while NEOM and giga-projects have no established rental market yet. This compares to Dubai's 7-9% but reflects Saudi's capital growth focus under Vision 2030." },
+  { question: "Which Saudi designated zones offer the best rental yields?", answer: "Riyadh designated zones show the strongest rental yields at 5-6% gross, driven by corporate housing demand and limited foreign-accessible supply. ROSHN communities in Riyadh achieve 5.5-6%. Jeddah coastal zones yield 4.5-5.5%, while giga-projects like NEOM lack rental history." },
+  { question: "How does Premium Residency affect Saudi rental yields?", answer: "Premium Residency holders (SAR 4M+ investment track) create stable tenant demand for furnished units, potentially adding 0.5-1% premium to standard yields. However, the Premium Residency population is small - most rental demand still comes from traditional iqama holders and corporate housing." },
+  { question: "What are the rental market risks in Saudi designated zones?", answer: "Key risks include thin rental markets with limited comparables, regulatory uncertainty as Law M/14 evolves, concentration risk in corporate tenants, and potential oversupply as new designated zones come online. NEOM and giga-projects carry construction delays and unknown demand patterns." },
+  { question: "How do Saudi rental yields compare to UAE?", answer: "Saudi designated zones yield 4-6% vs Dubai's 7-9%, but Saudi offers different risk-return: earlier market with higher capital growth potential from Vision 2030, less liquid but potentially higher appreciation. UAE offers proven rental markets; Saudi offers growth exposure with yield as secondary benefit." },
+  { question: "What rental management costs should investors budget in Saudi?", answer: "Budget 15-20% of gross rent for management costs: 8-12% property management fees, 2-3% maintenance, 2-3% vacancy allowance, plus REGA fees and potential Zakat obligations. Service charges vary by project - verify with developer before purchase as they impact net yields significantly." },
+  { question: "Can foreigners rent out property in all Saudi designated zones?", answer: "Rental rights follow ownership rights - if foreigners can buy under Law M/14 in a designated zone, they can rent out. However, some giga-projects may have usage restrictions or managed residence requirements. Always verify rental permissions with REGA and the specific project developer." },
+  { question: "What is the typical lease structure for Saudi rental properties?", answer: "Corporate housing: 1-2 year terms, furnished, SAR payments, deposit 1-2 months. Individual expats: 6-12 months, semi-furnished, mix of SAR/USD. Premium Residency and diplomatic tenants may prefer 2-3 year terms. Lease registration requirements vary by zone - confirm with REGA." }
+]} />
+
 ## About Invest Gulf
 
 Invest Gulf publishes independent research on UAE and Gulf property investment for foreign buyers. Not a developer, not a broker, not a listing portal — all content is editorial. We cover Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman: yields, fees, off-plan risks, Golden Visa pathways, and cross-market comparisons. Site: invest-gulf.com.
