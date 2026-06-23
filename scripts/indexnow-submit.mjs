@@ -3,6 +3,10 @@
 //   or: node scripts/indexnow-submit.mjs --explicit URL URL ...
 
 import { readdirSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { logIndexNowSuccess } from '../../scripts/lib/indexnow-log.mjs';
+
+const INDEXNOW_SCRIPT = fileURLToPath(import.meta.url);
 
 const KEY = 'e811b4bde63741fb9a3e59f0584d5b39';
 const HOST = 'invest-gulf.com';
@@ -76,8 +80,10 @@ console.log(`Response: ${res.status} ${res.statusText}`);
 
 if (res.status === 200) {
   console.log(`✅ Success! ${urls.length} URLs submitted to Bing IndexNow`);
+  logIndexNowSuccess(INDEXNOW_SCRIPT, urls, 'bing');
 } else if (res.status === 202) {
   console.log('✅ Accepted! URLs queued for processing.');
+  logIndexNowSuccess(INDEXNOW_SCRIPT, urls, 'bing');
 } else {
   const text = await res.text();
   console.log(`Response body: ${text}`);
