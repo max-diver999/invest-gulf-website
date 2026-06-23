@@ -1,0 +1,91 @@
+---
+import { SITE } from '../data/site';
+
+interface Props {
+  headline?: string;
+  subtext?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  variant?: 'teal' | 'dark' | 'light';
+  ctaId?: string;
+}
+
+const {
+  headline    = 'Looking for the right Gulf property?',
+  subtext     = 'Get a free shortlist matched to your budget and target market. No commitment.',
+  buttonText  = 'Request Free Analysis',
+  buttonHref  = '/get-shortlist/',
+  variant     = 'teal',
+  ctaId       = 'inline_cta',
+} = Astro.props;
+---
+
+<div class={`inline-cta inline-cta--${variant}`} data-cta={ctaId}>
+  <div class="inline-cta__text">
+    <p class="inline-cta__headline">{headline}</p>
+    {subtext && <p class="inline-cta__sub">{subtext}</p>}
+  </div>
+  <a href={buttonHref} class="inline-cta__btn" data-cta={`${ctaId}_primary`}>
+    {buttonText}
+  </a>
+</div>
+
+<style>
+  .inline-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+  }
+  .inline-cta--teal {
+    background: linear-gradient(135deg, var(--color-teal, #2c6b62), var(--color-teal-dark, #235851));
+    color: #fff;
+  }
+  .inline-cta--dark {
+    background: #1f2421;
+    color: #fff;
+  }
+  .inline-cta--light {
+    background: var(--color-teal-light, #e6f0ed);
+    color: var(--color-ink, #1f2421);
+  }
+  .inline-cta__text {
+    flex: 1;
+    min-width: 200px;
+  }
+  .inline-cta__headline {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0 0 4px 0;
+  }
+  .inline-cta__sub {
+    font-size: 0.875rem;
+    opacity: 0.88;
+    margin: 0;
+  }
+  .inline-cta__btn {
+    display: inline-block;
+    background: #fff;
+    color: var(--color-teal-dark, #235851);
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+  }
+  .inline-cta--light .inline-cta__btn {
+    background: var(--color-teal, #2c6b62);
+    color: #fff;
+  }
+  .inline-cta__btn:hover {
+    opacity: 0.88;
+  }
+</style>
