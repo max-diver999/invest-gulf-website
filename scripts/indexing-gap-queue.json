@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-06-20T00:44:53.769Z",
-  "sitemapCount": 592,
-  "submittedCount": 674,
+  "generatedAt": "2026-06-30T13:07:05.964Z",
+  "sitemapCount": 606,
+  "submittedCount": 688,
   "gapCount": 0,
   "urls": [],
   "channels": {
     "google": {
-      "submitted": 674,
+      "submitted": 688,
       "gap": 0,
       "urls": []
     },
     "bing": {
-      "submitted": 592,
+      "submitted": 629,
       "gap": 0,
       "urls": []
     },
     "yandex": {
       "submitted": 0,
-      "gap": 592,
+      "gap": 606,
       "urls": [
         "https://invest-gulf.com",
         "https://invest-gulf.com/about",
