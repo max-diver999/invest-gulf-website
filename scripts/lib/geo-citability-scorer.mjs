@@ -68,7 +68,7 @@ const VAGUE_RE = /\b(many|several|some|often|usually|a lot|significant|various)\
 const PRONOUN_START_RE = /^(it|this|they|these|those|however|but|and|also)\b/i;
 const QUESTION_H2_RE = /^(what|how|why|when|where|who|which|can|do|does|is|are|should|will)\b/i;
 const UNIQUE_RE =
-  /\b(MORE Group|our (analysis|data|clients|underwriting)|insider tip|underwriting snapshot|we (surveyed|analyzed|tracked))\b/i;
+  /\b(MORE Group|Invest Gulf|our (analysis|data|clients|underwriting|research)|insider tip|underwriting snapshot|we (surveyed|analyzed|tracked|compared|modeled|reviewed))\b/i;
 
 export function wordCount(text) {
   return (text.match(/\b[\w']+\b/g) || []).length;

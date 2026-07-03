@@ -1,0 +1,1740 @@
+{
+  "source": "Phase 3 seed 2026-07-03",
+  "rule": "Never noindex. Upgrade content only.",
+  "slugs": {
+    "dubai-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "can-foreigners-buy-property-uae": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "golden-visa-2-million-aed-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "uae-visa-property-investor-750k": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "non-resident-mortgage-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "due-diligence-dubai-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-rent-increase-calculator-rera": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "gulf-property-investment-comparison-2026": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "how-to-buy-dubai-property-remotely": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "ejari-registration-landlord-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "islamic-vs-conventional-mortgage-uae": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-mainland-llc-setup": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "uae-free-zone-vs-mainland": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "ras-al-khaimah-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "saudi-arabia-property-foreigners-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "qatar-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "bahrain-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "kuwait-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "oman-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "abu-dhabi-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-off-plan-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "off-plan-property-dubai-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "abu-dhabi-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "sharjah-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "ajman-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "fujairah-property-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "umm-al-quwain-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "wynn-al-marjan-island-timeline-impact": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "difc-company-setup": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dmcc-company-setup": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "adgm-vs-difc-company-setup": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-cooling-off-period-off-plan": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-tenant-eviction-rules-rera": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-handover-checklist": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-scams-red-flags": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-valuation-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-dispute-resolution": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-inheritance-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-mortgage-broker-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "buy-to-let-mortgage-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "cash-vs-mortgage-dubai-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "capital-gains-uae-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "cost-of-buying-property-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dld-mortgage-registration-fees": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "currency-transfer-buy-property-uae": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "buy-property-through-uae-company": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-holiday-home-roi-calculator-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-payment-plan-types-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-service-charge-index-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-district-cooling-charges": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-rental-guarantee-schemes-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-rental-law-landlord-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-taxes-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-snagging-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-property-market-cooling-or-growing": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-capital-appreciation-vs-yield": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "best-areas-buy-property-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "best-dubai-developers-rental-yield": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-developers-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-business-setup-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "saudi-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "bahrain-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "qatar-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "A",
+      "source": "money-pillar"
+    },
+    "dubai-police-clearance-certificate": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-vs-abu-dhabi-school-fees": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-driving-license": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-barari-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-freehold-areas": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "buying-property-uae-bank-transfer": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "doha-vs-dubai-schools": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-driving-license-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "hudayriyat-island-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-family-visa-sponsorship": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-healthcare-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-tax-residency-183-day-rule": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-furjan-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-ghadeer-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-hamra-village-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-maryah-island-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-raha-beach-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-reef-abu-dhabi-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-reem-island-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "al-zahia-sharjah-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "aljada-sharjah-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bluewaters-island-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "city-walk-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "damac-hills-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "discovery-gardens-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "downtown-dubai-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-creek-harbour-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-harbour-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-hills-estate-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-islands-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-marina-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-production-city-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-silicon-oasis-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-south-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-sports-city-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "impz-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "jebel-ali-village-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "jeddah-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "jlt-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "jvc-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "lusail-city-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "meydan-horizon-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "motor-city-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "mudon-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "muscat-al-mouj-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "muscat-qurum-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "palm-jumeirah-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "riyadh-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saadiyat-island-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "the-valley-dubai-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "tilal-al-ghaf-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "west-bay-doha-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "yas-island-property-investment": {
+      "collection": "areas",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-vs-dubai-investment": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "aldar-vs-damac": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-vs-oman-rental-yield": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-vs-saudi-rental-yield": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "freehold-vs-leasehold-uae": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "meraas-vs-emaar": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "off-plan-vs-ready-property-uae": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-vs-uae-residency": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-vs-dubai-rental-yield": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-vs-sharjah-property-investment": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-arabia-vs-uae-golden-visa": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-vs-uae-property-investment": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-vs-qatar-property-investment": {
+      "collection": "compare",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-adgm-setup": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-driving-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-driving-license": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-expat-community": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-golden-visa-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-health-insurance-doh": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-healthcare-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-international-schools-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-off-plan-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-rent-prices-by-area": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "abu-dhabi-vs-dubai-families": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-banking-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-driving-license": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-golden-residence": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-healthcare-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-international-schools": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-property-foreigner-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "bahrain-saudi-bridge-commute": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "best-health-insurance-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "best-off-plan-abu-dhabi": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "best-off-plan-areas-dubai-2026": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "binghatti-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "boarding-schools-uae": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "can-foreigners-buy-property-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "currency-exchange-aed-usd-eur": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "damac-lagoons-community-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "doha-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "doha-international-schools-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "double-tax-treaty-uae": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "downtown-dubai-living-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-air-quality": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-car-ownership-cost": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-chores-time-parking": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-cost-of-living-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-domestic-worker-visa": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-expat-community-groups": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-flooding-rain-risk": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-inheritance-non-muslim-wills": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-maid-nanny-cost": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-mortgage-rates-2026": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-neighbourhoods-for-singles": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-nursery-early-years": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-for-australian-buyers": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-for-british-buyers": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-for-german-buyers": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-for-relocating-families": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-for-russian-buyers": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-insurance-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-market-cycle-2026": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-market-forecast-2026-2027": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-visa-relocation-bundle": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-property-vs-stock-market": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-public-vs-private-healthcare": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-rent-prices-by-area": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-rest-app-property-due-diligence": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-rta-fines-parking": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-school-bus-transport-fees": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-school-fees-by-curriculum": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-school-waiting-lists": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-special-needs-schools": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-villa-vs-apartment-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-vs-doha-vs-riyadh-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "dubai-weekend-culture": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "ellington-properties-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "emirates-id-after-property-purchase": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "emirates-id-application-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "first-30-days-dubai-expat": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "german-expats-dubai-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "golden-visa-vs-green-visa": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "gulf-healthcare-comparison": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "gulf-residency-by-investment-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "gulf-schools-comparison": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "how-much-to-invest-dubai-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "how-to-evaluate-dubai-developer": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "ib-schools-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "indian-schools-dubai-cbse": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "jbr-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "khda-school-ratings-explained": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "leaving-dubai-exit-checklist": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-al-marjan-island": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-al-reem-island": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-muscat-al-mouj": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-muscat-qurum": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-riyadh-diplomatic-quarter": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-saadiyat-island": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-seef-bahrain": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "living-west-bay-doha": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "manama-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "muscat-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "muscat-international-schools": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "nshama-developer-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "offshore-bank-account-uae-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-banking-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-family-visa": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-healthcare-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-itc-zones-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-property-foreigner-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-rental-yield-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "omniyat-developer-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "opening-bank-account-dubai-property-buyers": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "pet-relocation-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "post-handover-payment-plan-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-banking-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-culture-etiquette": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-driving-license": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-off-plan-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-permanent-residency": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-residency-by-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-residency-by-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-school-fees": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-tax-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-vs-uae-remote-work-visa": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "qatar-work-visa-process": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-healthcare-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-properties-developer-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rak-vs-dubai-family-life": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "relocate-qatar": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "relocate-saudi-arabia": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "rera-broker-verification-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "riyadh-cost-of-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-driving-women-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-healthcare-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-off-plan-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-premium-residency-property": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-property-foreigner-living": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "schools-near-dubai-hills": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "schools-near-dubai-marina": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "schools-near-dubai-south": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "schools-near-yas-island": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "select-group-developer-review": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "sharjah-dubai-commuter-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "tax-german-residents-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-banking-for-russian-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-banking-guide-expats": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-blue-visa": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-central-bank-mortgage-rules": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-freelance-permit-dubai": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-green-visa-freelancer": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-mortgage-banks-list": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-residency-visa-types-guide": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "uae-savings-fixed-deposits": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "villanova-property-investment": {
+      "collection": "guides",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "damac-islands-handover-update-2026": {
+      "collection": "news",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "oman-investment-residency-2026": {
+      "collection": "news",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "saudi-foreign-ownership-update-2026": {
+      "collection": "news",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "address-residences-dubai-hills": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "aldar-saadiyat-grove": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "aldar-yas-acres": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "damac-islands": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "damac-lagoons-overview": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "danube-bayz-101": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "emaar-south-expo-living": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "meraas-nad-al-sheba-villas": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "omniyat-orla-dorchester": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "select-group-six-senses": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "sobha-hartland-2": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    },
+    "the-oasis-emaar": {
+      "collection": "projects",
+      "protected": true,
+      "tier": "B",
+      "source": "gsc-90d-impression"
+    }
+  }
+}

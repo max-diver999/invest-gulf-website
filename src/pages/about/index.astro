@@ -1,34 +1,115 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import FaqBlock from '../../components/FaqBlock.astro';
+import LeadForm from '../../components/LeadForm.astro';
 import { SITE } from '../../data/site';
+
+const faqItems = [
+  {
+    question: 'Is Invest Gulf a property developer or broker?',
+    answer:
+      'No. Invest Gulf is an independent editorial site. We publish research guides and may connect enquiries to RERA-licensed partners when you request a shortlist. We do not list inventory or act as a developer sales office.',
+  },
+  {
+    question: 'Who publishes Invest Gulf content?',
+    answer:
+      'Articles are written and reviewed by Invest Gulf Editorial using official government sources, land department fee schedules, and cross-checks against market data. Each guide shows an updated date when material facts change.',
+  },
+  {
+    question: 'How is Invest Gulf related to MORE Group?',
+    answer:
+      'Invest Gulf is part of the MORE Group portfolio of market research sites. MORE Group operates licensed real estate advisory in other regions. Invest Gulf focuses on Gulf property research in English and keeps editorial independence from any single developer.',
+  },
+  {
+    question: 'Does Invest Gulf guarantee rental yields or visa approval?',
+    answer:
+      'No. Yields, prices, and visa rules change. Our guides model scenarios with sourced figures, but outcomes depend on your unit, timing, and compliance. Always confirm with a licensed lawyer, tax adviser, and broker before signing.',
+  },
+  {
+    question: 'What happens when I submit the shortlist form?',
+    answer:
+      'Your budget and target market are reviewed by our team. Serious enquiries may be referred to a RERA-licensed partner who can show regulated inventory and complete KYC. We do not sell your data to unrelated marketing lists. See our <a href="/methodology/">methodology</a> for details.',
+  },
+];
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: `About ${SITE.name}`,
+  url: `${SITE.url}/about/`,
+  description:
+    'Editorial mission, independence policy, and partner referral standards for Invest Gulf Gulf property research.',
+  mainEntity: {
+    '@type': 'Organization',
+    name: SITE.name,
+    url: SITE.url,
+    email: SITE.email,
+  },
+};
 ---
 <BaseLayout
   title="About Invest Gulf"
-  description="Invest Gulf is an independent editorial resource on UAE and Gulf property investment, not a developer or listing portal."
+  description="Invest Gulf is an independent editorial resource on UAE and Gulf property investment. Editorial standards, partner policy, and how we differ from brokers and developers."
+  schema={aboutSchema}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
+    <p class="badge-pill mb-4">Independent research · Not a developer</p>
     <h1 class="mb-6">About {SITE.name}</h1>
     <div class="prose">
       <p>
-        {SITE.name} publishes research-first guides for foreign buyers evaluating Dubai, Abu Dhabi, and wider Gulf markets.
-        We are <strong>not</strong> a developer, not a property portal, and not a substitute for licensed legal or tax advice.
+        {SITE.name} publishes research-first guides for foreign buyers evaluating Dubai, Abu Dhabi, Qatar, Saudi Arabia,
+        Bahrain, Oman, and wider Gulf markets. We explain ownership rules, fee stacks, visa pathways, and yield math in
+        plain English.
       </p>
+      <p>
+        We are <strong>not</strong> a developer, not a property portal, and not a substitute for licensed legal or tax
+        advice. We are also <strong>not</strong> affiliated with government investment bodies or similarly named regional
+        brokerages marketed as "Gulf Invest."
+      </p>
+
+      <h2>Editorial model</h2>
+      <ul>
+        <li>Primary sources first: DLD, RERA, ADM, ICA visa rules, and published fee schedules</li>
+        <li>Cross-checks against multiple listing and transaction datasets before we cite a range</li>
+        <li>Clear separation between editorial guides and partner-assisted shortlist referrals</li>
+        <li>Updated dates on guides when thresholds, fees, or major market facts change</li>
+      </ul>
+
       <h2>What we do</h2>
       <ul>
-        <li>Explain ownership rules, fee stacks, and Golden Visa thresholds in plain English</li>
-        <li>Compare markets and product types (off-plan vs ready, yield vs capital growth)</li>
+        <li>Compare markets and product types (off-plan vs ready, yield vs capital growth, free zone vs mainland)</li>
+        <li>Publish Invest Gulf underwriting snapshots with scenario math buyers can verify</li>
         <li>Connect serious enquiries to <strong>RERA-licensed partners</strong> when you request a shortlist</li>
       </ul>
+
       <h2>What we don't do</h2>
       <ul>
-        <li>Push specific developer inventory or take undisclosed referral fees without disclosure</li>
+        <li>Push specific developer inventory or hide referral relationships</li>
         <li>Guarantee yields, capital appreciation, or visa outcomes</li>
-        <li>Provide personalised financial, legal, or tax advice</li>
+        <li>Provide personalised financial, legal, or tax advice in articles or email</li>
       </ul>
+
+      <h2>Publisher</h2>
       <p>
-        Questions? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or read our
-        <a href="/methodology/">methodology</a>.
+        Invest Gulf is operated as part of the <a href="https://moregroup.estate/" rel="noopener noreferrer">MORE Group</a>
+        portfolio of market research properties. MORE Group has delivered cross-border property advisory since 2018. Invest Gulf
+        applies the same research discipline to Gulf markets in English.
       </p>
+      <p>
+        Editorial contact: <a href={`mailto:${SITE.email}`}>{SITE.email}</a> ·
+        <a href="/methodology/">Methodology</a> ·
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+
+    <FaqBlock items={faqItems} title="About Invest Gulf: FAQ" />
+
+    <div class="mt-12">
+      <LeadForm
+        title="Request a Gulf property shortlist"
+        subtitle="Share budget, target emirate, and timeline. We respond within one business day."
+        context="about-page"
+      />
     </div>
   </section>
 </BaseLayout>

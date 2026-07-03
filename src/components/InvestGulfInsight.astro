@@ -1,0 +1,39 @@
+---
+interface Props {
+  label?: string;
+}
+const { label = 'Invest Gulf underwriting snapshot' } = Astro.props;
+---
+<aside class="ig-insight" data-component="invest-gulf-insight">
+  <div class="ig-insight-label">{label}</div>
+  <div class="ig-insight-body">
+    <slot />
+  </div>
+</aside>
+
+<style>
+  .ig-insight {
+    border: 1px solid #c5ddd8;
+    border-radius: 10px;
+    background: #f4faf8;
+    padding: 18px 20px;
+    margin: 24px 0 28px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--color-ink, #1f2421);
+  }
+  .ig-insight-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--color-teal-dark, #235851);
+    margin-bottom: 8px;
+  }
+  .ig-insight-body :global(p) {
+    margin: 0 0 10px;
+  }
+  .ig-insight-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

@@ -29,7 +29,7 @@ const fullTitle = title.includes('Invest Gulf') ? title : `${title} | Invest Gul
 
 const orgSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': ['Organization', 'NewsMediaOrganization'],
   name: SITE.name,
   alternateName: 'Invest Gulf — Gulf Property Research',
   url: SITE.url,
@@ -48,10 +48,26 @@ const orgSchema = {
     'Qatar property investment',
     'Saudi Arabia real estate',
   ],
+  founder: {
+    '@type': 'Person',
+    name: 'Maksim Shchegolev',
+  },
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'MORE Group',
+    url: 'https://moregroup.estate',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    email: SITE.email,
+    availableLanguage: ['English'],
+  },
   sameAs: [
     'https://invest-gulf.com',
-    // Wikidata entity: add Q-id URL here once created at https://www.wikidata.org/wiki/Special:NewItem
-    // e.g. 'https://www.wikidata.org/wiki/Q130534621'
+    'https://invest-gulf.com/about/',
+    'https://moregroup.estate',
+    // Wikidata: add after item creation — see _СИСТЕМА/GEO_WIKIDATA_INVEST_GULF.md
   ],
 };
 
