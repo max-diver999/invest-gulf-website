@@ -1,0 +1,2043 @@
+{
+  "generatedAt": "2026-07-03T12:50:46.108Z",
+  "period": "2026-04-04 to 2026-07-02",
+  "totalMdx": 610,
+  "gscPagesWithImpressions": 246,
+  "zeroImpressionTotal": 376,
+  "pruneCount": 258,
+  "keepCount": 118,
+  "indexedAfterApprox": 352,
+  "byRule": {
+    "areas-zero-impression": 15,
+    "secondary-banking-residency": 11,
+    "lifestyle-micro": 8,
+    "freezone-company-setup-cluster": 12,
+    "relocation-satellite": 8,
+    "living-relocation-duplicates": 31,
+    "developer-reviews": 9,
+    "school-curriculum-guides": 2,
+    "emirate-guide-satellites": 28,
+    "best-listicles": 3,
+    "duplicate-area-in-guides": 4,
+    "best-off-plan-cluster": 7,
+    "gulf-generic-satellites": 3,
+    "dubai-lifestyle-satellite": 33,
+    "nationality-buyer-guides": 8,
+    "living-neighbourhood-guides": 11,
+    "schools-near-guides": 4,
+    "uae-satellite-guides": 23,
+    "compare-zero-impression": 16,
+    "projects-zero-impression": 13,
+    "news-zero-impression": 9
+  },
+  "prune": [
+    {
+      "collection": "areas",
+      "slug": "al-marjan-island-property-investment",
+      "relPath": "src/content/areas/al-marjan-island-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "al-nakheel-rak-property-investment",
+      "relPath": "src/content/areas/al-nakheel-rak-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "amwaj-islands-property-investment",
+      "relPath": "src/content/areas/amwaj-islands-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "arabian-ranches-property-investment",
+      "relPath": "src/content/areas/arabian-ranches-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "business-bay-property-investment",
+      "relPath": "src/content/areas/business-bay-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "dammam-khobar-property-investment",
+      "relPath": "src/content/areas/dammam-khobar-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "jbr-property-investment",
+      "relPath": "src/content/areas/jbr-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "khalifa-city-property-investment",
+      "relPath": "src/content/areas/khalifa-city-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "manama-property-investment",
+      "relPath": "src/content/areas/manama-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "masdar-city-property-investment",
+      "relPath": "src/content/areas/masdar-city-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "mbr-city-property-investment",
+      "relPath": "src/content/areas/mbr-city-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "mina-al-arab-property-investment",
+      "relPath": "src/content/areas/mina-al-arab-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "the-pearl-lusail-property-investment",
+      "relPath": "src/content/areas/the-pearl-lusail-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "town-square-property-investment",
+      "relPath": "src/content/areas/town-square-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "areas",
+      "slug": "villanova-property-investment",
+      "relPath": "src/content/areas/villanova-property-investment.mdx",
+      "rule": "areas-zero-impression",
+      "reason": "Area pages with 0 GSC impressions (secondary geo, no search signal)"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-banking-expats",
+      "relPath": "src/content/guides/abu-dhabi-banking-expats.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-golden-visa-living",
+      "relPath": "src/content/guides/abu-dhabi-golden-visa-living.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-mainland-llc-setup",
+      "relPath": "src/content/guides/abu-dhabi-mainland-llc-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-relocation-guide",
+      "relPath": "src/content/guides/abu-dhabi-relocation-guide.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-residency-options",
+      "relPath": "src/content/guides/abu-dhabi-residency-options.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-utilities-addc",
+      "relPath": "src/content/guides/abu-dhabi-utilities-addc.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "adek-school-ratings-abu-dhabi",
+      "relPath": "src/content/guides/adek-school-ratings-abu-dhabi.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "ajman-freehold-property-guide",
+      "relPath": "src/content/guides/ajman-freehold-property-guide.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "ajman-living-guide",
+      "relPath": "src/content/guides/ajman-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "ajman-rental-yield-guide",
+      "relPath": "src/content/guides/ajman-rental-yield-guide.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "aldar-properties-review",
+      "relPath": "src/content/guides/aldar-properties-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "american-schools-dubai",
+      "relPath": "src/content/guides/american-schools-dubai.mdx",
+      "rule": "school-curriculum-guides",
+      "reason": "School curriculum micro guides (boarding schools pillar keeps traffic elsewhere)"
+    },
+    {
+      "collection": "guides",
+      "slug": "arada-developer-review",
+      "relPath": "src/content/guides/arada-developer-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "azizi-developments-review",
+      "relPath": "src/content/guides/azizi-developments-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "bahrain-family-visa",
+      "relPath": "src/content/guides/bahrain-family-visa.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "bahrain-golden-residence-property",
+      "relPath": "src/content/guides/bahrain-golden-residence-property.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "bahrain-relocation-guide",
+      "relPath": "src/content/guides/bahrain-relocation-guide.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "bahrain-vs-dubai-living",
+      "relPath": "src/content/guides/bahrain-vs-dubai-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-banks-expats-dubai",
+      "relPath": "src/content/guides/best-banks-expats-dubai.mdx",
+      "rule": "best-listicles",
+      "reason": "Best-* listicles with no GSC traction"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-gulf-country-for-families",
+      "relPath": "src/content/guides/best-gulf-country-for-families.mdx",
+      "rule": "best-listicles",
+      "reason": "Best-* listicles with no GSC traction"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-gulf-country-for-retirees",
+      "relPath": "src/content/guides/best-gulf-country-for-retirees.mdx",
+      "rule": "best-listicles",
+      "reason": "Best-* listicles with no GSC traction"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-gulf-country-property-investment",
+      "relPath": "src/content/guides/best-gulf-country-property-investment.mdx",
+      "rule": "duplicate-area-in-guides",
+      "reason": "Property investment guide duplicates /areas/ URL"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-business-bay-dubai",
+      "relPath": "src/content/guides/best-off-plan-business-bay-dubai.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-creek-harbour",
+      "relPath": "src/content/guides/best-off-plan-creek-harbour.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-downtown-dubai",
+      "relPath": "src/content/guides/best-off-plan-downtown-dubai.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-dubai-marina",
+      "relPath": "src/content/guides/best-off-plan-dubai-marina.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-dubai-south",
+      "relPath": "src/content/guides/best-off-plan-dubai-south.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-jvc-dubai",
+      "relPath": "src/content/guides/best-off-plan-jvc-dubai.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-off-plan-ras-al-khaimah",
+      "relPath": "src/content/guides/best-off-plan-ras-al-khaimah.mdx",
+      "rule": "best-off-plan-cluster",
+      "reason": "Best-off-plan area listicles (scaled content)"
+    },
+    {
+      "collection": "guides",
+      "slug": "british-schools-dubai",
+      "relPath": "src/content/guides/british-schools-dubai.mdx",
+      "rule": "school-curriculum-guides",
+      "reason": "School curriculum micro guides (boarding schools pillar keeps traffic elsewhere)"
+    },
+    {
+      "collection": "guides",
+      "slug": "buy-property-dubai-foreigner",
+      "relPath": "src/content/guides/buy-property-dubai-foreigner.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "convert-foreign-license-dubai",
+      "relPath": "src/content/guides/convert-foreign-license-dubai.mdx",
+      "rule": "gulf-generic-satellites",
+      "reason": "Generic Gulf comparison / lifestyle guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "damac-properties-review",
+      "relPath": "src/content/guides/damac-properties-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "danube-properties-review",
+      "relPath": "src/content/guides/danube-properties-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "doha-rent-prices-by-area",
+      "relPath": "src/content/guides/doha-rent-prices-by-area.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-ai-digital-economy-expats",
+      "relPath": "src/content/guides/dubai-ai-digital-economy-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-alcohol-rules-expats",
+      "relPath": "src/content/guides/dubai-alcohol-rules-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-beach-clubs-cost",
+      "relPath": "src/content/guides/dubai-beach-clubs-cost.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-co-working-spaces",
+      "relPath": "src/content/guides/dubai-co-working-spaces.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-creek-harbour-living",
+      "relPath": "src/content/guides/dubai-creek-harbour-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-culture-etiquette-expats",
+      "relPath": "src/content/guides/dubai-culture-etiquette-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-dental-care-costs",
+      "relPath": "src/content/guides/dubai-dental-care-costs.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-earthquake-risk",
+      "relPath": "src/content/guides/dubai-earthquake-risk.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-expo-city-living",
+      "relPath": "src/content/guides/dubai-expo-city-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-freelance-visa-cost",
+      "relPath": "src/content/guides/dubai-freelance-visa-cost.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-grocery-costs",
+      "relPath": "src/content/guides/dubai-grocery-costs.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-gym-fitness-cost",
+      "relPath": "src/content/guides/dubai-gym-fitness-cost.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-health-insurance-mandatory",
+      "relPath": "src/content/guides/dubai-health-insurance-mandatory.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-healthcare-guide-expats",
+      "relPath": "src/content/guides/dubai-healthcare-guide-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-international-schools-guide",
+      "relPath": "src/content/guides/dubai-international-schools-guide.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-internet-mobile-plans",
+      "relPath": "src/content/guides/dubai-internet-mobile-plans.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-life-insurance-expats",
+      "relPath": "src/content/guides/dubai-life-insurance-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-marina-living-pros-cons",
+      "relPath": "src/content/guides/dubai-marina-living-pros-cons.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-maternity-costs",
+      "relPath": "src/content/guides/dubai-maternity-costs.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-metaverse-property-nft-reality",
+      "relPath": "src/content/guides/dubai-metaverse-property-nft-reality.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-monthly-budget-expat-family",
+      "relPath": "src/content/guides/dubai-monthly-budget-expat-family.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-neighbourhoods-for-families",
+      "relPath": "src/content/guides/dubai-neighbourhoods-for-families.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-part-time-living",
+      "relPath": "src/content/guides/dubai-part-time-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-prayer-times-work-culture",
+      "relPath": "src/content/guides/dubai-prayer-times-work-culture.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-flipping-guide",
+      "relPath": "src/content/guides/dubai-property-flipping-guide.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-american-buyers",
+      "relPath": "src/content/guides/dubai-property-for-american-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-canadian-buyers",
+      "relPath": "src/content/guides/dubai-property-for-canadian-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-chinese-buyers",
+      "relPath": "src/content/guides/dubai-property-for-chinese-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-french-buyers",
+      "relPath": "src/content/guides/dubai-property-for-french-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-indian-buyers",
+      "relPath": "src/content/guides/dubai-property-for-indian-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-pakistani-buyers",
+      "relPath": "src/content/guides/dubai-property-for-pakistani-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-saudi-buyers",
+      "relPath": "src/content/guides/dubai-property-for-saudi-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-for-south-african-buyers",
+      "relPath": "src/content/guides/dubai-property-for-south-african-buyers.mdx",
+      "rule": "nationality-buyer-guides",
+      "reason": "Nationality-specific buyer guides (programmatic, no traction)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-insurance-home",
+      "relPath": "src/content/guides/dubai-property-insurance-home.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-investment-for-beginners",
+      "relPath": "src/content/guides/dubai-property-investment-for-beginners.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-portfolio-strategy",
+      "relPath": "src/content/guides/dubai-property-portfolio-strategy.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-russian-buyers-relocation",
+      "relPath": "src/content/guides/dubai-property-russian-buyers-relocation.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-relocation-checklist",
+      "relPath": "src/content/guides/dubai-relocation-checklist.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-relocation-guide",
+      "relPath": "src/content/guides/dubai-relocation-guide.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-residence-visa-stamping",
+      "relPath": "src/content/guides/dubai-residence-visa-stamping.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-safety-crime-expats",
+      "relPath": "src/content/guides/dubai-safety-crime-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-south-free-zone-setup",
+      "relPath": "src/content/guides/dubai-south-free-zone-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-summer-survival-guide",
+      "relPath": "src/content/guides/dubai-summer-survival-guide.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-transport-costs-metro-taxi",
+      "relPath": "src/content/guides/dubai-transport-costs-metro-taxi.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-university-options-expats",
+      "relPath": "src/content/guides/dubai-university-options-expats.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-utility-bills-deewa",
+      "relPath": "src/content/guides/dubai-utility-bills-deewa.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-vacancy-rates-rental-demand",
+      "relPath": "src/content/guides/dubai-vacancy-rates-rental-demand.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-vs-abu-dhabi-cost-living",
+      "relPath": "src/content/guides/dubai-vs-abu-dhabi-cost-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-vs-abu-dhabi-living",
+      "relPath": "src/content/guides/dubai-vs-abu-dhabi-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-vs-london-living-cost",
+      "relPath": "src/content/guides/dubai-vs-london-living-cost.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-vs-singapore-expat",
+      "relPath": "src/content/guides/dubai-vs-singapore-expat.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-winter-weather",
+      "relPath": "src/content/guides/dubai-winter-weather.mdx",
+      "rule": "dubai-lifestyle-satellite",
+      "reason": "Dubai lifestyle / admin satellites with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "emaar-community-living-guide",
+      "relPath": "src/content/guides/emaar-community-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "emaar-properties-review",
+      "relPath": "src/content/guides/emaar-properties-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "fujairah-beach-property-investment",
+      "relPath": "src/content/guides/fujairah-beach-property-investment.mdx",
+      "rule": "duplicate-area-in-guides",
+      "reason": "Property investment guide duplicates /areas/ URL"
+    },
+    {
+      "collection": "guides",
+      "slug": "fujairah-living-guide",
+      "relPath": "src/content/guides/fujairah-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "fujairah-rental-yield-guide",
+      "relPath": "src/content/guides/fujairah-rental-yield-guide.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "golden-visa-vs-investor-visa-uae",
+      "relPath": "src/content/guides/golden-visa-vs-investor-visa-uae.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "gulf-banking-comparison-expats",
+      "relPath": "src/content/guides/gulf-banking-comparison-expats.mdx",
+      "rule": "gulf-generic-satellites",
+      "reason": "Generic Gulf comparison / lifestyle guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "gulf-expat-living-comparison",
+      "relPath": "src/content/guides/gulf-expat-living-comparison.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "gulf-residency-pathways-comparison",
+      "relPath": "src/content/guides/gulf-residency-pathways-comparison.mdx",
+      "rule": "gulf-generic-satellites",
+      "reason": "Generic Gulf comparison / lifestyle guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "hidden-costs-living-dubai",
+      "relPath": "src/content/guides/hidden-costs-living-dubai.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "ifza-company-setup",
+      "relPath": "src/content/guides/ifza-company-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "jafza-company-setup",
+      "relPath": "src/content/guides/jafza-company-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "jeddah-cost-of-living",
+      "relPath": "src/content/guides/jeddah-cost-of-living.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "jeddah-international-schools",
+      "relPath": "src/content/guides/jeddah-international-schools.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "jumeirah-living-guide",
+      "relPath": "src/content/guides/jumeirah-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "kuwait-rental-yield-guide",
+      "relPath": "src/content/guides/kuwait-rental-yield-guide.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "lgbtq-living-dubai",
+      "relPath": "src/content/guides/lgbtq-living-dubai.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-al-ain",
+      "relPath": "src/content/guides/living-al-ain.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-al-hamra-village",
+      "relPath": "src/content/guides/living-al-hamra-village.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-amwaj-islands",
+      "relPath": "src/content/guides/living-amwaj-islands.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-jeddah-corniche",
+      "relPath": "src/content/guides/living-jeddah-corniche.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-khalifa-city",
+      "relPath": "src/content/guides/living-khalifa-city.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-lusail-qatar",
+      "relPath": "src/content/guides/living-lusail-qatar.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-mina-al-arab",
+      "relPath": "src/content/guides/living-mina-al-arab.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-neom-the-line",
+      "relPath": "src/content/guides/living-neom-the-line.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-sharjah-al-khan",
+      "relPath": "src/content/guides/living-sharjah-al-khan.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-the-pearl-qatar",
+      "relPath": "src/content/guides/living-the-pearl-qatar.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "living-yas-island-abu-dhabi",
+      "relPath": "src/content/guides/living-yas-island-abu-dhabi.mdx",
+      "rule": "living-neighbourhood-guides",
+      "reason": "Living-* guides duplicate area/relocation intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "meraas-properties-review",
+      "relPath": "src/content/guides/meraas-properties-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "meydan-free-zone-setup",
+      "relPath": "src/content/guides/meydan-free-zone-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "nakheel-review",
+      "relPath": "src/content/guides/nakheel-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "neom-property-investment",
+      "relPath": "src/content/guides/neom-property-investment.mdx",
+      "rule": "duplicate-area-in-guides",
+      "reason": "Property investment guide duplicates /areas/ URL"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-itc-visa-living",
+      "relPath": "src/content/guides/oman-itc-visa-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-relocation-guide",
+      "relPath": "src/content/guides/oman-relocation-guide.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-residency-by-investment",
+      "relPath": "src/content/guides/oman-residency-by-investment.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-retirement-living",
+      "relPath": "src/content/guides/oman-retirement-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-tax-expats",
+      "relPath": "src/content/guides/oman-tax-expats.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-vs-dubai-cost",
+      "relPath": "src/content/guides/oman-vs-dubai-cost.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "oman-vs-uae-living",
+      "relPath": "src/content/guides/oman-vs-uae-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "palm-jumeirah-living-guide",
+      "relPath": "src/content/guides/palm-jumeirah-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-buy-to-let-strategy",
+      "relPath": "src/content/guides/qatar-buy-to-let-strategy.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-off-plan-vs-ready-property",
+      "relPath": "src/content/guides/qatar-off-plan-vs-ready-property.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-property-buyer-relocation",
+      "relPath": "src/content/guides/qatar-property-buyer-relocation.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-property-due-diligence",
+      "relPath": "src/content/guides/qatar-property-due-diligence.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-property-management-guide",
+      "relPath": "src/content/guides/qatar-property-management-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-relocation-guide",
+      "relPath": "src/content/guides/qatar-relocation-guide.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-service-charges-guide",
+      "relPath": "src/content/guides/qatar-service-charges-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-vs-dubai-cost-living",
+      "relPath": "src/content/guides/qatar-vs-dubai-cost-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "qatar-vs-dubai-living",
+      "relPath": "src/content/guides/qatar-vs-dubai-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-banking-guide",
+      "relPath": "src/content/guides/rak-banking-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-branded-residences-guide",
+      "relPath": "src/content/guides/rak-branded-residences-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-commute-to-dubai",
+      "relPath": "src/content/guides/rak-commute-to-dubai.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-cost-of-living-detailed",
+      "relPath": "src/content/guides/rak-cost-of-living-detailed.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-rental-yield-guide",
+      "relPath": "src/content/guides/rak-rental-yield-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-schools-guide",
+      "relPath": "src/content/guides/rak-schools-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "rak-vs-sharjah-living",
+      "relPath": "src/content/guides/rak-vs-sharjah-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "rakez-company-setup",
+      "relPath": "src/content/guides/rakez-company-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "ras-al-khaimah-relocation-guide",
+      "relPath": "src/content/guides/ras-al-khaimah-relocation-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "relocate-bahrain",
+      "relPath": "src/content/guides/relocate-bahrain.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "relocate-oman",
+      "relPath": "src/content/guides/relocate-oman.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "relocate-ras-al-khaimah",
+      "relPath": "src/content/guides/relocate-ras-al-khaimah.mdx",
+      "rule": "relocation-satellite",
+      "reason": "Relocate-* and first-30-days lifestyle satellites"
+    },
+    {
+      "collection": "guides",
+      "slug": "riyadh-international-schools",
+      "relPath": "src/content/guides/riyadh-international-schools.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "salalah-living-guide",
+      "relPath": "src/content/guides/salalah-living-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-arabia-relocation-guide",
+      "relPath": "src/content/guides/saudi-arabia-relocation-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-banking-expats",
+      "relPath": "src/content/guides/saudi-banking-expats.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-company-setup-guide",
+      "relPath": "src/content/guides/saudi-company-setup-guide.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-entertainment-social-life",
+      "relPath": "src/content/guides/saudi-entertainment-social-life.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-family-visa",
+      "relPath": "src/content/guides/saudi-family-visa.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-iqama-process",
+      "relPath": "src/content/guides/saudi-iqama-process.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-premium-residency-living",
+      "relPath": "src/content/guides/saudi-premium-residency-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-property-designated-zones-explained",
+      "relPath": "src/content/guides/saudi-property-designated-zones-explained.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-remote-work-visa",
+      "relPath": "src/content/guides/saudi-remote-work-visa.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-tax-zakat-expats",
+      "relPath": "src/content/guides/saudi-tax-zakat-expats.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-vs-dubai-cost",
+      "relPath": "src/content/guides/saudi-vs-dubai-cost.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "saudi-vs-uae-living",
+      "relPath": "src/content/guides/saudi-vs-uae-living.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "schools-near-al-reem-island",
+      "relPath": "src/content/guides/schools-near-al-reem-island.mdx",
+      "rule": "schools-near-guides",
+      "reason": "Schools-near-* micro pages with no search demand"
+    },
+    {
+      "collection": "guides",
+      "slug": "schools-near-arabian-ranches",
+      "relPath": "src/content/guides/schools-near-arabian-ranches.mdx",
+      "rule": "schools-near-guides",
+      "reason": "Schools-near-* micro pages with no search demand"
+    },
+    {
+      "collection": "guides",
+      "slug": "schools-near-jvc",
+      "relPath": "src/content/guides/schools-near-jvc.mdx",
+      "rule": "schools-near-guides",
+      "reason": "Schools-near-* micro pages with no search demand"
+    },
+    {
+      "collection": "guides",
+      "slug": "schools-near-saadiyat-island",
+      "relPath": "src/content/guides/schools-near-saadiyat-island.mdx",
+      "rule": "schools-near-guides",
+      "reason": "Schools-near-* micro pages with no search demand"
+    },
+    {
+      "collection": "guides",
+      "slug": "shams-free-zone-setup",
+      "relPath": "src/content/guides/shams-free-zone-setup.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-cost-of-living",
+      "relPath": "src/content/guides/sharjah-cost-of-living.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-freehold-areas-guide",
+      "relPath": "src/content/guides/sharjah-freehold-areas-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-relocation-guide",
+      "relPath": "src/content/guides/sharjah-relocation-guide.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-rental-yield-guide",
+      "relPath": "src/content/guides/sharjah-rental-yield-guide.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-schools-commute-dubai",
+      "relPath": "src/content/guides/sharjah-schools-commute-dubai.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-schools-for-dubai-commuters",
+      "relPath": "src/content/guides/sharjah-schools-for-dubai-commuters.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-vs-dubai-commute-property",
+      "relPath": "src/content/guides/sharjah-vs-dubai-commute-property.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "sharjah-vs-dubai-rent",
+      "relPath": "src/content/guides/sharjah-vs-dubai-rent.mdx",
+      "rule": "emirate-guide-satellites",
+      "reason": "Non-core emirate satellite guides (pillars protected separately)"
+    },
+    {
+      "collection": "guides",
+      "slug": "single-woman-living-dubai",
+      "relPath": "src/content/guides/single-woman-living-dubai.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "guides",
+      "slug": "sobha-realty-review",
+      "relPath": "src/content/guides/sobha-realty-review.mdx",
+      "rule": "developer-reviews",
+      "reason": "Developer review pages with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-attestation-documents",
+      "relPath": "src/content/guides/uae-attestation-documents.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-banking-for-indian-nris",
+      "relPath": "src/content/guides/uae-banking-for-indian-nris.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-corporate-tax-expats",
+      "relPath": "src/content/guides/uae-corporate-tax-expats.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-credit-score-al-etihad",
+      "relPath": "src/content/guides/uae-credit-score-al-etihad.mdx",
+      "rule": "lifestyle-micro",
+      "reason": "Low-intent lifestyle micro topics (not property leads)"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-crs-fatca-banking",
+      "relPath": "src/content/guides/uae-crs-fatca-banking.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-employment-visa-process",
+      "relPath": "src/content/guides/uae-employment-visa-process.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-family-visa-sponsorship",
+      "relPath": "src/content/guides/uae-family-visa-sponsorship.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-golden-visa-property",
+      "relPath": "src/content/guides/uae-golden-visa-property.mdx",
+      "rule": "secondary-banking-residency",
+      "reason": "Secondary banking / residency guides with 0 impressions"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-green-visa-guide",
+      "relPath": "src/content/guides/uae-green-visa-guide.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-green-visa-skilled-worker",
+      "relPath": "src/content/guides/uae-green-visa-skilled-worker.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-inheritance-property-expats",
+      "relPath": "src/content/guides/uae-inheritance-property-expats.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-northern-emirates-comparison",
+      "relPath": "src/content/guides/uae-northern-emirates-comparison.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-remote-work-visa",
+      "relPath": "src/content/guides/uae-remote-work-visa.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-residency-vs-citizenship",
+      "relPath": "src/content/guides/uae-residency-vs-citizenship.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-residency-without-employer",
+      "relPath": "src/content/guides/uae-residency-without-employer.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-retirement-visa",
+      "relPath": "src/content/guides/uae-retirement-visa.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-salary-account-requirements",
+      "relPath": "src/content/guides/uae-salary-account-requirements.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-tax-guide-expats",
+      "relPath": "src/content/guides/uae-tax-guide-expats.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-tax-residency-183-days",
+      "relPath": "src/content/guides/uae-tax-residency-183-days.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-tax-residency-property",
+      "relPath": "src/content/guides/uae-tax-residency-property.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-visa-fees-2026",
+      "relPath": "src/content/guides/uae-visa-fees-2026.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-visa-medical-test",
+      "relPath": "src/content/guides/uae-visa-medical-test.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-visa-overstay-fines",
+      "relPath": "src/content/guides/uae-visa-overstay-fines.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-vs-qatar-for-russian-expats",
+      "relPath": "src/content/guides/uae-vs-qatar-for-russian-expats.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "uae-vs-saudi-for-investors",
+      "relPath": "src/content/guides/uae-vs-saudi-for-investors.mdx",
+      "rule": "uae-satellite-guides",
+      "reason": "UAE-wide admin guides without property-buyer intent"
+    },
+    {
+      "collection": "guides",
+      "slug": "umm-al-quwain-rental-yield-guide",
+      "relPath": "src/content/guides/umm-al-quwain-rental-yield-guide.mdx",
+      "rule": "freezone-company-setup-cluster",
+      "reason": "Secondary free zone / company setup pages (keep DIFC/DMCC/mainland pillars)"
+    },
+    {
+      "collection": "guides",
+      "slug": "villanova-dubai-property-investment",
+      "relPath": "src/content/guides/villanova-dubai-property-investment.mdx",
+      "rule": "duplicate-area-in-guides",
+      "reason": "Property investment guide duplicates /areas/ URL"
+    },
+    {
+      "collection": "guides",
+      "slug": "wynn-al-marjan-living-impact",
+      "relPath": "src/content/guides/wynn-al-marjan-living-impact.mdx",
+      "rule": "living-relocation-duplicates",
+      "reason": "Living / relocation duplicate guides"
+    },
+    {
+      "collection": "compare",
+      "slug": "aldar-vs-emaar",
+      "relPath": "src/content/compare/aldar-vs-emaar.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "bahrain-vs-dubai-investment",
+      "relPath": "src/content/compare/bahrain-vs-dubai-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-abu-dhabi-rental-yield",
+      "relPath": "src/content/compare/dubai-vs-abu-dhabi-rental-yield.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-doha-property-investment",
+      "relPath": "src/content/compare/dubai-vs-doha-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-london-property-investment",
+      "relPath": "src/content/compare/dubai-vs-london-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-muscat-property-investment",
+      "relPath": "src/content/compare/dubai-vs-muscat-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-qatar-rental-yield",
+      "relPath": "src/content/compare/dubai-vs-qatar-rental-yield.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-riyadh-property-investment",
+      "relPath": "src/content/compare/dubai-vs-riyadh-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "dubai-vs-sharjah-property-investment",
+      "relPath": "src/content/compare/dubai-vs-sharjah-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "emaar-vs-damac",
+      "relPath": "src/content/compare/emaar-vs-damac.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "emaar-vs-nakheel",
+      "relPath": "src/content/compare/emaar-vs-nakheel.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "emaar-vs-sobha",
+      "relPath": "src/content/compare/emaar-vs-sobha.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "rak-vs-fujairah-property-investment",
+      "relPath": "src/content/compare/rak-vs-fujairah-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "ras-al-khaimah-vs-dubai-investment",
+      "relPath": "src/content/compare/ras-al-khaimah-vs-dubai-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "sobha-vs-damac",
+      "relPath": "src/content/compare/sobha-vs-damac.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "compare",
+      "slug": "uae-vs-oman-property-investment",
+      "relPath": "src/content/compare/uae-vs-oman-property-investment.mdx",
+      "rule": "compare-zero-impression",
+      "reason": "Comparison pages with 0 GSC impressions (thin programmatic cluster)"
+    },
+    {
+      "collection": "projects",
+      "slug": "azizi-riviera-reber",
+      "relPath": "src/content/projects/azizi-riviera-reber.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "azizi-venice",
+      "relPath": "src/content/projects/azizi-venice.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "binghatti-hills",
+      "relPath": "src/content/projects/binghatti-hills.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "binghatti-phantom",
+      "relPath": "src/content/projects/binghatti-phantom.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "creek-waters-emaar",
+      "relPath": "src/content/projects/creek-waters-emaar.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "ellington-ocean-house",
+      "relPath": "src/content/projects/ellington-ocean-house.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "nakheel-como-residences",
+      "relPath": "src/content/projects/nakheel-como-residences.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "nakheel-rixos-dubai-islands",
+      "relPath": "src/content/projects/nakheel-rixos-dubai-islands.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "nshama-town-square-phase",
+      "relPath": "src/content/projects/nshama-town-square-phase.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "rak-gateway-2",
+      "relPath": "src/content/projects/rak-gateway-2.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "rak-marjan-beach-residences",
+      "relPath": "src/content/projects/rak-marjan-beach-residences.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "samana-barari-heights",
+      "relPath": "src/content/projects/samana-barari-heights.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "projects",
+      "slug": "sobha-siniya-island",
+      "relPath": "src/content/projects/sobha-siniya-island.mdx",
+      "rule": "projects-zero-impression",
+      "reason": "Project catalog pages with 0 GSC impressions"
+    },
+    {
+      "collection": "news",
+      "slug": "abu-dhabi-rent-index-2026",
+      "relPath": "src/content/news/abu-dhabi-rent-index-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "dubai-golden-visa-applications-2026",
+      "relPath": "src/content/news/dubai-golden-visa-applications-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "dubai-off-plan-registrations-q2-2026",
+      "relPath": "src/content/news/dubai-off-plan-registrations-q2-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "dubai-transaction-volume-may-2026",
+      "relPath": "src/content/news/dubai-transaction-volume-may-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "emaar-creek-waters-launch-2026",
+      "relPath": "src/content/news/emaar-creek-waters-launch-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "qatar-property-law-amendment-2026",
+      "relPath": "src/content/news/qatar-property-law-amendment-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "rak-al-marjan-infrastructure-2026",
+      "relPath": "src/content/news/rak-al-marjan-infrastructure-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "uae-corporate-tax-filing-deadline-2026",
+      "relPath": "src/content/news/uae-corporate-tax-filing-deadline-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    },
+    {
+      "collection": "news",
+      "slug": "uae-mortgage-rates-june-2026",
+      "relPath": "src/content/news/uae-mortgage-rates-june-2026.mdx",
+      "rule": "news-zero-impression",
+      "reason": "News with 0 GSC impressions in 90d (programmatic, no demand)"
+    }
+  ],
+  "keepSample": [
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-property-investment-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "abu-dhabi-rental-yield-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "bahrain-property-investment-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-areas-buy-property-dubai",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "best-dubai-developers-rental-yield",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "buy-property-through-uae-company",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "buy-to-let-mortgage-dubai",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "can-foreigners-buy-property-uae",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "capital-gains-uae-property",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "cash-vs-mortgage-dubai-property",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "cost-of-buying-property-dubai",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "currency-transfer-buy-property-uae",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dld-mortgage-registration-fees",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-business-setup-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-capital-appreciation-vs-yield",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-cooling-off-period-off-plan",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-developers-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-district-cooling-charges",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-ejari-tenancy-contract",
+      "rule": "zero-impression-but-potential"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-holiday-home-roi-calculator-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-mainland-llc-setup",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-mortgage-broker-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-payment-plan-types-explained",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-dispute-resolution",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-handover-checklist",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-inheritance-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-investment-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-market-cooling-or-growing",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-scams-red-flags",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-snagging-living",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-taxes-explained",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-property-valuation-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-rent-increase-calculator-rera",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-rental-guarantee-schemes-explained",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-rental-law-landlord-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-rental-yield-guide",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-service-charge-index-explained",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "dubai-tenant-eviction-rules-rera",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "due-diligence-dubai-property",
+      "rule": "protected-pillar"
+    },
+    {
+      "collection": "guides",
+      "slug": "ejari-registration-landlord-guide",
+      "rule": "protected-pillar"
+    }
+  ]
+}
