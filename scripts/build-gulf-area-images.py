@@ -75,6 +75,22 @@ AREAS: dict[str, tuple[str, str]] = {
     "villanova": ("Villanova Dubai", "Dubai UAE"),
     "west-bay-doha": ("West Bay Doha skyline", "Qatar"),
     "yas-island": ("Yas Island Abu Dhabi", "Abu Dhabi UAE"),
+    # Phase 2 recovery — expand hero pool (15 new areas, Jul 2026)
+    "ajman": ("Ajman Corniche UAE", "Ajman UAE"),
+    "al-ain": ("Al Ain oasis city", "Al Ain UAE"),
+    "al-barsha": ("Al Barsha Dubai", "Dubai UAE"),
+    "al-khor": ("Al Khor Qatar", "Qatar"),
+    "deira": ("Deira Dubai creek", "Dubai UAE"),
+    "difc": ("DIFC Dubai financial centre", "Dubai UAE"),
+    "doha-corniche": ("Doha Corniche Qatar", "Qatar"),
+    "dubai-expo-city": ("Dubai Expo City", "Dubai UAE"),
+    "fujairah": ("Fujairah beach UAE", "Fujairah UAE"),
+    "kuwait-city": ("Kuwait City skyline", "Kuwait"),
+    "neom": ("NEOM Saudi Arabia", "Saudi Arabia Tabuk"),
+    "salalah": ("Salalah Oman coast", "Oman Dhofar"),
+    "seef-bahrain": ("Seef Bahrain district", "Bahrain"),
+    "sohar": ("Sohar Oman port", "Oman"),
+    "umm-al-quwain": ("Umm Al Quwain UAE", "Umm Al Quwain UAE"),
 }
 
 INLINE_SUFFIXES = (" waterfront", " aerial view", " district")

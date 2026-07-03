@@ -1,6 +1,6 @@
 {
   "rollout": "gulf-area-images-p1",
-  "verified": "2026-06-15",
+  "verified": "2026-07-03",
   "rule": "58 areas x 3 images — unique source URLs, self-hosted on invest-gulf.com",
   "articles": [
     {
@@ -1392,6 +1392,366 @@
           "url": "https://invest-gulf.com/images/areas/yas-island/inline-2.jpg",
           "alt": "Yas Island Abu Dhabi — inline 2",
           "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Etihad_Airways_Flyover_-_Yas_Island%2C_Abu_Dhabi_Grand_Prix_%282%29.jpg/1280px-Etihad_Airways_Flyover_-_Yas_Island%2C_Abu_Dhabi_Grand_Prix_%282%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "ajman",
+      "file": "ajman-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/ajman/hero.jpg",
+          "alt": "Ajman Corniche UAE — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ajman_Nov._2010_-24.jpg/1280px-Ajman_Nov._2010_-24.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/ajman/inline-1.jpg",
+          "alt": "Ajman Corniche UAE — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Dubai_Downtown.jpg/1280px-Dubai_Downtown.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/ajman/inline-2.jpg",
+          "alt": "Ajman Corniche UAE — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Stamp_1970_Manama_MiNrA368H368ZD_pm_B002.jpg/1280px-Stamp_1970_Manama_MiNrA368H368ZD_pm_B002.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-ain",
+      "file": "al-ain-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-ain/hero.jpg",
+          "alt": "Al Ain oasis city — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Al_Ain_Oasis%2C_Al_Mutawaa_-_Abu_Dhabi_-_United_Arab_Emirates_-_panoramio.jpg/1280px-Al_Ain_Oasis%2C_Al_Mutawaa_-_Abu_Dhabi_-_United_Arab_Emirates_-_panoramio.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-ain/inline-1.jpg",
+          "alt": "Al Ain oasis city — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Al_Ain_Oasis.jpg/1280px-Al_Ain_Oasis.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-ain/inline-2.jpg",
+          "alt": "Al Ain oasis city — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/4/48/Al_Ain_Oasis_Desert_Paradise_-_Al_Ain_Oasis_Timeless_Beauty.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-barsha",
+      "file": "al-barsha-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-barsha/hero.png",
+          "alt": "Al Barsha Dubai — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Al_Barsha_South_map.png/1280px-Al_Barsha_South_map.png"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-barsha/inline-1.jpg",
+          "alt": "Al Barsha Dubai — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/2/22/Al_Salam_Mosque_at_night.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-barsha/inline-2.jpg",
+          "alt": "Al Barsha Dubai — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Birds_at_Al_Barsha_Park.jpg/1280px-Birds_at_Al_Barsha_Park.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "al-khor",
+      "file": "al-khor-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/al-khor/hero.jpg",
+          "alt": "Al Khor Qatar — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/a/a8/A_fort_entrance_sign_to_Al_Khor_City.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/al-khor/inline-1.jpg",
+          "alt": "Al Khor Qatar — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Al_Khor%2C_Qatar%2C_Middle_East.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/al-khor/inline-2.jpg",
+          "alt": "Al Khor Qatar — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Al_Khor_Airstrip_Overpass_on_Al_Khor_Road.jpg/1280px-Al_Khor_Airstrip_Overpass_on_Al_Khor_Road.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "deira",
+      "file": "deira-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/deira/hero.jpg",
+          "alt": "Deira Dubai creek — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261954214%29.jpg/1280px-Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261954214%29.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/deira/inline-1.jpg",
+          "alt": "Deira Dubai creek — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261960814%29.jpg/1280px-Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261960814%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/deira/inline-2.jpg",
+          "alt": "Deira Dubai creek — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261972114%29.jpg/1280px-Abra_%40_From_Bur_Dubai_to_Deira_%40_Dubai_Creek_%2815261972114%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "difc",
+      "file": "difc-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/difc/hero.jpg",
+          "alt": "DIFC Dubai financial centre — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/DIFC_2013_-_Team_Italy_023.jpg/1280px-DIFC_2013_-_Team_Italy_023.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/difc/inline-1.jpg",
+          "alt": "DIFC Dubai financial centre — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DIFC_2013_-_Team_Italy_025.jpg/1280px-DIFC_2013_-_Team_Italy_025.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/difc/inline-2.jpg",
+          "alt": "DIFC Dubai financial centre — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/DIFC_2013_-_Team_Italy_093.jpg/1280px-DIFC_2013_-_Team_Italy_093.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "doha-corniche",
+      "file": "doha-corniche-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/doha-corniche/hero.jpg",
+          "alt": "Doha Corniche Qatar — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/A_dhow_photographed_in_2014_off_the_Doha_Corniche.jpg/1280px-A_dhow_photographed_in_2014_off_the_Doha_Corniche.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/doha-corniche/inline-1.jpg",
+          "alt": "Doha Corniche Qatar — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Colorful_sheds_at_Doha_Sands_Beach_Club.jpg/1280px-Colorful_sheds_at_Doha_Sands_Beach_Club.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/doha-corniche/inline-2.jpg",
+          "alt": "Doha Corniche Qatar — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Doha_Corniche_2.jpg/1280px-Doha_Corniche_2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "dubai-expo-city",
+      "file": "dubai-expo-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/dubai-expo-city/hero.jpg",
+          "alt": "Dubai Expo City — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A6-EDT_with_%22Expo_2020_Dubai-Candidate_City%22_titles_at_Heathrow_%288456501650%29.jpg/1280px-A6-EDT_with_%22Expo_2020_Dubai-Candidate_City%22_titles_at_Heathrow_%288456501650%29.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/dubai-expo-city/inline-1.jpg",
+          "alt": "Dubai Expo City — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/A6-EOH_Emirates_Airbus_A380-861_s-n_174_-_EXPO_2020_Dubai_UAE_Host_City_%2837059447352%29.jpg/1280px-A6-EOH_Emirates_Airbus_A380-861_s-n_174_-_EXPO_2020_Dubai_UAE_Host_City_%2837059447352%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/dubai-expo-city/inline-2.jpg",
+          "alt": "Dubai Expo City — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Expo_2020_metro_station.jpg/1280px-Expo_2020_metro_station.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "fujairah",
+      "file": "fujairah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/fujairah/hero.jpg",
+          "alt": "Fujairah beach UAE — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fujairah_UAE_Beach_-_panoramio.jpg/1280px-Fujairah_UAE_Beach_-_panoramio.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/fujairah/inline-1.jpg",
+          "alt": "Fujairah beach UAE — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fujairah_UAE_Beach_-_panoramio_%281%29.jpg/1280px-Fujairah_UAE_Beach_-_panoramio_%281%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/fujairah/inline-2.jpg",
+          "alt": "Fujairah beach UAE — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Khor_Fakkan_Beach_Fujairah_UAE_-_panoramio.jpg/1280px-Khor_Fakkan_Beach_Fujairah_UAE_-_panoramio.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "kuwait-city",
+      "file": "kuwait-city-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/kuwait-city/hero.jpg",
+          "alt": "Kuwait City skyline — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Kuwait_City_Imam_Sadiq_Mosque_at_Night_4.jpg/1280px-Kuwait_City_Imam_Sadiq_Mosque_at_Night_4.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/kuwait-city/inline-1.jpg",
+          "alt": "Kuwait City skyline — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Kuwait_City_Skyline.jpg/1280px-Kuwait_City_Skyline.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/kuwait-city/inline-2.jpg",
+          "alt": "Kuwait City skyline — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kuwait_City_Skyline_%285023996893%29.jpg/1280px-Kuwait_City_Skyline_%285023996893%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "neom",
+      "file": "neom-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/neom/hero.jpg",
+          "alt": "NEOM Saudi Arabia — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Grass_Jewel_from_Neom%2C_Saudi_Arabia.jpg/1280px-Grass_Jewel_from_Neom%2C_Saudi_Arabia.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/neom/inline-1.jpg",
+          "alt": "NEOM Saudi Arabia — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/ISS030-E-5350_-_View_of_Saudi_Arabia.jpg/1280px-ISS030-E-5350_-_View_of_Saudi_Arabia.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/neom/inline-2.jpg",
+          "alt": "NEOM Saudi Arabia — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/ISS031-E-30415_-_View_of_Earth.jpg/1280px-ISS031-E-30415_-_View_of_Earth.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "salalah",
+      "file": "salalah-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/salalah/hero.jpg",
+          "alt": "Salalah Oman coast — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/AS07-06-1712_-_Apollo_7_-_Apollo_7_Mission%2C_Muscat-Oman%2C_Arabian_Sea%2C_Coast_of_Salalah_-_NARA_-_16666041.jpg/1280px-AS07-06-1712_-_Apollo_7_-_Apollo_7_Mission%2C_Muscat-Oman%2C_Arabian_Sea%2C_Coast_of_Salalah_-_NARA_-_16666041.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/salalah/inline-1.jpg",
+          "alt": "Salalah Oman coast — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/A_large_draught_of_the_coast_of_Arabia_from_Maculla_to_Dofar_-_btv1b53261845w_%281_of_2%29.jpg/1280px-A_large_draught_of_the_coast_of_Arabia_from_Maculla_to_Dofar_-_btv1b53261845w_%281_of_2%29.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/salalah/inline-2.jpg",
+          "alt": "Salalah Oman coast — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/A_large_draught_of_the_coast_of_Arabia_from_Maculla_to_Dofar_-_btv1b53261845w_%282_of_2%29.jpg/1280px-A_large_draught_of_the_coast_of_Arabia_from_Maculla_to_Dofar_-_btv1b53261845w_%282_of_2%29.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "seef-bahrain",
+      "file": "seef-bahrain-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/seef-bahrain/hero.jpg",
+          "alt": "Seef Bahrain district — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pickl_Bahrain.jpg/1280px-Pickl_Bahrain.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/seef-bahrain/inline-1.jpg",
+          "alt": "Seef Bahrain district — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Manama_Bahrain_Bay_01.jpg/1280px-Manama_Bahrain_Bay_01.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/seef-bahrain/inline-2.jpg",
+          "alt": "Seef Bahrain district — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Manama_Bahrain_Bay_02.jpg/1280px-Manama_Bahrain_Bay_02.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sohar",
+      "file": "sohar-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/sohar/hero.jpg",
+          "alt": "Sohar Oman port — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Artwork_of_sultan_Haitham_bin_Tariq_al_said_in_Harmul%2C_Oman.jpg/1280px-Artwork_of_sultan_Haitham_bin_Tariq_al_said_in_Harmul%2C_Oman.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/sohar/inline-1.jpg",
+          "alt": "Sohar Oman port — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Maritime_Majesty_-_Flickr_-_Abubakr_Saeed.jpg/1280px-Maritime_Majesty_-_Flickr_-_Abubakr_Saeed.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/sohar/inline-2.jpg",
+          "alt": "Sohar Oman port — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sohar-Cranes.jpg/1280px-Sohar-Cranes.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "umm-al-quwain",
+      "file": "umm-al-quwain-property-investment",
+      "images": [
+        {
+          "role": "hero",
+          "url": "https://invest-gulf.com/images/areas/umm-al-quwain/hero.jpg",
+          "alt": "Umm Al Quwain UAE — investment area overview",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/d/dc/1972_Postage_stamp_sheets_of_Umm_al-Quwain_0999-b_19.jpg"
+        },
+        {
+          "role": "inline-1",
+          "url": "https://invest-gulf.com/images/areas/umm-al-quwain/inline-1.jpg",
+          "alt": "Umm Al Quwain UAE — inline 1",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/7/7f/1972_stamp_of_Umm_al-Quwain_-_Boxing.jpg"
+        },
+        {
+          "role": "inline-2",
+          "url": "https://invest-gulf.com/images/areas/umm-al-quwain/inline-2.jpg",
+          "alt": "Umm Al Quwain UAE — inline 2",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/3/33/1972_stamp_of_Umm_al-Quwain_-_Hockey.jpg"
         }
       ]
     }

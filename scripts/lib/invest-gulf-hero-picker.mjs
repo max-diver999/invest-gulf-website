@@ -66,6 +66,22 @@ export const SLUG_AREA_HINTS = [
   ['production-city', 'dubai-production-city'],
   ['the-valley', 'the-valley-dubai'],
   ['bluewaters', 'bluewaters-island'],
+  ['fujairah', 'fujairah'],
+  ['ajman', 'ajman'],
+  ['umm-al-quwain', 'umm-al-quwain'],
+  ['al-ain', 'al-ain'],
+  ['deira', 'deira'],
+  ['difc', 'difc'],
+  ['expo-city', 'dubai-expo-city'],
+  ['neom', 'neom'],
+  ['salalah', 'salalah'],
+  ['sohar', 'sohar'],
+  ['seef', 'seef-bahrain'],
+  ['kuwait', 'kuwait-city'],
+  ['doha-corniche', 'doha-corniche'],
+  ['corniche', 'doha-corniche'],
+  ['al-khor', 'al-khor'],
+  ['barsha', 'al-barsha'],
 ];
 
 export const TOPIC_AREA_DEFAULTS = {
@@ -83,10 +99,26 @@ export const TOPIC_AREA_DEFAULTS = {
   'gulf-property-investment-comparison-2026': 'dubai-marina',
   'how-to-buy-dubai-property-remotely': 'dubai-harbour',
   'due-diligence-dubai-property': 'business-bay',
-  'kuwait-property-investment-guide': 'dubai-marina',
-  'fujairah-property-investment-guide': 'aljada-sharjah',
+  'kuwait-property-investment-guide': 'kuwait-city',
+  'kuwait-rental-yield-guide': 'kuwait-city',
+  'fujairah-property-investment-guide': 'fujairah',
+  'fujairah-beach-property-investment': 'fujairah',
+  'fujairah-living-guide': 'fujairah',
+  'fujairah-rental-yield-guide': 'fujairah',
   'sharjah-property-investment-guide': 'aljada-sharjah',
-  'ajman-property-investment-guide': 'al-zahia-sharjah',
+  'ajman-property-investment-guide': 'ajman',
+  'ajman-freehold-property-guide': 'ajman',
+  'ajman-living-guide': 'ajman',
+  'ajman-rental-yield-guide': 'ajman',
+  'umm-al-quwain-property-investment': 'umm-al-quwain',
+  'umm-al-quwain-rental-yield-guide': 'umm-al-quwain',
+  'neom-property-investment': 'neom',
+  'living-neom-the-line': 'neom',
+  'living-seef-bahrain': 'seef-bahrain',
+  'salalah-living-guide': 'salalah',
+  'living-al-ain': 'al-ain',
+  'difc-company-setup': 'difc',
+  'dubai-expo-city-living': 'dubai-expo-city',
 };
 
 function hash(s) {
@@ -137,14 +169,15 @@ export function detectRegion(slug, tags, title) {
 export function regionalAreaUrls(region) {
   const tests = {
     dubai:
-      /dubai|jvc|jlt|palm|furjan|barari|ranches|bay|marina|hills|harbour|creek|mudon|motor|meydan|impz|valley|bluewaters|damac-hills|sports|silicon|production|islands|jebel/,
-    'abu-dhabi': /abu|reem|saadiyat|yas|maryah|raha|reef|ghadeer|hudayriyat|masdar|khalifa/,
+      /dubai|jvc|jlt|palm|furjan|barari|ranches|bay|marina|hills|harbour|creek|mudon|motor|meydan|impz|valley|bluewaters|damac-hills|sports|silicon|production|islands|jebel|deira|difc|expo-city|barsha/,
+    'abu-dhabi': /abu|reem|saadiyat|yas|maryah|raha|reef|ghadeer|hudayriyat|masdar|khalifa|al-ain/,
     rak: /marjan|hamra|nakheel-rak|mina-al-arab|rak/,
-    qatar: /lusail|west-bay|doha|qatar|pearl/,
-    saudi: /riyadh|jeddah|dammam|khobar|saudi/,
-    oman: /muscat|mouj|qurum|oman/,
+    qatar: /lusail|west-bay|doha|qatar|pearl|corniche|al-khor/,
+    saudi: /riyadh|jeddah|dammam|khobar|saudi|neom/,
+    oman: /muscat|mouj|qurum|oman|salalah|sohar/,
     bahrain: /amwaj|manama|bahrain|seef/,
-    'emirates-north': /sharjah|ajman|aljada|zahia|fujairah|quwain/,
+    kuwait: /kuwait/,
+    'emirates-north': /sharjah|ajman|aljada|zahia|fujairah|quwain|umm-al-quwain/,
   };
   const re = tests[region] || tests.dubai;
   return POOLS.areas.filter((a) => re.test(a.slug)).map((a) => a.url).sort();
