@@ -11,17 +11,25 @@ const LIMIT = (() => {
 })();
 const DRY = process.argv.includes('--dry');
 
-const HEROES = [
-  'https://invest-gulf.com/images/heroes/dubai-marina.jpg',
-  'https://invest-gulf.com/images/heroes/dubai-skyline.jpg',
-  'https://invest-gulf.com/images/heroes/luxury-villa.jpg',
-  'https://invest-gulf.com/images/heroes/modern-tower.jpg',
-  'https://invest-gulf.com/images/heroes/glass-towers.jpg',
-  'https://invest-gulf.com/images/heroes/coastal-resort.jpg',
-  'https://invest-gulf.com/images/heroes/waterfront.jpg',
-  'https://invest-gulf.com/images/heroes/interior-luxury.jpg',
-  'https://invest-gulf.com/images/heroes/gulf-business.jpg',
-];
+function loadHeroPool() {
+  const base = 'https://invest-gulf.com/images';
+  const pool = [];
+  for (const [kind, ext] of [
+    ['areas', 'hero.jpg'],
+    ['projects', 'hero.webp'],
+  ]) {
+    const dir = join(import.meta.dirname, '../public/images', kind);
+    if (!existsSync(dir)) continue;
+    for (const slug of readdirSync(dir)) {
+      const hero = join(dir, slug, ext);
+      if (existsSync(hero)) pool.push(`${base}/${kind}/${slug}/${ext}`);
+    }
+  }
+  if (!pool.length) throw new Error('No area/project heroes found');
+  return pool;
+}
+
+const HEROES = loadHeroPool();
 
 function hash(s) {
   let h = 0;

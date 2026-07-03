@@ -1,0 +1,1748 @@
+[
+  {
+    "path": "guides/abu-dhabi-adgm-setup.mdx",
+    "slug": "abu-dhabi-adgm-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-banking-expats.mdx",
+    "slug": "abu-dhabi-banking-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-ghadeer/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-driving-guide.mdx",
+    "slug": "abu-dhabi-driving-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-ghadeer/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-expat-community.mdx",
+    "slug": "abu-dhabi-expat-community",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-raha-beach/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-freehold-areas.mdx",
+    "slug": "abu-dhabi-freehold-areas",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/khalifa-city/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-golden-visa-living.mdx",
+    "slug": "abu-dhabi-golden-visa-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-golden-visa-property.mdx",
+    "slug": "abu-dhabi-golden-visa-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-health-insurance-doh.mdx",
+    "slug": "abu-dhabi-health-insurance-doh",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-healthcare-guide.mdx",
+    "slug": "abu-dhabi-healthcare-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/khalifa-city/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-international-schools-guide.mdx",
+    "slug": "abu-dhabi-international-schools-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-maryah-island/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-mainland-llc-setup.mdx",
+    "slug": "abu-dhabi-mainland-llc-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-rent-prices-by-area.mdx",
+    "slug": "abu-dhabi-rent-prices-by-area",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "path": "guides/abu-dhabi-rental-yield-guide.mdx",
+    "slug": "abu-dhabi-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/yas-island/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-utilities-addc.mdx",
+    "slug": "abu-dhabi-utilities-addc",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/abu-dhabi-vs-dubai-families.mdx",
+    "slug": "abu-dhabi-vs-dubai-families",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg"
+  },
+  {
+    "path": "guides/adek-school-ratings-abu-dhabi.mdx",
+    "slug": "adek-school-ratings-abu-dhabi",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "path": "guides/ajman-freehold-property-guide.mdx",
+    "slug": "ajman-freehold-property-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/ajman-property-investment-guide.mdx",
+    "slug": "ajman-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/ajman-rental-yield-guide.mdx",
+    "slug": "ajman-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/aldar-properties-review.mdx",
+    "slug": "aldar-properties-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/arada-developer-review.mdx",
+    "slug": "arada-developer-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-banking-expats.mdx",
+    "slug": "bahrain-banking-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-driving-license.mdx",
+    "slug": "bahrain-driving-license",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-family-visa.mdx",
+    "slug": "bahrain-family-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-golden-residence-property.mdx",
+    "slug": "bahrain-golden-residence-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-golden-residence.mdx",
+    "slug": "bahrain-golden-residence",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-healthcare-guide.mdx",
+    "slug": "bahrain-healthcare-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-international-schools.mdx",
+    "slug": "bahrain-international-schools",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-property-foreigner-living.mdx",
+    "slug": "bahrain-property-foreigner-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-property-investment-guide.mdx",
+    "slug": "bahrain-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-relocation-guide.mdx",
+    "slug": "bahrain-relocation-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-rental-yield-guide.mdx",
+    "slug": "bahrain-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-saudi-bridge-commute.mdx",
+    "slug": "bahrain-saudi-bridge-commute",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/bahrain-vs-dubai-living.mdx",
+    "slug": "bahrain-vs-dubai-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/best-gulf-country-for-families.mdx",
+    "slug": "best-gulf-country-for-families",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/best-gulf-country-for-retirees.mdx",
+    "slug": "best-gulf-country-for-retirees",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/best-gulf-country-property-investment.mdx",
+    "slug": "best-gulf-country-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/best-off-plan-abu-dhabi.mdx",
+    "slug": "best-off-plan-abu-dhabi",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "path": "guides/best-off-plan-ras-al-khaimah.mdx",
+    "slug": "best-off-plan-ras-al-khaimah",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg"
+  },
+  {
+    "path": "guides/boarding-schools-uae.mdx",
+    "slug": "boarding-schools-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "path": "guides/buy-property-dubai-foreigner.mdx",
+    "slug": "buy-property-dubai-foreigner",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-sports-city/hero.jpg"
+  },
+  {
+    "path": "guides/buy-property-through-uae-company.mdx",
+    "slug": "buy-property-through-uae-company",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/bluewaters-island/hero.jpg"
+  },
+  {
+    "path": "guides/can-foreigners-buy-property-uae.mdx",
+    "slug": "can-foreigners-buy-property-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg"
+  },
+  {
+    "path": "guides/cash-vs-mortgage-dubai-property.mdx",
+    "slug": "cash-vs-mortgage-dubai-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-valley-dubai/hero.jpg"
+  },
+  {
+    "path": "guides/convert-foreign-license-dubai.mdx",
+    "slug": "convert-foreign-license-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-raha-beach/hero.jpg"
+  },
+  {
+    "path": "guides/currency-transfer-buy-property-uae.mdx",
+    "slug": "currency-transfer-buy-property-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/azizi-venice/hero.webp"
+  },
+  {
+    "path": "guides/damac-properties-review.mdx",
+    "slug": "damac-properties-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/the-oasis-emaar/hero.webp"
+  },
+  {
+    "path": "guides/doha-cost-of-living.mdx",
+    "slug": "doha-cost-of-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/doha-international-schools-guide.mdx",
+    "slug": "doha-international-schools-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/doha-rent-prices-by-area.mdx",
+    "slug": "doha-rent-prices-by-area",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/doha-vs-dubai-schools.mdx",
+    "slug": "doha-vs-dubai-schools",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/double-tax-treaty-uae.mdx",
+    "slug": "double-tax-treaty-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "path": "guides/dubai-car-ownership-cost.mdx",
+    "slug": "dubai-car-ownership-cost",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-culture-etiquette-expats.mdx",
+    "slug": "dubai-culture-etiquette-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-maryah-island/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-district-cooling-charges.mdx",
+    "slug": "dubai-district-cooling-charges",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-domestic-worker-visa.mdx",
+    "slug": "dubai-domestic-worker-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/damac-lagoons-overview/hero.webp"
+  },
+  {
+    "path": "guides/dubai-driving-license-guide.mdx",
+    "slug": "dubai-driving-license-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/khalifa-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-expo-city-living.mdx",
+    "slug": "dubai-expo-city-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-hills-estate/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-flooding-rain-risk.mdx",
+    "slug": "dubai-flooding-rain-risk",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/downtown-dubai/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-grocery-costs.mdx",
+    "slug": "dubai-grocery-costs",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-health-insurance-mandatory.mdx",
+    "slug": "dubai-health-insurance-mandatory",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-production-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-international-schools-guide.mdx",
+    "slug": "dubai-international-schools-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-hills/hero.webp"
+  },
+  {
+    "path": "guides/dubai-mortgage-rates-2026.mdx",
+    "slug": "dubai-mortgage-rates-2026",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jvc/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-property-flipping-guide.mdx",
+    "slug": "dubai-property-flipping-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "path": "guides/dubai-property-for-russian-buyers.mdx",
+    "slug": "dubai-property-for-russian-buyers",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-property-for-saudi-buyers.mdx",
+    "slug": "dubai-property-for-saudi-buyers",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-property-handover-checklist.mdx",
+    "slug": "dubai-property-handover-checklist",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "path": "guides/dubai-property-inheritance-guide.mdx",
+    "slug": "dubai-property-inheritance-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "path": "guides/dubai-property-insurance-home.mdx",
+    "slug": "dubai-property-insurance-home",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "path": "guides/dubai-property-investment-guide.mdx",
+    "slug": "dubai-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/downtown-dubai/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-property-scams-red-flags.mdx",
+    "slug": "dubai-property-scams-red-flags",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jvc/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-property-vs-stock-market.mdx",
+    "slug": "dubai-property-vs-stock-market",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/nakheel-rixos-dubai-islands/hero.webp"
+  },
+  {
+    "path": "guides/dubai-public-vs-private-healthcare.mdx",
+    "slug": "dubai-public-vs-private-healthcare",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-relocation-checklist.mdx",
+    "slug": "dubai-relocation-checklist",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-harbour/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-rent-increase-calculator-rera.mdx",
+    "slug": "dubai-rent-increase-calculator-rera",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "path": "guides/dubai-rent-prices-by-area.mdx",
+    "slug": "dubai-rent-prices-by-area",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-sports-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-south-free-zone-setup.mdx",
+    "slug": "dubai-south-free-zone-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-south/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-summer-survival-guide.mdx",
+    "slug": "dubai-summer-survival-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "path": "guides/dubai-transport-costs-metro-taxi.mdx",
+    "slug": "dubai-transport-costs-metro-taxi",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-university-options-expats.mdx",
+    "slug": "dubai-university-options-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/motor-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-utility-bills-deewa.mdx",
+    "slug": "dubai-utility-bills-deewa",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-hartland-2/hero.webp"
+  },
+  {
+    "path": "guides/dubai-vs-abu-dhabi-cost-living.mdx",
+    "slug": "dubai-vs-abu-dhabi-cost-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/masdar-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-vs-abu-dhabi-living.mdx",
+    "slug": "dubai-vs-abu-dhabi-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "path": "guides/dubai-vs-doha-vs-riyadh-living.mdx",
+    "slug": "dubai-vs-doha-vs-riyadh-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-vs-singapore-expat.mdx",
+    "slug": "dubai-vs-singapore-expat",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/masdar-city/hero.jpg"
+  },
+  {
+    "path": "guides/dubai-weekend-culture.mdx",
+    "slug": "dubai-weekend-culture",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "path": "guides/ellington-properties-review.mdx",
+    "slug": "ellington-properties-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/arabian-ranches/hero.jpg"
+  },
+  {
+    "path": "guides/emaar-community-living-guide.mdx",
+    "slug": "emaar-community-living-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/azizi-riviera-reber/hero.webp"
+  },
+  {
+    "path": "guides/emaar-properties-review.mdx",
+    "slug": "emaar-properties-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/creek-waters-emaar/hero.webp"
+  },
+  {
+    "path": "guides/escrow-oqood-dubai-explained.mdx",
+    "slug": "escrow-oqood-dubai-explained",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/motor-city/hero.jpg"
+  },
+  {
+    "path": "guides/freehold-areas-dubai-list.mdx",
+    "slug": "freehold-areas-dubai-list",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/fujairah-property-investment-guide.mdx",
+    "slug": "fujairah-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/fujairah-rental-yield-guide.mdx",
+    "slug": "fujairah-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg"
+  },
+  {
+    "path": "guides/german-expats-dubai-guide.mdx",
+    "slug": "german-expats-dubai-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/select-group-six-senses/hero.webp"
+  },
+  {
+    "path": "guides/golden-visa-family-sponsorship.mdx",
+    "slug": "golden-visa-family-sponsorship",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/hudayriyat-island/hero.jpg"
+  },
+  {
+    "path": "guides/golden-visa-mortgage-property-uae.mdx",
+    "slug": "golden-visa-mortgage-property-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/damac-hills/hero.jpg"
+  },
+  {
+    "path": "guides/golden-visa-vs-investor-visa-uae.mdx",
+    "slug": "golden-visa-vs-investor-visa-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-sports-city/hero.jpg"
+  },
+  {
+    "path": "guides/gross-vs-net-yield-dubai.mdx",
+    "slug": "gross-vs-net-yield-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/samana-barari-heights/hero.webp"
+  },
+  {
+    "path": "guides/gulf-banking-comparison-expats.mdx",
+    "slug": "gulf-banking-comparison-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-expat-living-comparison.mdx",
+    "slug": "gulf-expat-living-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-healthcare-comparison.mdx",
+    "slug": "gulf-healthcare-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-property-investment-comparison-2026.mdx",
+    "slug": "gulf-property-investment-comparison-2026",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-residency-by-investment-guide.mdx",
+    "slug": "gulf-residency-by-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-residency-pathways-comparison.mdx",
+    "slug": "gulf-residency-pathways-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/gulf-schools-comparison.mdx",
+    "slug": "gulf-schools-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/homeschooling-dubai.mdx",
+    "slug": "homeschooling-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/impz/hero.jpg"
+  },
+  {
+    "path": "guides/how-much-to-invest-dubai-property.mdx",
+    "slug": "how-much-to-invest-dubai-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jlt/hero.jpg"
+  },
+  {
+    "path": "guides/ifza-company-setup.mdx",
+    "slug": "ifza-company-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/nakheel-como-residences/hero.webp"
+  },
+  {
+    "path": "guides/indian-schools-dubai-cbse.mdx",
+    "slug": "indian-schools-dubai-cbse",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/international-schools-gulf-comparison.mdx",
+    "slug": "international-schools-gulf-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/islamic-mortgage-dubai-property.mdx",
+    "slug": "islamic-mortgage-dubai-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/jafza-company-setup.mdx",
+    "slug": "jafza-company-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mudon/hero.jpg"
+  },
+  {
+    "path": "guides/jeddah-cost-of-living.mdx",
+    "slug": "jeddah-cost-of-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/jeddah-international-schools.mdx",
+    "slug": "jeddah-international-schools",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/jeddah-rental-yield-guide.mdx",
+    "slug": "jeddah-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/jumeirah-living-guide.mdx",
+    "slug": "jumeirah-living-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/kuwait-property-investment-guide.mdx",
+    "slug": "kuwait-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg"
+  },
+  {
+    "path": "guides/kuwait-rental-yield-guide.mdx",
+    "slug": "kuwait-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/leaving-dubai-exit-checklist.mdx",
+    "slug": "leaving-dubai-exit-checklist",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "path": "guides/leaving-dubai-selling-property-checklist.mdx",
+    "slug": "leaving-dubai-selling-property-checklist",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "path": "guides/lgbtq-living-dubai.mdx",
+    "slug": "lgbtq-living-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/living-al-ain.mdx",
+    "slug": "living-al-ain",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/living-al-hamra-village.mdx",
+    "slug": "living-al-hamra-village",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-hamra-village/hero.jpg"
+  },
+  {
+    "path": "guides/living-al-marjan-island.mdx",
+    "slug": "living-al-marjan-island",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "guides/living-amwaj-islands.mdx",
+    "slug": "living-amwaj-islands",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/amwaj-islands/hero.jpg"
+  },
+  {
+    "path": "guides/living-jeddah-corniche.mdx",
+    "slug": "living-jeddah-corniche",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/living-lusail-qatar.mdx",
+    "slug": "living-lusail-qatar",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/living-muscat-al-mouj.mdx",
+    "slug": "living-muscat-al-mouj",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/living-muscat-qurum.mdx",
+    "slug": "living-muscat-qurum",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/living-neom-the-line.mdx",
+    "slug": "living-neom-the-line",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/living-riyadh-diplomatic-quarter.mdx",
+    "slug": "living-riyadh-diplomatic-quarter",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/living-saadiyat-island.mdx",
+    "slug": "living-saadiyat-island",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg"
+  },
+  {
+    "path": "guides/living-seef-bahrain.mdx",
+    "slug": "living-seef-bahrain",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "guides/living-sharjah-al-khan.mdx",
+    "slug": "living-sharjah-al-khan",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "path": "guides/living-the-pearl-qatar.mdx",
+    "slug": "living-the-pearl-qatar",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/living-west-bay-doha.mdx",
+    "slug": "living-west-bay-doha",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/manama-cost-of-living.mdx",
+    "slug": "manama-cost-of-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "guides/meydan-free-zone-setup.mdx",
+    "slug": "meydan-free-zone-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/meydan-horizon/hero.jpg"
+  },
+  {
+    "path": "guides/moving-to-dubai-with-family.mdx",
+    "slug": "moving-to-dubai-with-family",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-ghadeer/hero.jpg"
+  },
+  {
+    "path": "guides/muscat-cost-of-living.mdx",
+    "slug": "muscat-cost-of-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/muscat-international-schools.mdx",
+    "slug": "muscat-international-schools",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/neom-property-investment.mdx",
+    "slug": "neom-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/net-yield-calculator-uae-property.mdx",
+    "slug": "net-yield-calculator-uae-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-ghadeer/hero.jpg"
+  },
+  {
+    "path": "guides/off-plan-property-dubai-guide.mdx",
+    "slug": "off-plan-property-dubai-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-creek-harbour/hero.jpg"
+  },
+  {
+    "path": "guides/off-plan-vs-ready-property-dubai.mdx",
+    "slug": "off-plan-vs-ready-property-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/arabian-ranches/hero.jpg"
+  },
+  {
+    "path": "guides/off-plan-vs-secondary-market-dubai.mdx",
+    "slug": "off-plan-vs-secondary-market-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "path": "guides/oman-banking-expats.mdx",
+    "slug": "oman-banking-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-driving-license.mdx",
+    "slug": "oman-driving-license",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-family-visa.mdx",
+    "slug": "oman-family-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-healthcare-guide.mdx",
+    "slug": "oman-healthcare-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-itc-visa-living.mdx",
+    "slug": "oman-itc-visa-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-itc-zones-property.mdx",
+    "slug": "oman-itc-zones-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-property-foreigner-living.mdx",
+    "slug": "oman-property-foreigner-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-property-investment-guide.mdx",
+    "slug": "oman-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-relocation-guide.mdx",
+    "slug": "oman-relocation-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-rental-yield-guide.mdx",
+    "slug": "oman-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-residency-by-investment.mdx",
+    "slug": "oman-residency-by-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "guides/oman-retirement-living.mdx",
+    "slug": "oman-retirement-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-tax-expats.mdx",
+    "slug": "oman-tax-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-vs-dubai-cost.mdx",
+    "slug": "oman-vs-dubai-cost",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/oman-vs-uae-living.mdx",
+    "slug": "oman-vs-uae-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/pet-relocation-dubai.mdx",
+    "slug": "pet-relocation-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "path": "guides/property-snagging-dubai.mdx",
+    "slug": "property-snagging-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/nshama-town-square-phase/hero.webp"
+  },
+  {
+    "path": "guides/qatar-banking-expats.mdx",
+    "slug": "qatar-banking-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-buy-to-let-strategy.mdx",
+    "slug": "qatar-buy-to-let-strategy",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-culture-etiquette.mdx",
+    "slug": "qatar-culture-etiquette",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-driving-license.mdx",
+    "slug": "qatar-driving-license",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-family-visa-sponsorship.mdx",
+    "slug": "qatar-family-visa-sponsorship",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-healthcare-guide.mdx",
+    "slug": "qatar-healthcare-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-off-plan-guide.mdx",
+    "slug": "qatar-off-plan-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-off-plan-vs-ready-property.mdx",
+    "slug": "qatar-off-plan-vs-ready-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-permanent-residency.mdx",
+    "slug": "qatar-permanent-residency",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-property-buyer-relocation.mdx",
+    "slug": "qatar-property-buyer-relocation",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-property-due-diligence.mdx",
+    "slug": "qatar-property-due-diligence",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-property-investment-guide.mdx",
+    "slug": "qatar-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-property-management-guide.mdx",
+    "slug": "qatar-property-management-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-relocation-guide.mdx",
+    "slug": "qatar-relocation-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-rental-yield-guide.mdx",
+    "slug": "qatar-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-residency-by-investment.mdx",
+    "slug": "qatar-residency-by-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-residency-by-property.mdx",
+    "slug": "qatar-residency-by-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-school-fees.mdx",
+    "slug": "qatar-school-fees",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-service-charges-guide.mdx",
+    "slug": "qatar-service-charges-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-tax-expats.mdx",
+    "slug": "qatar-tax-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-vs-dubai-cost-living.mdx",
+    "slug": "qatar-vs-dubai-cost-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-vs-dubai-living.mdx",
+    "slug": "qatar-vs-dubai-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-vs-uae-remote-work-visa.mdx",
+    "slug": "qatar-vs-uae-remote-work-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/qatar-work-visa-process.mdx",
+    "slug": "qatar-work-visa-process",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/rak-banking-guide.mdx",
+    "slug": "rak-banking-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/rak-commute-to-dubai.mdx",
+    "slug": "rak-commute-to-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg"
+  },
+  {
+    "path": "guides/rak-properties-developer-review.mdx",
+    "slug": "rak-properties-developer-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/rak-rental-yield-guide.mdx",
+    "slug": "rak-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "guides/rak-schools-guide.mdx",
+    "slug": "rak-schools-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/rak-gateway-2/hero.webp"
+  },
+  {
+    "path": "guides/rak-vs-dubai-family-life.mdx",
+    "slug": "rak-vs-dubai-family-life",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/rakez-company-setup.mdx",
+    "slug": "rakez-company-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-nakheel-rak/hero.jpg"
+  },
+  {
+    "path": "guides/ras-al-khaimah-property-investment-guide.mdx",
+    "slug": "ras-al-khaimah-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "guides/ras-al-khaimah-relocation-guide.mdx",
+    "slug": "ras-al-khaimah-relocation-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-nakheel-rak/hero.jpg"
+  },
+  {
+    "path": "guides/relocate-bahrain.mdx",
+    "slug": "relocate-bahrain",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "guides/relocate-oman.mdx",
+    "slug": "relocate-oman",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/relocate-qatar.mdx",
+    "slug": "relocate-qatar",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/relocate-ras-al-khaimah.mdx",
+    "slug": "relocate-ras-al-khaimah",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/relocate-saudi-arabia.mdx",
+    "slug": "relocate-saudi-arabia",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/remote-work-dubai-tax-implications.mdx",
+    "slug": "remote-work-dubai-tax-implications",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/impz/hero.jpg"
+  },
+  {
+    "path": "guides/rera-broker-verification-dubai.mdx",
+    "slug": "rera-broker-verification-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "guides/riyadh-cost-of-living.mdx",
+    "slug": "riyadh-cost-of-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/riyadh-international-schools.mdx",
+    "slug": "riyadh-international-schools",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/salalah-living-guide.mdx",
+    "slug": "salalah-living-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-arabia-property-foreigners-guide.mdx",
+    "slug": "saudi-arabia-property-foreigners-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-arabia-relocation-guide.mdx",
+    "slug": "saudi-arabia-relocation-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-banking-expats.mdx",
+    "slug": "saudi-banking-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-company-setup-guide.mdx",
+    "slug": "saudi-company-setup-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-driving-women-expats.mdx",
+    "slug": "saudi-driving-women-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-entertainment-social-life.mdx",
+    "slug": "saudi-entertainment-social-life",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-family-visa.mdx",
+    "slug": "saudi-family-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-healthcare-expats.mdx",
+    "slug": "saudi-healthcare-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-iqama-process.mdx",
+    "slug": "saudi-iqama-process",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-off-plan-guide.mdx",
+    "slug": "saudi-off-plan-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-premium-residency-living.mdx",
+    "slug": "saudi-premium-residency-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-premium-residency-property.mdx",
+    "slug": "saudi-premium-residency-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-property-designated-zones-explained.mdx",
+    "slug": "saudi-property-designated-zones-explained",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-property-foreigner-living.mdx",
+    "slug": "saudi-property-foreigner-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-remote-work-visa.mdx",
+    "slug": "saudi-remote-work-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-rental-yield-guide.mdx",
+    "slug": "saudi-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-tax-zakat-expats.mdx",
+    "slug": "saudi-tax-zakat-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-vs-dubai-cost.mdx",
+    "slug": "saudi-vs-dubai-cost",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dammam-khobar/hero.jpg"
+  },
+  {
+    "path": "guides/saudi-vs-uae-living.mdx",
+    "slug": "saudi-vs-uae-living",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-al-reem-island.mdx",
+    "slug": "schools-near-al-reem-island",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reem-island/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-dubai-marina.mdx",
+    "slug": "schools-near-dubai-marina",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-dubai-south.mdx",
+    "slug": "schools-near-dubai-south",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-south/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-jvc.mdx",
+    "slug": "schools-near-jvc",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jvc/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-saadiyat-island.mdx",
+    "slug": "schools-near-saadiyat-island",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg"
+  },
+  {
+    "path": "guides/schools-near-yas-island.mdx",
+    "slug": "schools-near-yas-island",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/yas-island/hero.jpg"
+  },
+  {
+    "path": "guides/shams-free-zone-setup.mdx",
+    "slug": "shams-free-zone-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-nakheel-rak/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-freehold-areas-guide.mdx",
+    "slug": "sharjah-freehold-areas-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-property-investment-guide.mdx",
+    "slug": "sharjah-property-investment-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-rental-yield-guide.mdx",
+    "slug": "sharjah-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-schools-commute-dubai.mdx",
+    "slug": "sharjah-schools-commute-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/mina-al-arab/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-schools-for-dubai-commuters.mdx",
+    "slug": "sharjah-schools-for-dubai-commuters",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-vs-dubai-commute-property.mdx",
+    "slug": "sharjah-vs-dubai-commute-property",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-zahia-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/sharjah-vs-dubai-rent.mdx",
+    "slug": "sharjah-vs-dubai-rent",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-nakheel-rak/hero.jpg"
+  },
+  {
+    "path": "guides/single-woman-living-dubai.mdx",
+    "slug": "single-woman-living-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "guides/sobha-realty-review.mdx",
+    "slug": "sobha-realty-review",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/bluewaters-island/hero.jpg"
+  },
+  {
+    "path": "guides/tax-uae-property-uae-resident.mdx",
+    "slug": "tax-uae-property-uae-resident",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/address-residences-dubai-hills/hero.webp"
+  },
+  {
+    "path": "guides/tax-uk-nationals-dubai.mdx",
+    "slug": "tax-uk-nationals-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/danube-bayz-101/hero.webp"
+  },
+  {
+    "path": "guides/uae-attestation-documents.mdx",
+    "slug": "uae-attestation-documents",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/masdar-city/hero.jpg"
+  },
+  {
+    "path": "guides/uae-banking-for-russian-expats.mdx",
+    "slug": "uae-banking-for-russian-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/uae-banking-guide-expats.mdx",
+    "slug": "uae-banking-guide-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/masdar-city/hero.jpg"
+  },
+  {
+    "path": "guides/uae-blue-visa.mdx",
+    "slug": "uae-blue-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-marina/hero.jpg"
+  },
+  {
+    "path": "guides/uae-crs-fatca-banking.mdx",
+    "slug": "uae-crs-fatca-banking",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "path": "guides/uae-employment-visa-process.mdx",
+    "slug": "uae-employment-visa-process",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/damac-islands/hero.webp"
+  },
+  {
+    "path": "guides/uae-free-zone-vs-mainland.mdx",
+    "slug": "uae-free-zone-vs-mainland",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/business-bay/hero.jpg"
+  },
+  {
+    "path": "guides/uae-freelance-permit-dubai.mdx",
+    "slug": "uae-freelance-permit-dubai",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-furjan/hero.jpg"
+  },
+  {
+    "path": "guides/uae-inheritance-property-expats.mdx",
+    "slug": "uae-inheritance-property-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-hills-estate/hero.jpg"
+  },
+  {
+    "path": "guides/uae-mortgage-banks-list.mdx",
+    "slug": "uae-mortgage-banks-list",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/ellington-ocean-house/hero.webp"
+  },
+  {
+    "path": "guides/uae-northern-emirates-comparison.mdx",
+    "slug": "uae-northern-emirates-comparison",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/sobha-siniya-island/hero.webp"
+  },
+  {
+    "path": "guides/uae-residency-visa-types-guide.mdx",
+    "slug": "uae-residency-visa-types-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/downtown-dubai/hero.jpg"
+  },
+  {
+    "path": "guides/uae-retirement-visa.mdx",
+    "slug": "uae-retirement-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "path": "guides/uae-salary-account-requirements.mdx",
+    "slug": "uae-salary-account-requirements",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/dubai-south/hero.jpg"
+  },
+  {
+    "path": "guides/uae-tax-guide-expats.mdx",
+    "slug": "uae-tax-guide-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-saadiyat-grove/hero.webp"
+  },
+  {
+    "path": "guides/uae-tax-residency-183-days.mdx",
+    "slug": "uae-tax-residency-183-days",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/palm-jumeirah/hero.jpg"
+  },
+  {
+    "path": "guides/uae-visa-medical-test.mdx",
+    "slug": "uae-visa-medical-test",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/binghatti-phantom/hero.webp"
+  },
+  {
+    "path": "guides/uae-visa-overstay-fines.mdx",
+    "slug": "uae-visa-overstay-fines",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jvc/hero.jpg"
+  },
+  {
+    "path": "guides/uae-vs-qatar-for-russian-expats.mdx",
+    "slug": "uae-vs-qatar-for-russian-expats",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "guides/uae-vs-saudi-for-investors.mdx",
+    "slug": "uae-vs-saudi-for-investors",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "guides/umm-al-quwain-property-investment.mdx",
+    "slug": "umm-al-quwain-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/rak-marjan-beach-residences/hero.webp"
+  },
+  {
+    "path": "guides/umm-al-quwain-rental-yield-guide.mdx",
+    "slug": "umm-al-quwain-rental-yield-guide",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "guides/vat-uae-property-rent.mdx",
+    "slug": "vat-uae-property-rent",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/omniyat-orla-dorchester/hero.webp"
+  },
+  {
+    "path": "guides/wynn-al-marjan-island-property-impact.mdx",
+    "slug": "wynn-al-marjan-island-property-impact",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "guides/wynn-al-marjan-island-timeline-impact.mdx",
+    "slug": "wynn-al-marjan-island-timeline-impact",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "compare/abu-dhabi-vs-dubai-investment.mdx",
+    "slug": "abu-dhabi-vs-dubai-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "path": "compare/adgm-vs-difc-company-setup.mdx",
+    "slug": "adgm-vs-difc-company-setup",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/saadiyat-island/hero.jpg"
+  },
+  {
+    "path": "compare/aldar-vs-damac.mdx",
+    "slug": "aldar-vs-damac",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/projects/aldar-yas-acres/hero.webp"
+  },
+  {
+    "path": "compare/aldar-vs-emaar.mdx",
+    "slug": "aldar-vs-emaar",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-reef-abu-dhabi/hero.jpg"
+  },
+  {
+    "path": "compare/bahrain-vs-dubai-investment.mdx",
+    "slug": "bahrain-vs-dubai-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/manama/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-doha-property-investment.mdx",
+    "slug": "dubai-vs-doha-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-muscat-property-investment.mdx",
+    "slug": "dubai-vs-muscat-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-oman-rental-yield.mdx",
+    "slug": "dubai-vs-oman-rental-yield",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-al-mouj/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-qatar-rental-yield.mdx",
+    "slug": "dubai-vs-qatar-rental-yield",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-skyline.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/west-bay-doha/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-riyadh-property-investment.mdx",
+    "slug": "dubai-vs-riyadh-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-saudi-rental-yield.mdx",
+    "slug": "dubai-vs-saudi-rental-yield",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/jeddah/hero.jpg"
+  },
+  {
+    "path": "compare/dubai-vs-sharjah-property-investment.mdx",
+    "slug": "dubai-vs-sharjah-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/aljada-sharjah/hero.jpg"
+  },
+  {
+    "path": "compare/emaar-vs-nakheel.mdx",
+    "slug": "emaar-vs-nakheel",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/palm-jumeirah/hero.jpg"
+  },
+  {
+    "path": "compare/freehold-vs-leasehold-uae.mdx",
+    "slug": "freehold-vs-leasehold-uae",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/yas-island/hero.jpg"
+  },
+  {
+    "path": "compare/meraas-vs-emaar.mdx",
+    "slug": "meraas-vs-emaar",
+    "oldHero": "https://invest-gulf.com/images/heroes/dubai-marina.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/damac-hills/hero.jpg"
+  },
+  {
+    "path": "compare/qatar-vs-uae-residency.mdx",
+    "slug": "qatar-vs-uae-residency",
+    "oldHero": "https://invest-gulf.com/images/heroes/glass-towers.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/lusail-city/hero.jpg"
+  },
+  {
+    "path": "compare/rak-vs-dubai-rental-yield.mdx",
+    "slug": "rak-vs-dubai-rental-yield",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-hamra-village/hero.jpg"
+  },
+  {
+    "path": "compare/rak-vs-fujairah-property-investment.mdx",
+    "slug": "rak-vs-fujairah-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/luxury-villa.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-marjan-island/hero.jpg"
+  },
+  {
+    "path": "compare/ras-al-khaimah-vs-dubai-investment.mdx",
+    "slug": "ras-al-khaimah-vs-dubai-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/modern-tower.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/al-hamra-village/hero.jpg"
+  },
+  {
+    "path": "compare/saudi-arabia-vs-uae-golden-visa.mdx",
+    "slug": "saudi-arabia-vs-uae-golden-visa",
+    "oldHero": "https://invest-gulf.com/images/heroes/gulf-business.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "compare/saudi-vs-uae-property-investment.mdx",
+    "slug": "saudi-vs-uae-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/coastal-resort.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/riyadh/hero.jpg"
+  },
+  {
+    "path": "compare/uae-vs-oman-property-investment.mdx",
+    "slug": "uae-vs-oman-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/muscat-qurum/hero.jpg"
+  },
+  {
+    "path": "compare/uae-vs-qatar-property-investment.mdx",
+    "slug": "uae-vs-qatar-property-investment",
+    "oldHero": "https://invest-gulf.com/images/heroes/waterfront.jpg",
+    "newHero": "https://invest-gulf.com/images/areas/the-pearl-lusail/hero.jpg"
+  }
+]
