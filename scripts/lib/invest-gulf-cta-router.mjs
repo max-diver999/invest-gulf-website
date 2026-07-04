@@ -105,3 +105,81 @@ export function makeCtaId(prefix, slug) {
   const tail = slug.replace(/[^a-z0-9]+/g, '-').slice(0, 24);
   return `${prefix}_cta_${tail}`;
 }
+
+const STICKY_COPY = {
+  visa: {
+    title: 'Golden Visa via property',
+    subtitle: 'AED 2M+ qualifying shortlist',
+    buttonText: 'Visa shortlist',
+  },
+  offplan: {
+    title: 'Dubai off-plan shortlist',
+    subtitle: 'Escrow-checked launches',
+    buttonText: 'See off-plan',
+  },
+  'abu-dhabi-offplan': {
+    title: 'Abu Dhabi off-plan',
+    subtitle: 'Yas · Saadiyat · Al Reem',
+    buttonText: 'Get shortlist',
+  },
+  'abu-dhabi': {
+    title: 'Abu Dhabi property',
+    subtitle: 'Freehold areas matched',
+    buttonText: 'Abu Dhabi options',
+  },
+  rak: {
+    title: 'RAK property shortlist',
+    subtitle: 'Al Marjan · coastal yield',
+    buttonText: 'RAK options',
+  },
+  yield: {
+    title: 'Dubai yield shortlist',
+    subtitle: 'Net yield, not brochure gross',
+    buttonText: 'Yield options',
+  },
+  compare: {
+    title: 'Compare Gulf markets',
+    subtitle: 'One brief, multi-market',
+    buttonText: 'Book consult',
+  },
+  'area-qatar': {
+    title: 'Qatar property enquiry',
+    subtitle: 'Pearl · Lusail zones',
+    buttonText: 'Qatar options',
+  },
+  'area-saudi': {
+    title: 'Saudi property enquiry',
+    subtitle: 'Eligible projects only',
+    buttonText: 'Saudi options',
+  },
+  'area-bahrain': {
+    title: 'Bahrain property',
+    subtitle: 'Amwaj · Seef · Manama',
+    buttonText: 'Bahrain options',
+  },
+  'area-oman': {
+    title: 'Oman property enquiry',
+    subtitle: 'Muscat freehold zones',
+    buttonText: 'Oman options',
+  },
+  money: {
+    title: 'Gulf property shortlist',
+    subtitle: 'Free · one business day',
+    buttonText: 'Get shortlist',
+  },
+};
+
+/**
+ * @param {{ collection: string, slug: string, title?: string }} ctx
+ */
+export function resolveStickyCta(ctx) {
+  const { bridgeVariant, buttonHref, ctaIdPrefix } = resolveCtaRoute(ctx);
+  const copy = STICKY_COPY[bridgeVariant] || STICKY_COPY.money;
+  return {
+    title: copy.title,
+    subtitle: copy.subtitle,
+    buttonText: copy.buttonText,
+    buttonHref,
+    ctaId: makeCtaId(`sticky_${ctaIdPrefix}`, ctx.slug || 'page'),
+  };
+}

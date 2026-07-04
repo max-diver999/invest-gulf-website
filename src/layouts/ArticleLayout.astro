@@ -4,6 +4,7 @@ import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import GulfMoneyHubStrip from '../components/GulfMoneyHubStrip.astro';
 import { SITE } from '../data/site';
+import { resolveStickyCta } from '../../scripts/lib/invest-gulf-cta-router.mjs';
 
 interface Props {
   title: string;
@@ -18,6 +19,8 @@ interface Props {
   noindex?: boolean;
   hasInlineFaqBlock?: boolean;
   contextLabel?: string;
+  articleSlug?: string;
+  articleCollection?: string;
 }
 
 const {
@@ -33,7 +36,13 @@ const {
   noindex = false,
   hasInlineFaqBlock = false,
   contextLabel = title,
+  articleSlug = '',
+  articleCollection = 'guides',
 } = Astro.props;
+
+const stickyCta = articleSlug
+  ? resolveStickyCta({ collection: articleCollection, slug: articleSlug, title })
+  : null;
 
 const heroImage = heroImageProp || `${SITE.url}/apple-touch-icon.png`;
 
@@ -69,6 +78,7 @@ const articleSchema = {
   type="article"
   {noindex}
   schema={articleSchema}
+  stickyCta={stickyCta}
 >
   <article class="site-container py-10 md:py-14">
     <header class="max-w-3xl mb-8">

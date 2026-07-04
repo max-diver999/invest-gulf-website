@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { SITE } from '../../data/site';
+import { STICKY_ABOUT } from '../../data/sticky-cta';
 
 const faqItems = [
   {
@@ -51,6 +52,7 @@ const aboutSchema = {
   title="About Invest Gulf"
   description="Invest Gulf is an independent editorial resource on UAE and Gulf property investment. Editorial standards, partner policy, and how we differ from brokers and developers."
   schema={aboutSchema}
+  stickyCta={STICKY_ABOUT}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <p class="badge-pill mb-4">Independent research · Not a developer</p>

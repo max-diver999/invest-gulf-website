@@ -14,7 +14,15 @@
   --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+#lead-form {
+  scroll-margin-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (max-width: 768px) {
+  body.has-ig-sticky-bar {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  }
+}
 
 body {
   background: var(--color-page);

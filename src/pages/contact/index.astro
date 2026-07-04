@@ -2,10 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { SITE } from '../../data/site';
+import { STICKY_CONTACT } from '../../data/sticky-cta';
 ---
 <BaseLayout
   title="Contact Invest Gulf"
   description={`Contact Invest Gulf at ${SITE.email} or request a free Gulf property shortlist.`}
+  stickyCta={STICKY_CONTACT}
 >
   <section class="site-container py-12 md:py-16 max-w-2xl">
     <h1 class="mb-4">Contact</h1>

@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '../data/site';
+import { STICKY_HOME } from '../data/sticky-cta';
 
 const guides = (await getCollection('guides'))
   .filter((g) => !g.data.noindex)
@@ -19,6 +20,7 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
 <BaseLayout
   title="Invest Gulf: Independent UAE & Gulf Property Research"
   description={SITE.description}
+  stickyCta={STICKY_HOME}
 >
   <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
     <div class="site-container py-16 md:py-24 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">

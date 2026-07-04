@@ -1,0 +1,150 @@
+---
+/** Mobile sticky CTA. Desktop uses header + in-page forms. */
+interface Props {
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  ctaId?: string;
+}
+
+const {
+  title = 'Gulf property shortlist',
+  subtitle = 'Free · one business day',
+  buttonText = 'Get shortlist',
+  buttonHref = '/get-shortlist/',
+  ctaId = 'sticky_mobile_cta',
+} = Astro.props;
+---
+<div id="ig-sticky-lead-bar" class="ig-sticky-lead-bar" hidden aria-hidden="true">
+  <div class="ig-sticky-lead-bar__inner">
+    <p class="ig-sticky-lead-bar__text">
+      <strong>{title}</strong>
+      <span>{subtitle}</span>
+    </p>
+    <a href={buttonHref} class="ig-sticky-lead-bar__btn" data-cta={ctaId}>{buttonText}</a>
+  </div>
+</div>
+
+<style>
+  .ig-sticky-lead-bar {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9990;
+    background: var(--color-teal-dark, #235851);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.65rem 0.85rem calc(0.65rem + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -4px 24px rgba(31, 36, 33, 0.22);
+    transform: translateY(110%);
+    transition: transform 0.25s ease;
+  }
+
+  .ig-sticky-lead-bar.is-visible {
+    transform: translateY(0);
+  }
+
+  .ig-sticky-lead-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .ig-sticky-lead-bar__text {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.88);
+    min-width: 0;
+  }
+
+  .ig-sticky-lead-bar__text strong {
+    display: block;
+    font-size: 0.82rem;
+    color: #fff;
+  }
+
+  .ig-sticky-lead-bar__btn {
+    flex-shrink: 0;
+    background: #fff;
+    color: var(--color-teal-dark, #235851) !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .ig-sticky-lead-bar__btn:hover {
+    opacity: 0.92;
+    color: var(--color-teal-dark, #235851) !important;
+  }
+
+  @media (min-width: 769px) {
+    .ig-sticky-lead-bar {
+      display: none !important;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var EXCLUDED = ['/thanks/', '/site-report/', '/privacy-policy/', '/terms/'];
+    var path = window.location.pathname;
+    if (EXCLUDED.some(function (p) { return path.startsWith(p); })) return;
+
+    var bar = document.getElementById('ig-sticky-lead-bar');
+    if (!bar) return;
+
+    var btn = bar.querySelector('.ig-sticky-lead-bar__btn');
+    var form = document.getElementById('lead-form');
+    var visible = false;
+    var formVisible = false;
+
+    if (btn) {
+      btn.addEventListener('click', function (e) {
+        var href = btn.getAttribute('href') || '';
+        if (href.charAt(0) === '#') {
+          e.preventDefault();
+          var target = document.querySelector(href);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    if (form && 'IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(
+        function (entries) {
+          formVisible = entries.some(function (entry) { return entry.isIntersecting && entry.intersectionRatio > 0.12; });
+          update();
+        },
+        { threshold: [0, 0.12, 0.35] },
+      );
+      observer.observe(form);
+    }
+
+    function isMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function update() {
+      var show = isMobile() && window.scrollY > 200 && !formVisible;
+      if (show === visible) return;
+      visible = show;
+      bar.hidden = !show;
+      bar.classList.toggle('is-visible', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      document.body.classList.toggle('has-ig-sticky-bar', show);
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  })();
+</script>
