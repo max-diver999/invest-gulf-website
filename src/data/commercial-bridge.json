@@ -1,0 +1,146 @@
+{
+  "money": {
+    "kicker": "Next step",
+    "heading": "From research to a vetted shortlist",
+    "intro": "You have the fee stack and market context. When you are ready to compare live inventory, use a commercial landing matched to your market, not a generic form.",
+    "links": [
+      { "href": "/invest-dubai-property/", "title": "Dubai property shortlist", "desc": "Ready and off-plan, yield-focused areas" },
+      { "href": "/guides/dubai-property-investment-guide/", "title": "Dubai investment guide", "desc": "Fees, yields, red flags" },
+      { "href": "/get-shortlist/", "title": "Multi-market shortlist", "desc": "Dubai, Abu Dhabi, RAK" }
+    ],
+    "ctaHref": "/invest-dubai-property/",
+    "ctaLabel": "Get Dubai property shortlist"
+  },
+  "yield": {
+    "kicker": "Next step",
+    "heading": "Match yield math to live listings",
+    "intro": "Gross yield on a brochure is not net yield in your bank account. Bridge from the numbers above to areas and units our partners actually quote.",
+    "links": [
+      { "href": "/invest-dubai-property/", "title": "Dubai yield shortlist", "desc": "JVC, Business Bay, Sports City" },
+      { "href": "/guides/dubai-rental-yield-guide/", "title": "Rental yield guide", "desc": "Net vs gross, charges" },
+      { "href": "/invest-dubai-off-plan/", "title": "Off-plan Dubai", "desc": "Payment plans, escrow checks" }
+    ],
+    "ctaHref": "/invest-dubai-property/",
+    "ctaLabel": "See yield-matched options"
+  },
+  "visa": {
+    "kicker": "Residency pathway",
+    "heading": "Property that qualifies for UAE Golden Visa",
+    "intro": "The AED 2M threshold is about registered value, escrow status, and title, not marketing price. Start with qualifying inventory before you pay a reservation fee.",
+    "links": [
+      { "href": "/golden-visa-dubai-property/", "title": "Golden Visa shortlist", "desc": "AED 2M+ qualifying units" },
+      { "href": "/guides/golden-visa-2-million-aed-explained/", "title": "Golden Visa guide", "desc": "Rules, mortgage, family" },
+      { "href": "/invest-dubai-property/", "title": "Dubai property", "desc": "Freehold zones, fees" }
+    ],
+    "ctaHref": "/golden-visa-dubai-property/",
+    "ctaLabel": "Get Golden Visa shortlist"
+  },
+  "offplan": {
+    "kicker": "Off-plan buyers",
+    "heading": "Escrow-checked launches, not brochure hype",
+    "intro": "Off-plan works when escrow, developer track record, and payment plan penalties are verified before deposit. Bridge to inventory with handover timelines attached.",
+    "links": [
+      { "href": "/invest-dubai-off-plan/", "title": "Dubai off-plan shortlist", "desc": "RERA escrow verified" },
+      { "href": "/guides/off-plan-property-dubai-guide/", "title": "Off-plan guide", "desc": "Risks, SPA, delays" },
+      { "href": "/invest-dubai-property/", "title": "Ready stock Dubai", "desc": "Immediate rental income" }
+    ],
+    "ctaHref": "/invest-dubai-off-plan/",
+    "ctaLabel": "Get off-plan shortlist"
+  },
+  "abu-dhabi": {
+    "kicker": "Abu Dhabi investors",
+    "heading": "Freehold areas with ADM-backed titles",
+    "intro": "Abu Dhabi fee stacks and tenant profiles differ from Dubai. Use Abu Dhabi-specific shortlists when your thesis is yield plus stability, not volume flipping.",
+    "links": [
+      { "href": "/abu-dhabi-property-investment/", "title": "Abu Dhabi shortlist", "desc": "Al Reem, Saadiyat, Yas" },
+      { "href": "/guides/abu-dhabi-property-investment-guide/", "title": "Abu Dhabi guide", "desc": "Yields, fees, zones" },
+      { "href": "/invest-abu-dhabi-off-plan/", "title": "Abu Dhabi off-plan", "desc": "New launches, escrow" }
+    ],
+    "ctaHref": "/abu-dhabi-property-investment/",
+    "ctaLabel": "Get Abu Dhabi shortlist"
+  },
+  "abu-dhabi-offplan": {
+    "kicker": "Abu Dhabi off-plan",
+    "heading": "New stock on Yas, Saadiyat, and Al Reem",
+    "intro": "Abu Dhabi off-plan requires ADM escrow verification and realistic handover timelines. Bridge from research to launches with payment plans attached.",
+    "links": [
+      { "href": "/invest-abu-dhabi-off-plan/", "title": "Off-plan shortlist", "desc": "Escrow-checked projects" },
+      { "href": "/abu-dhabi-property-investment/", "title": "Ready Abu Dhabi", "desc": "Immediate tenancy" },
+      { "href": "/guides/abu-dhabi-off-plan-guide/", "title": "Off-plan guide", "desc": "Fees, risks" }
+    ],
+    "ctaHref": "/invest-abu-dhabi-off-plan/",
+    "ctaLabel": "Get Abu Dhabi off-plan shortlist"
+  },
+  "rak": {
+    "kicker": "Ras Al Khaimah",
+    "heading": "Coastal yield with lower entry than Dubai",
+    "intro": "RAK headlines often beat Dubai on gross yield, but liquidity is thinner. Match Al Marjan and Mina Al Arab stock to your hold period before you commit.",
+    "links": [
+      { "href": "/invest-ras-al-khaimah-property/", "title": "RAK property shortlist", "desc": "Al Marjan, Mina Al Arab" },
+      { "href": "/guides/ras-al-khaimah-property-investment-guide/", "title": "RAK investment guide", "desc": "Yields, Wynn impact" },
+      { "href": "/invest-dubai-property/", "title": "Compare Dubai", "desc": "Liquidity vs yield" }
+    ],
+    "ctaHref": "/invest-ras-al-khaimah-property/",
+    "ctaLabel": "Get RAK shortlist"
+  },
+  "compare": {
+    "kicker": "Cross-market decision",
+    "heading": "Compare markets with a single brief",
+    "intro": "When you are weighing Dubai vs Abu Dhabi vs RAK (or wider Gulf), send one brief and get options per market instead of bouncing between generic forms.",
+    "links": [
+      { "href": "/gulf-property-investment-consultation/", "title": "Gulf consultation", "desc": "Multi-market matching" },
+      { "href": "/guides/gulf-property-investment-comparison-2026/", "title": "Gulf comparison", "desc": "Yields, fees, visas" },
+      { "href": "/get-shortlist/", "title": "Quick shortlist", "desc": "Single-market focus" }
+    ],
+    "ctaHref": "/gulf-property-investment-consultation/",
+    "ctaLabel": "Book Gulf consultation"
+  },
+  "area-qatar": {
+    "kicker": "Qatar investors",
+    "heading": "Freehold zones with pegged currency",
+    "intro": "Qatar yields are stable but zone-specific. Confirm Ministry of Justice registration on the exact unit before you model returns from a Pearl brochure map.",
+    "links": [
+      { "href": "/gulf-property-investment-consultation/", "title": "Qatar enquiry", "desc": "Pearl, Lusail, West Bay" },
+      { "href": "/guides/qatar-property-investment-guide/", "title": "Qatar guide", "desc": "Freehold, residency" },
+      { "href": "/compare/uae-vs-qatar-property-investment/", "title": "UAE vs Qatar", "desc": "Side-by-side" }
+    ],
+    "ctaHref": "/gulf-property-investment-consultation/",
+    "ctaLabel": "Discuss Qatar options"
+  },
+  "area-saudi": {
+    "kicker": "Saudi Arabia",
+    "heading": "Foreign ownership where eligible",
+    "intro": "Saudi rules are project-specific, not Dubai-style open freehold. Bridge to vetted projects only after legal eligibility is confirmed for your profile.",
+    "links": [
+      { "href": "/gulf-property-investment-consultation/", "title": "Saudi enquiry", "desc": "Eligible projects" },
+      { "href": "/guides/saudi-arabia-property-foreigners-guide/", "title": "Saudi guide", "desc": "Rules, financing" },
+      { "href": "/compare/saudi-vs-uae-property-investment/", "title": "Saudi vs UAE", "desc": "Compare markets" }
+    ],
+    "ctaHref": "/gulf-property-investment-consultation/",
+    "ctaLabel": "Discuss Saudi options"
+  },
+  "area-bahrain": {
+    "kicker": "Bahrain investors",
+    "heading": "Lower entry, pegged currency",
+    "intro": "Bahrain can beat Dubai on headline yield, but tower OPEX varies sharply. Bridge to listings with service charge schedules attached, not brochure net yields.",
+    "links": [
+      { "href": "/gulf-property-investment-consultation/", "title": "Bahrain enquiry", "desc": "Amwaj, Seef, Manama" },
+      { "href": "/guides/bahrain-property-investment-guide/", "title": "Bahrain guide", "desc": "Freehold, yields" },
+      { "href": "/compare/bahrain-vs-dubai-investment/", "title": "Bahrain vs Dubai", "desc": "Living and ROI" }
+    ],
+    "ctaHref": "/gulf-property-investment-consultation/",
+    "ctaLabel": "Discuss Bahrain options"
+  },
+  "area-oman": {
+    "kicker": "Oman investors",
+    "heading": "Muscat freehold for hold-and-rent",
+    "intro": "Oman suits lifestyle and long-hold rental theses more than Dubai-style flipping. Bridge to ITC and Al Mouj stock with realistic vacancy assumptions.",
+    "links": [
+      { "href": "/gulf-property-investment-consultation/", "title": "Oman enquiry", "desc": "Muscat freehold zones" },
+      { "href": "/guides/oman-property-investment-guide/", "title": "Oman guide", "desc": "Ownership, yields" },
+      { "href": "/compare/uae-vs-oman-property-investment/", "title": "UAE vs Oman", "desc": "Compare markets" }
+    ],
+    "ctaHref": "/gulf-property-investment-consultation/",
+    "ctaLabel": "Discuss Oman options"
+  }
+}

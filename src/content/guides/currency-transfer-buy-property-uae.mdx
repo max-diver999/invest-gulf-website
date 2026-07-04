@@ -37,6 +37,7 @@ faq:
 
 import TldrBlock from '../../components/TldrBlock.astro';
 
+import CommercialBridge from '../../components/CommercialBridge.astro';
 import InlineCta from '../../components/InlineCta.astro';
 
 import FaqBlock from '../../components/FaqBlock.astro';
@@ -57,6 +58,8 @@ Buyers who transfer day of appointment miss slots when SWIFT stalls in correspon
 Rule: Funds in UAE account 5–7 business days before trustee; FX booked when SPA signed, not when browsing listings.
 
 ## AED peg: who has FX risk
+<CommercialBridge variant="money" ctaId="bridge_money_cta_currency-transfer-buy-pr" />
+
 
 | Buyer currency | FX risk to AED | Notes |
 |---|---|---|
@@ -380,6 +383,7 @@ Banks with ICP relationships streamline source-of-funds documentation for visa a
 - Read schedule of benefits on health cover tied to Currency Transfer Buy Property Uae account packages, not marketing brochure summaries.
 
 <InlineCta
+  ctaId="generic_cta_currency-transfer-buy-pr"
   headline={"Ready to finance a Gulf property purchase?"}
   subtext={"Our team explains mortgage options and fund transfer processes."}
   buttonText={"Get Finance Guide"}

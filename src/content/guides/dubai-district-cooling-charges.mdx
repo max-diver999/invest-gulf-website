@@ -35,6 +35,7 @@ faq:
 
 import TldrBlock from '../../components/TldrBlock.astro';
 
+import CommercialBridge from '../../components/CommercialBridge.astro';
 import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
@@ -60,6 +61,8 @@ Cost trade-off: you pay chiller provider separately, often with consumption-base
 | Gas / hybrid | Rare newer projects | Mixed |
 
 ## Major providers
+<CommercialBridge variant="money" ctaId="bridge_money_cta_dubai-district-cooling-c" />
+
 
 | Provider | Typical communities |
 |---|---|
@@ -351,7 +354,7 @@ Landlords comparing tower stock: request **last 12 months chiller invoices** fro
   subtext="Get a shortlist of current listings with yield and entry price data."
   buttonText="Get Area Shortlist"
   buttonHref="/get-shortlist/"
-  ctaId="area_cta_dubai-district-cooli"
+  ctaId="generic_cta_dubai-district-cooling-c"
 />
 
 <FaqBlock items={[

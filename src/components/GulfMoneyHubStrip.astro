@@ -1,0 +1,23 @@
+---
+/** Compact hub links before the article LeadForm. */
+const links = [
+  { href: '/invest-dubai-property/', label: 'Dubai property' },
+  { href: '/invest-dubai-off-plan/', label: 'Dubai off-plan' },
+  { href: '/golden-visa-dubai-property/', label: 'Golden Visa' },
+  { href: '/gulf-property-investment-consultation/', label: 'Gulf consultation' },
+];
+---
+<nav class="gulf-hub-strip max-w-3xl mx-auto mt-10 mb-2" aria-label="Commercial options">
+  <p class="text-xs font-semibold uppercase tracking-wide text-[var(--color-muted)] mb-3">Ready to go further?</p>
+  <div class="flex flex-wrap gap-2">
+    {links.map((link) => (
+      <a
+        href={link.href}
+        class="inline-block text-sm font-medium px-3 py-1.5 rounded-full border border-[var(--color-border)] bg-white text-[var(--color-teal-dark)] no-underline hover:border-[var(--color-teal)]"
+        data-cta="hub_strip"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+</nav>

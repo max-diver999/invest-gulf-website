@@ -38,6 +38,7 @@ faq:
 
 import TldrBlock from '../../components/TldrBlock.astro';
 
+import CommercialBridge from '../../components/CommercialBridge.astro';
 import InlineCta from '../../components/InlineCta.astro';
 import FaqBlock from '../../components/FaqBlock.astro';
 
@@ -65,6 +66,8 @@ Service Charge Index is the output, the number you multiply by your unit area. M
 All three should show the same AED/sqft figure for a given building in a given year. If they do not, escalate with your broker before proceeding.
 
 ## How service charges are set: the annual cycle
+<CommercialBridge variant="money" ctaId="bridge_money_cta_dubai-service-charge-ind" />
+
 
 Understanding the governance cycle explains why charges change and why developer estimates diverge from reality.
 
@@ -429,7 +432,7 @@ Gross yield is what agents sell. Net yield is what investors earn. The Service C
   subtext="Get a free analysis matched to your budget and target market."
   buttonText="Request Free Analysis"
   buttonHref="/get-shortlist/"
-  ctaId="inline_cta_dubai-service-charge"
+  ctaId="generic_cta_dubai-service-charge-ind"
 />
 
 <FaqBlock items={[

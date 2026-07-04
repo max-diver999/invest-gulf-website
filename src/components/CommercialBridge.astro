@@ -1,0 +1,59 @@
+---
+/**
+ * Educational guide → commercial money landings.
+ * Variants configured in src/data/commercial-bridge.json
+ */
+import bridgeConfig from '../data/commercial-bridge.json';
+
+interface Link {
+  href: string;
+  title: string;
+  desc: string;
+}
+
+interface BridgeBlock {
+  kicker: string;
+  heading: string;
+  intro: string;
+  links: Link[];
+  ctaHref: string;
+  ctaLabel: string;
+}
+
+interface Props {
+  variant: string;
+  ctaId?: string;
+}
+
+const { variant, ctaId = `bridge_${variant}` } = Astro.props;
+const config = bridgeConfig as Record<string, BridgeBlock>;
+const c = config[variant];
+
+if (!c) {
+  throw new Error(`CommercialBridge: unknown variant "${variant}". Add it to commercial-bridge.json`);
+}
+---
+<aside
+  class="commercial-bridge my-8 p-6 rounded-2xl border border-[var(--color-border)] bg-[var(--color-teal-light)]"
+  aria-label={c.heading}
+  data-cta={ctaId}
+>
+  <p class="text-xs font-bold uppercase tracking-wider text-[var(--color-teal-dark)] mb-2">{c.kicker}</p>
+  <h2 class="text-xl mb-2 text-[var(--color-ink)]">{c.heading}</h2>
+  <p class="text-sm text-[var(--color-muted)] leading-relaxed mb-4">{c.intro}</p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+    {c.links.map((link) => (
+      <a
+        href={link.href}
+        class="block p-3 rounded-xl bg-white border border-[var(--color-border)] no-underline hover:border-[var(--color-teal)] transition-colors"
+        data-cta={`${ctaId}_link`}
+      >
+        <span class="text-sm font-semibold text-[var(--color-teal-dark)] block mb-0.5">{link.title}</span>
+        <span class="text-xs text-[var(--color-muted)]">{link.desc}</span>
+      </a>
+    ))}
+  </div>
+  <a href={c.ctaHref} class="btn-primary inline-block text-sm no-underline" data-cta={`${ctaId}_primary`}>
+    {c.ctaLabel}
+  </a>
+</aside>
