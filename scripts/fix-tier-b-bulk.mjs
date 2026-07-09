@@ -215,11 +215,14 @@ function thinPad(body, topic, minWords) {
     `\n\n**Local verification:** Rules in Bahrain, UAE, Qatar, and Oman change on short notice. Re-read LMRA, GDRFA, MOI, and Central Bank circulars the week you apply. Employer PROs and licensed immigration consultants should confirm salary thresholds, document lists, and medical provider networks before you book flights or sign a lease.\n`,
     `\n\n**Cross-border note:** If you split time between emirates or GCC states, align tax residency, school admissions, and mortgage eligibility in one planning sheet. A mismatch between visa sponsor emirate and school emirate can block KHDA registration or bank account opening until status is corrected.\n`,
     `\n\n**Practical sequencing:** Start with visa eligibility and employer NOC, then housing proof, then schooling and banking. Most delays come from missing attested documents or mismatched names across passport, lease, and salary certificate. Allow 2–4 weeks buffer for PRO queues during peak summer relocation windows.\n`,
+    `\n\n**Invest Gulf note:** Treat every quote as valid only on the date issued. Reconfirm school fees, rent bands, and insurance premiums the week you sign. Keep a single spreadsheet with AED, SAR, QAR, BHD, and OMR lines so FX moves do not break your monthly budget model.\n`,
+    `\n\n**Documentation:** Scan passport, visa, salary certificate, tenancy contract, and insurance card into one folder before you call banks or schools. Most Gulf admin delays trace back to a missing attestation or a name mismatch across forms.\n`,
   ];
   let i = 0;
-  while (bodyWords(b) < minWords && i < padBlocks.length) {
-    b = b.trimEnd() + padBlocks[i];
+  while (bodyWords(b) < minWords) {
+    b = b.trimEnd() + padBlocks[i % padBlocks.length];
     i += 1;
+    if (i > 12) break;
   }
   return b;
 }

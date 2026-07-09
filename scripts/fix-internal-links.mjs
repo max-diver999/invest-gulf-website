@@ -7,7 +7,7 @@ const MIN_LINKS = 5;
 const DRY = process.argv.includes('--dry');
 
 const allSlugs = new Map(); // slug -> {coll, title}
-for (const c of ['guides', 'compare']) {
+for (const c of ['guides', 'compare', 'areas', 'projects', 'news']) {
   for (const f of readdirSync(join(ROOT, c)).filter((x) => x.endsWith('.mdx'))) {
     const raw = readFileSync(join(ROOT, c, f), 'utf8');
     const slug = f.replace(/\.mdx$/, '');
@@ -28,7 +28,7 @@ function anchorFromTitle(title) {
 }
 
 function getInternalLinks(body) {
-  return [...new Set([...body.matchAll(/\]\((\/(?:guides|compare)\/[^)/]+)\/?\)/g)].map((m) => {
+  return [...new Set([...body.matchAll(/\]\((\/(?:guides|compare|areas|projects|news)\/[^)/]+)\/?\)/g)].map((m) => {
     let p = m[1];
     if (!p.endsWith('/')) p += '/';
     return p;
@@ -66,7 +66,7 @@ function hubFallback(slug, coll) {
 
 let changed = 0;
 
-for (const c of ['guides', 'compare']) {
+for (const c of ['guides', 'compare', 'areas', 'projects', 'news']) {
   const dir = join(ROOT, c);
   for (const f of readdirSync(dir).filter((x) => x.endsWith('.mdx'))) {
     const path = join(ROOT, c, f);

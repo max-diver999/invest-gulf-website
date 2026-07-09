@@ -1,0 +1,3951 @@
+{
+  "applied": "2026-07-09T20:05:04.228Z",
+  "target": 93,
+  "results": [
+    {
+      "file": "src/content/areas/tilal-al-ghaf-property-investment.mdx",
+      "changed": true,
+      "before": 81,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/adgm-vs-difc-company-setup.mdx",
+      "changed": true,
+      "before": 81,
+      "after": 81,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/the-valley-dubai-property-investment.mdx",
+      "changed": true,
+      "before": 82,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-mortgage-broker-guide.mdx",
+      "changed": true,
+      "before": 82,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-barari-property-investment.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/discovery-gardens-property-investment.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-silicon-oasis-property-investment.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/dubai-vs-oman-rental-yield.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/saudi-arabia-vs-uae-golden-visa.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/can-foreigners-buy-property-dubai.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-capital-appreciation-vs-yield.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-cost-of-living-guide.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-payment-plan-types-explained.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-waiting-lists.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-marina.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/news/damac-islands-handover-update-2026.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 3
+    },
+    {
+      "file": "src/content/news/oman-investment-residency-2026.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-production-city-property-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/motor-city-property-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/abu-dhabi-vs-dubai-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/dubai-vs-saudi-rental-yield.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/saudi-vs-uae-property-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-property-investment-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-banking-expats.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-health-insurance-dubai.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/boarding-schools-uae.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-holiday-home-roi-calculator-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-forecast-2026-2027.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-public-vs-private-healthcare.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rent-prices-by-area.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-bus-transport-fees.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-special-needs-schools.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-much-to-invest-dubai-property.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/khda-school-ratings-explained.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/kuwait-property-investment-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-seef-bahrain.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-property-investment-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-arabia-property-foreigners-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/tax-german-residents-dubai.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-blue-visa.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-free-zone-vs-mainland.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-mortgage-banks-list.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-residency-visa-types-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-visa-property-investor-750k.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/news/saudi-foreign-ownership-update-2026.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-furjan-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-maryah-island-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-raha-beach-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/damac-hills-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-creek-harbour-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/hudayriyat-island-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/lusail-city-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/mudon-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/muscat-al-mouj-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/muscat-qurum-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/riyadh-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/villanova-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/west-bay-doha-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/off-plan-vs-ready-property-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/rak-vs-dubai-rental-yield.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-driving-license.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-freehold-areas.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-golden-visa-property.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-healthcare-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-international-schools-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-rent-prices-by-area.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-vs-dubai-families.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-healthcare-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-international-schools.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-property-foreigner-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-saudi-bridge-commute.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-off-plan-abu-dhabi.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-off-plan-areas-dubai-2026.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/binghatti-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buying-property-uae-bank-transfer.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/cash-vs-mortgage-dubai-property.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/cost-of-buying-property-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/currency-exchange-aed-usd-eur.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/currency-transfer-buy-property-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-cost-of-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-vs-dubai-schools.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/double-tax-treaty-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-chores-time-parking.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-developers-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-district-cooling-charges.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-driving-license-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-mainland-llc-setup.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-neighbourhoods-for-singles.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-german-buyers.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-insurance-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-cooling-or-growing.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-vs-stock-market.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rent-increase-calculator-rera.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rta-fines-parking.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-vs-abu-dhabi-school-fees.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-vs-doha-vs-riyadh-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ellington-properties-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/emirates-id-after-property-purchase.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/emirates-id-application-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/fujairah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/golden-visa-2-million-aed-explained.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/golden-visa-vs-green-visa.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-healthcare-comparison.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-schools-comparison.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-to-evaluate-dubai-developer.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ib-schools-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/indian-schools-dubai-cbse.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-muscat-qurum.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-riyadh-diplomatic-quarter.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/non-resident-mortgage-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-property-foreigner-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/omniyat-developer-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/post-handover-payment-plan-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-banking-expats.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-school-fees.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-vs-uae-remote-work-visa.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-healthcare-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ras-al-khaimah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-healthcare-expats.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-hills.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/sharjah-dubai-commuter-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-freelance-permit-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-savings-fixed-deposits.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-tax-residency-183-day-rule.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/address-residences-dubai-hills.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/sobha-hartland-2.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-ghadeer-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-reef-abu-dhabi-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/aljada-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/bluewaters-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-marina-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-sports-city-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/jbr-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/saadiyat-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/yas-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/freehold-vs-leasehold-uae.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/uae-vs-qatar-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-adgm-setup.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-health-insurance-doh.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-off-plan-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ajman-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-golden-residence.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-dubai-developers-rental-yield.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buy-property-through-uae-company.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buy-to-let-mortgage-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/can-foreigners-buy-property-uae.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/capital-gains-uae-property.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/difc-company-setup.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dmcc-company-setup.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-international-schools-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-car-ownership-cost.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-cooling-off-period-off-plan.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-domestic-worker-visa.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-expat-community-groups.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-maid-nanny-cost.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-police-clearance-certificate.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-british-buyers.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-russian-buyers.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-inheritance-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-cycle-2026.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-snagging-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-taxes-explained.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-visa-relocation-bundle.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-guarantee-schemes-explained.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rest-app-property-due-diligence.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-fees-by-curriculum.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/due-diligence-dubai-property.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ejari-registration-landlord-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/german-expats-dubai-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-property-investment-comparison-2026.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-residency-by-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-al-marjan-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-al-reem-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-saadiyat-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-west-bay-doha.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/manama-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/muscat-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/muscat-international-schools.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/off-plan-property-dubai-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/offshore-bank-account-uae-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-banking-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-family-visa.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-healthcare-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-itc-zones-property.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-culture-etiquette.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-healthcare-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-off-plan-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-residency-by-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-tax-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-vs-dubai-family-life.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/relocate-qatar.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/relocate-saudi-arabia.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rera-broker-verification-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-driving-women-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-south.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-yas-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/select-group-developer-review.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/sharjah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-banking-for-russian-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-central-bank-mortgage-rules.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-green-visa-freelancer.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/umm-al-quwain-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/damac-islands.mdx",
+      "changed": false,
+      "before": 86,
+      "after": 86
+    },
+    {
+      "file": "src/content/projects/damac-lagoons-overview.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-reem-island-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-zahia-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/downtown-dubai-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-hills-estate-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-islands-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/impz-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/jeddah-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/jvc-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/palm-jumeirah-property-investment.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/compare/qatar-vs-uae-residency.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/rak-vs-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-driving-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-expat-community.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-areas-buy-property-dubai.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/damac-lagoons-community-living.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/downtown-dubai-living-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-business-setup-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-flooding-rain-risk.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-nursery-early-years.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-dispute-resolution.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-handover-checklist.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-scams-red-flags.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-valuation-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-law-landlord-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-service-charge-index-explained.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-tenant-eviction-rules-rera.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-villa-vs-apartment-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-weekend-culture.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/first-30-days-dubai-expat.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-to-buy-dubai-property-remotely.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/leaving-dubai-exit-checklist.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-muscat-al-mouj.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/nshama-developer-review.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/opening-bank-account-dubai-property-buyers.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-family-visa-sponsorship.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-permanent-residency.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-residency-by-property.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-work-visa-process.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-properties-developer-review.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/riyadh-cost-of-living.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-premium-residency-property.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/wynn-al-marjan-island-timeline-impact.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/danube-bayz-101.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/select-group-six-senses.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-hamra-village-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/city-walk-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/dubai-harbour-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/meydan-horizon-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/compare/aldar-vs-damac.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/compare/meraas-vs-emaar.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dld-mortgage-registration-fees.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-air-quality.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-inheritance-non-muslim-wills.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-mortgage-rates-2026.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-australian-buyers.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/islamic-vs-conventional-mortgage-uae.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/pet-relocation-dubai.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/qatar-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-property-foreigner-living.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/uae-banking-guide-expats.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/projects/aldar-saadiyat-grove.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/projects/aldar-yas-acres.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/dubai-south-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/areas/jebel-ali-village-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/areas/jlt-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/saudi-off-plan-guide.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/meraas-nad-al-sheba-villas.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/omniyat-orla-dorchester.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/the-oasis-emaar.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-relocating-families.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/projects/emaar-south-expo-living.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/compare/adgm-vs-difc-company-setup.mdx",
+      "changed": true,
+      "before": 81,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/the-valley-dubai-property-investment.mdx",
+      "changed": true,
+      "before": 82,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/tilal-al-ghaf-property-investment.mdx",
+      "changed": true,
+      "before": 82,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-mortgage-broker-guide.mdx",
+      "changed": true,
+      "before": 82,
+      "after": 82,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-silicon-oasis-property-investment.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/dubai-vs-oman-rental-yield.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/saudi-arabia-vs-uae-golden-visa.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/can-foreigners-buy-property-dubai.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-capital-appreciation-vs-yield.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-marina.mdx",
+      "changed": true,
+      "before": 83,
+      "after": 83,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-production-city-property-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/motor-city-property-investment.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/dubai-vs-saudi-rental-yield.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-health-insurance-dubai.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-cost-of-living-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-payment-plan-types-explained.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rent-prices-by-area.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-waiting-lists.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-special-needs-schools.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 84,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/khda-school-ratings-explained.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/kuwait-property-investment-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-seef-bahrain.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-arabia-property-foreigners-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-free-zone-vs-mainland.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-mortgage-banks-list.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-residency-visa-types-guide.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/news/damac-islands-handover-update-2026.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 85,
+      "cit": 3
+    },
+    {
+      "file": "src/content/news/oman-investment-residency-2026.mdx",
+      "changed": true,
+      "before": 84,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-furjan-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-raha-beach-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/lusail-city-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/mudon-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/muscat-al-mouj-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/muscat-qurum-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/riyadh-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/villanova-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/west-bay-doha-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/abu-dhabi-vs-dubai-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/off-plan-vs-ready-property-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/rak-vs-dubai-rental-yield.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/saudi-vs-uae-property-investment.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-healthcare-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-rent-prices-by-area.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-vs-dubai-families.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-banking-expats.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-saudi-bridge-commute.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/best-off-plan-abu-dhabi.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/binghatti-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/boarding-schools-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/cash-vs-mortgage-dubai-property.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/currency-transfer-buy-property-uae.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-cost-of-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-developers-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-district-cooling-charges.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-holiday-home-roi-calculator-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-mainland-llc-setup.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-neighbourhoods-for-singles.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-cooling-or-growing.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-forecast-2026-2027.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-vs-stock-market.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-public-vs-private-healthcare.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-bus-transport-fees.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-vs-abu-dhabi-school-fees.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ellington-properties-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/emirates-id-after-property-purchase.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/fujairah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/golden-visa-2-million-aed-explained.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/golden-visa-vs-green-visa.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-schools-comparison.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-much-to-invest-dubai-property.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-riyadh-diplomatic-quarter.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-property-foreigner-living.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/omniyat-developer-review.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-school-fees.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-vs-uae-remote-work-visa.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-healthcare-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ras-al-khaimah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-healthcare-expats.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-hills.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/sharjah-dubai-commuter-guide.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/tax-german-residents-dubai.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-blue-visa.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 85,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-tax-residency-183-day-rule.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/news/saudi-foreign-ownership-update-2026.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/address-residences-dubai-hills.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/sobha-hartland-2.mdx",
+      "changed": true,
+      "before": 85,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-ghadeer-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-maryah-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/aljada-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/damac-hills-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/discovery-gardens-property-investment.mdx",
+      "changed": false,
+      "before": 86,
+      "after": 86
+    },
+    {
+      "file": "src/content/areas/dubai-creek-harbour-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/hudayriyat-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/jbr-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/saadiyat-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/yas-island-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/freehold-vs-leasehold-uae.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/uae-vs-qatar-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-freehold-areas.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-golden-visa-property.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-health-insurance-doh.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-international-schools-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ajman-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-golden-residence.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-healthcare-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-international-schools.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-property-foreigner-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/bahrain-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buy-property-through-uae-company.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buy-to-let-mortgage-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/buying-property-uae-bank-transfer.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/can-foreigners-buy-property-uae.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/currency-exchange-aed-usd-eur.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/difc-company-setup.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dmcc-company-setup.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-international-schools-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/doha-vs-dubai-schools.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-cooling-off-period-off-plan.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-domestic-worker-visa.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-driving-license-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-maid-nanny-cost.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-inheritance-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-insurance-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-taxes-explained.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rent-increase-calculator-rera.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-guarantee-schemes-explained.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rta-fines-parking.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-school-fees-by-curriculum.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-vs-doha-vs-riyadh-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ejari-registration-landlord-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/emirates-id-application-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/german-expats-dubai-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-healthcare-comparison.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-property-investment-comparison-2026.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/gulf-residency-by-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-to-evaluate-dubai-developer.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/ib-schools-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/indian-schools-dubai-cbse.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-al-marjan-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-al-reem-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-muscat-qurum.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-saadiyat-island.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-west-bay-doha.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/manama-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/muscat-cost-of-living.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/muscat-international-schools.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/non-resident-mortgage-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/off-plan-property-dubai-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/offshore-bank-account-uae-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-banking-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-family-visa.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-healthcare-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-itc-zones-property.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/oman-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/post-handover-payment-plan-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-banking-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-culture-etiquette.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-driving-license.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-healthcare-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-tax-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/relocate-qatar.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/relocate-saudi-arabia.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rera-broker-verification-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-driving-women-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-dubai-south.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/select-group-developer-review.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/sharjah-property-investment-guide.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-banking-for-russian-expats.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-central-bank-mortgage-rules.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-freelance-permit-dubai.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-green-visa-freelancer.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-savings-fixed-deposits.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/uae-visa-property-investor-750k.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/umm-al-quwain-property-investment.mdx",
+      "changed": true,
+      "before": 86,
+      "after": 86,
+      "cit": 2
+    },
+    {
+      "file": "src/content/projects/damac-islands.mdx",
+      "changed": false,
+      "before": 86,
+      "after": 86
+    },
+    {
+      "file": "src/content/areas/al-barari-property-investment.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/areas/al-reef-abu-dhabi-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-hills-estate-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-islands-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/dubai-sports-city-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/jeddah-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/palm-jumeirah-property-investment.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/compare/qatar-vs-uae-residency.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/compare/rak-vs-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-adgm-setup.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-driving-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-driving-license.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-expat-community.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-property-investment-guide.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/best-off-plan-areas-dubai-2026.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/cost-of-buying-property-dubai.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/downtown-dubai-living-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-business-setup-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-car-ownership-cost.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-expat-community-groups.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-flooding-rain-risk.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-nursery-early-years.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-police-clearance-certificate.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-dispute-resolution.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-german-buyers.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-russian-buyers.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-handover-checklist.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-scams-red-flags.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-visa-relocation-bundle.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rental-law-landlord-guide.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-rest-app-property-due-diligence.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-villa-vs-apartment-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-weekend-culture.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/due-diligence-dubai-property.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/first-30-days-dubai-expat.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/how-to-buy-dubai-property-remotely.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/leaving-dubai-exit-checklist.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/living-muscat-al-mouj.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/nshama-developer-review.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/opening-bank-account-dubai-property-buyers.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-family-visa-sponsorship.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-permanent-residency.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-residency-by-investment.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-work-visa-process.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 87,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/rak-properties-developer-review.mdx",
+      "changed": false,
+      "before": 87,
+      "after": 87
+    },
+    {
+      "file": "src/content/guides/rak-vs-dubai-family-life.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/riyadh-cost-of-living.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-premium-residency-property.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/schools-near-yas-island.mdx",
+      "changed": true,
+      "before": 87,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/al-hamra-village-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/al-reem-island-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/al-zahia-sharjah-property-investment.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/areas/bluewaters-island-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/city-walk-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/dubai-harbour-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/dubai-marina-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/impz-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/jvc-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/meydan-horizon-property-investment.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/compare/aldar-vs-damac.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/compare/meraas-vs-emaar.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/capital-gains-uae-property.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dld-mortgage-registration-fees.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/double-tax-treaty-uae.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-air-quality.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-chores-time-parking.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 88,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-australian-buyers.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-british-buyers.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-property-market-cycle-2026.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/dubai-service-charge-index-explained.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/islamic-vs-conventional-mortgage-uae.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/pet-relocation-dubai.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/qatar-off-plan-guide.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/qatar-rental-yield-guide.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/qatar-residency-by-property.mdx",
+      "changed": true,
+      "before": 88,
+      "after": 89,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/saudi-property-foreigner-living.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/guides/uae-banking-guide-expats.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/projects/aldar-saadiyat-grove.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/projects/aldar-yas-acres.mdx",
+      "changed": false,
+      "before": 88,
+      "after": 88
+    },
+    {
+      "file": "src/content/areas/downtown-dubai-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/areas/dubai-south-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/areas/jebel-ali-village-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/areas/jlt-property-investment.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/abu-dhabi-off-plan-guide.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/best-areas-buy-property-dubai.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/best-dubai-developers-rental-yield.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/dubai-inheritance-non-muslim-wills.mdx",
+      "changed": true,
+      "before": 89,
+      "after": 90,
+      "cit": 2
+    },
+    {
+      "file": "src/content/guides/dubai-property-snagging-living.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/dubai-property-valuation-guide.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/dubai-tenant-eviction-rules-rera.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/rak-cost-of-living.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/saudi-off-plan-guide.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/wynn-al-marjan-island-timeline-impact.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/damac-lagoons-overview.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/meraas-nad-al-sheba-villas.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/omniyat-orla-dorchester.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/projects/the-oasis-emaar.mdx",
+      "changed": false,
+      "before": 89,
+      "after": 89
+    },
+    {
+      "file": "src/content/guides/damac-lagoons-community-living.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/guides/dubai-mortgage-rates-2026.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/guides/dubai-property-for-relocating-families.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/projects/danube-bayz-101.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/projects/emaar-south-expo-living.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    },
+    {
+      "file": "src/content/projects/select-group-six-senses.mdx",
+      "changed": false,
+      "before": 90,
+      "after": 90
+    }
+  ]
+}
