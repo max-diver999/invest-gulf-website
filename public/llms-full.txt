@@ -2,7 +2,8 @@
 
 Site: https://invest-gulf.com
 Contact: info@invest-gulf.com
-Updated: 2026-06-15
+Updated: 2026-07-09
+Wikidata: https://www.wikidata.org/wiki/Q140471703
 
 ## Hubs
 - https://invest-gulf.com/

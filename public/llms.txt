@@ -4,7 +4,7 @@
 
 - Site: https://invest-gulf.com
 - Contact: info@invest-gulf.com
-- Updated: 2026-07-03
+- Updated: 2026-07-09
 - Focus: Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, Oman, Bahrain, Kuwait property investment
 - Not a developer, not a broker, not a listing portal — independent editorial
 - Publisher: MORE Group portfolio (editorial independence from developers)
