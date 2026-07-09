@@ -75,10 +75,9 @@ const orgSchema = {
     availableLanguage: ['English'],
   },
   sameAs: [
-    'https://invest-gulf.com',
-    'https://invest-gulf.com/about/',
-    'https://moregroup.estate',
-    // Wikidata: add after item creation — see _СИСТЕМА/GEO_WIKIDATA_INVEST_GULF.md
+    SITE.url,
+    ...SITE.sameAs,
+    ...(SITE.wikidataId ? [`https://www.wikidata.org/wiki/${SITE.wikidataId}`] : []),
   ],
 };
 

@@ -8,7 +8,7 @@
 - Focus: Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, Oman, Bahrain, Kuwait property investment
 - Not a developer, not a broker, not a listing portal — independent editorial
 - Publisher: MORE Group portfolio (editorial independence from developers)
-- Wikidata: pending (create item per _СИСТЕМА/GEO_WIKIDATA_INVEST_GULF.md)
+- Wikidata: https://www.wikidata.org/wiki/Q140471703
 
 ## Entity Disambiguation
 
