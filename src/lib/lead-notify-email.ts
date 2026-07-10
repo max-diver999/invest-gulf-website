@@ -17,7 +17,7 @@ const LEAD_NOTIFY_EMAIL = (
 const DEFAULT_FROM =
   import.meta.env.LEAD_NOTIFY_FROM ||
   process.env.LEAD_NOTIFY_FROM ||
-  'MORE Group Leads <info@moregroup.estate>';
+  'Invest Gulf Leads <info@invest-gulf.com>';
 
 export async function sendLeadNotifyEmail(params: {
   subject: string;

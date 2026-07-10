@@ -2,15 +2,15 @@
   {
     "tier": "B",
     "coll": "guides",
-    "slug": "bahrain-healthcare-guide",
-    "url": "/guides/bahrain-healthcare-guide/",
+    "slug": "gross-vs-net-yield-dubai",
+    "url": "/guides/gross-vs-net-yield-dubai/",
     "impressions": 0,
     "clicks": 0,
-    "gscProtected": true,
+    "gscProtected": false,
     "score": 98,
     "ready": false,
     "blockers": 1,
-    "words": 2015,
+    "words": 3437,
     "issues": [
       "over-bold"
     ]

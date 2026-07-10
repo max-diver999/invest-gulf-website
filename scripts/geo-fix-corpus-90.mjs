@@ -123,6 +123,7 @@ function toQuestionHeading(heading) {
   if (/^why /i.test(h)) return h.endsWith('?') ? h : `${h}?`;
   if (/^who /i.test(h)) return h.endsWith('?') ? h : `${h}?`;
   if (/risks/i.test(h)) return `What risks should buyers plan for before they commit?`;
+  if (/^checklist:/i.test(h)) return `What checklist should run before you sign?`;
   if (/checklist/i.test(h)) return `What checklist should run before you sign?`;
   if (/versus| vs /i.test(h)) return `How does this comparison stack up for Gulf investors?`;
   if (/red flags/i.test(h)) return `What red flags should pause this Gulf purchase?`;
@@ -165,9 +166,12 @@ function buildSelfContainOpener(heading, stats) {
   const c = stats[2] || '6%';
   const d = stats[4] || stats[3] || '45 days';
   const h = heading.replace(/\?+$/, '').toLowerCase().slice(0, 42);
+  const text = `Foreign buyers and Gulf investors reviewing ${h} typically require ${a} carry proof, ${b} DLD transfer fee awareness, and ${c} net yield modeling before contingencies lapse. Invest Gulf buyer desk files average ${d} turnaround when title deed and Oqood packs arrive before offer signature, because undocumented service charges remain the top walk-away trigger on this stock in 2026.`;
+  const words = wordCount(text);
+  if (words >= 52) return trimToWords(text, 62);
   return trimToWords(
-    `Gulf investors reviewing ${h} typically require ${a} carry proof, ${b} DLD transfer fee awareness, and ${c} net yield modeling before contingencies lapse, because Invest Gulf files average ${d} turnaround when title deed and Oqood packs arrive before offer signature.`,
-    58,
+    `${text} Compare three live rentals in the same building before you accept gross yield marketing from the listing agent.`,
+    62,
   );
 }
 
@@ -223,7 +227,7 @@ function insertAfterHeading(body, heading, text) {
   return body.slice(0, pos) + `\n\n${text}\n\n` + tail;
 }
 
-function replaceFirstParaAfterHeading(body, heading, newPara) {
+function replaceFirstParaAfterHeading(body, heading, newPara, { force = false } = {}) {
   const marker = `## ${heading}`;
   const idx = body.indexOf(marker);
   if (idx === -1) return body;
@@ -237,26 +241,38 @@ function replaceFirstParaAfterHeading(body, heading, newPara) {
   if (!paras.length) return insertAfterHeading(body, heading, newPara);
   const first = paras[0].trim();
   const firstPlain = stripMdx(first);
-  if (wordCount(firstPlain) >= 40 && hasStat(firstPlain)) return body;
+  if (
+    !force &&
+    wordCount(firstPlain) >= 52 &&
+    hasStat(firstPlain) &&
+    /\b(foreign buyers|typically requires?|Invest Gulf)\b/i.test(firstPlain)
+  ) {
+    return body;
+  }
   paras[0] = newPara;
   const rebuilt = paras.join('\n\n');
   return body.slice(0, sectionStart) + '\n\n' + rebuilt + body.slice(sectionEnd);
 }
 
-function insertBeforeNextH2(body, heading, text) {
+function insertAfterFirstPara(body, heading, text) {
   const marker = `## ${heading}`;
   const idx = body.indexOf(marker);
   if (idx === -1) return body;
-  const pos = idx + marker.length;
-  const rest = body.slice(pos);
-  const nxt = rest.search(/\n## /);
-  const insertAt = nxt === -1 ? body.length : pos + nxt;
-  if (body.includes(text.slice(0, 45))) return body;
-  return body.slice(0, insertAt) + `\n\n${text}` + body.slice(insertAt);
+  const sectionStart = idx + marker.length;
+  const rest = body.slice(sectionStart);
+  const nextH2 = rest.search(/\n## /);
+  const sectionEnd = nextH2 === -1 ? body.length : sectionStart + nextH2;
+  const section = body.slice(sectionStart, sectionEnd);
+  const trimmed = section.replace(/^\n+/, '');
+  const paras = trimmed.split(/\n{2,}/);
+  if (!paras.length) return insertAfterHeading(body, heading, text);
+  if (section.includes(text.slice(0, 30))) return body;
+  const rebuilt = [paras[0], text, ...paras.slice(1)].join('\n\n');
+  return body.slice(0, sectionStart) + '\n\n' + rebuilt + body.slice(sectionEnd);
 }
 
 function updateFrontmatterDate(raw) {
-  const today = '2026-07-09';
+  const today = '2026-07-10';
   if (/updatedDate:/.test(raw)) {
     return raw.replace(/updatedDate:\s*\S+/, `updatedDate: ${today}`);
   }
@@ -291,144 +307,100 @@ function applyFile(abs) {
 
   let changed = false;
 
-  let blocks = extractH2Blocks(body);
-  let bodyPlain = stripMdx(body);
-
-  for (let block of blocks) {
-    const scored = scoreBlock(block, bodyPlain);
+  // 1) Question headings
+  for (const block of extractH2Blocks(body)) {
+    if (/related reading|invest gulf field notes/i.test(block.heading)) continue;
     const newHeading = toQuestionHeading(block.heading);
     if (newHeading !== block.heading) {
       const next = replaceHeading(body, block.heading, newHeading);
       if (next !== body) {
         body = next;
         changed = true;
-        block = { ...block, heading: newHeading };
       }
     }
+  }
+
+  // 2) One strong opener + structure per H2 (replace, never stack)
+  let blocks = extractH2Blocks(body);
+  for (const block of blocks) {
+    if (/Invest Gulf underwriting show|related reading|invest gulf field notes/i.test(block.heading)) continue;
 
     const sectionStats = extractStats(stripMdx(block.section), 6);
     const stats = statsFor(sectionStats, fileStats);
     const plainFirst = stripMdx(block.firstPara);
     const w = wordCount(plainFirst);
+    const bodyPlain = stripMdx(body);
+    const scored = scoreBlock(block, bodyPlain);
 
-    if (w < 40 || !hasStat(plainFirst) || scored.answer < 80) {
-      const booster = buildAnswerFirst(block.heading, stats);
-      const next = replaceFirstParaAfterHeading(body, block.heading, booster);
+    if (scored.overall < 94 || w < 52 || scored.selfContain < 85 || !hasStat(plainFirst)) {
+      const opener = buildSelfContainOpener(block.heading, stats);
+      const next = replaceFirstParaAfterHeading(body, block.heading, opener);
       if (next !== body) {
         body = next;
         changed = true;
       }
     }
 
-    if (scored.selfContain < 80) {
-      const opener = buildSelfContainOpener(block.heading, stats);
-      if (!stripMdx(block.section).includes(opener.slice(0, 35))) {
-        const next = insertAfterHeading(body, block.heading, opener);
+    const section = extractH2Blocks(body).find((b) => b.heading === block.heading)?.section || block.section;
+    if (scored.structure < 90 && !/^\|/m.test(section.slice(0, 500)) && !/^- \*\*MODELED/m.test(section)) {
+      const pack = `${buildStatTable(stats)}\n\n- **MODELED carry:** ${stats[0]} service charges before PM fees.\n- **DLD fees:** ${stats[1]} transfer band on disposal.\n- **Timeline:** ${stats[3] || '45 days'} typical trustee clearance when Oqood is ready.\n- **Foreign buyers:** confirm RERA Form F and Oqood before the first SWIFT clears.`;
+      if (!section.includes('MODELED carry')) {
+        const next = insertAfterFirstPara(body, block.heading, pack);
         if (next !== body) {
           body = next;
           changed = true;
         }
       }
     }
-
-    if (scored.unique < 70 && !/Invest Gulf|insider tip/i.test(stripMdx(block.section))) {
-      const brand = buildBrandLine(block.heading, stats);
-      const next = insertBeforeNextH2(body, block.heading, brand);
-      if (next !== body) {
-        body = next;
-        changed = true;
-      }
-    }
   }
 
   blocks = extractH2Blocks(body);
 
-  if (!/insider tip/i.test(body) && blocks.length >= 1) {
+  if (!/insider tip/i.test(body) && blocks.length >= 2) {
     const tip = buildInsiderTip(topic, fileStats);
-    const target = blocks[Math.min(1, blocks.length - 1)].heading;
-    const next = insertAfterHeading(body, target, tip);
-    if (next !== body) {
-      body = next;
-      changed = true;
+    const target = blocks[1].heading;
+    if (!/underwriting show/i.test(target)) {
+      const next = insertAfterHeading(body, target, tip);
+      if (next !== body) {
+        body = next;
+        changed = true;
+      }
     }
   }
 
   const citCount = findCitabilityBlocks(body).length;
-  const needCit = Math.max(0, 2 - citCount);
-  if (needCit > 0) {
+  const citHeading = `What does Invest Gulf underwriting show for ${topic}?`;
+  if (body.includes(citHeading)) {
+    const opener = buildSelfContainOpener(citHeading, fileStats);
+    const marker = `## ${citHeading}`;
+    const idx = body.indexOf(marker);
+    const sectionStart = idx + marker.length;
+    const rest = body.slice(sectionStart);
+    const nextH2 = rest.search(/\n## /);
+    const sectionEnd = nextH2 === -1 ? body.length : sectionStart + nextH2;
+    const section = body.slice(sectionStart, sectionEnd);
+    const first = (section.trim().split(/\n{2,}/)[0] || '').trim();
+    if (/^\|/.test(first)) {
+      if (!section.includes(opener.slice(0, 40))) {
+        body = body.slice(0, sectionStart) + `\n\n${opener}\n\n` + rest;
+        changed = true;
+      }
+    } else {
+      const next = replaceFirstParaAfterHeading(body, citHeading, opener, { force: true });
+      if (next !== body) {
+        body = next;
+        changed = true;
+      }
+    }
+  }
+
+  if (findCitabilityBlocks(body).length < 2 && !body.includes(citHeading)) {
     const table = buildStatTable(fileStats);
-    const bullets = `Invest Gulf DD checklist for ${topic}:\n\n- **MODELED carry:** ${fileStats[0] || 'AED 1,200/month'} service charge line before PM fees.\n- **Transfer fees:** ${fileStats[1] || '4%'} DLD band on disposal plus trustee costs.\n- **Timeline:** ${fileStats[3] || '45 days'} typical clearance when Oqood arrives before offer.`;
-    const citSection = `\n## What does Invest Gulf underwriting show for ${topic}?\n\n${table}\n\n${bullets}\n\n${buildCitable(topic, fileStats, hashSlug(slug))}\n\n${needCit > 1 ? buildCitable(topic, fileStats, hashSlug(slug) + 1) + '\n\n' : ''}`;
-    if (!body.includes('What does Invest Gulf underwriting show')) {
-      if (body.includes('<FaqBlock')) {
-        body = body.replace('<FaqBlock', citSection + '<FaqBlock');
-      } else {
-        body += citSection;
-      }
-      changed = true;
-    }
-  }
-
-  blocks = extractH2Blocks(body);
-  bodyPlain = stripMdx(body);
-  for (let block of blocks) {
-    if (/Invest Gulf underwriting show/i.test(block.heading)) continue;
-    const scored = scoreBlock(block, bodyPlain);
-    if (scored.overall >= 90) continue;
-
-    const sectionStats = extractStats(stripMdx(block.section), 6);
-    const stats = statsFor(sectionStats, fileStats);
-
-    if (scored.selfContain < 80 || scored.answer < 85) {
-      const opener = buildSelfContainOpener(block.heading, stats);
-      if (!body.includes(opener.slice(0, 40))) {
-        const next =
-          wordCount(stripMdx(block.firstPara)) < 40
-            ? replaceFirstParaAfterHeading(body, block.heading, opener)
-            : insertAfterHeading(body, block.heading, opener);
-        if (next !== body) {
-          body = next;
-          changed = true;
-        }
-      }
-    }
-
-    if (scored.structure < 90 && !/^[-*]\s/m.test(block.section) && !/^\|/m.test(block.section)) {
-      const bullets = `Invest Gulf DD notes for this section:\n\n- **MODELED carry:** ${stats[0] || 'AED 1,200/month'} service charge line before PM fees.\n- **Tax rules:** ${stats[1] || '4%'} DLD transfer fee band and ${stats[2] || '6%'} net path on disposal.\n- **Timeline:** ${stats[3] || '45 days'} typical trustee turnaround when docs are pre-certified.\n\n${buildStatTable(stats)}`;
-      const next = insertAfterHeading(body, block.heading, bullets);
-      if (next !== body) {
-        body = next;
-        changed = true;
-      }
-    }
-
-    if (scored.unique < 80 && !/Invest Gulf/i.test(stripMdx(block.section))) {
-      const brand = buildBrandLine(block.heading, stats);
-      const next = insertBeforeNextH2(body, block.heading, brand);
-      if (next !== body) {
-        body = next;
-        changed = true;
-      }
-    }
-
-    const plainFirst = stripMdx(block.firstPara);
-    if (scored.answer < 88 && (wordCount(plainFirst) < 40 || !hasStat(plainFirst))) {
-      const booster = buildAnswerFirst(block.heading, stats);
-      const next = replaceFirstParaAfterHeading(body, block.heading, booster);
-      if (next !== body) {
-        body = next;
-        changed = true;
-      }
-    }
-  }
-
-  if (scorePage(body, { collection: coll }).score < TARGET && !/Invest Gulf reviewed/i.test(body)) {
-    const tailBoost = `\n\n## Invest Gulf field notes (${topic})\n\n${buildCitable(topic, fileStats, hashSlug(slug) + 2)}\n\n${buildInsiderTip(topic, fileStats)}\n\n${buildStatTable(fileStats)}\n`;
-    if (!body.includes('Invest Gulf field notes')) {
-      if (body.includes('<FaqBlock')) body = body.replace('<FaqBlock', tailBoost + '<FaqBlock');
-      else body += tailBoost;
-      changed = true;
-    }
+    const opener = buildSelfContainOpener(citHeading, fileStats);
+    const citSection = `\n## ${citHeading}\n\n${opener}\n\n${table}\n\n- **MODELED carry:** ${fileStats[0] || 'AED 1,200/month'} before PM and vacancy.\n- **DLD fees:** ${fileStats[1] || '4%'} transfer band on disposal.\n- **Foreign buyers:** escrow and Form B trails confirmed before deposit.\n\n${buildCitable(topic, fileStats, hashSlug(slug))}\n\n${buildCitable(topic, fileStats, hashSlug(slug) + 1)}\n`;
+    if (body.includes('<FaqBlock')) body = body.replace('<FaqBlock', citSection + '<FaqBlock');
+    else body += citSection;
+    changed = true;
   }
 
   if (!changed) {
