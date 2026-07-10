@@ -2,15 +2,1103 @@
   {
     "tier": "B",
     "coll": "guides",
-    "slug": "gross-vs-net-yield-dubai",
-    "url": "/guides/gross-vs-net-yield-dubai/",
+    "slug": "abu-dhabi-cost-of-living",
+    "url": "/guides/abu-dhabi-cost-of-living/",
     "impressions": 0,
     "clicks": 0,
-    "gscProtected": false,
+    "gscProtected": true,
     "score": 98,
     "ready": false,
     "blockers": 1,
-    "words": 3437,
+    "words": 4564,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "abu-dhabi-driving-license",
+    "url": "/guides/abu-dhabi-driving-license/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 6223,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "abu-dhabi-international-schools-guide",
+    "url": "/guides/abu-dhabi-international-schools-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3245,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "bahrain-healthcare-guide",
+    "url": "/guides/bahrain-healthcare-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3085,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "bahrain-international-schools",
+    "url": "/guides/bahrain-international-schools/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4427,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "bahrain-property-foreigner-living",
+    "url": "/guides/bahrain-property-foreigner-living/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3908,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "best-areas-buy-property-dubai",
+    "url": "/guides/best-areas-buy-property-dubai/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 6068,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "best-off-plan-areas-dubai-2026",
+    "url": "/guides/best-off-plan-areas-dubai-2026/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4105,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "can-foreigners-buy-property-uae",
+    "url": "/guides/can-foreigners-buy-property-uae/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3752,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "cost-of-buying-property-dubai",
+    "url": "/guides/cost-of-buying-property-dubai/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4006,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "currency-exchange-aed-usd-eur",
+    "url": "/guides/currency-exchange-aed-usd-eur/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3683,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "damac-lagoons-community-living",
+    "url": "/guides/damac-lagoons-community-living/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3061,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "difc-company-setup",
+    "url": "/guides/difc-company-setup/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4119,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-capital-appreciation-vs-yield",
+    "url": "/guides/dubai-capital-appreciation-vs-yield/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4273,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-car-ownership-cost",
+    "url": "/guides/dubai-car-ownership-cost/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3844,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-chores-time-parking",
+    "url": "/guides/dubai-chores-time-parking/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3895,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-driving-license-guide",
+    "url": "/guides/dubai-driving-license-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4544,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-expat-community-groups",
+    "url": "/guides/dubai-expat-community-groups/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3670,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-for-british-buyers",
+    "url": "/guides/dubai-property-for-british-buyers/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3036,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-for-german-buyers",
+    "url": "/guides/dubai-property-for-german-buyers/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3458,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-for-relocating-families",
+    "url": "/guides/dubai-property-for-relocating-families/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3466,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-for-russian-buyers",
+    "url": "/guides/dubai-property-for-russian-buyers/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4861,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-inheritance-guide",
+    "url": "/guides/dubai-property-inheritance-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4166,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-insurance-guide",
+    "url": "/guides/dubai-property-insurance-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5067,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-property-scams-red-flags",
+    "url": "/guides/dubai-property-scams-red-flags/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3295,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-rent-prices-by-area",
+    "url": "/guides/dubai-rent-prices-by-area/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4138,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-rental-guarantee-schemes-explained",
+    "url": "/guides/dubai-rental-guarantee-schemes-explained/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3872,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-rta-fines-parking",
+    "url": "/guides/dubai-rta-fines-parking/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3851,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-villa-vs-apartment-investment",
+    "url": "/guides/dubai-villa-vs-apartment-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4102,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-vs-abu-dhabi-school-fees",
+    "url": "/guides/dubai-vs-abu-dhabi-school-fees/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4237,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "dubai-weekend-culture",
+    "url": "/guides/dubai-weekend-culture/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3913,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "ejari-registration-landlord-guide",
+    "url": "/guides/ejari-registration-landlord-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4062,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "emirates-id-after-property-purchase",
+    "url": "/guides/emirates-id-after-property-purchase/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 6313,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "first-30-days-dubai-expat",
+    "url": "/guides/first-30-days-dubai-expat/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4097,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "gulf-schools-comparison",
+    "url": "/guides/gulf-schools-comparison/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3882,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "living-al-reem-island",
+    "url": "/guides/living-al-reem-island/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4557,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "living-seef-bahrain",
+    "url": "/guides/living-seef-bahrain/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5277,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "manama-cost-of-living",
+    "url": "/guides/manama-cost-of-living/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4289,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "muscat-international-schools",
+    "url": "/guides/muscat-international-schools/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4893,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "oman-banking-expats",
+    "url": "/guides/oman-banking-expats/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4905,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "oman-family-visa",
+    "url": "/guides/oman-family-visa/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5759,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "oman-healthcare-guide",
+    "url": "/guides/oman-healthcare-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5020,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "opening-bank-account-dubai-property-buyers",
+    "url": "/guides/opening-bank-account-dubai-property-buyers/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5240,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-family-visa-sponsorship",
+    "url": "/guides/qatar-family-visa-sponsorship/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5416,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-healthcare-guide",
+    "url": "/guides/qatar-healthcare-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5226,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-property-investment-guide",
+    "url": "/guides/qatar-property-investment-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3682,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "qatar-school-fees",
+    "url": "/guides/qatar-school-fees/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3992,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "rak-healthcare-guide",
+    "url": "/guides/rak-healthcare-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 5570,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "ras-al-khaimah-property-investment-guide",
+    "url": "/guides/ras-al-khaimah-property-investment-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3488,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "saudi-arabia-property-foreigners-guide",
+    "url": "/guides/saudi-arabia-property-foreigners-guide/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3810,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "schools-near-dubai-hills",
+    "url": "/guides/schools-near-dubai-hills/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4412,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "schools-near-dubai-marina",
+    "url": "/guides/schools-near-dubai-marina/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4530,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "schools-near-yas-island",
+    "url": "/guides/schools-near-yas-island/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3384,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "uae-banking-guide-expats",
+    "url": "/guides/uae-banking-guide-expats/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3921,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "guides",
+    "slug": "uae-free-zone-vs-mainland",
+    "url": "/guides/uae-free-zone-vs-mainland/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3011,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "al-maryah-island-property-investment",
+    "url": "/areas/al-maryah-island-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3402,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "al-raha-beach-property-investment",
+    "url": "/areas/al-raha-beach-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4110,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "discovery-gardens-property-investment",
+    "url": "/areas/discovery-gardens-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3210,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "dubai-creek-harbour-property-investment",
+    "url": "/areas/dubai-creek-harbour-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4816,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "dubai-hills-estate-property-investment",
+    "url": "/areas/dubai-hills-estate-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4255,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "dubai-silicon-oasis-property-investment",
+    "url": "/areas/dubai-silicon-oasis-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4118,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "lusail-city-property-investment",
+    "url": "/areas/lusail-city-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4281,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "motor-city-property-investment",
+    "url": "/areas/motor-city-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4644,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "muscat-qurum-property-investment",
+    "url": "/areas/muscat-qurum-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4755,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "riyadh-property-investment",
+    "url": "/areas/riyadh-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4197,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "west-bay-doha-property-investment",
+    "url": "/areas/west-bay-doha-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4140,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "areas",
+    "slug": "yas-island-property-investment",
+    "url": "/areas/yas-island-property-investment/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3970,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "compare",
+    "slug": "adgm-vs-difc-company-setup",
+    "url": "/compare/adgm-vs-difc-company-setup/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 3859,
+    "issues": [
+      "over-bold"
+    ]
+  },
+  {
+    "tier": "B",
+    "coll": "compare",
+    "slug": "saudi-arabia-vs-uae-golden-visa",
+    "url": "/compare/saudi-arabia-vs-uae-golden-visa/",
+    "impressions": 0,
+    "clicks": 0,
+    "gscProtected": true,
+    "score": 98,
+    "ready": false,
+    "blockers": 1,
+    "words": 4161,
     "issues": [
       "over-bold"
     ]

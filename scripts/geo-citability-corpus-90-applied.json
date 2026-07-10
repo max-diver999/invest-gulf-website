@@ -1,55 +1,20 @@
 {
-  "applied": "2026-07-10T09:04:54.153Z",
-  "target": 90,
+  "applied": "2026-07-10T09:37:35.758Z",
+  "target": 93,
   "results": [
     {
-      "file": "src/content/guides/qatar-vs-dubai-cost-living.mdx",
+      "file": "src/content/news/saudi-foreign-ownership-update-2026.mdx",
       "changed": true,
-      "before": 88,
-      "after": 93,
-      "cit": 0
+      "before": 91,
+      "after": 91,
+      "cit": 2
     },
     {
-      "file": "src/content/guides/uae-inheritance-property-expats.mdx",
+      "file": "src/content/news/saudi-foreign-ownership-update-2026.mdx",
       "changed": true,
-      "before": 88,
-      "after": 93,
-      "cit": 0
-    },
-    {
-      "file": "src/content/guides/american-schools-dubai.mdx",
-      "changed": true,
-      "before": 89,
-      "after": 93,
-      "cit": 1
-    },
-    {
-      "file": "src/content/guides/dubai-property-for-american-buyers.mdx",
-      "changed": true,
-      "before": 89,
-      "after": 93,
-      "cit": 1
-    },
-    {
-      "file": "src/content/guides/dubai-vs-abu-dhabi-cost-living.mdx",
-      "changed": true,
-      "before": 89,
-      "after": 92,
-      "cit": 0
-    },
-    {
-      "file": "src/content/guides/gross-vs-net-yield-dubai.mdx",
-      "changed": true,
-      "before": 89,
-      "after": 93,
-      "cit": 1
-    },
-    {
-      "file": "src/content/guides/jeddah-international-schools.mdx",
-      "changed": true,
-      "before": 89,
-      "after": 93,
-      "cit": 0
+      "before": 91,
+      "after": 91,
+      "cit": 2
     }
   ]
 }

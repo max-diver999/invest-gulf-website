@@ -14,6 +14,7 @@ const DRY = process.argv.includes('--dry-run');
 
 const STRIP_PARAS = [
   /^Gulf investors reviewing .+ typically require .+$/m,
+  /^Foreign buyers and Gulf investors reviewing .+ typically require .+$/m,
   /^Invest Gulf underwriting on .+ in 2026 usually starts at .+$/m,
   /^Buyers researching .+ should treat .+$/m,
   /^Invest Gulf reviewed .+ benchmarks on .+ files in Q2 2026.+$/m,
@@ -23,6 +24,7 @@ const STRIP_PARAS = [
 const STRIP_BLOCKS = [
   /\nInvest Gulf DD notes for this section:\n\n- \*\*MODELED carry:\*\*.+?(?=\n## |\n<FaqBlock|\n<LeadForm|$)/gs,
   /\n\nInvest Gulf DD checklist for [^\n]+:\n\n- \*\*MODELED carry:\*\*.+?(?=\n\nInvest Gulf underwriting|\n## |\n<FaqBlock)/gs,
+  /\n## What do Invest Gulf field notes show for this market\?\n[\s\S]*?(?=\n## |\n<FaqBlock|\n<LeadForm|$)/g,
 ];
 
 function listMdx() {
@@ -109,7 +111,7 @@ for (const abs of listMdx()) {
   let body = parseMdxBody(raw);
   const before = body;
   for (const re of STRIP_BLOCKS) body = body.replace(re, '\n');
-  body = dedupeHeadings(body);
+  body = body.replace(/\n## Related reading\n/g, '\n\n**Related reading**\n\n');
   body = dedupeParagraphs(body);
   body = body.replace(/\n{4,}/g, '\n\n\n');
   if (body === before) continue;
