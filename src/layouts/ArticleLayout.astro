@@ -21,6 +21,7 @@ interface Props {
   contextLabel?: string;
   articleSlug?: string;
   articleCollection?: string;
+  leadPlacement?: 'early' | 'end';
 }
 
 const {
@@ -38,6 +39,7 @@ const {
   contextLabel = title,
   articleSlug = '',
   articleCollection = 'guides',
+  leadPlacement = 'end',
 } = Astro.props;
 
 const stickyCta = articleSlug
@@ -94,6 +96,16 @@ const articleSchema = {
       <img src={heroImage} alt="" class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]" loading="eager" />
     )}
 
+    {leadPlacement === 'early' && (
+      <div class="max-w-3xl mx-auto mb-10">
+        <LeadForm
+          title="Get a Gulf property shortlist"
+          subtitle="Tell us your budget and target market. Independent research first; enquiries are matched with licensed local partners. We reply within one business day."
+          context={contextLabel}
+        />
+      </div>
+    )}
+
     <div class="prose mx-auto">
       <slot />
     </div>
@@ -106,13 +118,15 @@ const articleSchema = {
 
     <GulfMoneyHubStrip />
 
-    <div class="max-w-3xl mx-auto mt-8">
-      <LeadForm
-        title="Get a Gulf property shortlist"
-        subtitle="Tell us your budget and market (Dubai, Abu Dhabi, RAK). We reply within one business day with options matched to your goals."
-        context={contextLabel}
-      />
-    </div>
+    {leadPlacement === 'end' && (
+      <div class="max-w-3xl mx-auto mt-8">
+        <LeadForm
+          title="Get a Gulf property shortlist"
+          subtitle="Tell us your budget and target market. Independent research first; enquiries are matched with licensed local partners. We reply within one business day."
+          context={contextLabel}
+        />
+      </div>
+    )}
 
     <aside class="max-w-3xl mx-auto mt-10 surface-card p-5 text-sm text-[var(--color-muted)]">
       <strong>Disclaimer:</strong> Invest Gulf is an independent editorial resource. We are not a developer or licensed broker.

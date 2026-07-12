@@ -13,6 +13,7 @@ const articleSchema = z.object({
   readingTime: z.number().optional(),
   relatedSlugs: z.array(z.string()).default([]),
   noindex: z.boolean().default(false),
+  leadPlacement: z.enum(['early', 'end']).default('end'),
   faq: z
     .array(z.object({ question: z.string(), answer: z.string() }))
     .optional(),
