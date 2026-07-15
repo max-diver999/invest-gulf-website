@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import StickyMobileLeadBar from '../components/StickyMobileLeadBar.astro';
+import WhatsAppIntentTracker from '../components/WhatsAppIntentTracker.astro';
 import { SITE } from '../data/site';
 
 interface StickyCtaProps {
@@ -118,5 +119,6 @@ const allSchemas = [orgSchema, ...(schema ? [schema] : [])];
   </main>
   <Footer />
   {stickyCta && <StickyMobileLeadBar {...stickyCta} />}
+  <WhatsAppIntentTracker />
 </body>
 </html>
