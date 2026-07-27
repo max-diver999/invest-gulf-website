@@ -87,3 +87,27 @@ export const STICKY_CONTACT = {
   buttonHref: '#lead-form',
   ctaId: 'sticky_contact',
 };
+
+export const STICKY_GCC_YIELDS = {
+  title: 'Yield-matched shortlist',
+  subtitle: 'Net yield, not brochure gross',
+  buttonText: 'Compare yields',
+  buttonHref: '#lead-form',
+  ctaId: 'sticky_gcc_yields_hub',
+};
+
+export const STICKY_BIZ_SETUP = {
+  title: 'Property near your zone',
+  subtitle: 'DMCC · DIFC · ADGM · RAKEZ',
+  buttonText: 'Get shortlist',
+  buttonHref: '#lead-form',
+  ctaId: 'sticky_biz_setup_hub',
+};
+
+export const STICKY_EXPAT_DOCS = {
+  title: 'Family area shortlist',
+  subtitle: 'School run and budget matched',
+  buttonText: 'Get shortlist',
+  buttonHref: '#lead-form',
+  ctaId: 'sticky_expat_docs_hub',
+};

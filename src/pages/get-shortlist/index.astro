@@ -4,8 +4,8 @@ import LeadForm from '../../components/LeadForm.astro';
 import { STICKY_SHORTLIST } from '../../data/sticky-cta';
 ---
 <BaseLayout
-  title="Get Your Gulf Property Shortlist"
-  description="Tell us your budget and target market (Dubai, Abu Dhabi, RAK). Free independent shortlist within one business day."
+  title="Get Your Gulf Property Shortlist: Free, One Business Day"
+  description="Tell us your budget and target market across Dubai, Abu Dhabi, RAK, Qatar, Saudi and Bahrain. Free independent shortlist within one business day."
   stickyCta={STICKY_SHORTLIST}
 >
   <section class="site-container py-12 md:py-16 max-w-2xl">
@@ -13,6 +13,10 @@ import { STICKY_SHORTLIST } from '../../data/sticky-cta';
       <h1 class="mb-3">Get your shortlist</h1>
       <p class="text-lg text-[var(--color-muted)]">
         Share budget, market, and goal. We match you with vetted off-plan and ready options, no spam, no developer pressure.
+      </p>
+      <p class="text-sm text-[var(--color-muted)] mt-3">
+        Independent research first. Enquiries are matched with licensed local partners, and we reply within one
+        business day.
       </p>
     </header>
     <LeadForm
@@ -24,5 +28,12 @@ import { STICKY_SHORTLIST } from '../../data/sticky-cta';
       By submitting you agree to our <a href="/privacy-policy/">Privacy Policy</a>.
       Not financial or legal advice.
     </p>
+    <div class="prose mt-10">
+      <p class="text-sm">
+        Prefer to research first? Compare returns on the <a href="/gcc-rental-yields/">GCC rental yields hub</a>,
+        plan a company move with <a href="/uae-business-setup-property/">UAE business setup to property</a>, or work
+        through relocation admin in <a href="/uae-expat-documents-property/">expat paperwork to property</a>.
+      </p>
+    </div>
   </section>
 </BaseLayout>

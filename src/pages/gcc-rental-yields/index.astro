@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { STICKY_GCC_YIELDS } from '../../data/sticky-cta';
+
+const markets = [
+  {
+    name: 'Dubai',
+    gross: '7 to 9%',
+    note: 'Deepest liquidity, highest gross, fastest resale',
+    href: '/guides/dubai-rental-yield-guide/',
+  },
+  {
+    name: 'Abu Dhabi',
+    gross: '6 to 8%',
+    note: 'Lower entry than Dubai equivalents, longer leases',
+    href: '/guides/abu-dhabi-rental-yield-guide/',
+  },
+  {
+    name: 'Bahrain',
+    gross: '6 to 8%',
+    note: 'Amwaj and Juffair lead, Seef closer to 5 to 6.5%',
+    href: '/guides/bahrain-rental-yield-guide/',
+  },
+  {
+    name: 'Qatar',
+    gross: '4.5 to 7%',
+    note: 'Pearl highest, Lusail newer stock, stable tenants',
+    href: '/guides/qatar-rental-yield-guide/',
+  },
+  {
+    name: 'Oman',
+    gross: '5 to 7%',
+    note: 'ITC zones only, corporate leases common in Muscat',
+    href: '/guides/oman-rental-yield-guide/',
+  },
+  {
+    name: 'Saudi Arabia',
+    gross: '4 to 6%',
+    note: 'Designated zones since Jan 2026, thin rent evidence',
+    href: '/guides/saudi-rental-yield-guide/',
+  },
+  {
+    name: 'Kuwait',
+    gross: '5 to 8%',
+    note: 'Tight foreign ownership rules, expat rental demand',
+    href: '/guides/kuwait-rental-yield-guide/',
+  },
+  {
+    name: 'Ras Al Khaimah',
+    gross: '6 to 8%',
+    note: 'Al Marjan casino-led repricing, short-let upside',
+    href: '/guides/rak-rental-yield-guide/',
+  },
+];
+
+const methodGuides = [
+  { title: 'Gross vs net yield: what actually lands in your account', href: '/guides/gross-vs-net-yield-dubai/' },
+  { title: 'How to calculate rental yield properly', href: '/guides/how-to-calculate-rental-yield-dubai/' },
+  { title: 'Net yield calculator for UAE property', href: '/guides/net-yield-calculator-uae-property/' },
+  { title: 'Yield versus capital appreciation trade-off', href: '/guides/dubai-capital-appreciation-vs-yield/' },
+  { title: 'Highest rental yield areas in Dubai', href: '/guides/highest-rental-yield-areas-dubai/' },
+];
+
+const headToHead = [
+  { title: 'Dubai vs Abu Dhabi rental yield', href: '/compare/dubai-vs-abu-dhabi-rental-yield/' },
+  { title: 'Dubai vs Qatar rental yield', href: '/compare/dubai-vs-qatar-rental-yield/' },
+  { title: 'Dubai vs Saudi rental yield', href: '/compare/dubai-vs-saudi-rental-yield/' },
+  { title: 'Dubai vs Oman rental yield', href: '/compare/dubai-vs-oman-rental-yield/' },
+  { title: 'RAK vs Dubai rental yield', href: '/compare/rak-vs-dubai-rental-yield/' },
+];
+---
+<BaseLayout
+  title="GCC Rental Yields 2026: Gulf Markets Compared by Country"
+  description="Compare gross rental yields across Dubai, Abu Dhabi, Bahrain, Qatar, Oman, Saudi Arabia and Kuwait for 2026, plus the net yield math behind each range."
+  stickyCta={STICKY_GCC_YIELDS}
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Yield hub</span>
+      <h1 class="mb-4">GCC rental yields compared</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        One page to see how Gulf markets actually pay. Every range below links to the full working, including
+        service charges, management fees and vacancy assumptions.
+      </p>
+      <p class="mt-5">
+        <a href="#lead-form" class="btn-primary">Get a yield-matched shortlist</a>
+      </p>
+    </header>
+
+    <div class="prose mb-10">
+      <p>
+        <strong>Quick answer:</strong> Dubai still posts the highest headline gross yields in the Gulf at roughly
+        7 to 9%, with Abu Dhabi, Bahrain and Ras Al Khaimah clustered around 6 to 8%. Qatar runs 4.5 to 7%
+        depending on district, Oman 5 to 7% inside ITC zones, and Saudi Arabia 4 to 6% in the designated zones
+        opened in January 2026. Net yields typically land 1.5 to 2.5 points below gross once service charges,
+        management and vacancy are priced in.
+      </p>
+
+      <h2>Gross yield by market</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Market</th>
+            <th>Indicative gross</th>
+            <th>What drives the range</th>
+          </tr>
+        </thead>
+        <tbody>
+          {markets.map((m) => (
+            <tr>
+              <td><a href={m.href}>{m.name}</a></td>
+              <td>{m.gross}</td>
+              <td>{m.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="text-sm text-[var(--color-muted)]">
+        Ranges are indicative for 2026 and vary by district, unit size and lease type. Always underwrite a specific
+        building, not a country average.
+      </p>
+
+      <h2>Read the yield math before you compare countries</h2>
+      <ul>
+        {methodGuides.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Head to head comparisons</h2>
+      <ul>
+        {headToHead.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Where to go next</h2>
+      <p>
+        If Dubai yield is the priority, start with <a href="/invest-dubai-property/">Dubai property investment</a>.
+        If you want a lower entry price for the same rent band, compare
+        <a href="/abu-dhabi-property-investment/"> Abu Dhabi property</a> or
+        <a href="/invest-ras-al-khaimah-property/"> Ras Al Khaimah</a>. If you are still choosing between
+        countries, a <a href="/gulf-property-investment-consultation/">cross-Gulf consultation</a> is the faster
+        route than reading seven guides end to end.
+      </p>
+    </div>
+
+    <LeadForm
+      title="Compare Gulf yields on your budget"
+      subtitle="Tell us your budget and target net yield. We reply within one business day."
+      context="GCC rental yields hub"
+    />
+    <p class="text-xs text-[var(--color-muted)] mt-6">
+      Independent research, not financial advice. Enquiries are matched with licensed local partners.
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </p>
+  </section>
+</BaseLayout>

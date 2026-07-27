@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { STICKY_BIZ_SETUP } from '../../data/sticky-cta';
+
+const freeZones = [
+  {
+    name: 'DMCC (Dubai)',
+    best: 'Commodities, trading, consulting, tech',
+    href: '/guides/dmcc-company-setup/',
+  },
+  {
+    name: 'DIFC (Dubai)',
+    best: 'Financial services, funds, holding structures',
+    href: '/guides/difc-company-setup/',
+  },
+  {
+    name: 'ADGM (Abu Dhabi)',
+    best: 'Funds, family offices, private wealth, fintech',
+    href: '/guides/abu-dhabi-adgm-setup/',
+  },
+  {
+    name: 'JAFZA (Dubai)',
+    best: 'Logistics, manufacturing, port-linked trade',
+    href: '/guides/jafza-company-setup/',
+  },
+  {
+    name: 'IFZA and Meydan (Dubai)',
+    best: 'Lean service companies, first-time founders',
+    href: '/guides/ifza-company-setup/',
+  },
+  {
+    name: 'RAKEZ (Ras Al Khaimah)',
+    best: 'Lowest-cost licences, light industrial',
+    href: '/guides/rakez-company-setup/',
+  },
+];
+
+const structureGuides = [
+  { title: 'UAE free zone vs mainland: which one you actually need', href: '/guides/uae-free-zone-vs-mainland/' },
+  { title: 'Dubai business setup: the full sequence', href: '/guides/dubai-business-setup-guide/' },
+  { title: 'Dubai mainland LLC setup', href: '/guides/dubai-mainland-llc-setup/' },
+  { title: 'Abu Dhabi mainland LLC setup', href: '/guides/abu-dhabi-mainland-llc-setup/' },
+  { title: 'Shams free zone setup', href: '/guides/shams-free-zone-setup/' },
+  { title: 'Dubai South free zone setup', href: '/guides/dubai-south-free-zone-setup/' },
+  { title: 'Freelance permit route in Dubai', href: '/guides/uae-freelance-permit-dubai/' },
+];
+
+const thenWhat = [
+  { title: 'UAE tax residency and the 183 day rule', href: '/guides/uae-tax-residency-183-day-rule/' },
+  { title: 'Double tax treaty position for UAE residents', href: '/guides/double-tax-treaty-uae/' },
+  { title: 'Opening a bank account as a property buyer', href: '/guides/opening-bank-account-dubai-property-buyers/' },
+  { title: 'Wills for DIFC and ADGM structures', href: '/guides/uae-will-difc-adgm/' },
+  { title: 'Green visa route for freelancers', href: '/guides/uae-green-visa-freelancer/' },
+];
+---
+<BaseLayout
+  title="UAE Business Setup to Property: Free Zone and Buying Guide"
+  description="Pick a UAE free zone (DMCC, DIFC, ADGM, JAFZA, RAKEZ), then decide where to buy. Licence costs, residency routes and the property step in one place."
+  stickyCta={STICKY_BIZ_SETUP}
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Business hub</span>
+      <h1 class="mb-4">UAE business setup, then property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        Founders relocating to the UAE usually make two decisions in the same quarter: which zone issues the licence,
+        and which district to live in or buy. This hub keeps both on one page.
+      </p>
+      <p class="mt-5">
+        <a href="#lead-form" class="btn-primary">Get a property shortlist near your zone</a>
+      </p>
+    </header>
+
+    <div class="prose mb-10">
+      <p>
+        <strong>Quick answer:</strong> Pick the zone by activity, not by headline price. DMCC suits trading and
+        consulting, DIFC and ADGM suit regulated finance and wealth structures, RAKEZ and the lean Dubai zones suit
+        first-time founders on a tight budget. A licence gives you a residence route, and residence changes which
+        property purchase makes sense: owner-occupier near the office, or a yield unit let to someone else.
+      </p>
+
+      <h2>Which zone fits which business</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Zone</th>
+            <th>Typically chosen for</th>
+          </tr>
+        </thead>
+        <tbody>
+          {freeZones.map((z) => (
+            <tr>
+              <td><a href={z.href}>{z.name}</a></td>
+              <td>{z.best}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="text-sm text-[var(--color-muted)]">
+        Licence fees, visa quotas and workspace rules change. Confirm current figures with the zone authority or a
+        licensed setup consultant before you budget.
+      </p>
+
+      <h2>Structure and licence decisions</h2>
+      <ul>
+        {structureGuides.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>After the licence: tax, banking and residency</h2>
+      <ul>
+        {thenWhat.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>The property step</h2>
+      <p>
+        Most founders end up in one of three places. If the company is in a Dubai zone,
+        <a href="/invest-dubai-property/"> Dubai property investment</a> covers the freehold districts near JLT,
+        Business Bay and Dubai South. If the licence sits in ADGM, look at
+        <a href="/abu-dhabi-property-investment/"> Abu Dhabi property</a> instead, since the commute logic is
+        different. If you want residency locked to the asset rather than the company, compare
+        <a href="/golden-visa-dubai-property/">Golden Visa through property</a>. Not sure which order to do it in?
+        Ask on the <a href="/gulf-property-investment-consultation/">consultation page</a> or request a
+        <a href="/get-shortlist/">shortlist</a> and we will frame both options.
+      </p>
+    </div>
+
+    <LeadForm
+      title="Property options near your free zone"
+      subtitle="Tell us the zone and your budget. We reply within one business day."
+      context="UAE business setup to property hub"
+    />
+    <p class="text-xs text-[var(--color-muted)] mt-6">
+      Independent research, not legal, tax or financial advice. Company formation is handled by licensed consultants.
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </p>
+  </section>
+</BaseLayout>

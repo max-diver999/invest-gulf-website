@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { STICKY_EXPAT_DOCS } from '../../data/sticky-cta';
+
+const paperwork = [
+  {
+    task: 'Police clearance certificate',
+    when: 'Before a job offer or an overseas visa file',
+    href: '/guides/dubai-police-clearance-certificate/',
+  },
+  {
+    task: 'Emirates ID',
+    when: 'Week one to two after visa stamping',
+    href: '/guides/emirates-id-application-guide/',
+  },
+  {
+    task: 'Visa medical test',
+    when: 'Before residence stamping',
+    href: '/guides/uae-visa-medical-test/',
+  },
+  {
+    task: 'Document attestation',
+    when: 'Before school enrolment and licence swaps',
+    href: '/guides/uae-attestation-documents/',
+  },
+  {
+    task: 'Driving licence',
+    when: 'Week two to four, after the residence card',
+    href: '/guides/dubai-driving-license-guide/',
+  },
+  {
+    task: 'Residence visa stamping',
+    when: 'Straight after entry permit',
+    href: '/guides/dubai-residence-visa-stamping/',
+  },
+];
+
+const drivingGuides = [
+  { title: 'Dubai driving licence: swap or full test', href: '/guides/dubai-driving-license-guide/' },
+  { title: 'Abu Dhabi driving licence', href: '/guides/abu-dhabi-driving-license/' },
+  { title: 'Oman driving licence and ROP exchange', href: '/guides/oman-driving-license/' },
+  { title: 'Qatar driving licence', href: '/guides/qatar-driving-license/' },
+  { title: 'Bahrain driving licence', href: '/guides/bahrain-driving-license/' },
+];
+
+const schoolGuides = [
+  { title: 'Dubai vs Abu Dhabi school fees compared', href: '/guides/dubai-vs-abu-dhabi-school-fees/' },
+  { title: 'Dubai school fees by curriculum', href: '/guides/dubai-school-fees-by-curriculum/' },
+  { title: 'School fees against your property budget', href: '/guides/school-fees-vs-property-budget-dubai/' },
+  { title: 'Qatar school fees', href: '/guides/qatar-school-fees/' },
+  { title: 'Golden Visa and school fees together', href: '/guides/golden-visa-school-fees-package/' },
+];
+
+const visaGuides = [
+  { title: 'UAE residency visa types explained', href: '/guides/uae-residency-visa-types-guide/' },
+  { title: 'Golden Visa application step by step', href: '/guides/golden-visa-application-step-by-step/' },
+  { title: 'Emirates ID after a property purchase', href: '/guides/emirates-id-after-property-purchase/' },
+  { title: 'Gulf residency by investment', href: '/guides/gulf-residency-by-investment-guide/' },
+];
+---
+<BaseLayout
+  title="Expat Documents to Property: UAE Relocation Paperwork Hub"
+  description="Police clearance, Emirates ID, medical, attestation, driving licence and school fees in order, then the residency and property decision that follows."
+  stickyCta={STICKY_EXPAT_DOCS}
+>
+  <section class="site-container py-12 md:py-16 max-w-3xl">
+    <header class="mb-8">
+      <span class="badge-pill mb-4">Relocation hub</span>
+      <h1 class="mb-4">Expat paperwork, then property</h1>
+      <p class="text-lg text-[var(--color-muted)]">
+        The admin comes first and the housing decision follows it. This hub puts the documents in the order you
+        actually need them, then points to the residency and property routes that depend on them.
+      </p>
+      <p class="mt-5">
+        <a href="#lead-form" class="btn-primary">Get an area shortlist for your family</a>
+      </p>
+    </header>
+
+    <div class="prose mb-10">
+      <p>
+        <strong>Quick answer:</strong> Most Gulf moves run in the same sequence: clearance certificate and attested
+        documents before you arrive, medical and Emirates ID in the first fortnight, driving licence in weeks two to
+        four, school places confirmed in parallel. Only after school and commute are fixed does the buy-or-rent
+        question have a sensible answer, because district choice is usually driven by the school run.
+      </p>
+
+      <h2>Paperwork in the order it lands</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Typical timing</th>
+          </tr>
+        </thead>
+        <tbody>
+          {paperwork.map((p) => (
+            <tr>
+              <td><a href={p.href}>{p.task}</a></td>
+              <td>{p.when}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="text-sm text-[var(--color-muted)]">
+        Requirements and processing times change by emirate and nationality. Verify current rules with the issuing
+        authority before you book appointments.
+      </p>
+
+      <h2>Driving licences across the Gulf</h2>
+      <ul>
+        {drivingGuides.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Schools and fees</h2>
+      <ul>
+        {schoolGuides.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>Residency routes</h2>
+      <ul>
+        {visaGuides.map((g) => (
+          <li><a href={g.href}>{g.title}</a></li>
+        ))}
+      </ul>
+
+      <h2>From paperwork to a place to live</h2>
+      <p>
+        Once the school and the commute are settled, the property question narrows fast. For Dubai districts and
+        freehold rules start with <a href="/invest-dubai-property/">Dubai property investment</a>. For a lower entry
+        price on family villas, compare <a href="/abu-dhabi-property-investment/">Abu Dhabi property</a>. If the aim
+        is residency tied to the asset, read <a href="/golden-visa-dubai-property/">Golden Visa through property</a>.
+        To skip the reading, request a <a href="/get-shortlist/">free shortlist</a> and tell us the school and budget.
+      </p>
+    </div>
+
+    <LeadForm
+      title="Areas that fit your school and budget"
+      subtitle="Tell us the school, commute and budget. We reply within one business day."
+      context="Expat documents to property hub"
+    />
+    <p class="text-xs text-[var(--color-muted)] mt-6">
+      Independent research, not legal or immigration advice. Verify official requirements before applying.
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </p>
+  </section>
+</BaseLayout>
