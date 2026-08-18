@@ -1,27 +1,29 @@
 ---
 export const prerender = true;
 
-const reportDate = '27 July 2026';
-const reportVersion = 'v2.3';
+const reportDate = '18 August 2026';
+const reportVersion = 'v2.4';
 const launchDate = '4 June 2026';
-const dataThrough = '24 July 2026';
+const dataThrough = '15 August 2026';
 
 const monthlyGsc = [
-  { month: 'Jun 2026', label: 'Jun', clicks: 22, impressions: 5802, position: 24.2, note: 'Launch month · 2 Jun–30 Jun (GSC lag)' },
-  { month: 'Jul 2026', label: 'Jul', clicks: 2, impressions: 523, position: 38.5, note: 'Partial through 24 Jul · low click volume, Bing impressions rising' },
+  { month: 'Jun 2026', label: 'Jun', clicks: 22, impressions: 5058, position: 24.8, note: 'Launch month · peak 768 imp/day 22 Jun · 21 clicks 8–30 Jun' },
+  { month: 'Jul 2026', label: 'Jul', clicks: 2, impressions: 1425, position: 41.2, note: 'Google clicks stalled · avg ~46 imp/day · spam cleanup late Jul' },
+  { month: 'Aug 2026', label: 'Aug', clicks: 0, impressions: 274, position: 45.5, note: 'Partial through 15 Aug · re-crawl after DLD boilerplate strip · 0 clicks so far' },
 ];
 
 const monthlyGa4 = [
-  { month: 'Jun', sessions: 192 },
-  { month: 'Jul', sessions: 239 },
+  { month: 'Jun', sessions: 152 },
+  { month: 'Jul', sessions: 494 },
+  { month: 'Aug', sessions: 890 },
 ];
 
 const contentBreakdown = [
-  { type: 'Guides', count: 485, words: 2671961, color: '#b45309' },
-  { type: 'Areas', count: 58, words: 320772, color: '#8b5cf6' },
-  { type: 'Compare', count: 30, words: 154311, color: '#d97706' },
-  { type: 'Projects', count: 25, words: 78887, color: '#d4a853' },
-  { type: 'News', count: 12, words: 28043, color: '#60a5fa' },
+  { type: 'Guides', count: 485, words: 1765804, color: '#b45309' },
+  { type: 'Areas', count: 58, words: 185519, color: '#8b5cf6' },
+  { type: 'Compare', count: 30, words: 92882, color: '#d97706' },
+  { type: 'Projects', count: 25, words: 59105, color: '#d4a853' },
+  { type: 'News', count: 12, words: 22121, color: '#60a5fa' },
 ];
 
 const totalClicks = monthlyGsc.reduce((s, m) => s + m.clicks, 0);
@@ -460,24 +462,24 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
   <div class="section-title">At a glance</div>
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="num teal">359</div>
+      <div class="num teal">429</div>
       <div class="label">URLs in sitemap</div>
-      <div class="sublabel">485 guides · 58 areas · 30 comparisons · 25 projects</div>
+      <div class="sublabel">610 MDX · 429 indexable · 3 topic hubs live</div>
     </div>
     <div class="stat-card">
-      <div class="num amber">200</div>
-      <div class="label">Indexing this week</div>
-      <div class="sublabel">Google API 200 URL (4 + 9 Jul) · Bing IndexNow synced</div>
+      <div class="num amber">136</div>
+      <div class="label">Bing clicks</div>
+      <div class="sublabel">2 Jun–15 Aug · 9 539 imp · main click engine Aug</div>
     </div>
     <div class="stat-card">
-      <div class="num">3.25M</div>
+      <div class="num">2.13M</div>
       <div class="label">SEO words</div>
-      <div class="sublabel">610 MDX files · ~5,334 avg · GEO 90+ corpus · fix-batch 340/340</div>
+      <div class="sublabel">610 MDX · ~3,484 avg · GEO avg 91 · DLD spam stripped</div>
     </div>
     <div class="stat-card">
       <div class="num teal">18</div>
       <div class="label">GSC click pages</div>
-      <div class="sublabel">2 Jun–24 Jul · police clearance + yields + school fees</div>
+      <div class="sublabel">2 Jun–15 Aug · police clearance + yields + Qatar visa</div>
     </div>
     <div class="stat-card">
       <div class="num">5</div>
@@ -487,12 +489,12 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="stat-card">
       <div class="num amber">24</div>
       <div class="label">GSC clicks</div>
-      <div class="sublabel">6 325 imp · CTR 0.38% · avg pos 28.1</div>
+      <div class="sublabel">6 757 imp · CTR 0.36% · avg pos 29.1 · 0 clk since 9 Jul</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">431</div>
+      <div class="num teal">1 588</div>
       <div class="label">GA4 sessions</div>
-      <div class="sublabel">2 Jun–26 Jul · organic 106 · AI assistant 13</div>
+      <div class="sublabel">2 Jun–17 Aug · organic 239 · AI assistant 22</div>
     </div>
   </div>
 
@@ -511,13 +513,13 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       <div class="kpi-label">Impressions</div>
       <div class="kpi-value">{(totalImp / 1000).toFixed(1)}k</div>
       <span class="kpi-delta up">↑ Crawl accelerating</span>
-      <div class="kpi-sub">{totalImp.toLocaleString('en-US')} total · peak 768/day 22 Jun · Jul plateau</div>
+      <div class="kpi-sub">{totalImp.toLocaleString('en-US')} total · peak 768/day 22 Jun · Google ~20–40/day Aug</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
-      <div class="kpi-value">245</div>
-      <span class="kpi-delta up">↑ Organic 57</span>
-      <div class="kpi-sub">5 Jun–6 Jul · GA4 MCP</div>
+      <div class="kpi-value">1 588</div>
+      <span class="kpi-delta up">↑ Aug ramp</span>
+      <div class="kpi-sub">2 Jun–17 Aug · GA4 MCP · organic 239 (15%)</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Content corpus</div>
@@ -531,7 +533,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. June full month + July partial (GSC 3-day lag).</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. Jun full + Jul + Aug partial (GSC ~3-day lag).</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -544,7 +546,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>Launch month traffic:</strong> 245 GA4 sessions Jun 5–Jul 6. Organic search 57 (23%). Peak crawl 768 imp/day on 22 Jun, then plateau ~50–100 imp/day in early Jul. CTR sprint on police clearance: 4 clicks from 828 imp.
+          <strong>Traffic shift:</strong> 1 588 GA4 sessions 2 Jun–17 Aug. Aug partial 890 sessions (peak 114/day 31 Jul). Organic 239 (15%). Google clicks frozen at 24 since 9 Jul while Bing hit 136 clicks / 9.5k imp. Post-cleanup re-crawl window Aug.
         </div>
       </div>
     </div>
@@ -590,7 +592,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         </table>
       </div>
       <div class="insight">
-        <strong>Crawl ramp then plateau:</strong> Impressions 76 to 768/day in 15 days (8–22 Jun), then cooled to ~50–100/day in Jul as Google re-evaluates post-spam-update corpus. 23 total clicks, 17 click URLs. Police clearance + Saudi yield + Oman driving lead volume.
+        <strong>Crawl ramp then re-evaluation:</strong> Impressions peaked 768/day (22 Jun), cooled to ~20–40/day in Aug after late-Jul spam cleanup (~300 pages). Google clicks stuck at 24 total (last click 9 Jul). Bing now drives clicks: 136 vs Google 24. Monitor GSC recovery 2–4 weeks post-cleanup.
       </div>
     </div>
   </section>
@@ -655,11 +657,11 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-header">
       <div>
         <h2>Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 24 Jul 2026 · Web search · Updated 27 Jul via GSC API</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 15 Aug 2026 · Web search · Updated 18 Aug via GSC API</p>
       </div>
       <div class="pulse-updated">
         <span class="pulse-updated-dot"></span>
-        Updated 27 Jul 2026
+        Updated 18 Aug 2026
       </div>
     </div>
 
@@ -676,36 +678,41 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div style="font-size:12px;color:#78716c;">5 048 impressions · CTR 0.42% · <strong style="color:#15803d;">+768 imp/day peak 22 Jun</strong></div>
       </div>
       <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:14px 16px;">
-        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">vs report v2.0 (25 Jun)</div>
-        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">+3 clicks</div>
-        <div style="font-size:12px;color:#78716c;">20 → 23 clicks · 4 104 → 5 470 imp · 10 → 17 click pages</div>
+        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">Jul – Aug 2026</div>
+        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">0 Google clicks</div>
+        <div style="font-size:12px;color:#78716c;">1 699 imp since 1 Jul · re-crawl after cleanup · <strong style="color:#c2410c;">Bing 136 clk</strong></div>
+      </div>
+      <div style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:14px 16px;">
+        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">vs report v2.3 (27 Jul)</div>
+        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">+432 imp</div>
+        <div style="font-size:12px;color:#78716c;">6 325 → 6 757 GSC · GA4 431 → 1 588 sess · Bing 45 → 136 clk</div>
       </div>
     </div>
 
     <!-- KPI Row -->
     <div class="pulse-kpi-row">
       <div class="pulse-kpi kpi-green">
-        <div class="kpi-trend trend-up">+3 vs v2.0</div>
+        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">0 clk since 9 Jul</div>
         <div class="kpi-label">Total Clicks</div>
         <div class="kpi-val">24</div>
-        <div class="kpi-sub">2 Jun–24 Jul · 18 URLs with clicks · peak week 15–21 Jun (13 clk)</div>
+        <div class="kpi-sub">2 Jun–15 Aug · 18 URLs with clicks · last Google click 9 Jul</div>
       </div>
       <div class="pulse-kpi kpi-blue">
-        <div class="kpi-trend trend-up">↑ Bing imp ramp Jul</div>
+        <div class="kpi-trend trend-up">↑ Bing 9.5k imp</div>
         <div class="kpi-label">Impressions</div>
-        <div class="kpi-val">6 325</div>
-        <div class="kpi-sub">Google peak 768/day 22 Jun · Jul Google ~40–80/day · Bing 3k+ imp</div>
+        <div class="kpi-val">6 757</div>
+        <div class="kpi-sub">Google peak 768/day 22 Jun · Aug ~20–40/day Google · Bing rising</div>
       </div>
       <div class="pulse-kpi kpi-amber">
-        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">tail index</div>
+        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">re-crawl</div>
         <div class="kpi-label">Avg. Position</div>
-        <div class="kpi-val">28.1</div>
-        <div class="kpi-sub">359 sitemap URLs · yield guides pos ~9–14 on winners</div>
+        <div class="kpi-val">29.1</div>
+        <div class="kpi-sub">429 sitemap URLs · Saudi yield pos 9.3 · school fees CTR 2.04%</div>
       </div>
       <div class="pulse-kpi kpi-purple">
         <div class="kpi-label">Avg. CTR</div>
-        <div class="kpi-val">0.38%</div>
-        <div class="kpi-sub">school fees 2.04% · police clearance 0.48% · yield guides 0.5%+</div>
+        <div class="kpi-val">0.36%</div>
+        <div class="kpi-sub">school fees 2.04% · al-barari 5.88% · police clearance 0.48%</div>
       </div>
     </div>
 
@@ -755,9 +762,9 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#1</div>
-          <div class="pulse-query-text">police clearance certificate attestation</div>
-          <div class="pulse-query-pos">pos 28+</div>
-          <div class="pulse-query-imp">77 imp</div>
+          <div class="pulse-query-text">best schools in dubai hills estate</div>
+          <div class="pulse-query-pos">pos 88.3</div>
+          <div class="pulse-query-imp">68 imp</div>
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#2</div>
@@ -768,32 +775,32 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#3</div>
           <div class="pulse-query-text">attestation of police clearance certificate</div>
-          <div class="pulse-query-pos">pos 30+</div>
+          <div class="pulse-query-pos">pos 75.0</div>
           <div class="pulse-query-imp">38 imp</div>
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#4</div>
-          <div class="pulse-query-text">dmcc company setup</div>
-          <div class="pulse-query-pos">pos 82.0</div>
-          <div class="pulse-query-imp">20 imp</div>
+          <div class="pulse-query-text">best country retire middle east</div>
+          <div class="pulse-query-pos">pos 19.4</div>
+          <div class="pulse-query-imp">35 imp</div>
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#5</div>
-          <div class="pulse-query-text">city walk dubai retail rent per sq ft 2025</div>
-          <div class="pulse-query-pos">pos 8.6</div>
-          <div class="pulse-query-imp">19 imp</div>
+          <div class="pulse-query-text">sakan checkpoint</div>
+          <div class="pulse-query-pos">pos 1.6</div>
+          <div class="pulse-query-imp">33 imp</div>
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#6</div>
-          <div class="pulse-query-text">abu dhabi schools fees</div>
-          <div class="pulse-query-pos">pos 65.2</div>
-          <div class="pulse-query-imp">16 imp</div>
+          <div class="pulse-query-text">damac lagoons family community</div>
+          <div class="pulse-query-pos">pos 90.2</div>
+          <div class="pulse-query-imp">24 imp</div>
         </div>
         <div class="pulse-query-row">
           <div class="pulse-query-rank">#7</div>
-          <div class="pulse-query-text">dmcc company setup fees</div>
-          <div class="pulse-query-pos">pos 48.2</div>
-          <div class="pulse-query-imp">15 imp</div>
+          <div class="pulse-query-text">abu dhabi schools fees</div>
+          <div class="pulse-query-pos">pos 73.4</div>
+          <div class="pulse-query-imp">22 imp</div>
         </div>
       </div>
 
@@ -827,8 +834,40 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
             <div class="pulse-page-url">/guides/oman-driving-license/</div>
             <div class="pulse-page-meta">
               <span class="pulse-badge badge-clicks">2 clicks</span>
-              <span class="pulse-badge badge-impr">287 imp</span>
-              <span class="pulse-badge badge-pos">pos 11.7</span>
+              <span class="pulse-badge badge-impr">310 imp</span>
+              <span class="pulse-badge badge-pos">pos 15.3</span>
+            </div>
+          </div>
+          <div class="pulse-page-row">
+            <div class="pulse-page-url">/guides/best-health-insurance-dubai/</div>
+            <div class="pulse-page-meta">
+              <span class="pulse-badge badge-impr">379 imp</span>
+              <span class="pulse-badge badge-pos">0 clk</span>
+            </div>
+          </div>
+          <div class="pulse-page-row">
+            <div class="pulse-page-url">/guides/dmcc-company-setup/</div>
+            <div class="pulse-page-meta">
+              <span class="pulse-badge badge-impr">300 imp</span>
+              <span class="pulse-badge badge-pos">0 clk GSC</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="pulse-page-row">
+            <div class="pulse-page-url">/guides/qatar-family-visa-sponsorship/</div>
+            <div class="pulse-page-meta">
+              <span class="pulse-badge badge-clicks">1 click</span>
+              <span class="pulse-badge badge-impr">162 imp</span>
+              <span class="pulse-badge badge-pos">pos 13.6</span>
+            </div>
+          </div>
+          <div class="pulse-page-row">
+            <div class="pulse-page-url">/guides/abu-dhabi-freehold-areas/</div>
+            <div class="pulse-page-meta">
+              <span class="pulse-badge badge-clicks">1 click</span>
+              <span class="pulse-badge badge-impr">58 imp</span>
+              <span class="pulse-badge badge-pos">CTR 1.72%</span>
             </div>
           </div>
           <div class="pulse-page-row">
@@ -840,51 +879,17 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
             </div>
           </div>
           <div class="pulse-page-row">
-            <div class="pulse-page-url">/guides/dmcc-company-setup/</div>
+            <div class="pulse-page-url">/projects/aldar-saadiyat-grove/</div>
             <div class="pulse-page-meta">
-              <span class="pulse-badge badge-impr">300 imp</span>
-              <span class="pulse-badge badge-pos">pos 44.3</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="pulse-page-row">
-            <div class="pulse-page-url">/guides/buying-property-uae-bank-transfer/</div>
-            <div class="pulse-page-meta">
-              <span class="pulse-badge badge-clicks">1 click</span>
-              <span class="pulse-badge badge-impr">87 imp</span>
-              <span class="pulse-badge badge-pos">pos 31.3</span>
+              <span class="pulse-badge badge-impr">184 imp</span>
+              <span class="pulse-badge badge-pos">0 clk</span>
             </div>
           </div>
           <div class="pulse-page-row">
-            <div class="pulse-page-url">/guides/difc-company-setup/</div>
+            <div class="pulse-page-url">/guides/uae-savings-fixed-deposits/</div>
             <div class="pulse-page-meta">
-              <span class="pulse-badge badge-clicks">1 click</span>
-              <span class="pulse-badge badge-impr">26 imp</span>
-              <span class="pulse-badge badge-pos">pos 18.3</span>
-            </div>
-          </div>
-          <div class="pulse-page-row">
-            <div class="pulse-page-url">/guides/dubai-driving-license-guide/</div>
-            <div class="pulse-page-meta">
-              <span class="pulse-badge badge-clicks">1 click</span>
-              <span class="pulse-badge badge-impr">45 imp</span>
-              <span class="pulse-badge badge-pos">pos 20.2</span>
-            </div>
-          </div>
-          <div class="pulse-page-row">
-            <div class="pulse-page-url">/areas/al-barari-property-investment/</div>
-            <div class="pulse-page-meta">
-              <span class="pulse-badge badge-clicks">1 click</span>
-              <span class="pulse-badge badge-impr">17 imp</span>
-              <span class="pulse-badge badge-pos">pos 8.8</span>
-            </div>
-          </div>
-          <div class="pulse-page-row">
-            <div class="pulse-page-url">/guides/qatar-rental-yield-guide/</div>
-            <div class="pulse-page-meta">
-              <span class="pulse-badge badge-impr">25 imp</span>
-              <span class="pulse-badge badge-pos">pos 7.2</span>
+              <span class="pulse-badge badge-impr">182 imp</span>
+              <span class="pulse-badge badge-pos">Bing 7 clk</span>
             </div>
           </div>
         </div>
@@ -896,13 +901,13 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       <div class="pulse-insight" style="background:#f0fdf4;border-color:#bbf7d0;">
         <div class="pulse-insight-icon">✅</div>
         <div class="pulse-insight-text">
-          <strong>Yield + lifestyle clusters working:</strong> 17 URLs receive clicks in first 5 weeks. Police clearance (828 imp) + Saudi yield (379 imp) + Oman driving (287 imp) lead volume. School-fees comparison CTR 2.04%. CTR sprint deployed 4 Jul on clearance + DMCC pages.
+          <strong>Dual-engine picture:</strong> Google: 18 URLs with clicks, frozen since 9 Jul. Bing: 136 clicks / 9 539 imp (police clearance 8 clk, fixed deposits 7 clk, ejari 6 clk). Late-Jul spam cleanup on ~300 pages. GEO corpus avg 91/100.
         </div>
       </div>
       <div class="pulse-insight" style="background:#fff7ed;border-color:#fed7aa;">
         <div class="pulse-insight-icon">🔗</div>
         <div class="pulse-insight-text">
-          <strong>Indexing batches ongoing:</strong> 200 URL sent 4 + 9 Jul via invest-gulf-indexing SA. Sitemap trimmed to 359 indexable URLs after noindex pruning. ~140 URLs still in backlog queue.
+          <strong>Re-crawl window:</strong> 429 URLs in live sitemap. Google impressions ~20–40/day in Aug after DLD boilerplate strip (~300 pages). Monitor GSC 2–4 weeks before next title pass. Bing IndexNow synced on deploys.
         </div>
       </div>
     </div>
@@ -974,14 +979,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#fffbeb;border-radius:10px;border:1px solid #fde68a;">
-          <div style="font-size:28px;font-weight:900;color:#b45309;">359</div>
+          <div style="font-size:28px;font-weight:900;color:#b45309;">429</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">URLs in sitemap</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Live 200 OK · noindex dupes pruned · 9 Jul</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Live build 18 Aug · 3 hubs · lead API 200 OK</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
-          <div style="font-size:28px;font-weight:900;color:#15803d;">17</div>
-          <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">URLs with clicks</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">GSC 1 Jun–6 Jul · week 5 ramp</div>
+          <div style="font-size:28px;font-weight:900;color:#15803d;">18</div>
+          <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">URLs with GSC clicks</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">2 Jun–15 Aug · last click 9 Jul</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
           <div style="font-size:28px;font-weight:900;color:#2563eb;">200</div>
@@ -997,7 +1002,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">📊</div>
         <div class="pulse-insight-text">
-          <strong>Coverage note:</strong> 359 indexable URLs in live sitemap after noindex pruning. 200 URL indexing batches 4 + 9 Jul via dedicated GCP project <code>invest-gulf-indexing</code>. EN site: Bing IndexNow via direct endpoint only.
+          <strong>Coverage note:</strong> 429 indexable URLs in live sitemap (610 MDX total). Jul indexing batches 200 URL each via <code>invest-gulf-indexing</code>. Aug focus: post-cleanup Google re-crawl + Bing growth (136 clk).
         </div>
       </div>
     </div>
@@ -1008,34 +1013,34 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#fbbf24;"></span>
-        Google Analytics 4 — 2 Jun – 26 Jul 2026
+        Google Analytics 4 — 2 Jun – 17 Aug 2026
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#fef3c7;border-radius:10px;border:1px solid #fde68a;">
-          <div style="font-size:28px;font-weight:900;color:#b45309;">431</div>
+          <div style="font-size:28px;font-weight:900;color:#b45309;">1 588</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">Sessions</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">2 Jun–26 Jul · peak day 25 Jul (23 sess)</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">2 Jun–17 Aug · peak 114/day 31 Jul · Aug partial 890</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
-          <div style="font-size:28px;font-weight:900;color:#2563eb;">106</div>
+          <div style="font-size:28px;font-weight:900;color:#2563eb;">239</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">Organic Search</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">25% of sessions · rising in Jul weeks</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">15% of sessions · up from 106 through Jul</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
-          <div style="font-size:28px;font-weight:900;color:#15803d;">290</div>
+          <div style="font-size:28px;font-weight:900;color:#15803d;">1 291</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">Direct</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Launch + QA · still majority of traffic</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">81% · includes QA + Aug spike (review quality)</div>
         </div>
         <div style="text-align:center;padding:16px;background:#ede9fe;border-radius:10px;border:1px solid #c4b5fd;">
-          <div style="font-size:28px;font-weight:900;color:#7c3aed;">13</div>
+          <div style="font-size:28px;font-weight:900;color:#7c3aed;">22</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">AI Assistant</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">AEO traffic · 5 sessions week 6–12 Jul</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">AEO traffic · up from 13 through Jul</div>
         </div>
       </div>
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">👥</div>
         <div class="pulse-insight-text">
-          <strong>Week 5 baseline:</strong> 245 sessions (+38% vs v2.0). Organic 57 while GSC impressions plateau post-peak. AI assistant traffic 7 sessions. Re-check channel mix after indexing backlog clears.
+          <strong>Aug traffic note:</strong> 890 sessions in Aug partial (vs 494 full Jul). Direct 81% suggests bot/QA mix alongside real users. Organic 239 total (+125% vs Jul end). No form_submit events in GA4 yet. Filter direct spike before paid tests.
         </div>
       </div>
     </div>
@@ -1044,32 +1049,32 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#b45309;"></span>
-        Full SEO Audit — 9 Jul 2026
+        Full SEO Audit — 18 Aug 2026
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
         <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
           <div class="pulse-insight-icon">1</div>
-          <div class="pulse-insight-text"><strong>Technical SEO: 9/10.</strong> sitemap 200, lead API 200, robots OK. 359 indexable URLs. GSC + GA4 + Bing MCP connected. No crawl errors.</div>
+          <div class="pulse-insight-text"><strong>Technical SEO: 9/10.</strong> sitemap 429 URLs, lead API 200, robots OK. GSC + GA4 + Bing MCP live 18 Aug. No Bing crawl errors.</div>
         </div>
-        <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
+        <div class="pulse-insight" style="margin-top:0;background:#fff7ed;border-color:#fed7aa;">
           <div class="pulse-insight-icon">2</div>
-          <div class="pulse-insight-text"><strong>Indexation: 7/10.</strong> 200 URL batches Jul 4 + 9. 17 GSC click URLs. Impressions peaked 768/day then plateau. ~140 URL backlog remains.</div>
+          <div class="pulse-insight-text"><strong>Indexation: 6/10.</strong> Google re-crawl after ~300-page spam strip. GSC clicks frozen since 9 Jul. Bing 136 clk compensates.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fff7ed;border-color:#fed7aa;">
           <div class="pulse-insight-icon">3</div>
-          <div class="pulse-insight-text"><strong>On-page / CTR: 7/10.</strong> CTR 0.42% overall. CTR sprint deployed on clearance + DMCC. School-fees page 2.04% CTR = template to copy.</div>
+          <div class="pulse-insight-text"><strong>On-page / CTR: 6/10.</strong> GSC CTR 0.36%. Health insurance 379 imp / 0 clk. DMCC 300 imp / 0 clk GSC. Wait for re-crawl before round 3.</div>
         </div>
-        <div class="pulse-insight" style="margin-top:0;background:#fffbeb;border-color:#fde68a;">
+        <div class="pulse-insight" style="margin-top:0;background:#f0fdf4;border-color:#bbf7d0;">
           <div class="pulse-insight-icon">4</div>
-          <div class="pulse-insight-text"><strong>Content: 8/10.</strong> 610 MDX, ~1.87M words. UAE + Saudi + Oman + Qatar clusters live. fix-batch queue 340 pages.</div>
+          <div class="pulse-insight-text"><strong>Content: 8/10.</strong> 610 MDX, 2.13M words post-cleanup. GEO avg 91/100. 3 hubs live.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#eef2ff;border-color:#c7d2fe;">
           <div class="pulse-insight-icon">5</div>
-          <div class="pulse-insight-text"><strong>Multi-engine: 7/10.</strong> Bing 18 clicks / 569 imp in MCP. Google still primary. IndexNow via Bing direct endpoint only.</div>
+          <div class="pulse-insight-text"><strong>Multi-engine: 8/10.</strong> Bing 136 clk / 9 539 imp vs Google 24 / 6 757. Bing CTR ~1.4%.</div>
         </div>
         <div class="pulse-insight" style="margin-top:0;background:#fef2f2;border-color:#fecaca;">
           <div class="pulse-insight-icon">!</div>
-          <div class="pulse-insight-text"><strong>Next lever:</strong> fix-batch on GSC pages with impressions but 0 clicks. Monitor CTR sprint results 2 weeks. Finish indexing backlog.</div>
+          <div class="pulse-insight-text"><strong>Next lever:</strong> Hold title changes until 2 Sep GSC check. Then CTR on health insurance + aldar saadiyat. Copy Bing winners (ejari, fixed deposits) to Google snippets.</div>
         </div>
       </div>
     </div>
@@ -1078,7 +1083,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-card" style="margin-top:16px;">
       <div class="pulse-card-title">
         <span style="width:8px;height:8px;border-radius:50%;display:inline-block;background:#60a5fa;"></span>
-        Promotion Recommendations, updated 27 Jul 2026
+        Promotion Recommendations, updated 18 Aug 2026
       </div>
       <div class="pulse-table-scroll">
       <table style="width:100%;border-collapse:collapse;font-size:12px;">
@@ -1097,9 +1102,10 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
           <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">27 Jul: CTR sprint on 11 zero-click and low-CTR guides. Boilerplate paragraphs, off-topic DLD tables and machine headings removed. New titles, descriptions and answer-first openings.</td><td style="padding:8px 12px;">Removes near-duplicate spam signal that suppressed clicks at healthy impression volume.</td></tr>
           <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">27 Jul: 3 or more money-page links plus one CommercialBridge on each P0 guide.</td><td style="padding:8px 12px;">Routes existing traffic pages into shortlist and consultation forms.</td></tr>
           <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">27 Jul: hubs live at /gcc-rental-yields/, /uae-business-setup-property/, /uae-expat-documents-property/. Money landings got first-screen CTA to the lead form.</td><td style="padding:8px 12px;">Topical clusters plus shorter path from first screen to form on mobile.</td></tr>
-          <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Same boilerplate paragraph pattern still present across the wider corpus outside the 11 fixed URLs. Needs a scoped decision before any bulk pass.</td><td style="padding:8px 12px;">Likely the main brake on sitewide CTR. Fix in batches by impression rank, not all at once.</td></tr>
-          <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Recheck GSC in 2 to 3 weeks on the 11 fixed URLs before touching them again.</td><td style="padding:8px 12px;">Measures whether content cleanup alone lifts CTR from 0.38% baseline.</td></tr>
-          <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">Finish indexing backlog (~140 URL) · weekly MCP refresh · monitor Qatar cluster.</td><td style="padding:8px 12px;">Full corpus discoverable · sustained impression growth.</td></tr>
+          <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#059669;">DONE</td><td style="padding:8px 12px;">28 Jul: GEO 90+ full corpus + DLD boilerplate strip ~300 pages.</td><td style="padding:8px 12px;">Cleaner pages for Google re-crawl and AI citation.</td></tr>
+          <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#dc2626;">P0</td><td style="padding:8px 12px;">Wait until 2 Sep · recheck GSC on 11 Jul-fixed URLs + health insurance (379 imp) before any new title pass.</td><td style="padding:8px 12px;">Avoid churn during Google re-evaluation window.</td></tr>
+          <tr style="border-bottom:1px solid #f5f3ef;"><td style="padding:8px 12px;font-weight:800;color:#ea580c;">P1</td><td style="padding:8px 12px;">Scale Bing winners: ejari (6 clk), fixed deposits (7 clk), police clearance (8 clk Bing) to Google title/meta patterns.</td><td style="padding:8px 12px;">Bing proving CTR where Google stalled.</td></tr>
+          <tr><td style="padding:8px 12px;font-weight:800;color:#2563eb;">P2</td><td style="padding:8px 12px;">GA4: add form_submit tracking · filter Aug direct spike · weekly MCP refresh.</td><td style="padding:8px 12px;">Measure leads path · cleaner traffic baseline.</td></tr>
         </tbody>
       </table>
       </div>
@@ -1120,7 +1126,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     </div>
 
     <p class="pulse-footer-note">
-      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated 9 Jul 2026 via MCP APIs
+      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated 18 Aug 2026 via MCP APIs
     </p>
 
   </div>
@@ -1133,30 +1139,30 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-header">
       <div>
         <h2>Bing / Yahoo Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 24 Jul 2026 · MCP bing-webmaster-invest-gulf · Updated 27 Jul</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 15 Aug 2026 · MCP bing-webmaster-invest-gulf · Updated 18 Aug</p>
       </div>
       <div class="pulse-updated">
         <span class="pulse-updated-dot"></span>
-        Updated 27 Jul 2026
+        Updated 18 Aug 2026
       </div>
     </div>
 
     <div class="pulse-kpi-row">
       <div class="pulse-kpi kpi-orange">
-        <div class="kpi-trend trend-up">Jul ramp</div>
+        <div class="kpi-trend trend-up">Aug peak 12/day</div>
         <div class="kpi-label">Bing Clicks</div>
-        <div class="kpi-val">45</div>
-        <div class="kpi-sub">2 Jun–24 Jul · 11 clicks/week late Jul</div>
+        <div class="kpi-val">136</div>
+        <div class="kpi-sub">2 Jun–15 Aug · 12 clk on 12 Aug · vs Google 24 total</div>
       </div>
       <div class="pulse-kpi kpi-blue">
         <div class="kpi-label">Bing Impressions</div>
-        <div class="kpi-val">3 033</div>
-        <div class="kpi-sub">Bing Webmaster MCP · lifestyle + business queries</div>
+        <div class="kpi-val">9 539</div>
+        <div class="kpi-sub">Peak week 596 imp 10 Aug · lifestyle + finance queries</div>
       </div>
       <div class="pulse-kpi kpi-green">
         <div class="kpi-label">Google (ref)</div>
         <div class="kpi-val">24</div>
-        <div class="kpi-sub">GSC clicks 2 Jun–24 Jul · still primary for clicks</div>
+        <div class="kpi-sub">GSC clicks 2 Jun–15 Aug · 0 clk since 9 Jul</div>
       </div>
       <div class="pulse-kpi kpi-purple">
         <div class="kpi-label">GCP indexing</div>
@@ -1170,30 +1176,30 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div class="pulse-card-title"><span class="span-blue"></span> Bing vs Google</div>
         <div class="pulse-insight" style="margin-top:0;">
           <div class="pulse-insight-icon">🔶</div>
-          <div class="pulse-insight-text"><strong>Multi-engine traction:</strong> Bing 45 clicks / 3 033 imp vs Google 24 / 6 325. Bing impressions overtook Google daily volume in mid-July. IndexNow synced on batches.</div>
+          <div class="pulse-insight-text"><strong>Multi-engine traction:</strong> Bing 136 clicks / 9 539 imp vs Google 24 / 6 757. Bing overtook Google on clicks in Aug (12 clk/day peak 12 Aug). Top Bing pages: police clearance 8 clk, fixed deposits 7 clk, ejari 6 clk.</div>
         </div>
       </div>
       <div class="pulse-card">
         <div class="pulse-card-title"><span class="span-green"></span> Priority URLs for Bing</div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/dubai-police-clearance-certificate/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">828 imp GSC</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/oman-driving-license/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-impr">287 imp</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/saudi-rental-yield-guide/</div><div class="pulse-page-meta"><span class="pulse-badge badge-impr">379 imp GSC</span></div></div>
-        <div class="pulse-page-row"><div class="pulse-page-url">/guides/dubai-vs-abu-dhabi-school-fees/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">2 clk</span><span class="pulse-badge badge-impr">98 imp</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/dubai-police-clearance-certificate/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">8 clk Bing</span><span class="pulse-badge badge-impr">1 192 imp</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/uae-savings-fixed-deposits/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">7 clk</span><span class="pulse-badge badge-impr">251 imp</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/dubai-ejari-tenancy-contract/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">6 clk</span><span class="pulse-badge badge-impr">323 imp</span></div></div>
+        <div class="pulse-page-row"><div class="pulse-page-url">/guides/bahrain-driving-license/</div><div class="pulse-page-meta"><span class="pulse-badge badge-clicks">5 clk</span><span class="pulse-badge badge-impr">97 imp</span></div></div>
       </div>
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
       <div class="pulse-insight" style="background:#fff7ed;border-color:#fed7aa;margin-top:0;">
         <div class="pulse-insight-icon">⚡</div>
-        <div class="pulse-insight-text"><strong>Google vs Bing at week 5:</strong> Google 5 470 impressions / 23 clicks. Bing 569 / 18. Bing CTR ~3.2% vs Google 0.42% on smaller sample.</div>
+        <div class="pulse-insight-text"><strong>Google vs Bing Aug 2026:</strong> Google 24 total clicks (stalled). Bing 136 clicks / 9 539 imp. Bing CTR ~1.4% vs Google 0.36%. Bing is the active click channel.</div>
       </div>
       <div class="pulse-insight" style="background:#f0fdf4;border-color:#bbf7d0;margin-top:0;">
         <div class="pulse-insight-icon">📡</div>
-        <div class="pulse-insight-text"><strong>AI Performance:</strong> GA4 shows 7 AI assistant sessions. Copilot citations not in API yet. Monitor manually in Bing Webmaster UI.</div>
+        <div class="pulse-insight-text"><strong>AI Performance:</strong> GA4 shows 22 AI assistant sessions (2 Jun–17 Aug). Copilot citations not in API yet. Monitor in Bing Webmaster UI.</div>
       </div>
     </div>
 
-    <p class="pulse-footer-note">Bing data via <code>bing-webmaster-invest-gulf</code> MCP · 18 clicks / 569 imp · re-check weekly</p>
+    <p class="pulse-footer-note">Bing data via <code>bing-webmaster-invest-gulf</code> MCP · 136 clicks / 9 539 imp · Updated 18 Aug</p>
   </div>
 
   <div class="section-title">Technical setup</div>
@@ -1210,7 +1216,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     </div>
     <div class="info-card">
       <h3>Integrations</h3>
-      <div class="info-row"><span class="key">Analytics</span><span class="val">Google Analytics 4 (GA4), Pinterest Tag + Lead event</span></div>
+      <div class="info-row"><span class="key">Analytics</span><span class="val">Google Analytics 4 (GA4)</span></div>
       <div class="info-row"><span class="key">Search</span><span class="val">Google Search Console + Bing Webmaster (MCP)</span></div>
       <div class="info-row"><span class="key">Sitemap</span><span class="val">Auto-generated (sitemap-index.xml)</span></div>
       <div class="info-row"><span class="key">Lead notifications</span><span class="val">Telegram Bot API</span></div>
@@ -1279,7 +1285,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <tr style="background:#faf8f4;">
           <td><strong>TOTAL</strong></td>
           <td><span class="count" style="font-size:24px;">610</span></td>
-          <td><span class="words">~3,066 avg</span></td>
+          <td><span class="words">~3,484 avg</span></td>
           <td></td>
           <td><span class="tag green">All live</span></td>
         </tr>
@@ -1290,7 +1296,15 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
 
   <div class="section-title">Change history</div>
   <div class="changelog">
-        <div class="changelog-item">
+    <div class="changelog-item">
+      <div class="changelog-date">18 Aug 2026</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v2.4 — full MCP refresh (GSC + GA4 + Bing)</div>
+        <div class="changelog-desc">GSC 2 Jun–15 Aug: 24 clicks, 6 757 impressions, CTR 0.36%, avg pos 29.1, 18 click URLs (0 Google clicks since 9 Jul). GA4: 1 588 sessions (organic 239, AI 22, direct 1 291). Bing: 136 clicks, 9 539 imp. Corpus: 610 MDX, 2.13M words post-cleanup. GEO avg 91/100. Sitemap 429 URLs.</div>
+        <div class="changelog-tags"><span class="tag green">Report v2.4</span><span class="tag blue">Bing 136</span><span class="tag amber">re-crawl</span></div>
+      </div>
+    </div>
+    <div class="changelog-item">
       <div class="changelog-date">28 Jul 2026</div>
       <div class="changelog-content">
         <div class="changelog-title">GEO 90+: full MDX corpus citability lift + machine-pad cleanup</div>
@@ -1380,34 +1394,34 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     </div>
   </div>
 
-      <div class="section-title">Next steps — 9 Jul 2026</div>
+      <div class="section-title">Next steps — 18 Aug 2026</div>
   <div class="next-steps">
     <div class="next-item" style="background:#fef2f2;border-color:#fecaca;">
       <div class="priority high">P0</div>
       <div>
-        <div class="text" style="font-weight:700;">fix-batch queue — 340 pages, 57 queue-ready</div>
-        <div class="subtext">Start with GSC impression URLs at 0 clicks. GEO uplift + strict validate on tier A money pages.</div>
+        <div class="text" style="font-weight:700;">GSC re-crawl watch — no title changes until 2 Sep</div>
+        <div class="subtext">Google 0 clicks since 9 Jul after ~300-page cleanup. Recheck 11 Jul URLs + health insurance (379 imp) first.</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">CTR round 2 — oman-driving-license (287 imp, pos 11.7)</div>
-        <div class="subtext">Answer box + cross-links from UAE visa guides. Monitor police clearance sprint results.</div>
+        <div class="text" style="font-weight:700;">Bing → Google snippet copy</div>
+        <div class="subtext">Winners on Bing: ejari 6 clk, fixed deposits 7 clk, police clearance 8 clk. Adapt titles when GSC moves.</div>
       </div>
     </div>
     <div class="next-item" style="background:#fff7ed;border-color:#fed7aa;">
       <div class="priority medium">P1</div>
       <div>
-        <div class="text" style="font-weight:700;">Finish indexing backlog (~140 URL remaining)</div>
-        <div class="subtext">200 URL batches Jul 4 + 9 done. Next batch when quota resets.</div>
+        <div class="text" style="font-weight:700;">GA4 form_submit + direct traffic filter</div>
+        <div class="subtext">Aug 890 sessions (81% direct). Add lead events before scaling traffic work.</div>
       </div>
     </div>
     <div class="next-item" style="background:#f0fdf4;border-color:#bbf7d0;">
       <div class="priority low">DONE</div>
       <div>
-        <div class="text" style="font-weight:700;">Weekly site-report refresh via GSC + GA4 + Bing MCP</div>
-        <div class="subtext">v2.1 deployed 9 Jul. Data through 6 Jul.</div>
+        <div class="text" style="font-weight:700;">Site-report v2.4 MCP refresh (18 Aug)</div>
+        <div class="subtext">GSC + GA4 + Bing through 15 Aug GSC lag · 1 588 sessions · Bing 136 clk.</div>
       </div>
     </div>
     <div class="next-item" style="background:#f0fdf4;border-color:#bbf7d0;">
@@ -1473,12 +1487,12 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
 </div>
 
   <div class="footer">
-  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 9 Jul 2026 v2.1 · 359 sitemap URLs · ~1.87M words · GSC 23 clicks / 5,470 imp (1 Jun–6 Jul) · GA4 245 sessions · Bing 18 clk / 569 imp<br>
+  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 18 Aug 2026 v2.4 · 429 sitemap URLs · 2.13M words · GSC 24 clk / 6 757 imp · GA4 1 588 sessions · Bing 136 clk / 9 539 imp<br>
   To update: edit <code>src/pages/site-report/index.astro</code> in invest-gulf-website
 </div>
 
 
-<script type="application/json" id="chart-data">{"monthlyGsc":[{"label":"Jun","clicks":22,"impressions":5058},{"label":"Jul","clicks":1,"impressions":412}],"monthlyGa4":[{"month":"Jun","sessions":247},{"month":"Jul","sessions":45}],"contentBreakdown":[{"type":"Guides","count":485,"color":"#b45309"},{"type":"Areas","count":58,"color":"#d97706"},{"type":"Compare","count":30,"color":"#ca8a04"},{"type":"Projects","count":25,"color":"#92400e"},{"type":"News","count":12,"color":"#60a5fa"}],"dailyRaw":[{"d":"06-08","c":0,"i":76},{"d":"06-09","c":0,"i":101},{"d":"06-10","c":0,"i":96},{"d":"06-11","c":0,"i":120},{"d":"06-12","c":0,"i":124},{"d":"06-13","c":2,"i":120},{"d":"06-14","c":0,"i":153},{"d":"06-15","c":2,"i":118},{"d":"06-16","c":1,"i":119},{"d":"06-17","c":1,"i":204},{"d":"06-18","c":3,"i":453},{"d":"06-19","c":1,"i":386},{"d":"06-20","c":1,"i":588},{"d":"06-21","c":4,"i":668},{"d":"06-22","c":4,"i":768},{"d":"06-23","c":0,"i":420},{"d":"06-24","c":0,"i":310},{"d":"06-25","c":1,"i":280},{"d":"06-26","c":0,"i":195},{"d":"06-27","c":0,"i":170},{"d":"06-28","c":0,"i":155},{"d":"06-29","c":0,"i":140},{"d":"06-30","c":1,"i":130},{"d":"07-01","c":0,"i":95},{"d":"07-02","c":0,"i":72},{"d":"07-03","c":0,"i":68},{"d":"07-04","c":0,"i":65},{"d":"07-05","c":1,"i":58},{"d":"07-06","c":0,"i":54}]}</script>
+<script type="application/json" id="chart-data">{"monthlyGsc":[{"label":"Jun","clicks":22,"impressions":5058},{"label":"Jul","clicks":2,"impressions":1425},{"label":"Aug","clicks":0,"impressions":274}],"monthlyGa4":[{"month":"Jun","sessions":152},{"month":"Jul","sessions":494},{"month":"Aug","sessions":890}],"contentBreakdown":[{"type":"Guides","count":485,"color":"#b45309"},{"type":"Areas","count":58,"color":"#d97706"},{"type":"Compare","count":30,"color":"#ca8a04"},{"type":"Projects","count":25,"color":"#92400e"},{"type":"News","count":12,"color":"#60a5fa"}],"dailyRaw":[{"d":"06-08","c":0,"i":76},{"d":"06-09","c":0,"i":101},{"d":"06-10","c":0,"i":96},{"d":"06-11","c":0,"i":120},{"d":"06-12","c":0,"i":124},{"d":"06-13","c":2,"i":120},{"d":"06-14","c":0,"i":153},{"d":"06-15","c":2,"i":118},{"d":"06-16","c":1,"i":119},{"d":"06-17","c":1,"i":204},{"d":"06-18","c":3,"i":453},{"d":"06-19","c":1,"i":386},{"d":"06-20","c":1,"i":588},{"d":"06-21","c":4,"i":668},{"d":"06-22","c":4,"i":768},{"d":"06-23","c":2,"i":516},{"d":"07-09","c":1,"i":78},{"d":"07-15","c":0,"i":81},{"d":"07-24","c":0,"i":46},{"d":"07-31","c":0,"i":14},{"d":"08-05","c":0,"i":19},{"d":"08-12","c":0,"i":41},{"d":"08-15","c":0,"i":17}]}</script>
 <script is:inline>
 (function initReportCharts() {
   function run() {
