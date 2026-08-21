@@ -234,3 +234,79 @@ npm run geo:audit        → exit 0
 2. **Live-site verification** — HTTP status codes on Vercel, real Core Web Vitals, GSC index coverage. The sandbox blocks `invest-gulf.com`, so `npm run audit:images` also still exits 1 there for the same reason; all referenced images are verified present locally.
 3. **`unique` rubric axis at 53.** Unchanged and honest: the old 81 was counting brand repetition. Raising it means adding genuine first-hand analysis.
 4. **The 30-topic roadmap**, unstarted and ready when you are.
+
+---
+
+# Phase 3 — re-audit before deploy
+
+You asked whether the site was actually finished or whether another audit was warranted. It was warranted. A fresh pass — checking the result rather than re-running my own scripts — found four things the earlier waves had missed, including one I had introduced myself.
+
+## What the re-audit found
+
+### 1. A large filler variant I had only half-removed
+
+Phase 1 stripped `for foreign buyers in this market` but scoped the rule to sentences containing "Invest Gulf", and matched only tails sitting immediately before punctuation. That left the shorter variants everywhere else:
+
+| Pattern | Before re-audit | Now |
+|---|---:|---:|
+| `in this market` | **1 021** | 0 |
+| `for foreign buyers` as a sentence-final tail | **813** | 0 (47 grammatical uses kept) |
+| `for this market` | 123 | 0 |
+| `on this market` | 114 | 0 |
+| `in the area` as a tail | 394 | 0 |
+| `over a N year hold` / `across a N month …` appended to a noun | 124 | 0 |
+
+Roughly **2 700 filler instances** across 586 files, on top of the ~8 000 removed in phase 1. Grammatical uses were preserved by checking the governing word: "a weaker match **for foreign buyers**" survives, "the fee gap **for foreign buyers**" does not.
+
+### 2. Sentences the generator had run together
+
+460 places across 45 files where a sentence break was simply missing — `…before reservation deadlines Write the numbers into your spreadsheet…`. All 460 restored. One page (`power-of-attorney-property-dubai`) carried the same mangled template paragraph nine times under different headings; each was rewritten as section-specific copy.
+
+### 3. Templates I created while removing the old ones
+
+This is the failure worth naming. My own link lead-ins and H2 rewrites had themselves become fingerprints:
+
+| My template | Pages |
+|---|---:|
+| "Read [X] alongside this if it affects your budget." | 25 |
+| "[X] takes it further than we can here." | 22 |
+| "What belongs on a {topic} checklist?" | 34 |
+| "Which {topic} checks matter most before you sign?" | 20 |
+
+Each family was re-generated from pools of 8–16 variants keyed by slug. The most-repeated phrasing is now on 12 pages rather than 34.
+
+### 4. Eight pre-existing artefacts in FAQ frontmatter
+
+`"…6-7% gross ,  closest Oman analogue…"`, `"Marketing and  reference BHD 200,000."` — words removed by an earlier cleanup leaving broken punctuation inside `answer:` fields. All eight repaired by hand.
+
+## A bug I introduced and caught
+
+The run-on repair included a tidy-up step `\.\s*\.` → `.` intended to collapse doubled periods. It also collapsed `../../` into `././` in **every MDX import path — 1 782 paths across all 586 files** — and broke the build. Caught by the build failing, repaired in full, and verified: all imports resolve to the five expected components, no ellipses or relative links were damaged, and the build is green.
+
+That is the second time in this work that a broad regex reached further than intended. Both were caught by verification rather than by inspection, which is the argument for running the gates after every mass pass rather than at the end.
+
+## Content restored, not just removed
+
+Stripping filler pushed 21 pages below the corpus thresholds, so each was brought back with page-specific substance rather than padding: 19 paragraphs extended to restore citability blocks, two pages extended to clear the 2 000-word floor.
+
+## Final state
+
+```
+npm run build            → exit 0   (586 pages, P0 0, P1 0)
+npm run validate:content → exit 0   (0 issues / 586)
+npm run qa:corpus        → exit 0
+npm run geo:audit        → exit 0
+```
+
+| Check | Result |
+|---|---|
+| Generator filler (`this market`, `MORE Group`, `serpExempt`, `geo-cit`) | 0 |
+| Wrapper headings | 0 |
+| Run-on sentences missing a break | 0 |
+| Glued sentences / spacing artefacts | 0 |
+| Broken internal link URLs | 0 |
+| Orphan pages | 0 |
+| Sentences repeated across ≥4 pages | 2 (both hub cross-links) |
+| Import paths | all 586 files resolve correctly |
+
+The site is deployable. Remaining items are unchanged and listed at the end of phase 2: the `+66` number, live-site verification that the sandbox cannot reach, and the `unique` rubric axis, which needs first-hand analysis rather than another cleanup pass.
