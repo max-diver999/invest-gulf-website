@@ -310,3 +310,81 @@ npm run geo:audit        → exit 0
 | Import paths | all 586 files resolve correctly |
 
 The site is deployable. Remaining items are unchanged and listed at the end of phase 2: the `+66` number, live-site verification that the sandbox cannot reach, and the `unique` rubric axis, which needs first-hand analysis rather than another cleanup pass.
+
+---
+
+## Phase 4 — Track 2 (CTR) and Track 4 (new purchase-intent guides)
+
+### Track 2 — the pages that already have impressions
+
+Search Console shows ~2,143 impressions and ~14 clicks over 15 months across
+10 pages. The bottleneck is traffic and click-through, not conversion, so this
+track touched only those 10 URLs.
+
+- Rewrote `title` and `description` on all 10 for click-through, inside the
+  validator bounds (title 45–65 chars, description 120–160). Three came back
+  at 161 chars on the first pass and were corrected.
+- Audited the same 10 for a path to a commercial hub. **Five had none**,
+  including both purchase-intent pages (`abu-dhabi-freehold-areas`,
+  `buying-property-uae-bank-transfer`). Each received a contextual
+  `CommercialBridge`.
+
+### Track 4 — new guides
+
+**Screening correction.** An earlier pass recorded two topics as open that are
+not. Law M/14, the REGA designated zones and the June 2026 map are already
+covered by `saudi-arabia-property-foreigners-guide` and
+`saudi-property-designated-zones-explained`; the AED 2M threshold rules are
+covered by `uae-golden-visa-property`. Both were rescreened and dropped.
+
+Every candidate was then screened against the title and H2 index of all 586
+existing pages. Topics blocked and dropped on that evidence:
+
+| Roadmap topic | Blocked by |
+|---|---|
+| #20 resale exit cost model | `selling-property-dubai-guide` |
+| #25 portfolio sequencing | `dubai-property-portfolio-strategy` |
+| #26 week-by-week timeline | `how-to-buy-property-dubai-step-by-step` |
+| affordability / income needed | `uae-central-bank-mortgage-rules` (DBR) |
+
+Four topics survived with zero overlap and were written:
+
+| Slug | Roadmap | GEO score | Why it is open |
+|---|---|---|---|
+| `aed-2m-golden-visa-best-value-units` | N5 #23 | 81 A | 18 Golden Visa pages cover the rules; none covers the inventory at the line |
+| `dubai-first-investment-under-aed-1m` | N5 #24 | 79 B | No sub-AED 1M page existed anywhere in the corpus |
+| `dubai-developer-delay-compensation-claim` | N4 #19 | 72 B | Zero corpus coverage of handover delay |
+| `dubai-service-charge-dispute-escalation` | N4 #21 | 70 B | Two pages explain how charges are set, none how to challenge one |
+
+The last two are deliberately low on purchase intent. They are the
+"content a seller cannot publish" thesis from the topics proposal: risk and
+dispute material that earns citation and trust rather than immediate leads.
+
+**Data provenance.** Prices, yields and service charge rates in the two
+pricing-led guides are taken from figures already published on our own area
+pages, so the new pages agree with the corpus instead of contradicting it.
+
+**Link graph.** Nine contextual inbound links were added from the related
+existing guides so none of the four is an orphan. Each uses different phrasing
+and a different position in its host page, to avoid creating the kind of
+template fingerprint that W4 was spent removing.
+
+### Gates after Phase 4
+
+| Gate | Result |
+|---|---|
+| `validate:content` | 590/590 clean, PASSED |
+| `qa:corpus` | PASS |
+| `geo:audit` | corpus avg 86/100 grade A, exit 0 |
+| `npm run build` + rendered audit | 590 pages, 0 errors, P0 0 / P1 0 |
+| `llms-full.txt` | regenerated, 506 indexable URLs |
+| Sitemap | 517 URLs, all four new pages present and `index,follow` |
+
+### Still outstanding
+
+- The `+66` phone number on the site (awaiting the user's decision).
+- Live verification after deploy: HTTP codes, Core Web Vitals, GSC coverage,
+  and a test lead submission to confirm `TG_TOKEN` and `RESEND_API_KEY` are
+  set in Vercel. The live site is unreachable from this environment.
+- The `unique` rubric axis sits at 53 corpus-wide. That gap closes with
+  first-hand data, not another cleanup pass.
