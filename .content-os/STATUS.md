@@ -4,7 +4,7 @@
 
 ## Источник правды
 
-- Репо: `max-diver999/invest-gulf-website`, ветка **`main`** (merge `0a0be139`, 2026-08-21)
+- Репо: `max-diver999/invest-gulf-website`, ветка **`main`** (Phase 4 merge `6bbddc89`, 2026-08-21)
 - Программа: `more-group-content-os/programs/invest-gulf.yaml`
 - Процесс: `docs/WORKFLOW-GITHUB.md`
 - **Цель пилота:** лиды с намерением купить в UAE/Gulf (см. `site-passport.yaml`)
@@ -17,18 +17,28 @@
 | Roadmap починки (11 волн) | ✅ `.content-os/batches/corpus-cleanup-roadmap-2026-08-21.md` |
 | Исполнение всех 11 волн | ✅ `.content-os/reports/REMEDIATION-2026-08-21.md` |
 | Roadmap новых тем (30 шт.) | ✅ `.content-os/batches/content-roadmap-2026-08-21.md` + `topics-proposal.json` |
-| Написание новых статей | ⏸ ждёт «ок» Максима |
+| Написание новых статей | 🟡 Phase 4: **4** из roadmap (ещё ~26 ждут «ок») |
 
-### Корпус после починки
+## Фаза 4 — CTR + новые гайды (✅ на сайте 2026-08-21)
+
+- **Track 2:** title/description на ~18 страницах с высокими показами GSC (CTR)
+- **Track 4:** 4 новых purchase-intent гайда → **590 MDX** (guides 467)
+- Новые URL:
+  - `/guides/aed-2m-golden-visa-best-value-units/`
+  - `/guides/dubai-first-investment-under-aed-1m/`
+  - `/guides/dubai-developer-delay-compensation-claim/`
+  - `/guides/dubai-service-charge-dispute-escalation/`
+
+### Корпус
 
 | Коллекция | MDX |
 |---|---|
-| guides | 463 |
+| guides | 467 |
 | areas | 57 |
 | compare | 29 |
 | projects | 25 |
 | news | 12 |
-| **Итого** | **586** |
+| **Итого** | **590** |
 
 Удалено 24 файла: 22 дубликата, чьи URL и так уводились 301, плюс сирота-двойник
 `uae-tax-residency-183-days` и дубль `areas/impz-property-investment` (IMPZ = Dubai Production City).
@@ -37,7 +47,7 @@
 
 ```
 npm run build            → exit 0   (postbuild rendered audit: 0 errors, P0 0, P1 0)
-npm run validate:content → exit 0   (0 issues / 586)
+npm run validate:content → exit 0   (0 issues / 590)
 npm run qa:corpus        → exit 0
 npm run geo:audit        → exit 0   (avg 86/100; **11** коммерческих файлов ниже минимума — см. REMEDIATION)
 npm run audit:images     → exit 1   ← артефакт песочницы, см. REMEDIATION §"Known non-issue"
