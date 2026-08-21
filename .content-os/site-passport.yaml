@@ -1,0 +1,80 @@
+content_os_version: "2.5.0-pilot"
+site_id: invest-gulf-website
+domain: invest-gulf.com
+github: max-diver999/invest-gulf-website
+program: invest-gulf
+
+pilot_goal: "More qualified Gulf property investment leads — fix weak GEO corpus, then new guides"
+pilot_mode: corpus_cleanup_then_topic_discovery
+pilot_started: "2026-08-21"
+
+reference_site: more-group-website
+reference_playbook: more-group-content-os/reference-sites/more-group-website/playbook.md
+note: "Independent Invest Gulf brand — do not copy MORE Group Phuket/UAE cross-content"
+
+corpus_cleanup:
+  mode: audit_then_fix_waves
+  skill: more-group-content-os/policies/corpus-cleanup-mode.md
+  audit_report_output: .content-os/reports/AUDIT-REPORT-{date}.md
+  roadmap_output: .content-os/batches/corpus-cleanup-roadmap-{date}.md
+  batch_size_default: 25
+  recent_baseline:
+    spam_cleanup_commit: 6bb267a
+    flagged_files_log: scripts/_flagged-spam-files.json
+  geo_baseline:
+    commercial_below_min: 43
+    command: npm run geo:audit
+  forbid:
+    - mass regex delete across corpus
+    - new slugs until Maxim ok on audit roadmap
+
+topic_discovery:
+  mode: after_audit_ok
+  proposal_output: .content-os/batches/topics-proposal.json
+  roadmap_output: .content-os/batches/content-roadmap-{date}.md
+  batch_size_default: 5
+  inputs:
+    - docs/PRIORITY-CTR-LEADS.md
+    - docs/CONTENT_QUALITY_AUDIT.md
+    - more-group-content-os/analytics-snapshots/invest-gulf-website/2026-08-21.json
+    - src/pages/site-report/ (live report page)
+
+analytics:
+  snapshot: more-group-content-os/analytics-snapshots/invest-gulf-website/2026-08-21.json
+  gsc_property: "sc-domain:invest-gulf.com"
+  gsc_mcp: user-search-console-invest-gulf
+  ga4_mcp: user-ga4-analytics-invest-gulf
+  bing_mcp: user-bing-webmaster-invest-gulf
+  refresh: manual_via_cursor
+
+content:
+  mdx_count_approx: 610
+  collections:
+    guides: src/content/guides
+    areas: src/content/areas
+    projects: src/content/projects
+    compare: src/content/compare
+    news: src/content/news
+  serp_briefs: null
+  site_data: src/data/site.ts
+
+indexing:
+  policy: more-group-content-os/policies/cursor-rules/invest-gulf-indexing-isolation.mdc
+  gcp_project: invest-gulf-indexing
+  key_preflight: scripts/google-indexing-key.json
+  backlog: scripts/indexing-plan-batches-100.md
+  claude_may_not_index: true
+
+quality_gates:
+  validate_changed: npm run validate:content:changed
+  validate_batch: npm run validate:batch -- --changed
+  geo_audit: npm run geo:audit
+  qa_corpus: npm run qa:corpus
+  qa_full: npm run qa:full
+  qa_full_quick: npm run qa:full:quick
+
+branch_prefix: cc/gulf-
+publishing_owner: cursor
+
+handoff:
+  pr_template: more-group-content-os/templates/pr-body.template.md

@@ -1,0 +1,283 @@
+# invest-gulf.com — план повторной индексации
+
+Сгенерировано: 18 Aug 2026
+
+## Логика отбора
+
+| | Кол-во |
+|---|---|
+| URL в live-sitemap | 429 |
+| Минус отправленные сегодня (88) | −88 |
+| Минус уже в Google (показы в GSC) | −255 |
+| **Итого к отправке** | **120** |
+
+Полный JSON: `scripts/indexing-plan-batches-100.json`
+
+Каналы: Google Indexing API + Bing IndexNow. Яндекс — не используем.
+
+---
+
+## День 1 (2026-08-19) — 100 URL
+
+```
+node scripts/google-indexing-api.mjs --explicit \
+  https://invest-gulf.com/about/ \
+  https://invest-gulf.com/areas/al-nakheel-rak-property-investment/ \
+  https://invest-gulf.com/areas/dammam-khobar-property-investment/ \
+  https://invest-gulf.com/compare/ \
+  https://invest-gulf.com/compare/adgm-vs-difc-company-setup/ \
+  https://invest-gulf.com/compare/dubai-vs-muscat-property-investment/ \
+  https://invest-gulf.com/contact/ \
+  https://invest-gulf.com/gcc-rental-yields/ \
+  https://invest-gulf.com/golden-visa-dubai-property/ \
+  https://invest-gulf.com/guides/ \
+  https://invest-gulf.com/guides/abu-dhabi-mainland-llc-setup/ \
+  https://invest-gulf.com/guides/abu-dhabi-property-investment-guide/ \
+  https://invest-gulf.com/guides/abu-dhabi-residency-options/ \
+  https://invest-gulf.com/guides/best-banks-expats-dubai/ \
+  https://invest-gulf.com/guides/best-dubai-developers-rental-yield/ \
+  https://invest-gulf.com/guides/british-schools-dubai/ \
+  https://invest-gulf.com/guides/buy-property-dubai-foreigner/ \
+  https://invest-gulf.com/guides/buy-property-through-uae-company/ \
+  https://invest-gulf.com/guides/cash-vs-mortgage-dubai-property/ \
+  https://invest-gulf.com/guides/convert-foreign-license-dubai/ \
+  https://invest-gulf.com/guides/cost-of-buying-property-dubai/ \
+  https://invest-gulf.com/guides/currency-transfer-buy-property-uae/ \
+  https://invest-gulf.com/guides/dld-mortgage-registration-fees/ \
+  https://invest-gulf.com/guides/dubai-ai-digital-economy-expats/ \
+  https://invest-gulf.com/guides/dubai-business-setup-guide/ \
+  https://invest-gulf.com/guides/dubai-capital-appreciation-vs-yield/ \
+  https://invest-gulf.com/guides/dubai-cooling-off-period-off-plan/ \
+  https://invest-gulf.com/guides/dubai-developers-guide/ \
+  https://invest-gulf.com/guides/dubai-mortgage-broker-guide/ \
+  https://invest-gulf.com/guides/dubai-payment-plan-types-explained/ \
+  https://invest-gulf.com/guides/dubai-prayer-times-work-culture/ \
+  https://invest-gulf.com/guides/dubai-property-for-pakistani-buyers/ \
+  https://invest-gulf.com/guides/dubai-property-for-saudi-buyers/ \
+  https://invest-gulf.com/guides/dubai-property-handover-checklist/ \
+  https://invest-gulf.com/guides/dubai-property-inheritance-guide/ \
+  https://invest-gulf.com/guides/dubai-property-investment-guide/ \
+  https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/ \
+  https://invest-gulf.com/guides/dubai-property-scams-red-flags/ \
+  https://invest-gulf.com/guides/dubai-property-snagging-living/ \
+  https://invest-gulf.com/guides/dubai-property-valuation-guide/ \
+  https://invest-gulf.com/guides/dubai-rental-law-landlord-guide/ \
+  https://invest-gulf.com/guides/dubai-rental-yield-guide/ \
+  https://invest-gulf.com/guides/dubai-safety-crime-expats/ \
+  https://invest-gulf.com/guides/dubai-transport-costs-metro-taxi/ \
+  https://invest-gulf.com/guides/dubai-utility-bills-deewa/ \
+  https://invest-gulf.com/guides/dubai-vs-singapore-expat/ \
+  https://invest-gulf.com/guides/due-diligence-dubai-property/ \
+  https://invest-gulf.com/guides/emaar-community-living-guide/ \
+  https://invest-gulf.com/guides/freehold-areas-dubai-list/ \
+  https://invest-gulf.com/guides/freehold-vs-leasehold-dubai/ \
+  https://invest-gulf.com/guides/golden-visa-mortgage-property-uae/ \
+  https://invest-gulf.com/guides/golden-visa-multiple-properties-uae/ \
+  https://invest-gulf.com/guides/golden-visa-school-fees-package/ \
+  https://invest-gulf.com/guides/hidden-costs-living-dubai/ \
+  https://invest-gulf.com/guides/highest-rental-yield-areas-dubai/ \
+  https://invest-gulf.com/guides/how-to-buy-property-dubai-step-by-step/ \
+  https://invest-gulf.com/guides/how-to-choose-school-dubai/ \
+  https://invest-gulf.com/guides/how-to-flip-off-plan-dubai/ \
+  https://invest-gulf.com/guides/is-dubai-property-bubble-2026/ \
+  https://invest-gulf.com/guides/is-dubai-property-worth-it-2026/ \
+  https://invest-gulf.com/guides/islamic-vs-conventional-mortgage-uae/ \
+  https://invest-gulf.com/guides/jafza-company-setup/ \
+  https://invest-gulf.com/guides/kuwait-property-investment-guide/ \
+  https://invest-gulf.com/guides/living-yas-island-abu-dhabi/ \
+  https://invest-gulf.com/guides/net-yield-calculator-uae-property/ \
+  https://invest-gulf.com/guides/non-resident-mortgage-dubai/ \
+  https://invest-gulf.com/guides/off-plan-assignment-sale-dubai/ \
+  https://invest-gulf.com/guides/off-plan-payment-plans-dubai/ \
+  https://invest-gulf.com/guides/off-plan-property-dubai-guide/ \
+  https://invest-gulf.com/guides/off-plan-vs-ready-property-dubai/ \
+  https://invest-gulf.com/guides/off-plan-vs-secondary-market-dubai/ \
+  https://invest-gulf.com/guides/open-bank-account-dubai/ \
+  https://invest-gulf.com/guides/proof-of-funds-property-uae/ \
+  https://invest-gulf.com/guides/property-snagging-dubai/ \
+  https://invest-gulf.com/guides/qatar-service-charges-guide/ \
+  https://invest-gulf.com/guides/rakez-company-setup/ \
+  https://invest-gulf.com/guides/refinance-property-dubai-guide/ \
+  https://invest-gulf.com/guides/remote-work-dubai-tax-implications/ \
+  https://invest-gulf.com/guides/russian-expats-dubai-guide/ \
+  https://invest-gulf.com/guides/saudi-arabia-property-foreigners-guide/ \
+  https://invest-gulf.com/guides/saudi-arabia-relocation-guide/ \
+  https://invest-gulf.com/guides/school-fees-vs-property-budget-dubai/ \
+  https://invest-gulf.com/guides/selling-property-dubai-guide/ \
+  https://invest-gulf.com/guides/service-charges-dubai-by-area/ \
+  https://invest-gulf.com/guides/shams-free-zone-setup/ \
+  https://invest-gulf.com/guides/sharjah-freehold-areas-guide/ \
+  https://invest-gulf.com/guides/sharjah-property-investment-guide/ \
+  https://invest-gulf.com/guides/short-term-rental-dubai-license/ \
+  https://invest-gulf.com/guides/short-term-vs-long-term-rental-dubai/ \
+  https://invest-gulf.com/guides/single-woman-living-dubai/ \
+  https://invest-gulf.com/guides/tax-australian-nationals-dubai/ \
+  https://invest-gulf.com/guides/tax-us-citizens-dubai/ \
+  https://invest-gulf.com/guides/uae-corporate-tax-expats/ \
+  https://invest-gulf.com/guides/uae-free-zone-vs-mainland/ \
+  https://invest-gulf.com/guides/uae-green-visa-guide/ \
+  https://invest-gulf.com/guides/uae-green-visa-skilled-worker/ \
+  https://invest-gulf.com/guides/uae-retirement-visa/ \
+  https://invest-gulf.com/guides/vat-uae-property-rent/ \
+  https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/ \
+  https://invest-gulf.com/gulf-property-investment-consultation/
+```
+
+<details><summary>Список ссылок</summary>
+
+- https://invest-gulf.com/about/
+- https://invest-gulf.com/areas/al-nakheel-rak-property-investment/
+- https://invest-gulf.com/areas/dammam-khobar-property-investment/
+- https://invest-gulf.com/compare/
+- https://invest-gulf.com/compare/adgm-vs-difc-company-setup/
+- https://invest-gulf.com/compare/dubai-vs-muscat-property-investment/
+- https://invest-gulf.com/contact/
+- https://invest-gulf.com/gcc-rental-yields/
+- https://invest-gulf.com/golden-visa-dubai-property/
+- https://invest-gulf.com/guides/
+- https://invest-gulf.com/guides/abu-dhabi-mainland-llc-setup/
+- https://invest-gulf.com/guides/abu-dhabi-property-investment-guide/
+- https://invest-gulf.com/guides/abu-dhabi-residency-options/
+- https://invest-gulf.com/guides/best-banks-expats-dubai/
+- https://invest-gulf.com/guides/best-dubai-developers-rental-yield/
+- https://invest-gulf.com/guides/british-schools-dubai/
+- https://invest-gulf.com/guides/buy-property-dubai-foreigner/
+- https://invest-gulf.com/guides/buy-property-through-uae-company/
+- https://invest-gulf.com/guides/cash-vs-mortgage-dubai-property/
+- https://invest-gulf.com/guides/convert-foreign-license-dubai/
+- https://invest-gulf.com/guides/cost-of-buying-property-dubai/
+- https://invest-gulf.com/guides/currency-transfer-buy-property-uae/
+- https://invest-gulf.com/guides/dld-mortgage-registration-fees/
+- https://invest-gulf.com/guides/dubai-ai-digital-economy-expats/
+- https://invest-gulf.com/guides/dubai-business-setup-guide/
+- https://invest-gulf.com/guides/dubai-capital-appreciation-vs-yield/
+- https://invest-gulf.com/guides/dubai-cooling-off-period-off-plan/
+- https://invest-gulf.com/guides/dubai-developers-guide/
+- https://invest-gulf.com/guides/dubai-mortgage-broker-guide/
+- https://invest-gulf.com/guides/dubai-payment-plan-types-explained/
+- https://invest-gulf.com/guides/dubai-prayer-times-work-culture/
+- https://invest-gulf.com/guides/dubai-property-for-pakistani-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-saudi-buyers/
+- https://invest-gulf.com/guides/dubai-property-handover-checklist/
+- https://invest-gulf.com/guides/dubai-property-inheritance-guide/
+- https://invest-gulf.com/guides/dubai-property-investment-guide/
+- https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/
+- https://invest-gulf.com/guides/dubai-property-scams-red-flags/
+- https://invest-gulf.com/guides/dubai-property-snagging-living/
+- https://invest-gulf.com/guides/dubai-property-valuation-guide/
+- https://invest-gulf.com/guides/dubai-rental-law-landlord-guide/
+- https://invest-gulf.com/guides/dubai-rental-yield-guide/
+- https://invest-gulf.com/guides/dubai-safety-crime-expats/
+- https://invest-gulf.com/guides/dubai-transport-costs-metro-taxi/
+- https://invest-gulf.com/guides/dubai-utility-bills-deewa/
+- https://invest-gulf.com/guides/dubai-vs-singapore-expat/
+- https://invest-gulf.com/guides/due-diligence-dubai-property/
+- https://invest-gulf.com/guides/emaar-community-living-guide/
+- https://invest-gulf.com/guides/freehold-areas-dubai-list/
+- https://invest-gulf.com/guides/freehold-vs-leasehold-dubai/
+- https://invest-gulf.com/guides/golden-visa-mortgage-property-uae/
+- https://invest-gulf.com/guides/golden-visa-multiple-properties-uae/
+- https://invest-gulf.com/guides/golden-visa-school-fees-package/
+- https://invest-gulf.com/guides/hidden-costs-living-dubai/
+- https://invest-gulf.com/guides/highest-rental-yield-areas-dubai/
+- https://invest-gulf.com/guides/how-to-buy-property-dubai-step-by-step/
+- https://invest-gulf.com/guides/how-to-choose-school-dubai/
+- https://invest-gulf.com/guides/how-to-flip-off-plan-dubai/
+- https://invest-gulf.com/guides/is-dubai-property-bubble-2026/
+- https://invest-gulf.com/guides/is-dubai-property-worth-it-2026/
+- https://invest-gulf.com/guides/islamic-vs-conventional-mortgage-uae/
+- https://invest-gulf.com/guides/jafza-company-setup/
+- https://invest-gulf.com/guides/kuwait-property-investment-guide/
+- https://invest-gulf.com/guides/living-yas-island-abu-dhabi/
+- https://invest-gulf.com/guides/net-yield-calculator-uae-property/
+- https://invest-gulf.com/guides/non-resident-mortgage-dubai/
+- https://invest-gulf.com/guides/off-plan-assignment-sale-dubai/
+- https://invest-gulf.com/guides/off-plan-payment-plans-dubai/
+- https://invest-gulf.com/guides/off-plan-property-dubai-guide/
+- https://invest-gulf.com/guides/off-plan-vs-ready-property-dubai/
+- https://invest-gulf.com/guides/off-plan-vs-secondary-market-dubai/
+- https://invest-gulf.com/guides/open-bank-account-dubai/
+- https://invest-gulf.com/guides/proof-of-funds-property-uae/
+- https://invest-gulf.com/guides/property-snagging-dubai/
+- https://invest-gulf.com/guides/qatar-service-charges-guide/
+- https://invest-gulf.com/guides/rakez-company-setup/
+- https://invest-gulf.com/guides/refinance-property-dubai-guide/
+- https://invest-gulf.com/guides/remote-work-dubai-tax-implications/
+- https://invest-gulf.com/guides/russian-expats-dubai-guide/
+- https://invest-gulf.com/guides/saudi-arabia-property-foreigners-guide/
+- https://invest-gulf.com/guides/saudi-arabia-relocation-guide/
+- https://invest-gulf.com/guides/school-fees-vs-property-budget-dubai/
+- https://invest-gulf.com/guides/selling-property-dubai-guide/
+- https://invest-gulf.com/guides/service-charges-dubai-by-area/
+- https://invest-gulf.com/guides/shams-free-zone-setup/
+- https://invest-gulf.com/guides/sharjah-freehold-areas-guide/
+- https://invest-gulf.com/guides/sharjah-property-investment-guide/
+- https://invest-gulf.com/guides/short-term-rental-dubai-license/
+- https://invest-gulf.com/guides/short-term-vs-long-term-rental-dubai/
+- https://invest-gulf.com/guides/single-woman-living-dubai/
+- https://invest-gulf.com/guides/tax-australian-nationals-dubai/
+- https://invest-gulf.com/guides/tax-us-citizens-dubai/
+- https://invest-gulf.com/guides/uae-corporate-tax-expats/
+- https://invest-gulf.com/guides/uae-free-zone-vs-mainland/
+- https://invest-gulf.com/guides/uae-green-visa-guide/
+- https://invest-gulf.com/guides/uae-green-visa-skilled-worker/
+- https://invest-gulf.com/guides/uae-retirement-visa/
+- https://invest-gulf.com/guides/vat-uae-property-rent/
+- https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/
+- https://invest-gulf.com/gulf-property-investment-consultation/
+
+</details>
+
+---
+
+## День 2 (2026-08-20) — 20 URL
+
+```
+node scripts/google-indexing-api.mjs --explicit \
+  https://invest-gulf.com/invest-abu-dhabi-off-plan/ \
+  https://invest-gulf.com/invest-dubai-off-plan/ \
+  https://invest-gulf.com/invest-dubai-property/ \
+  https://invest-gulf.com/invest-ras-al-khaimah-property/ \
+  https://invest-gulf.com/methodology/ \
+  https://invest-gulf.com/news/ \
+  https://invest-gulf.com/news/abu-dhabi-rent-index-2026/ \
+  https://invest-gulf.com/news/dubai-off-plan-registrations-q2-2026/ \
+  https://invest-gulf.com/news/dubai-transaction-volume-may-2026/ \
+  https://invest-gulf.com/news/rak-al-marjan-infrastructure-2026/ \
+  https://invest-gulf.com/news/uae-corporate-tax-filing-deadline-2026/ \
+  https://invest-gulf.com/news/uae-mortgage-rates-june-2026/ \
+  https://invest-gulf.com/privacy-policy/ \
+  https://invest-gulf.com/projects/ \
+  https://invest-gulf.com/projects/azizi-venice/ \
+  https://invest-gulf.com/projects/creek-waters-emaar/ \
+  https://invest-gulf.com/projects/nakheel-como-residences/ \
+  https://invest-gulf.com/terms/ \
+  https://invest-gulf.com/uae-business-setup-property/ \
+  https://invest-gulf.com/uae-expat-documents-property/
+```
+
+<details><summary>Список ссылок</summary>
+
+- https://invest-gulf.com/invest-abu-dhabi-off-plan/
+- https://invest-gulf.com/invest-dubai-off-plan/
+- https://invest-gulf.com/invest-dubai-property/
+- https://invest-gulf.com/invest-ras-al-khaimah-property/
+- https://invest-gulf.com/methodology/
+- https://invest-gulf.com/news/
+- https://invest-gulf.com/news/abu-dhabi-rent-index-2026/
+- https://invest-gulf.com/news/dubai-off-plan-registrations-q2-2026/
+- https://invest-gulf.com/news/dubai-transaction-volume-may-2026/
+- https://invest-gulf.com/news/rak-al-marjan-infrastructure-2026/
+- https://invest-gulf.com/news/uae-corporate-tax-filing-deadline-2026/
+- https://invest-gulf.com/news/uae-mortgage-rates-june-2026/
+- https://invest-gulf.com/privacy-policy/
+- https://invest-gulf.com/projects/
+- https://invest-gulf.com/projects/azizi-venice/
+- https://invest-gulf.com/projects/creek-waters-emaar/
+- https://invest-gulf.com/projects/nakheel-como-residences/
+- https://invest-gulf.com/terms/
+- https://invest-gulf.com/uae-business-setup-property/
+- https://invest-gulf.com/uae-expat-documents-property/
+
+</details>
+
