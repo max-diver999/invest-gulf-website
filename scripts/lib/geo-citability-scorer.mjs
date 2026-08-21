@@ -28,8 +28,8 @@ const STAT_PATTERNS = [
   /\b\d+(?:\.\d+)?\s*sqm\b/gi,
   /\b\d+(?:\.\d+)?\s*sq\.?\s*m(?:²|2)?(?!\w)/gi,
   /\b\d+(?:\.\d+)?\s*m[²2](?!\w)/gi,
-  /\b\d[\d,]*(?:\.\d+)?\s*(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|SGD|CHF)\b/gi,
-  /\b(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|SGD|CHF)\s+[\d,]+(?:\.\d+)?/gi,
+  /\b\d[\d,]*(?:\.\d+)?\s*(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|QAR|OMR|BHD|KWD|SGD|CHF)\b/gi,
+  /\b(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|QAR|OMR|BHD|KWD|SGD|CHF)\s+[\d,]+(?:\.\d+)?/gi,
   /\bR\s?[\d,]+(?:\.\d+)?(?:\s*(?:million|m\b|k\b|bn\b))?/gi,
   /\$\d[\d,]*(?:\.\d+)?(?:\s*k\b)?/g,
   /€\d[\d,]*(?:\.\d+)?/g,
@@ -38,7 +38,7 @@ const STAT_PATTERNS = [
 ];
 
 /** @deprecated Use hasStat() — kept for callers that expect a RegExp. */
-export const STAT_RE = /\b\d+(?:\.\d+)?(?:%|\s*(?:percent|million|bn|billion|thousand|k\b|years?|months?|weeks?|days?|sqm|sq\.?\s*m(?:²|2)?|USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|SGD|CHF)\b)|\b(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|SGD|CHF|R)\s*[\d,]+|\$\d|€\d|£\d|\d[\d,]*\s*(?:฿|₽)/i;
+export const STAT_RE = /\b\d+(?:\.\d+)?(?:%|\s*(?:percent|million|bn|billion|thousand|k\b|years?|months?|weeks?|days?|sqm|sq\.?\s*m(?:²|2)?|USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|QAR|OMR|BHD|KWD|SGD|CHF)\b)|\b(?:USD|EUR|GBP|THB|AED|MXN|ZAR|SAR|QAR|OMR|BHD|KWD|SGD|CHF|R)\s*[\d,]+|\$\d|€\d|£\d|\d[\d,]*\s*(?:฿|₽)/i;
 
 export function findStatMatches(text) {
   const spans = [];
@@ -67,8 +67,11 @@ export function hasStat(text) {
 const VAGUE_RE = /\b(many|several|some|often|usually|a lot|significant|various)\b/i;
 const PRONOUN_START_RE = /^(it|this|they|these|those|however|but|and|also)\b/i;
 const QUESTION_H2_RE = /^(what|how|why|when|where|who|which|can|do|does|is|are|should|will)\b/i;
+// Measures first-hand work, not brand repetition. The previous version matched the
+// bare publisher name, which rewarded stamping "Invest Gulf" into every section and
+// scored a genuine first-person analysis at zero. Match the signal instead.
 const UNIQUE_RE =
-  /\b(MORE Group|Invest Gulf|our (analysis|data|clients|underwriting|research)|insider tip|underwriting snapshot|we (surveyed|analyzed|tracked|compared|modeled|reviewed))\b/i;
+  /\b(our (analysis|data|clients|underwriting|research|model|modelling|fieldwork|leasing data|desk)|we (surveyed|analyzed|analysed|tracked|compared|modeled|modelled|model|reviewed|underwrite|treat|reconcile|coordinate|keep|reject|verify)|insider tip|underwriting snapshot|underwriting note|field note|buyer scenario|worked example|sound underwriting|a disciplined model)\b/i;
 
 export function wordCount(text) {
   return (text.match(/\b[\w']+\b/g) || []).length;
@@ -98,8 +101,10 @@ export function splitParagraphs(text) {
     .filter((p) => p && !/^#{1,6}\s/.test(p) && !/^[-*]\s/.test(p) && !/^\d+\.\s/.test(p));
 }
 
+// Methodology asides and boilerplate sections are not Q&A blocks, so they are not
+// scored. Kept in sync with the heading names used in the corpus.
 const SKIP_H2 =
-  /Closing|Faq|Independent verification|MORE Group underwriting|who we are \(citable|Get Personal Help/i;
+  /Closing|Faq|Independent verification|Underwriting snapshot|Underwriting note|Field note|who we are \(citable|Get Personal Help/i;
 
 export function extractH2Blocks(body) {
   const blocks = [];

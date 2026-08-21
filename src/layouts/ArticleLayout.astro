@@ -71,6 +71,35 @@ const articleSchema = {
   mainEntityOfPage: pageUrl,
   ...(heroImage ? { image: heroImage } : {}),
 };
+
+const COLLECTION_LABELS: Record<string, string> = {
+  guides: 'Guides',
+  areas: 'Areas',
+  compare: 'Compare',
+  projects: 'Projects',
+  news: 'News',
+};
+const collectionLabel = COLLECTION_LABELS[articleCollection] ?? 'Guides';
+const collectionHref = `${SITE.url}/${articleCollection}/`;
+
+const breadcrumbTrail = [
+  { name: 'Home', url: `${SITE.url}/` },
+  { name: collectionLabel, url: collectionHref },
+  { name: title, url: pageUrl },
+];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbTrail.map((crumb, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: crumb.name,
+    item: crumb.url,
+  })),
+};
+
+const heroAlt = `${title} — Invest Gulf research illustration`;
 ---
 <BaseLayout
   title={title}
@@ -79,10 +108,19 @@ const articleSchema = {
   ogImage={heroImage}
   type="article"
   {noindex}
-  schema={articleSchema}
+  schema={[articleSchema, breadcrumbSchema]}
   stickyCta={stickyCta}
 >
   <article class="site-container py-10 md:py-14">
+    <nav aria-label="Breadcrumb" class="max-w-3xl mb-4 text-sm text-[var(--color-muted)]">
+      <ol class="flex flex-wrap items-center gap-2">
+        <li><a href="/">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href={`/${articleCollection}/`}>{collectionLabel}</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">{title}</li>
+      </ol>
+    </nav>
     <header class="max-w-3xl mb-8">
       <span class="badge-pill mb-4">Research guide</span>
       <h1 class="mb-4 text-3xl md:text-4xl">{title}</h1>
@@ -93,7 +131,16 @@ const articleSchema = {
     </header>
 
     {heroImage && (
-      <img src={heroImage} alt="" class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]" loading="eager" />
+      <img
+        src={heroImage}
+        alt={heroAlt}
+        width="1280"
+        height="420"
+        class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
     )}
 
     {leadPlacement === 'early' && (

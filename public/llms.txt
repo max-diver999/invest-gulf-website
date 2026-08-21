@@ -4,7 +4,7 @@
 
 - Site: https://invest-gulf.com
 - Contact: info@invest-gulf.com
-- Updated: 2026-07-09
+- Updated: 2026-08-21
 - Focus: Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, Oman, Bahrain, Kuwait property investment
 - Not a developer, not a broker, not a listing portal — independent editorial
 - Publisher: Invest Gulf Editorial (independent; not affiliated with developers or government bodies)
@@ -23,7 +23,6 @@ Invest Gulf publishes data-driven guides on property yields, fees, Golden Visa p
 
 - [Why overseas real estate is the ultimate hedge against currency volatility](https://www.letsknowit.com/strategic-asset-allocation-why-overseas-real-estate-is-the-ultimate-hedge-against-currency-volatility/) — letsknowit.com (Invest Gulf cited as source)
 - [How to design high-converting real estate investment content](https://www.pikitemplates.com/2026/06/how-to-design-high-converting-real-estate-investment.html) — pikitemplates.com
-- [Phuket construction trends 2026](https://constrofacilitator.com/phuket-construction-trends-2026/) — constrofacilitator.com
 
 ## Key hubs
 - /guides/
