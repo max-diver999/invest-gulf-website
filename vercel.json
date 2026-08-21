@@ -18,11 +18,6 @@
       "permanent": true
     },
     {
-      "source": "/guides/uae-golden-visa-property-2026",
-      "destination": "/guides/uae-golden-visa-property/",
-      "permanent": true
-    },
-    {
       "source": "/guides/can-foreigners-buy-property-dubai/",
       "destination": "/guides/can-foreigners-buy-property-uae/",
       "permanent": true
@@ -63,17 +58,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/jvc-property-investment",
-      "destination": "/areas/jvc-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/dubai-marina-property-investment/",
-      "destination": "/areas/dubai-marina-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/dubai-marina-property-investment",
       "destination": "/areas/dubai-marina-property-investment/",
       "permanent": true
     },
@@ -83,17 +68,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/business-bay-property-investment",
-      "destination": "/areas/business-bay-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/downtown-dubai-property-investment/",
-      "destination": "/areas/downtown-dubai-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/downtown-dubai-property-investment",
       "destination": "/areas/downtown-dubai-property-investment/",
       "permanent": true
     },
@@ -103,17 +78,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/palm-jumeirah-property-investment",
-      "destination": "/areas/palm-jumeirah-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/dubai-hills-estate-property-investment/",
-      "destination": "/areas/dubai-hills-estate-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/dubai-hills-estate-property-investment",
       "destination": "/areas/dubai-hills-estate-property-investment/",
       "permanent": true
     },
@@ -123,17 +88,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-south-property-investment",
-      "destination": "/areas/dubai-south-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/jlt-property-investment/",
-      "destination": "/areas/jlt-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/jlt-property-investment",
       "destination": "/areas/jlt-property-investment/",
       "permanent": true
     },
@@ -143,17 +98,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-creek-harbour-property-investment",
-      "destination": "/areas/dubai-creek-harbour-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/mbr-city-property-investment/",
-      "destination": "/areas/mbr-city-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/mbr-city-property-investment",
       "destination": "/areas/mbr-city-property-investment/",
       "permanent": true
     },
@@ -163,17 +108,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-sports-city-property-investment",
-      "destination": "/areas/dubai-sports-city-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/arabian-ranches-property-investment/",
-      "destination": "/areas/arabian-ranches-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/arabian-ranches-property-investment",
       "destination": "/areas/arabian-ranches-property-investment/",
       "permanent": true
     },
@@ -183,17 +118,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-islands-property-investment",
-      "destination": "/areas/dubai-islands-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/damac-hills-property-investment/",
-      "destination": "/areas/damac-hills-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/damac-hills-property-investment",
       "destination": "/areas/damac-hills-property-investment/",
       "permanent": true
     },
@@ -203,17 +128,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/saadiyat-island-property-investment",
-      "destination": "/areas/saadiyat-island-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/yas-island-property-investment/",
-      "destination": "/areas/yas-island-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/yas-island-property-investment",
       "destination": "/areas/yas-island-property-investment/",
       "permanent": true
     },
@@ -223,17 +138,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/al-reem-island-property-investment",
-      "destination": "/areas/al-reem-island-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/al-maryah-island-property-investment/",
-      "destination": "/areas/al-maryah-island-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/al-maryah-island-property-investment",
       "destination": "/areas/al-maryah-island-property-investment/",
       "permanent": true
     },
@@ -243,17 +148,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/al-marjan-island-property-investment",
-      "destination": "/areas/al-marjan-island-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/al-hamra-village-property-investment/",
-      "destination": "/areas/al-hamra-village-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/al-hamra-village-property-investment",
       "destination": "/areas/al-hamra-village-property-investment/",
       "permanent": true
     },
@@ -263,17 +158,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/mina-al-arab-property-investment",
-      "destination": "/areas/mina-al-arab-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/the-pearl-lusail-property-investment/",
-      "destination": "/areas/the-pearl-lusail-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/the-pearl-lusail-property-investment",
       "destination": "/areas/the-pearl-lusail-property-investment/",
       "permanent": true
     },
@@ -283,17 +168,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/riyadh-property-investment",
-      "destination": "/areas/riyadh-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/best-off-plan-abu-dhabi/",
-      "destination": "/guides/abu-dhabi-off-plan-guide/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/best-off-plan-abu-dhabi",
       "destination": "/guides/abu-dhabi-off-plan-guide/",
       "permanent": true
     },
@@ -303,17 +178,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/best-off-plan-downtown-dubai",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
       "source": "/guides/best-off-plan-dubai-marina/",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/best-off-plan-dubai-marina",
       "destination": "/guides/best-off-plan-areas-dubai-2026/",
       "permanent": true
     },
@@ -323,17 +188,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/best-off-plan-dubai-south",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
       "source": "/guides/best-off-plan-jvc-dubai/",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/best-off-plan-jvc-dubai",
       "destination": "/guides/best-off-plan-areas-dubai-2026/",
       "permanent": true
     },
@@ -343,17 +198,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/best-off-plan-business-bay-dubai",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
       "source": "/guides/best-off-plan-creek-harbour/",
-      "destination": "/guides/best-off-plan-areas-dubai-2026/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/best-off-plan-creek-harbour",
       "destination": "/guides/best-off-plan-areas-dubai-2026/",
       "permanent": true
     },
@@ -363,17 +208,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-vs-abu-dhabi-cost-living",
-      "destination": "/guides/abu-dhabi-cost-of-living/",
-      "permanent": true
-    },
-    {
       "source": "/guides/abu-dhabi-driving-guide/",
-      "destination": "/guides/abu-dhabi-driving-license/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/abu-dhabi-driving-guide",
       "destination": "/guides/abu-dhabi-driving-license/",
       "permanent": true
     },
@@ -383,17 +218,7 @@
       "permanent": true
     },
     {
-      "source": "/guides/open-bank-account-non-resident-uae",
-      "destination": "/guides/open-bank-account-dubai/",
-      "permanent": true
-    },
-    {
       "source": "/guides/qatar-residency-by-property/",
-      "destination": "/guides/qatar-property-buyer-relocation/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/qatar-residency-by-property",
       "destination": "/guides/qatar-property-buyer-relocation/",
       "permanent": true
     },
@@ -403,43 +228,13 @@
       "permanent": true
     },
     {
-      "source": "/guides/bahrain-golden-residence-property",
-      "destination": "/guides/bahrain-property-foreigner-living/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/uae-tax-residency-183-day-rule/",
-      "destination": "/guides/uae-tax-guide-expats/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/uae-tax-residency-183-day-rule",
-      "destination": "/guides/uae-tax-guide-expats/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/discovery-gardens-property-investment/",
-      "destination": "/areas/discovery-gardens-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/discovery-gardens-property-investment/",
       "destination": "/areas/discovery-gardens-property-investment/",
       "permanent": true
     },
     {
       "source": "/guides/impz-property-investment/",
-      "destination": "/areas/impz-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/impz-property-investment/",
-      "destination": "/areas/impz-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/town-square-property-investment/",
-      "destination": "/areas/town-square-property-investment/",
+      "destination": "/areas/dubai-production-city-property-investment/",
       "permanent": true
     },
     {
@@ -453,23 +248,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/jbr-property-investment/",
-      "destination": "/areas/jbr-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/bluewaters-island-property-investment/",
       "destination": "/areas/bluewaters-island-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/bluewaters-island-property-investment/",
-      "destination": "/areas/bluewaters-island-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/dubai-harbour-property-investment/",
-      "destination": "/areas/dubai-harbour-property-investment/",
       "permanent": true
     },
     {
@@ -483,23 +263,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/city-walk-property-investment/",
-      "destination": "/areas/city-walk-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/al-raha-beach-property-investment/",
       "destination": "/areas/al-raha-beach-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/al-raha-beach-property-investment/",
-      "destination": "/areas/al-raha-beach-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/khalifa-city-property-investment/",
-      "destination": "/areas/khalifa-city-property-investment/",
       "permanent": true
     },
     {
@@ -513,23 +278,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/al-nakheel-rak-property-investment/",
-      "destination": "/areas/al-nakheel-rak-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/masdar-city-property-investment/",
       "destination": "/areas/masdar-city-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/masdar-city-property-investment/",
-      "destination": "/areas/masdar-city-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/al-reef-abu-dhabi-property-investment/",
-      "destination": "/areas/al-reef-abu-dhabi-property-investment/",
       "permanent": true
     },
     {
@@ -543,23 +293,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/dubai-silicon-oasis-property-investment/",
-      "destination": "/areas/dubai-silicon-oasis-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/motor-city-property-investment/",
       "destination": "/areas/motor-city-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/motor-city-property-investment/",
-      "destination": "/areas/motor-city-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/dubai-production-city-property-investment/",
-      "destination": "/areas/dubai-production-city-property-investment/",
       "permanent": true
     },
     {
@@ -573,23 +308,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/al-furjan-property-investment/",
-      "destination": "/areas/al-furjan-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/mudon-property-investment/",
       "destination": "/areas/mudon-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/mudon-property-investment/",
-      "destination": "/areas/mudon-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/villanova-property-investment/",
-      "destination": "/areas/villanova-property-investment/",
       "permanent": true
     },
     {
@@ -603,23 +323,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/the-valley-dubai-property-investment/",
-      "destination": "/areas/the-valley-dubai-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/aljada-sharjah-property-investment/",
       "destination": "/areas/aljada-sharjah-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/aljada-sharjah-property-investment/",
-      "destination": "/areas/aljada-sharjah-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/al-zahia-sharjah-property-investment/",
-      "destination": "/areas/al-zahia-sharjah-property-investment/",
       "permanent": true
     },
     {
@@ -633,23 +338,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/al-ghadeer-property-investment/",
-      "destination": "/areas/al-ghadeer-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/amwaj-islands-property-investment/",
       "destination": "/areas/amwaj-islands-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/amwaj-islands-property-investment/",
-      "destination": "/areas/amwaj-islands-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/dammam-khobar-property-investment/",
-      "destination": "/areas/dammam-khobar-property-investment/",
       "permanent": true
     },
     {
@@ -663,23 +353,8 @@
       "permanent": true
     },
     {
-      "source": "/guides/hudayriyat-island-property-investment/",
-      "destination": "/areas/hudayriyat-island-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/jeddah-property-investment/",
       "destination": "/areas/jeddah-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/jeddah-property-investment/",
-      "destination": "/areas/jeddah-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/lusail-city-property-investment/",
-      "destination": "/areas/lusail-city-property-investment/",
       "permanent": true
     },
     {
@@ -693,16 +368,6 @@
       "permanent": true
     },
     {
-      "source": "/guides/manama-property-investment/",
-      "destination": "/areas/manama-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/muscat-al-mouj-property-investment/",
-      "destination": "/areas/muscat-al-mouj-property-investment/",
-      "permanent": true
-    },
-    {
       "source": "/guides/muscat-al-mouj-property-investment/",
       "destination": "/areas/muscat-al-mouj-property-investment/",
       "permanent": true
@@ -710,16 +375,6 @@
     {
       "source": "/guides/muscat-qurum-property-investment/",
       "destination": "/areas/muscat-qurum-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/muscat-qurum-property-investment/",
-      "destination": "/areas/muscat-qurum-property-investment/",
-      "permanent": true
-    },
-    {
-      "source": "/guides/west-bay-doha-property-investment/",
-      "destination": "/areas/west-bay-doha-property-investment/",
       "permanent": true
     },
     {
@@ -760,6 +415,16 @@
     {
       "source": "/guides/jebel-ali-village-property-investment/",
       "destination": "/areas/jebel-ali-village-property-investment/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/uae-tax-residency-183-days/",
+      "destination": "/guides/uae-tax-residency-183-day-rule/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/impz-property-investment/",
+      "destination": "/areas/dubai-production-city-property-investment/",
       "permanent": true
     }
   ],

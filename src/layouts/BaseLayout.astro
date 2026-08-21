@@ -22,7 +22,7 @@ interface Props {
   ogImage?: string;
   type?: 'website' | 'article';
   noindex?: boolean;
-  schema?: object;
+  schema?: object | object[];
   stickyCta?: StickyCtaProps | null;
 }
 
@@ -37,7 +37,14 @@ const {
   stickyCta = null,
 } = Astro.props;
 
-const fullTitle = title.includes('Invest Gulf') ? title : `${title} | Invest Gulf`;
+// Keep the rendered <title> inside the ~60ch SERP window. The brand suffix is
+// only appended when it still fits; longer titles ship bare rather than truncated.
+const BRAND_SUFFIX = ' | Invest Gulf';
+const TITLE_LIMIT = 60;
+const fullTitle =
+  title.includes('Invest Gulf') || title.length + BRAND_SUFFIX.length > TITLE_LIMIT
+    ? title
+    : `${title}${BRAND_SUFFIX}`;
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -77,7 +84,9 @@ const orgSchema = {
   ],
 };
 
-const allSchemas = [orgSchema, ...(schema ? [schema] : [])];
+// `schema` accepts a single JSON-LD object or an array of them.
+const extraSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const allSchemas = [orgSchema, ...extraSchemas];
 ---
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -87,9 +96,9 @@ const allSchemas = [orgSchema, ...(schema ? [schema] : [])];
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {noindex
-    ? <meta name="robots" content="noindex,nofollow" />
+    ? <meta name="robots" content="noindex,follow" />
     : <meta name="robots" content="index,follow,max-image-preview:large" />}
-  {!noindex && <link rel="canonical" href={canonical} />}
+  <link rel="canonical" href={canonical} />
   <meta property="og:type" content={type} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />

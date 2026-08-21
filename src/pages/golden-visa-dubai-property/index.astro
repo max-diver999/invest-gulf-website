@@ -2,11 +2,50 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { STICKY_VISA } from '../../data/sticky-cta';
+
+const faq = [
+  {
+    question: 'What is the minimum property value for a UAE Golden Visa?',
+    answer:
+      'AED 2 million of registered property value, evidenced by a title deed for ready property or an Oqood registration for off-plan. The test is the registered value on the Dubai Land Department record, not the brochure price, the furniture package, or the 4% transfer fee paid on top.',
+  },
+  {
+    question: 'Does a mortgaged property still qualify?',
+    answer:
+      'In current practice yes. A federal circular in February 2026 removed the earlier 50% down-payment requirement, and eligibility is assessed on the registered value even where a UAE bank mortgage remains outstanding. Banks are generally asked for a no-objection certificate, which adds one to two weeks to the file. Confirm the current position with GDRFA or ICP before relying on it.',
+  },
+  {
+    question: 'Can I combine two properties to reach AED 2 million?',
+    answer:
+      'Aggregation is possible where each unit is separately registered in your own name and the combined registered value meets or exceeds AED 2 million. It is applied at the discretion of the authority, so obtain written confirmation before committing to a split purchase rather than a single unit.',
+  },
+  {
+    question: 'How long does the Golden Visa process take?',
+    answer:
+      'For a clean file, two to four weeks from property registration to visa stamping is realistic, covering medical, Emirates ID biometrics and GDRFA or ICP submission. Add one to two weeks where a mortgage NOC is required, and longer where dependant attestation from abroad is still outstanding.',
+  },
+  {
+    question: 'Does the Golden Visa make me a UAE tax resident?',
+    answer:
+      'No. The Golden Visa is an immigration status. UAE tax residency is a separate test tied to days of presence and centre of interests, and your home country applies its own rules regardless of what visa you hold. Treat the two questions independently and take advice on both.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
 ---
 <BaseLayout
   title="Golden Visa Dubai Property: AED 2M Residency Shortlist"
   description="UAE Golden Visa through Dubai property from AED 2M registered value. Off-plan Oqood, mortgage with bank NOC, and multi-unit aggregation explained. Free shortlist."
   stickyCta={STICKY_VISA}
+  schema={faqSchema}
 >
   <section class="site-container py-12 md:py-16 max-w-3xl">
     <header class="mb-8">
@@ -19,12 +58,87 @@ import { STICKY_VISA } from '../../data/sticky-cta';
         <a href="#lead-form" class="btn-primary">Get qualifying options</a>
       </p>
     </header>
+
     <div class="prose mb-10">
-      <p><strong>Quick answer:</strong> AED 2M minimum on registered property value (Oqood or title deed). April 2026 rule: full registered value counts even with UAE mortgage if bank NOC provided. Processing typically 2 to 4 weeks in UAE.</p>
-      <p>Guide: <a href="/guides/uae-golden-visa-property/">UAE Golden Visa property 2026</a> · <a href="/guides/golden-visa-off-plan-property-uae/">Off-plan eligibility</a></p>
-      <p>Moving the whole family: <a href="/uae-expat-documents-property/">expat paperwork to property hub</a></p>
+      <p>
+        <strong>Quick answer:</strong> AED 2 million of registered property value qualifies, evidenced by a title deed or an Oqood registration. Since a federal circular in February 2026 the earlier 50% down-payment requirement no longer applies, and a mortgaged unit can qualify on full registered value where the bank issues a no-objection certificate. Processing typically runs two to four weeks once the property is registered.
+      </p>
+
+      <h2>What actually counts toward the AED 2 million</h2>
+      <p>
+        The single most common reason a file stalls is a value that looks like AED 2 million on a brochure and does not appear that way on the register. Qualification is assessed on the registered figure, so anything paid outside that record is invisible to the application.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Counts</th><th>Does not count</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Title deed value on a ready unit</td><td>The 4% DLD transfer fee</td></tr>
+          <tr><td>Oqood registered value on off-plan</td><td>Agency commission and trustee fees</td></tr>
+          <tr><td>Combined value of separately registered units</td><td>Furniture and fit-out packages</td></tr>
+          <tr><td>Full value on a mortgaged unit, with bank NOC</td><td>Reservation deposits before registration</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The three routes, and which one fits</h2>
+      <p>
+        Most applicants arrive on one of three paths. Choosing the right one before you reserve a unit is what keeps the visa timeline attached to the purchase timeline instead of running months behind it.
+      </p>
+      <ul>
+        <li>
+          <strong>Cash purchase of ready property.</strong> The cleanest route. Title deed issues at transfer and the visa file can open immediately. Suitable where funds are already in the UAE and the buyer wants the shortest path to a stamped visa.
+        </li>
+        <li>
+          <strong>Mortgaged purchase.</strong> Eligible on registered value, with a bank NOC generally required. Indicative down payments for foreign buyers run 20% to 25%, and the NOC step typically adds one to two weeks. See <a href="/guides/golden-visa-mortgage-property-uae/">Golden Visa mortgage property UAE</a> for the document sequence.
+        </li>
+        <li>
+          <strong>Off-plan after Oqood.</strong> Possible once the unit is registered at DLD and the registered contract value meets the threshold. Launch brochures without RERA registration are the recurring red flag here. See <a href="/guides/golden-visa-off-plan-property-uae/">off-plan eligibility</a>.
+        </li>
+      </ul>
+
+      <h2>What it costs beyond the property</h2>
+      <p>
+        The visa itself is a small line next to the purchase, but it is rarely quoted in full at the sales office. Budget for medical testing, Emirates ID, insurance and government fees per applicant, and remember that each dependant is a separate file with its own cost and its own attestation timeline.
+      </p>
+      <p>
+        A working planning figure is AED 4,000 to 5,500 per adult applicant, with dependant attestation from abroad adding two to six weeks where documents are not already legalised. Families who start the attestation track while the property search is still running avoid the most common delay in the whole process.
+      </p>
+
+      <h2>Where we help</h2>
+      <p>
+        Invest Gulf is an independent research publication, not a broker or a developer. What we do on this page is narrow and specific: we take your budget, target emirate and intended use, and return a shortlist of units that clear the AED 2 million registered-value test with a defensible yield and a realistic exit, rather than the units that pay the highest commission.
+      </p>
+      <p>
+        Where a purchase is agreed, enquiries are referred to RERA-licensed partners. We do not take listing fees from developers, which is why the shortlist regularly includes the answer that a given budget does not yet clear the threshold on stock worth owning.
+      </p>
+
+      <h2>Before you commit</h2>
+      <ul>
+        <li>Confirm the registered value in writing, not the brochure price.</li>
+        <li>Confirm freehold or designated investment status for your nationality on the specific plot.</li>
+        <li>Where financing, get the bank's NOC wording confirmed before the deposit becomes non-refundable.</li>
+        <li>Where aggregating units, get written confirmation that the combination will be accepted.</li>
+        <li>Model net yield after service charges and vacancy before letting the visa drive the purchase.</li>
+      </ul>
+      <p>
+        Full detail sits in the <a href="/guides/uae-golden-visa-property/">UAE Golden Visa property guide</a>, with the Abu Dhabi variant in <a href="/guides/abu-dhabi-golden-visa-property/">Abu Dhabi Golden Visa property</a>. Moving the whole family: <a href="/uae-expat-documents-property/">expat paperwork to property hub</a>.
+      </p>
     </div>
+
     <LeadForm title="Golden Visa property shortlist" subtitle="AED 2M+ · visa-ready options" context="Golden Visa Dubai property landing" />
-    <p class="text-xs text-[var(--color-muted)] mt-6">Confirm thresholds with GDRFA/ICP at time of application.</p>
+
+    <div class="prose mt-12">
+      <h2>Golden Visa property questions</h2>
+      {faq.map((f) => (
+        <div class="mb-5">
+          <h3 class="mb-1 text-base font-semibold">{f.question}</h3>
+          <p class="text-[var(--color-muted)]">{f.answer}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-xs text-[var(--color-muted)] mt-6">
+      Thresholds, fees and processing rules change. Confirm the current position with GDRFA or ICP at the time of application. This page is independent research, not immigration or legal advice.
+    </p>
   </section>
 </BaseLayout>
