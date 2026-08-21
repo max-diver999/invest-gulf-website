@@ -1,0 +1,404 @@
+{
+  "site_id": "invest-gulf-website",
+  "domain": "invest-gulf.com",
+  "program": "invest-gulf",
+  "generated": "2026-08-21",
+  "generated_by": "claude-code-phase-0",
+  "status": "proposal_only_awaiting_approval",
+  "roadmap_md": ".content-os/batches/content-roadmap-2026-08-21.md",
+  "audit_report": ".content-os/reports/AUDIT-REPORT-2026-08-21.md",
+  "blocked_by": {
+    "reason": "Corpus shows scaled-content fingerprints (32% self-noindexed, 66% template sentences, 100% identical updatedDate). Publishing new pages before cleanup W0-W4 is net-negative.",
+    "required_waves": ["gulf-wave-0", "gulf-wave-1", "gulf-wave-2", "gulf-wave-3", "gulf-wave-4"],
+    "roadmap": ".content-os/batches/corpus-cleanup-roadmap-2026-08-21.md",
+    "single_exception": {
+      "topic_id": 7,
+      "rationale": "Supports guides/saudi-rental-yield-guide (site's #2 page by impressions, 380 imp, pos 9.3) whose title promises Riyadh/Jeddah yields to foreign buyers; the Jan-2026 Saudi ownership law needs a fact-check pass."
+    }
+  },
+  "strategy": {
+    "problem": "Corpus is saturated on conventional topics (all 12 buyer nationalities, 30 compare pages, 62 indexable yield pages, 18 Golden Visa pages). There is no topic gap.",
+    "thesis": "Compete on content types a seller cannot publish: interactive tools, dated regulatory changelogs, primary data indexes, and risk/dispute/exit content.",
+    "competitor_set": [
+      "drivenproperties.com", "pearlshire.com", "houseandhedges.ae", "egsh.ae",
+      "dubailivin.com", "astraterra.ae", "sherwoodsproperty.com", "districtuae.com",
+      "lymrealestate.com", "engelvoelkers.com", "guestready.com", "orfaliproperties.com"
+    ],
+    "competitor_weakness": "All ranking pages carry a transaction incentive: no calculators, no downside content, no delivery-delay data, slow on regulatory change.",
+    "least_contested_markets": ["RAK / Al Marjan / Wynn", "Oman ITC zones", "Saudi designated zones"]
+  },
+  "batches": [
+    {
+      "batch_id": "N1",
+      "name": "Interactive tools",
+      "format": "astro_tool_page",
+      "count": 6,
+      "priority": "P2",
+      "cannibalization_risk": "none",
+      "rationale": "New content type for the site. No competitor in the checked SERP set publishes calculators."
+    },
+    {
+      "batch_id": "N2",
+      "name": "Dated regulatory changelogs",
+      "format": "mdx_changelog",
+      "count": 5,
+      "priority": "P1",
+      "cannibalization_risk": "low",
+      "rationale": "Fastest AEO/GEO win. Dated, sourced, single-topic regulatory pages are preferred by answer engines."
+    },
+    {
+      "batch_id": "N3",
+      "name": "Primary data indexes",
+      "format": "mdx_data_index",
+      "count": 5,
+      "priority": "P5",
+      "cannibalization_risk": "high_until_w8",
+      "rationale": "Proves the 'independent research' claim. Must wait for cleanup W8 yield-cluster consolidation."
+    },
+    {
+      "batch_id": "N4",
+      "name": "Risk, dispute and exit",
+      "format": "mdx_longform",
+      "count": 6,
+      "priority": "P3",
+      "cannibalization_risk": "low",
+      "rationale": "Structurally unavailable to brokers. Highest E-E-A-T and link-earning value."
+    },
+    {
+      "batch_id": "N5",
+      "name": "Transactional buyer journeys",
+      "format": "mdx_bofu",
+      "count": 4,
+      "priority": "P4",
+      "cannibalization_risk": "medium",
+      "rationale": "Direct lead generation for purchase-intent queries."
+    },
+    {
+      "batch_id": "N6",
+      "name": "Entity, authority and trust",
+      "format": "mdx_plus_astro",
+      "count": 4,
+      "priority": "P1_P3_P4",
+      "cannibalization_risk": "none",
+      "rationale": "GEO/AEO citability and independence proof."
+    }
+  ],
+  "topics": [
+    {
+      "id": 1, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "dubai-property-purchase-cost-calculator",
+      "working_title": "Dubai Property Purchase Cost Calculator",
+      "intent": "transactional",
+      "target_queries": ["dubai property buying costs calculator", "total cost buying property dubai", "dld fee calculator"],
+      "must_not_cannibalize": ["guides/cost-of-buying-property-dubai", "guides/dld-mortgage-registration-fees"],
+      "differentiation": "Existing pages explain fees in prose. This computes DLD 4% + trustee 2100-4200 + title deed 580 + agent 2% + VAT + NOC + mortgage reg 0.25% + valuation + year-1 service charge. Existing guides link into it.",
+      "lead_value": "high"
+    },
+    {
+      "id": 2, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "uae-mortgage-ltv-calculator-non-resident",
+      "working_title": "UAE Mortgage LTV Calculator for Non-Residents",
+      "intent": "transactional",
+      "target_queries": ["non resident mortgage dubai ltv", "how much can i borrow dubai property", "uae mortgage eligibility non resident"],
+      "must_not_cannibalize": ["guides/dubai-mortgage-rates-2026", "guides/cash-vs-mortgage-dubai-property", "guides/buy-to-let-mortgage-dubai"],
+      "differentiation": "'ltv' appears in zero existing slugs. Outputs max loan by residency status, nationality tier, value band, first vs second property.",
+      "lead_value": "high"
+    },
+    {
+      "id": 3, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "dubai-service-charge-lookup-by-building",
+      "working_title": "Dubai Service Charge Lookup by Building",
+      "intent": "commercial_investigation",
+      "target_queries": ["service charge dubai by building", "mollak service charge index", "service charge burj khalifa"],
+      "must_not_cannibalize": ["guides/dubai-service-charge-index-explained", "guides/service-charges-dubai-by-area"],
+      "differentiation": "Existing pages and all competitors give AED 12-25/sqft ranges by area. Nobody publishes building-level figures. Largest hidden variable in a Dubai net-yield model.",
+      "lead_value": "high"
+    },
+    {
+      "id": 4, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "gcc-property-acquisition-cost-comparison",
+      "working_title": "GCC Property Acquisition Cost Comparison",
+      "intent": "commercial_investigation",
+      "target_queries": ["cost of buying property uae vs qatar vs saudi", "gcc property transaction costs"],
+      "must_not_cannibalize": ["compare/* (30 pages)"],
+      "differentiation": "Compare pages are narrative. This is one table of total acquisition cost % across UAE, Qatar, Saudi (incl. new ~10% foreign fee load), Oman, Bahrain, Kuwait on the same purchase price.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 5, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "golden-visa-property-eligibility-checker",
+      "working_title": "Golden Visa Property Eligibility Checker",
+      "intent": "transactional",
+      "target_queries": ["do i qualify for dubai golden visa property", "golden visa property eligibility check"],
+      "must_not_cannibalize": ["guides/uae-golden-visa-property", "guides/golden-visa-mortgage-property-uae", "guides/golden-visa-multiple-properties-uae"],
+      "differentiation": "Decision tree: value / off-plan or ready / mortgaged / single or aggregate / emirate -> eligibility + document list. Feeds the /golden-visa-dubai-property/ lead page.",
+      "lead_value": "very_high"
+    },
+    {
+      "id": 6, "batch": "N1", "priority": "P2", "collection": "page",
+      "slug": "dubai-off-plan-payment-plan-comparison",
+      "working_title": "Dubai Off-Plan Payment Plans Compared by Developer",
+      "intent": "commercial_investigation",
+      "target_queries": ["developer payment plans dubai compared", "best payment plan off plan dubai"],
+      "must_not_cannibalize": ["guides/dubai-payment-plan-types-explained", "guides/off-plan-payment-plans-dubai", "guides/post-handover-payment-plan-dubai"],
+      "differentiation": "Existing pages explain plan types. This is a sortable table of actual current plans by developer with effective cost of finance calculated per plan.",
+      "lead_value": "high"
+    },
+    {
+      "id": 7, "batch": "N2", "priority": "P1", "collection": "guides",
+      "slug": "saudi-foreign-property-ownership-law-2026",
+      "working_title": "Saudi Foreign Property Ownership Law 2026: What Actually Changed",
+      "intent": "informational_high_value",
+      "target_queries": ["can foreigners buy property saudi arabia 2026", "saudi property ownership law expats", "saudi foreign ownership designated zones"],
+      "must_not_cannibalize": ["guides/saudi-arabia-property-foreigners-guide", "news/saudi-foreign-ownership-update-2026"],
+      "differentiation": "Highest-priority page in the roadmap. Law effective Jan 2026; reporting indicates Riyadh, Jeddah, Makkah, Madinah excluded from general foreign residential ownership, REGA transfer fee capped at 5%, ~10% combined fee load. Becomes the dated authoritative source cited by saudi-rental-yield-guide.",
+      "linked_fact_check": ["guides/saudi-rental-yield-guide", "areas/riyadh-property-investment", "areas/jeddah-property-investment"],
+      "lead_value": "medium"
+    },
+    {
+      "id": 8, "batch": "N2", "priority": "P1", "collection": "guides",
+      "slug": "uae-golden-visa-property-rule-changes-log",
+      "working_title": "UAE Golden Visa Property Rule Changes: Dated Log",
+      "intent": "informational_high_value",
+      "target_queries": ["golden visa dubai rule changes 2026", "did golden visa rules change", "golden visa 50% down payment removed"],
+      "must_not_cannibalize": ["guides/uae-golden-visa-property"],
+      "differentiation": "A dated changelog, not a guide: Feb-2026 federal circular removing the 50% down-payment requirement, DLD valuation-certificate test, mortgage/NOC position. Corpus currently says 'widely reported policy updates' which is vague sourcing on a YMYL claim.",
+      "lead_value": "high"
+    },
+    {
+      "id": 9, "batch": "N2", "priority": "P1", "collection": "guides",
+      "slug": "dubai-dld-fee-schedule-2026",
+      "working_title": "Dubai DLD Fee Schedule 2026: Official Rates",
+      "intent": "informational",
+      "target_queries": ["dld fees 2026", "dubai land department fees list", "dubai property registration fees"],
+      "must_not_cannibalize": ["guides/cost-of-buying-property-dubai", "guides/dld-mortgage-registration-fees"],
+      "differentiation": "Official schedule as a citable reference table with source links and per-line verification dates. Consumed by tool id 1.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 10, "batch": "N2", "priority": "P1", "collection": "guides",
+      "slug": "qatar-foreign-ownership-zones-2026",
+      "working_title": "Qatar Foreign Ownership Zones 2026 Update",
+      "intent": "informational",
+      "target_queries": ["qatar freehold zones foreigners 2026", "qatar property law foreigners"],
+      "must_not_cannibalize": ["guides/qatar-property-investment-guide", "news/qatar-property-law-amendment-2026"],
+      "differentiation": "Current designated-zone list plus 2026 amendments, dated and sourced.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 11, "batch": "N2", "priority": "P1", "collection": "guides",
+      "slug": "oman-itc-freehold-rules-2026",
+      "working_title": "Oman ITC Freehold Rules 2026 Update",
+      "intent": "informational",
+      "target_queries": ["oman itc freehold foreigners 2026", "oman property ownership foreigners"],
+      "must_not_cannibalize": ["guides/oman-itc-zones-property", "guides/oman-property-foreigner-living"],
+      "differentiation": "Dated regulatory treatment. Oman is genuinely under-covered by competitors - winnable market.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 12, "batch": "N3", "priority": "P5", "collection": "guides",
+      "slug": "dubai-net-yield-index-by-community",
+      "working_title": "Dubai Net Yield Index by Community",
+      "intent": "commercial_investigation",
+      "target_queries": ["dubai net rental yield by area 2026", "real net yield dubai"],
+      "must_not_cannibalize": ["guides/dubai-rental-yield-guide", "guides/highest-rental-yield-areas-dubai"],
+      "differentiation": "Densest cluster on the site (62 indexable yield pages). Publish ONLY after cleanup W8-1 consolidation. Quarterly data asset the hub cites: net yields with service charge and vacancy shown per community. Every competitor publishes gross.",
+      "blocked_by_wave": "gulf-wave-8-1",
+      "lead_value": "high"
+    },
+    {
+      "id": 13, "batch": "N3", "priority": "P5", "collection": "guides",
+      "slug": "dubai-developer-delivery-record-index",
+      "working_title": "Dubai Developer Delivery Record Index",
+      "intent": "commercial_investigation",
+      "target_queries": ["which dubai developers deliver on time", "dubai developer delay record"],
+      "must_not_cannibalize": ["guides/dubai-developers-guide", "guides/how-to-evaluate-dubai-developer", "guides/*-review (9 pages)"],
+      "differentiation": "Reviews are qualitative. This is a delivery/delay dataset by developer and project. No broker will publish this about their own suppliers.",
+      "lead_value": "high"
+    },
+    {
+      "id": 14, "batch": "N3", "priority": "P5", "collection": "guides",
+      "slug": "rak-al-marjan-price-index-wynn-effect",
+      "working_title": "Al Marjan Island Price Index: The Wynn Effect",
+      "intent": "commercial_investigation",
+      "target_queries": ["al marjan island prices 2026", "wynn effect rak property prices", "ras al khaimah property price index"],
+      "must_not_cannibalize": ["guides/wynn-al-marjan-island-property-impact", "areas/al-marjan-island-property-investment"],
+      "differentiation": "Price-per-sqft time series against the Wynn 2027 timeline. 1-beds moved AED 550k-900k to AED 900k-1.6M in 18 months. Least contested growth story in the Gulf.",
+      "lead_value": "very_high"
+    },
+    {
+      "id": 15, "batch": "N3", "priority": "P5", "collection": "guides",
+      "slug": "gcc-transaction-volume-tracker",
+      "working_title": "GCC Property Transaction Volume Tracker",
+      "intent": "informational",
+      "target_queries": ["dubai transaction volume 2026", "gulf property market data", "dubai property sales volume"],
+      "must_not_cannibalize": ["news/dubai-transaction-volume-may-2026", "guides/dubai-property-market-cycle-2026"],
+      "differentiation": "A live tracker replacing one-off news posts. Also fixes the stale news/ collection flagged in AUDIT section 9.3.",
+      "lead_value": "low"
+    },
+    {
+      "id": 16, "batch": "N3", "priority": "P5", "collection": "guides",
+      "slug": "dubai-rera-index-vs-actual-ejari-rents",
+      "working_title": "RERA Rent Index vs Actual Ejari Rents",
+      "intent": "commercial_investigation",
+      "target_queries": ["rera rent index accurate", "actual rents vs rera dubai", "ejari rent data"],
+      "must_not_cannibalize": ["guides/dubai-rent-increase-calculator-rera", "guides/dubai-rental-yield-guide"],
+      "differentiation": "The gap between the official index and registered Ejari contracts. Directly actionable for landlords and buyers; nobody publishes it.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 17, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "dubai-property-legal-recourse-map",
+      "working_title": "Dubai Property Legal Recourse Map: Which Forum for Which Dispute",
+      "intent": "informational_high_trust",
+      "target_queries": ["where to complain dubai property", "rera vs rdc vs difc courts", "dubai property complaint"],
+      "must_not_cannibalize": ["guides/dubai-property-dispute-resolution"],
+      "differentiation": "Existing page explains the dispute process. This is a routing map: dispute type -> correct forum (RERA / RDC / DLD / Rental Dispute Centre / DIFC Courts) -> cost -> timeline -> prerequisites.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 18, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "dubai-off-plan-cancellation-refund-rights",
+      "working_title": "Off-Plan Project Cancelled in Dubai: Your Refund Rights",
+      "intent": "informational_high_trust",
+      "target_queries": ["developer cancelled project dubai refund", "off plan project cancellation rera", "escrow refund dubai"],
+      "must_not_cannibalize": ["guides/off-plan-risks-delays-dubai", "guides/escrow-oqood-dubai-explained"],
+      "differentiation": "Existing pages cover risk and escrow mechanics. This covers what happens after cancellation: RERA procedure, escrow refund waterfall, buyer priority, realistic recovery rates.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 19, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "dubai-developer-delay-compensation-claim",
+      "working_title": "Claiming Compensation for Off-Plan Delays in Dubai",
+      "intent": "informational_high_trust",
+      "target_queries": ["off plan delayed dubai compensation", "can i claim developer delay dubai"],
+      "must_not_cannibalize": ["guides/off-plan-risks-delays-dubai"],
+      "differentiation": "Remedy, not risk: SPA delay clauses, the 30% completion threshold, RERA remedies, how claims actually resolve.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 20, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "dubai-property-resale-exit-cost-model",
+      "working_title": "The Real Cost of Selling Dubai Property",
+      "intent": "commercial_investigation",
+      "target_queries": ["cost of selling property dubai", "how long to sell dubai property", "dubai property exit costs"],
+      "must_not_cannibalize": ["guides/dubai-property-flipping-guide", "guides/how-to-flip-off-plan-dubai", "guides/leaving-dubai-exit-checklist"],
+      "differentiation": "'resale' appears in zero slugs. Full exit model: agent 2%, NOC, DLD, mortgage settlement, early-settlement penalty, realistic days-on-market by area, off-plan assignment route. The number every serious investor asks for and no broker publishes.",
+      "lead_value": "high"
+    },
+    {
+      "id": 21, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "dubai-service-charge-dispute-escalation",
+      "working_title": "How to Challenge a Dubai Service Charge",
+      "intent": "informational_high_trust",
+      "target_queries": ["service charge too high dubai", "dispute mollak service charge", "owner association rights dubai"],
+      "must_not_cannibalize": ["guides/dubai-service-charge-index-explained"],
+      "differentiation": "How to challenge a budget: Mollak audit records, owner association rights, RERA escalation. Pairs with tool id 3.",
+      "lead_value": "low"
+    },
+    {
+      "id": 22, "batch": "N4", "priority": "P3", "collection": "guides",
+      "slug": "uae-rental-income-repatriation-fx",
+      "working_title": "Getting Rental Income Out of the UAE: FX, Limits and Reporting",
+      "intent": "informational",
+      "target_queries": ["send rental income out of uae", "repatriate rent dubai", "transfer money out of uae property income"],
+      "must_not_cannibalize": ["guides/currency-transfer-buy-property-uae", "guides/rental-income-tax-uae"],
+      "differentiation": "Existing page covers money coming in. This covers money going out: FX spread, bank limits, CRS reporting, home-country treatment. Closes the investor lifecycle.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 23, "batch": "N5", "priority": "P4", "collection": "guides",
+      "slug": "aed-2m-golden-visa-best-value-units",
+      "working_title": "Best Value AED 2M Units for the Golden Visa",
+      "intent": "transactional",
+      "target_queries": ["cheapest property for golden visa dubai", "aed 2m property golden visa which area", "best area golden visa property"],
+      "must_not_cannibalize": ["guides/uae-golden-visa-property", "guides/best-areas-buy-property-dubai"],
+      "differentiation": "Extremely high purchase intent, no equivalent anywhere. Which actual areas and unit types clear AED 2M while still netting a defensible yield.",
+      "lead_value": "very_high"
+    },
+    {
+      "id": 24, "batch": "N5", "priority": "P4", "collection": "guides",
+      "slug": "dubai-first-investment-under-aed-1m",
+      "working_title": "Your First Dubai Investment Under AED 1M",
+      "intent": "transactional",
+      "target_queries": ["cheapest area to invest dubai", "dubai property under 1 million", "dubai property small budget"],
+      "must_not_cannibalize": ["guides/best-areas-buy-property-dubai", "guides/highest-rental-yield-areas-dubai"],
+      "differentiation": "Budget-anchored entry playbook rather than a ranking: what AED 700k-1M actually buys, financing at that level, realistic net yield, what to avoid.",
+      "lead_value": "high"
+    },
+    {
+      "id": 25, "batch": "N5", "priority": "P4", "collection": "guides",
+      "slug": "gulf-property-portfolio-sequencing",
+      "working_title": "Sequencing a Gulf Property Portfolio",
+      "intent": "transactional",
+      "target_queries": ["second property dubai", "build property portfolio uae", "multiple properties golden visa"],
+      "must_not_cannibalize": ["guides/golden-visa-multiple-properties-uae", "compare/*"],
+      "differentiation": "Repeat-buyer content - nobody covers sequencing. Order of purchases, cross-market diversification, aggregation to AED 2M, financing across markets. Highest-value lead segment.",
+      "lead_value": "very_high"
+    },
+    {
+      "id": 26, "batch": "N5", "priority": "P4", "collection": "guides",
+      "slug": "uae-property-purchase-timeline-week-by-week",
+      "working_title": "UAE Property Purchase Timeline: Week by Week",
+      "intent": "transactional",
+      "target_queries": ["how long to buy property dubai", "dubai property purchase timeline", "how long does dubai property transfer take"],
+      "must_not_cannibalize": ["guides/how-to-buy-property-dubai-step-by-step", "guides/dubai-property-handover-checklist"],
+      "differentiation": "Existing page lists steps. This is a calendar: week 1 to week 8, ready vs off-plan vs mortgaged, with realistic slippage points marked.",
+      "lead_value": "high"
+    },
+    {
+      "id": 27, "batch": "N6", "priority": "P1", "collection": "page",
+      "slug": "methodology",
+      "working_title": "Invest Gulf Methodology and Data Sources",
+      "intent": "brand_eeat",
+      "target_queries": ["invest gulf methodology", "brand/citability"],
+      "must_not_cannibalize": ["/methodology/ (existing, 177 words)"],
+      "differentiation": "Expand the existing thin page into a citable methodology: named data sources, update cadence, scope limits, editorial independence statement, correction policy. This is what an answer engine checks before citing. Currently one of the thinnest pages on the site.",
+      "action": "expand_existing",
+      "lead_value": "low"
+    },
+    {
+      "id": 28, "batch": "N6", "priority": "P4", "collection": "guides",
+      "slug": "gulf-property-glossary",
+      "working_title": "Gulf Property Glossary: Oqood, Ejari, Mollak and the Rest",
+      "intent": "informational_entity",
+      "target_queries": ["what is oqood", "what is ejari", "what is mollak", "musataha meaning", "usufruct uae property", "what is tawtheeq"],
+      "must_not_cannibalize": [],
+      "differentiation": "Strong AEO/entity play: Oqood, Ejari, Mollak, Tawtheeq, Trakheesi, NOC, Usufruct, Musataha, Iqama, REGA, DMT, KHDA/ADEK, each a linkable anchor. Captures a wide definitional long tail and becomes the site's most-linked internal asset.",
+      "lead_value": "low"
+    },
+    {
+      "id": 29, "batch": "N6", "priority": "P1", "collection": "guides",
+      "slug": "how-to-verify-gulf-property-claims",
+      "working_title": "How to Verify Any Gulf Property Claim Yourself",
+      "intent": "informational_high_trust",
+      "target_queries": ["how to check dubai developer rera", "verify property listing dubai", "check trakheesi permit", "verify escrow account dubai"],
+      "must_not_cannibalize": ["guides/due-diligence-dubai-property"],
+      "differentiation": "Existing page is a buyer's due-diligence process. This is a verification manual for any claim: which official portal proves what (DLD, Trakheesi, Mollak, Ejari, REGA, MOI) with lookup steps. Pure GEO citability.",
+      "lead_value": "medium"
+    },
+    {
+      "id": 30, "batch": "N6", "priority": "P3", "collection": "guides",
+      "slug": "when-not-to-buy-gulf-property",
+      "working_title": "When Not to Buy Gulf Property",
+      "intent": "informational_high_trust",
+      "target_queries": ["is dubai property a bad investment", "should i not buy dubai property", "dubai property risks for buyers"],
+      "must_not_cannibalize": ["guides/is-dubai-property-bubble-2026"],
+      "differentiation": "Existing page asks a market-timing question. This is the anti-sales page: buyer profiles and situations where the honest answer is don't buy - short horizons, leverage limits, currency mismatch, service-charge-sensitive yields, illiquid secondary markets. No competitor with a sales incentive can publish this. Strongest trust asset available.",
+      "lead_value": "medium"
+    }
+  ],
+  "sequencing": [
+    { "phase": "blocked", "precondition": "cleanup waves W0-W4 complete", "topic_ids": [] },
+    { "phase": "P1", "topic_ids": [7, 8, 9, 10, 11, 27, 29] },
+    { "phase": "P2", "topic_ids": [1, 2, 3, 4, 5, 6] },
+    { "phase": "P3", "topic_ids": [17, 18, 19, 20, 21, 22, 30] },
+    { "phase": "P4", "topic_ids": [23, 24, 25, 26, 28] },
+    { "phase": "P5", "precondition": "cleanup wave W8-1 complete", "topic_ids": [12, 13, 14, 15, 16] }
+  ],
+  "approval": {
+    "required_by": "more-group-content-os/policies/publishing-gates.md",
+    "record_in": ".content-os/lock.json",
+    "note": "Topic discovery alone is not approval to write. Needs Maxim plan confirmation or explicit topic ids."
+  }
+}
