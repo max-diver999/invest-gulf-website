@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+import { rehypeImageAttrs } from './scripts/lib/rehype-image-attrs.mjs';
 import vercel from '@astrojs/vercel';
 import {
   collectSitemapExclusions,
@@ -57,6 +58,6 @@ export default defineConfig({
         return { ...item, priority: 0.7, changefreq: 'monthly' };
       },
     }),
-    mdx(),
+    mdx({ rehypePlugins: [rehypeImageAttrs] }),
   ],
 });

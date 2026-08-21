@@ -131,7 +131,16 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
     </header>
 
     {heroImage && (
-      <img src={heroImage} alt={heroAlt} class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]" loading="eager" />
+      <img
+        src={heroImage}
+        alt={heroAlt}
+        width="1280"
+        height="420"
+        class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      />
     )}
 
     {leadPlacement === 'early' && (

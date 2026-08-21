@@ -1,21 +1,35 @@
+# Invest Gulf — independent UAE & Gulf property research
+# Disallow rules must sit inside each user-agent group: a blank line does not
+# end a group, so rules placed after the last group apply only to that agent.
+
 User-agent: *
 Allow: /
-
+Disallow: /api/
+Disallow: /thanks/
+Disallow: /site-report/
 # Content Signals — allow AI search citation, deny training use
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: GPTBot
 Allow: /
+Disallow: /api/
+Disallow: /thanks/
+Disallow: /site-report/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
+Disallow: /thanks/
+Disallow: /site-report/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /api/
+Disallow: /thanks/
+Disallow: /site-report/
 
 User-agent: PerplexityBot
 Allow: /
-
 Disallow: /api/
 Disallow: /thanks/
 Disallow: /site-report/
