@@ -422,3 +422,235 @@ seller cannot maintain" play — cheap to update, high citation value for
 AEO/GEO answers that need a dated source. `when-not-to-buy` is the N6 trust
 play: anti-sales content that differentiates an independent research site
 from every brokerage competitor.
+
+---
+
+## Phase 6 — Mobile navigation and usability
+
+Audited by rendering the local build in a real Chromium at an iPhone viewport
+(390×844) and measuring, not by reading CSS. Three defects found, all fixed.
+
+### P0.1 — No mobile navigation at all
+
+`Header.astro` carried the nav as `hidden md:flex` with no hamburger. Measured
+header contents at 390px: **logo and one CTA button, nothing else**. A
+593-page research site with no way to reach any hub from the header; the only
+route was scrolling to the footer.
+
+The desktop bar was also incomplete: it linked 2 of the 5 content collections.
+Areas, Projects and News had no header link at any viewport.
+
+Fixed: accessible hamburger (44×44, `aria-expanded`, `aria-controls`, Escape
+to close, scroll lock, resize reset) opening a sectioned drawer with all five
+collections plus GCC yields, About, Methodology, Contact and a CTA. `Areas`
+added to the desktop bar.
+
+### P0.2 — Wide tables clipped and unreachable
+
+`.prose table` had no scroll container and `main` uses `overflow-x: clip`, so
+a table wider than the viewport lost its right-hand columns **with no way to
+scroll to them**. Measured on a new guide: table 498px in a 390px viewport,
+last column invisible and unreachable.
+
+Fixed in CSS rather than a rehype plugin so it covers the 5 `.astro` pages
+with tables as well as the 593 MDX pages: the table becomes its own scroll
+container, plus a cell min-width on mobile so cells stop wrapping to two words
+per line. Verified: widest table now 664px scrollable inside 342px.
+
+### P0.3 — /guides/ hub was 136 mobile screens
+
+The hub rendered all 393 indexable guides as full cards with no filter, no
+search, no pagination: **114,520px tall, about 136 mobile screens**.
+
+Fixed: topic facets derived from slug and title keywords (tags were too
+fragmented to group on: 69 of 463 carried "dubai"), a live search over title,
+description and tags, a result count, and progressive disclosure in batches of
+24. Every card stays in the DOM, so all 393 links remain crawlable and the
+no-JS view is unchanged. Result: **136 screens → 11**.
+
+### Regressions I introduced and fixed in the same pass
+
+Both from the same cause: Tailwind utilities sit in a cascade layer, so the
+unlayered rules in a component `<style>` block outrank them.
+
+- `.btn-primary { display: inline-flex }` beat `hidden sm:inline-flex`, so
+  three items crowded the 390px header and the brand wrapped to two lines.
+- `.ig-nav-toggle { display: inline-flex }` beat `md:hidden`, leaving the
+  hamburger visible on desktop.
+
+Both breakpoint rules moved into the component's own media queries.
+
+### Verification
+
+| Viewport | Horizontal overflow | Header items | Brand lines | Widest table |
+|---|---|---|---|---|
+| 390 mobile | none | 2 (logo, menu) | 1 | scrolls |
+| 768 tablet | none | 7 | 1 | fits |
+| 1280 desktop | none | 7 (no hamburger) | 1 | fits |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0 (avg 86 A),
+build 593 pages / 0 rendered issues.
+
+### Not done — gaps against a commercial competitor
+
+Compared against a screen recording of moregroup.estate supplied by the owner.
+Their mobile build carries several patterns this site has no equivalent for.
+Listed as findings, not fixed, because each is a product decision:
+
+- Card metadata. Their guide cards show a photo, category and region badges,
+  "From $180K · 8–10% yield" and a read time. Ours are text-only with no
+  images and no decision-useful metadata.
+- Entry points by budget. A "Browse by Budget" tile grid ($100K bands) and an
+  area grid showing yield ranges per area.
+- Interactive calculator with price chips and a slider (matches roadmap N1).
+- Persistent WhatsApp button and a chat assistant on every screen.
+- Currency switcher.
+
+Note on evidence: outbound network is blocked by the environment's egress
+policy, so the competitor could not be fetched directly. The comparison rests
+on frames extracted from the owner's screen recording.
+
+---
+
+## Phase 7 — Card metadata and entry points
+
+Follow-up to the two gaps identified against the competitor recording.
+
+### What I did not do, and why
+
+**Hero images on cards.** Rejected: 470 guides share only **70 distinct hero
+images**. 19 guides use the same West Bay Doha photo and 14 the same Al Khor
+photo, so a card grid would repeat the same image several times per screen and
+put a Qatar photo on a Dubai guide. Worse than no image.
+
+**Auto-extracted price and yield figures.** Rejected after testing two
+extractors against all 470 TL;DR blocks:
+
+| Extractor | Coverage | Verdict |
+|---|---|---|
+| First money or percentage match | 73% | Unusable. Labelled a 30% down payment and a 92% completion figure as yields, and returned "AED 0". |
+| Context-required (word "yield" or "from" adjacent) | 10% | Still wrong on roughly a third: school fees, a co-working desk rate and a salary requirement all read as property entry prices. |
+
+A wrong figure on a card is worse than no figure on a site whose positioning
+is that every number should be verified. Curated data was used instead.
+
+### What shipped
+
+**Card metadata, frontmatter only, so 100% accurate.** Topic badge from the
+same facet the filter uses, then two tags, then `readingTime` and the
+`updatedDate` month: "14 min read · Updated Aug 2026". The updated date is a
+deliberate trust signal for a domain recovering from a scaled-content
+demotion.
+
+**`EntryPoints.astro`, a curated entry grid** on the guides hub and homepage:
+
+- Eight goal tiles phrased as the buyer's own question, including the two real
+  budget entry points the corpus now has (under AED 1M, clearing AED 2M) and
+  the anti-sales page.
+- Eight market tiles carrying a gross yield range checked by hand against each
+  market guide's own TL;DR: Dubai 6-9%, Abu Dhabi 5.5-9.5%, RAK 6-9%, Saudi
+  4-6%, Qatar 5-7%, Oman 4-5%, Bahrain 6-8%. Sharjah states no defensible
+  range on its own guide, so that tile carries a qualitative note instead of a
+  number rather than inventing one.
+- A footnote that these are gross and that net runs 1.5 to 2.5 points lower,
+  so the tiles cannot be read as achievable returns.
+
+The thin three-card "Start here" block on the hub was replaced by this grid;
+its dead `prioritySlugs` code was removed.
+
+### Verification
+
+| Viewport | Horizontal overflow | Entry tiles | Broken hrefs | Card meta |
+|---|---|---|---|---|
+| 390 mobile | none | 16 | 0 | present |
+| 1280 desktop | none | 16 | 0 | present |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0, build 593
+pages / 0 rendered issues, sitemap 520 URLs.
+
+### Still open from the competitor comparison
+
+Interactive calculator (roadmap N1), persistent WhatsApp button and chat
+assistant, currency switcher. Each is a product decision rather than a defect.
+
+---
+
+## Phase 8 — Persistent WhatsApp button and currency toggle
+
+Calculator explicitly dropped by the owner. These two shipped.
+
+### WhatsApp float
+
+`WhatsAppFloat.astro`, fixed bottom-right on every page, using the `float`
+placement that `whatsapp-intent.ts` already defined but nothing had ever
+rendered. It routes through the existing attribution pipeline, so clicks carry
+a ref code and reach `/api/wa-intent/` like every other WhatsApp entry point.
+
+Positioned to clear `StickyMobileLeadBar`, which is full-width and slides in
+after 200px of scroll: the button lifts to `5.25rem` under
+`body.has-ig-sticky-bar`. Measured on mobile: button bottom at y=760, bar top
+at y=784, no overlap.
+
+**Open issue this amplifies.** `SITE.whatsapp` is still the +66 Thailand
+number. A floating button puts it on every screen of a UAE property site,
+where previously it appeared only on the contact page and in bridges. The
+button is correct; the number behind it is the owner's outstanding decision.
+
+### Currency toggle
+
+Scope was constrained by what can be sourced honestly:
+
+- Gulf currencies are **pegged** by central-bank policy, so AED 3.6725,
+  SAR 3.75, QAR 3.64, OMR 0.3845 and BHD 0.376 per USD need no live feed and
+  the conversion is exact, not indicative.
+- EUR, GBP and INR float. This site has no rate source and the environment has
+  no outbound network, so those are **not offered**. Inventing a rate on a
+  page that tells readers to verify every figure would repeat the mistake
+  Phase 7 rejected.
+- KWD is excluded: the dinar tracks an undisclosed basket, so no fixed divisor
+  is defensible. Its 40 corpus occurrences stay unconverted.
+
+Design decisions:
+
+- **Additive, never replacing.** Renders "AED 2M (~$545K)", so the original
+  figure survives and any error is visible rather than silent.
+- **Off by default**, opt-in, persisted in `localStorage` with every access in
+  try/catch. Default render carries no injected text, so there is no SEO
+  surface.
+- **Ranges matched whole**: "AED 500-5,000 (~$136 to $1,361)" rather than a
+  conversion wedged into the middle of the range.
+- Rounding switches to full figures below $100K, because fees are mostly four
+  digits and "$1K" would discard the part a reader is checking.
+- A one-time note states the conversions come from pegs, not market rates.
+
+Control sits in the desktop header and in the mobile drawer, so the 390px
+header stays at logo plus menu.
+
+**Bug found and fixed during verification.** The node filter reused the global
+regex, and `RegExp.test` advances `lastIndex` on a `/g` pattern, so every
+second text node was skipped and whole pages converted nothing. The filter now
+uses a stateless copy. A second apparent failure was a test artifact, not a
+defect: four pages shared one browser context and therefore one
+`localStorage`, so the toggle alternated on and off between them.
+
+### Verification
+
+Conversions checked by hand against the pegs on one page per currency:
+
+| Page | Figure | Shown | Check |
+|---|---|---|---|
+| cost-of-buying | AED 580 | $158 | 580 / 3.6725 = 157.9 |
+| aed-2m-golden-visa | AED 2 million | $545K | 2,000,000 / 3.6725 = 544,588 |
+| qatar-investment | QAR 730,000 | $201K | 730,000 / 3.64 = 200,549 |
+| oman-investment | OMR 250K | $650K | 250,000 / 0.3845 = 650,195 |
+| saudi-rental-yield | SAR 100 to 150 | $27 to $40 | 100 / 3.75 = 26.7 |
+| bahrain-investment | BHD 50K-90K | $133K to $239K | 50,000 / 0.376 = 132,979 |
+
+| Viewport | Overflow | Brand lines | FX in header | WhatsApp |
+|---|---|---|---|---|
+| 390 mobile | none | 1 | no, in drawer | 52x52, clears sticky bar |
+| 768 tablet | none | 1 | no, in drawer | visible |
+| 1280 desktop | none | 1 | yes | visible |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0, rendered
+audit 593 pages / 0 issues.

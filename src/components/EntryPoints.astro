@@ -1,0 +1,191 @@
+---
+/**
+ * Entry points into a 470-guide corpus.
+ *
+ * Every figure here is curated and checked against the target page's own
+ * TL;DR, not extracted at build time. Auto-extraction was tried and rejected:
+ * on this corpus a first-match regex labels school fees and co-working desk
+ * rates as entry prices, and reads down-payment percentages as yields. A wrong
+ * number on a card is worse than no number on a site that sells verification.
+ *
+ * When a market guide states no defensible yield range, the tile carries a
+ * qualitative note instead of a number. Sharjah is the current example.
+ */
+interface Props {
+  showGoals?: boolean;
+  showMarkets?: boolean;
+  heading?: string;
+}
+const { showGoals = true, showMarkets = true, heading } = Astro.props;
+
+const goals = [
+  { q: 'What will it actually cost?', note: 'Every fee, with worked AED examples', href: '/guides/cost-of-buying-property-dubai/' },
+  { q: 'How does the purchase work?', note: 'Offer to trustee, step by step', href: '/guides/how-to-buy-property-dubai-step-by-step/' },
+  { q: 'What will it earn?', note: 'Gross versus net, after service charges', href: '/guides/dubai-rental-yield-guide/' },
+  { q: 'Can it get me residency?', note: 'The AED 2M property route, current rules', href: '/guides/uae-golden-visa-property/' },
+  { q: 'I have under AED 1M', note: 'Entry prices and yields by community', href: '/guides/dubai-first-investment-under-aed-1m/' },
+  { q: 'I need to clear AED 2M', note: 'Which units qualify, and what they give up', href: '/guides/aed-2m-golden-visa-best-value-units/' },
+  { q: 'I am buying off-plan', note: 'Escrow, Oqood and developer checks', href: '/guides/off-plan-property-dubai-guide/' },
+  { q: 'Should I buy at all?', note: 'Nine cases where renting wins', href: '/guides/when-not-to-buy-gulf-property/' },
+];
+
+const markets = [
+  { name: 'Dubai', figure: '6-9%', note: 'Deepest resale market', href: '/guides/dubai-property-investment-guide/' },
+  { name: 'Abu Dhabi', figure: '5.5-9.5%', note: 'Lower acquisition costs', href: '/guides/abu-dhabi-property-investment-guide/' },
+  { name: 'Ras Al Khaimah', figure: '6-9%', note: 'Below Dubai Marina pricing', href: '/guides/ras-al-khaimah-property-investment-guide/' },
+  { name: 'Sharjah', figure: null, note: 'Dubai commuter demand', href: '/guides/sharjah-property-investment-guide/' },
+  { name: 'Saudi Arabia', figure: '4-6%', note: 'Growth thesis over yield', href: '/guides/saudi-arabia-property-foreigners-guide/' },
+  { name: 'Qatar', figure: '5-7%', note: 'QAR pegged to the dollar', href: '/guides/qatar-property-investment-guide/' },
+  { name: 'Oman', figure: '4-5%', note: 'ITC zones only', href: '/guides/oman-property-investment-guide/' },
+  { name: 'Bahrain', figure: '6-8%', note: 'Lowest entry prices in the Gulf', href: '/guides/bahrain-property-investment-guide/' },
+];
+---
+<section class="ig-entry">
+  {heading && <h2 class="text-2xl mb-2">{heading}</h2>}
+
+  {showGoals && (
+    <>
+      <p class="ig-entry__label">Start with what you need</p>
+      <ul class="ig-entry__grid ig-entry__grid--goals">
+        {goals.map((g) => (
+          <li>
+            <a href={g.href} class="ig-entry__tile">
+              <span class="ig-entry__q">{g.q}</span>
+              <span class="ig-entry__note">{g.note}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  {showMarkets && (
+    <>
+      <p class="ig-entry__label">Or start with a market</p>
+      <ul class="ig-entry__grid ig-entry__grid--markets">
+        {markets.map((m) => (
+          <li>
+            <a href={m.href} class="ig-entry__tile ig-entry__tile--market">
+              <span class="ig-entry__market">{m.name}</span>
+              {m.figure
+                ? <span class="ig-entry__figure">{m.figure} <span>gross yield</span></span>
+                : <span class="ig-entry__figure ig-entry__figure--soft">{m.note}</span>}
+              {m.figure && <span class="ig-entry__note">{m.note}</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p class="ig-entry__foot">
+        Gross yield ranges as stated on each market guide. Net yield after service charges,
+        management and vacancy typically runs 1.5 to 2.5 points lower.
+      </p>
+    </>
+  )}
+</section>
+
+<style>
+  .ig-entry__label {
+    margin: 0 0 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .ig-entry__grid {
+    list-style: none;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .ig-entry__grid--goals {
+    grid-template-columns: 1fr;
+  }
+
+  .ig-entry__grid--markets {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 0.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .ig-entry__grid--goals {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .ig-entry__grid--markets {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ig-entry__grid--goals {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .ig-entry__tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    height: 100%;
+    min-height: 64px;
+    padding: 0.9rem 1rem;
+    background: var(--color-surface, #fff);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .ig-entry__tile:hover {
+    border-color: var(--color-teal);
+    box-shadow: 0 4px 14px rgba(31, 36, 33, 0.06);
+  }
+
+  .ig-entry__q {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    line-height: 1.3;
+  }
+
+  .ig-entry__note {
+    font-size: 0.78rem;
+    color: var(--color-muted);
+    line-height: 1.35;
+  }
+
+  .ig-entry__market {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-muted);
+  }
+
+  .ig-entry__figure {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-teal-dark, #235851);
+    line-height: 1.2;
+  }
+
+  .ig-entry__figure span {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-muted);
+  }
+
+  .ig-entry__figure--soft {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+
+  .ig-entry__foot {
+    margin: 0 0 2rem;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+</style>
