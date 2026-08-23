@@ -2,7 +2,7 @@
 
 Site: https://invest-gulf.com
 Contact: info@invest-gulf.com
-Updated: 2026-08-21
+Updated: 2026-08-23
 
 ## Hubs
 - https://invest-gulf.com/
@@ -18,7 +18,7 @@ Updated: 2026-08-21
 - https://invest-gulf.com/invest-dubai-property/
 - https://invest-gulf.com/golden-visa-dubai-property/
 
-## guides (390)
+## guides (393)
 - https://invest-gulf.com/guides/abu-dhabi-adgm-setup/
 - https://invest-gulf.com/guides/abu-dhabi-banking-expats/
 - https://invest-gulf.com/guides/abu-dhabi-cost-of-living/
@@ -294,6 +294,7 @@ Updated: 2026-08-21
 - https://invest-gulf.com/guides/qatar-culture-etiquette/
 - https://invest-gulf.com/guides/qatar-driving-license/
 - https://invest-gulf.com/guides/qatar-family-visa-sponsorship/
+- https://invest-gulf.com/guides/qatar-foreign-ownership-rules-changelog/
 - https://invest-gulf.com/guides/qatar-healthcare-guide/
 - https://invest-gulf.com/guides/qatar-off-plan-guide/
 - https://invest-gulf.com/guides/qatar-off-plan-vs-ready-property/
@@ -389,6 +390,7 @@ Updated: 2026-08-21
 - https://invest-gulf.com/guides/uae-free-zone-vs-mainland/
 - https://invest-gulf.com/guides/uae-freelance-permit-dubai/
 - https://invest-gulf.com/guides/uae-golden-visa-property/
+- https://invest-gulf.com/guides/uae-golden-visa-property-rule-changes-log/
 - https://invest-gulf.com/guides/uae-green-visa-freelancer/
 - https://invest-gulf.com/guides/uae-green-visa-guide/
 - https://invest-gulf.com/guides/uae-green-visa-skilled-worker/
@@ -408,6 +410,7 @@ Updated: 2026-08-21
 - https://invest-gulf.com/guides/umm-al-quwain-property-investment/
 - https://invest-gulf.com/guides/umm-al-quwain-rental-yield-guide/
 - https://invest-gulf.com/guides/vat-uae-property-rent/
+- https://invest-gulf.com/guides/when-not-to-buy-gulf-property/
 - https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/
 
 ## areas (57)
