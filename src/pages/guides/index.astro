@@ -2,17 +2,11 @@
 export const prerender = true;
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntryPoints from '../../components/EntryPoints.astro';
 
 const guides = (await getCollection('guides'))
   .filter((g) => !g.data.noindex)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const prioritySlugs = [
-  'dubai-property-investment-guide',
-  'can-foreigners-buy-property-uae',
-  'uae-golden-visa-property',
-];
-const priority = guides.filter((g) => prioritySlugs.includes(g.id));
 
 /**
  * Topic facets.
@@ -37,9 +31,16 @@ function topicOf(id: string, title: string) {
   return 'other';
 }
 
+const TOPIC_LABEL = Object.fromEntries(TOPICS.map((t) => [t.id, t.label]));
+
+const fmtMonth = (d: Date) => d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+
 const rows = guides.map((g) => ({
   guide: g,
   topic: topicOf(g.id, g.data.title),
+  topicLabel: TOPIC_LABEL[topicOf(g.id, g.data.title)] ?? 'Guide',
+  readingTime: g.data.readingTime,
+  updated: fmtMonth(g.data.updatedDate ?? g.data.pubDate),
   haystack: `${g.data.title} ${g.data.description} ${(g.data.tags || []).join(' ')}`.toLowerCase(),
 }));
 
@@ -57,19 +58,7 @@ const counts = TOPICS.map((t) => ({ ...t, n: rows.filter((r) => r.topic === t.id
       </p>
     </header>
 
-    {priority.length > 0 && (
-      <section class="mb-10 surface-card p-6 md:p-8">
-        <h2 class="text-xl mb-5">Start here</h2>
-        <div class="grid md:grid-cols-3 gap-5">
-          {priority.map((guide) => (
-            <a href={`/guides/${guide.id}/`} class="block p-5 rounded-xl bg-[var(--color-page)] hover:bg-[var(--color-teal-light)] no-underline transition-colors">
-              <h3 class="text-base mb-1 font-semibold text-[var(--color-ink)]">{guide.data.title}</h3>
-              <p class="text-sm text-[var(--color-muted)]">{guide.data.description}</p>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
+    <EntryPoints />
 
     <div id="ig-filter" class="ig-filter" hidden>
       <label class="ig-filter__search">
@@ -86,17 +75,19 @@ const counts = TOPICS.map((t) => ({ ...t, n: rows.filter((r) => r.topic === t.id
     </div>
 
     <div class="grid md:grid-cols-2 gap-6" id="ig-guide-grid">
-      {rows.map(({ guide, topic, haystack }) => (
+      {rows.map(({ guide, topic, topicLabel, readingTime, updated, haystack }) => (
         <article class="surface-card p-7 ig-guide" data-topic={topic} data-text={haystack}>
           <div class="flex flex-wrap gap-2 mb-3">
-            {guide.data.tags?.slice(0, 3).map((tag) => (
-              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-teal-light)] text-[var(--color-teal)] font-medium">{tag}</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-teal-light)] text-[var(--color-teal)] font-medium">{topicLabel}</span>
+            {guide.data.tags?.slice(0, 2).map((tag) => (
+              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-page)] text-[var(--color-muted)] font-medium">{tag}</span>
             ))}
           </div>
           <h2 class="text-lg mb-2 font-semibold">
             <a href={`/guides/${guide.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{guide.data.title}</a>
           </h2>
-          <p class="text-sm text-[var(--color-muted)]">{guide.data.description}</p>
+          <p class="text-sm text-[var(--color-muted)] mb-3">{guide.data.description}</p>
+          <p class="text-xs text-[var(--color-muted)]">{readingTime} min read · Updated {updated}</p>
         </article>
       ))}
     </div>

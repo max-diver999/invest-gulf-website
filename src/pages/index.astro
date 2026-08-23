@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
+import EntryPoints from '../components/EntryPoints.astro';
 import { getCollection } from 'astro:content';
 import { SITE } from '../data/site';
 import { STICKY_HOME } from '../data/sticky-cta';
@@ -81,6 +82,12 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
           </a>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="site-container">
+      <EntryPoints heading="Find your starting point" />
     </div>
   </section>
 

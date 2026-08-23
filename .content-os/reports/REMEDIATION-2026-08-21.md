@@ -509,3 +509,66 @@ Listed as findings, not fixed, because each is a product decision:
 Note on evidence: outbound network is blocked by the environment's egress
 policy, so the competitor could not be fetched directly. The comparison rests
 on frames extracted from the owner's screen recording.
+
+---
+
+## Phase 7 — Card metadata and entry points
+
+Follow-up to the two gaps identified against the competitor recording.
+
+### What I did not do, and why
+
+**Hero images on cards.** Rejected: 470 guides share only **70 distinct hero
+images**. 19 guides use the same West Bay Doha photo and 14 the same Al Khor
+photo, so a card grid would repeat the same image several times per screen and
+put a Qatar photo on a Dubai guide. Worse than no image.
+
+**Auto-extracted price and yield figures.** Rejected after testing two
+extractors against all 470 TL;DR blocks:
+
+| Extractor | Coverage | Verdict |
+|---|---|---|
+| First money or percentage match | 73% | Unusable. Labelled a 30% down payment and a 92% completion figure as yields, and returned "AED 0". |
+| Context-required (word "yield" or "from" adjacent) | 10% | Still wrong on roughly a third: school fees, a co-working desk rate and a salary requirement all read as property entry prices. |
+
+A wrong figure on a card is worse than no figure on a site whose positioning
+is that every number should be verified. Curated data was used instead.
+
+### What shipped
+
+**Card metadata, frontmatter only, so 100% accurate.** Topic badge from the
+same facet the filter uses, then two tags, then `readingTime` and the
+`updatedDate` month: "14 min read · Updated Aug 2026". The updated date is a
+deliberate trust signal for a domain recovering from a scaled-content
+demotion.
+
+**`EntryPoints.astro`, a curated entry grid** on the guides hub and homepage:
+
+- Eight goal tiles phrased as the buyer's own question, including the two real
+  budget entry points the corpus now has (under AED 1M, clearing AED 2M) and
+  the anti-sales page.
+- Eight market tiles carrying a gross yield range checked by hand against each
+  market guide's own TL;DR: Dubai 6-9%, Abu Dhabi 5.5-9.5%, RAK 6-9%, Saudi
+  4-6%, Qatar 5-7%, Oman 4-5%, Bahrain 6-8%. Sharjah states no defensible
+  range on its own guide, so that tile carries a qualitative note instead of a
+  number rather than inventing one.
+- A footnote that these are gross and that net runs 1.5 to 2.5 points lower,
+  so the tiles cannot be read as achievable returns.
+
+The thin three-card "Start here" block on the hub was replaced by this grid;
+its dead `prioritySlugs` code was removed.
+
+### Verification
+
+| Viewport | Horizontal overflow | Entry tiles | Broken hrefs | Card meta |
+|---|---|---|---|---|
+| 390 mobile | none | 16 | 0 | present |
+| 1280 desktop | none | 16 | 0 | present |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0, build 593
+pages / 0 rendered issues, sitemap 520 URLs.
+
+### Still open from the competitor comparison
+
+Interactive calculator (roadmap N1), persistent WhatsApp button and chat
+assistant, currency switcher. Each is a product decision rather than a defect.
