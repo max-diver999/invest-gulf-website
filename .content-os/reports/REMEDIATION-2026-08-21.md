@@ -388,3 +388,37 @@ template fingerprint that W4 was spent removing.
   set in Vercel. The live site is unreachable from this environment.
 - The `unique` rubric axis sits at 53 corpus-wide. That gap closes with
   first-hand data, not another cleanup pass.
+
+---
+
+## Phase 5 — Wave N2/N6: changelogs + anti-sales trust page
+
+User approved a further wave ("пиши то, что считаешь нужным"). Screened the
+remaining roadmap topics against the full corpus index; wrote the three that
+survived with zero overlap, dropped three that did not:
+
+| Topic | Verdict |
+|---|---|
+| `uae-golden-visa-property-rule-changes-log` (N2 #8) | **Written**, GEO 75 B. 18 pages cover current rules; none dated the history. |
+| `qatar-foreign-ownership-rules-changelog` (N2 #10, slug de-year-stamped) | **Written**, GEO 72 B. Legal timeline 2004→2018→2020 uncovered. |
+| `when-not-to-buy-gulf-property` (N6 #30) | **Written**, GEO 76 B. Only anti-sales H2 in corpus was one Fujairah section. |
+| Oman ITC changelog (N2 #11) | Dropped — `oman-property-investment-guide` covers rules + 2025 zone risk. |
+| DLD fee schedule (N2 #9) | Dropped — `cost-of-buying-property-dubai` + `dld-mortgage-registration-fees`. |
+| How to verify claims (N6 #29) | Dropped — `dubai-rest-app-property-due-diligence` covers it for Dubai. |
+
+Changelog dates were cross-checked against facts the corpus already asserts
+(750K sole-owner removal + 400K joint share in 2026, October 2022 AED 2M
+reset, January 2024 down-payment removal, QAR 730K / 3.65M tiers, Law 10/2018
+PR distinction) so the new pages agree with existing ones. Six inbound links
+added (2 per new page) from the natural parents. pubDates staggered
+2026-08-22/23.
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit avg 86/100 A
+(exit 0), build 593 pages / 0 rendered issues, llms-full.txt 509 URLs,
+all three new pages in sitemap as `index,follow`.
+
+Rationale of the wave: dated regulatory changelogs are the N2 "content a
+seller cannot maintain" play — cheap to update, high citation value for
+AEO/GEO answers that need a dated source. `when-not-to-buy` is the N6 trust
+play: anti-sales content that differentiates an independent research site
+from every brokerage competitor.
