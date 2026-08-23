@@ -13,13 +13,44 @@ const prioritySlugs = [
   'uae-golden-visa-property',
 ];
 const priority = guides.filter((g) => prioritySlugs.includes(g.id));
+
+/**
+ * Topic facets.
+ *
+ * Tags are too fragmented to group on (69 of 463 guides carry "dubai" and
+ * nothing else in common), so the facet is derived from slug and title
+ * keywords instead. Order matters: the first match wins, so the narrower
+ * topics are tested before the broad ones.
+ */
+const TOPICS = [
+  { id: 'visas', label: 'Visas & residency', re: /visa|residenc|residency|iqama|golden|sponsor|emirates-id|iqama/i },
+  { id: 'offplan', label: 'Off-plan', re: /off-plan|offplan|oqood|handover|snag|escrow|developer-review|launch|delay/i },
+  { id: 'buying', label: 'Buying & costs', re: /buy|purchase|cost|fee|mortgage|financ|payment|dld|deposit|conveyanc|transfer|title-deed|sell/i },
+  { id: 'yields', label: 'Yields & returns', re: /yield|roi|return|rental-income|buy-to-let|portfolio|invest|service-charge/i },
+  { id: 'legal', label: 'Tax & legal', re: /tax|legal|law|dispute|inherit|will|zakat|compliance|rera|regulat|ownership/i },
+  { id: 'living', label: 'Living in the Gulf', re: /living|relocat|school|health|cultur|driving|bank|salary|grocery|commut|etiquette|expat/i },
+];
+
+function topicOf(id: string, title: string) {
+  const hay = `${id} ${title}`;
+  for (const t of TOPICS) if (t.re.test(hay)) return t.id;
+  return 'other';
+}
+
+const rows = guides.map((g) => ({
+  guide: g,
+  topic: topicOf(g.id, g.data.title),
+  haystack: `${g.data.title} ${g.data.description} ${(g.data.tags || []).join(' ')}`.toLowerCase(),
+}));
+
+const counts = TOPICS.map((t) => ({ ...t, n: rows.filter((r) => r.topic === t.id).length })).filter((t) => t.n > 0);
 ---
 <BaseLayout
   title="UAE & Gulf Property Investment Guides"
   description="Independent guides on Dubai, Abu Dhabi, and Gulf property, foreign ownership, Golden Visa, yields, and off-plan risks."
 >
   <section class="site-container py-14 md:py-20">
-    <header class="max-w-2xl mb-12">
+    <header class="max-w-2xl mb-10">
       <h1 class="text-3xl">Investment guides</h1>
       <p class="text-lg text-[var(--color-muted)] mt-3">
         Research-first articles for foreign buyers. Not developer brochures, verify all figures before you transact.
@@ -27,7 +58,7 @@ const priority = guides.filter((g) => prioritySlugs.includes(g.id));
     </header>
 
     {priority.length > 0 && (
-      <section class="mb-14 surface-card p-6 md:p-8">
+      <section class="mb-10 surface-card p-6 md:p-8">
         <h2 class="text-xl mb-5">Start here</h2>
         <div class="grid md:grid-cols-3 gap-5">
           {priority.map((guide) => (
@@ -40,9 +71,23 @@ const priority = guides.filter((g) => prioritySlugs.includes(g.id));
       </section>
     )}
 
-    <div class="grid md:grid-cols-2 gap-6">
-      {guides.map((guide) => (
-        <article class="surface-card p-7">
+    <div id="ig-filter" class="ig-filter" hidden>
+      <label class="ig-filter__search">
+        <span class="sr-only">Search guides</span>
+        <input type="search" id="ig-filter-q" placeholder={`Search ${rows.length} guides`} autocomplete="off" />
+      </label>
+      <div class="ig-filter__chips" role="group" aria-label="Filter by topic">
+        <button type="button" class="ig-chip is-active" data-topic="all">All</button>
+        {counts.map((t) => (
+          <button type="button" class="ig-chip" data-topic={t.id}>{t.label} <span>{t.n}</span></button>
+        ))}
+      </div>
+      <p class="ig-filter__count" id="ig-filter-count" aria-live="polite"></p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6" id="ig-guide-grid">
+      {rows.map(({ guide, topic, haystack }) => (
+        <article class="surface-card p-7 ig-guide" data-topic={topic} data-text={haystack}>
           <div class="flex flex-wrap gap-2 mb-3">
             {guide.data.tags?.slice(0, 3).map((tag) => (
               <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-teal-light)] text-[var(--color-teal)] font-medium">{tag}</span>
@@ -55,5 +100,187 @@ const priority = guides.filter((g) => prioritySlugs.includes(g.id));
         </article>
       ))}
     </div>
+
+    <div class="mt-8 text-center">
+      <button type="button" id="ig-show-more" class="btn-primary px-6 py-3" hidden></button>
+      <p id="ig-empty" class="text-[var(--color-muted)]" hidden>No guides match that search. Try a market name such as Dubai, Saudi or Qatar.</p>
+    </div>
   </section>
 </BaseLayout>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .ig-filter {
+    display: block;
+    position: sticky;
+    /* Set from the measured header height on load: the header is 77px on
+       mobile and 73px above the breakpoint, and a hard-coded value leaves a
+       gap that cards scroll through. */
+    top: var(--ig-header-h, 73px);
+    z-index: 20;
+    background: var(--color-page);
+    padding: 0.85rem 0 0.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .ig-filter__search input {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--color-ink);
+    background: var(--color-surface, #fff);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+  }
+
+  .ig-filter__search input:focus {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 1px;
+  }
+
+  .ig-filter__chips {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0.75rem 0 0.15rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .ig-filter__chips::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ig-chip {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-surface, #fff);
+    color: var(--color-muted);
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .ig-chip span {
+    opacity: 0.6;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ig-chip.is-active {
+    background: var(--color-teal-dark, #235851);
+    border-color: var(--color-teal-dark, #235851);
+    color: #fff;
+  }
+
+  .ig-filter__count {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+  }
+
+  .ig-guide[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  (function () {
+    var filter = document.getElementById('ig-filter');
+    var grid = document.getElementById('ig-guide-grid');
+    if (!filter || !grid) return;
+
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.ig-guide'));
+    var q = document.getElementById('ig-filter-q');
+    var countEl = document.getElementById('ig-filter-count');
+    var moreBtn = document.getElementById('ig-show-more');
+    var emptyEl = document.getElementById('ig-empty');
+    var chips = Array.prototype.slice.call(filter.querySelectorAll('.ig-chip'));
+
+    // Without JS every card stays in the document, which is what crawlers and
+    // no-script readers get. The page is only capped once this runs.
+    var PAGE = 24;
+    var topic = 'all';
+    var term = '';
+    var shown = PAGE;
+
+    function matches(card) {
+      if (topic !== 'all' && card.getAttribute('data-topic') !== topic) return false;
+      if (!term) return true;
+      return card.getAttribute('data-text').indexOf(term) !== -1;
+    }
+
+    function render() {
+      var n = 0;
+      for (var i = 0; i < cards.length; i++) {
+        var ok = matches(cards[i]);
+        if (ok) n++;
+        cards[i].hidden = !ok || n > shown;
+      }
+      countEl.textContent = n === cards.length
+        ? n + ' guides'
+        : n + ' of ' + cards.length + ' guides';
+      emptyEl.hidden = n !== 0;
+      var remaining = n - shown;
+      moreBtn.hidden = remaining <= 0;
+      if (remaining > 0) {
+        moreBtn.textContent = 'Show ' + Math.min(remaining, PAGE) + ' more';
+      }
+    }
+
+    filter.hidden = false;
+
+    function syncOffset() {
+      var header = document.querySelector('header');
+      if (header) {
+        document.documentElement.style.setProperty('--ig-header-h', Math.round(header.getBoundingClientRect().height) + 'px');
+      }
+    }
+    syncOffset();
+    window.addEventListener('resize', syncOffset, { passive: true });
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('is-active'); });
+        chip.classList.add('is-active');
+        topic = chip.getAttribute('data-topic');
+        shown = PAGE;
+        render();
+      });
+    });
+
+    var t;
+    q.addEventListener('input', function () {
+      clearTimeout(t);
+      t = setTimeout(function () {
+        term = q.value.trim().toLowerCase();
+        shown = PAGE;
+        render();
+      }, 120);
+    });
+
+    moreBtn.addEventListener('click', function () {
+      shown += PAGE;
+      render();
+    });
+
+    render();
+  })();
+</script>

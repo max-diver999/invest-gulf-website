@@ -1,25 +1,252 @@
 ---
 import { SITE } from '../data/site';
 
-const nav = [
+/**
+ * Primary navigation.
+ *
+ * The mobile drawer is not a reduced copy of the desktop bar: the desktop bar
+ * has room for five links, while the site has five content collections plus
+ * reference pages. The drawer lists all of them, because on mobile the header
+ * is the only navigation a reader has before the footer.
+ */
+const primary = [
   { label: 'Guides', href: '/guides/' },
   { label: 'Compare', href: '/compare/' },
+  { label: 'Areas', href: '/areas/' },
   { label: 'Get shortlist', href: '/get-shortlist/' },
   { label: 'About', href: '/about/' },
+];
+
+const drawerBrowse = [
+  { label: 'Guides', href: '/guides/', note: 'Buying, costs, visas, tax' },
+  { label: 'Areas', href: '/areas/', note: 'Community-level research' },
+  { label: 'Compare', href: '/compare/', note: 'Market and developer comparisons' },
+  { label: 'Projects', href: '/projects/', note: 'Individual developments' },
+  { label: 'News', href: '/news/', note: 'Dated regulatory updates' },
+  { label: 'GCC rental yields', href: '/gcc-rental-yields/', note: 'Yield benchmarks by market' },
+];
+
+const drawerAbout = [
+  { label: 'About', href: '/about/' },
+  { label: 'Methodology', href: '/methodology/' },
   { label: 'Contact', href: '/contact/' },
 ];
 ---
 <header class="sticky top-0 z-50 border-b border-[var(--color-border)] bg-[rgba(255,255,255,0.9)] backdrop-blur-md">
-  <div class="site-container flex items-center justify-between gap-4 py-4">
-    <a href="/" class="flex items-center gap-2 no-underline">
+  <div class="site-container flex items-center justify-between gap-3 py-4">
+    <a href="/" class="flex items-center gap-2 no-underline py-1">
       <img src="/favicon.svg?v=3" alt="" width="32" height="32" class="rounded-lg" />
-      <span class="text-lg font-semibold text-[var(--color-ink)]">{SITE.name}</span>
+      <span class="text-lg font-semibold text-[var(--color-ink)] whitespace-nowrap">{SITE.name}</span>
     </a>
-    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-      {nav.map((item) => (
+
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium" aria-label="Primary">
+      {primary.map((item) => (
         <a href={item.href} class="text-[var(--color-muted)] hover:text-[var(--color-ink)] no-underline">{item.label}</a>
       ))}
     </nav>
-    <a href="/get-shortlist/" class="btn-primary text-sm px-4 py-2 shrink-0">Free shortlist</a>
+
+    <div class="flex items-center gap-2">
+      <a href="/get-shortlist/" class="btn-primary ig-header-cta text-sm px-4 py-2 shrink-0">Free shortlist</a>
+      <button
+        type="button"
+        id="ig-nav-toggle"
+        class="ig-nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="ig-nav-drawer"
+      >
+        <span class="ig-nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="ig-nav-drawer" class="ig-nav-drawer" hidden>
+    <div class="ig-nav-drawer__panel">
+      <a href="/get-shortlist/" class="ig-nav-drawer__cta" data-cta="nav_drawer_shortlist">Get a free shortlist</a>
+
+      <p class="ig-nav-drawer__label">Browse</p>
+      <ul class="ig-nav-drawer__list">
+        {drawerBrowse.map((item) => (
+          <li>
+            <a href={item.href}>
+              <span class="ig-nav-drawer__link">{item.label}</span>
+              <span class="ig-nav-drawer__note">{item.note}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <p class="ig-nav-drawer__label">The site</p>
+      <ul class="ig-nav-drawer__list ig-nav-drawer__list--compact">
+        {drawerAbout.map((item) => (
+          <li><a href={item.href}><span class="ig-nav-drawer__link">{item.label}</span></a></li>
+        ))}
+      </ul>
+    </div>
   </div>
 </header>
+
+<style>
+  .ig-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-right: -0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-ink);
+  }
+
+  .ig-nav-toggle__bars {
+    display: block;
+    width: 18px;
+  }
+
+  .ig-nav-toggle__bars span {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .ig-nav-toggle__bars span + span {
+    margin-top: 4px;
+  }
+
+  .ig-nav-toggle[aria-expanded='true'] .ig-nav-toggle__bars span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .ig-nav-toggle[aria-expanded='true'] .ig-nav-toggle__bars span:nth-child(2) {
+    opacity: 0;
+  }
+  .ig-nav-toggle[aria-expanded='true'] .ig-nav-toggle__bars span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .ig-nav-drawer {
+    border-top: 1px solid var(--color-border);
+    background: var(--color-surface, #fff);
+    max-height: calc(100vh - 69px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .ig-nav-drawer__panel {
+    padding: 1rem clamp(1.5rem, 4vw, 3.5rem) 1.5rem;
+  }
+
+  .ig-nav-drawer__cta {
+    display: block;
+    text-align: center;
+    background: var(--color-teal-dark, #235851);
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+  }
+
+  .ig-nav-drawer__label {
+    margin: 0 0 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .ig-nav-drawer__list {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+  }
+
+  .ig-nav-drawer__list a {
+    display: block;
+    padding: 0.7rem 0;
+    min-height: 44px;
+    border-bottom: 1px solid var(--color-border);
+    text-decoration: none;
+  }
+
+  .ig-nav-drawer__list--compact a {
+    padding: 0.6rem 0;
+  }
+
+  .ig-nav-drawer__link {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-ink);
+  }
+
+  .ig-nav-drawer__note {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin-top: 0.1rem;
+  }
+
+  /* Three items do not fit at 390px and the brand wraps to two lines. The
+     drawer carries its own prominent CTA, the hero has one, and the sticky
+     bottom bar appears on scroll, so the header CTA is redundant here. */
+  @media (max-width: 767px) {
+    .ig-header-cta {
+      display: none !important;
+    }
+  }
+
+  /* Tailwind utilities sit in a cascade layer, so the unlayered rules in this
+     block outrank md:hidden. Both breakpoint rules therefore live here rather
+     than as utility classes on the elements. */
+  @media (min-width: 768px) {
+    .ig-nav-toggle {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .ig-nav-drawer {
+      display: none !important;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('ig-nav-toggle');
+    var drawer = document.getElementById('ig-nav-drawer');
+    if (!toggle || !drawer) return;
+
+    function setOpen(open) {
+      drawer.hidden = !open;
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.documentElement.style.overflow = open ? 'hidden' : '';
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(drawer.hidden);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !drawer.hidden) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    // A viewport that grows past the breakpoint leaves the drawer orphaned with
+    // scroll still locked, so reset it there.
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 768 && !drawer.hidden) setOpen(false);
+    }, { passive: true });
+  })();
+</script>

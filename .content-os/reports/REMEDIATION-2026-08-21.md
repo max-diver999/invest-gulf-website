@@ -422,3 +422,90 @@ seller cannot maintain" play — cheap to update, high citation value for
 AEO/GEO answers that need a dated source. `when-not-to-buy` is the N6 trust
 play: anti-sales content that differentiates an independent research site
 from every brokerage competitor.
+
+---
+
+## Phase 6 — Mobile navigation and usability
+
+Audited by rendering the local build in a real Chromium at an iPhone viewport
+(390×844) and measuring, not by reading CSS. Three defects found, all fixed.
+
+### P0.1 — No mobile navigation at all
+
+`Header.astro` carried the nav as `hidden md:flex` with no hamburger. Measured
+header contents at 390px: **logo and one CTA button, nothing else**. A
+593-page research site with no way to reach any hub from the header; the only
+route was scrolling to the footer.
+
+The desktop bar was also incomplete: it linked 2 of the 5 content collections.
+Areas, Projects and News had no header link at any viewport.
+
+Fixed: accessible hamburger (44×44, `aria-expanded`, `aria-controls`, Escape
+to close, scroll lock, resize reset) opening a sectioned drawer with all five
+collections plus GCC yields, About, Methodology, Contact and a CTA. `Areas`
+added to the desktop bar.
+
+### P0.2 — Wide tables clipped and unreachable
+
+`.prose table` had no scroll container and `main` uses `overflow-x: clip`, so
+a table wider than the viewport lost its right-hand columns **with no way to
+scroll to them**. Measured on a new guide: table 498px in a 390px viewport,
+last column invisible and unreachable.
+
+Fixed in CSS rather than a rehype plugin so it covers the 5 `.astro` pages
+with tables as well as the 593 MDX pages: the table becomes its own scroll
+container, plus a cell min-width on mobile so cells stop wrapping to two words
+per line. Verified: widest table now 664px scrollable inside 342px.
+
+### P0.3 — /guides/ hub was 136 mobile screens
+
+The hub rendered all 393 indexable guides as full cards with no filter, no
+search, no pagination: **114,520px tall, about 136 mobile screens**.
+
+Fixed: topic facets derived from slug and title keywords (tags were too
+fragmented to group on: 69 of 463 carried "dubai"), a live search over title,
+description and tags, a result count, and progressive disclosure in batches of
+24. Every card stays in the DOM, so all 393 links remain crawlable and the
+no-JS view is unchanged. Result: **136 screens → 11**.
+
+### Regressions I introduced and fixed in the same pass
+
+Both from the same cause: Tailwind utilities sit in a cascade layer, so the
+unlayered rules in a component `<style>` block outrank them.
+
+- `.btn-primary { display: inline-flex }` beat `hidden sm:inline-flex`, so
+  three items crowded the 390px header and the brand wrapped to two lines.
+- `.ig-nav-toggle { display: inline-flex }` beat `md:hidden`, leaving the
+  hamburger visible on desktop.
+
+Both breakpoint rules moved into the component's own media queries.
+
+### Verification
+
+| Viewport | Horizontal overflow | Header items | Brand lines | Widest table |
+|---|---|---|---|---|
+| 390 mobile | none | 2 (logo, menu) | 1 | scrolls |
+| 768 tablet | none | 7 | 1 | fits |
+| 1280 desktop | none | 7 (no hamburger) | 1 | fits |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0 (avg 86 A),
+build 593 pages / 0 rendered issues.
+
+### Not done — gaps against a commercial competitor
+
+Compared against a screen recording of moregroup.estate supplied by the owner.
+Their mobile build carries several patterns this site has no equivalent for.
+Listed as findings, not fixed, because each is a product decision:
+
+- Card metadata. Their guide cards show a photo, category and region badges,
+  "From $180K · 8–10% yield" and a read time. Ours are text-only with no
+  images and no decision-useful metadata.
+- Entry points by budget. A "Browse by Budget" tile grid ($100K bands) and an
+  area grid showing yield ranges per area.
+- Interactive calculator with price chips and a slider (matches roadmap N1).
+- Persistent WhatsApp button and a chat assistant on every screen.
+- Currency switcher.
+
+Note on evidence: outbound network is blocked by the environment's egress
+policy, so the competitor could not be fetched directly. The comparison rests
+on frames extracted from the owner's screen recording.
