@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../data/site';
+import CurrencyToggle from './CurrencyToggle.astro';
 
 /**
  * Primary navigation.
@@ -46,6 +47,7 @@ const drawerAbout = [
     </nav>
 
     <div class="flex items-center gap-2">
+      <CurrencyToggle variant="header" />
       <a href="/get-shortlist/" class="btn-primary ig-header-cta text-sm px-4 py-2 shrink-0">Free shortlist</a>
       <button
         type="button"
@@ -63,6 +65,8 @@ const drawerAbout = [
   <div id="ig-nav-drawer" class="ig-nav-drawer" hidden>
     <div class="ig-nav-drawer__panel">
       <a href="/get-shortlist/" class="ig-nav-drawer__cta" data-cta="nav_drawer_shortlist">Get a free shortlist</a>
+
+      <CurrencyToggle variant="drawer" />
 
       <p class="ig-nav-drawer__label">Browse</p>
       <ul class="ig-nav-drawer__list">

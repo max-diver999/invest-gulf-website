@@ -1,0 +1,190 @@
+---
+import { USD_PEGS } from '../data/fx';
+const pegs = USD_PEGS;
+---
+<div id="ig-fx-note" class="ig-fx-note" hidden>
+  USD equivalents are calculated from central-bank currency pegs, not live market rates,
+  and are shown alongside the original figure rather than replacing it.
+  <a href="/methodology/">Methodology</a>
+</div>
+
+<style>
+  .ig-fx-note {
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    z-index: 9995;
+    max-width: min(34rem, calc(100vw - 2rem));
+    padding: 0.7rem 0.95rem;
+    border-radius: 10px;
+    background: var(--color-ink, #1f2421);
+    color: #e7e5e4;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    box-shadow: 0 8px 28px rgba(31, 36, 33, 0.28);
+  }
+
+  .ig-fx-note a {
+    color: #fff;
+  }
+
+  body.has-ig-sticky-bar .ig-fx-note {
+    bottom: 5rem;
+  }
+
+  :global(.ig-fx-usd) {
+    color: var(--color-muted);
+    white-space: nowrap;
+  }
+</style>
+
+<script define:vars={{ pegs }}>
+  (function () {
+    var KEY = 'ig-fx-usd';
+    var toggles = Array.prototype.slice.call(document.querySelectorAll('[data-ig-fx-toggle]'));
+    if (!toggles.length) return;
+
+    var note = document.getElementById('ig-fx-note');
+    var root = document.querySelector('.prose') || document.querySelector('main');
+    if (!root) return;
+
+    var codes = Object.keys(pegs);
+    // Currency code, an amount, an optional scale word, and an optional second
+    // amount when the figure is a range. Ranges are matched whole so the
+    // conversion lands after "AED 5,000 to 20,000" rather than inside it.
+    // The code is required, so a bare number is never touched, and the match is
+    // additive, so the original figure always survives.
+    var NUM = '(\\d[\\d,]*(?:\\.\\d+)?)';
+    var SCALE_W = '(\\s?(?:million|billion|M|K|k)\\b)?';
+    var RE = new RegExp(
+      '\\b(' + codes.join('|') + ')\\s?' + NUM + SCALE_W +
+      '(?:\\s*(?:to|\\u2013|-)\\s*' + NUM + SCALE_W + ')?',
+      'g',
+    );
+    // A global regex carries lastIndex across calls, so reusing RE for the
+    // node filter made every second test start mid-string and silently skip
+    // whole pages. The filter gets its own stateless copy.
+    var PROBE = new RegExp(RE.source);
+
+    var SCALE = { million: 1e6, billion: 1e9, m: 1e6, k: 1e3 };
+
+    function amount(raw, scaleWord) {
+      var n = parseFloat(raw.replace(/,/g, ''));
+      if (!isFinite(n)) return null;
+      if (scaleWord) n *= SCALE[scaleWord.trim().toLowerCase()] || 1;
+      return n;
+    }
+
+    function money(v) {
+      if (!isFinite(v) || v <= 0) return null;
+      // Round only where the magnitude makes the lost digits noise. Fees are
+      // mostly four figures, so collapsing AED 4,000 to "$1K" would throw away
+      // the part a reader is actually checking.
+      if (v >= 1e6) return '$' + (v / 1e6).toFixed(v / 1e6 >= 10 ? 0 : 1).replace(/\.0$/, '') + 'M';
+      if (v >= 1e5) return '$' + Math.round(v / 1e3) + 'K';
+      return '$' + Math.round(v).toLocaleString('en-US');
+    }
+
+    var wrapped = false;
+
+    function wrap() {
+      if (wrapped) return;
+      wrapped = true;
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (node) {
+          var p = node.parentElement;
+          if (!p) return NodeFilter.FILTER_REJECT;
+          // Never rewrite code, scripts, styles, or a span this pass already made.
+          if (p.closest('script, style, code, pre, .ig-fx-usd')) return NodeFilter.FILTER_REJECT;
+          return PROBE.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        },
+      });
+
+      var targets = [];
+      var n;
+      while ((n = walker.nextNode())) targets.push(n);
+
+      targets.forEach(function (node) {
+        var text = node.nodeValue;
+        RE.lastIndex = 0;
+        var frag = document.createDocumentFragment();
+        var last = 0;
+        var m;
+        while ((m = RE.exec(text))) {
+          var lo = amount(m[2], m[3]);
+          // A range with no scale word of its own inherits the first one, so
+          // "AED 1.6M-2.2M" and "AED 1.6 to 2.2M" both read correctly.
+          var hi = m[4] != null ? amount(m[4], m[5] || m[3]) : null;
+          var loText = lo == null ? null : money(lo / pegs[m[1]]);
+          var hiText = hi == null ? null : money(hi / pegs[m[1]]);
+          if (!loText) continue;
+          var converted = hiText ? loText + ' to ' + hiText : loText;
+          frag.appendChild(document.createTextNode(text.slice(last, m.index + m[0].length)));
+          var span = document.createElement('span');
+          span.className = 'ig-fx-usd';
+          span.setAttribute('data-usd', ' (~' + converted + ')');
+          frag.appendChild(span);
+          last = m.index + m[0].length;
+        }
+        if (last === 0) return;
+        frag.appendChild(document.createTextNode(text.slice(last)));
+        node.parentNode.replaceChild(frag, node);
+      });
+    }
+
+    function paint(on) {
+      if (on) wrap();
+      var spans = root.querySelectorAll('.ig-fx-usd');
+      for (var i = 0; i < spans.length; i++) {
+        spans[i].textContent = on ? spans[i].getAttribute('data-usd') : '';
+      }
+      toggles.forEach(function (t) {
+        t.setAttribute('aria-pressed', on ? 'true' : 'false');
+        var label = t.querySelector('.ig-fx-toggle__label');
+        if (label) label.textContent = on ? 'USD shown' : 'Show USD';
+      });
+      if (!note) return;
+      var seen = false;
+      try {
+        seen = localStorage.getItem(KEY + '-note') === '1';
+      } catch (e) {
+        // Treated as unseen; the note simply shows again next visit.
+      }
+      if (!on || seen) {
+        note.hidden = true;
+        return;
+      }
+      note.hidden = false;
+      clearTimeout(note._t);
+      note._t = setTimeout(function () {
+        note.hidden = true;
+        try {
+          localStorage.setItem(KEY + '-note', '1');
+        } catch (e) {
+          // Non-persistent is fine.
+        }
+      }, 7000);
+    }
+
+    var on = false;
+    try {
+      on = localStorage.getItem(KEY) === '1';
+    } catch (e) {
+      // Private mode and blocked site data both throw; the default is simply off.
+    }
+    if (on) paint(true);
+
+    toggles.forEach(function (t) {
+      t.addEventListener('click', function () {
+        on = !on;
+        try {
+          localStorage.setItem(KEY, on ? '1' : '0');
+        } catch (e) {
+          // Preference just does not persist.
+        }
+        paint(on);
+      });
+    });
+  })();
+</script>

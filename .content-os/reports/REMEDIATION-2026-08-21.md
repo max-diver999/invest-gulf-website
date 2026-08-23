@@ -572,3 +572,85 @@ pages / 0 rendered issues, sitemap 520 URLs.
 
 Interactive calculator (roadmap N1), persistent WhatsApp button and chat
 assistant, currency switcher. Each is a product decision rather than a defect.
+
+---
+
+## Phase 8 — Persistent WhatsApp button and currency toggle
+
+Calculator explicitly dropped by the owner. These two shipped.
+
+### WhatsApp float
+
+`WhatsAppFloat.astro`, fixed bottom-right on every page, using the `float`
+placement that `whatsapp-intent.ts` already defined but nothing had ever
+rendered. It routes through the existing attribution pipeline, so clicks carry
+a ref code and reach `/api/wa-intent/` like every other WhatsApp entry point.
+
+Positioned to clear `StickyMobileLeadBar`, which is full-width and slides in
+after 200px of scroll: the button lifts to `5.25rem` under
+`body.has-ig-sticky-bar`. Measured on mobile: button bottom at y=760, bar top
+at y=784, no overlap.
+
+**Open issue this amplifies.** `SITE.whatsapp` is still the +66 Thailand
+number. A floating button puts it on every screen of a UAE property site,
+where previously it appeared only on the contact page and in bridges. The
+button is correct; the number behind it is the owner's outstanding decision.
+
+### Currency toggle
+
+Scope was constrained by what can be sourced honestly:
+
+- Gulf currencies are **pegged** by central-bank policy, so AED 3.6725,
+  SAR 3.75, QAR 3.64, OMR 0.3845 and BHD 0.376 per USD need no live feed and
+  the conversion is exact, not indicative.
+- EUR, GBP and INR float. This site has no rate source and the environment has
+  no outbound network, so those are **not offered**. Inventing a rate on a
+  page that tells readers to verify every figure would repeat the mistake
+  Phase 7 rejected.
+- KWD is excluded: the dinar tracks an undisclosed basket, so no fixed divisor
+  is defensible. Its 40 corpus occurrences stay unconverted.
+
+Design decisions:
+
+- **Additive, never replacing.** Renders "AED 2M (~$545K)", so the original
+  figure survives and any error is visible rather than silent.
+- **Off by default**, opt-in, persisted in `localStorage` with every access in
+  try/catch. Default render carries no injected text, so there is no SEO
+  surface.
+- **Ranges matched whole**: "AED 500-5,000 (~$136 to $1,361)" rather than a
+  conversion wedged into the middle of the range.
+- Rounding switches to full figures below $100K, because fees are mostly four
+  digits and "$1K" would discard the part a reader is checking.
+- A one-time note states the conversions come from pegs, not market rates.
+
+Control sits in the desktop header and in the mobile drawer, so the 390px
+header stays at logo plus menu.
+
+**Bug found and fixed during verification.** The node filter reused the global
+regex, and `RegExp.test` advances `lastIndex` on a `/g` pattern, so every
+second text node was skipped and whole pages converted nothing. The filter now
+uses a stateless copy. A second apparent failure was a test artifact, not a
+defect: four pages shared one browser context and therefore one
+`localStorage`, so the toggle alternated on and off between them.
+
+### Verification
+
+Conversions checked by hand against the pegs on one page per currency:
+
+| Page | Figure | Shown | Check |
+|---|---|---|---|
+| cost-of-buying | AED 580 | $158 | 580 / 3.6725 = 157.9 |
+| aed-2m-golden-visa | AED 2 million | $545K | 2,000,000 / 3.6725 = 544,588 |
+| qatar-investment | QAR 730,000 | $201K | 730,000 / 3.64 = 200,549 |
+| oman-investment | OMR 250K | $650K | 250,000 / 0.3845 = 650,195 |
+| saudi-rental-yield | SAR 100 to 150 | $27 to $40 | 100 / 3.75 = 26.7 |
+| bahrain-investment | BHD 50K-90K | $133K to $239K | 50,000 / 0.376 = 132,979 |
+
+| Viewport | Overflow | Brand lines | FX in header | WhatsApp |
+|---|---|---|---|---|
+| 390 mobile | none | 1 | no, in drawer | 52x52, clears sticky bar |
+| 768 tablet | none | 1 | no, in drawer | visible |
+| 1280 desktop | none | 1 | yes | visible |
+
+Gates: validate:content 593/593, qa:corpus PASS, geo:audit exit 0, rendered
+audit 593 pages / 0 issues.
