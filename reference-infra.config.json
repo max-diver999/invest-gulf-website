@@ -1,0 +1,56 @@
+{
+  "siteUrl": "https://invest-gulf.com",
+  "brand": "Invest Gulf",
+  "language": "en",
+  "trailingSlash": true,
+  "organization": {
+    "id": "https://invest-gulf.com/#organization",
+    "name": "Invest Gulf",
+    "url": "https://invest-gulf.com",
+    "sameAs": [
+      "https://invest-gulf.com/about/",
+      "https://www.wikidata.org/wiki/Q140471703"
+    ]
+  },
+  "collections": [
+    {
+      "dir": "src/content/guides",
+      "urlPrefix": "/guides",
+      "label": "Guides"
+    },
+    {
+      "dir": "src/content/compare",
+      "urlPrefix": "/compare",
+      "label": "Compare"
+    },
+    {
+      "dir": "src/content/areas",
+      "urlPrefix": "/areas",
+      "label": "Areas"
+    },
+    {
+      "dir": "src/content/news",
+      "urlPrefix": "/news",
+      "label": "News"
+    },
+    {
+      "dir": "src/content/projects",
+      "urlPrefix": "/projects",
+      "label": "Projects"
+    }
+  ],
+  "robots": {
+    "disallow": ["/api/", "/thanks/", "/site-report/"],
+    "allowSearchCrawlers": true,
+    "allowTrainingCrawlers": false
+  },
+  "markdownStructure": {
+    "prefixes": []
+  },
+  "llms": {
+    "enabled": false,
+    "path": "/llms.txt",
+    "title": "Invest Gulf reference content",
+    "description": "Optional machine-readable index of selected public content."
+  }
+}
