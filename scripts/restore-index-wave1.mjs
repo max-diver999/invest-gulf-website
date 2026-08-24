@@ -70,6 +70,20 @@ const RESTORE = [
   'guides/rak-branded-residences-guide',
   'guides/qatar-property-management-guide',
   'guides/uae-vs-saudi-for-investors',
+
+  // --- Wave 1b: family-buyer bridge and area-living guides -------------------------------
+  // docs/PRIORITY-CTR-LEADS.md flags "Abu Dhabi school fees (bridge to family buyers)" as a
+  // cluster to grow, and guides/dubai-vs-abu-dhabi-school-fees already earns impressions.
+  // The living guides below are area pages in all but name — each maps to an investable district.
+  'guides/adek-school-ratings-abu-dhabi',
+  'guides/american-schools-dubai',
+  'guides/schools-near-al-reem-island',
+  'guides/schools-near-saadiyat-island',
+  'guides/sharjah-schools-for-dubai-commuters',
+  'guides/rak-schools-guide',
+  'guides/palm-jumeirah-living-guide',
+  'guides/dubai-creek-harbour-living',
+  'guides/dubai-marina-living-pros-cons',
 ];
 
 let changed = 0;
