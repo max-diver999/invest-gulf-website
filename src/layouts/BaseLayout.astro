@@ -79,8 +79,8 @@ const orgSchema = {
     email: SITE.email,
     availableLanguage: ['English'],
   },
+  // Only external references belong here — a site linking to itself proves nothing.
   sameAs: [
-    SITE.url,
     ...SITE.sameAs,
     ...(SITE.wikidataId ? [`https://www.wikidata.org/wiki/${SITE.wikidataId}`] : []),
   ],
