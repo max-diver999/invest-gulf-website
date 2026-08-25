@@ -9,5 +9,13 @@ export const SITE = {
   editorial: 'Invest Gulf Editorial',
   /** Set after Wikidata item creation — _СИСТЕМА/GEO_WIKIDATA_INVEST_GULF.md */
   wikidataId: 'Q140471703' as string | null,
-  sameAs: ['https://invest-gulf.com/about/'],
+  /**
+   * External profiles that prove the entity exists outside this domain. Self-references carry
+   * no weight — Wikidata is appended automatically from `wikidataId` in BaseLayout.
+   *
+   * The domain has no external authority (DR ~0), which is the single biggest brake on recovery
+   * from the June demotion. Real profiles here (LinkedIn company page, Crunchbase, an industry
+   * directory listing, the founder's LinkedIn) are worth more than any on-page change.
+   */
+  sameAs: [] as string[],
 };
