@@ -12,7 +12,14 @@ const errors = [];
 const EXPECTED = 285;
 const ALLOWED_LOCAL_HERO_FALLBACKS = new Set([
   '/images/areas/downtown-dubai/hero.jpg',
+  '/images/areas/downtown-dubai/hero-360.webp',
+  '/images/areas/downtown-dubai/hero-640.webp',
+  '/images/areas/downtown-dubai/hero-960.webp',
+  '/images/areas/downtown-dubai/hero-1200.webp',
   '/images/projects/address-residences-dubai-hills/hero.webp',
+  '/images/projects/address-residences-dubai-hills/hero-360.webp',
+  '/images/projects/address-residences-dubai-hills/hero-640.webp',
+  '/images/projects/address-residences-dubai-hills/hero-960.webp',
 ]);
 
 function walk(dir) {
@@ -31,7 +38,16 @@ if (source.inventory.missing_local_files.length) errors.push('source manifest co
 if (source.inventory.public_id_collisions.length) errors.push('source manifest contains public ID collisions');
 
 const localFiles = walk(join(ROOT, 'public/images')).filter((file) => /\.(avif|gif|jpe?g|png|webp)$/i.test(file));
-if (localFiles.length !== 329) errors.push(`rollback inventory ${localFiles.length}/329`);
+const responsiveLocalDerivatives = new Set(
+  [...ALLOWED_LOCAL_HERO_FALLBACKS]
+    .filter((url) => /hero-(?:360|640|960|1200)\.webp$/.test(url))
+    .map((url) => join(ROOT, 'public', url)),
+);
+const rollbackFiles = localFiles.filter((file) => !responsiveLocalDerivatives.has(file));
+if (rollbackFiles.length !== 329) errors.push(`rollback inventory ${rollbackFiles.length}/329`);
+if ([...responsiveLocalDerivatives].some((file) => !existsSync(file))) {
+  errors.push('protected local responsive derivative missing');
+}
 
 for (const asset of source.assets) {
   const record = uploaded[asset.local_url];
@@ -83,5 +99,5 @@ if (errors.length) {
 }
 console.log(
   'Gulf Cloudinary verification passed: 285/285 assets, 767 refs, '
-  + '329 local rollback files, source metadata and dimensions preserved',
+  + '329 local rollback files, 7 protected responsive derivatives, source metadata and dimensions preserved',
 );

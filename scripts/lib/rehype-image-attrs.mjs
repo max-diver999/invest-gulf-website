@@ -19,7 +19,7 @@ const SIZES = existsSync(MAP_PATH) ? JSON.parse(readFileSync(MAP_PATH, 'utf8')) 
 const CLOUD_SIZES = existsSync(CLOUD_MAP_PATH) ? JSON.parse(readFileSync(CLOUD_MAP_PATH, 'utf8')) : {};
 const CLOUD = 'dlrrtf6bq';
 const PREFIX = 'more-group/gulf/';
-const WIDTHS = [640, 960, 1200];
+const WIDTHS = [360, 640, 960, 1200];
 
 function cloudPublicId(src) {
   const marker = `/${PREFIX}`;
@@ -50,7 +50,7 @@ export function rehypeImageAttrs() {
         const widths = requested.length ? requested : [dims.width];
         props.src = deliveryUrl(publicId, widths.at(-1));
         props.srcSet = widths.map((width) => `${deliveryUrl(publicId, width)} ${width}w`).join(', ');
-        props.sizes = '(max-width: 767px) calc(100vw - 2rem), 768px';
+        props.sizes = '(max-width: 599px) calc(100vw - 3rem), 72ch';
       }
     });
   };

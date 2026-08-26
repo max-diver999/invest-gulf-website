@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "postbuild": "node scripts/audit-rendered-live.mjs --local --fail",
+    "postbuild": "node scripts/audit-rendered-live.mjs --local --fail && npm run speed:verify",
     "preview": "astro preview",
     "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only",
     "validate:content": "node scripts/qa-audit.mjs",
@@ -29,6 +29,7 @@
     "sync:content-gate": "node scripts/sync-content-gate.mjs",
     "validate:strict": "node scripts/qa-audit.mjs",
     "audit:images": "node scripts/audit-all-images.mjs --fail",
+    "speed:verify": "node scripts/verify-rendered-speed.mjs",
     "cloudinary:inventory": "node scripts/build-gulf-cloudinary-manifest.mjs",
     "cloudinary:dry-run": "python3 scripts/upload-gulf-cloudinary.py --dry-run",
     "cloudinary:rollout": "node scripts/rollout-gulf-cloudinary.mjs",
