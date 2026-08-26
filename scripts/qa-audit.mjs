@@ -7,6 +7,7 @@
 import { execSync } from 'node:child_process';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { runCloudinaryDeliveryChecks } from './lib/cloudinary-gate.mjs';
 
 const ROOT = decodeURIComponent(new URL('../src/content/', import.meta.url).pathname);
 const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'news'];
@@ -169,6 +170,12 @@ function auditFile(c, slug) {
       prob.push(`banned:${phrase.slice(0, 24)}`);
     }
   }
+  runCloudinaryDeliveryChecks({
+    prefix: `[${c}/${slug}]`,
+    text: raw,
+    errors: prob,
+    legacyExempt: false,
+  });
 
   const isRegulatory = /visa|golden visa|investor visa|dld|residency/i.test(
     `${fm.title} ${(fm.tags || '').toString()} ${slug}`,

@@ -14,7 +14,23 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const MAP_PATH = join(dirname(fileURLToPath(import.meta.url)), '../data/image-dimensions.json');
+const CLOUD_MAP_PATH = join(dirname(fileURLToPath(import.meta.url)), '../../src/data/gulf-image-dimensions.json');
 const SIZES = existsSync(MAP_PATH) ? JSON.parse(readFileSync(MAP_PATH, 'utf8')) : {};
+const CLOUD_SIZES = existsSync(CLOUD_MAP_PATH) ? JSON.parse(readFileSync(CLOUD_MAP_PATH, 'utf8')) : {};
+const CLOUD = 'dlrrtf6bq';
+const PREFIX = 'more-group/gulf/';
+const WIDTHS = [640, 960, 1200];
+
+function cloudPublicId(src) {
+  const marker = `/${PREFIX}`;
+  const index = src.indexOf(marker);
+  if (!src.includes(`res.cloudinary.com/${CLOUD}/image/upload/`) || index === -1) return null;
+  return src.slice(index + 1).replace(/\.(avif|gif|jpe?g|png|webp)$/i, '');
+}
+
+function deliveryUrl(publicId, width) {
+  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto,w_${width}/${publicId}`;
+}
 
 export function rehypeImageAttrs() {
   return (tree) => {
@@ -23,10 +39,18 @@ export function rehypeImageAttrs() {
       const props = (node.properties ||= {});
       if (!props.loading) props.loading = 'lazy';
       if (!props.decoding) props.decoding = 'async';
-      const dims = typeof props.src === 'string' ? SIZES[props.src] : null;
+      const publicId = typeof props.src === 'string' ? cloudPublicId(props.src) : null;
+      const dims = publicId ? CLOUD_SIZES[publicId] : (typeof props.src === 'string' ? SIZES[props.src] : null);
       if (dims && !props.width) {
         props.width = dims.width;
         props.height = dims.height;
+      }
+      if (publicId && dims) {
+        const requested = WIDTHS.filter((width) => width <= dims.width);
+        const widths = requested.length ? requested : [dims.width];
+        props.src = deliveryUrl(publicId, widths.at(-1));
+        props.srcSet = widths.map((width) => `${deliveryUrl(publicId, width)} ${width}w`).join(', ');
+        props.sizes = '(max-width: 767px) calc(100vw - 2rem), 768px';
       }
     });
   };
