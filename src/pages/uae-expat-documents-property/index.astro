@@ -86,22 +86,24 @@ const visaGuides = [
       </p>
 
       <h2>Paperwork in the order it lands</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Document</th>
-            <th>Typical timing</th>
-          </tr>
-        </thead>
-        <tbody>
-          {paperwork.map((p) => (
+      <div class="table-scroll">
+        <table>
+          <thead>
             <tr>
-              <td><a href={p.href}>{p.task}</a></td>
-              <td>{p.when}</td>
+              <th>Document</th>
+              <th>Typical timing</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {paperwork.map((p) => (
+              <tr>
+                <td><a href={p.href}>{p.task}</a></td>
+                <td>{p.when}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <p class="text-sm text-[var(--color-muted)]">
         Requirements and processing times change by emirate and nationality. Verify current rules with the issuing
         authority before you book appointments.

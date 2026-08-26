@@ -228,21 +228,30 @@ textarea:focus {
 .prose p { margin-bottom: 1.1rem; }
 .prose ul, .prose ol { margin: 1rem 0 1.25rem 1.25rem; }
 .prose li { margin-bottom: 0.4rem; }
+/* Tailwind's preflight strips list markers from every ul/ol, which leaves body
+   copy lists reading as loose indented lines. Restore markers for lists written
+   in content (unstyled), never for component markup, which carries a class. */
+.prose ul:not([class]) { list-style: disc outside; }
+.prose ol:not([class]) { list-style: decimal outside; }
+.prose ul:not([class]) ul { list-style: circle outside; }
+.prose li::marker { color: var(--color-brass); }
 /* Wide tables must scroll rather than clip: `main` uses overflow-x: clip, so a
-   table wider than the viewport loses its right-hand columns with no way to
-   reach them. Making the table its own scroll container fixes that on every
-   page, MDX and .astro alike, without a wrapper element. */
-.prose table {
-  display: block;
-  width: max-content;
-  min-width: 100%;
-  max-width: 100%;
+   table wider than the viewport would lose its right-hand columns with no way
+   to reach them. The scrolling lives on a `.table-scroll` wrapper added by
+   `scripts/lib/rehype-table-scroll.mjs`, so the table itself stays a real table
+   and its columns fill the measure instead of collapsing to content width. */
+.prose .table-scroll {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+}
+.prose table {
+  width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
   font-size: 0.92rem;
 }
+.prose .table-scroll > table { margin: 0; }
 .prose th, .prose td { border: 1px solid var(--color-border); padding: 0.55rem 0.75rem; text-align: left; }
 .prose th { background: var(--color-surface-muted); font-weight: 600; color: var(--color-ink); }
 

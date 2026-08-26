@@ -81,22 +81,24 @@ const thenWhat = [
       </p>
 
       <h2>Which zone fits which business</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Zone</th>
-            <th>Typically chosen for</th>
-          </tr>
-        </thead>
-        <tbody>
-          {freeZones.map((z) => (
+      <div class="table-scroll">
+        <table>
+          <thead>
             <tr>
-              <td><a href={z.href}>{z.name}</a></td>
-              <td>{z.best}</td>
+              <th>Zone</th>
+              <th>Typically chosen for</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {freeZones.map((z) => (
+              <tr>
+                <td><a href={z.href}>{z.name}</a></td>
+                <td>{z.best}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <p class="text-sm text-[var(--color-muted)]">
         Licence fees, visa quotas and workspace rules change. Confirm current figures with the zone authority or a
         licensed setup consultant before you budget.

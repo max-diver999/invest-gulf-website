@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import { rehypeImageAttrs } from './scripts/lib/rehype-image-attrs.mjs';
+import { rehypeTableScroll } from './scripts/lib/rehype-table-scroll.mjs';
 import vercel from '@astrojs/vercel';
 import {
   collectSitemapExclusions,
@@ -66,6 +67,6 @@ export default defineConfig({
         return { ...page, priority: 0.7, changefreq: 'monthly' };
       },
     }),
-    mdx({ rehypePlugins: [rehypeImageAttrs] }),
+    mdx({ rehypePlugins: [rehypeImageAttrs, rehypeTableScroll] }),
   ],
 });

@@ -98,24 +98,26 @@ const headToHead = [
       </p>
 
       <h2>Gross yield by market</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Market</th>
-            <th>Indicative gross</th>
-            <th>What drives the range</th>
-          </tr>
-        </thead>
-        <tbody>
-          {markets.map((m) => (
+      <div class="table-scroll">
+        <table>
+          <thead>
             <tr>
-              <td><a href={m.href}>{m.name}</a></td>
-              <td>{m.gross}</td>
-              <td>{m.note}</td>
+              <th>Market</th>
+              <th>Indicative gross</th>
+              <th>What drives the range</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {markets.map((m) => (
+              <tr>
+                <td><a href={m.href}>{m.name}</a></td>
+                <td>{m.gross}</td>
+                <td>{m.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <p class="text-sm text-[var(--color-muted)]">
         Ranges are indicative for 2026 and vary by district, unit size and lease type. Always underwrite a specific
         building, not a country average.
