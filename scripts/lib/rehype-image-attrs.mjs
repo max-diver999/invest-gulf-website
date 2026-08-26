@@ -29,7 +29,7 @@ function cloudPublicId(src) {
 }
 
 function deliveryUrl(publicId, width) {
-  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto,w_${width}/${publicId}`;
+  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:low,w_${width}/${publicId}`;
 }
 
 export function rehypeImageAttrs() {
