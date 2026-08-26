@@ -334,7 +334,7 @@ main {
 .ig-card__media {
   display: block;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 16px;
   box-shadow: 0 0 0 1px rgba(194, 160, 106, 0.18);
 }
 .ig-card__media img {

@@ -1,4 +1,5 @@
 ---
+import { responsiveImage } from '../../lib/responsiveImage';
 export const prerender = true;
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -20,11 +21,27 @@ const comparisons = (await getCollection('compare'))
     </header>
     <div class="grid md:grid-cols-2 gap-6">
       {comparisons.map((item) => (
-        <article class="surface-card p-7">
-          <h2 class="text-lg mb-2 font-semibold">
-            <a href={`/compare/${item.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{item.data.title}</a>
-          </h2>
-          <p class="text-sm text-[var(--color-muted)]">{item.data.description}</p>
+        <article class="ig-card">
+          {item.data.heroImage && (
+            <a href={`/compare/${item.id}/`} class="ig-card__media" tabindex="-1" aria-hidden="true">
+              <img
+                src={responsiveImage(item.data.heroImage, 'card').src}
+                srcset={responsiveImage(item.data.heroImage, 'card').srcset}
+                sizes={responsiveImage(item.data.heroImage, 'card').sizes}
+                alt=""
+                width={responsiveImage(item.data.heroImage, 'card').width}
+                height={responsiveImage(item.data.heroImage, 'card').height}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          )}
+          <div class="ig-card__body">
+            <h2 class="ig-card__title">
+              <a href={`/compare/${item.id}/`} class="no-underline">{item.data.title}</a>
+            </h2>
+            <p class="ig-card__desc">{item.data.description}</p>
+          </div>
         </article>
       ))}
     </div>
