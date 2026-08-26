@@ -22,7 +22,7 @@ export function gulfPublicId(src: string): string | null {
 
 export function gulfDeliveryUrl(publicId: string, width: number): string {
   if (!publicId.startsWith(PREFIX)) throw new Error(`Unexpected Gulf public ID: ${publicId}`);
-  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto,w_${width}/${publicId}`;
+  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:low,w_${width}/${publicId}`;
 }
 
 export function responsiveImage(src: string, variant: Variant = 'hero') {
