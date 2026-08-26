@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@import '@fontsource/cormorant/latin-300.css';
+@import '@fontsource/cormorant/latin-500.css';
+@import '@fontsource/cormorant/latin-600.css';
+
 @font-face {
   font-family: 'DM Sans';
   font-style: normal;
@@ -37,16 +41,32 @@
 }
 
 @theme {
-  --color-page: #f7f8f6;
+  /* Тема «Пустынная ночь и латунь»: графитовая ночь, шампанская латунь, тёплая слоновая кость */
+  --color-page: #faf7f1;
   --color-surface: #ffffff;
-  --color-surface-muted: #f4f5f3;
-  --color-ink: #1f2421;
-  --color-muted: #5d645f;
-  --color-teal: #2c6b62;
-  --color-teal-dark: #235851;
-  --color-teal-light: #e6f0ed;
-  --color-border: #e6e6e3;
-  --color-border-soft: #eeeeec;
+  --color-surface-muted: #f3ede3;
+  --color-ink: #171d26;
+  --color-muted: #6a6459;
+  /* Действие — глубокий петроль: вода оазиса против песка */
+  --color-teal: #265a60;
+  --color-teal-dark: #1d484d;
+  --color-teal-light: #e3eeee;
+  --color-border: #e5ddd0;
+  --color-border-soft: #efe8dc;
+
+  /* Тёмная рама: шапка, герой, плашки, подвал */
+  --color-frame: #131a24;
+  --color-frame-soft: #1c2532;
+  --color-frame-line: rgba(194, 160, 106, 0.28);
+  --color-frame-text: #f4efe6;
+  --color-frame-muted: #a9a496;
+
+  /* Латунь — единственный металл темы */
+  --color-brass: #c2a06a;
+  --color-brass-soft: #d8bd8e;
+  --color-brass-deep: #8a6835;
+
+  --font-serif: 'Cormorant', Georgia, 'Times New Roman', serif;
   --font-sans: 'DM Sans', system-ui, sans-serif;
 }
 
@@ -62,13 +82,26 @@
 
 body {
   background: var(--color-page);
+  font-variant-numeric: lining-nums;
   color: var(--color-muted);
   font-family: var(--font-sans);
   line-height: 1.65;
   font-size: 1rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0.005em;
+  color: var(--color-ink);
+}
+/* Cormorant мельче гротеска в том же кегле — шкала поднята */
+h1 { font-size: clamp(2.4rem, 5.6vw, 3.7rem); }
+h2 { font-size: clamp(1.8rem, 3.9vw, 2.6rem); }
+h3 { font-size: clamp(1.4rem, 2.7vw, 1.8rem); }
+
+h4 {
   font-family: var(--font-sans);
   color: var(--color-ink);
   line-height: 1.25;
@@ -294,4 +327,56 @@ main {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-teal);
+}
+
+/* === Галерейная витрина: фото ведёт, латунная мета, волосок вместо рамки === */
+.ig-card { display: flex; flex-direction: column; }
+.ig-card__media {
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(194, 160, 106, 0.18);
+}
+.ig-card__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.ig-card:hover .ig-card__media img { transform: scale(1.03); }
+.ig-card__body {
+  flex: 1;
+  padding: 1rem 0 1.1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.ig-card__meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-brass-deep);
+}
+.ig-card__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.22;
+}
+.ig-card__title a { color: var(--color-ink); transition: color 0.25s ease; }
+.ig-card:hover .ig-card__title a { color: var(--color-teal); }
+.ig-card__desc {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--color-muted);
+}
+.ig-card__foot {
+  margin: 0.7rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  opacity: 0.75;
 }

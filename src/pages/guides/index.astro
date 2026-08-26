@@ -1,4 +1,5 @@
 ---
+import { responsiveImage } from '../../lib/responsiveImage';
 export const prerender = true;
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -76,18 +77,29 @@ const counts = TOPICS.map((t) => ({ ...t, n: rows.filter((r) => r.topic === t.id
 
     <div class="grid md:grid-cols-2 gap-6" id="ig-guide-grid">
       {rows.map(({ guide, topic, topicLabel, readingTime, updated, haystack }) => (
-        <article class="surface-card p-7 ig-guide" data-topic={topic} data-text={haystack}>
-          <div class="flex flex-wrap gap-2 mb-3">
-            <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-teal-light)] text-[var(--color-teal)] font-medium">{topicLabel}</span>
-            {guide.data.tags?.slice(0, 2).map((tag) => (
-              <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-page)] text-[var(--color-muted)] font-medium">{tag}</span>
-            ))}
+        <article class="ig-card ig-guide" data-topic={topic} data-text={haystack}>
+          {guide.data.heroImage && (
+            <a href={`/guides/${guide.id}/`} class="ig-card__media" tabindex="-1" aria-hidden="true">
+              <img
+                src={responsiveImage(guide.data.heroImage, 'card').src}
+                srcset={responsiveImage(guide.data.heroImage, 'card').srcset}
+                sizes={responsiveImage(guide.data.heroImage, 'card').sizes}
+                alt=""
+                width={responsiveImage(guide.data.heroImage, 'card').width}
+                height={responsiveImage(guide.data.heroImage, 'card').height}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          )}
+          <div class="ig-card__body">
+            <p class="ig-card__meta">{topicLabel}</p>
+            <h2 class="ig-card__title">
+              <a href={`/guides/${guide.id}/`} class="no-underline">{guide.data.title}</a>
+            </h2>
+            <p class="ig-card__desc">{guide.data.description}</p>
+            <p class="ig-card__foot">{readingTime} min read · Updated {updated}</p>
           </div>
-          <h2 class="text-lg mb-2 font-semibold">
-            <a href={`/guides/${guide.id}/`} class="no-underline text-[var(--color-ink)] hover:text-[var(--color-teal)]">{guide.data.title}</a>
-          </h2>
-          <p class="text-sm text-[var(--color-muted)] mb-3">{guide.data.description}</p>
-          <p class="text-xs text-[var(--color-muted)]">{readingTime} min read · Updated {updated}</p>
         </article>
       ))}
     </div>

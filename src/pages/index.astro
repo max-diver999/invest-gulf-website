@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { responsiveImage } from '../lib/responsiveImage';
 import LeadForm from '../components/LeadForm.astro';
 import EntryPoints from '../components/EntryPoints.astro';
 import { getCollection } from 'astro:content';
@@ -17,50 +18,56 @@ const featuredSlugs = [
   'uae-golden-visa-property',
 ];
 const featured = guides.filter((g) => featuredSlugs.includes(g.id));
+
+// Герой берёт настоящий рендер из корпуса проектов и туда же ведёт.
+const gulfProjects = await getCollection('projects');
+const heroProject = gulfProjects.find((p) => p.data.heroImage && !p.data.noindex);
+const heroImg = heroProject ? responsiveImage(heroProject.data.heroImage, 'hero') : null;
 ---
 <BaseLayout
   title="Invest Gulf: Independent UAE & Gulf Property Research"
   description={SITE.description}
   stickyCta={STICKY_HOME}
+  preloadImage={heroImg ? { src: heroImg.src, srcset: heroImg.srcset, sizes: heroImg.sizes ?? '(max-width: 1023px) 100vw, 50vw' } : null}
 >
-  <section class="border-b border-[var(--color-border-soft)] bg-[var(--color-surface)]">
-    <div class="site-container py-16 md:py-24 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div>
-        <span class="badge-pill mb-5">Independent research</span>
-        <h1 class="text-3xl md:text-[2.35rem] mb-5 leading-tight">
-          Understand Gulf property before you buy
+  <section class="ig-hero">
+    <div class="ig-hero__grid site-container">
+      <div class="ig-hero__copy">
+        <span class="ig-hero__eyebrow">Gulf property · Independent research</span>
+        <h1 class="ig-hero__title">
+          Understand Gulf property<br/>
+          <span class="ig-hero__accent">before you buy.</span>
         </h1>
-        <p class="text-base md:text-lg text-[var(--color-muted)] mb-8 max-w-xl">
-          Dubai, Abu Dhabi, RAK, fees, yields, visa rules. Request a shortlist when you're ready.
+        <p class="ig-hero__lede">
+          Dubai, Abu Dhabi and Ras Al Khaimah — DLD fees and service charges, net yields after
+          management, Golden Visa thresholds, and off-plan escrow checks before you reserve.
         </p>
-        <div class="flex flex-wrap gap-3">
-          <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
-          <a href="/get-shortlist/" class="btn-secondary px-6 py-3">Free shortlist →</a>
+        <div class="ig-hero__chips">
+          <span class="ig-hero__chip">0% income tax on rental</span>
+          <span class="ig-hero__chip">RERA-regulated referrals</span>
+        </div>
+        <div class="ig-hero__cta">
+          <a href="/get-shortlist/" class="ig-hero__btn">Request a shortlist</a>
+          <a href="/methodology/" class="ig-hero__link">How we verify &rarr;</a>
         </div>
       </div>
-      <div class="flex flex-col gap-4">
-        <div class="surface-card p-5 flex gap-4 items-center">
-          <div class="card-icon">3</div>
-          <div>
-            <p class="font-semibold text-[var(--color-ink)] text-sm">Markets covered</p>
-            <p class="text-sm text-[var(--color-muted)]">Dubai · Abu Dhabi · RAK</p>
-          </div>
-        </div>
-        <div class="surface-card p-5 flex gap-4 items-center">
-          <div class="card-icon">0%</div>
-          <div>
-            <p class="font-semibold text-[var(--color-ink)] text-sm">No income tax</p>
-            <p class="text-sm text-[var(--color-muted)]">On rental for most individual investors</p>
-          </div>
-        </div>
-        <div class="surface-card p-5 flex gap-4 items-center">
-          <div class="card-icon">✓</div>
-          <div>
-            <p class="font-semibold text-[var(--color-ink)] text-sm">Licensed partners</p>
-            <p class="text-sm text-[var(--color-muted)]">RERA-regulated referrals only · <a href="/methodology/" class="link-arrow">Methodology</a></p>
-          </div>
-        </div>
-      </div>
+
+      {heroProject && heroImg && (
+        <a href={`/projects/${heroProject.id}/`} class="ig-hero__media" aria-label={heroProject.data.title}>
+          <img
+            src={heroImg.src}
+            srcset={heroImg.srcset}
+            sizes={heroImg.sizes ?? '(max-width: 1023px) 100vw, 50vw'}
+            alt={heroProject.data.title}
+            width={heroImg.width}
+            height={heroImg.height}
+            loading="eager"
+            fetchpriority="high"
+          />
+          <span class="ig-hero__scrim" aria-hidden="true"></span>
+          <span class="ig-hero__caption">{heroProject.data.title.replace(/\s*[:\u2013-]\s.*$/, '')}</span>
+        </a>
+      )}
     </div>
   </section>
 
@@ -153,3 +160,66 @@ const featured = guides.filter((g) => featuredSlugs.includes(g.id));
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  /* Первый экран: графитовая ночь, латунь, много воздуха */
+  .ig-hero { background: var(--color-frame); border-bottom: 1px solid var(--color-frame-line); }
+  .ig-hero__grid { display: grid; gap: 2.75rem; padding-top: 4rem; padding-bottom: 4rem; align-items: center; }
+  .ig-hero__eyebrow {
+    display: inline-block; margin-bottom: 1.5rem;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--color-brass);
+  }
+  .ig-hero__title {
+    margin: 0 0 1.35rem;
+    font-size: clamp(2.5rem, 5.6vw, 3.9rem);
+    font-weight: 300; line-height: 1.08; letter-spacing: 0.005em;
+    color: #f7f2e8;
+  }
+  .ig-hero__accent { color: var(--color-brass); font-style: italic; font-weight: 400; }
+  .ig-hero__lede {
+    margin: 0 0 1.9rem; max-width: 33rem;
+    font-size: 1rem; line-height: 1.75; color: var(--color-frame-muted);
+  }
+  .ig-hero__chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.1rem; }
+  .ig-hero__chip {
+    padding: 0.5rem 1.05rem; border: 1px solid rgba(194, 160, 106, 0.32); border-radius: 2px;
+    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; color: var(--color-frame-text);
+  }
+  .ig-hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
+  .ig-hero__btn {
+    display: inline-block; padding: 0.9rem 1.9rem; border-radius: 2px;
+    background: var(--color-brass); color: #141a23;
+    font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    text-decoration: none; transition: background 0.25s ease;
+  }
+  .ig-hero__btn:hover { background: var(--color-brass-soft); }
+  .ig-hero__link {
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.03em;
+    color: var(--color-frame-text); text-decoration: none;
+    border-bottom: 1px solid rgba(244, 239, 230, 0.35); padding-bottom: 3px;
+  }
+  .ig-hero__link:hover { color: var(--color-brass); border-color: var(--color-brass); }
+  .ig-hero__media {
+    position: relative; display: block; overflow: hidden; border-radius: 2px; text-decoration: none;
+    box-shadow: 0 0 0 1px rgba(194, 160, 106, 0.35), 0 26px 70px rgba(6, 10, 16, 0.6);
+  }
+  .ig-hero__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .ig-hero__scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(19, 26, 36, 0.85) 0%, rgba(19, 26, 36, 0.05) 55%);
+  }
+  .ig-hero__caption {
+    position: absolute; left: 1.5rem; right: 1.5rem; bottom: 1.2rem;
+    font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em;
+    text-transform: uppercase; color: #f4efe6;
+  }
+  @media (min-width: 1024px) {
+    .ig-hero__grid {
+      grid-template-columns: 1fr 1fr; gap: 4rem;
+      padding-top: 5rem; padding-bottom: 5rem; min-height: min(74svh, 680px);
+    }
+    .ig-hero__media { height: 100%; min-height: 27rem; }
+  }
+  @media (max-width: 1023px) { .ig-hero__media { aspect-ratio: 16 / 10; } }
+</style>
