@@ -4,6 +4,7 @@ import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import GulfMoneyHubStrip from '../components/GulfMoneyHubStrip.astro';
 import { SITE } from '../data/site';
+import { responsiveImage } from '../lib/responsiveImage';
 import { resolveStickyCta } from '../../scripts/lib/invest-gulf-cta-router.mjs';
 
 interface Props {
@@ -47,6 +48,7 @@ const stickyCta = articleSlug
   : null;
 
 const heroImage = heroImageProp || `${SITE.url}/apple-touch-icon.png`;
+const hero = responsiveImage(heroImage, 'hero');
 
 const dateStr = (updatedDate || pubDate).toLocaleDateString('en-US', {
   year: 'numeric',
@@ -132,10 +134,12 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
 
     {heroImage && (
       <img
-        src={heroImage}
+        src={hero.src}
+        srcset={hero.srcset}
+        sizes={hero.sizes}
         alt={heroAlt}
-        width="1280"
-        height="420"
+        width={hero.width}
+        height={hero.height}
         class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]"
         loading="eager"
         fetchpriority="high"

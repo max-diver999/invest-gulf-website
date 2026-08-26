@@ -66,6 +66,21 @@ const steps = [
     cmd: 'node',
     args: ['scripts/qa-audit.mjs'],
   },
+  ...(existsSync(join(ROOT, 'scripts/verify-gulf-cloudinary.mjs'))
+    && existsSync(join(ROOT, 'scripts/gulf-cloudinary-upload-manifest.json'))
+    ? [
+        {
+          name: 'Gulf Cloudinary manifest, refs, rollback and dimensions',
+          cmd: 'node',
+          args: ['scripts/verify-gulf-cloudinary.mjs'],
+        },
+        {
+          name: 'Gulf content diff (image URLs only)',
+          cmd: 'node',
+          args: ['scripts/verify-gulf-rollout-diff.mjs'],
+        },
+      ]
+    : []),
   ...(existsSync(join(ROOT, 'scripts/audit-all-images.mjs'))
     ? [
         {
