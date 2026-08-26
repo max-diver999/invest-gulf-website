@@ -3,19 +3,39 @@ import localDimensions from '../../scripts/data/image-dimensions.json';
 
 type Variant = 'hero' | 'body' | 'card';
 type Dimension = { width: number; height: number };
+type LocalCandidate = { url: string; width: number };
+type LocalHeroFallback = { src: string; candidates: LocalCandidate[] };
 
 const CLOUD = 'dlrrtf6bq';
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = {
-  hero: [640, 960, 1200],
-  body: [640, 960, 1200],
-  card: [320, 480, 640],
+  hero: [360, 640, 960, 1200],
+  body: [360, 640, 960, 1200],
+  card: [320, 360, 480, 640],
 } as const;
-const LOCAL_HERO_FALLBACKS: Record<string, string> = {
-  'more-group/gulf/areas/downtown-dubai/hero-0747510681':
-    '/images/areas/downtown-dubai/hero.jpg',
-  'more-group/gulf/projects/address-residences-dubai-hills/hero-f8810edaf1':
-    '/images/projects/address-residences-dubai-hills/hero.webp',
+const ARTICLE_SIZES =
+  '(max-width: 599px) calc(100vw - 3rem), (max-width: 1087px) 92vw, '
+  + '(max-width: 1399px) calc(68rem - 8vw), 976px';
+const LOCAL_HERO_FALLBACKS: Record<string, LocalHeroFallback> = {
+  'more-group/gulf/areas/downtown-dubai/hero-0747510681': {
+    src: '/images/areas/downtown-dubai/hero.jpg',
+    candidates: [
+      { url: '/images/areas/downtown-dubai/hero-360.webp', width: 360 },
+      { url: '/images/areas/downtown-dubai/hero-640.webp', width: 640 },
+      { url: '/images/areas/downtown-dubai/hero-960.webp', width: 960 },
+      { url: '/images/areas/downtown-dubai/hero-1200.webp', width: 1200 },
+      { url: '/images/areas/downtown-dubai/hero.jpg', width: 1280 },
+    ],
+  },
+  'more-group/gulf/projects/address-residences-dubai-hills/hero-f8810edaf1': {
+    src: '/images/projects/address-residences-dubai-hills/hero.webp',
+    candidates: [
+      { url: '/images/projects/address-residences-dubai-hills/hero-360.webp', width: 360 },
+      { url: '/images/projects/address-residences-dubai-hills/hero-640.webp', width: 640 },
+      { url: '/images/projects/address-residences-dubai-hills/hero-960.webp', width: 960 },
+      { url: '/images/projects/address-residences-dubai-hills/hero.webp', width: 1024 },
+    ],
+  },
 };
 
 export function gulfPublicId(src: string): string | null {
@@ -46,11 +66,11 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
 
   const localHero = variant === 'hero' ? LOCAL_HERO_FALLBACKS[publicId] : undefined;
   if (localHero) {
-    const local = (localDimensions as Record<string, Dimension>)[localHero];
+    const local = (localDimensions as Record<string, Dimension>)[localHero.src];
     return {
-      src: localHero,
-      srcset: undefined,
-      sizes: undefined,
+      src: localHero.src,
+      srcset: localHero.candidates.map(({ url, width }) => `${url} ${width}w`).join(', '),
+      sizes: ARTICLE_SIZES,
       width: local?.width ?? 1280,
       height: local?.height ?? 720,
     };
@@ -66,7 +86,9 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
     srcset: widths.map((width) => `${gulfDeliveryUrl(publicId, width)} ${width}w`).join(', '),
     sizes: variant === 'card'
       ? '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 320px'
-      : '(max-width: 767px) calc(100vw - 2rem), 768px',
+      : variant === 'hero'
+        ? ARTICLE_SIZES
+        : '(max-width: 599px) calc(100vw - 3rem), 72ch',
     width: native.width,
     height: native.height,
   };
