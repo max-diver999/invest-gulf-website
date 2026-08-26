@@ -11,6 +11,12 @@ const WIDTHS = {
   body: [640, 960, 1200],
   card: [320, 480, 640],
 } as const;
+const LOCAL_HERO_FALLBACKS: Record<string, string> = {
+  'more-group/gulf/areas/downtown-dubai/hero-0747510681':
+    '/images/areas/downtown-dubai/hero.jpg',
+  'more-group/gulf/projects/address-residences-dubai-hills/hero-f8810edaf1':
+    '/images/projects/address-residences-dubai-hills/hero.webp',
+};
 
 export function gulfPublicId(src: string): string | null {
   const delivery = `res.cloudinary.com/${CLOUD}/image/upload/`;
@@ -35,6 +41,18 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
       sizes: undefined,
       width: local?.width ?? (variant === 'card' ? 640 : 1280),
       height: local?.height ?? (variant === 'card' ? 360 : 720),
+    };
+  }
+
+  const localHero = variant === 'hero' ? LOCAL_HERO_FALLBACKS[publicId] : undefined;
+  if (localHero) {
+    const local = (localDimensions as Record<string, Dimension>)[localHero];
+    return {
+      src: localHero,
+      srcset: undefined,
+      sizes: undefined,
+      width: local?.width ?? 1280,
+      height: local?.height ?? 720,
     };
   }
 

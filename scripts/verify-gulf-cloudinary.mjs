@@ -10,6 +10,10 @@ const dimensions = JSON.parse(readFileSync(join(ROOT, 'src/data/gulf-image-dimen
 const uploaded = uploadState.uploaded || {};
 const errors = [];
 const EXPECTED = 285;
+const ALLOWED_LOCAL_HERO_FALLBACKS = new Set([
+  '/images/areas/downtown-dubai/hero.jpg',
+  '/images/projects/address-residences-dubai-hills/hero.webp',
+]);
 
 function walk(dir) {
   if (!existsSync(dir)) return [];
@@ -54,7 +58,12 @@ for (const file of walk(join(ROOT, 'src')).filter((item) => /\.(astro|css|js|jso
   const text = readFileSync(file, 'utf8');
   const isDeliveryHelper = file.endsWith('/src/lib/responsiveImage.ts');
   const localRefs = text.match(/(?:https:\/\/invest-gulf\.com)?\/images\/[A-Za-z0-9%_./@+(),-]+\.(?:avif|gif|jpe?g|png|webp)/gi) || [];
-  if (localRefs.length) errors.push(`local delivery refs remain in ${file.replace(`${ROOT}/`, '')}: ${localRefs.length}`);
+  const unexpectedLocalRefs = localRefs.filter((ref) => (
+    !isDeliveryHelper || !ALLOWED_LOCAL_HERO_FALLBACKS.has(ref.replace('https://invest-gulf.com', ''))
+  ));
+  if (unexpectedLocalRefs.length) {
+    errors.push(`unexpected local delivery refs remain in ${file.replace(`${ROOT}/`, '')}: ${unexpectedLocalRefs.length}`);
+  }
   for (const raw of text.match(/https:\/\/res\.cloudinary\.com\/[^\s"'`)>\]]+/g) || []) {
     if (isDeliveryHelper) continue;
     cloudUrls.push(raw);
