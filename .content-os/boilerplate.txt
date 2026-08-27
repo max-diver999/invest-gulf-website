@@ -1,0 +1,23 @@
+# Text that is deliberately identical across articles.
+#
+# The duplication detector treats every repeated passage as evidence of
+# mechanical writing, which is what caught the padding at 745d602. Legal
+# disclaimers and standing method notes are legitimately repeated, so they are
+# declared here instead of being silently exempted. One line per sentence,
+# matched after normalisation. Keep this file short: every line you add is a
+# passage the duplication detector stops looking at, and a reviewer should be
+# able to read the whole list in under a minute.
+#
+# This list is EMPTY on purpose, and starting it empty was a decision rather
+# than an oversight. The rubric arrived here carrying four declarations from the
+# site it was built for, all of them about South African transfer duty; measured
+# against this corpus each one matched exactly zero files. Inheriting them would
+# have left dead config in a file whose entire job is to be short enough to
+# audit by eye.
+#
+# What this corpus actually repeats is navigational rather than legal - "Parent
+# hub: ...", "Related reading: ..." - at six files at most, and those are links
+# rather than prose. They are not declared here because nothing yet shows the
+# detector penalising them unfairly. Add a line only when a real page is being
+# marked down for a passage that genuinely must be identical everywhere, and
+# write down which page and which measurement prompted it.
