@@ -469,3 +469,72 @@ else in this repository. The calibration separates the honest scorer from the
 mechanical one correctly, and it cannot tell either of them apart from a human.
 Fifteen to twenty hand-labelled files would close that gap. Both fact registries
 remain `verified: false` throughout.
+
+---
+
+## Wave R2 result (2026-08-28)
+
+The twelve worst pages in the `areas` collection, all scoring 0/75 at baseline,
+rewritten so that each holds one structural mechanism no neighbouring page holds.
+
+| Page | Thesis it now holds | Before | After |
+|---|---|---|---|
+| al-raha-beach | Related-party contract chain behind each budget line | 0 | 61 |
+| al-reem-island | One island name, several master developments, several regimes | 0 | 61 |
+| jbr | Short-let income is a permission the building can withdraw | 0 | 61 |
+| dubai-harbour | The flat and the berth are two contracts, two counterparties | 0 | 61 |
+| amwaj-islands | Three billing parties, one line in the model | 0 | 61 |
+| al-maryah-island | Which legal system governs the lease | 0 | 58 |
+| damac-hills | A brand licence the owner is not a party to | 0 | 58 |
+| mudon | The handover calendar is a rent calendar | 0 | 58 |
+| motor-city | The cooling capacity charge bills through a void | 0 | 58 |
+| downtown-dubai | A view is a condition, not an interest in land | 0 | 58 |
+| dubai-sports-city | The plot next door, not the district average | 0 | 57 |
+| al-hamra-village | Who funds the next major repair | 0 | 57 |
+
+Wave mean 59.1. No gates and no penalties on any of the twelve.
+
+Corpus effect: mean 18.0 to 20.8, zero-scoring files 105 to 76. Twelve files were
+touched and twenty-nine recovered, so seventeen of them came out from under the
+mass-duplication gate once their twins stopped repeating them. The `areas`
+collection itself moves from 7.1 mean at baseline, the worst collection on the
+site, to 23.2 with five zeros left.
+
+### What was deliberately dropped
+
+Every inherited market yield band. The old pages carried figures of the form
+"5.5 to 6.5% gross, 4.0 to 5.5% net" with service charge rates to match. None of
+those figures is in either registry, none is verifiable here, and the registry's
+own README records why the saturated generic ones cannot be registered at all.
+Carrying them forward would have been repeating an earlier pass's arithmetic
+under a new byline. The pages now hold the mechanism that decides the number and
+point at the guides that assemble the evidence.
+
+The plan's drafted theses for three of these pages also contained figures
+(a 25 to 30% AGM quorum on JBR, a 6.3% against 4.9% spread on Amwaj, an
+advertised 7 to 8.5% gross on Motor City). Those were dropped for the same
+reason and the arguments were rebuilt to stand without them, which they do:
+none of the three theses depended on the figure being any particular value.
+
+### Duplication re-check across both waves
+
+Nine-gram overlap, all twenty-six rewritten pages against each other and against
+the 567 untouched pages:
+
+| Pair | Shared 9-grams | Share of the smaller document |
+|---|---|---|
+| al-maryah x al-reem | 4 | 0.3% |
+| ifza x meydan | 2 | 0.2% |
+| al-raha x jbr | 1 | 0.1% |
+
+Every other pair among the twenty-six shares none. Against the rest of the
+corpus, nothing reaches 5 shared 9-grams.
+
+### One rule fixed during the wave
+
+`malformed-output` capped Sports City at 40 for the phrase "an undefined cost".
+Measured across all 593 files, the `\bundefined\b` arm had two hits, both
+ordinary adjectival English, one of them predating this wave; it had zero true
+positives. It is now narrowed to the value-slot shape a template leak actually
+takes. Calibration is identical either side of the change at separation 64.2 and
+0/41. The full reasoning is in `docs/GEO-SCORING.md`.
