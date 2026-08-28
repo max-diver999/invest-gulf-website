@@ -150,6 +150,29 @@ Neither exemption was added because a page scored badly. Each was added because 
 *for being correct*, and in both cases the calibration was re-run to prove the exemption did not
 weaken the signal.
 
+### Fixed again — the `undefined` arm had no true positives on this corpus
+
+Found during wave R2, by a page being capped at 40 for the phrase "an undefined cost with no end
+date". The arm `\bundefined\b` exists to catch a template that rendered a JavaScript value into
+prose, which really did reach production on the reference site. On this corpus it caught nothing of
+the kind:
+
+| occurrence | page | verdict |
+|---|---|---|
+| `for undefined cases` | `uae-will-difc-adgm` | **false** — ordinary adjectival English, and it predates this wave |
+| `an undefined cost` | `dubai-sports-city-property-investment` | **false** — same |
+
+Two hits in 593 files, both adjectival, none a leak. The rule was penalising the word on every
+occurrence it found. The fix keeps the signal and narrows it to the shape a leak actually takes,
+which is a value slot: `undefined` after a currency token or a digit, or `undefined` terminating a
+clause. English adjectival use is always followed by the noun it modifies, so the two false
+positives clear and `AED undefined`, `7 undefined`, `the fee is undefined.` and `charge undefined,`
+are all still caught. `NaN` is untouched, having no English usage to protect.
+
+Calibration after the change: separation 64.2 and 0/41 garbage above the worst hand-written file,
+identical to before it. The narrowing cost the labelled sets nothing, which is what distinguishes
+fixing a rule from loosening one.
+
 ## Rejected candidates
 
 Recorded so nobody re-adds them on intuition. The first is from this site; the rest are inherited

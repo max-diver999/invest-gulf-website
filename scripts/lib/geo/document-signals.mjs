@@ -44,7 +44,14 @@ import { plainText, words, sentences } from './corpus-signals.mjs';
  */
 const MALFORMED_RE = new RegExp(
   [
-    String.raw`\bundefined\b`,
+    // `undefined` is a template leak only when it sits in a value slot: after a
+    // currency or number, or terminating a clause. As an English adjective it is
+    // followed by the noun it modifies. Measured over this corpus, the bare rule
+    // had two hits and both were adjectival ("for undefined cases" on the wills
+    // page, "an undefined cost" on Sports City) and zero were leaks, so it was
+    // penalising correct writing on every occurrence it found.
+    String.raw`(?:AED|SAR|QAR|OMR|BHD|KWD|USD|GBP|EUR|\$|\d)\s*undefined\b`,
+    String.raw`\bundefined\b(?=\s*(?:[.,;:)!?]|$))`,
     String.raw`\bNaN\b`,
     String.raw`\bR\s*,`,
     String.raw`\s,\s`,
