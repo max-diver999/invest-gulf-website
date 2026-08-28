@@ -538,3 +538,84 @@ ordinary adjectival English, one of them predating this wave; it had zero true
 positives. It is now narrowed to the value-slot shape a template leak actually
 takes. Calibration is identical either side of the change at separation 64.2 and
 0/41. The full reasoning is in `docs/GEO-SCORING.md`.
+
+---
+
+## Waves R3 and R4 result (2026-08-28)
+
+R3 took the ten worst pages in `compare`; R4 took the twelve remaining
+registry-driven and twinned pages across `guides`, `areas` and `compare`. Every
+one scored 0/75 at baseline except `uae-vs-qatar-property-investment`, which
+scored 20 and was capped by a single gate.
+
+| Page | Thesis it now holds | Before | After |
+|---|---|---|---|
+| dubai-vs-oman-rental-yield | Letting is a fee in one market and a permission in the other | 0 | 62 |
+| freehold-vs-leasehold-uae | The date the remaining term stops fitting a mortgage | 0 | 61 |
+| rak-vs-dubai-rental-yield | The rent cap and the comp set are one system | 0 | 61 |
+| dubai-vs-sharjah-property-investment | At resale you bid against the developer | 0 | 61 |
+| saudi-arabia-vs-uae-golden-visa | One cheque against two | 0 | 61 |
+| dubai-property-for-german-buyers | A ten-year clock, not a document pack | 0 | 61 |
+| dubai-production-city | One licensed cluster's payroll | 0 | 61 |
+| khalifa-city | What musataha actually grants | 0 | 61 |
+| emaar-vs-damac | A counterparty you read or one you average | 0 | 60 |
+| uae-vs-oman-property-investment | The buyer pool you sell into | 0 | 60 |
+| bahrain-vs-dubai-investment | Same yield, opposite exposure to one programme | 0 | 60 |
+| qatar-vs-uae-residency | One choice or four | 0 | 60 |
+| dubai-property-for-pakistani-buyers | Which family member may lawfully be the buyer | 0 | 60 |
+| saadiyat-island | Demand arrives in dated institutional steps | 0 | 60 |
+| manama | The utility tariff class follows the occupier | 0 | 60 |
+| dubai-islands | The infrastructure sequence is the rent curve | 0 | 59 |
+| uae-vs-qatar-property-investment | A list rather than a market | 20 | 59 |
+| dubai-property-for-british-buyers | The instalment schedule is the currency decision | 0 | 58 |
+| mbr-city | A portal label, not a community | 0 | 57 |
+| golden-visa-vs-dubai-residence-visa | Who holds your status | 0 | 56 |
+| jlt | Land inside a free zone, and the cluster | 0 | 56 |
+| abu-dhabi-vs-dubai-investment | A rent floor bought by selling the rent upside | 0 | 55 |
+
+R3 mean 60.1, R4 mean 59.0. No gates and no penalties on any of the twenty-two.
+
+### Corpus after four waves
+
+| | Baseline | After R1 | After R2 | After R3+R4 |
+|---|---|---|---|---|
+| Corpus mean | 15.6 | 18.0 | 20.8 | **25.2** |
+| Zero-scoring files | 127 | 105 | 76 | **45** |
+
+Forty-eight files have been rewritten and eighty-two have left zero, so
+thirty-four untouched pages recovered as a second-order effect of their twins
+ceasing to repeat them. Every collection except `guides` now has no zeros at
+all: `areas` 33.6 mean, `compare` 40.7, `projects` 29.2, `news` 41.1. The
+remaining forty-five zeros are all in `guides`, which is where the next wave
+belongs.
+
+### Duplication re-check across all four waves
+
+Nine-gram overlap, all forty-eight rewritten pages against each other and
+against the 545 untouched pages. The worst pair shares four shingles at 0.3% of
+the smaller document; six other pairs share one or two; every remaining pair
+shares none. Against the rest of the corpus, nothing reaches five shared
+9-grams.
+
+### The five nationality pages now hold five separate arguments
+
+This was the densest template family in the corpus, at 33 template-family points
+on the German page alone. The arguments are now: the peg removing the FX
+decision entirely for Americans, the Liberalised Remittance Scheme calendar for
+Indians, the instalment schedule as the currency decision for the British, the
+ten-year holding-period clock for Germans, and which family member may lawfully
+be the buyer for Pakistanis. No two share a mechanism.
+
+### A second rule fix, and one text fix that was not a rule fix
+
+The opener component gives zero credit to a section opener under six words. That
+is a documented precondition, not a defect, and sixteen of my own openers across
+R1 and R2 were four or five word fragments scoring zero for terseness.
+`emaar-vs-damac` moved 51 to 60 on rewriting three of them as full sentences
+that still answer rather than restate. The threshold was not touched, and the
+same sweep was applied retrospectively to thirteen pages already shipped.
+
+That is the correct handling of the two cases, kept distinct on purpose: where a
+rule penalised correct writing it was narrowed and the calibration re-run to
+prove nothing was lost (the `undefined` arm, in R2). Where a documented
+precondition penalised my own shortcuts, the text changed.
