@@ -405,3 +405,67 @@ class not authored by the grader. It is an hour of reading and it is the differe
 scorer that measures quality and one that measures distance from a known-bad commit.
 
 Until that exists, this scorer should not be the only gate on new work.
+
+---
+
+## Wave R1 result (2026-08-28)
+
+Fourteen guides, every one of them scoring 0/75 at baseline, rewritten around a
+single thesis each. Measured on the full corpus after the wave:
+
+| Page | Before | After | Penalties | Gates |
+|---|---|---|---|---|
+| saudi-family-visa | 0 | 64 | 0 | 0 |
+| oman-property-foreigner-living | 0 | 62 | 0 | 0 |
+| ifza-company-setup | 0 | 61 | 0 | 0 |
+| meydan-free-zone-setup | 0 | 61 | 0 | 0 |
+| schools-near-jvc | 0 | 61 | 0 | 0 |
+| sharjah-vs-dubai-rent | 0 | 61 | 0 | 0 |
+| saudi-property-designated-zones-explained | 0 | 60 | 1 | 0 |
+| oman-itc-visa-living | 0 | 59 | 2 | 0 |
+| golden-visa-renewal-requirements-uae | 0 | 57 | 0 | 0 |
+| abu-dhabi-vs-dubai-families | 0 | 57 | 1 | 0 |
+| qatar-property-buyer-relocation | 0 | 57 | 0 | 0 |
+| living-al-ain | 0 | 55 | 0 | 0 |
+| dubai-property-for-indian-buyers | 0 | 53 | 0 | 0 |
+| dubai-property-for-american-buyers | 0 | 51 | 0 | 0 |
+
+Wave mean 58.5. Every page clears the calibration good-set floor of 55 except
+the two country-of-origin guides, which sit just under it and are the two whose
+theses lean hardest on procedure the registries cannot yet source.
+
+Corpus effect: mean 15.6 to 18.0, zero-scoring files 127 to 105. Only fourteen
+files were touched, so eight of the twenty-two recoveries are second-order: the
+pages that had been sharing duplicated text with an R1 page came out from under
+the mass-duplication gate when their twin stopped repeating them.
+
+### Duplication re-check across the wave
+
+Nine-gram overlap, every R1 page against every other R1 page and against all 579
+untouched pages:
+
+- Within the wave: one pair shares 2 shingles (ifza x meydan, 0.2% of the
+  smaller document, down from 509 shingles and 25% before the wave). Every
+  other pair shares none.
+- Against the rest of the corpus: nothing at or above 5 shared shingles.
+
+### One defect found in the wave, and the gate added for it
+
+Ten of the fourteen pages carried a `heroImage` key that does not exist. The
+keys were fabricated during the rewrite and they failed nowhere until the build
+tried to resolve dimensions for them, at which point the error named a
+Cloudinary path and not a file. All ten were restored to the real key each page
+carried before the wave.
+
+`scripts/qa-audit.mjs` now checks every `heroImage` against
+`src/data/gulf-image-dimensions.json` and reports `heroImageUnknown:<key>`
+against the offending file. Verified by injecting a bad key and confirming the
+validator fails on it.
+
+### Still open
+
+The good set is still four files, and they are agent-written like everything
+else in this repository. The calibration separates the honest scorer from the
+mechanical one correctly, and it cannot tell either of them apart from a human.
+Fifteen to twenty hand-labelled files would close that gap. Both fact registries
+remain `verified: false` throughout.

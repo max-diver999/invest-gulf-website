@@ -9,6 +9,13 @@ import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { runCloudinaryDeliveryChecks } from './lib/cloudinary-gate.mjs';
 
+// Hero images resolve through the Gulf dimensions map at build time, so a key
+// that is not in it fails the build rather than the validator. Check it here,
+// where the error names the file.
+const GULF_DIMS = new Set(
+  Object.keys(JSON.parse(readFileSync(new URL('../src/data/gulf-image-dimensions.json', import.meta.url), 'utf8')))
+);
+
 const ROOT = decodeURIComponent(new URL('../src/content/', import.meta.url).pathname);
 const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'news'];
 
@@ -202,6 +209,10 @@ function auditFile(c, slug) {
     const bad = rels.filter((r) => r && !allSlugs.has(r));
     if (bad.length) prob.push(`relatedSlugsBad:${bad.join('|')}`);
   }
+
+  const hero = (fm.heroImage || '').replace(/^["']|["']$/g, '');
+  const heroKey = hero.match(/\/(more-group\/gulf\/.+)$/);
+  if (heroKey && !GULF_DIMS.has(heroKey[1])) prob.push(`heroImageUnknown:${heroKey[1]}`);
 
   const bodySlugs = [...body.matchAll(/\]\(\/(?:guides|compare|areas|projects|news)\/([a-z0-9\-]+)\/?\)/gi)].map((m) => m[1]);
   const badLinks = [...new Set(bodySlugs.filter((s) => !allSlugs.has(s)))];
