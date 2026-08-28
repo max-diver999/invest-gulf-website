@@ -1,0 +1,259 @@
+{
+  "_readme": "Claims about jurisdictions nobody here monitors. Keyed by the claim rather than by the number, because a figure like \"5%\" means something different on other pages of this site and a figure-keyed entry would lend them provenance they have not earned.\n\nThe risk this addresses is specific. A UAE figure has a UAE source somebody here can check on demand. An assertion about HMRC, the IRS, the RBI or the Finanzamt has no watcher at all, so a rate that changed in another country's budget would sit on this site indefinitely under an asOf date quietly asserting it was current. Each claim therefore carries a reviewBy, and `npm run facts:review` exits non-zero once one passes. It also reports claims whose listed files no longer exist, so a claim orphaned by a rewrite is pruned rather than reviewed forever.",
+  "reviewIntervalMonths": 6,
+  "claims": [
+    {
+      "id": "uk-nondom-abolished-april-2025",
+      "claim": "UK: the remittance basis was abolished for new non-domiciled residents from 6 April 2025 and replaced by a transitional four-year foreign income and gains (FIG) regime, so UK tax residents are taxed on worldwide income including Dubai rent from the first year of residence.",
+      "source": "HMRC / UK Finance Act 2025 (non-dom replacement legislation). Corpus does not cite a section; the naming instrument must be pinned before this is treated as verified.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "uk-deemed-domicile-15-of-20",
+      "claim": "UK: dubai-property-for-british-buyers.mdx asserts that British buyers become deemed UK domiciled after 15 of 20 tax years in the UK and so face IHT on Dubai property. This is the pre-April-2025 deemed-domicile test; uae-inheritance-property-expats.mdx states the replacement 10-year long-term-resident rule correctly, so the corpus contradicts itself on the same tax.",
+      "source": "HMRC inheritance tax manual / UK Finance Act 2025 long-term-resident rules. Single highest-priority correction in this registry.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "uk-iht-40-percent-nil-rate-325000",
+      "claim": "UK: inheritance tax at 40% applies to worldwide estates including Dubai freehold above a nil-rate band of GBP 325,000, plus a residence nil-rate band of GBP 175,000 where qualifying, with no UK-UAE estate tax treaty available for relief.",
+      "source": "HMRC (IHT rates and nil-rate bands). Bands are set by UK Budget and have been frozen by successive announcements rather than fixed in law.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "uk-cgt-18-or-24-percent-allowance-3000",
+      "claim": "UK: UK tax residents pay capital gains tax on Dubai property disposals at 18% or 24% depending on total income, after a GBP 3,000 annual exempt amount stated as the 2026 figure, with a 60-day reporting window and no UAE foreign tax credit available.",
+      "source": "HMRC (CGT rates and annual exempt amount). Both the rate pair and the allowance are Budget-set and have changed in each of the last several UK fiscal events.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "uk-srt-16-and-183-days",
+      "claim": "UK: the Statutory Residence Test makes fewer than 16 UK days automatic overseas residence (where prior-year conditions are met) and 183 or more UK days automatic UK residence. tax-uk-nationals-dubai.mdx contradicts itself internally, saying 183 or more in the body and more than 182 days in its own FAQ.",
+      "source": "HMRC RDR3 Statutory Residence Test guidance. The 182/183 discrepancy is a wording defect in one file, not a change in law.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "uk-section-24-20-percent-interest-credit",
+      "claim": "UK: mortgage interest on UK residential lettings is restricted to a basic-rate 20% tax credit rather than a full deduction, and this Section 24 restriction is used across the corpus as the benchmark that makes Dubai buy-to-let look better than UK buy-to-let.",
+      "source": "HMRC / UK Income Tax Act 2007 s.272A (finance cost restriction).",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "UK"
+    },
+    {
+      "id": "us-fbar-10000-aggregate",
+      "claim": "US: US persons must file FinCEN Form 114 (FBAR) when aggregate foreign financial accounts exceed USD 10,000 at any point in the calendar year, due 15 April with automatic extension to 15 October. The corpus states the penalty three different ways: USD 10,000 per non-willful violation, over USD 12,000 per account, and up to USD 60,000 per year for willful cases.",
+      "source": "FinCEN under the Bank Secrecy Act (filing), IRS (enforcement). Penalty amounts are inflation-adjusted annually, which is why three figures now coexist.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "US"
+    },
+    {
+      "id": "us-form-8938-thresholds",
+      "claim": "US: FATCA Form 8938 reporting thresholds for specified foreign financial assets. The corpus carries four mutually inconsistent versions: USD 50,000 to 75,000 (offshore-bank-account-uae-expats.mdx, which are the US-resident thresholds misapplied to filers abroad), USD 200,000 for single filers abroad (dubai-property-for-american-buyers.mdx), USD 200,000 year-end or USD 300,000 any-time (tax-us-citizens-dubai.mdx), and USD 200,000 to 600,000 by filing status (uae-tax-guide-expats.mdx).",
+      "source": "IRS (Form 8938 instructions). One threshold table must be chosen and propagated; the 50k/75k page is describing a different filer class.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "US"
+    },
+    {
+      "id": "us-feie-exclusion-amount",
+      "claim": "US: the Foreign Earned Income Exclusion under IRC Section 911 is an annually indexed amount, qualified by the Bona Fide Residence Test or the 330-day Physical Presence Test, and does not cover Dubai rental income or capital gains. The corpus carries USD 126,500 tagged 2024 on three pages and roughly USD 120,000 tagged 2026 on two others.",
+      "source": "IRS (annual revenue procedure setting the Section 911 exclusion). An indexed figure republished with a stale year label is the canonical case for this registry.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "US"
+    },
+    {
+      "id": "us-no-uae-tax-treaty",
+      "claim": "US: there is no comprehensive bilateral US-UAE income tax treaty as of 2026, so US persons get no treaty relief on UAE rental income (reported on Schedule E) and face a default 30% US withholding on US dividends with no treaty reduction.",
+      "source": "IRS (US income tax treaty table) / US Treasury. A negative claim that silently becomes false the day a treaty is signed and ratified.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "US"
+    },
+    {
+      "id": "us-federal-estate-exemption-13990000",
+      "claim": "US: the federal estate tax exemption is stated as approximately USD 13.99 million per individual for 2026, meaning most US estates would not owe federal estate tax on Dubai property; the page also states that non-domiciled aliens face US estate tax only on US-situs assets, which does not include Dubai property.",
+      "source": "IRS (annual inflation-adjustment revenue procedure for the basic exclusion amount). The 13.99 million figure is the 2025 amount carrying a 2026 label in the corpus.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "US"
+    },
+    {
+      "id": "india-lrs-250000-per-financial-year",
+      "claim": "India: resident individuals may remit up to USD 250,000 per financial year under the RBI Liberalised Remittance Scheme for permitted transactions including overseas property, so a married couple can combine USD 500,000 in one year; NRIs funding from NRE/FCNR or foreign earnings sit outside the LRS cap under FEMA.",
+      "source": "Reserve Bank of India (LRS master direction) under FEMA. The corpus also references TCS on outbound remittance without stating a rate.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "IN"
+    },
+    {
+      "id": "india-nri-182-day-test",
+      "claim": "India: NRI status turns on spending fewer than 182 days in India in a financial year, with Finance Act 2020 deemed-residency rules making a UAE Tax Residency Certificate valuable where no other tax home exists; the corpus does not mention the 120-day test that Finance Act 2020 introduced for higher-income Indian-source earners.",
+      "source": "Income Tax Department of India / Income Tax Act 1961 s.6 as amended by Finance Act 2020.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "IN"
+    },
+    {
+      "id": "india-schedule-fa-black-money-act",
+      "claim": "India: Indian tax residents must disclose foreign assets including Dubai property, bank accounts and rental income in Schedule FA of the Income Tax Return, with non-disclosure penalised under the Black Money Act regardless of whether income is remitted to India.",
+      "source": "Income Tax Department of India / Black Money (Undisclosed Foreign Income and Assets) and Imposition of Tax Act, 2015.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "IN"
+    },
+    {
+      "id": "canada-t1135-100000-threshold",
+      "claim": "Canada: Canadian tax residents holding foreign property over CAD 100,000 must file Form T1135 annually by April 30. The penalty is stated two ways in the same file: CAD 25 per month to CAD 2,500 per year in the FAQ, and CAD 25 to CAD 500 per month in the body.",
+      "source": "Canada Revenue Agency (Form T1135 / Foreign Income Verification Statement).",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "CA"
+    },
+    {
+      "id": "canada-50-percent-cgt-inclusion",
+      "claim": "Canada: Canadian tax residents include 50% of worldwide capital gains in income, including Dubai property disposals, and emigrating Canadians face deemed disposition at fair market value on departure with no principal-residence exemption for Dubai investment stock.",
+      "source": "Canada Revenue Agency / Income Tax Act (capital gains inclusion rate and s.128.1 departure rules). The inclusion rate was the subject of a proposed increase and subsequent reversal in the 2024-2025 Canadian legislative cycle, making it a live drift risk.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "CA"
+    },
+    {
+      "id": "germany-wegzugsbesteuerung-astg-6",
+      "claim": "Germany: exit tax under Section 6 Aussensteuergesetz triggers a deemed disposal of substantial shareholdings at fair market value when unlimited liability ends, is payable immediately for a non-EU destination such as the UAE rather than in instalments, and the corpus separately cites an EUR 500,000 unrealised-gain trigger and 1% and 10% participation thresholds without reconciling them.",
+      "source": "German Aussensteuergesetz Section 6 / Bundesfinanzministerium. The corpus hedges its own thresholds ('confirm current 1% or 10% style participation thresholds with a Steuerberater'), which signals the figures were never pinned.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "DE"
+    },
+    {
+      "id": "germany-estg-23-ten-year-exemption",
+      "claim": "Germany: private capital gains on real estate held personally can become tax-free in Germany after a 10-year holding period under Section 23 EStG, which the corpus uses to argue German buyers should favour long holds over flips; Germany also asserts extended unlimited liability reaching German-source income for up to 10 years after a move to a low-tax country.",
+      "source": "German Einkommensteuergesetz Section 23 (private disposal transactions) and Aussensteuergesetz Section 2 (extended limited liability).",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "DE"
+    },
+    {
+      "id": "france-ifi-1300000-threshold",
+      "claim": "France: the impot sur la fortune immobiliere applies to French tax residents on worldwide real estate above EUR 1.3 million including Dubai freehold, an SCI does not escape it because IFI look-through rules tax members on their proportional share, and France levies an exit tax on unrealised gains on shareholdings above certain thresholds when becoming non-resident.",
+      "source": "Direction Generale des Finances Publiques / French Code General des Impots (IFI, replaced the ISF in 2018).",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "FR"
+    },
+    {
+      "id": "russia-183-day-ndfl-and-uae-dtt",
+      "claim": "Russia: 183 or more days in Russia in a calendar year makes an individual a Russian tax resident taxed on worldwide income at NDFL of 13 to 15% rising to 22% for very high earners under 2025-onwards progressive reforms, while non-residents are taxed at a flat 30% on Russian-source income only; the corpus also asserts the Russia-UAE double tax treaty remains in force in 2026 because the UAE is not on Russia's list of 38 unfriendly states whose treaty benefits were suspended from August 2023.",
+      "source": "Russian Tax Code / Federal Tax Service (FNS) for NDFL; Russian Ministry of Finance and the August 2023 suspension decree for treaty status. Treaty status in a sanctions environment is the least monitorable claim in this corpus.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "RU"
+    },
+    {
+      "id": "russia-cfc-25-percent-rub-10m",
+      "claim": "Russia: Controlled Foreign Company rules apply where a Russian tax resident owns 25% or more of a UAE company (or 10% or more where combined Russian resident ownership exceeds 50%), bringing undistributed profits into Russian personal income tax, with an active-company exemption above 80% active revenue and a low-profit exemption below RUB 10 million per year; Russian currency controls since February 2022 carry fines cited at 20% to 100% of transaction value.",
+      "source": "Russian Tax Code Chapter 3.4 (CFC rules) / Federal Tax Service; Russian currency control regulation for the penalty range. The RUB 10 million threshold is nominal and not inflation-indexed in the corpus.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "medium",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "RU"
+    },
+    {
+      "id": "south-africa-sarb-allowance-and-emigration",
+      "claim": "South Africa: dubai-property-for-south-african-buyers.mdx states an annual foreign investment allowance of R1 million plus a discretionary allowance of R11 million totalling R12 million per person, and describes accessing capital beyond limits after 'formal emigration' through SARB. The allowance labels appear swapped (the single discretionary allowance is the R1 million line and the foreign investment allowance the larger one), the total does not reconcile, and the formal-emigration route through SARB was replaced by a tax-residency-cessation test in March 2021. The same page states a CGT inclusion rate of 66.6% for trusts and companies alongside 40% for individuals and an R40,000 annual exclusion.",
+      "source": "South African Reserve Bank Exchange Control (allowances, MP336, Regulation 10bis) and SARS (tax residency cessation, CGT inclusion rates).",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "ZA"
+    },
+    {
+      "id": "australia-cgt-discount-and-no-estate-duty",
+      "claim": "Australia: Australian tax residents report worldwide Dubai rental income and capital gains to the ATO with a 50% CGT discount for assets held over 12 months and no main residence exemption for Dubai investment property; separately, Australia has had no inheritance tax or estate duty since federal estate duties were abolished in 1979, so beneficiaries inherit at the deceased's cost base carrying embedded CGT.",
+      "source": "Australian Taxation Office / ITAA 1997 (residency, CGT discount); the 1979 abolition date is a historical fact the corpus states without citation.",
+      "asOf": "2026-08-27",
+      "reviewBy": "2027-02-27",
+      "confidence": "high",
+      "verified": false,
+      "files": [],
+      "jurisdiction": "AU"
+    }
+  ]
+}

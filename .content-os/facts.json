@@ -1,0 +1,141 @@
+{
+  "_readme": "Load-bearing figures. A figure phrase used in five or more articles is a corpus-wide claim and must be registered here with its source; a figure used once is a local worked example and needs no entry. Adding an entry is a claim about the world, so each carries a source and an asOf date, and the scorer withholds provenance credit corpus-wide if one source or statement shape covers more than 35% of entries.\n\nTHIS REGISTRY IS DELIBERATELY SMALL, and the reason is a measurement rather than laziness. The corpus carries 2,209 distinct figure phrases, 461 of them load-bearing. Of the 32 most shared, exactly one is registrable: almost every high-frequency figure here is polysemous. \"4%\" is the DLD transfer fee on 228 pages and several other things besides; \"5%\" is VAT on commission, an agency fee and a deposit share; \"12 months\" is a lease term, a bank-statement window and a tax-residency period. Registering those would hand unrelated pages a provenance they have not earned, which is the failure this registry exists to prevent. The registrable figures sit in the tail instead: institutional thresholds with a distinctive value.\n\nThe 16 saturated generic figures (12 months, 4%, 5%, 30 days, 10%, 20%, 8%, 15%, 90 days, 5 years, 7%, 25%, 9%, 30%, 6%, 2%, each stamped across 149-366 files) cannot be fixed here. They come off only by rewriting pages to carry page-specific arithmetic, which is the editorial rule restated as a number.\n\nNOT INDEPENDENTLY VERIFIED. These entries were assembled without network access, so every asOf is the date the corpus was indexed, not the date a human re-read the instrument. Each needs checking against its named source before it is treated as sourced, and the medium-confidence entries need it most.",
+  "facts": [
+    {
+      "figure": "aed 2 million",
+      "statement": "AED 2 million is the minimum registered property value for the 10-year UAE Golden Visa; it is the registered transaction value on title that counts, not the agreed price.",
+      "source": "UAE Cabinet Decision No. 65 of 2022 on the entry and residence of foreigners (Golden Visa real-estate category), as administered by ICP and evidenced on the Dubai Land Department / Abu Dhabi DMT title deed",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "aed 2",
+      "statement": "Surface form of the same claim: pages writing \"AED 2M\" tokenise to the bare key \"aed 2\", and 61% of its occurrences sit inside a Golden Visa clause, so the same AED 2 million registered-value threshold is what is being asserted.",
+      "source": "UAE Cabinet Decision No. 65 of 2022 on the entry and residence of foreigners (Golden Visa real-estate category), as administered by ICP",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "aed 375,000",
+      "statement": "AED 375,000 of taxable income is the UAE corporate tax threshold: 0% at or below it, 9% on taxable income above it, for taxable persons that are not Qualifying Free Zone Persons.",
+      "source": "Federal Decree-Law No. 47 of 2022 on the Taxation of Corporations and Businesses, and the Federal Tax Authority corporate tax guidance implementing the small-business threshold",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "aed 375,000",
+      "statement": "The same number is separately the UAE VAT mandatory registration threshold: registration becomes compulsory once taxable supplies exceed AED 375,000 in a rolling 12-month period. Registered as a second fact under the same key because 11 files use the figure in this sense and would otherwise borrow the corporate-tax entry's provenance.",
+      "source": "Federal Decree-Law No. 8 of 2017 on Value Added Tax and its Executive Regulation, per Federal Tax Authority VAT registration guidance",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "183 days",
+      "statement": "183 days of physical presence in the UAE within a consecutive 12-month period is the primary natural-person tax residency test, and the presence limb of the equivalent test most home jurisdictions apply against a claimed UAE move.",
+      "source": "UAE Cabinet Decision No. 85 of 2022 on the Determination of Tax Residency, and the Federal Tax Authority Tax Residency Certificate criteria",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "0.25%",
+      "statement": "0.25% of the loan amount is the Dubai Land Department mortgage registration fee, charged on the financed amount rather than the purchase price and payable in addition to the 4% transfer fee.",
+      "source": "Dubai Land Department fee schedule for mortgage registration (0.25% of loan value plus a fixed issuance charge)",
+      "asOf": "2026-08-27",
+      "confidence": "high",
+      "verified": false
+    },
+    {
+      "figure": "0.25%",
+      "statement": "The same figure is Qatar's real estate transfer fee on registered value, paid at registration by foreign buyers in designated freehold zones. Registered as a second fact because 4 files use 0.25% in the Qatar sense and would otherwise inherit the Dubai mortgage entry's sourcing.",
+      "source": "Qatar Ministry of Justice real estate registration department transfer fee, collected on the registered value at title transfer",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "aed 360,000",
+      "statement": "AED 360,000 of annual income, evidenced by 12 months of bank statements alongside a valid freelance permit, is the qualifying threshold for the 5-year UAE Green Visa on the freelancer / self-employed route.",
+      "source": "UAE Green Residence (self-employment category) criteria published by ICP under the 2022 entry and residence reform",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "aed 1,520",
+      "statement": "AED 1,520 per year is the Dubai holiday-home (short-term rental) permit fee charged per unit by the Department of Economy and Tourism, on top of Tourism Dirham per occupied night and Owners Association permission.",
+      "source": "Dubai Department of Economy and Tourism holiday homes permit fee schedule",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "sar 4 million",
+      "statement": "SAR 4 million is the minimum property value for the real-estate-ownership category of Saudi Premium Residency, a track separate from and not interchangeable with the UAE Golden Visa.",
+      "source": "Saudi Premium Residency Center, real estate owner category eligibility criteria",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "sar 4",
+      "statement": "Surface form of the same claim: pages writing \"SAR 4M\" tokenise to \"sar 4\", and 85% of its occurrences sit in a Premium Residency clause, so it asserts the same SAR 4 million property threshold.",
+      "source": "Saudi Premium Residency Center, real estate owner category eligibility criteria",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "qar 730,000",
+      "statement": "QAR 730,000 of registered value on freehold title in a designated zone is the reference threshold for Qatar's property-linked residence permit, applied to the value the Ministry accepts rather than to the SPA price.",
+      "source": "Qatar Law No. 16 of 2018 on the regulation of non-Qatari ownership and use of real estate, with residency thresholds administered by the Ministry of Interior on Ministry of Justice registered title",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "qar 730k",
+      "statement": "Surface form of the same claim: pages writing \"QAR 730K\" tokenise to a separate key while asserting the same Qatar property-linked residence threshold.",
+      "source": "Qatar Law No. 16 of 2018 on the regulation of non-Qatari ownership and use of real estate, with residency thresholds administered by the Ministry of Interior",
+      "asOf": "2026-08-27",
+      "confidence": "medium",
+      "verified": false
+    },
+    {
+      "figure": "omr 250,000",
+      "statement": "OMR 250,000 of property value inside an Integrated Tourism Complex is the reference threshold for Oman's investor residency route; it does not attach to general Muscat freehold. The corpus itself already hedges this figure with \"confirm current official rules\", so the entry records where to check rather than asserting a verified rate.",
+      "source": "Oman investor residency programme criteria administered by the Ministry of Commerce, Industry and Investment Promotion with residence issued by the Royal Oman Police",
+      "asOf": "2026-08-27",
+      "confidence": "low",
+      "verified": false
+    },
+    {
+      "figure": "omr 250k",
+      "statement": "Surface form of the same claim: pages writing \"OMR 250K\" tokenise to a separate key while asserting the same Oman ITC-linked investor residency threshold.",
+      "source": "Oman investor residency programme criteria administered by the Ministry of Commerce, Industry and Investment Promotion with residence issued by the Royal Oman Police",
+      "asOf": "2026-08-27",
+      "confidence": "low",
+      "verified": false
+    },
+    {
+      "figure": "bhd 200,000",
+      "statement": "BHD 200,000 of qualifying property investment is the planning figure the corpus uses for Bahrain's self-sponsored property-linked residence. Registered at low confidence deliberately: the corpus labels it a \"research baseline\" and flags an unconfirmed November 2025 move to BHD 130,000, so this entry must not be treated as settled until a human reads the current NPRA rule.",
+      "source": "Bahrain Nationality, Passports and Residence Affairs (NPRA) property-linked self-sponsored residence criteria",
+      "asOf": "2026-08-27",
+      "confidence": "low",
+      "verified": false
+    },
+    {
+      "figure": "aed 370",
+      "statement": "AED 370 is the Emirates ID fee the corpus quotes for a standard 2-year residence card, paired with AED 570 for a 5-year card. Low confidence because those two quoted amounts do not reconcile against a single per-year fee plus a fixed card charge, which suggests one of them is stale or mis-transcribed; the ICP schedule decides which.",
+      "source": "ICP (Federal Authority for Identity, Citizenship, Customs and Port Security) Emirates ID card fee schedule",
+      "asOf": "2026-08-27",
+      "confidence": "low",
+      "verified": false
+    }
+  ]
+}
