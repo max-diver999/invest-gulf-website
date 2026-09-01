@@ -1,21 +1,22 @@
 ---
 export const prerender = true;
 
-const reportDate = '23 August 2026';
-const reportVersion = 'v2.5';
+const reportDate = '1 September 2026';
+const reportVersion = 'v2.6';
 const launchDate = '4 June 2026';
-const dataThrough = '20 August 2026';
+const dataThrough = '31 August 2026';
+const mdxArticleCount = 593;
 
 const monthlyGsc = [
   { month: 'Jun 2026', label: 'Jun', clicks: 22, impressions: 5058, position: 24.8, note: 'Launch month · peak 768 imp/day 22 Jun · 21 clicks 8–30 Jun' },
   { month: 'Jul 2026', label: 'Jul', clicks: 2, impressions: 1425, position: 41.2, note: 'Google clicks stalled · avg ~46 imp/day · spam cleanup late Jul' },
-  { month: 'Aug 2026', label: 'Aug', clicks: 0, impressions: 274, position: 45.5, note: 'Partial through 15 Aug · re-crawl after DLD boilerplate strip · 0 clicks so far' },
+  { month: 'Aug 2026', label: 'Aug', clicks: 0, impressions: 545, position: 45.5, note: 'Google 28d 4 Aug–31 Aug · 0 clicks · Bing primary channel · GA4 1 777 sessions' },
 ];
 
 const monthlyGa4 = [
   { month: 'Jun', sessions: 152 },
   { month: 'Jul', sessions: 494 },
-  { month: 'Aug', sessions: 890 },
+  { month: 'Aug', sessions: 1777 },
 ];
 
 const contentBreakdown = [
@@ -464,7 +465,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="stat-card">
       <div class="num teal">429</div>
       <div class="label">URLs in sitemap</div>
-      <div class="sublabel">610 MDX · 429 indexable · 3 topic hubs live</div>
+      <div class="sublabel">{mdxArticleCount} MDX · 429 indexable · 3 topic hubs live</div>
     </div>
     <div class="stat-card">
       <div class="num amber">136</div>
@@ -474,7 +475,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="stat-card">
       <div class="num">2.13M</div>
       <div class="label">SEO words</div>
-      <div class="sublabel">610 MDX · ~3,484 avg · GEO avg 91 · DLD spam stripped</div>
+      <div class="sublabel">{mdxArticleCount} MDX · ~3,484 avg · GEO avg 91 · DLD spam stripped</div>
     </div>
     <div class="stat-card">
       <div class="num teal">18</div>
@@ -487,14 +488,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       <div class="sublabel">guides · areas · compare · projects · news</div>
     </div>
     <div class="stat-card">
-      <div class="num amber">24</div>
-      <div class="label">GSC clicks</div>
-      <div class="sublabel">6 757 imp · CTR 0.36% · avg pos 29.1 · 0 clk since 9 Jul</div>
+      <div class="num amber">0</div>
+      <div class="label">GSC clicks (28d Google)</div>
+      <div class="sublabel">545 imp · 4 Aug–31 Aug · Bing primary channel</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">1 588</div>
-      <div class="label">GA4 sessions</div>
-      <div class="sublabel">2 Jun–17 Aug · organic 239 · AI assistant 22</div>
+      <div class="num teal">1 777</div>
+      <div class="label">GA4 sessions (Aug)</div>
+      <div class="sublabel">Aug 2026 full month · MCP refresh 1 Sep</div>
     </div>
   </div>
 
@@ -517,9 +518,9 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     </div>
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
-      <div class="kpi-value">1 588</div>
+      <div class="kpi-value">2 423</div>
       <span class="kpi-delta up">↑ Aug ramp</span>
-      <div class="kpi-sub">2 Jun–17 Aug · GA4 MCP · organic 239 (15%)</div>
+      <div class="kpi-sub">Jun 152 · Jul 494 · Aug 1 777 · GA4 MCP</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Content corpus</div>
@@ -533,7 +534,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. Jun full + Jul + Aug partial (GSC ~3-day lag).</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. Aug 28d window via MCP refresh 1 Sep.</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -546,7 +547,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>Traffic shift:</strong> 1 588 GA4 sessions 2 Jun–17 Aug. Aug partial 890 sessions (peak 114/day 31 Jul). Organic 239 (15%). Google clicks frozen at 24 since 9 Jul while Bing hit 136 clicks / 9.5k imp. Post-cleanup re-crawl window Aug.
+          <strong>Traffic shift:</strong> GA4 Aug 1 777 sessions (full month). Google GSC 0 clicks in 28d (545 imp). Bing remains primary organic click channel since 9 Jul.
         </div>
       </div>
     </div>
@@ -657,11 +658,11 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     <div class="pulse-header">
       <div>
         <h2>Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 15 Aug 2026 · Web search · Updated 18 Aug via GSC API</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 4 Aug – 31 Aug 2026 · Google 0 clicks · Bing primary · MCP refresh 1 Sep</p>
       </div>
       <div class="pulse-updated">
         <span class="pulse-updated-dot"></span>
-        Updated 18 Aug 2026
+        Updated 1 Sep 2026
       </div>
     </div>
 
@@ -678,41 +679,36 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
         <div style="font-size:12px;color:#78716c;">5 048 impressions · CTR 0.42% · <strong style="color:#15803d;">+768 imp/day peak 22 Jun</strong></div>
       </div>
       <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:14px 16px;">
-        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">Jul – Aug 2026</div>
-        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">0 Google clicks</div>
-        <div style="font-size:12px;color:#78716c;">1 699 imp since 1 Jul · re-crawl after cleanup · <strong style="color:#c2410c;">Bing 136 clk</strong></div>
-      </div>
-      <div style="background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:14px 16px;">
-        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">vs report v2.3 (27 Jul)</div>
-        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">+432 imp</div>
-        <div style="font-size:12px;color:#78716c;">6 325 → 6 757 GSC · GA4 431 → 1 588 sess · Bing 45 → 136 clk</div>
+        <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">4 Aug – 31 Aug 2026 (Google)</div>
+        <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">0 clicks</div>
+        <div style="font-size:12px;color:#78716c;">545 impressions · GA4 Aug 1 777 sessions · <strong style="color:#c2410c;">Bing = primary click channel</strong></div>
       </div>
     </div>
 
     <!-- KPI Row -->
     <div class="pulse-kpi-row">
       <div class="pulse-kpi kpi-green">
-        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">0 clk since 9 Jul</div>
-        <div class="kpi-label">Total Clicks</div>
-        <div class="kpi-val">24</div>
-        <div class="kpi-sub">2 Jun–15 Aug · 18 URLs with clicks · last Google click 9 Jul</div>
+        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">0 clk Google 28d</div>
+        <div class="kpi-label">Google Clicks (28d)</div>
+        <div class="kpi-val">0</div>
+        <div class="kpi-sub">4 Aug–31 Aug · last Google click 9 Jul · Bing carries traffic</div>
       </div>
       <div class="pulse-kpi kpi-blue">
-        <div class="kpi-trend trend-up">↑ Bing 9.5k imp</div>
-        <div class="kpi-label">Impressions</div>
-        <div class="kpi-val">6 757</div>
-        <div class="kpi-sub">Google peak 768/day 22 Jun · Aug ~20–40/day Google · Bing rising</div>
+        <div class="kpi-trend trend-up">↑ Bing channel</div>
+        <div class="kpi-label">Google Impressions</div>
+        <div class="kpi-val">545</div>
+        <div class="kpi-sub">28d window · ~20 imp/day · re-crawl ongoing</div>
       </div>
       <div class="pulse-kpi kpi-amber">
-        <div class="kpi-trend" style="background:#fef3c7;color:#92400e;">re-crawl</div>
-        <div class="kpi-label">Avg. Position</div>
-        <div class="kpi-val">29.1</div>
-        <div class="kpi-sub">429 sitemap URLs · Saudi yield pos 9.3 · school fees CTR 2.04%</div>
+        <div class="kpi-trend trend-up">↑ GA4</div>
+        <div class="kpi-label">GA4 Sessions (Aug)</div>
+        <div class="kpi-val">1 777</div>
+        <div class="kpi-sub">Aug full month · direct + referral mix · not from Google clicks</div>
       </div>
       <div class="pulse-kpi kpi-purple">
-        <div class="kpi-label">Avg. CTR</div>
-        <div class="kpi-val">0.36%</div>
-        <div class="kpi-sub">school fees 2.04% · al-barari 5.88% · police clearance 0.48%</div>
+        <div class="kpi-label">MDX corpus</div>
+        <div class="kpi-val">{mdxArticleCount}</div>
+        <div class="kpi-sub">429 sitemap URLs · GEO avg 91 · DLD cleanup done</div>
       </div>
     </div>
 
@@ -1017,7 +1013,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#fef3c7;border-radius:10px;border:1px solid #fde68a;">
-          <div style="font-size:28px;font-weight:900;color:#b45309;">1 588</div>
+          <div style="font-size:28px;font-weight:900;color:#b45309;">1 777</div>
           <div style="font-size:11px;color:#78716c;margin-top:4px;font-weight:700;">Sessions</div>
           <div style="font-size:10px;color:#aaa;margin-top:2px;">2 Jun–17 Aug · peak 114/day 31 Jul · Aug partial 890</div>
         </div>
@@ -1297,6 +1293,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
   <div class="section-title">Change history</div>
   <div class="changelog">
         <div class="changelog-item">
+      <div class="changelog-date">1 Sep 2026 (v2.6)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v2.6 · MCP refresh (GSC + GA4 + Bing note)</div>
+        <div class="changelog-desc">Google GSC 28d 4 Aug–31 Aug: 0 clicks, 545 impressions. GA4 Aug sessions 1 777. Corpus {mdxArticleCount} MDX. Google clicks stalled since 9 Jul; Bing remains primary organic click channel. Top Google queries: ADCB mortgage cluster (0 clk, pos 75–82).</div>
+        <div class="changelog-tags"><span class="tag green">Report v2.6</span><span class="tag blue">GA4 1 777 Aug</span><span class="tag amber">Google 0 clk</span><span class="tag purple">Bing channel</span></div>
+      </div>
+    </div>
+        <div class="changelog-item">
       <div class="changelog-date">23 Aug 2026 (v2.5)</div>
       <div class="changelog-content">
         <div class="changelog-title">Site-report v2.5 · mobile hub + USD toggle + Wave N2/N6</div>
@@ -1496,7 +1500,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
 </div>
 
   <div class="footer">
-  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 18 Aug 2026 v2.4 · 429 sitemap URLs · 2.13M words · GSC 24 clk / 6 757 imp · GA4 1 588 sessions · Bing 136 clk / 9 539 imp<br>
+  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 1 Sep 2026 v2.6 · 429 sitemap URLs · {mdxArticleCount} MDX · GSC Google 0 clk / 545 imp (28d) · GA4 1 777 sessions Aug · Bing primary channel<br>
   To update: edit <code>src/pages/site-report/index.astro</code> in invest-gulf-website
 </div>
 
