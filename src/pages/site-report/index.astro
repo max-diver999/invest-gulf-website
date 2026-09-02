@@ -2,7 +2,7 @@
 export const prerender = true;
 
 const reportDate = '1 September 2026';
-const reportVersion = 'v2.6';
+const reportVersion = 'v2.7';
 const launchDate = '4 June 2026';
 const dataThrough = '31 August 2026';
 const mdxArticleCount = 593;
@@ -31,10 +31,17 @@ const totalClicks = monthlyGsc.reduce((s, m) => s + m.clicks, 0);
 const totalImp = monthlyGsc.reduce((s, m) => s + m.impressions, 0);
 const totalWords = contentBreakdown.reduce((s, c) => s + c.words, 0);
 const totalFiles = contentBreakdown.reduce((s, c) => s + c.count, 0);
-const clicksDelta = monthlyGsc.length > 1 && monthlyGsc[monthlyGsc.length - 2].clicks > 0
-  ? Math.round(((monthlyGsc[monthlyGsc.length - 1].clicks - monthlyGsc[monthlyGsc.length - 2].clicks) / monthlyGsc[monthlyGsc.length - 2].clicks) * 100)
-  : 0;
 const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
+
+function momClicksLabel(curr, prev) {
+  if (!prev) return { text: '—', cls: 'pill-blue' };
+  if (prev.clicks === 0 && curr.clicks === 0) return { text: '0%', cls: 'pill-gray' };
+  if (prev.clicks === 0) return { text: 'new', cls: 'pill-blue' };
+  const pct = Math.round(((curr.clicks - prev.clicks) / prev.clicks) * 100);
+  if (pct > 0) return { text: `+${pct}%`, cls: 'pill-green' };
+  if (pct < 0) return { text: `${pct}%`, cls: 'pill-amber' };
+  return { text: '0%', cls: 'pill-gray' };
+}
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -385,6 +392,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
     .pill-green { background: #dcfce7; color: #166534; }
     .pill-blue { background: #dbeafe; color: #1e40af; }
     .pill-amber { background: #fef3c7; color: #92400e; }
+    .pill-gray { background: #f3f4f6; color: #6b7280; }
 
     /* ── Insight ── */
     .insight {
@@ -569,9 +577,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
           <tbody>
             {monthlyGsc.map((m, i) => {
               const prev = i > 0 ? monthlyGsc[i - 1] : null;
-              const mom = prev && prev.clicks > 0
-                ? `+${Math.round(((m.clicks - prev.clicks) / prev.clicks) * 100)}%`
-                : '—';
+              const mom = momClicksLabel(m, prev);
               const barW = Math.round((m.impressions / maxImp) * 120);
               return (
                 <tr>
@@ -584,7 +590,7 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
                     </div>
                   </td>
                   <td>{m.position.toFixed(1)}</td>
-                  <td><span class={`pill ${mom.startsWith('+') ? 'pill-green' : 'pill-amber'}`}>{mom}</span></td>
+                  <td><span class={`pill ${mom.cls}`}>{mom.text}</span></td>
                   <td style="color:#78716c;font-size:12px;">{m.note}</td>
                 </tr>
               );
@@ -1293,6 +1299,14 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
   <div class="section-title">Change history</div>
   <div class="changelog">
         <div class="changelog-item">
+      <div class="changelog-date">1 Sep 2026 (v2.7)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v2.7 · MoM pill fix (Google clicks only)</div>
+        <div class="changelog-desc">Month-over-month column now shows −100% (amber) when Google clicks drop from 2 to 0, not the broken «+−100%» green pill. MoM = Google Search Console clicks only; Bing and GA4 stay in Notes.</div>
+        <div class="changelog-tags"><span class="tag green">Report v2.7</span><span class="tag amber">MoM fix</span><span class="tag blue">GSC only</span></div>
+      </div>
+    </div>
+        <div class="changelog-item">
       <div class="changelog-date">1 Sep 2026 (v2.6)</div>
       <div class="changelog-content">
         <div class="changelog-title">Site report v2.6 · MCP refresh (GSC + GA4 + Bing note)</div>
@@ -1500,12 +1514,12 @@ const maxImp = Math.max(...monthlyGsc.map(m => m.impressions));
 </div>
 
   <div class="footer">
-  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 1 Sep 2026 v2.6 · 429 sitemap URLs · {mdxArticleCount} MDX · GSC Google 0 clk / 545 imp (28d) · GA4 1 777 sessions Aug · Bing primary channel<br>
+  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 1 Sep 2026 v2.7 · 429 sitemap URLs · {mdxArticleCount} MDX · GSC Google 0 clk / 545 imp (28d) · GA4 1 777 sessions Aug · Bing primary channel<br>
   To update: edit <code>src/pages/site-report/index.astro</code> in invest-gulf-website
 </div>
 
 
-<script type="application/json" id="chart-data">{"monthlyGsc":[{"label":"Jun","clicks":22,"impressions":5058},{"label":"Jul","clicks":2,"impressions":1425},{"label":"Aug","clicks":0,"impressions":274}],"monthlyGa4":[{"month":"Jun","sessions":152},{"month":"Jul","sessions":494},{"month":"Aug","sessions":890}],"contentBreakdown":[{"type":"Guides","count":485,"color":"#b45309"},{"type":"Areas","count":58,"color":"#d97706"},{"type":"Compare","count":30,"color":"#ca8a04"},{"type":"Projects","count":25,"color":"#92400e"},{"type":"News","count":12,"color":"#60a5fa"}],"dailyRaw":[{"d":"06-08","c":0,"i":76},{"d":"06-09","c":0,"i":101},{"d":"06-10","c":0,"i":96},{"d":"06-11","c":0,"i":120},{"d":"06-12","c":0,"i":124},{"d":"06-13","c":2,"i":120},{"d":"06-14","c":0,"i":153},{"d":"06-15","c":2,"i":118},{"d":"06-16","c":1,"i":119},{"d":"06-17","c":1,"i":204},{"d":"06-18","c":3,"i":453},{"d":"06-19","c":1,"i":386},{"d":"06-20","c":1,"i":588},{"d":"06-21","c":4,"i":668},{"d":"06-22","c":4,"i":768},{"d":"06-23","c":2,"i":516},{"d":"07-09","c":1,"i":78},{"d":"07-15","c":0,"i":81},{"d":"07-24","c":0,"i":46},{"d":"07-31","c":0,"i":14},{"d":"08-05","c":0,"i":19},{"d":"08-12","c":0,"i":41},{"d":"08-15","c":0,"i":17}]}</script>
+<script type="application/json" id="chart-data">{"monthlyGsc":[{"label":"Jun","clicks":22,"impressions":5058},{"label":"Jul","clicks":2,"impressions":1425},{"label":"Aug","clicks":0,"impressions":545}],"monthlyGa4":[{"month":"Jun","sessions":152},{"month":"Jul","sessions":494},{"month":"Aug","sessions":1777}],"contentBreakdown":[{"type":"Guides","count":485,"color":"#b45309"},{"type":"Areas","count":58,"color":"#d97706"},{"type":"Compare","count":30,"color":"#ca8a04"},{"type":"Projects","count":25,"color":"#92400e"},{"type":"News","count":12,"color":"#60a5fa"}],"dailyRaw":[{"d":"06-08","c":0,"i":76},{"d":"06-09","c":0,"i":101},{"d":"06-10","c":0,"i":96},{"d":"06-11","c":0,"i":120},{"d":"06-12","c":0,"i":124},{"d":"06-13","c":2,"i":120},{"d":"06-14","c":0,"i":153},{"d":"06-15","c":2,"i":118},{"d":"06-16","c":1,"i":119},{"d":"06-17","c":1,"i":204},{"d":"06-18","c":3,"i":453},{"d":"06-19","c":1,"i":386},{"d":"06-20","c":1,"i":588},{"d":"06-21","c":4,"i":668},{"d":"06-22","c":4,"i":768},{"d":"06-23","c":2,"i":516},{"d":"07-09","c":1,"i":78},{"d":"07-15","c":0,"i":81},{"d":"07-24","c":0,"i":46},{"d":"07-31","c":0,"i":14},{"d":"08-05","c":0,"i":19},{"d":"08-12","c":0,"i":41},{"d":"08-15","c":0,"i":17}]}</script>
 <script is:inline>
 (function initReportCharts() {
   function run() {
