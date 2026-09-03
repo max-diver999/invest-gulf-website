@@ -1,8 +1,8 @@
 ---
 export const prerender = true;
 
-const reportDate = '1 September 2026';
-const reportVersion = 'v2.8';
+const reportDate = '3 September 2026';
+const reportVersion = 'v2.9';
 const launchDate = '4 June 2026';
 const dataThrough = '31 August 2026';
 const mdxArticleCount = 593;
@@ -10,13 +10,13 @@ const mdxArticleCount = 593;
 const monthlyGsc = [
   { month: 'Jun 2026', label: 'Jun', clicks: 22, impressions: 5058, position: 24.8, note: 'Launch month · peak 768 imp/day 22 Jun · 21 clicks 8–30 Jun' },
   { month: 'Jul 2026', label: 'Jul', clicks: 2, impressions: 1425, position: 41.2, note: 'Google clicks stalled · avg ~46 imp/day · spam cleanup late Jul' },
-  { month: 'Aug 2026', label: 'Aug', clicks: 0, impressions: 545, position: 45.5, note: 'Google 28d 4 Aug–31 Aug · 0 clicks · Bing primary channel · GA4 1 777 sessions' },
+  { month: 'Aug 2026', label: 'Aug', clicks: 0, impressions: 609, position: 47.4, note: 'Full month 1–31 Aug · Google 0 clk · Bing primary · GA4 1 978 sessions · MCP 3 Sep' },
 ];
 
 const monthlyGa4 = [
   { month: 'Jun', sessions: 152 },
   { month: 'Jul', sessions: 494 },
-  { month: 'Aug', sessions: 1777 },
+  { month: 'Aug', sessions: 1978 },
 ];
 
 const contentBreakdown = [
@@ -61,6 +61,8 @@ const dailyRaw = [
   { d: '08-28', c: 0, i: 18 },
   { d: '08-31', c: 0, i: 16 },
 ];
+
+const gsc28d = { clicks: 0, impressions: 560, position: 48.3, from: '4 Aug', to: '31 Aug' };
 
 const chartPayload = JSON.stringify({
   monthlyGsc: monthlyGsc.map(m => ({ label: m.label, clicks: m.clicks, impressions: m.impressions })),
@@ -498,7 +500,7 @@ function momClicksLabel(curr, prev) {
   <div class="header-meta">
     <div class="label">Last updated</div>
     <div class="value">{reportDate} · {reportVersion} (live)</div>
-    <div class="live-badge"><span class="live-dot"></span> Site is live</div>
+    <div class="live-badge"><span class="live-dot"></span> GSC 0 clk / {gsc28d.impressions} imp (28d) · GA4 {monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')} Aug · Bing primary channel</div>
 </div>
 </div>
 
@@ -534,12 +536,12 @@ function momClicksLabel(curr, prev) {
     <div class="stat-card">
       <div class="num amber">0</div>
       <div class="label">GSC clicks (28d Google)</div>
-      <div class="sublabel">545 imp · 4 Aug–31 Aug · Bing primary channel</div>
+      <div class="sublabel">{gsc28d.impressions} imp · {gsc28d.from}–{gsc28d.to} · Bing primary channel</div>
     </div>
     <div class="stat-card">
-      <div class="num teal">1 777</div>
+      <div class="num teal">{monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')}</div>
       <div class="label">GA4 sessions (Aug)</div>
-      <div class="sublabel">Aug 2026 full month · MCP refresh 1 Sep</div>
+      <div class="sublabel">Aug 2026 full month · MCP refresh 3 Sep</div>
     </div>
   </div>
 
@@ -562,9 +564,9 @@ function momClicksLabel(curr, prev) {
     </div>
     <div class="kpi-card">
       <div class="kpi-label">GA4 Sessions</div>
-      <div class="kpi-value">2 423</div>
+      <div class="kpi-value">2 624</div>
       <span class="kpi-delta up">↑ Aug ramp</span>
-      <div class="kpi-sub">Jun 152 · Jul 494 · Aug 1 777 · GA4 MCP</div>
+      <div class="kpi-sub">Jun 152 · Jul 494 · Aug 1 978 · GA4 MCP</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Content corpus</div>
@@ -578,7 +580,7 @@ function momClicksLabel(curr, prev) {
     <div class="section-head">
       <div>
         <h2>Monthly growth since launch</h2>
-        <p>Google Search Console web search · {launchDate} → {dataThrough}. Aug 28d window via MCP refresh 1 Sep.</p>
+        <p>Google Search Console web search · {launchDate} → {dataThrough}. Aug full month via MCP refresh 3 Sep.</p>
       </div>
       <span class="badge-src">GSC API · Updated {reportDate}</span>
     </div>
@@ -591,7 +593,7 @@ function momClicksLabel(curr, prev) {
         <div class="card-title">GA4 sessions by month</div>
         <div class="chart-wrap"><canvas id="chartGa4"></canvas></div>
         <div class="insight" style="margin-top:16px;">
-          <strong>Traffic shift:</strong> GA4 Aug 1 777 sessions (full month). Google GSC 0 clicks in 28d (545 imp). Bing remains primary organic click channel since 9 Jul.
+          <strong>Traffic shift:</strong> GA4 Aug {monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')} sessions (full month). Google GSC 0 clicks in 28d ({gsc28d.impressions} imp). Bing remains primary organic click channel since 9 Jul.
         </div>
       </div>
     </div>
@@ -700,11 +702,11 @@ function momClicksLabel(curr, prev) {
     <div class="pulse-header">
       <div>
         <h2>Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 4 Aug – 31 Aug 2026 · Google 0 clicks · Bing primary · MCP refresh 1 Sep</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 4 Aug – 31 Aug 2026 · Google 0 clicks · Bing primary · MCP refresh 3 Sep</p>
       </div>
       <div class="pulse-updated">
         <span class="pulse-updated-dot"></span>
-        Updated 1 Sep 2026
+        Updated 3 Sep 2026
       </div>
     </div>
 
@@ -723,7 +725,7 @@ function momClicksLabel(curr, prev) {
       <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:14px 16px;">
         <div style="font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;">4 Aug – 31 Aug 2026 (Google)</div>
         <div style="font-size:22px;font-weight:900;color:#1c1917;margin-top:4px;">0 clicks</div>
-        <div style="font-size:12px;color:#78716c;">545 impressions · GA4 Aug 1 777 sessions · <strong style="color:#c2410c;">Bing = primary click channel</strong></div>
+        <div style="font-size:12px;color:#78716c;">{gsc28d.impressions} impressions · GA4 Aug {monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')} sessions · <strong style="color:#c2410c;">Bing = primary click channel</strong></div>
       </div>
     </div>
 
@@ -738,13 +740,13 @@ function momClicksLabel(curr, prev) {
       <div class="pulse-kpi kpi-blue">
         <div class="kpi-trend trend-up">↑ Bing channel</div>
         <div class="kpi-label">Google Impressions</div>
-        <div class="kpi-val">545</div>
+        <div class="kpi-val">{gsc28d.impressions}</div>
         <div class="kpi-sub">28d window · ~20 imp/day · re-crawl ongoing</div>
       </div>
       <div class="pulse-kpi kpi-amber">
         <div class="kpi-trend trend-up">↑ GA4</div>
         <div class="kpi-label">GA4 Sessions (Aug)</div>
-        <div class="kpi-val">1 777</div>
+        <div class="kpi-val">{monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')}</div>
         <div class="kpi-sub">Aug full month · direct + referral mix · not from Google clicks</div>
       </div>
       <div class="pulse-kpi kpi-purple">
@@ -1055,14 +1057,14 @@ function momClicksLabel(curr, prev) {
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
         <div style="text-align:center;padding:16px;background:#fef3c7;border-radius:10px;border:1px solid #fde68a;">
-          <div style="font-size:28px;font-weight:900;color:#b45309;">1 777</div>
+          <div style="font-size:28px;font-weight:900;color:#b45309;">{monthlyGa4[monthlyGa4.length-1].sessions.toLocaleString('en-GB')}</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Sessions (Aug)</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Aug 1–31 · vs Jul 494 · MCP refresh 1 Sep</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Aug 1–31 · vs Jul 494 · MCP refresh 3 Sep</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dbeafe;border-radius:10px;border:1px solid #93c5fd;">
-          <div style="font-size:28px;font-weight:900;color:#2563eb;">2 423</div>
+          <div style="font-size:28px;font-weight:900;color:#2563eb;">2 624</div>
           <div style="font-size:11px;color:#7a7a6e;margin-top:4px;font-weight:700;">Sessions (lifetime)</div>
-          <div style="font-size:10px;color:#aaa;margin-top:2px;">Jun 152 · Jul 494 · Aug 1 777 · GA4 MCP</div>
+          <div style="font-size:10px;color:#aaa;margin-top:2px;">Jun 152 · Jul 494 · Aug 1 978 · GA4 MCP</div>
         </div>
         <div style="text-align:center;padding:16px;background:#dcfce7;border-radius:10px;border:1px solid #86efac;">
           <div style="font-size:28px;font-weight:900;color:#15803d;">Direct</div>
@@ -1078,7 +1080,7 @@ function momClicksLabel(curr, prev) {
       <div class="pulse-insight" style="margin-top:12px;">
         <div class="pulse-insight-icon">👥</div>
         <div class="pulse-insight-text">
-          <strong>Aug traffic note:</strong> GA4 Aug full month 1 777 sessions (vs 494 Jul, +260%). Google GSC 0 clicks in 28d (545 imp). Bing remains primary organic click channel. No form_submit events in GA4 yet. Filter direct spike before paid tests.
+          <strong>Aug traffic note:</strong> GA4 Aug full month 1 978 sessions (vs 494 Jul, +300%). Google GSC 0 clicks in 28d ({gsc28d.impressions} imp). Bing remains primary organic click channel. No form_submit events in GA4 yet. Filter direct spike before paid tests.
         </div>
       </div>
     </div>
@@ -1164,7 +1166,7 @@ function momClicksLabel(curr, prev) {
     </div>
 
     <p class="pulse-footer-note">
-      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated 1 Sep 2026 via MCP APIs
+      Google: <a href="https://search.google.com/search-console" target="_blank">Search Console</a> · <a href="https://analytics.google.com" target="_blank">GA4</a> · Bing: <a href="https://www.bing.com/webmasters" target="_blank">Webmaster Tools</a> · Updated 3 Sep 2026 via MCP APIs
     </p>
 
   </div>
@@ -1177,11 +1179,11 @@ function momClicksLabel(curr, prev) {
     <div class="pulse-header">
       <div>
         <h2>Bing / Yahoo Search Performance</h2>
-        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 31 Aug 2026 · MCP bing-webmaster-invest-gulf · Updated 1 Sep</p>
+        <p style="font-size:12px;color:#9ca3af;margin-top:2px;">invest-gulf.com · 2 Jun – 31 Aug 2026 · MCP bing-webmaster-invest-gulf · Updated 3 Sep</p>
       </div>
       <div class="pulse-updated">
         <span class="pulse-updated-dot"></span>
-        Updated 1 Sep 2026
+        Updated 3 Sep 2026
       </div>
     </div>
 
@@ -1237,7 +1239,7 @@ function momClicksLabel(curr, prev) {
       </div>
     </div>
 
-    <p class="pulse-footer-note">Bing data via <code>bing-webmaster-invest-gulf</code> MCP · 136 clicks / 9 539 imp · Updated 1 Sep</p>
+    <p class="pulse-footer-note">Bing data via <code>bing-webmaster-invest-gulf</code> MCP · 136 clicks / 9 539 imp · Updated 3 Sep</p>
   </div>
 
   <div class="section-title">Technical setup</div>
@@ -1334,6 +1336,14 @@ function momClicksLabel(curr, prev) {
 
   <div class="section-title">Change history</div>
   <div class="changelog">
+        <div class="changelog-item">
+      <div class="changelog-date">3 Sep 2026 (v2.9)</div>
+      <div class="changelog-content">
+        <div class="changelog-title">Site report v2.9 · MCP refresh (GSC + GA4, 3 Sep snapshot)</div>
+        <div class="changelog-desc">GSC Aug full month 0 clk / 609 imp (pos 47.4). GSC 28d: 0 clk / {gsc28d.impressions} imp (pos {gsc28d.position}). GA4 Aug 1 978 sessions (Jun 152 · Jul 494). chartPayload + pulse synced.</div>
+        <div class="changelog-tags"><span class="tag green">Report v2.9</span><span class="tag blue">GA4 1 978 Aug</span><span class="tag amber">GSC 609 imp Aug</span></div>
+      </div>
+    </div>
         <div class="changelog-item">
       <div class="changelog-date">1 Sep 2026 (v2.8)</div>
       <div class="changelog-content">
@@ -1485,7 +1495,7 @@ function momClicksLabel(curr, prev) {
       <div class="priority medium">P1</div>
       <div>
         <div class="text" style="font-weight:700;">GA4 form_submit + direct traffic filter</div>
-        <div class="subtext">Aug 1 777 sessions full month. Add lead events before scaling traffic work.</div>
+        <div class="subtext">Aug 1 978 sessions full month. Add lead events before scaling traffic work.</div>
       </div>
     </div>
     <div class="next-item" style="background:#f0fdf4;border-color:#bbf7d0;">
@@ -1558,7 +1568,7 @@ function momClicksLabel(curr, prev) {
 </div>
 
   <div class="footer">
-  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 1 Sep 2026 v2.8 · 429 sitemap URLs · {mdxArticleCount} MDX · GSC Google 0 clk / 545 imp (28d) · GA4 1 777 sessions Aug · Bing primary channel<br>
+  <strong>Invest Gulf</strong> · invest-gulf.com · Report updated 3 Sep 2026 v2.9 · 429 sitemap URLs · {mdxArticleCount} MDX · GSC Google 0 clk / {gsc28d.impressions} imp (28d) · GA4 1 978 sessions Aug · Bing primary channel<br>
   To update: edit <code>src/pages/site-report/index.astro</code> in invest-gulf-website
 </div>
 
