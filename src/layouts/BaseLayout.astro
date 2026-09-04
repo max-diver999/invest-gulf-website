@@ -1,5 +1,6 @@
 ---
-import '../styles/global.css';
+import globalStyles from '../styles/global.css?url';
+import cormorant500 from '@fontsource/cormorant/files/cormorant-latin-500-normal.woff2?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
@@ -17,6 +18,12 @@ interface StickyCtaProps {
   ctaId?: string;
 }
 
+interface PreloadImageProps {
+  src: string;
+  srcset?: string;
+  sizes?: string;
+}
+
 interface Props {
   title: string;
   description?: string;
@@ -26,6 +33,7 @@ interface Props {
   noindex?: boolean;
   schema?: object | object[];
   stickyCta?: StickyCtaProps | null;
+  preloadImage?: PreloadImageProps | null;
 }
 
 const {
@@ -37,10 +45,9 @@ const {
   noindex = false,
   schema,
   stickyCta = null,
+  preloadImage = null,
 } = Astro.props;
 
-// Keep the rendered <title> inside the ~60ch SERP window. The brand suffix is
-// only appended when it still fits; longer titles ship bare rather than truncated.
 const BRAND_SUFFIX = ' | Invest Gulf';
 const TITLE_LIMIT = 60;
 const fullTitle =
@@ -79,14 +86,12 @@ const orgSchema = {
     email: SITE.email,
     availableLanguage: ['English'],
   },
-  // Only external references belong here — a site linking to itself proves nothing.
   sameAs: [
     ...SITE.sameAs,
     ...(SITE.wikidataId ? [`https://www.wikidata.org/wiki/${SITE.wikidataId}`] : []),
   ],
 };
 
-// `schema` accepts a single JSON-LD object or an array of them.
 const extraSchemas = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
 const allSchemas = [orgSchema, ...extraSchemas];
 ---
@@ -95,6 +100,7 @@ const allSchemas = [orgSchema, ...extraSchemas];
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#131a24" />
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {noindex
@@ -120,13 +126,82 @@ const allSchemas = [orgSchema, ...extraSchemas];
   <link rel="icon" href="/favicon-16.png?v=3" type="image/png" sizes="16x16" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href={cormorant500} as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
+  <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+
+  {preloadImage && (
+    <link
+      rel="preload"
+      as="image"
+      href={preloadImage.src}
+      fetchpriority="high"
+      {...(preloadImage.srcset ? { imagesrcset: preloadImage.srcset, imagesizes: preloadImage.sizes } : {})}
+    />
+  )}
+
+  <style is:inline>
+    :root {
+      --color-page: #faf7f1;
+      --color-ink: #171d26;
+      --color-muted: #6a6459;
+      --color-teal: #265a60;
+      --color-frame: #131a24;
+      --color-frame-line: rgba(194, 160, 106, 0.28);
+      --color-frame-text: #f4efe6;
+      --color-frame-muted: #a9a496;
+      --color-brass: #c2a06a;
+      --font-serif: 'Cormorant', Georgia, serif;
+      --font-sans: 'DM Sans', system-ui, sans-serif;
+    }
+    html { -webkit-font-smoothing: antialiased; }
+    body {
+      margin: 0;
+      background: var(--color-page);
+      color: var(--color-muted);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      font-size: 1rem;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+    body > main { flex: 1 0 auto; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-frame);
+      border-bottom: 1px solid var(--color-frame-line);
+    }
+    .ig-wordmark { font-family: var(--font-serif); color: var(--color-frame-text); }
+    .ig-hero { background: var(--color-frame); color: var(--color-frame-text); }
+    .ig-hero__title {
+      font-family: var(--font-serif);
+      color: var(--color-frame-text);
+      line-height: 1.1;
+    }
+    .ig-hero__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .ig-hero__btn {
+      display: inline-block;
+      background: var(--color-brass);
+      color: var(--color-frame);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+    }
+  </style>
+
+  <link rel="preload" href={globalStyles} as="style" />
+  <link rel="stylesheet" href={globalStyles} media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href={globalStyles} /></noscript>
+
   {allSchemas.map((s) => (
     <script type="application/ld+json" set:html={JSON.stringify(s)} />
   ))}
-  <GoogleAnalytics />
 </head>
 <body>
   <Header />
@@ -138,5 +213,6 @@ const allSchemas = [orgSchema, ...extraSchemas];
   <WhatsAppFloat />
   <CurrencyEngine />
   <WhatsAppIntentTracker />
+  <GoogleAnalytics />
 </body>
 </html>

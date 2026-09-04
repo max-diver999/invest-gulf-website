@@ -48,7 +48,22 @@ export function gulfPublicId(src: string): string | null {
 
 export function gulfDeliveryUrl(publicId: string, width: number): string {
   if (!publicId.startsWith(PREFIX)) throw new Error(`Unexpected Gulf public ID: ${publicId}`);
-  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:low,w_${width}/${publicId}`;
+  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:eco,g_auto,w_${width}/${publicId}`;
+}
+
+/** Smallest variant for LCP preload (mobile-first). */
+export function lcpPreloadFromResponsive(src: string, variant: Variant = 'hero') {
+  const img = responsiveImage(src, variant);
+  let href = img.src;
+  if (img.srcset) {
+    const firstEntry = img.srcset.split(/,\s+/)[0]?.trim() ?? '';
+    href = firstEntry.replace(/\s+\d+w$/, '') || href;
+  }
+  return {
+    src: href,
+    srcset: img.srcset,
+    sizes: img.sizes,
+  };
 }
 
 export function responsiveImage(src: string, variant: Variant = 'hero') {

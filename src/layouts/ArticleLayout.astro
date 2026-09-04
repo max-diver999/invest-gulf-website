@@ -4,7 +4,7 @@ import LeadForm from '../components/LeadForm.astro';
 import FaqBlock from '../components/FaqBlock.astro';
 import GulfMoneyHubStrip from '../components/GulfMoneyHubStrip.astro';
 import { SITE } from '../data/site';
-import { responsiveImage } from '../lib/responsiveImage';
+import { responsiveImage, lcpPreloadFromResponsive } from '../lib/responsiveImage';
 import { resolveStickyCta } from '../../scripts/lib/invest-gulf-cta-router.mjs';
 
 interface Props {
@@ -112,7 +112,7 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
   {noindex}
   schema={[articleSchema, breadcrumbSchema]}
   stickyCta={stickyCta}
-  preloadImage={hero}
+  preloadImage={heroImageProp ? lcpPreloadFromResponsive(heroImageProp, 'hero') : null}
 >
   <div class="ig-band">
     <div class="site-container ig-band__inner">

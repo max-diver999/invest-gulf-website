@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { responsiveImage } from '../lib/responsiveImage';
+import { responsiveImage, lcpPreloadFromResponsive } from '../lib/responsiveImage';
 import LeadForm from '../components/LeadForm.astro';
 import EntryPoints from '../components/EntryPoints.astro';
 import { getCollection } from 'astro:content';
@@ -28,7 +28,7 @@ const heroImg = heroProject ? responsiveImage(heroProject.data.heroImage, 'hero'
   title="Invest Gulf: Independent UAE & Gulf Property Research"
   description={SITE.description}
   stickyCta={STICKY_HOME}
-  preloadImage={heroImg ? { src: heroImg.src, srcset: heroImg.srcset, sizes: heroImg.sizes ?? '(max-width: 1023px) 100vw, 50vw' } : null}
+  preloadImage={heroProject?.data.heroImage ? lcpPreloadFromResponsive(heroProject.data.heroImage, 'hero') : null}
 >
   <section class="ig-hero">
     <div class="ig-hero__grid site-container">

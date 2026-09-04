@@ -40,6 +40,19 @@ const pegs = USD_PEGS;
 </style>
 
 <script define:vars={{ pegs }}>
+  function runAfterPageLoad(fn) {
+    if (document.readyState === 'complete') {
+      if ('requestIdleCallback' in window) requestIdleCallback(fn, { timeout: 4000 });
+      else setTimeout(fn, 0);
+    } else {
+      window.addEventListener('load', function () {
+        if ('requestIdleCallback' in window) requestIdleCallback(fn, { timeout: 4000 });
+        else setTimeout(fn, 0);
+      }, { once: true });
+    }
+  }
+
+  runAfterPageLoad(function () {
   (function () {
     var KEY = 'ig-fx-usd';
     var toggles = Array.prototype.slice.call(document.querySelectorAll('[data-ig-fx-toggle]'));
@@ -187,4 +200,5 @@ const pegs = USD_PEGS;
       });
     });
   })();
+  });
 </script>
