@@ -1,0 +1,17 @@
+---
+import PlacePage from '../../components/PlacePage.astro';
+import { getPlacesUnder } from '../../lib/places';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const places = await getPlacesUnder('oman');
+  return places.map((place) => ({
+    params: { path: place.rest },
+    props: { place, siblings: places },
+  }));
+}
+
+const { place, siblings } = Astro.props;
+---
+<PlacePage {place} {siblings} />

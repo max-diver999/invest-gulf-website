@@ -1,0 +1,65 @@
+---
+/**
+ * Renders one page of the geography tree.
+ *
+ * Every root in PLACE_ROOTS needs its own file under src/pages so Astro can
+ * build its static paths, but the body is identical for all of them, so it
+ * lives here rather than being copied per country.
+ */
+import { render } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+import PlaceChildren from './PlaceChildren.astro';
+import { breadcrumbsFor } from '../lib/places';
+import { SITE } from '../data/site';
+
+interface Props {
+  place: { path: string; collection: string; entry: any };
+  siblings: Array<{ path: string; entry: any }>;
+}
+
+const { place, siblings } = Astro.props;
+const { entry } = place;
+const { Content } = await render(entry);
+const hasInlineFaqBlock = entry.body?.includes('<FaqBlock') ?? false;
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  author,
+  readingTime,
+  heroImage,
+  faq,
+  noindex,
+  leadPlacement,
+} = entry.data;
+
+const canonical = `${SITE.url}/${place.path}/`;
+const children = siblings
+  .filter((s) => s.path !== place.path && s.path.startsWith(`${place.path}/`))
+  .filter((s) => s.path.slice(place.path.length + 1).split('/').length === 1)
+  .filter((s) => !s.entry.data.noindex)
+  .sort((a, b) => a.entry.data.title.localeCompare(b.entry.data.title));
+---
+<ArticleLayout
+  {title}
+  {description}
+  {pubDate}
+  {updatedDate}
+  {author}
+  readingTime={readingTime ?? 8}
+  {heroImage}
+  {faq}
+  {noindex}
+  {leadPlacement}
+  {hasInlineFaqBlock}
+  contextLabel={title}
+  articleSlug={entry.id}
+  articleCollection={place.collection}
+  breadcrumbs={breadcrumbsFor(place.path, title, SITE.url)}
+  {canonical}
+>
+  <Content />
+  <PlaceChildren places={children} basePath={place.path} />
+</ArticleLayout>
