@@ -13,6 +13,61 @@
       "statusCode": 308
     },
     {
+      "source": "/areas/saadiyat-island-property-investment/",
+      "destination": "/uae/abu-dhabi/saadiyat-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/motor-city-property-investment/",
+      "destination": "/uae/dubai/motor-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/khalifa-city-property-investment/",
+      "destination": "/uae/abu-dhabi/khalifa-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/mudon-property-investment/",
+      "destination": "/uae/dubai/mudon/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/mbr-city-property-investment/",
+      "destination": "/uae/dubai/mbr-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-furjan-property-investment/",
+      "destination": "/uae/dubai/al-furjan/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/jbr-property-investment/",
+      "destination": "/uae/dubai/jbr/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-sports-city-property-investment/",
+      "destination": "/uae/dubai/dubai-sports-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/damac-hills-property-investment/",
+      "destination": "/uae/dubai/damac-hills/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-reem-island-property-investment/",
+      "destination": "/uae/abu-dhabi/al-reem-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/jlt-property-investment/",
+      "destination": "/uae/dubai/jlt/",
+      "permanent": true
+    },
+    {
       "source": "/areas/city-walk-property-investment/",
       "destination": "/uae/dubai/city-walk/",
       "permanent": true
