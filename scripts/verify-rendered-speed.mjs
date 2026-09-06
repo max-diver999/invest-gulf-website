@@ -53,8 +53,16 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
   if (/fonts\.(?:googleapis|gstatic)\.com/.test(html)) {
     errors.push(`${relative}: external Google Fonts remain`);
   }
-  if (preloads.some((tag) => attribute(tag, 'as') === 'font')) {
-    errors.push(`${relative}: rejected font preload returned`);
+  // Preloading a font is only an anti-pattern when the font is on someone
+  // else's origin: the connection setup costs more than the preload saves, and
+  // the neighbouring check already rejects Google Fonts outright. Since the
+  // fonts were self-hosted (0c66577), a same-origin preload is the intended
+  // behaviour, so only cross-origin font preloads fail here.
+  const crossOriginFontPreloads = preloads.filter(
+    (tag) => attribute(tag, 'as') === 'font' && /^https?:\/\//i.test(attribute(tag, 'href')),
+  );
+  if (crossOriginFontPreloads.length) {
+    errors.push(`${relative}: cross-origin font preload returned`);
   }
   if (imagePreloads.length > 1) {
     errors.push(`${relative}: multiple image preloads (${imagePreloads.length})`);

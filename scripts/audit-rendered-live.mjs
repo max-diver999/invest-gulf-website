@@ -7,6 +7,7 @@
  *   node scripts/audit-rendered-live.mjs [--local] [--fail] [--collection=guides]
  *   SITE_URL=https://example.com node scripts/audit-rendered-live.mjs
  */
+import { urlPathForFile } from './lib/content-urls.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -148,14 +149,22 @@ async function fetchHtml(url) {
   return res.text();
 }
 
+function contentUrlPath(collection, slug) {
+  return urlPathForFile(
+    collection,
+    slug,
+    path.join(ROOT, 'src/content', collection, `${slug}.mdx`),
+  );
+}
+
 function readLocalHtml(collection, slug) {
-  const p = path.join(ROOT, 'dist/client', collection, slug, 'index.html');
+  const p = path.join(ROOT, 'dist/client', contentUrlPath(collection, slug), 'index.html');
   if (!fs.existsSync(p)) throw new Error('missing dist HTML');
   return fs.readFileSync(p, 'utf8');
 }
 
 async function auditPage(collection, slug) {
-  const urlPath = `/${collection}/${slug}/`;
+  const urlPath = contentUrlPath(collection, slug);
   const url = `${SITE_URL}${urlPath}`;
   let html;
   try {

@@ -5,20 +5,23 @@ import CurrencyToggle from './CurrencyToggle.astro';
 /**
  * Primary navigation.
  *
- * The mobile drawer is not a reduced copy of the desktop bar: the desktop bar
- * has room for five links, while the site has five content collections plus
- * reference pages. The drawer lists all of them, because on mobile the header
- * is the only navigation a reader has before the footer.
+ * The desktop bar has room for five links and leads with the two emirate hubs,
+ * because those carry the commercial queries. The mobile drawer is not a reduced
+ * copy of it: on mobile the header is the only navigation before the footer, so
+ * the drawer lists the geography tree and every content collection.
  */
 const primary = [
+  { label: 'Dubai', href: '/uae/dubai/' },
+  { label: 'Abu Dhabi', href: '/uae/abu-dhabi/' },
   { label: 'Guides', href: '/guides/' },
-  { label: 'Compare', href: '/compare/' },
-  { label: 'Areas', href: '/areas/' },
   { label: 'Get shortlist', href: '/get-shortlist/' },
   { label: 'About', href: '/about/' },
 ];
 
 const drawerBrowse = [
+  { label: 'Property in Dubai', href: '/uae/dubai/', note: 'Prices, areas, yields, costs' },
+  { label: 'Property in Abu Dhabi', href: '/uae/abu-dhabi/', note: 'The nine investment zones' },
+  { label: 'Property across the UAE', href: '/uae/', note: 'Every emirate compared' },
   { label: 'Guides', href: '/guides/', note: 'Buying, costs, visas, tax' },
   { label: 'Areas', href: '/areas/', note: 'Community-level research' },
   { label: 'Compare', href: '/compare/', note: 'Market and developer comparisons' },

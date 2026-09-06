@@ -22,7 +22,12 @@ const CONTENT_COLLECTIONS = {
   areas: 'areas',
   news: 'news',
   projects: 'projects',
+  hubs: 'hubs',
 };
+
+// Roots of the geography tree. These pages carry the commercial queries, so they
+// outrank the article collections in the sitemap.
+const PLACE_ROOTS = ['/uae/', '/saudi-arabia/', '/qatar/', '/oman/', '/bahrain/', '/developers/'];
 
 const SITEMAP_EXCLUDED = collectSitemapExclusions(ROOT, CONTENT_COLLECTIONS);
 const CONTENT_LASTMOD = await collectContentLastmod(referenceConfig, { root: ROOT });
@@ -48,6 +53,16 @@ export default defineConfig({
           : item;
         if (item.url === 'https://invest-gulf.com/') {
           return { ...page, priority: 1.0, changefreq: 'weekly' };
+        }
+        // @astrojs/sitemap writes priority to one decimal, so 0.95 and 0.92
+        // both emit as 0.9. Depth-based gradation inside the tree would be
+        // invisible in the output, so the whole tree sits at the top of the
+        // non-home band instead.
+        if (PLACE_ROOTS.some((root) => item.url.includes(root))) {
+          return { ...page, priority: 0.9, changefreq: 'weekly' };
+        }
+        if (item.url.includes('/living/')) {
+          return { ...page, priority: 0.5, changefreq: 'monthly' };
         }
         if (item.url.includes('/guides/')) {
           return { ...page, priority: 0.85, changefreq: 'weekly' };
