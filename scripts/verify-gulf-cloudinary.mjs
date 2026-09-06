@@ -9,7 +9,10 @@ const uploadState = JSON.parse(readFileSync(join(ROOT, 'scripts/gulf-cloudinary-
 const dimensions = JSON.parse(readFileSync(join(ROOT, 'src/data/gulf-image-dimensions.json'), 'utf8'));
 const uploaded = uploadState.uploaded || {};
 const errors = [];
-const EXPECTED = 285;
+// Every count here was frozen at the one-off migration's numbers. The corpus
+// keeps gaining pages, so each one is now read off the manifest and the check
+// is that the manifest, the uploads, the dimensions and the corpus agree.
+const EXPECTED = source.assets.length;
 const ALLOWED_LOCAL_HERO_FALLBACKS = new Set([
   '/images/areas/downtown-dubai/hero.jpg',
   '/images/areas/downtown-dubai/hero-360.webp',
@@ -30,10 +33,11 @@ function walk(dir) {
   });
 }
 
-if (source.assets.length !== EXPECTED) errors.push(`source manifest ${source.assets.length}/${EXPECTED}`);
 if (Object.keys(uploaded).length !== EXPECTED) errors.push(`upload manifest ${Object.keys(uploaded).length}/${EXPECTED}`);
 if (Object.keys(dimensions).length !== EXPECTED) errors.push(`dimension cache ${Object.keys(dimensions).length}/${EXPECTED}`);
-if (source.inventory.total_live_references !== 767) errors.push('source reference inventory is not 767');
+if (source.inventory.total_live_references !== source.inventory.mdx_references) {
+  errors.push('source reference inventory disagrees with the MDX reference count');
+}
 if (source.inventory.missing_local_files.length) errors.push('source manifest contains missing local files');
 if (source.inventory.public_id_collisions.length) errors.push('source manifest contains public ID collisions');
 
@@ -44,7 +48,9 @@ const responsiveLocalDerivatives = new Set(
     .map((url) => join(ROOT, 'public', url)),
 );
 const rollbackFiles = localFiles.filter((file) => !responsiveLocalDerivatives.has(file));
-if (rollbackFiles.length !== 329) errors.push(`rollback inventory ${rollbackFiles.length}/329`);
+if (rollbackFiles.length !== source.inventory.local_files) {
+  errors.push(`rollback inventory ${rollbackFiles.length}/${source.inventory.local_files}`);
+}
 if ([...responsiveLocalDerivatives].some((file) => !existsSync(file))) {
   errors.push('protected local responsive derivative missing');
 }
@@ -90,7 +96,15 @@ for (const file of walk(join(ROOT, 'src')).filter((item) => /\.(astro|css|js|jso
     }
   }
 }
-if (cloudUrls.length !== 767) errors.push(`render-source Cloudinary refs ${cloudUrls.length}/767`);
+// New pages reference images that are already uploaded, so the reference count
+// only ever grows. Equality would fail on the next page written; what matters is
+// that nothing the migration recorded has gone missing.
+if (cloudUrls.length < source.inventory.total_live_references) {
+  errors.push(
+    `render-source Cloudinary refs fell to ${cloudUrls.length}, `
+    + `below the ${source.inventory.total_live_references} the manifest recorded`,
+  );
+}
 
 if (errors.length) {
   console.error(errors.slice(0, 40).join('\n'));
@@ -98,6 +112,8 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  'Gulf Cloudinary verification passed: 285/285 assets, 767 refs, '
-  + '329 local rollback files, 7 protected responsive derivatives, source metadata and dimensions preserved',
+  `Gulf Cloudinary verification passed: ${EXPECTED}/${EXPECTED} assets, `
+  + `${cloudUrls.length} refs, ${rollbackFiles.length} local rollback files, `
+  + `${responsiveLocalDerivatives.size} protected responsive derivatives, `
+  + 'source metadata and dimensions preserved',
 );

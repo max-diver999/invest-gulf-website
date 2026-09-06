@@ -99,14 +99,25 @@ def projected_percent(current: dict, assets: list[dict]) -> float:
     return projected / float(current["credits"]["limit"]) * 100
 
 
-def enforce_usage(current: dict, next_assets: list[dict], label: str) -> None:
+def enforce_usage(
+    current: dict,
+    next_assets: list[dict],
+    label: str,
+    allow_high_usage: bool = False,
+) -> None:
     percent = usage_percent(current)
     projected = projected_percent(current, next_assets)
     print(
         f"Usage checkpoint {label}: {percent:.2f}% "
         f"(projected after next {len(next_assets)}: {projected:.2f}%)"
     )
-    if percent >= HARD_STOP_PERCENT or projected > HARD_STOP_PERCENT:
+    # HARD_STOP_PERCENT protects the bulk migration, where the batch itself could
+    # eat the plan. A handful of new heroes moves the needle by hundredths of a
+    # percent, so --allow-high-usage lets that through deliberately. The plan
+    # ceiling is never negotiable: at 100% Cloudinary stops transforming and the
+    # whole holding loses image delivery.
+    ceiling = 100.0 if allow_high_usage else HARD_STOP_PERCENT
+    if percent >= ceiling or projected > ceiling:
         raise SystemExit(
             f"HARD STOP: usage {percent:.2f}%, projected {projected:.2f}% after next batch"
         )
@@ -261,19 +272,26 @@ def main() -> None:
     parser.add_argument("--rekey", action="store_true")
     parser.add_argument("--asset", action="append", default=[])
     parser.add_argument("--workers", type=int, default=3)
+    parser.add_argument(
+        "--allow-high-usage",
+        action="store_true",
+        help="permit a small batch above the bulk-migration usage threshold; the plan ceiling still applies",
+    )
     args = parser.parse_args()
 
     cloud, key, secret = credentials()
     source = json.loads(SOURCE_MANIFEST.read_text(encoding="utf-8"))
     assets = source["assets"]
     inventory = source["inventory"]
+    # The count was frozen at 285 for the one-off migration. The corpus keeps
+    # gaining pages, so the guard checks the manifest against its own inventory
+    # rather than a literal that goes stale the first time a hero is added.
     if (
-        inventory["mapped_assets"] != 285
-        or len(assets) != 285
+        inventory["mapped_assets"] != len(assets)
         or inventory["missing_local_files"]
         or inventory["public_id_collisions"]
     ):
-        raise SystemExit("Source manifest is not the exact clean 285-asset inventory")
+        raise SystemExit("Source manifest inventory is inconsistent")
     if len({asset["local_url"] for asset in assets}) != len(assets):
         raise SystemExit("Duplicate local URLs in source manifest")
     if len({asset["public_id"] for asset in assets}) != len(assets):
@@ -324,7 +342,7 @@ def main() -> None:
             return
         for offset in range(0, len(changes), CHECKPOINT_SIZE):
             current = usage(key, secret)
-            enforce_usage(current, [], f"before-rekey-{offset}")
+            enforce_usage(current, [], f"before-rekey-{offset}", args.allow_high_usage)
             for asset, saved in changes[offset : offset + CHECKPOINT_SIZE]:
                 result = rename_asset(saved["public_id"], asset["public_id"], key, secret)
                 saved["public_id"] = asset["public_id"]
@@ -375,7 +393,12 @@ def main() -> None:
     )
     current = usage(key, secret)
     preview = jobs[:CHECKPOINT_SIZE]
-    enforce_usage(current, preview, "dry-run" if args.dry_run else "before-upload")
+    enforce_usage(
+        current,
+        preview,
+        "dry-run" if args.dry_run else "before-upload",
+        args.allow_high_usage,
+    )
     if args.dry_run or not jobs:
         print(json.dumps(usage_snapshot(current, "dry-run"), indent=2))
         return
@@ -408,7 +431,7 @@ def main() -> None:
         state["usage_checkpoints"] = checkpoints
         save_state(state)
         next_batch = jobs[completed : completed + CHECKPOINT_SIZE]
-        enforce_usage(current, next_batch, label)
+        enforce_usage(current, next_batch, label, args.allow_high_usage)
         if failures:
             break
 

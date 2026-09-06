@@ -5667,6 +5667,38 @@
       "bytes": 189258,
       "uploaded_at": "2026-08-26T01:10:14Z",
       "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
+    },
+    "/images/areas/nad-al-sheba/hero.jpg": {
+      "public_id": "more-group/gulf/areas/nad-al-sheba/hero-bd6065366c",
+      "local_url": "/images/areas/nad-al-sheba/hero.jpg",
+      "local_path": "public/images/areas/nad-al-sheba/hero.jpg",
+      "source_sha256": "4571f5bfa85f9d6b18cf20e4f242de34254e16b3051d4795a83ad4396b5e8bc8",
+      "local_path_sha256": "bd6065366ceaa88c8ba74ebb7995d1eaaa638f2b6f2ca744f6623cf4b31f3be5",
+      "source_metadata": null,
+      "secure_url": "https://res.cloudinary.com/dlrrtf6bq/image/upload/v1788704320/more-group/gulf/areas/nad-al-sheba/hero-bd6065366c.jpg",
+      "version": 1788704320,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 260912,
+      "uploaded_at": "2026-09-06T14:18:40Z",
+      "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
+    },
+    "/images/areas/mirdif/hero.jpg": {
+      "public_id": "more-group/gulf/areas/mirdif/hero-9abdcfd6a2",
+      "local_url": "/images/areas/mirdif/hero.jpg",
+      "local_path": "public/images/areas/mirdif/hero.jpg",
+      "source_sha256": "547d3cd9cb4b0c78c72d23630343a875b752defed1993a971de0446bd674db74",
+      "local_path_sha256": "9abdcfd6a276c505eef6918c1caca4644ca27741cd80b092d72881fac9bfd444",
+      "source_metadata": null,
+      "secure_url": "https://res.cloudinary.com/dlrrtf6bq/image/upload/v1788704320/more-group/gulf/areas/mirdif/hero-9abdcfd6a2.jpg",
+      "version": 1788704320,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 242843,
+      "uploaded_at": "2026-09-06T14:18:40Z",
+      "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
     }
   },
   "failed": [],
@@ -5917,7 +5949,33 @@
       "bandwidth_credits": 1.26,
       "transformations": 4771.0,
       "transformation_credits": 4.77
+    },
+    {
+      "label": "before-upload",
+      "checked_at": "2026-09-06T14:18:38Z",
+      "percent": 96.48,
+      "credits": 24.12,
+      "credit_limit": 25.0,
+      "storage_bytes": 2842819706.0,
+      "storage_credits": 2.65,
+      "bandwidth_bytes": 3584553324.0,
+      "bandwidth_credits": 3.34,
+      "transformations": 18128.0,
+      "transformation_credits": 18.13
+    },
+    {
+      "label": "after-2-new",
+      "checked_at": "2026-09-06T14:18:43Z",
+      "percent": 96.48,
+      "credits": 24.12,
+      "credit_limit": 25.0,
+      "storage_bytes": 2842819706.0,
+      "storage_credits": 2.65,
+      "bandwidth_bytes": 3584553324.0,
+      "bandwidth_credits": 3.34,
+      "transformations": 18128.0,
+      "transformation_credits": 18.13
     }
   ],
-  "updated_at": "2026-08-26T01:14:39Z"
+  "updated_at": "2026-09-06T14:18:43Z"
 }

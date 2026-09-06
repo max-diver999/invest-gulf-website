@@ -5,11 +5,11 @@
   "cloud": "dlrrtf6bq",
   "prefix": "more-group/gulf",
   "inventory": {
-    "local_files": 329,
-    "distinct_live_local_urls": 285,
-    "total_live_references": 767,
-    "mdx_references": 767,
-    "mapped_assets": 285,
+    "local_files": 331,
+    "distinct_live_local_urls": 287,
+    "total_live_references": 769,
+    "mdx_references": 769,
+    "mapped_assets": 287,
     "missing_local_files": [],
     "public_id_collisions": [],
     "unreferenced_local_files": [
@@ -5950,6 +5950,29 @@
       }
     },
     {
+      "key": "/images/areas/mirdif/hero.jpg",
+      "local_url": "/images/areas/mirdif/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/mirdif/hero.jpg",
+      "local_path": "public/images/areas/mirdif/hero.jpg",
+      "source_sha256": "547d3cd9cb4b0c78c72d23630343a875b752defed1993a971de0446bd674db74",
+      "bytes": 433819,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "mirdif",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/mirdif/hero-9abdcfd6a2",
+      "references": [
+        {
+          "file": "src/content/areas/mirdif-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
+    },
+    {
       "key": "/images/areas/motor-city/hero.jpg",
       "local_url": "/images/areas/motor-city/hero.jpg",
       "absolute_local_url": "https://invest-gulf.com/images/areas/motor-city/hero.jpg",
@@ -6391,6 +6414,29 @@
         "alt": "Qurum Muscat beach — inline 2",
         "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Feral_cat_on_Qurum_Beach_in_Muscat.jpg/1280px-Feral_cat_on_Qurum_Beach_in_Muscat.jpg"
       }
+    },
+    {
+      "key": "/images/areas/nad-al-sheba/hero.jpg",
+      "local_url": "/images/areas/nad-al-sheba/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/nad-al-sheba/hero.jpg",
+      "local_path": "public/images/areas/nad-al-sheba/hero.jpg",
+      "source_sha256": "4571f5bfa85f9d6b18cf20e4f242de34254e16b3051d4795a83ad4396b5e8bc8",
+      "bytes": 422660,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "nad-al-sheba",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/nad-al-sheba/hero-bd6065366c",
+      "references": [
+        {
+          "file": "src/content/areas/nad-al-sheba-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
     },
     {
       "key": "/images/areas/neom/hero.jpg",
