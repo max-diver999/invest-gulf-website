@@ -13,6 +13,66 @@
       "statusCode": 308
     },
     {
+      "source": "/areas/city-walk-property-investment/",
+      "destination": "/uae/dubai/city-walk/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/muscat-al-mouj-property-investment/",
+      "destination": "/oman/al-mouj/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/jebel-ali-village-property-investment/",
+      "destination": "/uae/dubai/jebel-ali-village/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/mina-al-arab-property-investment/",
+      "destination": "/uae/ras-al-khaimah/mina-al-arab/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/the-pearl-lusail-property-investment/",
+      "destination": "/qatar/the-pearl/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/aljada-sharjah-property-investment/",
+      "destination": "/uae/sharjah/aljada/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-maryah-island-property-investment/",
+      "destination": "/uae/abu-dhabi/al-maryah-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-south-property-investment/",
+      "destination": "/uae/dubai/dubai-south/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/bluewaters-island-property-investment/",
+      "destination": "/uae/dubai/bluewaters-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-reef-abu-dhabi-property-investment/",
+      "destination": "/uae/abu-dhabi/al-reef/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-zahia-sharjah-property-investment/",
+      "destination": "/uae/sharjah/al-zahia/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-raha-beach-property-investment/",
+      "destination": "/uae/abu-dhabi/al-raha-beach/",
+      "permanent": true
+    },
+    {
       "source": "/areas/al-marjan-island-property-investment/",
       "destination": "/uae/ras-al-khaimah/al-marjan-island/",
       "permanent": true
