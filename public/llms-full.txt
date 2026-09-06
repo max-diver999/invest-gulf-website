@@ -446,7 +446,7 @@ Updated: 2026-09-06
 - https://invest-gulf.com/guides/when-not-to-buy-gulf-property/
 - https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/
 
-## areas (57)
+## areas (59)
 - https://invest-gulf.com/areas/al-barari-property-investment/
 - https://invest-gulf.com/areas/al-furjan-property-investment/
 - https://invest-gulf.com/areas/al-ghadeer-property-investment/
@@ -502,6 +502,8 @@ Updated: 2026-09-06
 - https://invest-gulf.com/uae/dubai/dubai-marina/
 - https://invest-gulf.com/uae/dubai/dubai-silicon-oasis/
 - https://invest-gulf.com/uae/dubai/jvc/
+- https://invest-gulf.com/uae/dubai/mirdif/
+- https://invest-gulf.com/uae/dubai/nad-al-sheba/
 - https://invest-gulf.com/uae/dubai/palm-jumeirah/
 - https://invest-gulf.com/uae/dubai/town-square/
 

@@ -165,6 +165,11 @@ function auditFile(c, slug) {
   // carries a 4,000 word floor. A standard page in the geo tree serves one
   // district and carries 2,500. Article collections keep their own floors, and
   // an area that has not yet moved into the tree keeps the old 1,800.
+  //
+  // Tier is set from transactional demand rather than from reach. A community
+  // name like Mirdif draws 74,000 searches a month and 260 of them are buyers,
+  // so tiering it on the larger number would contradict the research that says
+  // the larger number is not buying demand.
   const tier = (fm.tier || '').replace(/^["']|["']$/g, '') || (c === 'hubs' ? 'pillar' : 'standard');
   const inGeoTree = c === 'hubs' || Boolean(fm.path);
   const minW =
