@@ -13,6 +13,41 @@
       "statusCode": 308
     },
     {
+      "source": "/areas/",
+      "destination": "/uae/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-islands-property-investment/",
+      "destination": "/uae/dubai/dubai-islands/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-harbour-property-investment/",
+      "destination": "/uae/dubai/dubai-harbour/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-production-city-property-investment/",
+      "destination": "/uae/dubai/dubai-production-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-hamra-village-property-investment/",
+      "destination": "/uae/ras-al-khaimah/al-hamra-village/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/amwaj-islands-property-investment/",
+      "destination": "/bahrain/amwaj-islands/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/manama-property-investment/",
+      "destination": "/bahrain/manama/",
+      "permanent": true
+    },
+    {
       "source": "/areas/saadiyat-island-property-investment/",
       "destination": "/uae/abu-dhabi/saadiyat-island/",
       "permanent": true
