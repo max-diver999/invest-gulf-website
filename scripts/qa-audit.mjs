@@ -160,8 +160,12 @@ function auditFile(c, slug) {
   if (!fm.__hasFaq) prob.push('no-faq-block');
   else if (fm.__faqCount < 5) prob.push(`faq:${fm.__faqCount}<5`);
 
+  // Hubs are pillar pages: they have to answer the whole buying question for a
+  // market, not introduce it, because the competition on these queries is a
+  // portal with live inventory. 4,000 words is the floor for that job.
   const minW =
-    c === 'guides' ? 2000
+    c === 'hubs' ? 4000
+    : c === 'guides' ? 2000
     : c === 'projects' ? 1200
     : c === 'news' ? 600
     : 1800;

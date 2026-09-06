@@ -256,9 +256,12 @@ export function scorePage(body, { collection } = {}) {
   }
 
   const issues = [];
-  const commercial = ['guides', 'gajdy', 'comparisons', 'sravneniya', 'areas', 'rajony', 'compare'].includes(
-    collection,
-  );
+  // Hubs are the most commercial pages on the site: they carry the transactional
+  // queries and compete with portals, so they are held to the commercial rubric
+  // rather than exempted from it.
+  const commercial = [
+    'guides', 'gajdy', 'comparisons', 'sravneniya', 'areas', 'rajony', 'compare', 'hubs',
+  ].includes(collection);
 
   if (commercial && !/<TldrBlock/.test(body)) issues.push('missing-tldr');
   if (commercial && !/insider tip/i.test(body)) issues.push('missing-insider-tip');

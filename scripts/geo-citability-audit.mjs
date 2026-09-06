@@ -41,7 +41,7 @@ const COMMERCIAL = new Set([
   'compare',
   'projects',
   'proekty',
-]);
+, 'hubs']);
 
 function listMdx() {
   if (todayOnly || changedOnly) {
