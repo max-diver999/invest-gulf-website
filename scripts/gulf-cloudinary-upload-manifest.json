@@ -5699,6 +5699,38 @@
       "bytes": 242843,
       "uploaded_at": "2026-09-06T14:18:40Z",
       "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
+    },
+    "/images/areas/jumeirah-park/hero.jpg": {
+      "public_id": "more-group/gulf/areas/jumeirah-park/hero-f2420847d7",
+      "local_url": "/images/areas/jumeirah-park/hero.jpg",
+      "local_path": "public/images/areas/jumeirah-park/hero.jpg",
+      "source_sha256": "215610892de875e2654d301d4867c07b10ea93b721d9f7021d0609b5814e416f",
+      "local_path_sha256": "f2420847d78c3b78cad24dd7ef788a4cdc449faffabf600508376e28da302101",
+      "source_metadata": null,
+      "secure_url": "https://res.cloudinary.com/dlrrtf6bq/image/upload/v1788705581/more-group/gulf/areas/jumeirah-park/hero-f2420847d7.jpg",
+      "version": 1788705581,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 469944,
+      "uploaded_at": "2026-09-06T14:39:41Z",
+      "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
+    },
+    "/images/areas/emirates-hills/hero.jpg": {
+      "public_id": "more-group/gulf/areas/emirates-hills/hero-f92ba836b4",
+      "local_url": "/images/areas/emirates-hills/hero.jpg",
+      "local_path": "public/images/areas/emirates-hills/hero.jpg",
+      "source_sha256": "7cc4ebfb8a153dad5621313c0b774a0e7e9016c9484c88dc88ee0d9ab1b76d76",
+      "local_path_sha256": "f92ba836b456b9a841748e44585ae4c563ee3fe2aca57dada35df4ce59022057",
+      "source_metadata": null,
+      "secure_url": "https://res.cloudinary.com/dlrrtf6bq/image/upload/v1788705581/more-group/gulf/areas/emirates-hills/hero-f92ba836b4.jpg",
+      "version": 1788705581,
+      "format": "jpg",
+      "width": 1920,
+      "height": 1280,
+      "bytes": 335511,
+      "uploaded_at": "2026-09-06T14:39:41Z",
+      "incoming_transformation": "c_limit,w_1920,h_1920,q_auto:good"
     }
   },
   "failed": [],
@@ -5975,7 +6007,33 @@
       "bandwidth_credits": 3.34,
       "transformations": 18128.0,
       "transformation_credits": 18.13
+    },
+    {
+      "label": "before-upload",
+      "checked_at": "2026-09-06T14:39:38Z",
+      "percent": 96.6,
+      "credits": 24.15,
+      "credit_limit": 25.0,
+      "storage_bytes": 2845638450.0,
+      "storage_credits": 2.65,
+      "bandwidth_bytes": 3584553324.0,
+      "bandwidth_credits": 3.34,
+      "transformations": 18160.0,
+      "transformation_credits": 18.16
+    },
+    {
+      "label": "after-2-new",
+      "checked_at": "2026-09-06T14:39:46Z",
+      "percent": 96.6,
+      "credits": 24.15,
+      "credit_limit": 25.0,
+      "storage_bytes": 2845638450.0,
+      "storage_credits": 2.65,
+      "bandwidth_bytes": 3584553324.0,
+      "bandwidth_credits": 3.34,
+      "transformations": 18162.0,
+      "transformation_credits": 18.16
     }
   ],
-  "updated_at": "2026-09-06T14:18:43Z"
+  "updated_at": "2026-09-06T14:39:46Z"
 }

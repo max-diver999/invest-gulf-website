@@ -5,11 +5,11 @@
   "cloud": "dlrrtf6bq",
   "prefix": "more-group/gulf",
   "inventory": {
-    "local_files": 331,
-    "distinct_live_local_urls": 287,
-    "total_live_references": 769,
-    "mdx_references": 769,
-    "mapped_assets": 287,
+    "local_files": 333,
+    "distinct_live_local_urls": 289,
+    "total_live_references": 771,
+    "mdx_references": 771,
+    "mapped_assets": 289,
     "missing_local_files": [],
     "public_id_collisions": [],
     "unreferenced_local_files": [
@@ -4297,6 +4297,29 @@
       }
     },
     {
+      "key": "/images/areas/emirates-hills/hero.jpg",
+      "local_url": "/images/areas/emirates-hills/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/emirates-hills/hero.jpg",
+      "local_path": "public/images/areas/emirates-hills/hero.jpg",
+      "source_sha256": "7cc4ebfb8a153dad5621313c0b774a0e7e9016c9484c88dc88ee0d9ab1b76d76",
+      "bytes": 557671,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "emirates-hills",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/emirates-hills/hero-f92ba836b4",
+      "references": [
+        {
+          "file": "src/content/areas/emirates-hills-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
+    },
+    {
       "key": "/images/areas/fujairah/hero.jpg",
       "local_url": "/images/areas/fujairah/hero.jpg",
       "absolute_local_url": "https://invest-gulf.com/images/areas/fujairah/hero.jpg",
@@ -4998,6 +5021,29 @@
         "alt": "Jumeirah Lake Towers Dubai — inline-2",
         "source": "recovered:/images/areas/jlt/inline-2.jpg"
       }
+    },
+    {
+      "key": "/images/areas/jumeirah-park/hero.jpg",
+      "local_url": "/images/areas/jumeirah-park/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/jumeirah-park/hero.jpg",
+      "local_path": "public/images/areas/jumeirah-park/hero.jpg",
+      "source_sha256": "215610892de875e2654d301d4867c07b10ea93b721d9f7021d0609b5814e416f",
+      "bytes": 724293,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "jumeirah-park",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/jumeirah-park/hero-f2420847d7",
+      "references": [
+        {
+          "file": "src/content/areas/jumeirah-park-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
     },
     {
       "key": "/images/areas/jvc/hero.jpg",
