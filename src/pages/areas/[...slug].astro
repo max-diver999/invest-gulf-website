@@ -7,7 +7,11 @@ export const prerender = true;
 
 export async function getStaticPaths() {
   const areas = await getCollection('areas');
-  return areas.map((entry) => ({
+  // A district that has moved into the geo tree renders at its own path and is
+  // 301'd from here, so building it twice would put the same content on two URLs.
+  return areas
+    .filter((entry) => !entry.data.path)
+    .map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));

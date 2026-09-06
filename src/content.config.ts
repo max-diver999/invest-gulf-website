@@ -38,6 +38,9 @@ const projectSchema = articleSchema.extend({
 const hubSchema = articleSchema.extend({
   category: z.string().default('hubs'),
   path: z.string(),
+  // Depth standard. Pillar pages answer a market end to end and carry a 4,000
+  // word floor; standard pages serve a single district and carry 2,500.
+  tier: z.enum(['pillar', 'standard']).default('pillar'),
   hubType: z
     .enum(['country', 'emirate', 'type', 'price', 'developer', 'community'])
     .default('emirate'),
@@ -66,6 +69,10 @@ export const collections = {
       // rendering at /areas/{slug}/.
       path: z.string().optional(),
       parentPath: z.string().optional(),
+      hubType: z
+        .enum(['country', 'emirate', 'type', 'price', 'developer', 'community'])
+        .default('community'),
+      tier: z.enum(['pillar', 'standard']).default('standard'),
     }),
   }),
   hubs: defineCollection({

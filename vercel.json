@@ -13,6 +13,46 @@
       "statusCode": 308
     },
     {
+      "source": "/areas/town-square-property-investment/",
+      "destination": "/uae/dubai/town-square/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/palm-jumeirah-property-investment/",
+      "destination": "/uae/dubai/palm-jumeirah/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-marina-property-investment/",
+      "destination": "/uae/dubai/dubai-marina/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/downtown-dubai-property-investment/",
+      "destination": "/uae/dubai/downtown-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/jvc-property-investment/",
+      "destination": "/uae/dubai/jvc/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-silicon-oasis-property-investment/",
+      "destination": "/uae/dubai/dubai-silicon-oasis/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/business-bay-property-investment/",
+      "destination": "/uae/dubai/business-bay/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/arabian-ranches-property-investment/",
+      "destination": "/uae/dubai/arabian-ranches/",
+      "permanent": true
+    },
+    {
       "source": "/guides/uae-golden-visa-property-2026/",
       "destination": "/guides/uae-golden-visa-property/",
       "permanent": true

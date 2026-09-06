@@ -160,11 +160,15 @@ function auditFile(c, slug) {
   if (!fm.__hasFaq) prob.push('no-faq-block');
   else if (fm.__faqCount < 5) prob.push(`faq:${fm.__faqCount}<5`);
 
-  // Hubs are pillar pages: they have to answer the whole buying question for a
-  // market, not introduce it, because the competition on these queries is a
-  // portal with live inventory. 4,000 words is the floor for that job.
+  // Depth is set by what the page has to do, not by which folder it sits in.
+  // A pillar page answers a whole market against portals with live inventory and
+  // carries a 4,000 word floor. A standard page in the geo tree serves one
+  // district and carries 2,500. Article collections keep their own floors, and
+  // an area that has not yet moved into the tree keeps the old 1,800.
+  const tier = (fm.tier || '').replace(/^["']|["']$/g, '') || (c === 'hubs' ? 'pillar' : 'standard');
+  const inGeoTree = c === 'hubs' || Boolean(fm.path);
   const minW =
-    c === 'hubs' ? 4000
+    inGeoTree ? (tier === 'pillar' ? 4000 : 2500)
     : c === 'guides' ? 2000
     : c === 'projects' ? 1200
     : c === 'news' ? 600
