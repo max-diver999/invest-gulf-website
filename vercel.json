@@ -13,6 +13,11 @@
       "statusCode": 308
     },
     {
+      "source": "/guides/palm-jebel-ali-investment-guide/",
+      "destination": "/uae/dubai/palm-jebel-ali/",
+      "permanent": true
+    },
+    {
       "source": "/areas/town-square-property-investment/",
       "destination": "/uae/dubai/town-square/",
       "permanent": true
