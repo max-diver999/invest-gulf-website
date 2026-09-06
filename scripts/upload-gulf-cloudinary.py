@@ -18,7 +18,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_MANIFEST = ROOT / "scripts/gulf-cloudinary-source-manifest.json"
 UPLOAD_MANIFEST = ROOT / "scripts/gulf-cloudinary-upload-manifest.json"
-EXPECTED_CLOUD = "dlrrtf6bq"
+# Account routing, per 99_Системное/CLOUDINARY_ROUTING.md. The legacy cloud is
+# read-only: its URLs stay in the corpus but it never receives another upload,
+# because it sits at the edge of its plan. Everything new goes to the active one.
+LEGACY_CLOUD = "dlrrtf6bq"
+ACTIVE_CLOUD = "bwppi9gc"
+UPLOAD_CLOUD = ACTIVE_CLOUD
 PREFIX = "more-group/gulf"
 MAX_EDGE = 1920
 WARNING_PERCENT = 50.0
@@ -39,12 +44,17 @@ def load_env_file(path: Path) -> None:
 
 
 def credentials() -> tuple[str, str, str]:
-    load_env_file(ROOT.parent / "99_Системное" / ".env.cloudinary-niche")
-    cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", EXPECTED_CLOUD)
+    load_env_file(ROOT.parent / "99_Системное" / ".env.cloudinary-niche-active")
+    cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", UPLOAD_CLOUD)
     key = os.environ.get("CLOUDINARY_API_KEY", "")
     secret = os.environ.get("CLOUDINARY_API_SECRET", "")
-    if cloud != EXPECTED_CLOUD:
-        raise SystemExit(f"Refusing upload: expected cloud {EXPECTED_CLOUD}, got {cloud}")
+    if cloud == LEGACY_CLOUD:
+        raise SystemExit(
+            f"Refusing upload: {LEGACY_CLOUD} is the legacy read-only account. "
+            f"New uploads belong on {ACTIVE_CLOUD}."
+        )
+    if cloud != UPLOAD_CLOUD:
+        raise SystemExit(f"Refusing upload: expected cloud {UPLOAD_CLOUD}, got {cloud}")
     if not key or not secret:
         raise SystemExit("Missing local Cloudinary credentials")
     return cloud, key, secret
@@ -56,7 +66,7 @@ def auth_header(key: str, secret: str) -> str:
 
 
 def admin_json(path: str, key: str, secret: str) -> dict:
-    request = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}{path}")
+    request = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}{path}")
     request.add_header("Authorization", auth_header(key, secret))
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.load(response)
@@ -193,7 +203,7 @@ def upload(asset: dict, key: str, secret: str) -> dict:
     fields = {**signed, "api_key": key, "signature": sign(signed, secret)}
     body, boundary = multipart(fields, local_path)
     request = urllib.request.Request(
-        f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}/image/upload",
+        f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}/image/upload",
         data=body,
         headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
         method="POST",
@@ -216,6 +226,9 @@ def upload(asset: dict, key: str, secret: str) -> dict:
         raise RuntimeError(f"Uploaded source exceeds {MAX_EDGE}px: {asset['public_id']}")
     return {
         "public_id": result["public_id"],
+        # Recorded per asset because the corpus spans two clouds: the legacy
+        # entries stay where they are and only new ones name the active cloud.
+        "cloud": UPLOAD_CLOUD,
         "local_url": asset["local_url"],
         "local_path": asset["local_path"],
         "source_sha256": source_sha,
@@ -242,7 +255,7 @@ def rename_asset(from_public_id: str, to_public_id: str, key: str, secret: str) 
     }
     fields = {**signed, "api_key": key, "signature": sign(signed, secret)}
     request = urllib.request.Request(
-        f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}/image/rename",
+        f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}/image/rename",
         data=urllib.parse.urlencode(fields).encode(),
         headers={"Content-Type": "application/x-www-form-urlencoded"},
         method="POST",

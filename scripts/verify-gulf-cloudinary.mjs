@@ -2,6 +2,14 @@
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DELIVERY_CLOUDS } from './lib/cloudinary-clouds.mjs';
+
+// Either cloud may appear: dlrrtf6bq is legacy and read-only, bwppi9gc takes
+// new uploads. The transform requirements are the same on both.
+const DELIVERY_URL_RE = new RegExp(
+  `^https://res\\.cloudinary\\.com/(?:${DELIVERY_CLOUDS.join('|')})`
+  + '/image/upload/[^/]*f_auto[^/]*q_auto[^/]*w_\\d+[^/]*/more-group/gulf/',
+);
 
 const ROOT = join(fileURLToPath(new URL('..', import.meta.url)));
 const source = JSON.parse(readFileSync(join(ROOT, 'scripts/gulf-cloudinary-source-manifest.json'), 'utf8'));
@@ -90,7 +98,7 @@ for (const file of walk(join(ROOT, 'src')).filter((item) => /\.(astro|css|js|jso
     if (isDeliveryHelper) continue;
     cloudUrls.push(raw);
     if (
-      !/^https:\/\/res\.cloudinary\.com\/dlrrtf6bq\/image\/upload\/[^/]*f_auto[^/]*q_auto[^/]*w_\d+[^/]*\/more-group\/gulf\//.test(raw)
+      !DELIVERY_URL_RE.test(raw)
     ) {
       errors.push(`bare or unsafe Cloudinary URL in ${file.replace(`${ROOT}/`, '')}`);
     }

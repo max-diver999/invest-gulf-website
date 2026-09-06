@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DELIVERY_CLOUDS } from './lib/cloudinary-clouds.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -16,7 +17,10 @@ if (process.env.VERCEL) {
 const DIST = fs.existsSync(path.join(ROOT, 'dist/client'))
   ? path.join(ROOT, 'dist/client')
   : path.join(ROOT, 'dist');
-const CLOUD_PREFIX = 'https://res.cloudinary.com/dlrrtf6bq/image/upload/';
+// Both clouds serve this corpus: dlrrtf6bq legacy read-only, bwppi9gc active.
+const CLOUD_PREFIXES = DELIVERY_CLOUDS.map(
+  (cloud) => `https://res.cloudinary.com/${cloud}/image/upload/`,
+);
 const LOCAL_HERO_PREFIXES = [
   '/images/areas/downtown-dubai/hero',
   '/images/projects/address-residences-dubai-hills/hero',
@@ -85,12 +89,18 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
       errors.push(`${relative}: direct Wikimedia image delivery`);
     }
 
-    const isCloudinary = src.startsWith(CLOUD_PREFIX);
+    const isCloudinary = CLOUD_PREFIXES.some((prefix) => src.startsWith(prefix));
     const isLocalException = LOCAL_HERO_PREFIXES.some((prefix) => src.startsWith(prefix));
     if (isCloudinary) {
       cloudinaryImages += 1;
       if (!/\/image\/upload\/[^/]*f_auto[^/]*q_auto[^/]*w_\d+\//.test(src)) {
         errors.push(`${relative}: unsafe Cloudinary transform`);
+      }
+      // g_auto without a crop mode is a 400 from Cloudinary, not a slow image.
+      const transforms = src.split('/image/upload/')[1]?.split('/')[0] ?? '';
+      if (/\bg_auto\b/.test(transforms)
+        && !/\bc_(?:crop|fill|thumb|lfill|fill_pad|auto|auto_pad)\b/.test(transforms)) {
+        errors.push(`${relative}: g_auto without a crop mode returns 400`);
       }
     }
     if (isLocalException) localExceptionHeroes += 1;
