@@ -13,6 +13,66 @@
       "statusCode": 308
     },
     {
+      "source": "/areas/al-barari-property-investment/",
+      "destination": "/uae/dubai/al-barari/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/discovery-gardens-property-investment/",
+      "destination": "/uae/dubai/discovery-gardens/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-creek-harbour-property-investment/",
+      "destination": "/uae/dubai/dubai-creek-harbour/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/dubai-hills-estate-property-investment/",
+      "destination": "/uae/dubai/dubai-hills-estate/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/meydan-horizon-property-investment/",
+      "destination": "/uae/dubai/meydan-horizon/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/the-valley-dubai-property-investment/",
+      "destination": "/uae/dubai/the-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/tilal-al-ghaf-property-investment/",
+      "destination": "/uae/dubai/tilal-al-ghaf/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/villanova-property-investment/",
+      "destination": "/uae/dubai/villanova/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/yas-island-property-investment/",
+      "destination": "/uae/abu-dhabi/yas-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/masdar-city-property-investment/",
+      "destination": "/uae/abu-dhabi/masdar-city/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/hudayriyat-island-property-investment/",
+      "destination": "/uae/abu-dhabi/hudayriyat-island/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/al-ghadeer-property-investment/",
+      "destination": "/uae/abu-dhabi/al-ghadeer/",
+      "permanent": true
+    },
+    {
       "source": "/guides/palm-jebel-ali-investment-guide/",
       "destination": "/uae/dubai/palm-jebel-ali/",
       "permanent": true
