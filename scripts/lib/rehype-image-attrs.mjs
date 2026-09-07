@@ -12,24 +12,26 @@ import { visit } from 'unist-util-visit';
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cloudFromUrl } from './cloudinary-clouds.mjs';
 
 const MAP_PATH = join(dirname(fileURLToPath(import.meta.url)), '../data/image-dimensions.json');
 const CLOUD_MAP_PATH = join(dirname(fileURLToPath(import.meta.url)), '../../src/data/gulf-image-dimensions.json');
 const SIZES = existsSync(MAP_PATH) ? JSON.parse(readFileSync(MAP_PATH, 'utf8')) : {};
 const CLOUD_SIZES = existsSync(CLOUD_MAP_PATH) ? JSON.parse(readFileSync(CLOUD_MAP_PATH, 'utf8')) : {};
-const CLOUD = 'dlrrtf6bq';
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = [360, 640, 960, 1200];
 
 function cloudPublicId(src) {
   const marker = `/${PREFIX}`;
   const index = src.indexOf(marker);
-  if (!src.includes(`res.cloudinary.com/${CLOUD}/image/upload/`) || index === -1) return null;
+  if (!cloudFromUrl(src) || index === -1) return null;
   return src.slice(index + 1).replace(/\.(avif|gif|jpe?g|png|webp)$/i, '');
 }
 
-function deliveryUrl(publicId, width) {
-  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:low,w_${width}/${publicId}`;
+// The derivative keeps the cloud its source names, so a legacy image is not
+// silently rewritten onto the active account or the other way round.
+function deliveryUrl(publicId, width, cloud) {
+  return `https://res.cloudinary.com/${cloud}/image/upload/f_auto,q_auto:low,w_${width}/${publicId}`;
 }
 
 export function rehypeImageAttrs() {
@@ -46,10 +48,13 @@ export function rehypeImageAttrs() {
         props.height = dims.height;
       }
       if (publicId && dims) {
+        const cloud = cloudFromUrl(props.src);
         const requested = WIDTHS.filter((width) => width <= dims.width);
         const widths = requested.length ? requested : [dims.width];
-        props.src = deliveryUrl(publicId, widths.at(-1));
-        props.srcSet = widths.map((width) => `${deliveryUrl(publicId, width)} ${width}w`).join(', ');
+        props.src = deliveryUrl(publicId, widths.at(-1), cloud);
+        props.srcSet = widths
+          .map((width) => `${deliveryUrl(publicId, width, cloud)} ${width}w`)
+          .join(', ');
         props.sizes = '(max-width: 599px) calc(100vw - 3rem), 72ch';
       }
     });

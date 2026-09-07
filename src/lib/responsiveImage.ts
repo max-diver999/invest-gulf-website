@@ -6,7 +6,14 @@ type Dimension = { width: number; height: number };
 type LocalCandidate = { url: string; width: number };
 type LocalHeroFallback = { src: string; candidates: LocalCandidate[] };
 
-const CLOUD = 'dlrrtf6bq';
+// Two clouds serve this corpus: dlrrtf6bq is legacy and read-only, bwppi9gc
+// takes new uploads. See scripts/lib/cloudinary-clouds.mjs and the holding
+// policy in 99_Системное/CLOUDINARY_ROUTING.md. A derivative must stay on the
+// cloud its source names, so the cloud is read off the URL rather than assumed.
+const LEGACY_CLOUD = 'dlrrtf6bq';
+const ACTIVE_CLOUD = 'bwppi9gc';
+const DELIVERY_CLOUDS: readonly string[] = [LEGACY_CLOUD, ACTIVE_CLOUD];
+const CLOUD_IN_URL = /res\.cloudinary\.com\/([a-z0-9_-]+)\/image\/upload\//i;
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = {
   hero: [360, 640, 960, 1200],
@@ -38,17 +45,32 @@ const LOCAL_HERO_FALLBACKS: Record<string, LocalHeroFallback> = {
   },
 };
 
+/** The cloud a delivery URL names, or null when it is not one of ours. */
+export function gulfCloud(src: string): string | null {
+  const match = src.match(CLOUD_IN_URL);
+  return match && DELIVERY_CLOUDS.includes(match[1]) ? match[1] : null;
+}
+
 export function gulfPublicId(src: string): string | null {
-  const delivery = `res.cloudinary.com/${CLOUD}/image/upload/`;
   const marker = `/${PREFIX}`;
   const markerIndex = src.indexOf(marker);
-  if (!src.includes(delivery) || markerIndex === -1) return null;
+  if (!gulfCloud(src) || markerIndex === -1) return null;
   return src.slice(markerIndex + 1).replace(/\.(avif|gif|jpe?g|png|webp)$/i, '');
 }
 
-export function gulfDeliveryUrl(publicId: string, width: number): string {
+export function gulfDeliveryUrl(
+  publicId: string,
+  width: number,
+  cloud: string = ACTIVE_CLOUD,
+): string {
   if (!publicId.startsWith(PREFIX)) throw new Error(`Unexpected Gulf public ID: ${publicId}`);
-  return `https://res.cloudinary.com/${CLOUD}/image/upload/f_auto,q_auto:eco,g_auto,w_${width}/${publicId}`;
+  if (!DELIVERY_CLOUDS.includes(cloud)) throw new Error(`Unexpected Cloudinary account: ${cloud}`);
+  // No g_auto here. Gravity is only valid alongside a crop mode, and these URLs
+  // scale rather than crop, so Cloudinary answered every one of them with
+  // "Auto gravity can only be used with crop, fill, thumb, lfill, fill_pad,
+  // auto, auto_pad" and a 400. The rendered-speed gate never caught it because
+  // it checks the shape of the URL, not whether it resolves.
+  return `https://res.cloudinary.com/${cloud}/image/upload/f_auto,q_auto:eco,w_${width}/${publicId}`;
 }
 
 /** Smallest variant for LCP preload (mobile-first). */
@@ -93,12 +115,15 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
 
   const native = (cloudDimensions as Record<string, Dimension>)[publicId];
   if (!native) throw new Error(`Missing Gulf image dimensions for ${publicId}`);
+  // Derivatives stay on the source's own cloud, so a legacy image keeps serving
+  // from the legacy account and a new one from the active account.
+  const cloud = gulfCloud(src) ?? LEGACY_CLOUD;
   const requested = WIDTHS[variant].filter((width) => width <= native.width);
   const widths = requested.length ? requested : [native.width];
   const largest = widths.at(-1) ?? native.width;
   return {
-    src: gulfDeliveryUrl(publicId, largest),
-    srcset: widths.map((width) => `${gulfDeliveryUrl(publicId, width)} ${width}w`).join(', '),
+    src: gulfDeliveryUrl(publicId, largest, cloud),
+    srcset: widths.map((width) => `${gulfDeliveryUrl(publicId, width, cloud)} ${width}w`).join(', '),
     sizes: variant === 'card'
       ? '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 320px'
       : variant === 'hero'

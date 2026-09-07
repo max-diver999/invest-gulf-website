@@ -18,7 +18,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_MANIFEST = ROOT / "scripts/gulf-cloudinary-source-manifest.json"
 UPLOAD_MANIFEST = ROOT / "scripts/gulf-cloudinary-upload-manifest.json"
-EXPECTED_CLOUD = "dlrrtf6bq"
+# Account routing, per 99_Системное/CLOUDINARY_ROUTING.md. The legacy cloud is
+# read-only: its URLs stay in the corpus but it never receives another upload,
+# because it sits at the edge of its plan. Everything new goes to the active one.
+LEGACY_CLOUD = "dlrrtf6bq"
+ACTIVE_CLOUD = "bwppi9gc"
+UPLOAD_CLOUD = ACTIVE_CLOUD
 PREFIX = "more-group/gulf"
 MAX_EDGE = 1920
 WARNING_PERCENT = 50.0
@@ -39,12 +44,17 @@ def load_env_file(path: Path) -> None:
 
 
 def credentials() -> tuple[str, str, str]:
-    load_env_file(ROOT.parent / "99_Системное" / ".env.cloudinary-niche")
-    cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", EXPECTED_CLOUD)
+    load_env_file(ROOT.parent / "99_Системное" / ".env.cloudinary-niche-active")
+    cloud = os.environ.get("CLOUDINARY_CLOUD_NAME", UPLOAD_CLOUD)
     key = os.environ.get("CLOUDINARY_API_KEY", "")
     secret = os.environ.get("CLOUDINARY_API_SECRET", "")
-    if cloud != EXPECTED_CLOUD:
-        raise SystemExit(f"Refusing upload: expected cloud {EXPECTED_CLOUD}, got {cloud}")
+    if cloud == LEGACY_CLOUD:
+        raise SystemExit(
+            f"Refusing upload: {LEGACY_CLOUD} is the legacy read-only account. "
+            f"New uploads belong on {ACTIVE_CLOUD}."
+        )
+    if cloud != UPLOAD_CLOUD:
+        raise SystemExit(f"Refusing upload: expected cloud {UPLOAD_CLOUD}, got {cloud}")
     if not key or not secret:
         raise SystemExit("Missing local Cloudinary credentials")
     return cloud, key, secret
@@ -56,7 +66,7 @@ def auth_header(key: str, secret: str) -> str:
 
 
 def admin_json(path: str, key: str, secret: str) -> dict:
-    request = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}{path}")
+    request = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}{path}")
     request.add_header("Authorization", auth_header(key, secret))
     with urllib.request.urlopen(request, timeout=60) as response:
         return json.load(response)
@@ -99,14 +109,25 @@ def projected_percent(current: dict, assets: list[dict]) -> float:
     return projected / float(current["credits"]["limit"]) * 100
 
 
-def enforce_usage(current: dict, next_assets: list[dict], label: str) -> None:
+def enforce_usage(
+    current: dict,
+    next_assets: list[dict],
+    label: str,
+    allow_high_usage: bool = False,
+) -> None:
     percent = usage_percent(current)
     projected = projected_percent(current, next_assets)
     print(
         f"Usage checkpoint {label}: {percent:.2f}% "
         f"(projected after next {len(next_assets)}: {projected:.2f}%)"
     )
-    if percent >= HARD_STOP_PERCENT or projected > HARD_STOP_PERCENT:
+    # HARD_STOP_PERCENT protects the bulk migration, where the batch itself could
+    # eat the plan. A handful of new heroes moves the needle by hundredths of a
+    # percent, so --allow-high-usage lets that through deliberately. The plan
+    # ceiling is never negotiable: at 100% Cloudinary stops transforming and the
+    # whole holding loses image delivery.
+    ceiling = 100.0 if allow_high_usage else HARD_STOP_PERCENT
+    if percent >= ceiling or projected > ceiling:
         raise SystemExit(
             f"HARD STOP: usage {percent:.2f}%, projected {projected:.2f}% after next batch"
         )
@@ -182,7 +203,7 @@ def upload(asset: dict, key: str, secret: str) -> dict:
     fields = {**signed, "api_key": key, "signature": sign(signed, secret)}
     body, boundary = multipart(fields, local_path)
     request = urllib.request.Request(
-        f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}/image/upload",
+        f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}/image/upload",
         data=body,
         headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
         method="POST",
@@ -205,6 +226,9 @@ def upload(asset: dict, key: str, secret: str) -> dict:
         raise RuntimeError(f"Uploaded source exceeds {MAX_EDGE}px: {asset['public_id']}")
     return {
         "public_id": result["public_id"],
+        # Recorded per asset because the corpus spans two clouds: the legacy
+        # entries stay where they are and only new ones name the active cloud.
+        "cloud": UPLOAD_CLOUD,
         "local_url": asset["local_url"],
         "local_path": asset["local_path"],
         "source_sha256": source_sha,
@@ -231,7 +255,7 @@ def rename_asset(from_public_id: str, to_public_id: str, key: str, secret: str) 
     }
     fields = {**signed, "api_key": key, "signature": sign(signed, secret)}
     request = urllib.request.Request(
-        f"https://api.cloudinary.com/v1_1/{EXPECTED_CLOUD}/image/rename",
+        f"https://api.cloudinary.com/v1_1/{UPLOAD_CLOUD}/image/rename",
         data=urllib.parse.urlencode(fields).encode(),
         headers={"Content-Type": "application/x-www-form-urlencoded"},
         method="POST",
@@ -261,19 +285,26 @@ def main() -> None:
     parser.add_argument("--rekey", action="store_true")
     parser.add_argument("--asset", action="append", default=[])
     parser.add_argument("--workers", type=int, default=3)
+    parser.add_argument(
+        "--allow-high-usage",
+        action="store_true",
+        help="permit a small batch above the bulk-migration usage threshold; the plan ceiling still applies",
+    )
     args = parser.parse_args()
 
     cloud, key, secret = credentials()
     source = json.loads(SOURCE_MANIFEST.read_text(encoding="utf-8"))
     assets = source["assets"]
     inventory = source["inventory"]
+    # The count was frozen at 285 for the one-off migration. The corpus keeps
+    # gaining pages, so the guard checks the manifest against its own inventory
+    # rather than a literal that goes stale the first time a hero is added.
     if (
-        inventory["mapped_assets"] != 285
-        or len(assets) != 285
+        inventory["mapped_assets"] != len(assets)
         or inventory["missing_local_files"]
         or inventory["public_id_collisions"]
     ):
-        raise SystemExit("Source manifest is not the exact clean 285-asset inventory")
+        raise SystemExit("Source manifest inventory is inconsistent")
     if len({asset["local_url"] for asset in assets}) != len(assets):
         raise SystemExit("Duplicate local URLs in source manifest")
     if len({asset["public_id"] for asset in assets}) != len(assets):
@@ -324,7 +355,7 @@ def main() -> None:
             return
         for offset in range(0, len(changes), CHECKPOINT_SIZE):
             current = usage(key, secret)
-            enforce_usage(current, [], f"before-rekey-{offset}")
+            enforce_usage(current, [], f"before-rekey-{offset}", args.allow_high_usage)
             for asset, saved in changes[offset : offset + CHECKPOINT_SIZE]:
                 result = rename_asset(saved["public_id"], asset["public_id"], key, secret)
                 saved["public_id"] = asset["public_id"]
@@ -375,7 +406,12 @@ def main() -> None:
     )
     current = usage(key, secret)
     preview = jobs[:CHECKPOINT_SIZE]
-    enforce_usage(current, preview, "dry-run" if args.dry_run else "before-upload")
+    enforce_usage(
+        current,
+        preview,
+        "dry-run" if args.dry_run else "before-upload",
+        args.allow_high_usage,
+    )
     if args.dry_run or not jobs:
         print(json.dumps(usage_snapshot(current, "dry-run"), indent=2))
         return
@@ -408,7 +444,7 @@ def main() -> None:
         state["usage_checkpoints"] = checkpoints
         save_state(state)
         next_batch = jobs[completed : completed + CHECKPOINT_SIZE]
-        enforce_usage(current, next_batch, label)
+        enforce_usage(current, next_batch, label, args.allow_high_usage)
         if failures:
             break
 

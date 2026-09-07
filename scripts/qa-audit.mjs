@@ -8,6 +8,7 @@ import { execSync } from 'node:child_process';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { runCloudinaryDeliveryChecks } from './lib/cloudinary-gate.mjs';
+import { frontmatterOf, urlPathFrom } from './lib/content-urls.mjs';
 
 // Hero images resolve through the Gulf dimensions map at build time, so a key
 // that is not in it fails the build rather than the validator. Check it here,
@@ -17,7 +18,10 @@ const GULF_DIMS = new Set(
 );
 
 const ROOT = decodeURIComponent(new URL('../src/content/', import.meta.url).pathname);
-const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'news'];
+const COLLECTIONS = ['guides', 'compare', 'areas', 'projects', 'news', 'hubs'];
+// Roots of the geography tree. Links into these are checked against the set of
+// paths the site actually builds, the same way slug links are checked.
+const PLACE_ROOTS = ['uae', 'saudi-arabia', 'qatar', 'oman', 'bahrain', 'developers', 'living'];
 
 const BANNED_PHRASES = [
   'Regional diversification',
@@ -100,6 +104,7 @@ function getChangedFiles() {
 
 const slugsByCollection = {};
 const allSlugs = new Set();
+const allPlacePaths = new Set();
 for (const c of COLLECTIONS) {
   const dir = join(ROOT, c);
   let files = [];
@@ -110,6 +115,13 @@ for (const c of COLLECTIONS) {
   }
   slugsByCollection[c] = files.map((f) => f.replace(/\.mdx$/, ''));
   for (const s of slugsByCollection[c]) allSlugs.add(s);
+  for (const f of files) {
+    const fmRaw = frontmatterOf(readFileSync(join(dir, f), 'utf8'));
+    const urlPath = urlPathFrom(c, f.replace(/\.mdx$/, ''), fmRaw);
+    if (PLACE_ROOTS.some((root) => urlPath.startsWith(`/${root}/`))) {
+      allPlacePaths.add(urlPath);
+    }
+  }
 }
 
 const issues = [];
@@ -148,8 +160,21 @@ function auditFile(c, slug) {
   if (!fm.__hasFaq) prob.push('no-faq-block');
   else if (fm.__faqCount < 5) prob.push(`faq:${fm.__faqCount}<5`);
 
+  // Depth is set by what the page has to do, not by which folder it sits in.
+  // A pillar page answers a whole market against portals with live inventory and
+  // carries a 4,000 word floor. A standard page in the geo tree serves one
+  // district and carries 2,500. Article collections keep their own floors, and
+  // an area that has not yet moved into the tree keeps the old 1,800.
+  //
+  // Tier is set from transactional demand rather than from reach. A community
+  // name like Mirdif draws 74,000 searches a month and 260 of them are buyers,
+  // so tiering it on the larger number would contradict the research that says
+  // the larger number is not buying demand.
+  const tier = (fm.tier || '').replace(/^["']|["']$/g, '') || (c === 'hubs' ? 'pillar' : 'standard');
+  const inGeoTree = c === 'hubs' || Boolean(fm.path);
   const minW =
-    c === 'guides' ? 2000
+    inGeoTree ? (tier === 'pillar' ? 4000 : 2500)
+    : c === 'guides' ? 2000
     : c === 'projects' ? 1200
     : c === 'news' ? 600
     : 1800;
@@ -160,7 +185,9 @@ function auditFile(c, slug) {
   if (!hasQuickIntro && !hasTldrBlock) prob.push('no-quick-answer');
 
   const links = body.match(/\]\((\/[a-z0-9\-\/]*)\)/gi) || [];
-  const internal = links.filter((l) => /\]\(\/(guides|compare|areas|projects|news)\//i.test(l));
+  const placeRootAlt = PLACE_ROOTS.join('|');
+  const internalRe = new RegExp(`\\]\\(\\/(guides|compare|areas|projects|news|${placeRootAlt})\\/`, 'i');
+  const internal = links.filter((l) => internalRe.test(l));
   if (internal.length < 5) prob.push(`intLinks:${internal.length}<5`);
   const noTrail = internal.filter((l) => !/\/\)$/.test(l));
   if (noTrail.length) prob.push(`noTrailingSlash:${noTrail.length}`);
@@ -217,6 +244,13 @@ function auditFile(c, slug) {
   const bodySlugs = [...body.matchAll(/\]\(\/(?:guides|compare|areas|projects|news)\/([a-z0-9\-]+)\/?\)/gi)].map((m) => m[1]);
   const badLinks = [...new Set(bodySlugs.filter((s) => !allSlugs.has(s)))];
   if (badLinks.length) prob.push(`brokenInternalLinks:${badLinks.join('|')}`);
+
+  const placeLinkRe = new RegExp(`\\]\\((\\/(?:${PLACE_ROOTS.join('|')})\\/[a-z0-9\\-\\/]*)\\)`, 'gi');
+  const placeLinks = [...body.matchAll(placeLinkRe)].map((m) =>
+    m[1].endsWith('/') ? m[1] : `${m[1]}/`,
+  );
+  const badPlaces = [...new Set(placeLinks.filter((u) => !allPlacePaths.has(u)))];
+  if (badPlaces.length) prob.push(`brokenPlaceLinks:${badPlaces.join('|')}`);
 
   reportRows.push({ coll: c, slug, words, faq: fm.__faqCount, prob });
   if (prob.length) issues.push(`[${c}/${slug}] (${words}w) ${prob.join(', ')}`);

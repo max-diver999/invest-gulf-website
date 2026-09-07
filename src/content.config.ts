@@ -30,6 +30,23 @@ const projectSchema = articleSchema.extend({
   priceFromUSD: z.number().optional(),
 });
 
+/**
+ * Geography-tree pages: country and emirate hubs, property-type pages, price
+ * pages and developer catalogues. The URL comes from `path`, not the folder,
+ * so one collection can serve /uae/, /uae/dubai/off-plan/ and /developers/emaar/.
+ */
+const hubSchema = articleSchema.extend({
+  category: z.string().default('hubs'),
+  path: z.string(),
+  // Depth standard. Pillar pages answer a market end to end and carry a 4,000
+  // word floor; standard pages serve a single district and carry 2,500.
+  tier: z.enum(['pillar', 'standard']).default('pillar'),
+  hubType: z
+    .enum(['country', 'emirate', 'type', 'price', 'developer', 'community'])
+    .default('emirate'),
+  parentPath: z.string().optional(),
+});
+
 const newsSchema = articleSchema.extend({
   category: z.string().default('news'),
   featured: z.boolean().default(false),
@@ -48,7 +65,19 @@ export const collections = {
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/areas' }),
     schema: articleSchema.extend({
       category: z.string().default('areas'),
+      // Set once a district moves into the geo tree; until then the entry keeps
+      // rendering at /areas/{slug}/.
+      path: z.string().optional(),
+      parentPath: z.string().optional(),
+      hubType: z
+        .enum(['country', 'emirate', 'type', 'price', 'developer', 'community'])
+        .default('community'),
+      tier: z.enum(['pillar', 'standard']).default('standard'),
     }),
+  }),
+  hubs: defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/hubs' }),
+    schema: hubSchema,
   }),
   projects: defineCollection({
     loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),

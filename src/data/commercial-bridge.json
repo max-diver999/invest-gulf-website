@@ -77,7 +77,7 @@
     "intro": "RAK headlines often beat Dubai on gross yield, but liquidity is thinner. Match Al Marjan and Mina Al Arab stock to your hold period before you commit.",
     "links": [
       { "href": "/invest-ras-al-khaimah-property/", "title": "RAK property shortlist", "desc": "Al Marjan, Mina Al Arab" },
-      { "href": "/guides/ras-al-khaimah-property-investment-guide/", "title": "RAK investment guide", "desc": "Yields, Wynn impact" },
+      { "href": "/uae/ras-al-khaimah/", "title": "RAK investment guide", "desc": "Yields, Wynn impact" },
       { "href": "/invest-dubai-property/", "title": "Compare Dubai", "desc": "Liquidity vs yield" }
     ],
     "ctaHref": "/invest-ras-al-khaimah-property/",
@@ -101,7 +101,7 @@
     "intro": "Qatar yields are stable but zone-specific. Confirm Ministry of Justice registration on the exact unit before you model returns from a Pearl brochure map.",
     "links": [
       { "href": "/gulf-property-investment-consultation/", "title": "Qatar enquiry", "desc": "Pearl, Lusail, West Bay" },
-      { "href": "/guides/qatar-property-investment-guide/", "title": "Qatar guide", "desc": "Freehold, residency" },
+      { "href": "/qatar/", "title": "Qatar guide", "desc": "Freehold, residency" },
       { "href": "/compare/uae-vs-qatar-property-investment/", "title": "UAE vs Qatar", "desc": "Side-by-side" }
     ],
     "ctaHref": "/gulf-property-investment-consultation/",
@@ -113,7 +113,7 @@
     "intro": "Saudi rules are project-specific, not Dubai-style open freehold. Bridge to vetted projects only after legal eligibility is confirmed for your profile.",
     "links": [
       { "href": "/gulf-property-investment-consultation/", "title": "Saudi enquiry", "desc": "Eligible projects" },
-      { "href": "/guides/saudi-arabia-property-foreigners-guide/", "title": "Saudi guide", "desc": "Rules, financing" },
+      { "href": "/saudi-arabia/", "title": "Saudi guide", "desc": "Rules, financing" },
       { "href": "/compare/saudi-vs-uae-property-investment/", "title": "Saudi vs UAE", "desc": "Compare markets" }
     ],
     "ctaHref": "/gulf-property-investment-consultation/",
@@ -125,7 +125,7 @@
     "intro": "Bahrain can beat Dubai on headline yield, but tower OPEX varies sharply. Bridge to listings with service charge schedules attached, not brochure net yields.",
     "links": [
       { "href": "/gulf-property-investment-consultation/", "title": "Bahrain enquiry", "desc": "Amwaj, Seef, Manama" },
-      { "href": "/guides/bahrain-property-investment-guide/", "title": "Bahrain guide", "desc": "Freehold, yields" },
+      { "href": "/bahrain/", "title": "Bahrain guide", "desc": "Freehold, yields" },
       { "href": "/compare/bahrain-vs-dubai-investment/", "title": "Bahrain vs Dubai", "desc": "Living and ROI" }
     ],
     "ctaHref": "/gulf-property-investment-consultation/",
@@ -137,7 +137,7 @@
     "intro": "Oman suits lifestyle and long-hold rental theses more than Dubai-style flipping. Bridge to ITC and Al Mouj stock with realistic vacancy assumptions.",
     "links": [
       { "href": "/gulf-property-investment-consultation/", "title": "Oman enquiry", "desc": "Muscat freehold zones" },
-      { "href": "/guides/oman-property-investment-guide/", "title": "Oman guide", "desc": "Ownership, yields" },
+      { "href": "/oman/", "title": "Oman guide", "desc": "Ownership, yields" },
       { "href": "/compare/uae-vs-oman-property-investment/", "title": "UAE vs Oman", "desc": "Compare markets" }
     ],
     "ctaHref": "/gulf-property-investment-consultation/",

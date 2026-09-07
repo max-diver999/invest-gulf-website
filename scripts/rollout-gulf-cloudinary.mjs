@@ -19,7 +19,6 @@ const UPLOAD_PATH = join(ROOT, 'scripts/gulf-cloudinary-upload-manifest.json');
 const CLOUD_DIMENSIONS_PATH = join(ROOT, 'src/data/gulf-image-dimensions.json');
 const CLOUD = 'dlrrtf6bq';
 const PREFIX = 'more-group/gulf/';
-const EXPECTED = 285;
 const dryRun = process.argv.includes('--dry-run');
 const TEXT_EXTENSIONS = /\.(astro|css|js|json|md|mdx|mjs|ts|tsx)$/i;
 
@@ -42,15 +41,16 @@ const source = JSON.parse(readFileSync(SOURCE_PATH, 'utf8'));
 const uploadState = JSON.parse(readFileSync(UPLOAD_PATH, 'utf8'));
 const assets = source.assets || [];
 const uploaded = uploadState.uploaded || {};
+// Rollout stays atomic: every asset the manifest inventoried must already be
+// uploaded. The expected count comes from the manifest, not a frozen literal.
 if (
-  assets.length !== EXPECTED
-  || source.inventory.mapped_assets !== EXPECTED
+  source.inventory.mapped_assets !== assets.length
   || source.inventory.missing_local_files.length
   || source.inventory.public_id_collisions.length
-  || Object.keys(uploaded).length !== EXPECTED
+  || Object.keys(uploaded).length !== assets.length
 ) {
   throw new Error(
-    `Atomic rollout blocked: expected ${EXPECTED} complete assets, got `
+    'Atomic rollout blocked: every inventoried asset must be uploaded first, got '
     + `${assets.length} source and ${Object.keys(uploaded).length} uploaded`,
   );
 }

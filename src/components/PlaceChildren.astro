@@ -1,0 +1,131 @@
+---
+/**
+ * Child links for a page in the geography tree.
+ *
+ * The tree is the navigation: a country hub lists its emirates, an emirate hub
+ * lists its property types and districts. Rendering this from the route rather
+ * than from MDX keeps the links correct when a district is added or merged
+ * away, which is exactly what the corpus rebuild does repeatedly.
+ */
+interface PlaceLike {
+  path: string;
+  entry: { data: { title: string; description: string; hubType?: string } };
+}
+interface Props {
+  places: PlaceLike[];
+  basePath: string;
+}
+const { places } = Astro.props;
+
+const TYPE_ORDER: Record<string, number> = {
+  type: 0,
+  price: 1,
+  emirate: 2,
+  community: 3,
+  country: 4,
+};
+const groups = [
+  {
+    label: 'By property type',
+    items: places.filter((p) => ['type', 'price'].includes(p.entry.data.hubType ?? '')),
+  },
+  {
+    label: 'Emirates and cities',
+    items: places.filter((p) => ['country', 'emirate'].includes(p.entry.data.hubType ?? '')),
+  },
+  {
+    label: 'Districts and communities',
+    items: places.filter(
+      (p) => !['type', 'price', 'country', 'emirate'].includes(p.entry.data.hubType ?? ''),
+    ),
+  },
+].filter((g) => g.items.length > 0);
+
+for (const group of groups) {
+  group.items.sort(
+    (a, b) =>
+      (TYPE_ORDER[a.entry.data.hubType ?? ''] ?? 9) - (TYPE_ORDER[b.entry.data.hubType ?? ''] ?? 9) ||
+      a.entry.data.title.localeCompare(b.entry.data.title),
+  );
+}
+
+/** First clause of the description, so a card reads as a line rather than a meta tag. */
+function shortNote(description: string): string {
+  const clause = description.split(/[.,]/)[0]?.trim() ?? description;
+  return clause.length > 78 ? `${clause.slice(0, 75).trimEnd()}…` : clause;
+}
+---
+{groups.length > 0 && (
+  <nav class="ig-places" aria-label="Places in this market">
+    {groups.map((group) => (
+      <>
+        <p class="ig-places__label">{group.label}</p>
+        <ul class="ig-places__grid">
+          {group.items.map((place) => (
+            <li>
+              <a href={`/${place.path}/`} class="ig-places__tile">
+                <span class="ig-places__name">{place.entry.data.title.split(/[:|]/)[0].trim()}</span>
+                <span class="ig-places__note">{shortNote(place.entry.data.description)}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </nav>
+)}
+
+<style>
+  .ig-places {
+    margin: 3rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ig-line, rgba(120, 120, 120, 0.28));
+  }
+  .ig-places__label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin: 0 0 0.75rem;
+  }
+  .ig-places__label:not(:first-child) {
+    margin-top: 2rem;
+  }
+  .ig-places__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  .ig-places__tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    height: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--ig-line, rgba(120, 120, 120, 0.28));
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .ig-places__tile:hover,
+  .ig-places__tile:focus-visible {
+    border-color: currentColor;
+  }
+  .ig-places__name {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .ig-places__note {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    line-height: 1.4;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .ig-places__tile:hover {
+      transform: translateY(-1px);
+    }
+  }
+</style>

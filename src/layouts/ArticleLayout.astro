@@ -23,6 +23,8 @@ interface Props {
   articleSlug?: string;
   articleCollection?: string;
   leadPlacement?: 'early' | 'end';
+  /** Overrides the default Home / Collection / Title trail for the geo tree. */
+  breadcrumbs?: { name: string; url: string }[];
 }
 
 const {
@@ -41,12 +43,17 @@ const {
   articleSlug = '',
   articleCollection = 'guides',
   leadPlacement = 'end',
+  breadcrumbs,
 } = Astro.props;
 
 const stickyCta = articleSlug
   ? resolveStickyCta({ collection: articleCollection, slug: articleSlug, title })
   : null;
 
+// Pages without their own hero fall back to the app icon. That fallback is a
+// placeholder rather than an LCP candidate, so it must not claim high fetch
+// priority: the preload below is only emitted for a real heroImage, and a
+// priority hero with no preload is exactly what the speed gate rejects.
 const heroImage = heroImageProp || `${SITE.url}/apple-touch-icon.png`;
 const hero = responsiveImage(heroImage, 'hero');
 
@@ -84,11 +91,13 @@ const COLLECTION_LABELS: Record<string, string> = {
 const collectionLabel = COLLECTION_LABELS[articleCollection] ?? 'Guides';
 const collectionHref = `${SITE.url}/${articleCollection}/`;
 
-const breadcrumbTrail = [
-  { name: 'Home', url: `${SITE.url}/` },
-  { name: collectionLabel, url: collectionHref },
-  { name: title, url: pageUrl },
-];
+const breadcrumbTrail = breadcrumbs?.length
+  ? breadcrumbs
+  : [
+      { name: 'Home', url: `${SITE.url}/` },
+      { name: collectionLabel, url: collectionHref },
+      { name: title, url: pageUrl },
+    ];
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -118,11 +127,16 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
     <div class="site-container ig-band__inner">
     <nav aria-label="Breadcrumb" class="ig-band__crumbs max-w-3xl mb-4 text-sm">
       <ol class="flex flex-wrap items-center gap-2">
-        <li><a href="/">Home</a></li>
-        <li aria-hidden="true">/</li>
-        <li><a href={`/${articleCollection}/`}>{collectionLabel}</a></li>
-        <li aria-hidden="true">/</li>
-        <li aria-current="page">{title}</li>
+        {breadcrumbTrail.map((crumb, i) => (
+          <>
+            {i > 0 && <li aria-hidden="true">/</li>}
+            <li>
+              {i === breadcrumbTrail.length - 1
+                ? <span aria-current="page">{crumb.name}</span>
+                : <a href={crumb.url.replace(SITE.url, '') || '/'}>{crumb.name}</a>}
+            </li>
+          </>
+        ))}
       </ol>
     </nav>
     <header class="max-w-3xl">
@@ -147,8 +161,8 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
         width={hero.width}
         height={hero.height}
         class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]"
-        loading="eager"
-        fetchpriority="high"
+        loading={heroImageProp ? 'eager' : 'lazy'}
+        fetchpriority={heroImageProp ? 'high' : 'auto'}
         decoding="async"
       />
     )}

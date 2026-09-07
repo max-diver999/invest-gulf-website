@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { frontmatterOf, urlPathFrom } from './content-urls.mjs';
 
 export function collectSitemapExclusions(root, collections) {
   const paths = new Set(['/site-report/', '/thanks/', '/404/']);
@@ -9,10 +10,9 @@ export function collectSitemapExclusions(root, collections) {
     if (!existsSync(contentDir)) continue;
     for (const file of readdirSync(contentDir)) {
       if (!file.endsWith('.mdx')) continue;
-      const src = readFileSync(join(contentDir, file), 'utf8');
-      const fm = src.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+      const fm = frontmatterOf(readFileSync(join(contentDir, file), 'utf8'));
       if (/^noindex:\s*true\s*$/m.test(fm)) {
-        paths.add(`/${segment}/${file.replace(/\.mdx$/, '')}/`);
+        paths.add(urlPathFrom(segment, file.replace(/\.mdx$/, ''), fm));
       }
     }
   }

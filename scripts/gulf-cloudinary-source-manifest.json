@@ -5,11 +5,11 @@
   "cloud": "dlrrtf6bq",
   "prefix": "more-group/gulf",
   "inventory": {
-    "local_files": 329,
-    "distinct_live_local_urls": 285,
-    "total_live_references": 767,
-    "mdx_references": 767,
-    "mapped_assets": 285,
+    "local_files": 333,
+    "distinct_live_local_urls": 289,
+    "total_live_references": 771,
+    "mdx_references": 771,
+    "mapped_assets": 289,
     "missing_local_files": [],
     "public_id_collisions": [],
     "unreferenced_local_files": [
@@ -4297,6 +4297,29 @@
       }
     },
     {
+      "key": "/images/areas/emirates-hills/hero.jpg",
+      "local_url": "/images/areas/emirates-hills/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/emirates-hills/hero.jpg",
+      "local_path": "public/images/areas/emirates-hills/hero.jpg",
+      "source_sha256": "7cc4ebfb8a153dad5621313c0b774a0e7e9016c9484c88dc88ee0d9ab1b76d76",
+      "bytes": 557671,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "emirates-hills",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/emirates-hills/hero-f92ba836b4",
+      "references": [
+        {
+          "file": "src/content/areas/emirates-hills-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
+    },
+    {
       "key": "/images/areas/fujairah/hero.jpg",
       "local_url": "/images/areas/fujairah/hero.jpg",
       "absolute_local_url": "https://invest-gulf.com/images/areas/fujairah/hero.jpg",
@@ -4998,6 +5021,29 @@
         "alt": "Jumeirah Lake Towers Dubai — inline-2",
         "source": "recovered:/images/areas/jlt/inline-2.jpg"
       }
+    },
+    {
+      "key": "/images/areas/jumeirah-park/hero.jpg",
+      "local_url": "/images/areas/jumeirah-park/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/jumeirah-park/hero.jpg",
+      "local_path": "public/images/areas/jumeirah-park/hero.jpg",
+      "source_sha256": "215610892de875e2654d301d4867c07b10ea93b721d9f7021d0609b5814e416f",
+      "bytes": 724293,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "jumeirah-park",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/jumeirah-park/hero-f2420847d7",
+      "references": [
+        {
+          "file": "src/content/areas/jumeirah-park-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
     },
     {
       "key": "/images/areas/jvc/hero.jpg",
@@ -5950,6 +5996,29 @@
       }
     },
     {
+      "key": "/images/areas/mirdif/hero.jpg",
+      "local_url": "/images/areas/mirdif/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/mirdif/hero.jpg",
+      "local_path": "public/images/areas/mirdif/hero.jpg",
+      "source_sha256": "547d3cd9cb4b0c78c72d23630343a875b752defed1993a971de0446bd674db74",
+      "bytes": 433819,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "mirdif",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/mirdif/hero-9abdcfd6a2",
+      "references": [
+        {
+          "file": "src/content/areas/mirdif-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
+    },
+    {
       "key": "/images/areas/motor-city/hero.jpg",
       "local_url": "/images/areas/motor-city/hero.jpg",
       "absolute_local_url": "https://invest-gulf.com/images/areas/motor-city/hero.jpg",
@@ -6391,6 +6460,29 @@
         "alt": "Qurum Muscat beach — inline 2",
         "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Feral_cat_on_Qurum_Beach_in_Muscat.jpg/1280px-Feral_cat_on_Qurum_Beach_in_Muscat.jpg"
       }
+    },
+    {
+      "key": "/images/areas/nad-al-sheba/hero.jpg",
+      "local_url": "/images/areas/nad-al-sheba/hero.jpg",
+      "absolute_local_url": "https://invest-gulf.com/images/areas/nad-al-sheba/hero.jpg",
+      "local_path": "public/images/areas/nad-al-sheba/hero.jpg",
+      "source_sha256": "4571f5bfa85f9d6b18cf20e4f242de34254e16b3051d4795a83ad4396b5e8bc8",
+      "bytes": 422660,
+      "width": 1920,
+      "height": 1280,
+      "format": "jpeg",
+      "collection": "areas",
+      "stable_slug": "nad-al-sheba",
+      "role": "hero",
+      "public_id": "more-group/gulf/areas/nad-al-sheba/hero-bd6065366c",
+      "references": [
+        {
+          "file": "src/content/areas/nad-al-sheba-dubai.mdx",
+          "context": "heroImage",
+          "count": 1
+        }
+      ],
+      "source_metadata": null
     },
     {
       "key": "/images/areas/neom/hero.jpg",

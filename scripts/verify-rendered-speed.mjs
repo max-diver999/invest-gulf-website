@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DELIVERY_CLOUDS } from './lib/cloudinary-clouds.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -16,7 +17,10 @@ if (process.env.VERCEL) {
 const DIST = fs.existsSync(path.join(ROOT, 'dist/client'))
   ? path.join(ROOT, 'dist/client')
   : path.join(ROOT, 'dist');
-const CLOUD_PREFIX = 'https://res.cloudinary.com/dlrrtf6bq/image/upload/';
+// Both clouds serve this corpus: dlrrtf6bq legacy read-only, bwppi9gc active.
+const CLOUD_PREFIXES = DELIVERY_CLOUDS.map(
+  (cloud) => `https://res.cloudinary.com/${cloud}/image/upload/`,
+);
 const LOCAL_HERO_PREFIXES = [
   '/images/areas/downtown-dubai/hero',
   '/images/projects/address-residences-dubai-hills/hero',
@@ -53,8 +57,16 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
   if (/fonts\.(?:googleapis|gstatic)\.com/.test(html)) {
     errors.push(`${relative}: external Google Fonts remain`);
   }
-  if (preloads.some((tag) => attribute(tag, 'as') === 'font')) {
-    errors.push(`${relative}: rejected font preload returned`);
+  // Preloading a font is only an anti-pattern when the font is on someone
+  // else's origin: the connection setup costs more than the preload saves, and
+  // the neighbouring check already rejects Google Fonts outright. Since the
+  // fonts were self-hosted (0c66577), a same-origin preload is the intended
+  // behaviour, so only cross-origin font preloads fail here.
+  const crossOriginFontPreloads = preloads.filter(
+    (tag) => attribute(tag, 'as') === 'font' && /^https?:\/\//i.test(attribute(tag, 'href')),
+  );
+  if (crossOriginFontPreloads.length) {
+    errors.push(`${relative}: cross-origin font preload returned`);
   }
   if (imagePreloads.length > 1) {
     errors.push(`${relative}: multiple image preloads (${imagePreloads.length})`);
@@ -77,12 +89,18 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
       errors.push(`${relative}: direct Wikimedia image delivery`);
     }
 
-    const isCloudinary = src.startsWith(CLOUD_PREFIX);
+    const isCloudinary = CLOUD_PREFIXES.some((prefix) => src.startsWith(prefix));
     const isLocalException = LOCAL_HERO_PREFIXES.some((prefix) => src.startsWith(prefix));
     if (isCloudinary) {
       cloudinaryImages += 1;
       if (!/\/image\/upload\/[^/]*f_auto[^/]*q_auto[^/]*w_\d+\//.test(src)) {
         errors.push(`${relative}: unsafe Cloudinary transform`);
+      }
+      // g_auto without a crop mode is a 400 from Cloudinary, not a slow image.
+      const transforms = src.split('/image/upload/')[1]?.split('/')[0] ?? '';
+      if (/\bg_auto\b/.test(transforms)
+        && !/\bc_(?:crop|fill|thumb|lfill|fill_pad|auto|auto_pad)\b/.test(transforms)) {
+        errors.push(`${relative}: g_auto without a crop mode returns 400`);
       }
     }
     if (isLocalException) localExceptionHeroes += 1;

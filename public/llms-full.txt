@@ -2,7 +2,7 @@
 
 Site: https://invest-gulf.com
 Contact: info@invest-gulf.com
-Updated: 2026-08-23
+Updated: 2026-09-06
 
 ## Hubs
 - https://invest-gulf.com/
@@ -18,7 +18,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/invest-dubai-property/
 - https://invest-gulf.com/golden-visa-dubai-property/
 
-## guides (393)
+## guides (426)
 - https://invest-gulf.com/guides/abu-dhabi-adgm-setup/
 - https://invest-gulf.com/guides/abu-dhabi-banking-expats/
 - https://invest-gulf.com/guides/abu-dhabi-cost-of-living/
@@ -38,11 +38,16 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/abu-dhabi-residency-options/
 - https://invest-gulf.com/guides/abu-dhabi-utilities-addc/
 - https://invest-gulf.com/guides/abu-dhabi-vs-dubai-families/
+- https://invest-gulf.com/guides/adek-school-ratings-abu-dhabi/
 - https://invest-gulf.com/guides/aed-2m-golden-visa-best-value-units/
 - https://invest-gulf.com/guides/ajman-freehold-property-guide/
 - https://invest-gulf.com/guides/ajman-living-guide/
 - https://invest-gulf.com/guides/ajman-property-investment-guide/
 - https://invest-gulf.com/guides/ajman-rental-yield-guide/
+- https://invest-gulf.com/guides/aldar-properties-review/
+- https://invest-gulf.com/guides/american-schools-dubai/
+- https://invest-gulf.com/guides/arada-developer-review/
+- https://invest-gulf.com/guides/azizi-developments-review/
 - https://invest-gulf.com/guides/bahrain-banking-expats/
 - https://invest-gulf.com/guides/bahrain-driving-license/
 - https://invest-gulf.com/guides/bahrain-family-visa/
@@ -78,6 +83,8 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/currency-exchange-aed-usd-eur/
 - https://invest-gulf.com/guides/currency-transfer-buy-property-uae/
 - https://invest-gulf.com/guides/damac-lagoons-community-living/
+- https://invest-gulf.com/guides/damac-properties-review/
+- https://invest-gulf.com/guides/danube-properties-review/
 - https://invest-gulf.com/guides/difc-company-setup/
 - https://invest-gulf.com/guides/dld-mortgage-registration-fees/
 - https://invest-gulf.com/guides/dmcc-company-setup/
@@ -95,6 +102,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/dubai-chores-time-parking/
 - https://invest-gulf.com/guides/dubai-cooling-off-period-off-plan/
 - https://invest-gulf.com/guides/dubai-cost-of-living-guide/
+- https://invest-gulf.com/guides/dubai-creek-harbour-living/
 - https://invest-gulf.com/guides/dubai-culture-etiquette-expats/
 - https://invest-gulf.com/guides/dubai-dental-care-costs/
 - https://invest-gulf.com/guides/dubai-developer-delay-compensation-claim/
@@ -112,6 +120,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/dubai-international-schools-guide/
 - https://invest-gulf.com/guides/dubai-maid-nanny-cost/
 - https://invest-gulf.com/guides/dubai-mainland-llc-setup/
+- https://invest-gulf.com/guides/dubai-marina-living-pros-cons/
 - https://invest-gulf.com/guides/dubai-monthly-budget-expat-family/
 - https://invest-gulf.com/guides/dubai-mortgage-broker-guide/
 - https://invest-gulf.com/guides/dubai-mortgage-rates-2026/
@@ -123,21 +132,31 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/dubai-police-clearance-certificate/
 - https://invest-gulf.com/guides/dubai-prayer-times-work-culture/
 - https://invest-gulf.com/guides/dubai-property-dispute-resolution/
+- https://invest-gulf.com/guides/dubai-property-flipping-guide/
+- https://invest-gulf.com/guides/dubai-property-for-american-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-australian-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-british-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-canadian-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-chinese-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-french-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-german-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-indian-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-pakistani-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-relocating-families/
 - https://invest-gulf.com/guides/dubai-property-for-russian-buyers/
 - https://invest-gulf.com/guides/dubai-property-for-saudi-buyers/
+- https://invest-gulf.com/guides/dubai-property-for-south-african-buyers/
 - https://invest-gulf.com/guides/dubai-property-handover-checklist/
 - https://invest-gulf.com/guides/dubai-property-inheritance-guide/
 - https://invest-gulf.com/guides/dubai-property-insurance-guide/
+- https://invest-gulf.com/guides/dubai-property-insurance-home/
+- https://invest-gulf.com/guides/dubai-property-investment-for-beginners/
 - https://invest-gulf.com/guides/dubai-property-investment-guide/
 - https://invest-gulf.com/guides/dubai-property-market-cooling-or-growing/
 - https://invest-gulf.com/guides/dubai-property-market-cycle-2026/
 - https://invest-gulf.com/guides/dubai-property-market-forecast-2026-2027/
 - https://invest-gulf.com/guides/dubai-property-portfolio-strategy/
+- https://invest-gulf.com/guides/dubai-property-russian-buyers-relocation/
 - https://invest-gulf.com/guides/dubai-property-scams-red-flags/
 - https://invest-gulf.com/guides/dubai-property-snagging-living/
 - https://invest-gulf.com/guides/dubai-property-taxes-explained/
@@ -165,6 +184,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/dubai-transport-costs-metro-taxi/
 - https://invest-gulf.com/guides/dubai-university-options-expats/
 - https://invest-gulf.com/guides/dubai-utility-bills-deewa/
+- https://invest-gulf.com/guides/dubai-vacancy-rates-rental-demand/
 - https://invest-gulf.com/guides/dubai-villa-vs-apartment-investment/
 - https://invest-gulf.com/guides/dubai-vs-abu-dhabi-school-fees/
 - https://invest-gulf.com/guides/dubai-vs-doha-vs-riyadh-living/
@@ -183,6 +203,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/foreign-owner-rights-uae-property/
 - https://invest-gulf.com/guides/freehold-areas-dubai-list/
 - https://invest-gulf.com/guides/freehold-vs-leasehold-dubai/
+- https://invest-gulf.com/guides/fujairah-beach-property-investment/
 - https://invest-gulf.com/guides/fujairah-living-guide/
 - https://invest-gulf.com/guides/fujairah-property-investment-guide/
 - https://invest-gulf.com/guides/fujairah-rental-yield-guide/
@@ -252,10 +273,13 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/living-west-bay-doha/
 - https://invest-gulf.com/guides/living-yas-island-abu-dhabi/
 - https://invest-gulf.com/guides/manama-cost-of-living/
+- https://invest-gulf.com/guides/meraas-properties-review/
+- https://invest-gulf.com/guides/meydan-free-zone-setup/
 - https://invest-gulf.com/guides/mistakes-foreign-buyers-dubai-property/
 - https://invest-gulf.com/guides/moving-to-dubai-with-family/
 - https://invest-gulf.com/guides/muscat-cost-of-living/
 - https://invest-gulf.com/guides/muscat-international-schools/
+- https://invest-gulf.com/guides/nakheel-review/
 - https://invest-gulf.com/guides/neom-property-investment/
 - https://invest-gulf.com/guides/net-yield-calculator-uae-property/
 - https://invest-gulf.com/guides/non-resident-mortgage-dubai/
@@ -283,6 +307,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/open-bank-account-dubai/
 - https://invest-gulf.com/guides/opening-bank-account-dubai-property-buyers/
 - https://invest-gulf.com/guides/palm-jebel-ali-investment-guide/
+- https://invest-gulf.com/guides/palm-jumeirah-living-guide/
 - https://invest-gulf.com/guides/pet-relocation-dubai/
 - https://invest-gulf.com/guides/post-handover-payment-plan-dubai/
 - https://invest-gulf.com/guides/power-of-attorney-property-dubai/
@@ -302,6 +327,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/qatar-property-buyer-relocation/
 - https://invest-gulf.com/guides/qatar-property-due-diligence/
 - https://invest-gulf.com/guides/qatar-property-investment-guide/
+- https://invest-gulf.com/guides/qatar-property-management-guide/
 - https://invest-gulf.com/guides/qatar-relocation-guide/
 - https://invest-gulf.com/guides/qatar-rental-yield-guide/
 - https://invest-gulf.com/guides/qatar-residency-by-investment/
@@ -313,11 +339,13 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/qatar-vs-uae-remote-work-visa/
 - https://invest-gulf.com/guides/qatar-work-visa-process/
 - https://invest-gulf.com/guides/rak-banking-guide/
+- https://invest-gulf.com/guides/rak-branded-residences-guide/
 - https://invest-gulf.com/guides/rak-commute-to-dubai/
 - https://invest-gulf.com/guides/rak-cost-of-living/
 - https://invest-gulf.com/guides/rak-healthcare-guide/
 - https://invest-gulf.com/guides/rak-properties-developer-review/
 - https://invest-gulf.com/guides/rak-rental-yield-guide/
+- https://invest-gulf.com/guides/rak-schools-guide/
 - https://invest-gulf.com/guides/rak-vs-dubai-family-life/
 - https://invest-gulf.com/guides/rak-vs-sharjah-living/
 - https://invest-gulf.com/guides/rakez-company-setup/
@@ -349,11 +377,13 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/saudi-rental-yield-guide/
 - https://invest-gulf.com/guides/saudi-vs-uae-living/
 - https://invest-gulf.com/guides/school-fees-vs-property-budget-dubai/
+- https://invest-gulf.com/guides/schools-near-al-reem-island/
 - https://invest-gulf.com/guides/schools-near-arabian-ranches/
 - https://invest-gulf.com/guides/schools-near-dubai-hills/
 - https://invest-gulf.com/guides/schools-near-dubai-marina/
 - https://invest-gulf.com/guides/schools-near-dubai-south/
 - https://invest-gulf.com/guides/schools-near-jvc/
+- https://invest-gulf.com/guides/schools-near-saadiyat-island/
 - https://invest-gulf.com/guides/schools-near-yas-island/
 - https://invest-gulf.com/guides/select-group-developer-review/
 - https://invest-gulf.com/guides/selling-property-dubai-guide/
@@ -366,11 +396,13 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/sharjah-relocation-guide/
 - https://invest-gulf.com/guides/sharjah-rental-yield-guide/
 - https://invest-gulf.com/guides/sharjah-schools-commute-dubai/
+- https://invest-gulf.com/guides/sharjah-schools-for-dubai-commuters/
 - https://invest-gulf.com/guides/sharjah-vs-dubai-rent/
 - https://invest-gulf.com/guides/shipping-household-goods-dubai/
 - https://invest-gulf.com/guides/short-term-rental-dubai-license/
 - https://invest-gulf.com/guides/short-term-vs-long-term-rental-dubai/
 - https://invest-gulf.com/guides/single-woman-living-dubai/
+- https://invest-gulf.com/guides/sobha-realty-review/
 - https://invest-gulf.com/guides/tax-australian-nationals-dubai/
 - https://invest-gulf.com/guides/tax-french-residents-dubai/
 - https://invest-gulf.com/guides/tax-german-residents-dubai/
@@ -389,8 +421,8 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/uae-family-visa-sponsorship/
 - https://invest-gulf.com/guides/uae-free-zone-vs-mainland/
 - https://invest-gulf.com/guides/uae-freelance-permit-dubai/
-- https://invest-gulf.com/guides/uae-golden-visa-property/
 - https://invest-gulf.com/guides/uae-golden-visa-property-rule-changes-log/
+- https://invest-gulf.com/guides/uae-golden-visa-property/
 - https://invest-gulf.com/guides/uae-green-visa-freelancer/
 - https://invest-gulf.com/guides/uae-green-visa-guide/
 - https://invest-gulf.com/guides/uae-green-visa-skilled-worker/
@@ -406,6 +438,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/uae-tax-residency-183-day-rule/
 - https://invest-gulf.com/guides/uae-tax-residency-property/
 - https://invest-gulf.com/guides/uae-visa-fees-2026/
+- https://invest-gulf.com/guides/uae-vs-saudi-for-investors/
 - https://invest-gulf.com/guides/uae-will-difc-adgm/
 - https://invest-gulf.com/guides/umm-al-quwain-property-investment/
 - https://invest-gulf.com/guides/umm-al-quwain-rental-yield-guide/
@@ -413,7 +446,7 @@ Updated: 2026-08-23
 - https://invest-gulf.com/guides/when-not-to-buy-gulf-property/
 - https://invest-gulf.com/guides/wynn-al-marjan-island-property-impact/
 
-## areas (57)
+## areas (59)
 - https://invest-gulf.com/areas/al-barari-property-investment/
 - https://invest-gulf.com/areas/al-furjan-property-investment/
 - https://invest-gulf.com/areas/al-ghadeer-property-investment/
@@ -427,21 +460,16 @@ Updated: 2026-08-23
 - https://invest-gulf.com/areas/al-zahia-sharjah-property-investment/
 - https://invest-gulf.com/areas/aljada-sharjah-property-investment/
 - https://invest-gulf.com/areas/amwaj-islands-property-investment/
-- https://invest-gulf.com/areas/arabian-ranches-property-investment/
 - https://invest-gulf.com/areas/bluewaters-island-property-investment/
-- https://invest-gulf.com/areas/business-bay-property-investment/
 - https://invest-gulf.com/areas/city-walk-property-investment/
 - https://invest-gulf.com/areas/damac-hills-property-investment/
 - https://invest-gulf.com/areas/dammam-khobar-property-investment/
 - https://invest-gulf.com/areas/discovery-gardens-property-investment/
-- https://invest-gulf.com/areas/downtown-dubai-property-investment/
 - https://invest-gulf.com/areas/dubai-creek-harbour-property-investment/
 - https://invest-gulf.com/areas/dubai-harbour-property-investment/
 - https://invest-gulf.com/areas/dubai-hills-estate-property-investment/
 - https://invest-gulf.com/areas/dubai-islands-property-investment/
-- https://invest-gulf.com/areas/dubai-marina-property-investment/
 - https://invest-gulf.com/areas/dubai-production-city-property-investment/
-- https://invest-gulf.com/areas/dubai-silicon-oasis-property-investment/
 - https://invest-gulf.com/areas/dubai-south-property-investment/
 - https://invest-gulf.com/areas/dubai-sports-city-property-investment/
 - https://invest-gulf.com/areas/hudayriyat-island-property-investment/
@@ -449,7 +477,6 @@ Updated: 2026-08-23
 - https://invest-gulf.com/areas/jebel-ali-village-property-investment/
 - https://invest-gulf.com/areas/jeddah-property-investment/
 - https://invest-gulf.com/areas/jlt-property-investment/
-- https://invest-gulf.com/areas/jvc-property-investment/
 - https://invest-gulf.com/areas/khalifa-city-property-investment/
 - https://invest-gulf.com/areas/lusail-city-property-investment/
 - https://invest-gulf.com/areas/manama-property-investment/
@@ -461,56 +488,81 @@ Updated: 2026-08-23
 - https://invest-gulf.com/areas/mudon-property-investment/
 - https://invest-gulf.com/areas/muscat-al-mouj-property-investment/
 - https://invest-gulf.com/areas/muscat-qurum-property-investment/
-- https://invest-gulf.com/areas/palm-jumeirah-property-investment/
 - https://invest-gulf.com/areas/riyadh-property-investment/
 - https://invest-gulf.com/areas/saadiyat-island-property-investment/
 - https://invest-gulf.com/areas/the-pearl-lusail-property-investment/
 - https://invest-gulf.com/areas/the-valley-dubai-property-investment/
 - https://invest-gulf.com/areas/tilal-al-ghaf-property-investment/
-- https://invest-gulf.com/areas/town-square-property-investment/
 - https://invest-gulf.com/areas/villanova-property-investment/
 - https://invest-gulf.com/areas/west-bay-doha-property-investment/
 - https://invest-gulf.com/areas/yas-island-property-investment/
+- https://invest-gulf.com/uae/dubai/arabian-ranches/
+- https://invest-gulf.com/uae/dubai/business-bay/
+- https://invest-gulf.com/uae/dubai/downtown-dubai/
+- https://invest-gulf.com/uae/dubai/dubai-marina/
+- https://invest-gulf.com/uae/dubai/dubai-silicon-oasis/
+- https://invest-gulf.com/uae/dubai/jvc/
+- https://invest-gulf.com/uae/dubai/mirdif/
+- https://invest-gulf.com/uae/dubai/nad-al-sheba/
+- https://invest-gulf.com/uae/dubai/palm-jumeirah/
+- https://invest-gulf.com/uae/dubai/town-square/
 
-## compare (20)
+## compare (29)
 - https://invest-gulf.com/compare/abu-dhabi-vs-dubai-investment/
 - https://invest-gulf.com/compare/adgm-vs-difc-company-setup/
 - https://invest-gulf.com/compare/aldar-vs-damac/
 - https://invest-gulf.com/compare/aldar-vs-emaar/
+- https://invest-gulf.com/compare/bahrain-vs-dubai-investment/
 - https://invest-gulf.com/compare/dubai-vs-abu-dhabi-rental-yield/
+- https://invest-gulf.com/compare/dubai-vs-doha-property-investment/
+- https://invest-gulf.com/compare/dubai-vs-london-property-investment/
 - https://invest-gulf.com/compare/dubai-vs-muscat-property-investment/
 - https://invest-gulf.com/compare/dubai-vs-oman-rental-yield/
 - https://invest-gulf.com/compare/dubai-vs-qatar-rental-yield/
+- https://invest-gulf.com/compare/dubai-vs-riyadh-property-investment/
 - https://invest-gulf.com/compare/dubai-vs-saudi-rental-yield/
 - https://invest-gulf.com/compare/dubai-vs-sharjah-property-investment/
 - https://invest-gulf.com/compare/emaar-vs-damac/
+- https://invest-gulf.com/compare/emaar-vs-nakheel/
+- https://invest-gulf.com/compare/emaar-vs-sobha/
 - https://invest-gulf.com/compare/freehold-vs-leasehold-uae/
 - https://invest-gulf.com/compare/meraas-vs-emaar/
 - https://invest-gulf.com/compare/qatar-vs-uae-residency/
 - https://invest-gulf.com/compare/rak-vs-dubai-rental-yield/
 - https://invest-gulf.com/compare/rak-vs-fujairah-property-investment/
 - https://invest-gulf.com/compare/rak-vs-sharjah-property-investment/
+- https://invest-gulf.com/compare/ras-al-khaimah-vs-dubai-investment/
 - https://invest-gulf.com/compare/saudi-arabia-vs-uae-golden-visa/
 - https://invest-gulf.com/compare/saudi-vs-uae-property-investment/
+- https://invest-gulf.com/compare/sobha-vs-damac/
+- https://invest-gulf.com/compare/uae-vs-oman-property-investment/
 - https://invest-gulf.com/compare/uae-vs-qatar-property-investment/
 
-## projects (17)
+## projects (25)
 - https://invest-gulf.com/projects/address-residences-dubai-hills/
 - https://invest-gulf.com/projects/aldar-saadiyat-grove/
 - https://invest-gulf.com/projects/aldar-yas-acres/
+- https://invest-gulf.com/projects/azizi-riviera-reber/
 - https://invest-gulf.com/projects/azizi-venice/
+- https://invest-gulf.com/projects/binghatti-hills/
+- https://invest-gulf.com/projects/binghatti-phantom/
 - https://invest-gulf.com/projects/creek-waters-emaar/
 - https://invest-gulf.com/projects/damac-islands/
 - https://invest-gulf.com/projects/damac-lagoons-overview/
 - https://invest-gulf.com/projects/danube-bayz-101/
+- https://invest-gulf.com/projects/ellington-ocean-house/
 - https://invest-gulf.com/projects/emaar-south-expo-living/
 - https://invest-gulf.com/projects/meraas-nad-al-sheba-villas/
 - https://invest-gulf.com/projects/nakheel-como-residences/
 - https://invest-gulf.com/projects/nakheel-rixos-dubai-islands/
+- https://invest-gulf.com/projects/nshama-town-square-phase/
 - https://invest-gulf.com/projects/omniyat-orla-dorchester/
+- https://invest-gulf.com/projects/rak-gateway-2/
 - https://invest-gulf.com/projects/rak-marjan-beach-residences/
+- https://invest-gulf.com/projects/samana-barari-heights/
 - https://invest-gulf.com/projects/select-group-six-senses/
 - https://invest-gulf.com/projects/sobha-hartland-2/
+- https://invest-gulf.com/projects/sobha-siniya-island/
 - https://invest-gulf.com/projects/the-oasis-emaar/
 
 ## news (10)
@@ -524,4 +576,16 @@ Updated: 2026-08-23
 - https://invest-gulf.com/news/saudi-foreign-ownership-update-2026/
 - https://invest-gulf.com/news/uae-corporate-tax-filing-deadline-2026/
 - https://invest-gulf.com/news/uae-mortgage-rates-june-2026/
+
+## hubs (10)
+- https://invest-gulf.com/uae/
+- https://invest-gulf.com/uae/abu-dhabi/
+- https://invest-gulf.com/uae/abu-dhabi/apartments-for-sale/
+- https://invest-gulf.com/uae/abu-dhabi/off-plan/
+- https://invest-gulf.com/uae/abu-dhabi/villas-for-sale/
+- https://invest-gulf.com/uae/dubai/
+- https://invest-gulf.com/uae/dubai/apartments-for-sale/
+- https://invest-gulf.com/uae/dubai/off-plan/
+- https://invest-gulf.com/uae/dubai/prices/
+- https://invest-gulf.com/uae/dubai/villas-for-sale/
 
