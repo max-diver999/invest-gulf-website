@@ -1,5 +1,14 @@
 #!/usr/bin/env node
-/** Regenerate public/llms-full.txt from src/content slugs. */
+/**
+ * Regenerate public/llms-full.txt from src/content slugs.
+ *
+ * Emits the title, last-updated date and description alongside each URL. A bare
+ * URL list tells an answer engine that a page exists and nothing about what it
+ * answers, and this file exists precisely because robots.txt admits retrieval
+ * bots while blocking training crawlers.
+ *
+ * Run from prebuild so the file cannot drift from the corpus.
+ */
 import { readdirSync, existsSync, writeFileSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { frontmatterOf, urlPathFrom } from './lib/content-urls.mjs';
@@ -8,6 +17,11 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://invest-gulf.com';
 const COLS = ['guides', 'areas', 'compare', 'projects', 'news', 'hubs'];
+
+const field = (fm, key) => {
+  const m = fm.match(new RegExp(`^${key}:\\s*(.*)$`, 'm'));
+  return m ? m[1].trim().replace(/^["']|["']$/g, '') : '';
+};
 
 const lines = [
   '# Invest Gulf — full site map for AI crawlers',
@@ -43,13 +57,21 @@ for (const coll of COLS) {
     .filter((f) => f.endsWith('.mdx'))
     .map((f) => ({ file: f, fm: frontmatterOf(readFileSync(join(dir, f), 'utf8')) }))
     .filter(({ fm }) => !/^noindex:\s*true\s*$/m.test(fm))
-    .map(({ file, fm }) => urlPathFrom(coll, file.replace(/\.mdx$/, ''), fm))
-    .sort();
-  lines.push(`## ${coll} (${urls.length})`);
-  for (const url of urls) {
-    lines.push(`- ${SITE}${url}`);
+    .map(({ file, fm }) => ({
+      url: urlPathFrom(coll, file.replace(/\.mdx$/, ''), fm),
+      title: field(fm, 'title'),
+      description: field(fm, 'description'),
+      updated: field(fm, 'updatedDate') || field(fm, 'pubDate'),
+    }))
+    .sort((a, b) => a.url.localeCompare(b.url));
+  lines.push(`## ${coll} (${urls.length})`, '');
+  for (const e of urls) {
+    if (e.title) lines.push(`### ${e.title}`);
+    lines.push(`URL: ${SITE}${e.url}`);
+    if (e.updated) lines.push(`Updated: ${e.updated}`);
+    if (e.description) lines.push(e.description);
+    lines.push('');
   }
-  lines.push('');
 }
 
 writeFileSync(join(ROOT, 'public/llms-full.txt'), lines.join('\n') + '\n');

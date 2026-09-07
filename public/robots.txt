@@ -94,4 +94,8 @@ Disallow: /
 User-agent: Bytespider
 Disallow: /
 
+# Corpus index for answer engines
+# https://invest-gulf.com/llms.txt
+# https://invest-gulf.com/llms-full.txt
+
 Sitemap: https://invest-gulf.com/sitemap-index.xml

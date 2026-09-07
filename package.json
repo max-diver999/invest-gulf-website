@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/generate-llms-full.mjs",
     "build": "astro build",
     "postbuild": "node scripts/audit-rendered-live.mjs --local --fail && npm run speed:verify",
     "preview": "astro preview",
@@ -43,7 +44,8 @@
     "aeo:dates": "node scripts/reference-infra/restore-real-updated-dates.mjs --config reference-infra.config.json",
     "aeo:markdown": "node scripts/reference-infra/fix-markdown-structure.mjs --config reference-infra.config.json",
     "aeo:robots": "node scripts/reference-infra/generate-robots.mjs --config reference-infra.config.json",
-    "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json"
+    "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json",
+    "gen:llms": "node scripts/generate-llms-full.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.2",
