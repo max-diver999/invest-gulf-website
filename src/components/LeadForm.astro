@@ -83,6 +83,18 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       <input type="checkbox" id="lf-consent" name="consent" required class="lead-form-consent__check" />
       <label class="lead-form-consent__label" for="lf-consent">I agree to be contacted about my enquiry. See our <a href="/privacy-policy/">Privacy Policy</a>.</label>
     </div>
+    <p id="lf-error" class="hidden text-red-600 text-sm text-center" role="alert">
+      Something went wrong. Email {SITE.email} or{' '}
+      <a
+        href={SITE.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-wa-placement="inline_cta"
+        data-cta="whatsapp_form_error"
+      >
+        WhatsApp us
+      </a>.
+    </p>
     <button type="submit" class="btn-primary w-full py-3">Request shortlist →</button>
     <p class="text-center text-sm text-[var(--color-muted)]">
       Prefer WhatsApp?
@@ -98,34 +110,86 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
       </a>
     </p>
     <p id="lf-success" class="hidden text-green-700 text-sm font-medium text-center">Thank you. Redirecting…</p>
-    <p id="lf-error" class="hidden text-red-600 text-sm text-center">
-      Something went wrong. Email {SITE.email} or{' '}
-      <a
-        href={SITE.whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-wa-placement="inline_cta"
-        data-cta="whatsapp_form_error"
-      >
-        WhatsApp us
-      </a>.
-    </p>
   </form>
 </section>
 
 <script>
+  import { track } from '../lib/track';
+
+  /** `/guides/uae-employment-visa-process/` -> { collection: 'guides', slug: '…' } */
+  function pageIdentity() {
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    return {
+      collection: parts.length > 1 ? parts[0] : 'root',
+      slug: parts.length > 0 ? parts[parts.length - 1] : 'home',
+    };
+  }
+
   document.querySelectorAll('form.ig-lead-form').forEach((formEl) => {
     const form = formEl as HTMLFormElement;
+    const renderedAt = Date.now();
+    let started = false;
+
+    // A real field, not any focusin: the form contains the privacy policy link
+    // and a WhatsApp link, and tabbing to either would count as starting it.
+    form.querySelectorAll('input:not([tabindex="-1"]), select, textarea').forEach((field) => {
+      field.addEventListener(
+        'focus',
+        () => {
+          if (started) return;
+          started = true;
+          const { collection, slug } = pageIdentity();
+          track('form_start', {
+            form_id: form.id,
+            form_context: form.dataset.context || '',
+            form_location: 'article',
+            page_path: window.location.pathname,
+            collection,
+            slug,
+          });
+        },
+        { once: true },
+      );
+    });
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const data = new FormData(form);
       const phone = String(data.get('phone') || '').trim();
       const email = String(data.get('email') || '').trim();
-      if (phone.replace(/\D/g, '').length < 8) {
+      const { collection, slug } = pageIdentity();
+
+      // Every rejected submit reports, so the gap between form_start and
+      // form_submit_attempt can be read instead of guessed at.
+      function reportInvalid(reason: string, message: string, focusId: string) {
         const err = document.getElementById('lf-error');
-        if (err) { err.textContent = 'Please enter a valid phone or WhatsApp number.'; err.classList.remove('hidden'); }
+        if (err) {
+          err.textContent = message;
+          err.classList.remove('hidden');
+        }
+        (document.getElementById(focusId) as HTMLElement | null)?.focus();
+        track('form_validation_error', {
+          form_id: form.id,
+          form_location: 'article',
+          reason,
+          page_path: window.location.pathname,
+          collection,
+          slug,
+        });
+      }
+
+      if (phone.replace(/\D/g, '').length < 8) {
+        reportInvalid('bad-phone', 'Please enter a valid phone or WhatsApp number.', 'lf-phone');
         return;
       }
+      // `novalidate` turns off the browser check, so the required consent box was
+      // never enforced by anything.
+      if (!data.get('consent')) {
+        reportInvalid('no-consent', 'Please tick the box so we know we may reply to you.', 'lf-consent');
+        return;
+      }
+      document.getElementById('lf-error')?.classList.add('hidden');
+
       const payload = {
         name: data.get('name'),
         phone,
@@ -138,7 +202,21 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
         market: data.get('market'),
         source: window.location.href,
         page: window.location.pathname,
+        collection,
+        slug,
+        formElapsedMs: Date.now() - renderedAt,
       };
+
+      track('form_submit_attempt', {
+        form_id: form.id,
+        form_location: 'article',
+        budget: String(payload.budget || 'not_set'),
+        market: String(payload.market || 'not_set'),
+        page_path: window.location.pathname,
+        collection,
+        slug,
+      });
+
       try {
         const res = await fetch('/api/lead/', {
           method: 'POST',
@@ -147,11 +225,30 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
         });
         if (!res.ok) throw new Error('fail');
         document.getElementById('lf-success')?.classList.remove('hidden');
+        track('generate_lead', {
+          form_id: form.id,
+          form_location: 'article',
+          lead_type: 'article_form',
+          budget: String(payload.budget || 'not_set'),
+          market: String(payload.market || 'not_set'),
+          page_path: window.location.pathname,
+          collection,
+          slug,
+          value: 1,
+          currency: 'USD',
+        });
         setTimeout(() => {
           window.location.assign('/thanks/?lead=1');
         }, 400);
       } catch {
         document.getElementById('lf-error')?.classList.remove('hidden');
+        track('form_submit_error', {
+          form_id: form.id,
+          form_location: 'article',
+          page_path: window.location.pathname,
+          collection,
+          slug,
+        });
       }
     });
   });
