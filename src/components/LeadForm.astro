@@ -237,6 +237,13 @@ const waHref = `${SITE.whatsapp}?text=${waText}`;
           value: 1,
           currency: 'USD',
         });
+        // Tells /thanks/ the conversion is already counted, so the redirect
+        // cannot add a second one.
+        try {
+          sessionStorage.setItem('ig_lead_ga_sent', String(Date.now()));
+        } catch {
+          /* private mode: /thanks/ reports it instead */
+        }
         setTimeout(() => {
           window.location.assign('/thanks/?lead=1');
         }, 400);
