@@ -13,6 +13,86 @@
       "statusCode": 308
     },
     {
+      "source": "/guides/dubai-developers-guide/",
+      "destination": "/developers/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/emaar-properties-review/",
+      "destination": "/developers/emaar/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/aldar-properties-review/",
+      "destination": "/developers/aldar/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/damac-properties-review/",
+      "destination": "/developers/damac/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/meraas-properties-review/",
+      "destination": "/developers/meraas/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/nakheel-review/",
+      "destination": "/developers/nakheel/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/arada-developer-review/",
+      "destination": "/developers/arada/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/ellington-properties-review/",
+      "destination": "/developers/ellington-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/omniyat-developer-review/",
+      "destination": "/developers/omniyat/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/azizi-developments-review/",
+      "destination": "/developers/azizi-developments/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/nshama-developer-review/",
+      "destination": "/developers/nshama/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sobha-realty-review/",
+      "destination": "/developers/sobha-realty/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/danube-properties-review/",
+      "destination": "/developers/danube-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/binghatti-review/",
+      "destination": "/developers/binghatti/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/rak-properties-developer-review/",
+      "destination": "/developers/rak-properties/",
+      "permanent": true
+    },
+    {
+      "source": "/guides/select-group-developer-review/",
+      "destination": "/developers/select-group/",
+      "permanent": true
+    },
+    {
       "source": "/areas/",
       "destination": "/uae/",
       "permanent": true
