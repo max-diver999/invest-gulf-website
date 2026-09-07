@@ -19,13 +19,30 @@ const isLead = Astro.url.searchParams.get('lead') === '1';
     </p>
     <a href="/guides/" class="btn-primary px-6 py-3">Browse guides</a>
   </section>
-  {isLead && (
-    <script is:inline>
-      if (typeof window.investGulfTrack === 'function') {
-        window.investGulfTrack('generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
-      } else if (typeof window.gtag === 'function') {
-        window.gtag('event', 'generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
+  {/* This was an is:inline script inside `{isLead && …}`. `isLead` reads
+      Astro.url.searchParams, which is empty when a static page is prerendered,
+      so the script was never emitted: the live page carried no conversion at
+      all, and only the copy fired by the form itself ever ran.
+
+      Unconditional now, keyed on `?lead=1` in the browser and reported through
+      `track`, which queues until the tracker exists. The form stamps
+      `ig_lead_ga_sent` when it sends its own copy, so a real enquiry is counted
+      once and a shared or revisited URL cannot add a second. */}
+  <script>
+    import { track } from '../../lib/track';
+
+    if (new URLSearchParams(window.location.search).get('lead') === '1') {
+      let alreadySent = false;
+      try {
+        const stamp = Number(sessionStorage.getItem('ig_lead_ga_sent') || 0);
+        alreadySent = stamp > 0 && Date.now() - stamp < 120000;
+        sessionStorage.removeItem('ig_lead_ga_sent');
+      } catch {
+        /* private mode: fall through and report once */
       }
-    </script>
-  )}
+      if (!alreadySent) {
+        track('generate_lead', { lead_type: 'shortlist_form', value: 1, currency: 'USD' });
+      }
+    }
+  </script>
 </BaseLayout>
