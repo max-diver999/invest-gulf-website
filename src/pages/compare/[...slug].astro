@@ -27,6 +27,7 @@ const {
   heroImage,
   faq,
   noindex,
+  relatedSlugs,
 } = entry.data;
 ---
 <ArticleLayout
@@ -42,6 +43,7 @@ const {
   {hasInlineFaqBlock}
   contextLabel={title}
   articleSlug={entry.id}
+  {relatedSlugs}
   articleCollection="compare"
   canonical={`${SITE.url}/compare/${entry.id}/`}
 >
