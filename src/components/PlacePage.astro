@@ -43,6 +43,7 @@ const children = siblings
   .sort((a, b) => a.entry.data.title.localeCompare(b.entry.data.title));
 ---
 <ArticleLayout
+  relatedSlugs={entry.data.relatedSlugs ?? []}
   {title}
   {description}
   {pubDate}

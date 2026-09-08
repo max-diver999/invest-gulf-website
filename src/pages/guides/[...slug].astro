@@ -27,6 +27,7 @@ const {
   heroImage,
   faq,
   noindex,
+  relatedSlugs,
   leadPlacement,
 } = entry.data;
 ---
@@ -44,6 +45,7 @@ const {
   {hasInlineFaqBlock}
   contextLabel={title}
   articleSlug={entry.id}
+  {relatedSlugs}
   articleCollection="guides"
   canonical={`${SITE.url}/guides/${entry.id}/`}
 >
