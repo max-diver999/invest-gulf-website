@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import LeadForm from '../components/LeadForm.astro';
 import InlineLeadCta from '../components/InlineLeadCta.astro';
 import FaqBlock from '../components/FaqBlock.astro';
+import RelatedContent from '../components/RelatedContent.astro';
 import GulfMoneyHubStrip from '../components/GulfMoneyHubStrip.astro';
 import { SITE } from '../data/site';
 import { responsiveImage, lcpPreloadFromResponsive } from '../lib/responsiveImage';
@@ -23,6 +24,8 @@ interface Props {
   contextLabel?: string;
   articleSlug?: string;
   articleCollection?: string;
+  /** Frontmatter `relatedSlugs`, rendered by <RelatedContent>. */
+  relatedSlugs?: string[];
   leadPlacement?: 'early' | 'end';
   /** Overrides the default Home / Collection / Title trail for the geo tree. */
   breadcrumbs?: { name: string; url: string }[];
@@ -43,6 +46,7 @@ const {
   contextLabel = title,
   articleSlug = '',
   articleCollection = 'guides',
+  relatedSlugs = [],
   leadPlacement = 'end',
   breadcrumbs,
 } = Astro.props;
@@ -192,6 +196,8 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
         <FaqBlock items={faq} />
       </div>
     )}
+
+    <RelatedContent {relatedSlugs} currentSlug={articleSlug} />
 
     <GulfMoneyHubStrip />
 
