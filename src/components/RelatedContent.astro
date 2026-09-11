@@ -52,10 +52,12 @@ for (const collection of COLLECTIONS) {
   }
   for (const entry of entries) {
     if (entry.data?.noindex) continue;
-    const href =
-      collection === 'hubs'
-        ? `/${String(entry.data.path ?? '').replace(/^\/|\/$/g, '')}/`
-        : `/${collection}/${entry.id}/`;
+    // Any entry that carries an explicit `path` serves at that path, not at
+    // /<collection>/<id>/. Hubs always do; so does every district that moved into
+    // the geo tree, whose old /areas/<id>/ URL is a 301 source. Reading `path` only
+    // for hubs pointed all 57 migrated districts at their own redirect.
+    const explicitPath = String(entry.data.path ?? '').replace(/^\/|\/$/g, '');
+    const href = explicitPath ? `/${explicitPath}/` : `/${collection}/${entry.id}/`;
     if (href === '//') continue;
     if (!index.has(entry.id)) {
       index.set(entry.id, {
