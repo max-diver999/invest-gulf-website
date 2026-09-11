@@ -15,6 +15,12 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = ['.vercel/output/static', 'dist'].map((d) => join(ROOT, d)).find(existsSync);
 if (!OUT) { console.log('[links-to-redirects] skipped: no build output'); process.exit(0); }
 
+function normalise(u) {
+  let s = String(u).replace(/\{path\*\}/g, '').replace(/\{\/\}\?/g, '').replace(/\(\.\*\)/g, '').replace(/\?$/, '');
+  if (!s.startsWith('/')) s = `/${s}`;
+  return `${s.replace(/\/$/, '')}/`;
+}
+
 function redirectSources() {
   const p = join(ROOT, 'vercel.json');
   if (!existsSync(p)) return new Set();
@@ -23,9 +29,11 @@ function redirectSources() {
   for (const r of redirects) {
     if (r.has?.some((h) => h.type === 'host')) continue;
     if (!r.source || r.source === '/:path*') continue;
-    let s = r.source.replace(/\{path\*\}/g, '').replace(/\{\/\}\?/g, '').replace(/\(\.\*\)/g, '').replace(/\?$/, '');
-    if (!s.startsWith('/')) s = `/${s}`;
-    out.add(`${s.replace(/\/$/, '')}/`);
+    const source = normalise(r.source);
+    // A trailing-slash normaliser (/gajdy -> /gajdy/) has the same normalised source and
+    // destination. It does not take a URL away from anything, so linking to it is fine.
+    if (r.destination && normalise(r.destination) === source) continue;
+    out.add(source);
   }
   return out;
 }
