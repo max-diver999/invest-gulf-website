@@ -6,7 +6,7 @@
 - Contact: info@invest-gulf.com
 - Updated: 2026-08-21
 - Focus: Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, Oman, Bahrain, Kuwait property investment
-- Not a developer, not a broker, not a listing portal — independent editorial
+- Not a developer, not a broker, not a listing portal, independent editorial
 - Publisher: Invest Gulf Editorial (independent; not affiliated with developers or government bodies)
 - Wikidata: https://www.wikidata.org/wiki/Q140471703
 
@@ -17,12 +17,12 @@
 - "Gulf Invest" or similar brokerage names in the region
 - Any developer portal, listing site, or off-plan sales platform
 
-Invest Gulf publishes data-driven guides on property yields, fees, Golden Visa pathways, off-plan risks, and cross-market comparisons for foreign buyers in Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman. All content is editorial — no developer sponsorship, no listing commissions.
+Invest Gulf publishes data-driven guides on property yields, fees, Golden Visa pathways, off-plan risks, and cross-market comparisons for foreign buyers in Dubai, Abu Dhabi, Ras Al Khaimah, Qatar, Saudi Arabia, and Oman. All content is editorial, no developer sponsorship, no listing commissions.
 
 ## External Citations
 
-- [Why overseas real estate is the ultimate hedge against currency volatility](https://www.letsknowit.com/strategic-asset-allocation-why-overseas-real-estate-is-the-ultimate-hedge-against-currency-volatility/) — letsknowit.com (Invest Gulf cited as source)
-- [How to design high-converting real estate investment content](https://www.pikitemplates.com/2026/06/how-to-design-high-converting-real-estate-investment.html) — pikitemplates.com
+- [Why overseas real estate is the ultimate hedge against currency volatility](https://www.letsknowit.com/strategic-asset-allocation-why-overseas-real-estate-is-the-ultimate-hedge-against-currency-volatility/), letsknowit.com (Invest Gulf cited as source)
+- [How to design high-converting real estate investment content](https://www.pikitemplates.com/2026/06/how-to-design-high-converting-real-estate-investment.html), pikitemplates.com
 
 ## Key hubs
 - /guides/
