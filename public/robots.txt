@@ -1,4 +1,8 @@
 User-agent: *
+# Content Signals (contentsignals.org / IETF draft-romm-aipref-contentsignals)
+# Citation in AI search and retrieval is allowed. Training on this content is not.
+# In the wildcard group, because the directive speaks only for the group it sits in.
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Disallow: /api/
 Disallow: /thanks/
 Disallow: /site-report/
@@ -97,5 +101,11 @@ Disallow: /
 # Corpus index for answer engines
 # https://invest-gulf.com/llms.txt
 # https://invest-gulf.com/llms-full.txt
+
+# Markdown renditions for agents: append .md to a content URL, or send
+# `Accept: text/markdown`. Start here:
+# https://invest-gulf.com/index.md
+# https://invest-gulf.com/llms.txt
+# https://invest-gulf.com/.well-known/agent.json
 
 Sitemap: https://invest-gulf.com/sitemap-index.xml

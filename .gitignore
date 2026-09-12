@@ -12,3 +12,12 @@ dist/
 scripts/google-indexing-key.json
 scripts/indexing-progress.json
 scripts/indexing-log.txt
+
+# AI-visibility pack: generated at prebuild, never edited by hand
+public/index.md
+public/.well-known/
+public/guides/*.md
+public/areas/*.md
+public/projects/*.md
+public/compare/*.md
+public/news/*.md
