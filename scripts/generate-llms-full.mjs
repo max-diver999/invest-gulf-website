@@ -24,7 +24,7 @@ const field = (fm, key) => {
 };
 
 const lines = [
-  '# Invest Gulf — full site map for AI crawlers',
+  '# Invest Gulf: full site map for AI crawlers',
   '',
   `Site: ${SITE}`,
   'Contact: info@invest-gulf.com',
