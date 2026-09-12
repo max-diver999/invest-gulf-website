@@ -7,9 +7,9 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/generate-llms-full.mjs",
+    "prebuild": "node scripts/generate-llms-full.mjs && node scripts/ai-visibility/page-lastmod.mjs && node scripts/ai-visibility/generate-agent-markdown.mjs && node scripts/ai-visibility/generate-agent-card.mjs && node scripts/ai-visibility/check-agent-index.mjs",
     "build": "astro build",
-    "postbuild": "node scripts/audit-rendered-live.mjs --local --fail && node scripts/check-links-to-redirects.mjs && npm run speed:verify",
+    "postbuild": "node scripts/patch-vercel-output.mjs && node scripts/audit-rendered-live.mjs --local --fail && node scripts/check-links-to-redirects.mjs && npm run speed:verify",
     "preview": "astro preview",
     "healthcheck": "node scripts/post-deploy-smoke.mjs --http-only",
     "validate:content": "node scripts/qa-audit.mjs",
@@ -46,7 +46,12 @@
     "aeo:robots": "node scripts/reference-infra/generate-robots.mjs --config reference-infra.config.json",
     "aeo:llms": "node scripts/reference-infra/generate-agent-markdown.mjs --config reference-infra.config.json",
     "gen:llms": "node scripts/generate-llms-full.mjs",
-    "check:links-to-redirects": "node scripts/check-links-to-redirects.mjs"
+    "check:links-to-redirects": "node scripts/check-links-to-redirects.mjs",
+    "ai:markdown": "node scripts/ai-visibility/generate-agent-markdown.mjs",
+    "ai:card": "node scripts/ai-visibility/generate-agent-card.mjs",
+    "ai:lastmod": "node scripts/ai-visibility/page-lastmod.mjs",
+    "ai:check": "node scripts/ai-visibility/check-agent-index.mjs",
+    "ai:verify": "node scripts/ai-visibility/verify-live.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "5.0.2",

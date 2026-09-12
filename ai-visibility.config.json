@@ -1,0 +1,81 @@
+{
+  "siteUrl": "https://invest-gulf.com",
+  "host": "invest-gulf.com",
+  "brand": "Invest Gulf",
+  "language": "en",
+  "title": "Invest Gulf",
+  "tagline": "independent research on Gulf property",
+  "summary": "Independent research on property across the UAE, Saudi Arabia, Qatar, Bahrain and Oman: freehold zones and foreign ownership rules, off-plan escrow and payment plans, service charges and net yields by district, golden visa thresholds, and named developments. Not an agency, not a listings portal.",
+  "entity": "Invest Gulf is an independent research publisher on Gulf property for foreign buyers, part of the MORE Group network. It sells no listings and represents no developer. Wikidata: https://www.wikidata.org/wiki/Q140471703",
+  "contact": {
+    "email": "info@invest-gulf.com",
+    "page": "/contact/"
+  },
+  "collections": [
+    {
+      "dir": "guides",
+      "urlPrefix": "/guides",
+      "label": "Guides"
+    },
+    {
+      "dir": "areas",
+      "urlPrefix": "/areas",
+      "label": "Districts and areas"
+    },
+    {
+      "dir": "projects",
+      "urlPrefix": "/projects",
+      "label": "Project reviews"
+    },
+    {
+      "dir": "compare",
+      "urlPrefix": "/compare",
+      "label": "Comparisons"
+    },
+    {
+      "dir": "news",
+      "urlPrefix": "/news",
+      "label": "Market notes"
+    }
+  ],
+  "keyPages": [
+    {
+      "url": "/guides/",
+      "label": "Guides: ownership rules, escrow, tax, due diligence"
+    },
+    {
+      "url": "/areas/",
+      "label": "Districts and areas"
+    },
+    {
+      "url": "/projects/",
+      "label": "Project reviews, independent, not listings"
+    },
+    {
+      "url": "/compare/",
+      "label": "Comparisons"
+    },
+    {
+      "url": "/methodology/",
+      "label": "How the numbers are produced"
+    },
+    {
+      "url": "/about/",
+      "label": "About"
+    },
+    {
+      "url": "/contact/",
+      "label": "Contact"
+    }
+  ],
+  "contentPolicy": {
+    "search": "yes",
+    "aiInput": "yes",
+    "aiTrain": "no"
+  },
+  "writeLlmsFull": false,
+  "llms": {
+    "generated": true,
+    "note": "llms.txt is built by the generator this repo already has and is left alone. The hubs collection is not listed here: each hub page carries its own top-level path in frontmatter rather than sharing a prefix, so it has no markdown rendition yet."
+  }
+}
