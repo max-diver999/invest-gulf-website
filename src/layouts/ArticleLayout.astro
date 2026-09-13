@@ -10,6 +10,8 @@ import { responsiveImage, lcpPreloadFromResponsive } from '../lib/responsiveImag
 import { resolveStickyCta } from '../../scripts/lib/invest-gulf-cta-router.mjs';
 
 interface Props {
+  /** Дополнительная разметка от страницы, например цена проекта. */
+  extraSchema?: Record<string, unknown> | null;
   title: string;
   description: string;
   pubDate: Date;
@@ -49,6 +51,7 @@ const {
   relatedSlugs = [],
   leadPlacement = 'end',
   breadcrumbs,
+  extraSchema,
 } = Astro.props;
 
 const stickyCta = articleSlug
@@ -124,7 +127,7 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
   ogImage={heroImage}
   type="article"
   {noindex}
-  schema={[articleSchema, breadcrumbSchema]}
+  schema={[articleSchema, breadcrumbSchema, ...(extraSchema ? [extraSchema] : [])]}
   stickyCta={stickyCta}
   preloadImage={heroImageProp ? lcpPreloadFromResponsive(heroImageProp, 'hero') : null}
 >
