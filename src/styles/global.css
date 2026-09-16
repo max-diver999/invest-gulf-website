@@ -42,38 +42,45 @@
   }
 }
 
-body {
-  background: var(--color-page);
-  font-variant-numeric: lining-nums;
-  color: var(--color-muted);
-  font-family: var(--font-sans);
-  line-height: 1.65;
-  font-size: 1rem;
-}
+/* В @layer base: правило вне слоя бьёт любую утилиту Tailwind независимо от веса селектора,
+   и класс цвета в разметке до экрана не доходит. Замер и разбор в scripts/test-css-layers.mjs. */
+@layer base {
+  body {
+    background: var(--color-page);
+    font-variant-numeric: lining-nums;
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    font-size: 1rem;
+  }
 
-h1, h2, h3 {
-  font-family: var(--font-serif);
-  font-weight: 500;
-  line-height: 1.12;
-  letter-spacing: 0.005em;
-  color: var(--color-ink);
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: 0.005em;
+    color: var(--color-ink);
+  }
 }
 /* Cormorant мельче гротеска в том же кегле — шкала поднята */
 h1 { font-size: clamp(2.4rem, 5.6vw, 3.7rem); }
 h2 { font-size: clamp(1.8rem, 3.9vw, 2.6rem); }
 h3 { font-size: clamp(1.4rem, 2.7vw, 1.8rem); }
 
-h4 {
-  font-family: var(--font-sans);
-  color: var(--color-ink);
-  line-height: 1.25;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+/* В @layer base: правило вне слоя бьёт любую утилиту Tailwind независимо от веса селектора,
+   и класс цвета в разметке до экрана не доходит. Замер и разбор в scripts/test-css-layers.mjs. */
+@layer base {
+  h4 {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  a { color: var(--color-teal); text-decoration: none; }
+  a:hover { color: var(--color-teal-dark); }
 }
-
-a { color: var(--color-teal); text-decoration: none; }
-a:hover { color: var(--color-teal-dark); }
-
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -136,18 +143,22 @@ a:hover { color: var(--color-teal-dark); }
   flex-shrink: 0;
 }
 
-input:not([type="checkbox"]):not([type="radio"]), select, textarea {
-  width: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: 0.625rem;
-  padding: 0.65rem 0.85rem;
-  background: #fff;
-  /* 16px exactly. Safari on iOS zooms the page when a focused field is smaller
-   * than this and never zooms back out, which puts the submit button off screen
-   * on every mobile form fill. Do not drop this below 1rem. */
-  font-size: 1rem;
-  font-family: var(--font-sans);
-  color: var(--color-ink);
+/* В @layer base: правило вне слоя бьёт любую утилиту Tailwind независимо от веса селектора,
+   и класс цвета в разметке до экрана не доходит. Замер и разбор в scripts/test-css-layers.mjs. */
+@layer base {
+  input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 0.625rem;
+    padding: 0.65rem 0.85rem;
+    background: #fff;
+    /* 16px exactly. Safari on iOS zooms the page when a focused field is smaller
+     * than this and never zooms back out, which puts the submit button off screen
+     * on every mobile form fill. Do not drop this below 1rem. */
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+  }
 }
 input[type="checkbox"],
 input[type="radio"] {
