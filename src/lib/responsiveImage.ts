@@ -6,14 +6,11 @@ type Dimension = { width: number; height: number };
 type LocalCandidate = { url: string; width: number };
 type LocalHeroFallback = { src: string; candidates: LocalCandidate[] };
 
-// Two clouds serve this corpus: dlrrtf6bq is legacy and read-only, bwppi9gc
-// takes new uploads. See scripts/lib/cloudinary-clouds.mjs and the holding
-// policy in 99_Системное/CLOUDINARY_ROUTING.md. A derivative must stay on the
-// cloud its source names, so the cloud is read off the URL rather than assumed.
+// dlrrtf6bq is legacy read-only; new delivery is R2. bwppi9gc is retired Sep 2026.
 const LEGACY_CLOUD = 'dlrrtf6bq';
-const ACTIVE_CLOUD = 'bwppi9gc';
-const DELIVERY_CLOUDS: readonly string[] = [LEGACY_CLOUD, ACTIVE_CLOUD];
+const DELIVERY_CLOUDS: readonly string[] = [LEGACY_CLOUD];
 const CLOUD_IN_URL = /res\.cloudinary\.com\/([a-z0-9_-]+)\/image\/upload\//i;
+const R2_PATTERN = /^https:\/\/pub-[a-f0-9]+\.r2\.dev\/(.+)$/i;
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = {
   hero: [360, 640, 960, 1200],
@@ -51,7 +48,15 @@ export function gulfCloud(src: string): string | null {
   return match && DELIVERY_CLOUDS.includes(match[1]) ? match[1] : null;
 }
 
+function r2PublicId(src: string): string | null {
+  const match = R2_PATTERN.exec(src.trim());
+  if (!match) return null;
+  return match[1].replace(/\.webp$/i, '');
+}
+
 export function gulfPublicId(src: string): string | null {
+  const fromR2 = r2PublicId(src);
+  if (fromR2?.startsWith(PREFIX)) return fromR2;
   const marker = `/${PREFIX}`;
   const markerIndex = src.indexOf(marker);
   if (!gulfCloud(src) || markerIndex === -1) return null;
@@ -61,7 +66,7 @@ export function gulfPublicId(src: string): string | null {
 export function gulfDeliveryUrl(
   publicId: string,
   width: number,
-  cloud: string = ACTIVE_CLOUD,
+  cloud: string = LEGACY_CLOUD,
 ): string {
   if (!publicId.startsWith(PREFIX)) throw new Error(`Unexpected Gulf public ID: ${publicId}`);
   if (!DELIVERY_CLOUDS.includes(cloud)) throw new Error(`Unexpected Cloudinary account: ${cloud}`);
@@ -89,6 +94,23 @@ export function lcpPreloadFromResponsive(src: string, variant: Variant = 'hero')
 }
 
 export function responsiveImage(src: string, variant: Variant = 'hero') {
+  const r2Id = r2PublicId(src);
+  if (r2Id?.startsWith(PREFIX)) {
+    const native = (cloudDimensions as Record<string, Dimension>)[r2Id];
+    if (!native) throw new Error(`Missing Gulf image dimensions for ${r2Id}`);
+    return {
+      src,
+      srcset: `${src} ${native.width}w`,
+      sizes: variant === 'card'
+        ? '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 320px'
+        : variant === 'hero'
+          ? ARTICLE_SIZES
+          : '(max-width: 599px) calc(100vw - 3rem), 72ch',
+      width: native.width,
+      height: native.height,
+    };
+  }
+
   const publicId = gulfPublicId(src);
   if (!publicId) {
     const local = (localDimensions as Record<string, Dimension>)[src];
