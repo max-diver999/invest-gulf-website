@@ -239,7 +239,9 @@ function auditFile(c, slug) {
 
   const hero = (fm.heroImage || '').replace(/^["']|["']$/g, '');
   const heroKey = hero.match(/\/(more-group\/gulf\/.+)$/);
-  if (heroKey && !GULF_DIMS.has(heroKey[1])) prob.push(`heroImageUnknown:${heroKey[1]}`);
+  if (heroKey && !hero.includes('.r2.dev/') && !GULF_DIMS.has(heroKey[1])) {
+    prob.push(`heroImageUnknown:${heroKey[1]}`);
+  }
 
   const bodySlugs = [...body.matchAll(/\]\(\/(?:guides|compare|areas|projects|news)\/([a-z0-9\-]+)\/?\)/gi)].map((m) => m[1]);
   const badLinks = [...new Set(bodySlugs.filter((s) => !allSlugs.has(s)))];
