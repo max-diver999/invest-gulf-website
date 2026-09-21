@@ -58,12 +58,15 @@ const stickyCta = articleSlug
   ? resolveStickyCta({ collection: articleCollection, slug: articleSlug, title })
   : null;
 
-// Pages without their own hero fall back to the app icon. That fallback is a
-// placeholder rather than an LCP candidate, so it must not claim high fetch
-// priority: the preload below is only emitted for a real heroImage, and a
-// priority hero with no preload is exactly what the speed gate rejects.
-const heroImage = heroImageProp || `${SITE.url}/apple-touch-icon.png`;
-const hero = responsiveImage(heroImage, 'hero');
+// Pages without their own hero show no hero at all. The old fallback put the
+// 180x180 app icon in the slot, and the layout then stretched it across a
+// 1280x720 block: on 21 live pages the article opened with a blurred smear of
+// the logo, and the same icon went out as the social preview. A missing photo
+// is honest; a stretched icon looks like a broken page.
+// The social image still needs something, so that falls back to og-default.png
+// (1200x630), which is what it was made for.
+const socialImage = heroImageProp || `${SITE.url}/og-default.png`;
+const hero = heroImageProp ? responsiveImage(heroImageProp, 'hero') : null;
 
 const dateStr = (updatedDate || pubDate).toLocaleDateString('en-US', {
   year: 'numeric',
@@ -86,7 +89,7 @@ const articleSchema = {
     logo: { '@type': 'ImageObject', url: `${SITE.url}/favicon.svg` },
   },
   mainEntityOfPage: pageUrl,
-  ...(heroImage ? { image: heroImage } : {}),
+  ...(socialImage ? { image: socialImage } : {}),
 };
 
 const COLLECTION_LABELS: Record<string, string> = {
@@ -124,7 +127,7 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
   title={title}
   description={description}
   canonical={pageUrl}
-  ogImage={heroImage}
+  ogImage={socialImage}
   type="article"
   {noindex}
   schema={[articleSchema, breadcrumbSchema, ...(extraSchema ? [extraSchema] : [])]}
@@ -160,7 +163,7 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
 
   <article class="site-container py-10 md:py-14">
 
-    {heroImage && (
+    {hero && (
       <img
         src={hero.src}
         srcset={hero.srcset}
@@ -169,8 +172,8 @@ const heroAlt = `${title} — Invest Gulf research illustration`;
         width={hero.width}
         height={hero.height}
         class="w-full max-h-[420px] object-cover rounded-2xl mb-10 border border-[var(--color-border)]"
-        loading={heroImageProp ? 'eager' : 'lazy'}
-        fetchpriority={heroImageProp ? 'high' : 'auto'}
+        loading="eager"
+        fetchpriority="high"
         decoding="async"
       />
     )}
