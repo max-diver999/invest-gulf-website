@@ -1,0 +1,30 @@
+{
+  "site": "invest-gulf-website",
+  "source_cloud": "bwppi9gc",
+  "r2_public_base": "https://pub-2855c73eea384110b510f25966292c37.r2.dev",
+  "changed": 4,
+  "errors": 0,
+  "items": [
+    {
+      "mdx": "invest-gulf-website/src/content/areas/emirates-hills-dubai.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/f_auto,q_auto,w_1200/more-group/gulf/areas/emirates-hills/hero-f92ba836b4",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/gulf/areas/emirates-hills/hero-f92ba836b4.webp"
+    },
+    {
+      "mdx": "invest-gulf-website/src/content/areas/jumeirah-park-dubai.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/f_auto,q_auto,w_1200/more-group/gulf/areas/jumeirah-park/hero-f2420847d7",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/gulf/areas/jumeirah-park/hero-f2420847d7.webp"
+    },
+    {
+      "mdx": "invest-gulf-website/src/content/areas/mirdif-dubai.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/f_auto,q_auto,w_1200/more-group/gulf/areas/mirdif/hero-9abdcfd6a2",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/gulf/areas/mirdif/hero-9abdcfd6a2.webp"
+    },
+    {
+      "mdx": "invest-gulf-website/src/content/areas/nad-al-sheba-dubai.mdx",
+      "old": "https://res.cloudinary.com/bwppi9gc/image/upload/f_auto,q_auto,w_1200/more-group/gulf/areas/nad-al-sheba/hero-bd6065366c",
+      "new": "https://pub-2855c73eea384110b510f25966292c37.r2.dev/more-group/gulf/areas/nad-al-sheba/hero-bd6065366c.webp"
+    }
+  ],
+  "failed": []
+}
