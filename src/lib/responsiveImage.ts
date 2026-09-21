@@ -6,10 +6,6 @@ type Dimension = { width: number; height: number };
 type LocalCandidate = { url: string; width: number };
 type LocalHeroFallback = { src: string; candidates: LocalCandidate[] };
 
-// dlrrtf6bq is legacy read-only; new delivery is R2. bwppi9gc is retired Sep 2026.
-const LEGACY_CLOUD = 'dlrrtf6bq';
-const DELIVERY_CLOUDS: readonly string[] = [LEGACY_CLOUD];
-const CLOUD_IN_URL = /res\.cloudinary\.com\/([a-z0-9_-]+)\/image\/upload\//i;
 const R2_PATTERN = /^https:\/\/pub-[a-f0-9]+\.r2\.dev\/(.+)$/i;
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = {
@@ -42,12 +38,6 @@ const LOCAL_HERO_FALLBACKS: Record<string, LocalHeroFallback> = {
   },
 };
 
-/** The cloud a delivery URL names, or null when it is not one of ours. */
-export function gulfCloud(src: string): string | null {
-  const match = src.match(CLOUD_IN_URL);
-  return match && DELIVERY_CLOUDS.includes(match[1]) ? match[1] : null;
-}
-
 function r2PublicId(src: string): string | null {
   const match = R2_PATTERN.exec(src.trim());
   if (!match) return null;
@@ -57,25 +47,7 @@ function r2PublicId(src: string): string | null {
 export function gulfPublicId(src: string): string | null {
   const fromR2 = r2PublicId(src);
   if (fromR2?.startsWith(PREFIX)) return fromR2;
-  const marker = `/${PREFIX}`;
-  const markerIndex = src.indexOf(marker);
-  if (!gulfCloud(src) || markerIndex === -1) return null;
-  return src.slice(markerIndex + 1).replace(/\.(avif|gif|jpe?g|png|webp)$/i, '');
-}
-
-export function gulfDeliveryUrl(
-  publicId: string,
-  width: number,
-  cloud: string = LEGACY_CLOUD,
-): string {
-  if (!publicId.startsWith(PREFIX)) throw new Error(`Unexpected Gulf public ID: ${publicId}`);
-  if (!DELIVERY_CLOUDS.includes(cloud)) throw new Error(`Unexpected Cloudinary account: ${cloud}`);
-  // No g_auto here. Gravity is only valid alongside a crop mode, and these URLs
-  // scale rather than crop, so Cloudinary answered every one of them with
-  // "Auto gravity can only be used with crop, fill, thumb, lfill, fill_pad,
-  // auto, auto_pad" and a 400. The rendered-speed gate never caught it because
-  // it checks the shape of the URL, not whether it resolves.
-  return `https://res.cloudinary.com/${cloud}/image/upload/f_auto,q_auto:eco,w_${width}/${publicId}`;
+  return null;
 }
 
 /** Smallest variant for LCP preload (mobile-first). */
@@ -112,18 +84,7 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
   }
 
   const publicId = gulfPublicId(src);
-  if (!publicId) {
-    const local = (localDimensions as Record<string, Dimension>)[src];
-    return {
-      src,
-      srcset: undefined,
-      sizes: undefined,
-      width: local?.width ?? (variant === 'card' ? 640 : 1280),
-      height: local?.height ?? (variant === 'card' ? 360 : 720),
-    };
-  }
-
-  const localHero = variant === 'hero' ? LOCAL_HERO_FALLBACKS[publicId] : undefined;
+  const localHero = publicId && variant === 'hero' ? LOCAL_HERO_FALLBACKS[publicId] : undefined;
   if (localHero) {
     const local = (localDimensions as Record<string, Dimension>)[localHero.src];
     return {
@@ -135,23 +96,12 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
     };
   }
 
-  const native = (cloudDimensions as Record<string, Dimension>)[publicId];
-  if (!native) throw new Error(`Missing Gulf image dimensions for ${publicId}`);
-  // Derivatives stay on the source's own cloud, so a legacy image keeps serving
-  // from the legacy account and a new one from the active account.
-  const cloud = gulfCloud(src) ?? LEGACY_CLOUD;
-  const requested = WIDTHS[variant].filter((width) => width <= native.width);
-  const widths = requested.length ? requested : [native.width];
-  const largest = widths.at(-1) ?? native.width;
+  const local = (localDimensions as Record<string, Dimension>)[src];
   return {
-    src: gulfDeliveryUrl(publicId, largest, cloud),
-    srcset: widths.map((width) => `${gulfDeliveryUrl(publicId, width, cloud)} ${width}w`).join(', '),
-    sizes: variant === 'card'
-      ? '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 320px'
-      : variant === 'hero'
-        ? ARTICLE_SIZES
-        : '(max-width: 599px) calc(100vw - 3rem), 72ch',
-    width: native.width,
-    height: native.height,
+    src,
+    srcset: undefined,
+    sizes: undefined,
+    width: local?.width ?? (variant === 'card' ? 640 : 1280),
+    height: local?.height ?? (variant === 'card' ? 360 : 720),
   };
 }
