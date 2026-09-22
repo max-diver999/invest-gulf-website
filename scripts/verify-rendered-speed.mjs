@@ -29,6 +29,13 @@ const errors = [];
 let pages = 0;
 let images = 0;
 let cloudinaryImages = 0;
+/**
+ * Картинки, отдаваемые с R2. Проверка писалась, когда всё лежало на Cloudinary, и требовала,
+ * чтобы таких картинок было не ноль. После полного переезда их стало ноль, и требование
+ * развернулось против нас: проверка падала именно потому, что переезд закончен.
+ * Считаем оба хранилища и требуем, чтобы картинки шли хотя бы из одного.
+ */
+let r2Images = 0;
 let localExceptionHeroes = 0;
 let priorityHeroes = 0;
 
@@ -87,6 +94,22 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
     }
     if (/upload\.wikimedia\.org/.test(`${src} ${srcset}`)) {
       errors.push(`${relative}: direct Wikimedia image delivery`);
+    }
+
+    if (src.includes('.r2.dev/')) {
+      r2Images += 1;
+      const candidates = srcset ? srcset.split(',').filter((c) => /\s\d+w\s*$/.test(c.trim())).length : 0;
+      const intrinsic = Number(attribute(tag, 'width') || 0);
+      /**
+       * Лестницу требуем только у картинок, которым есть куда сужаться: у кадра уже 360 точек
+       * узкого варианта не существует, и требовать его значит требовать невозможного.
+       * Зато такой кадр не должен растягиваться на всю ширину: на invest-gulf.com обложкой
+       * проекта стоял файл 95 на 95, и это видно глазом.
+       */
+      if (intrinsic >= 640 && candidates < 2) errors.push(`${relative}: R2 image without a width ladder`);
+      if (intrinsic && intrinsic < 360 && /class="[^"]*(hero|w-full)/.test(tag)) {
+        errors.push(`${relative}: tiny image (${intrinsic}px) stretched into a full-width slot`);
+      }
     }
 
     const isCloudinary = CLOUD_PREFIXES.some((prefix) => src.startsWith(prefix));
@@ -155,8 +178,25 @@ for (const prefix of LOCAL_HERO_PREFIXES) {
   }
 }
 
-if (!pages || !images || !cloudinaryImages || !localExceptionHeroes || !priorityHeroes) {
-  errors.push('rendered output is missing expected pages or image classes');
+/**
+ * Защищённые местные обложки (LOCAL_HERO_FALLBACKS) больше не участвуют в отдаче: после переезда
+ * на R2 все обложки приходят оттуда, и ветка с местными файлами недостижима. Проверено 22.09.2026
+ * и в сборке, и на живом сайте: ни одной ссылки на /images/areas/. Требовать их наличия значит
+ * требовать, чтобы переезд был не закончен, поэтому из условия они убраны, но про их ненужность
+ * говорится вслух: мёртвый механизм лучше убрать осознанно, чем случайно.
+ */
+if (!localExceptionHeroes) {
+  console.log('заметка: защищённые местные обложки в отдаче не встречаются, механизм LOCAL_HERO_FALLBACKS сейчас мёртв');
+}
+
+if (!pages || !images || !(cloudinaryImages + r2Images) || !priorityHeroes) {
+  const empty = [
+    !pages && 'страниц',
+    !images && 'картинок',
+    !(cloudinaryImages + r2Images) && 'картинок из хранилища',
+    !priorityHeroes && 'приоритетных обложек',
+  ].filter(Boolean).join(', ');
+  errors.push(`rendered output is missing expected pages or image classes: ноль ${empty}`);
 }
 
 if (errors.length) {
@@ -167,6 +207,6 @@ if (errors.length) {
 
 console.log(
   `Rendered speed verification passed: ${pages} pages, ${images} images, `
-  + `${cloudinaryImages} responsive Cloudinary images, ${localExceptionHeroes} protected local heroes, `
+  + `${cloudinaryImages} responsive Cloudinary images, ${r2Images} responsive R2 images, ${localExceptionHeroes} protected local heroes, `
   + `${priorityHeroes} single-preload priority heroes`,
 );

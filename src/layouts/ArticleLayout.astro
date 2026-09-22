@@ -66,7 +66,17 @@ const stickyCta = articleSlug
 // The social image still needs something, so that falls back to og-default.png
 // (1200x630), which is what it was made for.
 const socialImage = heroImageProp || `${SITE.url}/og-default.png`;
-const hero = heroImageProp ? responsiveImage(heroImageProp, 'hero') : null;
+/**
+ * Обложка рисуется, только если картинка годится в обложку.
+ *
+ * У проекта Aldar Saadiyat Grove в шапке стоял файл 95 на 95 точек, и шаблон растягивал его на
+ * всю ширину страницы. В бэкапе оригинал такой же, то есть это не переезд испортил: картинка
+ * всегда была миниатюрой. Растянутая миниатюра выглядит как поломка, пустое место не выглядит
+ * никак, поэтому меньше 600 точек в обложку не идёт. Картинка остаётся в шапке материала, и если
+ * однажды её заменят на нормальную, обложка вернётся сама.
+ */
+const heroCandidate = heroImageProp ? responsiveImage(heroImageProp, 'hero') : null;
+const hero = heroCandidate && (heroCandidate.width ?? 0) >= 600 ? heroCandidate : null;
 
 const dateStr = (updatedDate || pubDate).toLocaleDateString('en-US', {
   year: 'numeric',

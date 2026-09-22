@@ -1,4 +1,5 @@
 import cloudDimensions from '../data/gulf-image-dimensions.json';
+import r2Widths from '../data/r2-image-widths.json';
 import localDimensions from '../../scripts/data/image-dimensions.json';
 
 type Variant = 'hero' | 'body' | 'card';
@@ -65,6 +66,24 @@ export function lcpPreloadFromResponsive(src: string, variant: Variant = 'hero')
   };
 }
 
+/**
+ * Список ширин, которые реально лежат на R2 рядом с картинкой.
+ *
+ * До 22.09.2026 здесь стояло srcset из одного кандидата: `${src} ${native.width}w`. Атрибут был,
+ * а выбора у браузера не было, и телефон качал файл для компьютера. Замер на живом сайте:
+ * список проектов отдавал 2422 КБ и телефону, и компьютеру.
+ *
+ * Какие ширины залиты, знает манифест (scripts/r2-add-widths.mjs в корне рабочего каталога).
+ * Гадать нельзя: браузер попросит несуществующий файл и получит 404 вместо картинки.
+ */
+function r2Srcset(src: string, key: string, nativeWidth: number): string {
+  const entry = (r2Widths as Record<string, { w: number; h: number; variants: number[] }>)[key];
+  const variants = (entry?.variants ?? []).filter((w) => w < (entry?.w ?? nativeWidth)).sort((a, b) => a - b);
+  if (!variants.length) return `${src} ${nativeWidth}w`;
+  const narrow = variants.map((w) => `${src.replace(/\.webp$/i, `-w${w}.webp`)} ${w}w`);
+  return [...narrow, `${src} ${entry?.w ?? nativeWidth}w`].join(', ');
+}
+
 export function responsiveImage(src: string, variant: Variant = 'hero') {
   const r2Id = r2PublicId(src);
   if (r2Id?.startsWith(PREFIX)) {
@@ -72,7 +91,7 @@ export function responsiveImage(src: string, variant: Variant = 'hero') {
     if (!native) throw new Error(`Missing Gulf image dimensions for ${r2Id}`);
     return {
       src,
-      srcset: `${src} ${native.width}w`,
+      srcset: r2Srcset(src, `${r2Id}.webp`, native.width),
       sizes: variant === 'card'
         ? '(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 320px'
         : variant === 'hero'
