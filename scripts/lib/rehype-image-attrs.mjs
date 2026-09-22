@@ -21,6 +21,38 @@ const CLOUD_SIZES = existsSync(CLOUD_MAP_PATH) ? JSON.parse(readFileSync(CLOUD_M
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = [360, 640, 960, 1200];
 
+/**
+ * Картинки внутри текста статей, которые лежат на R2.
+ *
+ * Плагин умел только адреса Cloudinary: на адресе R2 он не находил ни размеров кадра, ни ширин,
+ * и оставлял тег как есть. Замер 21.09.2026: 205 картинок на 91 странице без width и height,
+ * страница прыгала при загрузке, и ни одной ширины на выбор. Собственная проверка скорости сайта
+ * ругалась на это 206 раз и была права.
+ *
+ * Манифест пишет scripts/r2-add-widths.mjs в корне рабочего каталога.
+ */
+const R2_WIDTHS_PATH = join(dirname(fileURLToPath(import.meta.url)), '../../src/data/r2-image-widths.json');
+const R2_WIDTHS = existsSync(R2_WIDTHS_PATH) ? JSON.parse(readFileSync(R2_WIDTHS_PATH, 'utf8')) : {};
+const R2_HOST = 'pub-2855c73eea384110b510f25966292c37.r2.dev';
+
+function r2Attrs(src) {
+  if (typeof src !== 'string') return null;
+  const i = src.indexOf(R2_HOST);
+  if (i < 0) return null;
+  const key = src.slice(i + R2_HOST.length).replace(/^\//, '').split('?')[0];
+  const entry = R2_WIDTHS[key];
+  if (!entry) return null;
+  const variants = (entry.variants || []).filter((w) => w < entry.w).sort((a, b) => a - b);
+  const base = `https://${R2_HOST}/${key}`;
+  return {
+    width: entry.w,
+    height: entry.h,
+    srcSet: variants.length
+      ? [...variants.map((w) => `${base.replace(/\.webp$/i, `-w${w}.webp`)} ${w}w`), `${base} ${entry.w}w`].join(', ')
+      : null,
+  };
+}
+
 function cloudPublicId(src) {
   const marker = `/${PREFIX}`;
   const index = src.indexOf(marker);
@@ -41,6 +73,19 @@ export function rehypeImageAttrs() {
       const props = (node.properties ||= {});
       if (!props.loading) props.loading = 'lazy';
       if (!props.decoding) props.decoding = 'async';
+      const fromR2 = r2Attrs(props.src);
+      if (fromR2) {
+        if (!props.width) {
+          props.width = fromR2.width;
+          props.height = fromR2.height;
+        }
+        if (fromR2.srcSet && !props.srcSet) {
+          props.srcSet = fromR2.srcSet;
+          props.sizes = props.sizes || '(max-width: 599px) calc(100vw - 3rem), 72ch';
+        }
+        return;
+      }
+
       const publicId = typeof props.src === 'string' ? cloudPublicId(props.src) : null;
       const dims = publicId ? CLOUD_SIZES[publicId] : (typeof props.src === 'string' ? SIZES[props.src] : null);
       if (dims && !props.width) {
