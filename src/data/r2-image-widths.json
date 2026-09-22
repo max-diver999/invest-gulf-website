@@ -370,6 +370,16 @@
       768
     ]
   },
+  "more-group/gulf/areas/damac-hills-2/hero-aerial.webp": {
+    "w": 1200,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
   "more-group/gulf/areas/damac-hills/inline-1-60977aab63.webp": {
     "w": 960,
     "h": 640,
@@ -672,6 +682,16 @@
       360,
       640,
       768
+    ]
+  },
+  "more-group/gulf/areas/emaar-beachfront/hero-aerial.webp": {
+    "w": 1200,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
     ]
   },
   "more-group/gulf/areas/emirates-hills/hero-f92ba836b4.webp": {
@@ -1130,6 +1150,16 @@
       768
     ]
   },
+  "more-group/gulf/areas/remraam/hero-community.webp": {
+    "w": 1200,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
+    ]
+  },
   "more-group/gulf/areas/riyadh/hero-edc09fd355.webp": {
     "w": 1200,
     "h": 801,
@@ -1175,6 +1205,16 @@
       360,
       640,
       768
+    ]
+  },
+  "more-group/gulf/areas/sobha-hartland/hero-towers.webp": {
+    "w": 1200,
+    "h": 675,
+    "variants": [
+      360,
+      640,
+      768,
+      960
     ]
   },
   "more-group/gulf/areas/the-pearl-lusail/hero-ae1670f870.webp": {
