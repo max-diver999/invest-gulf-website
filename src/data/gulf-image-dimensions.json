@@ -19,6 +19,10 @@
     "width": 1080,
     "height": 1920
   },
+  "more-group/gulf/areas/al-barsha-south/hero-villas": {
+    "width": 1200,
+    "height": 675
+  },
   "more-group/gulf/areas/al-barsha/hero-88c89b574e": {
     "width": 1280,
     "height": 682
@@ -86,6 +90,10 @@
   "more-group/gulf/areas/al-maryah-island/inline-2-08adc900ba": {
     "width": 1258,
     "height": 1920
+  },
+  "more-group/gulf/areas/al-nahda/hero-skyline": {
+    "width": 1200,
+    "height": 675
   },
   "more-group/gulf/areas/al-nakheel-rak/hero-0fefd43de0": {
     "width": 960,
@@ -475,6 +483,10 @@
     "width": 1920,
     "height": 1280
   },
+  "more-group/gulf/areas/jumeirah-village-triangle/hero-street": {
+    "width": 1200,
+    "height": 675
+  },
   "more-group/gulf/areas/jvc/hero-5a01ef25fa": {
     "width": 1280,
     "height": 850
@@ -514,6 +526,10 @@
   "more-group/gulf/areas/lusail-city/inline-2-d3f59f29a5": {
     "width": 1280,
     "height": 960
+  },
+  "more-group/gulf/areas/majan/hero-entrance": {
+    "width": 1200,
+    "height": 675
   },
   "more-group/gulf/areas/manama/hero-df889fc314": {
     "width": 1280,
@@ -703,6 +719,10 @@
     "width": 1155,
     "height": 768
   },
+  "more-group/gulf/areas/the-springs/hero-townhouses": {
+    "width": 1200,
+    "height": 675
+  },
   "more-group/gulf/areas/the-valley-dubai/hero-04b47e9e0a": {
     "width": 1080,
     "height": 1920
@@ -774,6 +794,54 @@
   "more-group/gulf/heroes/gulf-business/hero-d9919e2896": {
     "width": 1400,
     "height": 934
+  },
+  "more-group/gulf/news/al-marjan-island-beachfront": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/al-mouj-muscat-waterfront": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/business-bay-towers": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/damac-islands-lagoon": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/difc-gate-aerial": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/dubai-downtown-night": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/dubai-hills-villas-golf": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/dubai-skyline-dusk": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/emaar-creek-waters": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/riyadh-kafd-skyline": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/saadiyat-cultural-district": {
+    "width": 1200,
+    "height": 675
+  },
+  "more-group/gulf/news/the-pearl-porto-arabia": {
+    "width": 1200,
+    "height": 675
   },
   "more-group/gulf/projects/address-residences-dubai-hills/hero-f8810edaf1": {
     "width": 1024,
