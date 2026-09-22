@@ -219,6 +219,10 @@
     "width": 1280,
     "height": 768
   },
+  "more-group/gulf/areas/damac-hills-2/hero-aerial": {
+    "width": 1200,
+    "height": 675
+  },
   "more-group/gulf/areas/damac-hills/hero-87e4377385": {
     "width": 771,
     "height": 500
@@ -390,6 +394,10 @@
   "more-group/gulf/areas/dubai-sports-city/inline-2-2ddb2e71a3": {
     "width": 1037,
     "height": 630
+  },
+  "more-group/gulf/areas/emaar-beachfront/hero-aerial": {
+    "width": 1200,
+    "height": 675
   },
   "more-group/gulf/areas/emirates-hills/hero-f92ba836b4": {
     "width": 1920,
@@ -639,6 +647,10 @@
     "width": 1280,
     "height": 1707
   },
+  "more-group/gulf/areas/remraam/hero-community": {
+    "width": 1200,
+    "height": 675
+  },
   "more-group/gulf/areas/riyadh/hero-edc09fd355": {
     "width": 1280,
     "height": 854
@@ -670,6 +682,10 @@
   "more-group/gulf/areas/seef-bahrain/hero-dd8ecc6273": {
     "width": 1280,
     "height": 853
+  },
+  "more-group/gulf/areas/sobha-hartland/hero-towers": {
+    "width": 1200,
+    "height": 675
   },
   "more-group/gulf/areas/sohar/hero-8f5bd20b3d": {
     "width": 1280,
