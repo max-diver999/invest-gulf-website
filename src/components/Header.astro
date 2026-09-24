@@ -113,11 +113,13 @@ const drawerAbout = [
     width: 44px;
     height: 44px;
     margin-right: -0.5rem;
-    border: 1px solid var(--color-border);
+    /* Шапка на тёмной раме, а полоски оставались цвета текста на бумаге: тёмное на
+       ночном синем, на телефоне кнопку меню было почти не видно. */
+    border: 1px solid rgba(244, 239, 230, 0.4);
     border-radius: 10px;
     background: transparent;
     cursor: pointer;
-    color: var(--color-ink);
+    color: var(--color-frame-text);
   }
 
   .ig-nav-toggle__bars {
