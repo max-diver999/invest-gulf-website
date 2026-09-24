@@ -19,6 +19,7 @@ interface Props {
   author?: string;
   readingTime?: number;
   heroImage?: string;
+  heroAlt?: string;
   faq?: { question: string; answer: string }[];
   canonical?: string;
   noindex?: boolean;
@@ -131,7 +132,7 @@ const breadcrumbSchema = {
   })),
 };
 
-const heroAlt = `${title} — Invest Gulf research illustration`;
+const heroAlt = Astro.props.heroAlt || title;
 ---
 <BaseLayout
   title={title}

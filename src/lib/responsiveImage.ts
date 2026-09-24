@@ -87,7 +87,9 @@ function r2Srcset(src: string, key: string, nativeWidth: number): string {
 export function responsiveImage(src: string, variant: Variant = 'hero') {
   const r2Id = r2PublicId(src);
   if (r2Id?.startsWith(PREFIX)) {
-    const native = (cloudDimensions as Record<string, Dimension>)[r2Id];
+    const manifest = (r2Widths as Record<string, { w: number; h: number }>)[`${r2Id}.webp`];
+    const native = (cloudDimensions as Record<string, Dimension>)[r2Id]
+      ?? (manifest ? { width: manifest.w, height: manifest.h } : undefined);
     if (!native) throw new Error(`Missing Gulf image dimensions for ${r2Id}`);
     return {
       src,

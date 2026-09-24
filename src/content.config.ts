@@ -10,6 +10,7 @@ const articleSchema = z.object({
   category: z.string().default('guides'),
   tags: z.array(z.string()).default([]),
   heroImage: z.string().optional(),
+  heroAlt: z.string().optional(),
   readingTime: z.number().optional(),
   relatedSlugs: z.array(z.string()).default([]),
   noindex: z.boolean().default(false),
