@@ -7,7 +7,7 @@ type Dimension = { width: number; height: number };
 type LocalCandidate = { url: string; width: number };
 type LocalHeroFallback = { src: string; candidates: LocalCandidate[] };
 
-const R2_PATTERN = /^https:\/\/pub-[a-f0-9]+\.r2\.dev\/(.+)$/i;
+const R2_PATTERN = /^https:\/\/(?:pub-[a-f0-9]+\.r2\.dev|media\.oper-stack\.com)\/(.+)$/i;
 const PREFIX = 'more-group/gulf/';
 const WIDTHS = {
   hero: [360, 640, 960, 1200],

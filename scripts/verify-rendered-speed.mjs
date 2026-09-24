@@ -96,7 +96,7 @@ for (const file of walk(DIST).filter((item) => item.endsWith('.html'))) {
       errors.push(`${relative}: direct Wikimedia image delivery`);
     }
 
-    if (src.includes('.r2.dev/')) {
+    if ((src.includes('.r2.dev/') || src.includes('//media.oper-stack.com/'))) {
       r2Images += 1;
       const candidates = srcset ? srcset.split(',').filter((c) => /\s\d+w\s*$/.test(c.trim())).length : 0;
       const intrinsic = Number(attribute(tag, 'width') || 0);
