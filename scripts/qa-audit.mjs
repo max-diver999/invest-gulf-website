@@ -239,7 +239,7 @@ function auditFile(c, slug) {
 
   const hero = (fm.heroImage || '').replace(/^["']|["']$/g, '');
   const heroKey = hero.match(/\/(more-group\/gulf\/.+)$/);
-  if (heroKey && !hero.includes('.r2.dev/') && !GULF_DIMS.has(heroKey[1])) {
+  if (heroKey && !(hero.includes('.r2.dev/') || hero.includes('//media.oper-stack.com/')) && !GULF_DIMS.has(heroKey[1])) {
     prob.push(`heroImageUnknown:${heroKey[1]}`);
   }
 

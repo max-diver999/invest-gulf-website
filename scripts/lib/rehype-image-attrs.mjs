@@ -33,13 +33,21 @@ const WIDTHS = [360, 640, 960, 1200];
  */
 const R2_WIDTHS_PATH = join(dirname(fileURLToPath(import.meta.url)), '../../src/data/r2-image-widths.json');
 const R2_WIDTHS = existsSync(R2_WIDTHS_PATH) ? JSON.parse(readFileSync(R2_WIDTHS_PATH, 'utf8')) : {};
-const R2_HOST = 'pub-2855c73eea384110b510f25966292c37.r2.dev';
+/**
+ * Адрес хранилища картинок. С 24.09.2026 картинки отдаёт свой домен media.oper-stack.com: у старого
+ * адреса r2.dev лимит частоты запросов и нет кэша. Файлы те же, другое только начало адреса.
+ * Старый адрес код понимает, пока все статьи и загрузчик не переехали; размеры в srcset
+ * всегда строятся с нового.
+ */
+const R2_HOST = 'media.oper-stack.com';
+const R2_HOSTS = [R2_HOST, 'pub-2855c73eea384110b510f25966292c37.r2.dev'];
 
 function r2Attrs(src) {
   if (typeof src !== 'string') return null;
-  const i = src.indexOf(R2_HOST);
+  const iHost = R2_HOSTS.find((h) => src.includes(h)) ?? R2_HOST;
+  const i = src.indexOf(iHost);
   if (i < 0) return null;
-  const key = src.slice(i + R2_HOST.length).replace(/^\//, '').split('?')[0];
+  const key = src.slice(i + iHost.length).replace(/^\//, '').split('?')[0];
   const entry = R2_WIDTHS[key];
   if (!entry) return null;
   const variants = (entry.variants || []).filter((w) => w < entry.w).sort((a, b) => a - b);
