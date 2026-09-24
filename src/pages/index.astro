@@ -7,17 +7,22 @@ import { getCollection } from 'astro:content';
 import { SITE } from '../data/site';
 import { STICKY_HOME } from '../data/sticky-cta';
 
-const guides = (await getCollection('guides'))
-  .filter((g) => !g.data.noindex)
+const publishedGuides = (await getCollection('guides')).filter((g) => !g.data.noindex);
+const guides = [...publishedGuides]
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 4);
 
+// Раньше избранные искались только среди четырёх самых свежих гайдов, почти никогда там не
+// находились, и «Start here» показывал просто последние статьи, включая «When Not to Buy».
 const featuredSlugs = [
   'dubai-property-investment-guide',
   'can-foreigners-buy-property-uae',
   'uae-golden-visa-property',
+  'dubai-rental-yield-guide',
 ];
-const featured = guides.filter((g) => featuredSlugs.includes(g.id));
+const featured = featuredSlugs
+  .map((slug) => publishedGuides.find((g) => g.id === slug))
+  .filter((g): g is NonNullable<typeof g> => Boolean(g));
 
 // Герой берёт настоящий рендер из корпуса проектов и туда же ведёт.
 const gulfProjects = await getCollection('projects');
@@ -80,14 +85,26 @@ const heroImg = heroProject ? responsiveImage(heroProject.data.heroImage, 'hero'
         </div>
         <a href="/guides/" class="link-arrow shrink-0 hidden sm:inline">All guides →</a>
       </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        {(featured.length ? featured : guides).map((guide) => (
-          <a href={`/guides/${guide.id}/`} class="surface-card is-link p-7 no-underline block">
-            <span class="badge-pill mb-3">Guide</span>
-            <h3 class="text-lg mb-2 text-[var(--color-ink)] font-semibold">{guide.data.title}</h3>
-            <p class="text-sm text-[var(--color-muted)]">{guide.data.description}</p>
-          </a>
-        ))}
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+        {(featured.length ? featured : guides).map((guide) => {
+          const img = guide.data.heroImage ? responsiveImage(guide.data.heroImage, 'card') : null;
+          return (
+            <article class="ig-card">
+              {img && (
+                <a href={`/guides/${guide.id}/`} class="ig-card__media" tabindex="-1" aria-hidden="true">
+                  <img src={img.src} srcset={img.srcset} sizes={img.sizes} alt="" width={img.width} height={img.height} loading="lazy" decoding="async" />
+                </a>
+              )}
+              <div class="ig-card__body">
+                <p class="ig-card__meta">Guide</p>
+                <h3 class="ig-card__title">
+                  <a href={`/guides/${guide.id}/`} class="no-underline">{guide.data.title}</a>
+                </h3>
+                <p class="ig-card__desc">{guide.data.description}</p>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </div>
   </section>
