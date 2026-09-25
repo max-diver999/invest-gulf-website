@@ -50,5 +50,35 @@ Invest Gulf publishes data-driven guides on property yields, fees, Golden Visa p
 - /privacy-policy/
 - /terms/
 
+## Project catalog with prices
+
+One line per project: name, area, status, entry price, page. Append `.md` to any page URL for its full markdown review.
+
+- [Nikki Beach Residences Al Marjan RAK Property](https://invest-gulf.com/projects/rak-marjan-beach-residences/): Al Marjan Island, off-plan, from AED 1,190,000
+- [The Oasis Emaar Dubai Luxury Villa Community Guide](https://invest-gulf.com/projects/the-oasis-emaar/): Al Qudra, off-plan, from AED 9,180,000
+- [Gateway Porto Al Zorah Investment Analysis, Marina Living](https://invest-gulf.com/projects/rak-gateway-2/): Al Zorah, Ajman, off-plan, from AED 896,000
+- [Danube Bayz 101 Business Bay](https://invest-gulf.com/projects/danube-bayz-101/): Business Bay, off-plan, from AED 1,170,000
+- [DAMAC Islands](https://invest-gulf.com/projects/damac-islands/): DAMAC Islands, off-plan, from AED 2,900,000
+- [Creek Waters by Emaar at Dubai Creek Harbour](https://invest-gulf.com/projects/creek-waters-emaar/): Dubai Creek Harbour, off-plan, from AED 1,600,000
+- [Address Residences Dubai Hills Estate](https://invest-gulf.com/projects/address-residences-dubai-hills/): Dubai Hills Estate, off-plan, from AED 1,930,000
+- [Nakheel Rixos Dubai Islands Branded Waterfront Living](https://invest-gulf.com/projects/nakheel-rixos-dubai-islands/): Dubai Islands, off-plan, from AED 3,000,000
+- [Six Senses Residences Dubai Marina by Select Group](https://invest-gulf.com/projects/select-group-six-senses/): Dubai Marina, off-plan, from AED 8,500,000
+- [Binghatti Hills](https://invest-gulf.com/projects/binghatti-hills/): Dubai Science Park, off-plan, from AED 700,000
+- [Azizi Venice Dubai South](https://invest-gulf.com/projects/azizi-venice/): Dubai South, off-plan, from AED 760,000
+- [DAMAC Lagoons Dubailand](https://invest-gulf.com/projects/damac-lagoons-overview/): Dubailand, off-plan, from AED 1,300,000
+- [Emaar South](https://invest-gulf.com/projects/emaar-south-expo-living/): Emaar South, off-plan, from AED 2,300,000
+- [Binghatti Phantom JVC](https://invest-gulf.com/projects/binghatti-phantom/): Jumeirah Village Circle, off-plan, from AED 1,100,000
+- [Samana Barari Heights Majan Dubailand Apartments](https://invest-gulf.com/projects/samana-barari-heights/): Majan Dubailand, off-plan, from AED 800,000
+- [Sobha Hartland 2 MBR City](https://invest-gulf.com/projects/sobha-hartland-2/): MBR City, off-plan, from AED 1,500,000
+- [Azizi Riviera](https://invest-gulf.com/projects/azizi-riviera-reber/): Mohammed Bin Rashid City, off-plan, from AED 650,000
+- [Nad Al Sheba Gardens](https://invest-gulf.com/projects/meraas-nad-al-sheba-villas/): Nad Al Sheba, off-plan, from AED 5,050,000
+- [Ellington Ocean House Palm Jumeirah Dubai](https://invest-gulf.com/projects/ellington-ocean-house/): Palm Jumeirah, off-plan, from AED 8,370,000
+- [Omniyat Orla Dorchester Collection Palm Jumeirah](https://invest-gulf.com/projects/omniyat-orla-dorchester/): Palm Jumeirah, off-plan, from AED 20,500,000
+- [Como Residences Palm Jumeirah](https://invest-gulf.com/projects/nakheel-como-residences/): Palm Jumeirah, off-plan, from AED 33,000,000
+- [Saadiyat Grove](https://invest-gulf.com/projects/aldar-saadiyat-grove/): Saadiyat Island, off-plan, from AED 3,500,000
+- [Sobha Siniya Island](https://invest-gulf.com/projects/sobha-siniya-island/): TBD, off-plan, from AED 1,000,000
+- [Town Square Nshama](https://invest-gulf.com/projects/nshama-town-square-phase/): Town Square Dubai, off-plan, from AED 800,000
+- [Yas Acres](https://invest-gulf.com/projects/aldar-yas-acres/): Yas Island, completed, from AED 2,490,000
+
 ## Full corpus
 https://invest-gulf.com/llms-full.txt
